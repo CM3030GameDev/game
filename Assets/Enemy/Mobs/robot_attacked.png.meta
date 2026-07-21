@@ -1,0 +1,1092 @@
+fileFormatVersion: 2
+guid: ce4a804aafa928c4881b8caef4e29e75
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 115337372673178743
+    second: robot_red_attacked_0
+  - first:
+      213: -4146145611848697973
+    second: robot_red_attacked_1
+  - first:
+      213: 239646163019576786
+    second: robot_red_attacked_2
+  - first:
+      213: 165059475302796427
+    second: robot_red_attacked_3
+  - first:
+      213: -2588140637025654480
+    second: robot_red_attacked_4
+  - first:
+      213: -2765880075465313592
+    second: robot_red_attacked_5
+  - first:
+      213: -1206882885372700365
+    second: robot_red_attacked_6
+  - first:
+      213: -5754434192531898751
+    second: robot_red_attacked_7
+  - first:
+      213: -2670209189483490672
+    second: robot_red_attacked_8
+  - first:
+      213: -3107444776533942477
+    second: robot_red_attacked_9
+  - first:
+      213: -564120864321538263
+    second: robot_red_attacked_10
+  - first:
+      213: -8014159870412809029
+    second: robot_red_attacked_11
+  - first:
+      213: 3680583954084004410
+    second: robot_red_attacked_12
+  - first:
+      213: 8814927930704221474
+    second: robot_red_attacked_13
+  - first:
+      213: -2713544878411993212
+    second: robot_red_attacked_14
+  - first:
+      213: -4453185497912698024
+    second: robot_red_attacked_15
+  - first:
+      213: -6323957134920766844
+    second: robot_red_attacked_16
+  - first:
+      213: -6888339557898072031
+    second: robot_red_attacked_17
+  - first:
+      213: 473027348509103270
+    second: robot_red_attacked_18
+  - first:
+      213: 3516105543012874964
+    second: robot_red_attacked_19
+  - first:
+      213: 3313558470746351446
+    second: robot_red_attacked_20
+  - first:
+      213: -7012637313749088540
+    second: robot_red_attacked_21
+  - first:
+      213: 4075023806281678856
+    second: robot_red_attacked_22
+  - first:
+      213: -4330265622153872759
+    second: robot_red_attacked_23
+  - first:
+      213: 8906177385764216570
+    second: robot_red_attacked_24
+  - first:
+      213: -2811189370739646424
+    second: robot_red_attacked_25
+  - first:
+      213: 8698274501724444379
+    second: robot_red_attacked_26
+  - first:
+      213: 8149139769394278709
+    second: robot_red_attacked_27
+  - first:
+      213: 5551273606522965257
+    second: robot_red_attacked_28
+  - first:
+      213: 1435245354880549341
+    second: robot_red_attacked_29
+  - first:
+      213: -8529597963808669269
+    second: robot_red_attacked_30
+  - first:
+      213: -1764364338787952996
+    second: robot_red_attacked_31
+  - first:
+      213: 566882116370594480
+    second: robot_red_attacked_32
+  - first:
+      213: 7127910460684293647
+    second: robot_red_attacked_33
+  - first:
+      213: 2675476649958905203
+    second: robot_red_attacked_34
+  - first:
+      213: -4109451864603205464
+    second: robot_red_attacked_35
+  - first:
+      213: 711749732482862759
+    second: robot_red_attacked_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 12
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: robot_red_attacked_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 226
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77cf287bab2c99100800000000000000
+      internalID: 115337372673178743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_1
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 224
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87b6b2888ee576c0800000000000000
+      internalID: -4146145611848697973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 224
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d531926ae4635300800000000000000
+      internalID: 239646163019576786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_3
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 226
+        width: 20
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8c4c30e7b86a4200800000000000000
+      internalID: 165059475302796427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_4
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 224
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039255d9dc3151cd0800000000000000
+      internalID: -2588140637025654480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_5
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 224
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c23f82c9be9d99d0800000000000000
+      internalID: -2765880075465313592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 195
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3399cdbf86a404fe0800000000000000
+      internalID: -1206882885372700365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_7
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 195
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18e36c617942420b0800000000000000
+      internalID: -5754434192531898751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_8
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 193
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0925ad8b3e281fad0800000000000000
+      internalID: -2670209189483490672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 193
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f1d8f807320e4d0800000000000000
+      internalID: -3107444776533942477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_10
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 193
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9277abf0017db28f0800000000000000
+      internalID: -564120864321538263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_11
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 193
+        width: 24
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbc9ad60f0cf7c090800000000000000
+      internalID: -8014159870412809029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 164
+        width: 20
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a320e2d0b9f041330800000000000000
+      internalID: 3680583954084004410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_13
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 163
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2255b4edf3ae45a70800000000000000
+      internalID: 8814927930704221474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_14
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 161
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f2c206f4d875ad0800000000000000
+      internalID: -2713544878411993212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_15
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 164
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85b1ef5326b1332c0800000000000000
+      internalID: -4453185497912698024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_16
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 163
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48a2046dd7acc38a0800000000000000
+      internalID: -6323957134920766844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_17
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 161
+        width: 20
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 120d6370ba3b760a0800000000000000
+      internalID: -6888339557898072031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_18
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 131
+        width: 24
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a41ee40ed7809600800000000000000
+      internalID: 473027348509103270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_19
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 131
+        width: 23
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4da701cbc57bbc030800000000000000
+      internalID: 3516105543012874964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_20
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 129
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 657a2578fdf1cfd20800000000000000
+      internalID: 3313558470746351446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_21
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 129
+        width: 23
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e60657848b1eae90800000000000000
+      internalID: -7012637313749088540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_22
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 129
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8000ea8bf846d8830800000000000000
+      internalID: 4075023806281678856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_23
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 129
+        width: 24
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98abe600c5ec7e3c0800000000000000
+      internalID: -4330265622153872759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 99
+        width: 24
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afed7193529199b70800000000000000
+      internalID: 8906177385764216570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_25
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 99
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820a5b06926acf8d0800000000000000
+      internalID: -2811189370739646424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 68
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd69f1ae29a76b870800000000000000
+      internalID: 8698274501724444379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_27
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 88
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53131cbb17f871170800000000000000
+      internalID: 8149139769394278709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_28
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 68
+        width: 20
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90d8dc7eee51a0d40800000000000000
+      internalID: 5551273606522965257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_29
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 86
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd14f27cb040be310800000000000000
+      internalID: 1435245354880549341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_30
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba10a4af7d7c0a980800000000000000
+      internalID: -8529597963808669269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_31
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 35
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c965d2c5bf7b387e0800000000000000
+      internalID: -1764364338787952996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_32
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 35
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ba7ac70848fdd700800000000000000
+      internalID: 566882116370594480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_33
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 52
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f06d0e77ccc6be260800000000000000
+      internalID: 7127910460684293647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_34
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 2
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37517ad76d3312520800000000000000
+      internalID: 2675476649958905203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_35
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a062cc4d4b48f6c0800000000000000
+      internalID: -4109451864603205464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: robot_red_attacked_36
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 24
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7aece955c94a0e900800000000000000
+      internalID: 711749732482862759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      robot_red_attacked_0: 115337372673178743
+      robot_red_attacked_1: -4146145611848697973
+      robot_red_attacked_10: -564120864321538263
+      robot_red_attacked_11: -8014159870412809029
+      robot_red_attacked_12: 3680583954084004410
+      robot_red_attacked_13: 8814927930704221474
+      robot_red_attacked_14: -2713544878411993212
+      robot_red_attacked_15: -4453185497912698024
+      robot_red_attacked_16: -6323957134920766844
+      robot_red_attacked_17: -6888339557898072031
+      robot_red_attacked_18: 473027348509103270
+      robot_red_attacked_19: 3516105543012874964
+      robot_red_attacked_2: 239646163019576786
+      robot_red_attacked_20: 3313558470746351446
+      robot_red_attacked_21: -7012637313749088540
+      robot_red_attacked_22: 4075023806281678856
+      robot_red_attacked_23: -4330265622153872759
+      robot_red_attacked_24: 8906177385764216570
+      robot_red_attacked_25: -2811189370739646424
+      robot_red_attacked_26: 8698274501724444379
+      robot_red_attacked_27: 8149139769394278709
+      robot_red_attacked_28: 5551273606522965257
+      robot_red_attacked_29: 1435245354880549341
+      robot_red_attacked_3: 165059475302796427
+      robot_red_attacked_30: -8529597963808669269
+      robot_red_attacked_31: -1764364338787952996
+      robot_red_attacked_32: 566882116370594480
+      robot_red_attacked_33: 7127910460684293647
+      robot_red_attacked_34: 2675476649958905203
+      robot_red_attacked_35: -4109451864603205464
+      robot_red_attacked_36: 711749732482862759
+      robot_red_attacked_4: -2588140637025654480
+      robot_red_attacked_5: -2765880075465313592
+      robot_red_attacked_6: -1206882885372700365
+      robot_red_attacked_7: -5754434192531898751
+      robot_red_attacked_8: -2670209189483490672
+      robot_red_attacked_9: -3107444776533942477
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
