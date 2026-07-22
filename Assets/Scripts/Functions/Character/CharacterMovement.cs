@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
@@ -9,22 +8,20 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController mercenarySprite;
     [SerializeField] private RuntimeAnimatorController swordsmanSprite;
     [SerializeField] private CompanionSystem companionSystem;
+    //Attacked state duration
+    [SerializeField] private float attackedDuration = -0.1f;
+    //Attacked state
+    private bool isAttacked;
     private Camera mainCamera;
     private float inputX;
     private float inputY;
     private Vector2 movement;
-    //Invulnerable duration
-    private float attackedDuration;
-    //Invulnerable state
-    private bool isAttacked;
-    //private float increment;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         mainCamera = Camera.main;
         isAttacked = false;
-        //increment = 0;
     }
 
     // Update is called once per frame
@@ -62,14 +59,6 @@ public class CharacterMovement : MonoBehaviour
             isAttacked = false;
             characterSprite.SetBool("attacked", false);
         }
-
-        //Spin swordsman's sprite (For special skill purpose)
-        //increment += 0.05f;
-        //if (increment > 4)
-        //{
-        //    increment = 0;
-        //}
-        //characterSprite.SetFloat("direction", increment);
     }
 
     private void FixedUpdate()

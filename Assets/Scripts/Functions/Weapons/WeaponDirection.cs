@@ -16,7 +16,8 @@ public class WeaponDirection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spriteRenderer.sprite = weaponSystem.equippedDict[weaponSystem.currentWeapon];
+        //Change main weapon sprite according to current character
+        spriteRenderer.sprite = weaponSystem.weaponDict[companionSystem.playerCharacter];
 
         //Get mouse position in screen pixels
         Vector3 screenPosition = Input.mousePosition;

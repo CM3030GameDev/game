@@ -51,17 +51,22 @@ public class WeaponAttack : MonoBehaviour
         //Auto attack only works for main weapons
         if(Input.GetMouseButtonDown(1))
         {
-            if(weaponSystem.currentWeapon == "pistol" || weaponSystem.currentWeapon == "flamethrower" || weaponSystem.currentWeapon == "sword")
-            {
-                autoAttack = !autoAttack;
-            }
+            autoAttack = !autoAttack;
         }
 
         //Prevent player from attacking again until cooldown is over
         if (Input.GetMouseButton(0) || autoAttack)
         {
-            //Current weapon is flamethrower
-            if (weaponSystem.currentWeapon == "flamethrower")
+            //Pistol attack for soldier
+            if(companionSystem.playerCharacter == "soldier")
+            {
+                shoot.SetActive(true);
+                fire.SetActive(false);
+                swing.SetActive(false);
+                companionSystem.characterMS = 7f;
+            }
+            //Flamethrower attack for mercenary
+            else if (companionSystem.playerCharacter == "mercenary")
             {
                 fire.SetActive(true);
                 shoot.SetActive(false);
@@ -69,20 +74,12 @@ public class WeaponAttack : MonoBehaviour
                 //Movement decrease when using flamethrower
                 companionSystem.characterMS = 3f;
             }
-            //Current weapon is sword
-            else if(weaponSystem.currentWeapon == "sword")
+            //Sword attack for swordsman
+            else
             {
                 swing.SetActive(true);
                 fire.SetActive(false);
                 shoot.SetActive(false);
-                companionSystem.characterMS = 7f;
-            }
-            //Current weapon is either pistol or unlockable weapons
-            else
-            {
-                shoot.SetActive(true);
-                fire.SetActive(false);
-                swing.SetActive(false);
                 companionSystem.characterMS = 7f;
             }
         }

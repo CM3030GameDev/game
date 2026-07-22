@@ -4,21 +4,21 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "WeaponSystem", menuName = "Scriptable Objects/WeaponSystem")]
 public class WeaponSystem : ScriptableObject, ISerializationCallbackReceiver
 {
-    //Store weapon names
-    public List<string> weaponName;
-    //Store original weapon sprites
+    //Store character name
+    public List<string> characterName;
+    //Store character main weapon sprite
     public List<Sprite> weaponSprite;
-    //Store equipped weapon sprites
-    public List<Sprite> equippedSprite;
-    //Store weapon name and original weapon sprite
-    public Dictionary<string, Sprite> originalDict = new Dictionary<string, Sprite>();
-    //Store weapon name and equipped weapon sprite
-    public Dictionary<string, Sprite> equippedDict = new Dictionary<string, Sprite>();
-    //Store current equipped weapon name
-    public string currentWeapon = "pistol";
+    //Store skill names
+    public List<string> skillName;
+    //Store skill sprites
+    public List<Sprite> skillSprite;
+    //Dictionary for character name and main weapon sprite
+    public Dictionary<string, Sprite> weaponDict = new Dictionary<string, Sprite>();
+    //Dictionary for skill name and skill sprite
+    public Dictionary<string, Sprite> skillDict = new Dictionary<string, Sprite>();
 
-    //Store unlocked weapons
-    public List<string> unlockedWeapons = new List<string>();
+    //Store unlocked skills
+    public List<string> unlockedSkills = new List<string>();
 
     public void OnBeforeSerialize()
     {
@@ -27,19 +27,23 @@ public class WeaponSystem : ScriptableObject, ISerializationCallbackReceiver
 
     public void OnAfterDeserialize()
     {
-        originalDict.Clear();
-        equippedDict.Clear();
-        for (int i = 0; i < weaponName.Count; i++)
+        weaponDict.Clear();
+        skillDict.Clear();
+        //Populate weapon dictionary
+        for (int i = 0; i < characterName.Count; i++)
         {
-            originalDict.Add(weaponName[i], weaponSprite[i]);
-            equippedDict.Add(weaponName[i], equippedSprite[i]);
+            weaponDict.Add(characterName[i], weaponSprite[i]);
+        }
+        //Populate skill dictionary
+        for(int i = 0; i < skillName.Count; i++)
+        {
+            skillDict.Add(skillName[i], skillSprite[i]);
         }
     }
 
     //Reset to default
-    public void ResetWeapons()
+    public void ResetSkills()
     {
-        unlockedWeapons.Clear();
-        currentWeapon = "pistol";
+        unlockedSkills.Clear();
     }
 }

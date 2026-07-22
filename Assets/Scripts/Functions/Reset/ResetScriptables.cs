@@ -11,7 +11,7 @@ public class ResetScriptables : MonoBehaviour
     void Start()
     {
         companionSystem.ResetCompanions();
-        weaponSystem.ResetWeapons();
+        weaponSystem.ResetSkills();
         sceneState.ResetStates();
         enemySystem.ResetEnemies();
     }

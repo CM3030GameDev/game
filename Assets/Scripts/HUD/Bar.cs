@@ -8,8 +8,6 @@ public class Bar : MonoBehaviour
     [SerializeField] private bool isCompanionE;
     [SerializeField] private bool isHP;
     [SerializeField] private bool isEXP;
-    [SerializeField] private bool isBGM;
-    [SerializeField] private bool isSFX;
     [SerializeField] private CompanionSystem companionSystem;
     [SerializeField] private Slider bar;
 
@@ -144,11 +142,6 @@ public class Bar : MonoBehaviour
                 companionSystem.expPoint = companionSystem.expPoint % 100;
             }
             bar.value = companionSystem.expPoint;
-        }
-
-        if(isSFX)
-        {
-
         }
     }
 }

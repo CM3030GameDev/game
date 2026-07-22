@@ -12,9 +12,11 @@ public class MobMovement : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController greenMob;
     [SerializeField] private CompanionSystem companionSystem;
     [SerializeField] private EnemySystem enemySystem;
+    //Attacked state duration
     [SerializeField] private float attackedDuration = -0.1f;
-    public int enemyHP;
+    //Attacked state
     private bool isAttacked;
+    public int enemyHP;
     private Vector2 chaseDirection;
     private Vector2 normalizedChase;
     private bool isBlue;
@@ -82,7 +84,7 @@ public class MobMovement : MonoBehaviour
         //Offset angle
         angle += 45f;
 
-        //Convert negative angle to positve angle
+        //Convert negative angle to positive angle
         if (angle < 0)
         {
             angle += 360;
@@ -149,8 +151,6 @@ public class MobMovement : MonoBehaviour
             mobSprite.SetBool("attacked", true);
             isAttacked = true;
             enemyHP -= 20;
-            //mobRB.linearVelocity = Vector2.zero;
-            //mobRB.AddForce(normalizedChase * -5f, ForceMode2D.Impulse);
             attackedDuration = 0.05f;
         }
     }

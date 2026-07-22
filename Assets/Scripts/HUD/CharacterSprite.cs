@@ -7,10 +7,9 @@ public class CharacterSprite : MonoBehaviour
     [SerializeField] private Sprite soldierSprite;
     [SerializeField] private Sprite mercenarySprite;
     [SerializeField] private Sprite swordsmanSprite;
-    [SerializeField] private bool isPlayer;
     [SerializeField] private bool isCompanionQ;
     [SerializeField] private bool isCompanionE;
-    [SerializeField] private CompanionSystem cs;
+    [SerializeField] private CompanionSystem companionSystem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,33 +20,17 @@ public class CharacterSprite : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(isPlayer)
-        {
-            if(cs.playerCharacter == "soldier")
-            {
-                imageSprite.sprite = soldierSprite;
-            }
-            else if (cs.playerCharacter == "mercenary")
-            {
-                imageSprite.sprite = mercenarySprite;
-            }
-            else if(cs.playerCharacter == "swordsman")
-            {
-                imageSprite.sprite = swordsmanSprite;
-            }
-        }
-
         if (isCompanionQ)
         {
-            if (cs.companionQCharacter == "soldier")
+            if (companionSystem.companionQCharacter == "soldier")
             {
                 imageSprite.sprite = soldierSprite;
             }
-            else if (cs.companionQCharacter == "mercenary")
+            else if (companionSystem.companionQCharacter == "mercenary")
             {
                 imageSprite.sprite = mercenarySprite;
             }
-            else if (cs.companionQCharacter == "swordsman")
+            else if (companionSystem.companionQCharacter == "swordsman")
             {
                 imageSprite.sprite = swordsmanSprite;
             }
@@ -55,15 +38,15 @@ public class CharacterSprite : MonoBehaviour
 
         if (isCompanionE)
         {
-            if (cs.companionECharacter == "soldier")
+            if (companionSystem.companionECharacter == "soldier")
             {
                 imageSprite.sprite = soldierSprite;
             }
-            else if (cs.companionECharacter == "mercenary")
+            else if (companionSystem.companionECharacter == "mercenary")
             {
                 imageSprite.sprite = mercenarySprite;
             }
-            else if (cs.companionECharacter == "swordsman")
+            else if (companionSystem.companionECharacter == "swordsman")
             {
                 imageSprite.sprite = swordsmanSprite;
             }

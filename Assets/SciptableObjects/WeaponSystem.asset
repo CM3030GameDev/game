@@ -12,13 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bdd083b5aff8be439571fc5fe39198b, type: 3}
   m_Name: WeaponSystem
   m_EditorClassIdentifier: Assembly-CSharp::WeaponSystem
-  weaponName:
-  - pistol
-  - flamethrower
-  - sword
-  - shotgun
-  - laserbeam
-  - bazooka
+  characterName:
+  - soldier
+  - mercenary
+  - swordsman
   weaponSprite:
   - {fileID: 4319395737909131107, guid: 18ffc9aa85e9fac4898c430eb08cb58c, type: 3}
   - {fileID: 3961092733095970375, guid: b8e22d87df23ad64e8c5091d775472de, type: 3}
@@ -26,12 +23,7 @@ MonoBehaviour:
   - {fileID: -2408530018317867212, guid: 0a4940c7dd55d684b9cbe577cb22b0ee, type: 3}
   - {fileID: 6624528087874976093, guid: 91c058f3cfe365b449d3791c1c1664d4, type: 3}
   - {fileID: -7227783451421195894, guid: c156d61db6895e84b941a812164f9ac0, type: 3}
-  equippedSprite:
-  - {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
-  - {fileID: 1948861429554965999, guid: 41a87f82d72b0e8458125f2b8cfc850f, type: 3}
-  - {fileID: -4611965830581594529, guid: 514a06bf18fec0f4984f7dd043c3745b, type: 3}
-  - {fileID: -2408530018317867212, guid: d20c3ea38fd84044caab975aea1b49f2, type: 3}
-  - {fileID: -7725389725916593699, guid: cac1aecb960c7be4092e3463848638ec, type: 3}
-  - {fileID: -6731975236224847957, guid: 286afbb31aca8434c9dce87494cbc21f, type: 3}
+  skillName: []
+  skillSprite: []
   currentWeapon: flamethrower
-  unlockedWeapons: []
+  unlockedSkills: []
