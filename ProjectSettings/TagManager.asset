@@ -61,6 +61,9 @@ TagManager:
   - name: Enemy
     uniqueID: 2937264421
     locked: 0
+  - name: HP
+    uniqueID: 3158157445
+    locked: 0
   - name: Weapon
     uniqueID: 2015552387
     locked: 0

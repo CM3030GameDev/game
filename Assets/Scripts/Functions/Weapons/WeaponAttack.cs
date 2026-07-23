@@ -7,7 +7,6 @@ public class WeaponAttack : MonoBehaviour
     [SerializeField] private GameObject shoot;
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject swing;
-    [SerializeField] private WeaponSystem weaponSystem;
     [SerializeField] private CompanionSystem companionSystem;
     private Camera mainCamera;
     public bool autoAttack;

@@ -5,15 +5,16 @@ public class Shoot : MonoBehaviour
     [SerializeField] private GameObject pistolBullet;
     [SerializeField] private float projectileSpeed = 50f;
     [SerializeField] private CompanionSystem companionSystem;
-    [SerializeField] private WeaponSystem weaponSystem;
     [SerializeField] private WeaponAttack weaponAttack;
     private Camera mainCamera;
     private Rigidbody2D projectileRB;
+    private float duration;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         mainCamera = Camera.main;
+        duration = companionSystem.characterAS;
     }
 
     // Update is called once per frame
@@ -37,11 +38,11 @@ public class Shoot : MonoBehaviour
         //Convert angle from radian to degree
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        //Countdown for next attack
-        companionSystem.characterAS -= Time.deltaTime;
+        //Duration until next attack
+        duration += Time.deltaTime;
 
-        //Prevent player from attacking again until countdown is finished
-        if (companionSystem.characterAS < 0)
+        //Prevent player from attacking again until duration is over
+        if (duration > 1f)
         {
             if (Input.GetMouseButton(0) || weaponAttack.autoAttack)
             {
@@ -49,7 +50,7 @@ public class Shoot : MonoBehaviour
                 projectileRB = projectiles.GetComponent<Rigidbody2D>();
                 projectileRB.AddForce(normalizedDirection * projectileSpeed, ForceMode2D.Impulse);
                 Destroy(projectiles, 2f);
-                companionSystem.characterAS = 1f;
+                duration = companionSystem.characterAS;
             }
         }
     }

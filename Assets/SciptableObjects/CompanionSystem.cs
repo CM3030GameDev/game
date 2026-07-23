@@ -23,8 +23,8 @@ public class CompanionSystem : ScriptableObject
     //Movement speed for all characters
     public float characterMS = 7f;
 
-    //Attack speed for all characters
-    public float characterAS = 1f;
+    //Attack speed for all characters (Starts at 0 attack speed, capped at 0.8 attack speed)
+    public float characterAS = 0f;
 
     //Max health for all characters
     public int maxHealth = 100;
@@ -104,7 +104,7 @@ public class CompanionSystem : ScriptableObject
         expPoint = 0;
         characterLevel = 1;
         characterMS = 7f;
-        characterAS = 1f;
+        characterAS = 0f;
         maxHealth = 100;
         playerDead = false;
         companionQDead = false;

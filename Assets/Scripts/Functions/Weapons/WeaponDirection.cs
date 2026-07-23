@@ -4,8 +4,10 @@ public class WeaponDirection : MonoBehaviour
 {
     [SerializeField] private Camera mainCamera;
     [SerializeField] private SpriteRenderer spriteRenderer;
-    [SerializeField] private WeaponSystem weaponSystem;
     [SerializeField] private CompanionSystem companionSystem;
+    [SerializeField] private Sprite pistol;
+    [SerializeField] private Sprite flamethrower;
+    [SerializeField] private Sprite sword;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -17,7 +19,18 @@ public class WeaponDirection : MonoBehaviour
     void Update()
     {
         //Change main weapon sprite according to current character
-        spriteRenderer.sprite = weaponSystem.weaponDict[companionSystem.playerCharacter];
+        if(companionSystem.playerCharacter == "soldier")
+        {
+            spriteRenderer.sprite = pistol;
+        }
+        else if (companionSystem.playerCharacter == "mercenary")
+        {
+            spriteRenderer.sprite = flamethrower;
+        }
+        else
+        {
+            spriteRenderer.sprite = sword;
+        }
 
         //Get mouse position in screen pixels
         Vector3 screenPosition = Input.mousePosition;

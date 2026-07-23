@@ -16,12 +16,19 @@ public class MobMovement : MonoBehaviour
     [SerializeField] private float attackedDuration = -0.1f;
     //Attacked state
     private bool isAttacked;
+    //Enemy HP
     public int enemyHP;
+    //Vector direction towards player
     private Vector2 chaseDirection;
+    //Normalized vector direction towards player
     private Vector2 normalizedChase;
+    //Blue mob
     private bool isBlue;
+    //Red mob
     private bool isRed;
+    //Green mob
     private bool isGreen;
+    //Death state
     private bool death;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created

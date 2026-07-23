@@ -15,13 +15,13 @@ MonoBehaviour:
   playerCharacter: soldier
   companionQCharacter: mercenary
   companionECharacter: 
-  soldierHealth: 100
-  mercenaryHealth: 100
+  soldierHealth: 10
+  mercenaryHealth: 50
   swordsmanHealth: 100
   expPoint: 0
   characterLevel: 1
   characterMS: 7
-  characterAS: 0.3310172
+  characterAS: 0
   maxHealth: 100
   playerDead: 0
   companionQDead: 0
