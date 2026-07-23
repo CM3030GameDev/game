@@ -1,5 +1,4 @@
 using UnityEngine;
-using static UnityEngine.RuleTile.TilingRuleOutput;
 
 public class WeaponAttack : MonoBehaviour
 {
@@ -8,6 +7,7 @@ public class WeaponAttack : MonoBehaviour
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject swing;
     [SerializeField] private CompanionSystem companionSystem;
+    [SerializeField] private GameObject weapon;
     private Camera mainCamera;
     public bool autoAttack;
 
@@ -76,6 +76,7 @@ public class WeaponAttack : MonoBehaviour
             //Sword attack for swordsman
             else
             {
+                weapon.SetActive(false);
                 swing.SetActive(true);
                 fire.SetActive(false);
                 shoot.SetActive(false);
@@ -87,6 +88,7 @@ public class WeaponAttack : MonoBehaviour
             fire.SetActive(false);
             swing.SetActive(false);
             shoot.SetActive(false);
+            weapon.SetActive(true);
             companionSystem.characterMS = 7f;
         }
     }

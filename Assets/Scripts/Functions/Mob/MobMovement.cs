@@ -160,6 +160,15 @@ public class MobMovement : MonoBehaviour
             enemyHP -= 20;
             attackedDuration = 0.05f;
         }
+
+        if(collision.gameObject.CompareTag("Sword") && !isAttacked)
+        {
+            //Attacked animation of enemy
+            mobSprite.SetBool("attacked", true);
+            isAttacked = true;
+            enemyHP -= 20;
+            attackedDuration = 0.5f;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -171,6 +180,15 @@ public class MobMovement : MonoBehaviour
             isAttacked = true;
             enemyHP -= 20;
             attackedDuration = 0.05f;
+        }
+
+        if (collision.gameObject.CompareTag("Sword") && !isAttacked)
+        {
+            //Attacked animation of enemy
+            mobSprite.SetBool("attacked", true);
+            isAttacked = true;
+            enemyHP -= 20;
+            attackedDuration = 0.5f;
         }
 
         if (collision.gameObject.CompareTag("Character"))

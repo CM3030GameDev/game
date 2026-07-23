@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d0cda9dfc92201842aa67a2cf8d90a4e
+guid: 6f27d01bd87b2d24ab56652647a576ae
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2483909294396290396
-    second: sword_swing5_0
+      213: -2664487763949526282
+    second: sword_sprites10_custom_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,23 +113,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sword_swing5_0
+      name: sword_sprites10_custom_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 25
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 12
+      alignment: 9
+      pivot: {x: 0.11920974, y: 0.49242067}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4aac73538a1678dd0800000000000000
-      internalID: -2483909294396290396
+      spriteID: 6f2e969ee76d50bd0800000000000000
+      internalID: -2664487763949526282
       vertices: []
       indices: 
       edges: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1b2b6645ff2d8ea439a3076c484e6c86
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sword_swing5_0: -2483909294396290396
+      sword_sprites10_custom_0: -2664487763949526282
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
