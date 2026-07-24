@@ -212,5 +212,6 @@ MonoBehaviour:
   greenMob: {fileID: 9100000, guid: 5cc8007eb708c2443a011d778381884b, type: 2}
   companionSystem: {fileID: 11400000, guid: bdd356e526c892e48a888ebcbfaa5d82, type: 2}
   enemySystem: {fileID: 11400000, guid: f6719eb6a1e26bf42a0478ff16f9f857, type: 2}
+  sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   attackedDuration: -0.1
   enemyHP: 100

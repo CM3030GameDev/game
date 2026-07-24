@@ -12,6 +12,8 @@ public class MobMovement : MonoBehaviour
     [SerializeField] private RuntimeAnimatorController greenMob;
     [SerializeField] private CompanionSystem companionSystem;
     [SerializeField] private EnemySystem enemySystem;
+    [SerializeField] private SceneState sceneState;
+    private GameObject character;
     //Attacked state duration
     [SerializeField] private float attackedDuration = -0.1f;
     //Attacked state
@@ -22,11 +24,11 @@ public class MobMovement : MonoBehaviour
     private Vector2 chaseDirection;
     //Normalized vector direction towards player
     private Vector2 normalizedChase;
-    //Blue mob
+    //Blue mob (Combat mob)
     private bool isBlue;
-    //Red mob
+    //Red mob (Range mob)
     private bool isRed;
-    //Green mob
+    //Green mob (Elite mob)
     private bool isGreen;
     //Death state
     private bool death;
@@ -35,6 +37,7 @@ public class MobMovement : MonoBehaviour
     void Start()
     {
         death = false;
+        character = GameObject.FindGameObjectsWithTag("Character")[0];
     }
 
     private void OnEnable()
@@ -44,19 +47,58 @@ public class MobMovement : MonoBehaviour
         isGreen = false;
         isAttacked = false;
         death = false;
-        float randomNum = Random.Range(0f, 3f);
 
-        if(randomNum < 1f)
+        //Types of enemy mobs for act 1
+        if(sceneState.act == 1)
         {
-            isBlue = true;
+            if (enemySystem.currentWave <= 2)
+            {
+                isBlue = true;
+            }
+            else if (enemySystem.currentWave <= 4)
+            {
+                float randomNum = Random.Range(0f, 1f);
+                if(randomNum < 0.5f)
+                {
+                    isBlue = true;
+                }
+                else
+                {
+                    isRed = true;
+                }
+            }
         }
-        else if(randomNum < 2f)
+        //Types of enemy mobs for act 2
+        else
         {
-            isRed = true;
-        }
-        else if(randomNum < 3f)
-        {
-            isGreen = true;
+            if (enemySystem.currentWave <= 2)
+            {
+                float randomNum = Random.Range(0f, 3f);
+                if (randomNum < 0.5f)
+                {
+                    isBlue = true;
+                }
+                else if(randomNum < 2f)
+                {
+                    isRed = true;
+                }
+                else
+                {
+                    isGreen = true;
+                }
+            }
+            else
+            {
+                float randomNum = Random.Range(0f, 1f);
+                if (randomNum < 0.4f)
+                {
+                    isRed = true;
+                }
+                else
+                {
+                    isGreen = true;
+                }
+            }
         }
 
         if (isBlue)
@@ -82,7 +124,7 @@ public class MobMovement : MonoBehaviour
         //Dynamically change hitbox according to each sprite in animation
         hitBox.size = spriteRenderer.sprite.bounds.size;
 
-        chaseDirection = GameObject.FindGameObjectsWithTag("Character")[0].transform.position - transform.position;
+        chaseDirection = character.transform.position - transform.position;
         normalizedChase = chaseDirection.normalized;
 
         //Convert angle from radian to degree

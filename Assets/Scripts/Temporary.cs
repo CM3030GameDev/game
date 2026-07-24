@@ -14,6 +14,7 @@ public class Temporary : MonoBehaviour
         sceneState.ResetStates();
         enemySystem.ResetEnemies();
         companionSystem.companionECharacter = "swordsman";
+        sceneState.act = 2;
     }
 
     // Update is called once per frame

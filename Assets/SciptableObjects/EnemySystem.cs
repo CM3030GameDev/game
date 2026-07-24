@@ -11,6 +11,5 @@ public class EnemySystem : ScriptableObject
     public void ResetEnemies()
     {
         enemyLeft = 0;
-        currentWave = 1;
     }
 }
