@@ -2,9 +2,15 @@ using UnityEngine;
 
 public class Swing : MonoBehaviour
 {
+    private Camera mainCamera;
+    private BoxCollider2D box;
     [SerializeField] private SpriteRenderer swingSprite;
-    [SerializeField] private BoxCollider2D hitBox;
-    [SerializeField] private Camera mainCamera;
+
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+        box = GetComponent<BoxCollider2D>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,9 +22,9 @@ public class Swing : MonoBehaviour
     void Update()
     {
         //Dynamically change hitbox according to each sprite in animation
-        hitBox.size = swingSprite.sprite.bounds.size;
+        box.size = swingSprite.sprite.bounds.size;
         //Offset by half the sprite size since each sprite pivot is left
-        hitBox.offset = new Vector2(hitBox.size.x / 2, 0);
+        box.offset = new Vector2(box.size.x / 2, 0);
 
         //Get mouse position in screen pixels
         Vector3 screenPosition = Input.mousePosition;
@@ -41,7 +47,7 @@ public class Swing : MonoBehaviour
             angle += 360;
         }
 
-        //Render weapon below character sprite
+        //Correctly display weapon sprite
         if (angle > 45 && angle < 135)
         {
             swingSprite.sortingLayerName = "Temporary";
@@ -51,14 +57,22 @@ public class Swing : MonoBehaviour
             swingSprite.sortingLayerName = "Weapon";
         }
 
+
+
         //Correctly display weapon sprite when facing left
         if (angle > 135 && angle < 225)
         {
-            transform.rotation = Quaternion.Euler(180, 0, 360 - angle);
+            Quaternion.AngleAxis(180, Vector3.up);
+            Quaternion.AngleAxis(180, Vector3.right);
+            Quaternion.AngleAxis(360 - angle, Vector3.forward);
+            //transform.rotation = Quaternion.Euler(180, 0, 360 - angle);
+            transform.eulerAngles = new Vector3(180, 0, 360 - angle);
         }
         else
         {
-            transform.rotation = Quaternion.Euler(0, 0, angle);
+            transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+            //transform.rotation = Quaternion.Euler(0, 0, angle);
+            transform.eulerAngles = new Vector3(0, 0, angle);
         }
     }
 }

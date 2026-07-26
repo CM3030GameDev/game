@@ -2,12 +2,18 @@ using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
-    [SerializeField] private RectTransform text;
-    [SerializeField] private float scrollSpeed = 5;
+    private RectTransform text;
+    [SerializeField] private float scrollSpeed = 50f;
+
+    private void Awake()
+    {
+        text = GetComponent<RectTransform>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame

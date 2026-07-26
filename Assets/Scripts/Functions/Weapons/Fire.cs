@@ -2,8 +2,13 @@ using UnityEngine;
 
 public class Fire : MonoBehaviour
 {
+    private BoxCollider2D box;
     [SerializeField] private SpriteRenderer fireSprite;
-    [SerializeField] private BoxCollider2D hitBox;
+
+    private void Awake()
+    {
+        box = GetComponent<BoxCollider2D>();
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,8 +20,8 @@ public class Fire : MonoBehaviour
     void Update()
     {
         //Dynamically change hitbox according to each sprite in animation
-        hitBox.size = fireSprite.sprite.bounds.size;
+        box.size = fireSprite.sprite.bounds.size;
         //Offset by half the sprite size since each sprite pivot is left
-        hitBox.offset = new Vector2(hitBox.size.x / 2, 0);
+        box.offset = new Vector2(box.size.x / 2, 0);
     }
 }

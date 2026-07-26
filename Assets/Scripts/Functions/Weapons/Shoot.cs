@@ -2,19 +2,28 @@ using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
-    [SerializeField] private GameObject pistolBullet;
-    [SerializeField] private float projectileSpeed = 50f;
-    [SerializeField] private CompanionSystem companionSystem;
-    [SerializeField] private WeaponAttack weaponAttack;
     private Camera mainCamera;
-    private Rigidbody2D projectileRB;
-    private float duration;
+    private Rigidbody2D rb;
+    private float reloadTime;
+    private float reloadDuration;
+    //Toggleable auto aim and attack
+    private bool autoAttack;
+    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private CharacterStats characterStats;
+    [SerializeField] private float bulletSpeed = 50f;
+
+    private void Awake()
+    {
+        mainCamera = Camera.main;
+        autoAttack = false;
+        reloadTime = 1f;
+        reloadDuration = 1f;
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        mainCamera = Camera.main;
-        duration = companionSystem.characterAS;
+
     }
 
     // Update is called once per frame
@@ -39,18 +48,26 @@ public class Shoot : MonoBehaviour
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
         //Duration until next attack
-        duration += Time.deltaTime;
+        reloadTime += Time.deltaTime;
+
+        //Auto aim and attack
+        if (Input.GetMouseButtonDown(1))
+        {
+            autoAttack = !autoAttack;
+        }
 
         //Prevent player from attacking again until duration is over
-        if (duration > 1f)
+        if (reloadTime > reloadDuration)
         {
-            if (Input.GetMouseButton(0) || weaponAttack.autoAttack)
+            if (Input.GetMouseButton(0) || autoAttack)
             {
-                GameObject projectiles = Instantiate(pistolBullet, transform.position, Quaternion.Euler(0, 0, angle));
-                projectileRB = projectiles.GetComponent<Rigidbody2D>();
-                projectileRB.AddForce(normalizedDirection * projectileSpeed, ForceMode2D.Impulse);
-                Destroy(projectiles, 2f);
-                duration = companionSystem.characterAS;
+                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
+                rb = bullet.GetComponent<Rigidbody2D>();
+                if (rb != null)
+                {
+                    rb.linearVelocity = normalizedDirection * bulletSpeed;
+                }
+                reloadTime = characterStats.attackSpeed;
             }
         }
     }

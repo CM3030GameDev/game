@@ -2,16 +2,14 @@ using UnityEngine;
 
 public class ResetScriptables : MonoBehaviour
 {
-    [SerializeField] private CompanionSystem companionSystem;
-    [SerializeField] private SkillSystem skillSystem;
+    [SerializeField] private CharacterStats characterStats;
     [SerializeField] private SceneState sceneState;
     [SerializeField] private EnemySystem enemySystem;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        companionSystem.ResetCompanions();
-        skillSystem.ResetSkills();
+        characterStats.ResetStats();
         sceneState.ResetStates();
         enemySystem.ResetEnemies();
     }

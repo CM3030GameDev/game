@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -203,14 +203,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   chaseSpeed: 4
-  mobRB: {fileID: 6363618317049384529}
-  hitBox: {fileID: 147496804084531229}
-  spriteRenderer: {fileID: 1230987838931148716}
-  mobSprite: {fileID: 8783697787854337936}
   blueMob: {fileID: 9100000, guid: 2423cee03f62c594da08bb3892d53217, type: 2}
   redMob: {fileID: 9100000, guid: 7ad01bc5afb9b4d439570d3979272e9e, type: 2}
   greenMob: {fileID: 9100000, guid: 5cc8007eb708c2443a011d778381884b, type: 2}
-  companionSystem: {fileID: 11400000, guid: bdd356e526c892e48a888ebcbfaa5d82, type: 2}
+  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   enemySystem: {fileID: 11400000, guid: f6719eb6a1e26bf42a0478ff16f9f857, type: 2}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   attackedDuration: -0.1

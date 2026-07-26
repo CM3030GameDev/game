@@ -10,7 +10,7 @@ public class EnemyWave : MonoBehaviour
     [SerializeField] private GameObject spawnPos1;
     [SerializeField] private GameObject spawnPos2;
     [SerializeField] private float enemyDistance = 20f;
-    private List<GameObject> enemyPool = new List<GameObject>();
+    private List<GameObject> enemies = new List<GameObject>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,7 +21,7 @@ public class EnemyWave : MonoBehaviour
         {
             GameObject enemy = Instantiate(enemyPrefab);
             enemy.SetActive(false);
-            enemyPool.Add(enemy);
+            enemies.Add(enemy);
         }
     }
 
@@ -32,36 +32,36 @@ public class EnemyWave : MonoBehaviour
         {
             enemySystem.currentWave += 1;
             enemySystem.enemyLeft = 20;
-            for (int i = 0; i < enemyPool.Count; i++)
+            for (int i = 0; i < enemies.Count; i++)
             {
                 float randomNum = Random.Range(0f, 1f);
                 if (randomNum <= 0.5f)
                 {
-                    enemyPool[i].transform.position = spawnPos1.transform.position + new Vector3(enemyDistance * -1, Random.Range(-enemyDistance, enemyDistance), 0);
+                    enemies[i].transform.position = spawnPos1.transform.position + new Vector3(enemyDistance * -1, Random.Range(-enemyDistance, enemyDistance), 0);
                 }
                 else
                 {
-                    enemyPool[i].transform.position = spawnPos2.transform.position + new Vector3(enemyDistance, Random.Range(-enemyDistance, enemyDistance), 0);
+                    enemies[i].transform.position = spawnPos2.transform.position + new Vector3(enemyDistance, Random.Range(-enemyDistance, enemyDistance), 0);
                 }
-                enemyPool[i].SetActive(true);
+                enemies[i].SetActive(true);
             }
         }
         else if(enemySystem.enemyLeft == 0 && sceneState.act == 2)
         {
             enemySystem.currentWave += 1;
             enemySystem.enemyLeft = 20;
-            for (int i = 0; i < enemyPool.Count; i++)
+            for (int i = 0; i < enemies.Count; i++)
             {
                 float randomNum = Random.Range(0f, 1f);
                 if (randomNum <= 0.5f)
                 {
-                    enemyPool[i].transform.position = spawnPos1.transform.position + new Vector3(enemyDistance * -1, Random.Range(-enemyDistance, enemyDistance), 0);
+                    enemies[i].transform.position = spawnPos1.transform.position + new Vector3(enemyDistance * -1, Random.Range(-enemyDistance, enemyDistance), 0);
                 }
                 else
                 {
-                    enemyPool[i].transform.position = spawnPos2.transform.position + new Vector3(enemyDistance, Random.Range(-enemyDistance, enemyDistance), 0);
+                    enemies[i].transform.position = spawnPos2.transform.position + new Vector3(enemyDistance, Random.Range(-enemyDistance, enemyDistance), 0);
                 }
-                enemyPool[i].SetActive(true);
+                enemies[i].SetActive(true);
             }
         }
     }

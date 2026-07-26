@@ -3,11 +3,8 @@ using UnityEngine;
 public class WeaponAttack : MonoBehaviour
 {
     [SerializeField] private GameObject character;
-    [SerializeField] private GameObject shoot;
-    [SerializeField] private GameObject fire;
+    [SerializeField] private CharacterStats characterStats;
     [SerializeField] private GameObject swing;
-    [SerializeField] private CompanionSystem companionSystem;
-    [SerializeField] private GameObject weapon;
     private Camera mainCamera;
     public bool autoAttack;
 
@@ -44,8 +41,8 @@ public class WeaponAttack : MonoBehaviour
         //Convert angle from radian to degree
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
 
-        //Rotate according to current mouse position on screen
-        transform.rotation = Quaternion.Euler(0, 0, angle);
+        //Current aim
+        transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
 
         //Auto attack only works for main weapons
         if(Input.GetMouseButtonDown(1))
@@ -56,40 +53,11 @@ public class WeaponAttack : MonoBehaviour
         //Prevent player from attacking again until cooldown is over
         if (Input.GetMouseButton(0) || autoAttack)
         {
-            //Pistol attack for soldier
-            if(companionSystem.playerCharacter == "soldier")
-            {
-                shoot.SetActive(true);
-                fire.SetActive(false);
-                swing.SetActive(false);
-                companionSystem.characterMS = 7f;
-            }
-            //Flamethrower attack for mercenary
-            else if (companionSystem.playerCharacter == "mercenary")
-            {
-                fire.SetActive(true);
-                shoot.SetActive(false);
-                swing.SetActive(false);
-                //Movement decrease when using flamethrower
-                companionSystem.characterMS = 3f;
-            }
-            //Sword attack for swordsman
-            else
-            {
-                weapon.SetActive(false);
-                swing.SetActive(true);
-                fire.SetActive(false);
-                shoot.SetActive(false);
-                companionSystem.characterMS = 7f;
-            }
+            swing.SetActive(true);
         }
         else
         {
-            fire.SetActive(false);
             swing.SetActive(false);
-            shoot.SetActive(false);
-            weapon.SetActive(true);
-            companionSystem.characterMS = 7f;
         }
     }
 }

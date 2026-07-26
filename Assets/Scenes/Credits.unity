@@ -269,7 +269,7 @@ GameObject:
   - component: {fileID: 1576066967}
   - component: {fileID: 1576066966}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: Credits
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -447,7 +447,7 @@ GameObject:
   - component: {fileID: 2009413932}
   - component: {fileID: 2009413934}
   m_Layer: 5
-  m_Name: Credits
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -594,7 +594,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb7bf446679f4e49aa6262e1549008e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CreditsRoll
-  text: {fileID: 2009413931}
   scrollSpeed: 50
 --- !u!1 &2103010837
 GameObject:
