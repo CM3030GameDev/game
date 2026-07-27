@@ -6,7 +6,7 @@ public class Interface : MonoBehaviour
     [SerializeField] private GameObject missionInterface;
     [SerializeField] private GameObject gameOver;
     [SerializeField] private SceneState sceneState;
-    [SerializeField] private CompanionSystem companionSystem;
+    [SerializeField] private CharacterStats characterStats;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -18,7 +18,7 @@ public class Interface : MonoBehaviour
     void Update()
     {
         //Display game over interface
-        if(companionSystem.allDead)
+        if(sceneState.dead)
         {
             gameOver.SetActive(true);
         }

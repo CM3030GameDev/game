@@ -6,11 +6,16 @@ public class AnimatedBackground : MonoBehaviour
     private float length;
     [SerializeField] private float animatedSpeed;
 
+    private void Awake()
+    {
+        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startPos = transform.position;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        startPos = transform.position;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+
     }
 
     // Update is called once per frame

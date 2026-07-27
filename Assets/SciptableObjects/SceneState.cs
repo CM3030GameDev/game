@@ -7,12 +7,18 @@ public class SceneState : ScriptableObject
     public bool pause = false;
     //Current mission interface state
     public bool mission = false;
+    //Current character state
+    public bool dead = false;
+    //Current act scene
+    public int act = 1;
 
     //Reset to default
     public void ResetStates()
     {
         pause = false;
         mission = false;
+        dead = false;
+        act = 1;
         Time.timeScale = 1f;
     }
 }

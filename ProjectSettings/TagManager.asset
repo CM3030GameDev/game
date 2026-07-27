@@ -6,12 +6,13 @@ TagManager:
   tags:
   - Floor
   - Enemy
-  - Projectile
   - UI
   - Flamethrower
   - Pistol
   - Sword
   - Character
+  - Bullet
+  - Companion
   layers:
   - Default
   - TransparentFX
@@ -49,41 +50,32 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 1400399459
+    locked: 0
   - name: Floor
     uniqueID: 446537991
+    locked: 0
+  - name: Companion
+    uniqueID: 539685799
     locked: 0
   - name: Temporary
     uniqueID: 3548693121
     locked: 0
-  - name: Character
-    uniqueID: 691850385
-    locked: 0
   - name: Enemy
     uniqueID: 2937264421
-    locked: 0
-  - name: HP
-    uniqueID: 3158157445
-    locked: 0
-  - name: Weapon
-    uniqueID: 2015552387
     locked: 0
   - name: Projectile
     uniqueID: 425002817
     locked: 0
-  - name: Background_1
-    uniqueID: 1400399459
+  - name: Attack
+    uniqueID: 176793315
     locked: 0
-  - name: Background_2
-    uniqueID: 2880188099
+  - name: Character
+    uniqueID: 691850385
     locked: 0
-  - name: Background_3
-    uniqueID: 3265076861
-    locked: 0
-  - name: Background_4
-    uniqueID: 4241786213
-    locked: 0
-  - name: Background_5
-    uniqueID: 1474751027
+  - name: Weapon
+    uniqueID: 2015552387
     locked: 0
   - name: HUD
     uniqueID: 3606316447
