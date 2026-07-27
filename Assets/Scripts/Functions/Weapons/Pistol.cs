@@ -78,12 +78,6 @@ public class Pistol : MonoBehaviour
                 }
             }
         }
-
-        ////Prevent player from attacking again until duration is over
-        //if (reloadTime >= reloadDuration)
-        //{
-        //    Shoot(angle, direction);
-        //}
     }
 
     private void ManualAim()

@@ -363,7 +363,6 @@ MonoBehaviour:
   character: {fileID: 5457307254165368600}
   followRange: 2
   followSpeed: 5
-  weapon: {fileID: 629216032}
 --- !u!1 &409585279
 GameObject:
   m_ObjectHideFlags: 0
@@ -608,7 +607,6 @@ MonoBehaviour:
   character: {fileID: 5457307254165368600}
   followRange: 2
   followSpeed: 3
-  weapon: {fileID: 1128708331}
 --- !u!114 &507052923
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -734,7 +732,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 325052345}
@@ -3749,7 +3747,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 900}
+  m_SizeDelta: {x: 1200, y: 1100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5320110005330958679
 RectTransform:
@@ -4517,7 +4515,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2577639835249330367, guid: a03ff7a4b79c0354590f0167c0a8a277, type: 3}
+  m_Sprite: {fileID: -4845238069062731392, guid: ac10a3716d4f519458a97576461b0df8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -128,7 +128,7 @@ public class Mob : MonoBehaviour
         else if (isGreen)
         {
             animator.runtimeAnimatorController = greenMob;
-            enemyHP =100;
+            enemyHP = 100;
         }
     }
 
@@ -136,7 +136,7 @@ public class Mob : MonoBehaviour
     void Update()
     {
         //Dynamically change hitbox according to each sprite in animation
-        box.size = sr.sprite.bounds.size;
+        //box.size = sr.sprite.bounds.size;
 
         chaseDirection = character.transform.position - transform.position;
         normalizedChase = chaseDirection.normalized;
@@ -150,7 +150,6 @@ public class Mob : MonoBehaviour
         {
             sr.flipX = false;
         }
-
         attackedTime += Time.deltaTime;
 
         //Enemy can be attacked again
