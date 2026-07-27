@@ -154,7 +154,7 @@ public class Mob : MonoBehaviour
         attackedTime += Time.deltaTime;
 
         //Enemy can be attacked again
-        if (attackedTime > attackedDuration)
+        if (attackedTime >= attackedDuration)
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
@@ -189,15 +189,6 @@ public class Mob : MonoBehaviour
             Character character = collision.GetComponent<Character>();
             character.CharacterAttacked(10);
         }
-
-        //if(collision.CompareTag("Sword") && !isAttacked)
-        //{
-        //    //Attacked animation of enemy
-        //    animator.SetBool("attacked", true);
-        //    isAttacked = true;
-        //    enemyHP -= 20;
-        //    attackedDuration = 0.5f;
-        //}
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -207,34 +198,36 @@ public class Mob : MonoBehaviour
             Character character = collision.gameObject.GetComponent<Character>();
             character.CharacterAttacked(10);
         }
-
-        //if (collision.gameObject.CompareTag("Sword") && !isAttacked)
-        //{
-        //    //Attacked animation of enemy
-        //    animator.SetBool("attacked", true);
-        //    isAttacked = true;
-        //    enemyHP -= 20;
-        //    attackedDuration = 0.5f;
-        //}
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        //if (other.CompareTag("Flamethrower") && !isAttacked)
-        //{
-        //    //Attacked animation of enemy
-        //    animator.SetBool("attacked", true);
-        //    isAttacked = true;
-        //    enemyHP -= 5;
-        //    attackedDuration = 0.4f;
-        //}
+        if (other.CompareTag("Flamethrower") && !isAttacked)
+        {
+            //Mob flashes when attacked
+            animator.SetBool("attacked", true);
+            isAttacked = true;
+            attackedTime = 0f;
+            attackedDuration = 0.4f;
+            enemyHP -= 5;
+        }
+
+        if (other.CompareTag("Sword") && !isAttacked)
+        {
+            //Mob flashes when attacked
+            animator.SetBool("attacked", true);
+            isAttacked = true;
+            attackedTime = 0f;
+            attackedDuration = 0.5f;
+            enemyHP -= 20;
+        }
     }
 
     public void MobAttacked(int amount, float timer)
     {
         if (!isAttacked)
         {
-            //Attacked animation of character
+            //Mob flashes when attacked
             animator.SetBool("attacked", true);
             isAttacked = true;
             attackedTime = 0f;

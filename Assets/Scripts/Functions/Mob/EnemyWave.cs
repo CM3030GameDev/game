@@ -3,14 +3,13 @@ using System.Collections.Generic;
 
 public class EnemyWave : MonoBehaviour
 {
-    //[SerializeField] private GameObject character;
     [SerializeField] private EnemySystem enemySystem;
     [SerializeField] private SceneState sceneState;
     [SerializeField] private GameObject enemyPrefab;
     [SerializeField] private GameObject spawnPos1;
     [SerializeField] private GameObject spawnPos2;
     [SerializeField] private float enemyDistance = 20f;
-    private List<GameObject> enemies = new List<GameObject>();
+    public List<GameObject> enemies = new List<GameObject>();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

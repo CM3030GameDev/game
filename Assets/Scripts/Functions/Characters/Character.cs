@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
     //Attacked state duration
     private float attackedDuration;
     [SerializeField] private CharacterStats cs;
+    [SerializeField] private Pistol pistol;
 
     private void Awake()
     {
@@ -36,12 +37,12 @@ public class Character : MonoBehaviour
     private void Update()
     {
         Movement();
-        Aim();
+        Sprite();
 
         attackedTime += Time.deltaTime;
 
         //Character can be attacked again
-        if (attackedTime > attackedDuration)
+        if (attackedTime >= attackedDuration)
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
@@ -79,22 +80,33 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void Aim()
+    private void Sprite()
     {
-        //Get mouse position in screen pixels
-        Vector3 screenPosition = Input.mousePosition;
-
-        //Convert screen pixels to 3D world coordinates
-        Vector3 worldPosition = mainCamera.ScreenToWorldPoint(screenPosition);
-
-        //Flip sprite according to aim position
-        if(worldPosition.x > transform.position.x)
+        if (pistol.autoAim)
         {
-            sr.flipX = true;
+            if(pistol.angle < 90f && pistol.angle >= 0f || pistol.angle < 0f && pistol.angle > -90f)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
         else
         {
-            sr.flipX = false;
+            //Mouse position
+            Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+
+            //Flip sprite according to aim position
+            if (mousePos.x > transform.position.x)
+            {
+                sr.flipX = true;
+            }
+            else
+            {
+                sr.flipX = false;
+            }
         }
     }
 

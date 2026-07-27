@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class Swing : MonoBehaviour
+public class Flamethrower : MonoBehaviour
 {
     private SpriteRenderer sr;
-    private BoxCollider2D box;
     private Vector2 direction;
+    [SerializeField] private GameObject fire;
     [SerializeField] private GameObject character;
     [SerializeField] private EnemyWave enemyWave;
     [SerializeField] private float detectionRange = 10f;
@@ -12,7 +12,6 @@ public class Swing : MonoBehaviour
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
-        box = GetComponent<BoxCollider2D>();
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -30,13 +29,8 @@ public class Swing : MonoBehaviour
         //Automatically attack if nearby enemy exist
         if (target != null)
         {
-            sr.enabled = true;
+            fire.SetActive(true);
 
-            //Dynamically change hitbox according to each sprite in animation
-            box.size = sr.sprite.bounds.size;
-            //Offset by half the sprite size since each sprite pivot is left
-            box.offset = new Vector2(box.size.x / 2, 0);
-            
             //Vector direction between nearest enemy and swordsman
             direction = target.transform.position - transform.position;
 
@@ -59,7 +53,7 @@ public class Swing : MonoBehaviour
         //Does not attack if there is no nearby enemy
         else
         {
-            sr.enabled = false;
+            fire.SetActive(false);
         }
     }
 
@@ -70,7 +64,7 @@ public class Swing : MonoBehaviour
 
         foreach (GameObject enemy in enemyWave.enemies)
         {
-            if(!enemy.activeInHierarchy)
+            if (!enemy.activeInHierarchy)
             {
                 continue;
             }
