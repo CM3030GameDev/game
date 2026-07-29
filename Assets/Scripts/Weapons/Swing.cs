@@ -3,12 +3,13 @@ using System.Collections;
 
 public class Swing : MonoBehaviour
 {
-    private SpriteRenderer sr;
+    private SpriteRenderer swingSprite;
     private Animator animator;
     private BoxCollider2D box;
     private Vector2 direction;
     private float attackTime;
     private float attackDuration;
+    [SerializeField] private SpriteRenderer companionSprite;
     [SerializeField] private GameObject character;
     [SerializeField] private Mobs mobs;
     [SerializeField] private CharacterStats characterStats;
@@ -16,7 +17,7 @@ public class Swing : MonoBehaviour
 
     private void Awake()
     {
-        sr = GetComponent<SpriteRenderer>();
+        swingSprite = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         box = GetComponent<BoxCollider2D>();
         attackTime = 1f;
@@ -53,32 +54,49 @@ public class Swing : MonoBehaviour
             //Flip sprite according to aim position
             if (target.transform.position.x < transform.position.x)
             {
-                sr.flipY = true;
+                swingSprite.flipY = true;
             }
             else
             {
-                sr.flipY = false;
+                swingSprite.flipY = false;
+            }
+
+            //Flip companion sprite according to nearest enemy position
+            if (target.transform.position.x > transform.position.x)
+            {
+                companionSprite.flipX = true;
+            }
+            else
+            {
+                companionSprite.flipX = false;
             }
 
             if (attackTime >= attackDuration)
             {
-                //Swing attack animation
+                //Swing attack
                 animator.SetTrigger("attack");
 
-                //attackTime = characterStats.attackSpeed;
-                attackTime = 0.5f;
+                attackTime = characterStats.attackSpeed;
             }
         }
         //Does not attack if there is no nearby enemy
         else
         {
-
+            //Flip companion sprite according to character position
+            if (character.transform.position.x > transform.position.x)
+            {
+                companionSprite.flipX = true;
+            }
+            else
+            {
+                companionSprite.flipX = false;
+            }
         }
 
-        if (sr.sprite != null)
+        if (swingSprite.sprite != null)
         {
             //Dynamically change hitbox according to swing animation
-            box.size = sr.sprite.bounds.size;
+            box.size = swingSprite.sprite.bounds.size;
         }
         else
         {

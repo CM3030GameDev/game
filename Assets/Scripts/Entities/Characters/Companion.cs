@@ -3,7 +3,6 @@ using UnityEngine;
 public class Companion : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
     private Animator animator;
     private float distance;
     private Vector2 normalizedFollow;
@@ -14,7 +13,6 @@ public class Companion : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
 
@@ -31,16 +29,6 @@ public class Companion : MonoBehaviour
 
         Vector2 followDirection = character.transform.position - transform.position;
         normalizedFollow = followDirection.normalized;
-
-        //Flip sprite according to aim position
-        if (character.transform.position.x > transform.position.x)
-        {
-            sr.flipX = true;
-        }
-        else
-        {
-            sr.flipX = false;
-        }
     }
 
     private void FixedUpdate()

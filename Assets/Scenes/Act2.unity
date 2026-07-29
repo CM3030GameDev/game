@@ -730,6 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3767c8299ede0348b29a98da4a618b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swing
+  companionSprite: {fileID: 1053428093}
   character: {fileID: 563307489}
   mobs: {fileID: 990748258}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
@@ -3471,10 +3472,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da42b10bcbd9828489cfa1fc14dd1ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  companionSprite: {fileID: 2069242547}
   fire: {fileID: 746538288}
   character: {fileID: 563307489}
   mobs: {fileID: 990748258}
-  detectionRange: 10
+  detectionRange: 6
 --- !u!212 &1108369532
 SpriteRenderer:
   serializedVersion: 2

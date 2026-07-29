@@ -4,10 +4,11 @@ public class Flamethrower : MonoBehaviour
 {
     private SpriteRenderer sr;
     private Vector2 direction;
+    [SerializeField] private SpriteRenderer companionSprite;
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject character;
     [SerializeField] private Mobs mobs;
-    [SerializeField] private float detectionRange = 10f;
+    [SerializeField] private float detectionRange = 6f;
 
     private void Awake()
     {
@@ -31,7 +32,7 @@ public class Flamethrower : MonoBehaviour
         {
             fire.SetActive(true);
 
-            //Vector direction between nearest enemy and swordsman
+            //Vector direction between nearest enemy and mercenary
             direction = target.transform.position - transform.position;
 
             //Convert angle from radian to degree
@@ -49,11 +50,35 @@ public class Flamethrower : MonoBehaviour
             {
                 sr.flipY = false;
             }
+
+            //Flip companion sprite according to nearest enemy position
+            if (target.transform.position.x > transform.position.x)
+            {
+                companionSprite.flipX = true;
+            }
+            else
+            {
+                companionSprite.flipX = false;
+            }
         }
         //Does not attack if there is no nearby enemy
         else
         {
             fire.SetActive(false);
+
+            //Flip companion sprite according to character position
+            if (character.transform.position.x > transform.position.x)
+            {
+                companionSprite.flipX = true;
+                transform.rotation = Quaternion.AngleAxis(0f, Vector3.forward);
+                sr.flipY = false;
+            }
+            else
+            {
+                companionSprite.flipX = false;
+                transform.rotation = Quaternion.AngleAxis(180f, Vector3.forward);
+                sr.flipY = true;
+            }
         }
     }
 

@@ -65,11 +65,11 @@ public class Mob : MonoBehaviour
         //Types of enemy mobs for act 1
         if(sceneState.act == 1)
         {
-            if (enemySystem.currentWave <= 2)
+            if (!enemySystem.enemySpawn)
             {
                 isBlue = true;
             }
-            else if (enemySystem.currentWave <= 4)
+            else
             {
                 float randomNum = Random.Range(0f, 1f);
                 if(randomNum < 0.5f)
@@ -85,10 +85,10 @@ public class Mob : MonoBehaviour
         //Types of enemy mobs for act 2
         else
         {
-            if (enemySystem.currentWave <= 2)
+            if (!enemySystem.enemySpawn)
             {
                 float randomNum = Random.Range(0f, 3f);
-                if (randomNum < 0.5f)
+                if (randomNum < 1f)
                 {
                     isBlue = true;
                 }
@@ -135,8 +135,7 @@ public class Mob : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Dynamically change hitbox according to each sprite in animation
-        //box.size = sr.sprite.bounds.size;
+        box.size = sr.sprite.bounds.size;
 
         chaseDirection = character.transform.position - transform.position;
         normalizedChase = chaseDirection.normalized;

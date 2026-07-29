@@ -795,6 +795,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3767c8299ede0348b29a98da4a618b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Swing
+  companionSprite: {fileID: 325052344}
   character: {fileID: 5457307254165368600}
   mobs: {fileID: 7881874585802592870}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
@@ -904,10 +905,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da42b10bcbd9828489cfa1fc14dd1ace, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  companionSprite: {fileID: 409585285}
   fire: {fileID: 9146299604574159350}
   character: {fileID: 5457307254165368600}
   mobs: {fileID: 7881874585802592870}
-  detectionRange: 10
+  detectionRange: 6
 --- !u!1 &118966619410549782
 GameObject:
   m_ObjectHideFlags: 0
@@ -6319,8 +6321,8 @@ SceneRoots:
   - {fileID: 6028088334209950138}
   - {fileID: 717934513512472656}
   - {fileID: 7681386137291886114}
-  - {fileID: 7388731521264249399}
   - {fileID: 7552566811811400202}
+  - {fileID: 7388731521264249399}
   - {fileID: 5750731298563526638}
   - {fileID: 4036279382632154566}
   - {fileID: 7053512902558629522}
