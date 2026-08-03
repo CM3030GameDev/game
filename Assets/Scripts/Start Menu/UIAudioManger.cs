@@ -4,9 +4,8 @@ public class UIAudioManager : MonoBehaviour
 {
     public static UIAudioManager Instance { get; private set; }
 
-    [Header("Audio Sources")]
-    [SerializeField] private AudioSource uiAudioSource;
-    [SerializeField] private AudioSource musicAudioSource;
+    [Header("Audio Source")]
+    [SerializeField] private AudioSource audioSource;
 
     [Header("UI Sounds")]
     [SerializeField] private AudioClip hoverSound;
@@ -37,17 +36,17 @@ public class UIAudioManager : MonoBehaviour
 
     public void PlayHover()
     {
-        if (uiAudioSource != null && hoverSound != null)
+        if (audioSource != null && hoverSound != null)
         {
-            uiAudioSource.PlayOneShot(hoverSound, hoverVolume);
+            audioSource.PlayOneShot(hoverSound, hoverVolume);
         }
     }
 
     public void PlayClick()
     {
-        if (uiAudioSource != null && clickSound != null)
+        if (audioSource != null && clickSound != null)
         {
-            uiAudioSource.PlayOneShot(clickSound, clickVolume);
+            audioSource.PlayOneShot(clickSound, clickVolume);
         }
     }
 }
