@@ -7,14 +7,15 @@ public class Character : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
     private Vector2 movement;
+    public Vector2 MoveInput => movement;
     //Attacked state
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
     //Attacked state duration
     private float attackedDuration;
+    [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
-    [SerializeField] private Pistol pistol;
 
     private void Awake()
     {
@@ -82,32 +83,8 @@ public class Character : MonoBehaviour
 
     private void Sprite()
     {
-        if (pistol.autoAim)
-        {
-            if(pistol.angle < 90f && pistol.angle >= 0f || pistol.angle < 0f && pistol.angle > -90f)
-            {
-                sr.flipX = true;
-            }
-            else
-            {
-                sr.flipX = false;
-            }
-        }
-        else
-        {
-            //Mouse position
-            Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-
-            //Flip sprite according to aim position
-            if (mousePos.x > transform.position.x)
-            {
-                sr.flipX = true;
-            }
-            else
-            {
-                sr.flipX = false;
-            }
-        }
+        // Flips the player's sprite based on where they are looking
+        sr.flipX = playerAim.AimDirection.x > 0f;
     }
 
     public void CharacterAttacked(int amount)
