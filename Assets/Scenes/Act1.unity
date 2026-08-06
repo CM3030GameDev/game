@@ -5926,7 +5926,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MainWeapon
   playerAim: {fileID: 218194076}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  currentTier: {fileID: 11400000, guid: e621edf1e9e9a8344ae40120855f0d99, type: 2}
+  currentTier: {fileID: 11400000, guid: f7b7981d090c7f640bc0c7787f959afb, type: 2}
+  gunSprite: {fileID: 1717783498}
+  gunRenderer: {fileID: 1717783499}
 --- !u!222 &8473344894081847872
 CanvasRenderer:
   m_ObjectHideFlags: 0

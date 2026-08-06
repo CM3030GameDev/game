@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: DualPistols
   m_EditorClassIdentifier: Assembly-CSharp::WeaponTier
   tierName: Pistol
-  bulletPrefab: {fileID: 0}
+  bulletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
   damage: 20
   bulletSpeed: 50
   fireInterval: 0.5
