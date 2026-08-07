@@ -3889,6 +3889,7 @@ GameObject:
   - component: {fileID: 4206221227796784108}
   - component: {fileID: 8445018257843159175}
   - component: {fileID: 8445018257843159176}
+  - component: {fileID: 8445018257843159177}
   m_Layer: 6
   m_Name: Soldier
   m_TagString: Character
@@ -5962,9 +5963,31 @@ MonoBehaviour:
   cooldown: 4
   explosionPrefab: {fileID: 5157741989187164760, guid: 6f9b764a3d15d3a468695c6757e19674, type: 3}
   mobs: {fileID: 7881874585802592870}
-  strikeCount: 20
-  strikeInterval: 0.15
+  strikeCount: 10
+  strikeInterval: 0.8
   scatter: 0.8
+--- !u!114 &8445018257843159177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457307254165368600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83693344739bd6040903f6bb2dda0df0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CompanionSkills
+  character: {fileID: 4206221227796784108}
+  mercenary: {fileID: 409585286}
+  swordsman: {fileID: 325052345}
+  mobs: {fileID: 7881874585802592870}
+  fireFloorPrefab: {fileID: 1094264412346855808, guid: c02ef4216708a184f957ed1e2f723e9b, type: 3}
+  mercCooldown: 12
+  mercCastTime: 0.4
+  invulnDuration: 3
+  swordCooldown: 15
+  swordCastTime: 0.4
 --- !u!222 &8473344894081847872
 CanvasRenderer:
   m_ObjectHideFlags: 0

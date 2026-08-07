@@ -7,6 +7,8 @@ public class Character : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
     private Vector2 movement;
+    private float invulnTimer;
+    public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
     private bool isAttacked;
@@ -47,6 +49,11 @@ public class Character : MonoBehaviour
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
+        }
+
+        if (invulnTimer > 0f)
+        {
+            invulnTimer -= Time.deltaTime;
         }
     }
 
@@ -89,13 +96,19 @@ public class Character : MonoBehaviour
 
     public void CharacterAttacked(int amount)
     {
+        if (IsInvulnerable) return;
+
         if (!isAttacked)
         {
-            //Attacked animation of character
-            animator.SetBool("attacked", true);
+            animator.SetBool("attacked", true); // Play attacked animation of character
             isAttacked = true;
             attackedTime = 0f;
             cs.health -= amount;
         }
+    }
+
+    public void GrantInvulnerability(float duration)
+    {
+        invulnTimer = Mathf.Max(invulnTimer, duration);
     }
 }
