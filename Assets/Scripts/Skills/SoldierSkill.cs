@@ -21,6 +21,8 @@ public class SoldierSkill : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0f) return;
+
         if (cooldownTimer > 0f)
             cooldownTimer -= Time.deltaTime;
 
@@ -59,5 +61,14 @@ public class SoldierSkill : MonoBehaviour
 
         return (Vector2)transform.position +
                new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+    }
+
+    public void ApplyUpgrade(SkillStat stat, float amount)
+    {
+        switch (stat)
+        {
+            case SkillStat.Cooldown: cooldown = Mathf.Max(2f, cooldown - amount); break;
+            case SkillStat.StrikeCount: strikeCount += (int)amount; break;
+        }
     }
 }

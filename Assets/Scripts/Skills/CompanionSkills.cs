@@ -28,6 +28,7 @@ public class CompanionSkills : MonoBehaviour
 
     private void Update()
     {
+        if (Time.timeScale == 0f) return;
         if (mercTimer > 0f) mercTimer -= Time.deltaTime;
         if (swordTimer > 0f) swordTimer -= Time.deltaTime;
 
