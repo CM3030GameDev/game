@@ -13,6 +13,7 @@ TagManager:
   - Character
   - Bullet
   - Companion
+  - FMA
   layers:
   - Default
   - TransparentFX
