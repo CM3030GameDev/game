@@ -14,3 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SceneState
   pause: 1
   mission: 0
+  dead: 0
+  act: 2
