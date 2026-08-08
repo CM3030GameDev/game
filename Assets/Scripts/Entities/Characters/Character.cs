@@ -7,14 +7,17 @@ public class Character : MonoBehaviour
     private Animator animator;
     private SpriteRenderer sr;
     private Vector2 movement;
+    private float invulnTimer;
+    public bool IsInvulnerable => invulnTimer > 0f;
+    public Vector2 MoveInput => movement;
     //Attacked state
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
     //Attacked state duration
     private float attackedDuration;
+    [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
-    [SerializeField] private Pistol pistol;
 
     private void Awake()
     {
@@ -46,6 +49,11 @@ public class Character : MonoBehaviour
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
+        }
+
+        if (invulnTimer > 0f)
+        {
+            invulnTimer -= Time.deltaTime;
         }
     }
 
@@ -82,43 +90,25 @@ public class Character : MonoBehaviour
 
     private void Sprite()
     {
-        if (pistol.autoAim)
-        {
-            if(pistol.angle < 90f && pistol.angle >= 0f || pistol.angle < 0f && pistol.angle > -90f)
-            {
-                sr.flipX = true;
-            }
-            else
-            {
-                sr.flipX = false;
-            }
-        }
-        else
-        {
-            //Mouse position
-            Vector3 mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-
-            //Flip sprite according to aim position
-            if (mousePos.x > transform.position.x)
-            {
-                sr.flipX = true;
-            }
-            else
-            {
-                sr.flipX = false;
-            }
-        }
+        // Flips the player's sprite based on where they are looking
+        sr.flipX = playerAim.AimDirection.x > 0f;
     }
 
     public void CharacterAttacked(int amount)
     {
+        if (IsInvulnerable) return;
+
         if (!isAttacked)
         {
-            //Attacked animation of character
-            animator.SetBool("attacked", true);
+            animator.SetBool("attacked", true); // Play attacked animation of character
             isAttacked = true;
             attackedTime = 0f;
             cs.health -= amount;
         }
+    }
+
+    public void GrantInvulnerability(float duration)
+    {
+        invulnTimer = Mathf.Max(invulnTimer, duration);
     }
 }

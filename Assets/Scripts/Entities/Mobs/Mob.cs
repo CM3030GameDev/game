@@ -27,6 +27,9 @@ public class Mob : MonoBehaviour
     private float attackedTime;
     //Attacked state duration
     private float attackedDuration;
+    // Debuff (slow) from fire floor
+    private float debuffTimer;
+    private float speedMultiplier = 1f;
     [SerializeField] private RuntimeAnimatorController blueMob;
     [SerializeField] private RuntimeAnimatorController redMob;
     [SerializeField] private RuntimeAnimatorController greenMob;
@@ -34,6 +37,10 @@ public class Mob : MonoBehaviour
     [SerializeField] private EnemySystem enemySystem;
     [SerializeField] private SceneState sceneState;
     [SerializeField] private float chaseSpeed = 5f;
+    [SerializeField] private GameObject expOrbPrefab;
+    [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
+    [SerializeField] private float separationRadius = 0.6f;
+    [SerializeField] private float separationStrength = 2f;
 
     private void Awake()
     {
@@ -163,7 +170,32 @@ public class Mob : MonoBehaviour
         {
             animator.SetTrigger("dead");
             death = true;
+
+            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
+        
+        // Debuff timer that ticks down
+        if (debuffTimer > 0f)
+        {
+            debuffTimer -= Time.deltaTime;
+            if (debuffTimer <= 0f) speedMultiplier = 1f;
+        }
+    }
+
+    public void Despawn()
+    {
+        // Drops exp orb at mob position when the mob is dead
+        if (expOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+            orb.GetComponent<ExpOrb>().SetExp(expReward);
+        }
+
+        // Account for death of mob
+        enemySystem.enemyLeft--;
+
+        //Return to pool
+        gameObject.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -171,7 +203,11 @@ public class Mob : MonoBehaviour
         //Enemy alive
         if (enemyHP > 0)
         {
-            rb.linearVelocity = normalizedChase * chaseSpeed;
+            Vector2 chase = normalizedChase;
+            Vector2 separation = GetSeparation() * separationStrength;
+            Vector2 move = (chase + separation).normalized;
+
+            rb.linearVelocity = move * chaseSpeed * speedMultiplier;
         }
         //Enemy dead
         else
@@ -242,5 +278,30 @@ public class Mob : MonoBehaviour
             attackedDuration = timer;
             enemyHP -= amount;
         }
+    }
+
+    public void ApplyDebuff(float multiplier, float duration)
+    {
+        speedMultiplier = multiplier;
+        debuffTimer = Mathf.Max(debuffTimer, duration);
+    }
+
+    private Vector2 GetSeparation()
+    {
+        Vector2 push = Vector2.zero;
+        Collider2D[] neighbours = Physics2D.OverlapCircleAll(transform.position, separationRadius);
+
+        foreach (var n in neighbours)
+        {
+            if (n.gameObject == gameObject) continue;
+            if (!n.CompareTag("Enemy")) continue;
+
+            Vector2 away = (Vector2)transform.position - (Vector2)n.transform.position;
+            float dist = away.magnitude;
+            if (dist > 0.01f)
+                push += away.normalized / dist; // Push enemies away from each other the closer they are
+        }
+
+        return push;
     }
 }

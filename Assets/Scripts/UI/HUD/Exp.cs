@@ -5,28 +5,22 @@ public class Exp : MonoBehaviour
 {
     private Slider slider;
     [SerializeField] private CharacterStats characterStats;
+    [SerializeField] private Progression progression;
+
     private void Awake()
     {
         slider = GetComponent<Slider>();
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
+        slider.maxValue = progression.ExpPerLevel;
         slider.value = characterStats.expPoint;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        if (characterStats.expPoint >= 100)
-        {
-            characterStats.expPoint = characterStats.expPoint % 100;
-            characterStats.level += 1;
-        }
-        else
-        {
-            slider.value = characterStats.expPoint;
-        }
+        slider.maxValue = progression.ExpPerLevel;
+        slider.value = characterStats.expPoint;
     }
 }
