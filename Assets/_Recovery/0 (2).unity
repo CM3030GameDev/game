@@ -365,14 +365,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.8037735, g: 0.71592206, b: 0.18046981, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 9096942749336693716, guid: 72570a955ce2b9a489a5348bc4fddc39, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1408,7 +1408,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5622641, g: 0.55483794, b: 0.55483794, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2383,13 +2383,10 @@ MonoBehaviour:
   maxSpawnDistance: 20
   enemyPoolConfig:
   - type: 1
-    prefab: {fileID: 3254576223579335219, guid: bab5ea3bf2979bc43ac92580ee466794, type: 3}
+    prefab: {fileID: 5278286222643072570, guid: 8ca28010a2a7ef94b8082f40263996cb, type: 3}
     poolAmount: 30
   - type: 2
-    prefab: {fileID: 6569715054963524394, guid: d958a98bf81afa5429de08f3573efc12, type: 3}
-    poolAmount: 15
-  - type: 3
-    prefab: {fileID: 472388623571961445, guid: 18db34f16934f674bbca7e62bdc916a2, type: 3}
+    prefab: {fileID: -2253911629886400664, guid: 8135ff675f7ad29498cc771a91328ebe, type: 3}
     poolAmount: 5
 --- !u!4 &549030719
 Transform:
@@ -4210,14 +4207,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.2830189, g: 0.22374512, b: 0.22374512, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 2275810523986751869, guid: bb2beea0dc69e8446b4c608756a6b48e, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4980,7 +4977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.5647059, g: 0.5568628, b: 0.5568628, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6812,7 +6809,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.7512818, g: 0.85660374, b: 0.19879664, a: 0.31764707}
+  m_Color: {r: 0.7512818, g: 0.85660374, b: 0.19879664, a: 0.3137255}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
