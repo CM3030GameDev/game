@@ -47,7 +47,7 @@ public class FinalBoss : MonoBehaviour
         normalizedChase = chaseDirection.normalized;
 
         //Flip sprite to face character
-        if (character.transform.position.x > transform.position.x)
+        if (character.transform.position.x > transform.position.x && !attacking)
         {
             sr.flipX = false;
         }

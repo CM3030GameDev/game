@@ -27,7 +27,7 @@ TagManager:
   - HUD
   - Background
   - Menu
-  - 
+  - Pillar
   - 
   - 
   - 
@@ -68,6 +68,9 @@ TagManager:
     locked: 0
   - name: Projectile
     uniqueID: 425002817
+    locked: 0
+  - name: Pillar
+    uniqueID: 2113944213
     locked: 0
   - name: Attack
     uniqueID: 176793315

@@ -2,8 +2,11 @@ using UnityEngine;
 
 public class Beam : MonoBehaviour
 {
-    [SerializeField] private FinalBoss finalBoss;
     private float currentRotation;
+    [SerializeField] private FinalBoss finalBoss;
+    [SerializeField] private GameObject beam;
+    [SerializeField] private LayerMask pillarLayer;
+    [SerializeField] private float beamSpeed;
 
     private void OnEnable()
     {
@@ -31,24 +34,39 @@ public class Beam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100f, pillarLayer.value);
+
+        //Beam hits pillar
+        if(hit)
+        {
+            //Beam stops before pillar
+            beam.transform.localScale = new Vector3(hit.distance - 4f, 2f, 1f);
+        }
+        //Beam is not hitting pillar
+        else
+        {
+            //Beam extends
+            beam.transform.localScale = new Vector3(100f, 2f, 1f);
+        }
+
         //If beam has yet to rotate a full circle, keep rotating
-        if(currentRotation < 360f)
+        if (currentRotation < 360f)
         {
             //Beam starts left and ends left
             if (finalBoss.beamDirection)
             {
                 //Rotates beam by 360 degrees
-                transform.Rotate(Vector3.forward * 100f * Time.deltaTime);
+                transform.Rotate(Vector3.forward * beamSpeed * Time.deltaTime);
                 //Increment rotation value
-                currentRotation += 100f * Time.deltaTime;
+                currentRotation += beamSpeed * Time.deltaTime;
             }
             //Beam starts right and ends right
             else
             {
                 //Rotates beam by 360 degrees
-                transform.Rotate(Vector3.forward * 100f * Time.deltaTime);
+                transform.Rotate(Vector3.forward * beamSpeed * Time.deltaTime);
                 //Increment rotation value
-                currentRotation += 100f * Time.deltaTime;
+                currentRotation += beamSpeed * Time.deltaTime;
             }
         }
         //Stop beam after rotating a full circle
