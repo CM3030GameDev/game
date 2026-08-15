@@ -1,11 +1,9 @@
 using UnityEngine;
 
-public class Beam : MonoBehaviour
+public class BeamRotate : MonoBehaviour
 {
     private float currentRotation;
     [SerializeField] private FinalBoss finalBoss;
-    [SerializeField] private GameObject beam;
-    [SerializeField] private LayerMask pillarLayer;
     [SerializeField] private float beamSpeed;
 
     private void OnEnable()
@@ -34,21 +32,6 @@ public class Beam : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100f, pillarLayer.value);
-
-        //Beam hits pillar
-        if(hit)
-        {
-            //Beam stops before pillar
-            beam.transform.localScale = new Vector3(hit.distance - 4f, 2f, 1f);
-        }
-        //Beam is not hitting pillar
-        else
-        {
-            //Beam extends
-            beam.transform.localScale = new Vector3(100f, 2f, 1f);
-        }
-
         //If beam has yet to rotate a full circle, keep rotating
         if (currentRotation < 360f)
         {

@@ -14,6 +14,7 @@ TagManager:
   - Bullet
   - Companion
   - FMA
+  - Missile
   layers:
   - Default
   - TransparentFX
