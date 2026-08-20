@@ -19,13 +19,16 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private int assaultRifleLevel = 10;
     [SerializeField] private WeaponTierUpgrade assaultRifleUpgrade;
 
+    [Header("Weapon Slots")]
+    [SerializeField] private WeaponSlots slots;
+
     private readonly HashSet<Upgrade> taken = new HashSet<Upgrade>();
 
     private UpgradeContext ctx;
 
     private void Awake()
     {
-        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill };
+        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots };
     }
 
     private void OnEnable()
@@ -79,9 +82,9 @@ public class UpgradeManager : MonoBehaviour
     {
         picked.Apply(ctx);
 
-        // Weapon tiers and one-off upgrades shouldn't reappear.
+        // Weapon tiers and one-off upgrades should not reappear
         // Stat upgrades are repeatable (temp)
-        if (!(picked is CharacterStatsUpgrade))
+        if (!(picked is CharacterStatsUpgrade) && !(picked is SecondaryWeaponUpgrade))
             taken.Add(picked);
 
         Time.timeScale = 1f; // Resume game

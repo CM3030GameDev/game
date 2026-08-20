@@ -4926,7 +4926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Progression
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  expPerLevel: 100
+  expPerLevel: 20
   maxLevel: 15
 --- !u!222 &3042894548490473297
 CanvasRenderer:
@@ -6398,6 +6398,7 @@ GameObject:
   - component: {fileID: 8445018257843159176}
   - component: {fileID: 8445018257843159177}
   - component: {fileID: 8445018257843159178}
+  - component: {fileID: 8445018257843159179}
   m_Layer: 6
   m_Name: Soldier
   m_TagString: Character
@@ -8556,10 +8557,31 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 12bee8f9d6b216449ac330053fe7577e, type: 2}
   - {fileID: 11400000, guid: cb5630fa59a1d8645a7a200a03230623, type: 2}
   - {fileID: 11400000, guid: f44e66651d328ce4d82ce51c84870099, type: 2}
+  - {fileID: 11400000, guid: ea7ed9be927c5ec4b973cbf44ebc22fc, type: 2}
+  - {fileID: 11400000, guid: 7bf21b9f553ecd846a12cce06a1e9d3f, type: 2}
+  - {fileID: 11400000, guid: d8feceb875030fc48832ca07fe174e80, type: 2}
+  - {fileID: 11400000, guid: 815bb1faaf4366a449598136ab916f9b, type: 2}
+  - {fileID: 11400000, guid: 4ce8cf88b830a754688da65d2e1d5b37, type: 2}
   dualPistolLevel: 5
   dualPistolUpgrade: {fileID: 11400000, guid: 891fc323da471974ab7c5e02b97a0fff, type: 2}
   assaultRifleLevel: 10
   assaultRifleUpgrade: {fileID: 11400000, guid: 327c9892ddc28194abcfa4b532c6cf1e, type: 2}
+  slots: {fileID: 8445018257843159179}
+--- !u!114 &8445018257843159179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5457307254165368600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c08e120d998b52e47a9f7e153ece925c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponSlots
+  maxSlots: 3
+  mobs: {fileID: 7881874585802592870}
+  playerAim: {fileID: 218194076}
 --- !u!222 &8473344894081847872
 CanvasRenderer:
   m_ObjectHideFlags: 0

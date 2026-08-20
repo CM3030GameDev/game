@@ -7,29 +7,31 @@ public class Mob : MonoBehaviour
     private SpriteRenderer sr;
     private Animator animator;
     private GameObject character;
-    //Enemy HP
+    // Enemy HP
     private int enemyHP;
-    //Vector direction towards player
+    // Vector direction towards player
     private Vector2 chaseDirection;
-    //Normalized vector direction towards player
+    // Normalized vector direction towards player
     private Vector2 normalizedChase;
-    //Blue mob (Combat mob)
+    // Blue mob (Combat mob)
     private bool isBlue;
-    //Red mob (Range mob)
+    // Red mob (Range mob)
     private bool isRed;
-    //Green mob (Elite mob)
+    // Green mob (Elite mob)
     private bool isGreen;
-    //Death state
+    // Death state
     private bool death;
-    //Attacked state
+    // Attacked state
     private bool isAttacked;
-    //Attacked state timer
+    // Attacked state timer
     private float attackedTime;
-    //Attacked state duration
+    // Attacked state duration
     private float attackedDuration;
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
+    private Vector2 knockbackVelocity;
+    private float knockbackTimer;
     [SerializeField] private RuntimeAnimatorController blueMob;
     [SerializeField] private RuntimeAnimatorController redMob;
     [SerializeField] private RuntimeAnimatorController greenMob;
@@ -203,11 +205,18 @@ public class Mob : MonoBehaviour
         //Enemy alive
         if (enemyHP > 0)
         {
-            Vector2 chase = normalizedChase;
-            Vector2 separation = GetSeparation() * separationStrength;
-            Vector2 move = (chase + separation).normalized;
-
-            rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+            if (knockbackTimer > 0f)
+            {
+                knockbackTimer -= Time.fixedDeltaTime;
+                rb.linearVelocity = knockbackVelocity;
+            }
+            else
+            {
+                Vector2 chase = normalizedChase;
+                Vector2 separation = GetSeparation() * separationStrength;
+                Vector2 move = (chase + separation).normalized;
+                rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+            }
         }
         //Enemy dead
         else
@@ -303,5 +312,11 @@ public class Mob : MonoBehaviour
         }
 
         return push;
+    }
+
+    public void Knockback(Vector2 direction, float force)
+    {
+        knockbackVelocity = direction.normalized * force;
+        knockbackTimer = 0.15f;
     }
 }

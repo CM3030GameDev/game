@@ -11,8 +11,10 @@ public class Bullet : MonoBehaviour
 
     private void Awake() { hitsRemaining = pierceCount; }
     private void Start() { Destroy(gameObject, lifetime); }
+    private float knockbackForce;
 
     public void SetDamage(int d) { damage = d; }
+    public void SetKnockback(float force) => knockbackForce = force;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -20,6 +22,11 @@ public class Bullet : MonoBehaviour
 
         Mob mob = other.GetComponent<Mob>();
         if (mob != null) mob.MobAttacked(damage, hitFlash);
+        if (knockbackForce > 0f)
+        {
+            Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+            mob.Knockback(dir, knockbackForce);
+        }
 
         hitsRemaining--;
         if (hitsRemaining <= 0) Destroy(gameObject);

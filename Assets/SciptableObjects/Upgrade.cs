@@ -6,6 +6,7 @@ public class UpgradeContext
     public CharacterStats stats;
     public MainWeapon weapon;
     public SoldierSkill skill;
+    public WeaponSlots slots;
     public Color cardColor = Color.black;
 }
 
