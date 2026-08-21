@@ -8,6 +8,7 @@ public class UpgradeContext
     public SoldierSkill skill;
     public WeaponSlots slots;
     public Color cardColor = Color.black;
+    public StatLevels statLevels;
 }
 
 public abstract class Upgrade : ScriptableObject

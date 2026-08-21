@@ -20,8 +20,8 @@ public class SecondaryWeaponData : ScriptableObject
     public GameObject weaponPrefab;
     public WeaponLevel[] levels = new WeaponLevel[3];
 
-    [Header("Combos (unused for now)")]
-    public SecondaryWeaponData combinesWith;
+    [Header("Combo")]
+    public CharacterStatsUpgrade combinesWithStat;
     public SecondaryWeaponData combinedResult;
 
     public int MaxLevel => levels.Length;

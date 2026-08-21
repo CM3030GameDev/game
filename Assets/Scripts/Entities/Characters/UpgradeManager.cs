@@ -13,11 +13,11 @@ public class UpgradeManager : MonoBehaviour
     [Header("Pool")]
     [SerializeField] private List<Upgrade> upgradePool = new List<Upgrade>();
 
-    [Header("Guaranteed weapon tiers")]
+    [Header("Guaranteed Main Weapon Tiers")]
     [SerializeField] private int dualPistolLevel = 5;
-    [SerializeField] private WeaponTierUpgrade dualPistolUpgrade;
+    [SerializeField] private WeaponTier dualPistolTier;
     [SerializeField] private int assaultRifleLevel = 10;
-    [SerializeField] private WeaponTierUpgrade assaultRifleUpgrade;
+    [SerializeField] private WeaponTier assaultRifleTier;
 
     [Header("Weapon Slots")]
     [SerializeField] private WeaponSlots slots;
@@ -43,22 +43,21 @@ public class UpgradeManager : MonoBehaviour
 
     private void HandleLevelUp(int newLevel)
     {
+        if (newLevel == dualPistolLevel && dualPistolTier != null)
+            weapon.SetTier(dualPistolTier);
+        else if (newLevel == assaultRifleLevel && assaultRifleTier != null)
+            weapon.SetTier(assaultRifleTier);
+
         List<Upgrade> choices = BuildChoices(newLevel);
-        Time.timeScale = 0f; // Pause game when prompted
         cardUI.Show(choices, Choose);
+        Time.timeScale = 0f;
     }
 
     private List<Upgrade> BuildChoices(int level)
     {
         var choices = new List<Upgrade>();
 
-        // Guaranteed weapon tier at set levels
-        if (level == dualPistolLevel && dualPistolUpgrade != null)
-            choices.Add(dualPistolUpgrade);
-        else if (level == assaultRifleLevel && assaultRifleUpgrade != null)
-            choices.Add(assaultRifleUpgrade);
-
-        // Fill remaining slots randomly from available upgrades
+        // Fill slots randomly from available upgrades
         var candidates = new List<Upgrade>();
         foreach (var u in upgradePool)
         {
@@ -81,12 +80,6 @@ public class UpgradeManager : MonoBehaviour
     private void Choose(Upgrade picked)
     {
         picked.Apply(ctx);
-
-        // Weapon tiers and one-off upgrades should not reappear
-        // Stat upgrades are repeatable (temp)
-        if (!(picked is CharacterStatsUpgrade) && !(picked is SecondaryWeaponUpgrade))
-            taken.Add(picked);
-
-        Time.timeScale = 1f; // Resume game
+        Time.timeScale = 1f;
     }
 }

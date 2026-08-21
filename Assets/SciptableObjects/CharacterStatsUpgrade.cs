@@ -6,10 +6,19 @@ public enum CharacterStatsType { MaxHealth, MoveSpeed, AttackSpeed, PickupRadius
 public class CharacterStatsUpgrade : Upgrade
 {
     public CharacterStatsType stat;
-    public float amount = 1f;
+    public float[] amountPerLevel = new float[3]; // 3 max upgrades for each stat (Lvl 1 -> 2 -> Max (3))
+    public int maxLevel = 3;
+
+    public override bool IsAvailable(UpgradeContext ctx)
+    {
+        return ctx.statLevels.GetLevel(this) < maxLevel;
+    }
 
     public override void Apply(UpgradeContext ctx)
     {
+        int newLevel = ctx.statLevels.Increment(this);
+        float amount = amountPerLevel[newLevel - 1];
+
         switch (stat)
         {
             case CharacterStatsType.MaxHealth:
@@ -22,12 +31,8 @@ public class CharacterStatsUpgrade : Upgrade
             case CharacterStatsType.AttackSpeed:
                 ctx.stats.attackSpeed = Mathf.Min(0.8f, ctx.stats.attackSpeed + amount);
                 break;
+            case CharacterStatsType.PickupRadius:
+                break;
         }
-    }
-
-    public override bool IsAvailable(UpgradeContext ctx)
-    {
-        if (stat == CharacterStatsType.AttackSpeed && ctx.stats.attackSpeed >= 0.8f) return false;
-        return true;
     }
 }
