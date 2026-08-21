@@ -10,6 +10,7 @@ public class MissileLauncher : MonoBehaviour
     private Vector2 leftDirection;
     private Vector2 rightDirection;
     [SerializeField] private GameObject character;
+    [SerializeField] private FinalBoss finalBoss;
     [SerializeField] private GameObject missilePrefab;
     [SerializeField] private float missileSpeedMin;
     [SerializeField] private float missileSpeedMax;
@@ -17,7 +18,6 @@ public class MissileLauncher : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        missileAttack = false;
         missileInterval = 0f;
     }
 
@@ -30,9 +30,9 @@ public class MissileLauncher : MonoBehaviour
         }
 
         //If player is far away from boss, use homing missile attack
-        if(Vector2.Distance(character.transform.position, transform.position) > 30f && missileInterval <= 0f)
+        if(Vector2.Distance(character.transform.position, transform.position) > 30f && missileInterval <= 0f & !finalBoss.attacking)
         {
-            missileAttack = true;
+            finalBoss.attacking = true;
             missileInterval = 10f;
 
             //Direction vector from left missile launcher to player
@@ -41,7 +41,6 @@ public class MissileLauncher : MonoBehaviour
             leftDirection = direction.normalized;
             //Angle between left missile launcher and player
             float leftAngle = Mathf.Atan2(leftDirection.y, leftDirection.x) * Mathf.Rad2Deg;
-
 
             //Direction vector from right missile launcher to player
             direction = new Vector2(character.transform.position.x, character.transform.position.y) - new Vector2(transform.position.x + 1.063f, transform.position.y);
@@ -55,9 +54,9 @@ public class MissileLauncher : MonoBehaviour
         {
             missileAttack = false;
 
-            //Left missile speed
+            //Random left missile speed
             float leftSpeed = Random.Range(missileSpeedMin, missileSpeedMax);
-            //Right missile speed
+            //Random right missile speed
             float rightSpeed = Random.Range(missileSpeedMin, missileSpeedMax);
 
             //Left missile

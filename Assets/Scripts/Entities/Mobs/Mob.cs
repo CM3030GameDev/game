@@ -37,8 +37,6 @@ public class Mob : MonoBehaviour
     [SerializeField] private EnemySystem enemySystem;
     [SerializeField] private SceneState sceneState;
     [SerializeField] private float chaseSpeed = 5f;
-    [SerializeField] private GameObject expOrbPrefab;
-    [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
 
@@ -170,8 +168,6 @@ public class Mob : MonoBehaviour
         {
             animator.SetTrigger("dead");
             death = true;
-
-            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
         
         // Debuff timer that ticks down
@@ -180,22 +176,6 @@ public class Mob : MonoBehaviour
             debuffTimer -= Time.deltaTime;
             if (debuffTimer <= 0f) speedMultiplier = 1f;
         }
-    }
-
-    public void Despawn()
-    {
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
-
-        // Account for death of mob
-        enemySystem.enemyLeft--;
-
-        //Return to pool
-        gameObject.SetActive(false);
     }
 
     private void FixedUpdate()

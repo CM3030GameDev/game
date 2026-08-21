@@ -100,7 +100,8 @@ public class Character : MonoBehaviour
 
         if (!isAttacked)
         {
-            animator.SetBool("attacked", true); // Play attacked animation of character
+            // Play attacked animation of character
+            animator.SetBool("attacked", true);
             isAttacked = true;
             attackedTime = 0f;
             cs.health -= amount;

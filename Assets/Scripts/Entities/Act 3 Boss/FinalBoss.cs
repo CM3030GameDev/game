@@ -14,23 +14,24 @@ public class FinalBoss : MonoBehaviour
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
-    //Boss HP
-    private int bossHP;
     //Death state
     private bool death;
     //Attacking state
     public bool attacking;
     //Beam direction (False is right, true is left)
     public bool beamDirection;
+    //Default material
+    private Material defaultMaterial;
+    //Boss HP
+    [SerializeField] private int bossHP;
+    //White material
+    [SerializeField] private Material whiteMaterial;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        bossHP = 1000;
         attacking = false;
     }
 
@@ -38,6 +39,7 @@ public class FinalBoss : MonoBehaviour
     void Start()
     {
         character = GameObject.FindGameObjectsWithTag("Character")[0];
+        defaultMaterial = sr.material;
     }
 
     // Update is called once per frame
@@ -55,14 +57,19 @@ public class FinalBoss : MonoBehaviour
         {
             sr.flipX = true;
         }
-        attackedTime += Time.deltaTime;
 
-        ////Boss can be attacked again
-        //if (attackedTime >= attackedDuration)
-        //{
-        //    isAttacked = false;
-        //    animator.SetBool("attacked", false);
-        //}
+        //Boss cannot be attacked
+        if (attackedTime > 0)
+        {
+            attackedTime -= Time.deltaTime;
+        }
+        //Boss can be attacked
+        else
+        {
+            //Change back to default material
+            sr.material = defaultMaterial;
+            isAttacked = false;
+        }
 
         //Boss dead
         if (bossHP <= 0 && !death)
@@ -72,9 +79,15 @@ public class FinalBoss : MonoBehaviour
         }
 
         //For testing purpose only
-        if(Input.GetKeyDown(KeyCode.R))
+        if(Input.GetKeyDown(KeyCode.F))
         {
             Beam();
+        }
+
+        //For testing attack purpose only
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            BossAttacked(0.3f, 50);
         }
     }
 
@@ -94,6 +107,18 @@ public class FinalBoss : MonoBehaviour
                 beamDirection = true;
             }
             animator.SetTrigger("beam_start");
+        }
+    }
+
+    public void BossAttacked(float duration, int amount)
+    {
+        if (!isAttacked)
+        {
+            // Final boss flashes white
+            sr.material = whiteMaterial;
+            isAttacked = true;
+            bossHP -= amount;
+            attackedTime = duration;
         }
     }
 }

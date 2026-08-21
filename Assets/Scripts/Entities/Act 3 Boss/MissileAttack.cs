@@ -36,9 +36,9 @@ public class MissileAttack : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
-    {
-        //Missile keep flying at its forward direction
-        rb.linearVelocity = transform.right * missileSpeed;
-    }
+    //private void FixedUpdate()
+    //{
+    //    //Missile keep flying at its forward direction
+    //    rb.linearVelocity = transform.right * missileSpeed;
+    //}
 }
