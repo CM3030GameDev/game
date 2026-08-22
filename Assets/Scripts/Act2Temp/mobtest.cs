@@ -20,7 +20,7 @@ public class mobtest : MonoBehaviour
     private int killCount = 0;
 
     [Header("MinMax spawn distance")]
-    [SerializeField] private float minSpawnDistance = 18f; // Must be larger than half your screen width
+    [SerializeField] private float minSpawnDistance = 18f;
     [SerializeField] private float maxSpawnDistance = 20f;
 
     [Header("Prefab Mapping")]
