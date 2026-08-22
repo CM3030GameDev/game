@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Mob : MonoBehaviour
 {
@@ -7,18 +8,11 @@ public class Mob : MonoBehaviour
     private SpriteRenderer sr;
     private Animator animator;
     private GameObject character;
-    //Enemy HP
-    private int enemyHP;
+
     //Vector direction towards player
     private Vector2 chaseDirection;
     //Normalized vector direction towards player
     private Vector2 normalizedChase;
-    //Blue mob (Combat mob)
-    private bool isBlue;
-    //Red mob (Range mob)
-    private bool isRed;
-    //Green mob (Elite mob)
-    private bool isGreen;
     //Death state
     private bool death;
     //Attacked state
@@ -30,18 +24,16 @@ public class Mob : MonoBehaviour
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
-    [SerializeField] private RuntimeAnimatorController blueMob;
-    [SerializeField] private RuntimeAnimatorController redMob;
-    [SerializeField] private RuntimeAnimatorController greenMob;
-    [SerializeField] private CharacterStats characterStats;
-    [SerializeField] private EnemySystem enemySystem;
-    [SerializeField] private SceneState sceneState;
+
+    [SerializeField] private int maxHP = 100;
+    private int currentHP;
     [SerializeField] private float chaseSpeed = 5f;
     [SerializeField] private GameObject expOrbPrefab;
     [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
 
+    public UnityEvent onDeath;
     private void Awake()
     {
         death = false;
@@ -63,80 +55,9 @@ public class Mob : MonoBehaviour
 
     private void OnEnable()
     {
-        isBlue = false;
-        isRed = false;
-        isGreen = false;
         isAttacked = false;
         death = false;
-
-        //Types of enemy mobs for act 1
-        if(sceneState.act == 1)
-        {
-            if (!enemySystem.enemySpawn)
-            {
-                isBlue = true;
-            }
-            else
-            {
-                float randomNum = Random.Range(0f, 1f);
-                if(randomNum < 0.5f)
-                {
-                    isBlue = true;
-                }
-                else
-                {
-                    isRed = true;
-                }
-            }
-        }
-        //Types of enemy mobs for act 2
-        else
-        {
-            if (!enemySystem.enemySpawn)
-            {
-                float randomNum = Random.Range(0f, 3f);
-                if (randomNum < 1f)
-                {
-                    isBlue = true;
-                }
-                else if(randomNum < 2f)
-                {
-                    isRed = true;
-                }
-                else
-                {
-                    isGreen = true;
-                }
-            }
-            else
-            {
-                float randomNum = Random.Range(0f, 1f);
-                if (randomNum < 0.4f)
-                {
-                    isRed = true;
-                }
-                else
-                {
-                    isGreen = true;
-                }
-            }
-        }
-
-        if (isBlue)
-        {
-            animator.runtimeAnimatorController = blueMob;
-            enemyHP = 100;
-        }
-        else if (isRed)
-        {
-            animator.runtimeAnimatorController = redMob;
-            enemyHP = 50;
-        }
-        else if (isGreen)
-        {
-            animator.runtimeAnimatorController = greenMob;
-            enemyHP = 100;
-        }
+        currentHP = maxHP;
     }
 
     // Update is called once per frame
@@ -166,14 +87,14 @@ public class Mob : MonoBehaviour
         }
 
         //Enemy dead
-        if (enemyHP <= 0 && !death)
+        if (currentHP <= 0 && !death)
         {
             animator.SetTrigger("dead");
             death = true;
 
             Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
-        
+
         // Debuff timer that ticks down
         if (debuffTimer > 0f)
         {
@@ -192,7 +113,7 @@ public class Mob : MonoBehaviour
         }
 
         // Account for death of mob
-        enemySystem.enemyLeft--;
+        onDeath?.Invoke();
 
         //Return to pool
         gameObject.SetActive(false);
@@ -201,7 +122,7 @@ public class Mob : MonoBehaviour
     private void FixedUpdate()
     {
         //Enemy alive
-        if (enemyHP > 0)
+        if (currentHP > 0)
         {
             Vector2 chase = normalizedChase;
             Vector2 separation = GetSeparation() * separationStrength;
@@ -218,7 +139,7 @@ public class Mob : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Character"))
+        if (collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
             character.CharacterAttacked(10);
@@ -231,7 +152,7 @@ public class Mob : MonoBehaviour
             isAttacked = true;
             attackedTime = 0f;
             attackedDuration = 0.2f;
-            enemyHP -= 20;
+            currentHP -= 20;
         }
     }
 
@@ -250,7 +171,7 @@ public class Mob : MonoBehaviour
             isAttacked = true;
             attackedTime = 0f;
             attackedDuration = 0.2f;
-            enemyHP -= 20;
+            currentHP -= 20;
         }
     }
 
@@ -263,7 +184,7 @@ public class Mob : MonoBehaviour
             isAttacked = true;
             attackedTime = 0f;
             attackedDuration = 0.4f;
-            enemyHP -= 5;
+            currentHP -= 5;
         }
     }
 
@@ -276,7 +197,7 @@ public class Mob : MonoBehaviour
             isAttacked = true;
             attackedTime = 0f;
             attackedDuration = timer;
-            enemyHP -= amount;
+            currentHP -= amount;
         }
     }
 

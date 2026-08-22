@@ -237,9 +237,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Minion
   anim: {fileID: 4493481254761712578}
   warningBox: {fileID: 245365229778648271}
-  growthSpeed: 20
-  maxLength: 35
-  moveSpeed: 20
+  growthSpeed: 25
+  maxLength: 55
+  moveSpeed: 25
 --- !u!95 &4493481254761712578
 Animator:
   serializedVersion: 7

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class mobtest : MonoBehaviour
+public class MobManager : MonoBehaviour
 {
     [System.Serializable]
     public struct EnemySetup
@@ -36,7 +36,7 @@ public class mobtest : MonoBehaviour
         BLUEMOB,
         GREENMOB
     }
-    public static mobtest Instance { get; private set; }
+    public static MobManager Instance { get; private set; }
 
     private void Awake()
     {
@@ -61,7 +61,7 @@ public class mobtest : MonoBehaviour
             for (int i = 0; i < enemySetup.poolAmount; i++)
             {
                 GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
-                tempEnemy.GetComponent<MobTemp>().onDeath.AddListener(UpdateKillCount);
+                tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
                 tempEnemy.SetActive(false);
                 tempGameObjectList.Add(tempEnemy);
             }
@@ -189,7 +189,7 @@ public class mobtest : MonoBehaviour
             {
                 if (mob.activeSelf)
                 {
-                    mob.GetComponent<MobTemp>().Despawn();
+                    mob.GetComponent<Mob>().Despawn();
                 }
             }
         }
@@ -201,11 +201,11 @@ public class mobtest : MonoBehaviour
     /// <returns>true if all mobs are dead</returns>
     public bool AreAllMobsDead()
     {
-        foreach(KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
         {
-            foreach(GameObject mob  in pool.Value)
+            foreach (GameObject mob in pool.Value)
             {
-                if(mob.activeSelf)
+                if (mob.activeSelf)
                 {
                     return false;
                 }
@@ -227,9 +227,17 @@ public class mobtest : MonoBehaviour
         return killCount;
     }
 
-    public void SpawnBoss(EnemyTypes enemyType, Transform location)
+    public List<GameObject> GetAllPooledEnemies()
     {
-
+        List<GameObject> allEnemies = new List<GameObject>();
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
+        {
+            foreach (GameObject mob in pool.Value)
+            {
+                allEnemies.Add(mob);
+            }
+        }
+        return allEnemies;
     }
 }
 
@@ -237,5 +245,3 @@ public class mobtest : MonoBehaviour
 //Spawner only works if the ground has a collider. isTrigger is fine.
 //Currently only works if raycast hits a Ground layermask.
 //If need more, change variable to a list instead.
-
-//DO SPAWNER FOR BOSSES

@@ -945,6 +945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Swing
   companionSprite: {fileID: 1053428093}
   character: {fileID: 563307489}
+  mobs: {fileID: 990748258}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   detectionRange: 5
 --- !u!61 &209576884
@@ -1432,37 +1433,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 301822270}
   m_CullTransparentMesh: 1
---- !u!1 &307463924
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 307463925}
-  m_Layer: 0
-  m_Name: FPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &307463925
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 307463924}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.79, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1774522524}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &330313053
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,7 +2354,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 549030719}
-  - component: {fileID: 549030720}
+  - component: {fileID: 549030718}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -2392,22 +2362,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &549030719
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 549030717}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.80823, y: 29.49585, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &549030720
+--- !u!114 &549030718
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2416,9 +2371,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 549030717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3766505a015689e4db6fe80e429cc601, type: 3}
+  m_Script: {fileID: 11500000, guid: 24fe2ae820a255344b01c593fe8f7ada, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MobSpawner
+  m_EditorClassIdentifier: Assembly-CSharp::mobtest
   playerTransform: {fileID: 563307496}
   groundLayer:
     serializedVersion: 2
@@ -2436,6 +2391,21 @@ MonoBehaviour:
   - type: 3
     prefab: {fileID: 472388623571961445, guid: 18db34f16934f674bbca7e62bdc916a2, type: 3}
     poolAmount: 5
+--- !u!4 &549030719
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 549030717}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -16.80823, y: 29.49585, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &563307489
 GameObject:
   m_ObjectHideFlags: 0
@@ -2679,37 +2649,6 @@ Transform:
   - {fileID: 1796898359}
   - {fileID: 2116913639}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &579152313
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 579152314}
-  m_Layer: 0
-  m_Name: RPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &579152314
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 579152313}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 3.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1774522524}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &586993340
 GameObject:
@@ -3723,7 +3662,7 @@ GameObject:
   m_Component:
   - component: {fileID: 783878869}
   m_Layer: 0
-  m_Name: LPoint
+  m_Name: aa
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3738,7 +3677,7 @@ Transform:
   m_GameObject: {fileID: 783878868}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 3.14, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4376,6 +4315,7 @@ MonoBehaviour:
   companionSprite: {fileID: 2069242547}
   fire: {fileID: 746538288}
   character: {fileID: 563307489}
+  mobs: {fileID: 990748258}
   detectionRange: 6
 --- !u!212 &1108369532
 SpriteRenderer:
@@ -6511,7 +6451,7 @@ GameObject:
   - component: {fileID: 1774522528}
   m_Layer: 0
   m_Name: Cyclops
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6589,9 +6529,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 783878869}
-  - {fileID: 579152314}
-  - {fileID: 1955421123}
-  - {fileID: 307463925}
   - {fileID: 1842583510}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6614,7 +6551,7 @@ MonoBehaviour:
   numberOfMinions: 8
   gridSpacing: 5
   spawnInterval: 0.5
-  maxPassiveCooldown: 3
+  maxPassiveCooldown: 1
   maxNormalStateTimer: 5
   maxAgitatedStateTimer: 5
   maxIdleDuration: 2
@@ -6677,10 +6614,6 @@ MonoBehaviour:
   beamAttackAnimName: BeamAttack
   attackSpeedParam: AttackSpeed
   AttackSpeed: 1
-  leftPoint: {fileID: 783878869}
-  rightPoint: {fileID: 579152314}
-  backPoint: {fileID: 1955421123}
-  frontPoint: {fileID: 307463925}
 --- !u!95 &1774522528
 Animator:
   serializedVersion: 7
@@ -6739,6 +6672,7 @@ MonoBehaviour:
   pistol: {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
   bulletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
+  mobs: {fileID: 990748258}
   bulletSpeed: 50
   detectionRange: 15
 --- !u!212 &1796898358
@@ -7330,37 +7264,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1910902428}
   m_CullTransparentMesh: 1
---- !u!1 &1955421122
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1955421123}
-  m_Layer: 0
-  m_Name: BPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1955421123
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1955421122}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1774522524}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995946665
 GameObject:
   m_ObjectHideFlags: 0

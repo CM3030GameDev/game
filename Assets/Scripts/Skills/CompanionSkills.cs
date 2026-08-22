@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class CompanionSkills : MonoBehaviour
 {
@@ -7,7 +8,6 @@ public class CompanionSkills : MonoBehaviour
     [SerializeField] private Character character;
     [SerializeField] private Transform mercenary;
     [SerializeField] private Transform swordsman;
-    [SerializeField] private Mobs mobs;
 
     [Header("Mercenary: Fire Floor")]
     [SerializeField] private GameObject fireFloorPrefab;
@@ -25,6 +25,8 @@ public class CompanionSkills : MonoBehaviour
 
     public bool MercReady => mercTimer <= 0f;
     public bool SwordReady => swordTimer <= 0f;
+
+    private List<GameObject> allEnemies = MobManager.Instance.GetAllPooledEnemies();
 
     private void Update()
     {
@@ -79,12 +81,12 @@ public class CompanionSkills : MonoBehaviour
         Vector2 best = transform.position;
         int bestCount = -1;
 
-        foreach (var e in mobs.enemies)
+        foreach (var e in allEnemies)
         {
             if (!e.activeInHierarchy) continue;
 
             int count = 0;
-            foreach (var other in mobs.enemies)
+            foreach (var other in allEnemies)
             {
                 if (!other.activeInHierarchy) continue;
                 if (Vector2.Distance(e.transform.position, other.transform.position) < 3f)

@@ -193,11 +193,19 @@ public class Act2Miniboss : MonoBehaviour
                 break;
         }
 
-        string animationName = dir + action; // e.g. "L" + "Walk" = "LWalk"
-        if (animationName == prevAnim) return;
+        string stateName = dir + action;
 
-        animator.Play(animationName);
-        prevAnim = animationName;
+        // Check the Animator's ACTUAL current state, not a cached guess
+        if (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
+            return;
+
+        animator.Play(stateName);
+
+        /*        string animationName = dir + action; // e.g. "L" + "Walk" = "LWalk"
+                if (animationName == prevAnim) return;
+
+                animator.Play(animationName);
+                prevAnim = animationName;*/
     }
 
     private void HandleNormalState()
@@ -283,6 +291,9 @@ public class Act2Miniboss : MonoBehaviour
     {
         currentIdleDuration -= Time.deltaTime;
 
+/*        //resetbeam
+        hasStartedBeam = false;*/
+
         if(currentIdleDuration <= 0f)
         {
             currentState = stateAfterIdle;
@@ -292,19 +303,30 @@ public class Act2Miniboss : MonoBehaviour
 
     private float maxtemptimer = 5f;
     private float temptimer = 0f;
+    private bool hasStartedBeam = false;
+
     private void HandleBeamState()
     {
         isSecondNormal = false;
         hasBeamed = true;
 
-        if(beamAttack.GetIsFiring() == false)
-            beamAttack.EnableBeamAttack();
-
-        if(beamAttack.GetHasFired() == true)
+        if (!hasStartedBeam)
         {
+            hasStartedBeam = true;
+
+            string dir = currentDirection == FacingDirection.FRONT ? "F"
+                       : currentDirection == FacingDirection.BACK ? "B"
+                       : currentDirection == FacingDirection.LEFT ? "L" : "R";
+
+            beamAttack.EnableBeamAttack(dir);
+            return; // don't check GetBeamEnd on the same frame we just started it
+        }
+
+        if (beamAttack.GetBeamEnd())
+        {
+            hasStartedBeam = false; // <-- THIS is what was missing. Resets it for next time.
             StartIdleState(BossState.NORMAL);
-        }    
-            
+        }
     }
 
     private void HandleUltimateState()
