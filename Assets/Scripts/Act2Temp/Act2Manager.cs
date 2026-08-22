@@ -34,6 +34,18 @@ public class Act2Manager : MonoBehaviour
         DialogueManager.Instance.StartDialogue(actStartDialogue);
         DialogueManager.Instance.onDialogueEnd.AddListener(SpawnMobs);
 
+        generator.onGeneratorShieldDown.AddListener(OnGeneratorShieldDown);
+        generator.onGeneratorDown.AddListener(OnGeneratorDown);
+
+    }
+
+    private void OnDestroy()
+    {
+        if (generator != null)
+        {
+            generator.onGeneratorShieldDown.RemoveListener(OnGeneratorShieldDown);
+            generator.onGeneratorDown.RemoveListener(OnGeneratorDown);
+        }
     }
 
     // Update is called once per frame
@@ -47,9 +59,9 @@ public class Act2Manager : MonoBehaviour
             isBossSpawned = true;
         }*/
 
-        if(state == CurrentState.MOBHUNTING && mobtest.Instance.GetKillCount() > 3)
+        if(state == CurrentState.MOBHUNTING && mobtest.Instance.GetKillCount() >= 2)
         {
-            mobtest.Instance.StopSpawnCoroutine("mobhunting");
+            mobtest.Instance.StopAllSpawnCoroutines();
             //state = CurrentState.BOSSFIGHT;
             //no boss yet, skip to generator
             state = CurrentState.GENERATOR;
@@ -67,7 +79,8 @@ public class Act2Manager : MonoBehaviour
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(SpawnMobs);
         state = CurrentState.MOBHUNTING;
-        mobtest.Instance.AddSpawnCoroutine("mobbhunting", 1f, mobtest.EnemyTypes.AAA);
+        mobtest.Instance.AddSpawnCoroutine("mobhunting1", 1f, mobtest.EnemyTypes.REDMOB, null, 1);
+        mobtest.Instance.AddSpawnCoroutine("mobhunting2", 1f, mobtest.EnemyTypes.BLUEMOB, null, 1);
     }
     private void SpawnBoss()
     {
@@ -84,21 +97,23 @@ public class Act2Manager : MonoBehaviour
     {
         generator.SetIsOverdrive(true);
         state = CurrentState.GENERATOR;
-        mobtest.Instance.AddSpawnCoroutine("generatorMobs", 1f, mobtest.EnemyTypes.AAA);
+        mobtest.Instance.AddSpawnCoroutine("generatorMobs1", 1f, mobtest.EnemyTypes.REDMOB);
+        mobtest.Instance.AddSpawnCoroutine("generatorMobs2", 3f, mobtest.EnemyTypes.BLUEMOB);
+        mobtest.Instance.AddSpawnCoroutine("generatorMobs3", 6f, mobtest.EnemyTypes.GREENMOB);
         DialogueManager.Instance.StartDialogue(generatorStartDialogue);
     }
 
     public void OnGeneratorShieldDown()
     {
         DialogueManager.Instance.StartDialogue(generatorDepletedDialogue);
-        mobtest.Instance.StopSpawnCoroutine("generatorMobs");
         mobtest.Instance.StopAllSpawnCoroutines();
     }
 
     //maybe no shield, just let the energy deplete then self destruct, disabling(killing) all mobs alive
     public void OnGeneratorDown()
     {
-        DialogueManager.Instance.StartDialogue(generatorDestroyedDialogue);   
+        DialogueManager.Instance.StartDialogue(generatorDestroyedDialogue);
+        mobtest.Instance.instantKillAllActive();
         state = CurrentState.END;
     }
 }

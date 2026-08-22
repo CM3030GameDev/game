@@ -20,7 +20,7 @@ public class mobtest : MonoBehaviour
     private int killCount = 0;
 
     [Header("MinMax spawn distance")]
-    [SerializeField] private float minSpawnDistance = 18f; // Must be larger than half your screen width
+    [SerializeField] private float minSpawnDistance = 18f;
     [SerializeField] private float maxSpawnDistance = 20f;
 
     [Header("Prefab Mapping")]
@@ -32,9 +32,9 @@ public class mobtest : MonoBehaviour
     public enum EnemyTypes
     {
         None,
-        AAA,
-        BBB,
-        CCC
+        REDMOB,
+        BLUEMOB,
+        GREENMOB
     }
     public static mobtest Instance { get; private set; }
 
@@ -55,12 +55,13 @@ public class mobtest : MonoBehaviour
     private void Start()
     {
         //Initialising the object pool
-        foreach(EnemySetup enemySetup in enemyPoolConfig)
+        foreach (EnemySetup enemySetup in enemyPoolConfig)
         {
             List<GameObject> tempGameObjectList = new List<GameObject>();
-            for(int i = 0; i < enemySetup.poolAmount; i++)
+            for (int i = 0; i < enemySetup.poolAmount; i++)
             {
-                GameObject tempEnemy = Instantiate(enemySetup.prefab);
+                GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
+                tempEnemy.GetComponent<MobTemp>().onDeath.AddListener(UpdateKillCount);
                 tempEnemy.SetActive(false);
                 tempGameObjectList.Add(tempEnemy);
             }
@@ -72,18 +73,6 @@ public class mobtest : MonoBehaviour
         //addCoroutine("aa", 1f, EnemyTypes.AAA);
         //addCoroutine("bb", 5f, EnemyTypes.BBB);
     }
-    
-    /// <summary>
-    /// Use this function to start a coroutine that constantly spawns mobs until you tell it to stop.
-    /// </summary>
-    /// <param name="coroutineName">Name of the coroutine. Make sure it's unique.</param>
-    /// <param name="delay">The time between each mob spawnning. Lower delay=faster spawning</param>
-    /// <param name="types">Enum of enemy type.</param>
-    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types)
-    {
-        Coroutine c = StartCoroutine(ConstantSpawnLoop(delay, types));
-        coroutines.Add(coroutineName, c);
-    }
 
     /// <summary>
     /// Use this function to start a coroutine that constantly spawns mobs until you tell it to stop.
@@ -92,10 +81,12 @@ public class mobtest : MonoBehaviour
     /// <param name="delay">The time between each mob spawnning. Lower delay=faster spawning</param>
     /// <param name="types">Enum of enemy type.</param>
     /// <param name="location">The Transform of the location you want the mobs to spawn from.</param>
-    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, Transform location)
+    /// <param name="spawnAmount">The number of enemies to spawn</param>
+    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, Transform location = null, int spawnAmount = -1)
     {
-        Coroutine c = StartCoroutine(ConstantSpawnLoop(delay, types, location));
+        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, location, spawnAmount));
         coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
     }
 
     /// <summary>
@@ -126,32 +117,22 @@ public class mobtest : MonoBehaviour
         Debug.Log("All spawners have been stopped.");
     }
 
-    private IEnumerator ConstantSpawnLoop(float delayBetweenSpawns, EnemyTypes types)
+    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, Transform location = null, int spawnAmount = -1)
     {
-        while (true)
-        {
-            GameObject availableEnemy = FindAvaliableEnemyOfType(types);
-            if (availableEnemy != null)
-            {
-                SpawnEnemy(availableEnemy);
-            }
-
-            yield return new WaitForSeconds(delayBetweenSpawns);
-        }
-    }
-
-    private IEnumerator ConstantSpawnLoop(float delayBetweenSpawns, EnemyTypes types, Transform location)
-    {
-        while (true)
+        int spawnedCount = 0;
+        while (spawnAmount < 0 || spawnedCount < spawnAmount)
         {
             GameObject availableEnemy = FindAvaliableEnemyOfType(types);
             if (availableEnemy != null)
             {
                 SpawnEnemy(availableEnemy, location);
+                spawnedCount++;
             }
 
             yield return new WaitForSeconds(delayBetweenSpawns);
         }
+        coroutines.Remove(coroutineName);
+        Debug.Log(coroutineName + " has been removed");
     }
 
     private GameObject FindAvaliableEnemyOfType(EnemyTypes types)
@@ -166,12 +147,24 @@ public class mobtest : MonoBehaviour
         }
         return null;
     }
-    void SpawnEnemy(GameObject enemyToSpawn)
+
+    private void SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
     {
-        Vector2 randomDirection = Random.insideUnitCircle.normalized;
-        float randomDistance = Random.Range(minSpawnDistance, maxSpawnDistance);
-        float targetX = playerTransform.position.x + (randomDirection.x * randomDistance);
-        float targetY = playerTransform.position.y + (randomDirection.y * randomDistance);
+        float targetX;
+        float targetY;
+
+        if (location != null)
+        {
+            targetX = location.position.x;
+            targetY = location.position.y;
+        }
+        else
+        {
+            Vector2 randomDirection = Random.insideUnitCircle.normalized;
+            float randomDistance = Random.Range(minSpawnDistance, maxSpawnDistance);
+            targetX = playerTransform.position.x + (randomDirection.x * randomDistance);
+            targetY = playerTransform.position.y + (randomDirection.y * randomDistance);
+        }
 
         Vector3 raycastStartPos = new Vector3(targetX, targetY, -5f);
 
@@ -188,23 +181,17 @@ public class mobtest : MonoBehaviour
         }
     }
 
-    void SpawnEnemy(GameObject enemyToSpawn, Transform location)
+    public void instantKillAllActive()
     {
-        float targetX = location.position.x;
-        float targetY = location.position.y;
-
-        Vector3 raycastStartPos = new Vector3(targetX, targetY, -5f);
-
-        RaycastHit2D hit = Physics2D.GetRayIntersection(new Ray(raycastStartPos, Vector3.forward), 10f, groundLayer);
-
-        if (hit.collider != null)
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
         {
-            enemyToSpawn.transform.position = new Vector3(targetX, targetY, 0f);
-            enemyToSpawn.SetActive(true);
-        }
-        else
-        {
-            Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
+            foreach (GameObject mob in pool.Value)
+            {
+                if (mob.activeSelf)
+                {
+                    mob.GetComponent<MobTemp>().Despawn();
+                }
+            }
         }
     }
 
