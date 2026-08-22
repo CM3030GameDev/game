@@ -24,6 +24,9 @@ public class Mob : MonoBehaviour
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
+    // Knockback (from shotgun etc.)
+    private Vector2 knockbackVelocity;
+    private float knockbackTimer;
 
     [SerializeField] private int maxHP = 100;
     private int currentHP;
@@ -58,6 +61,7 @@ public class Mob : MonoBehaviour
         isAttacked = false;
         death = false;
         currentHP = maxHP;
+        knockbackTimer = 0f;
     }
 
     // Update is called once per frame
@@ -124,11 +128,20 @@ public class Mob : MonoBehaviour
         //Enemy alive
         if (currentHP > 0)
         {
-            Vector2 chase = normalizedChase;
-            Vector2 separation = GetSeparation() * separationStrength;
-            Vector2 move = (chase + separation).normalized;
+            if (knockbackTimer > 0f)
+            {
+                // Knockback to counteract normal movement while active
+                knockbackTimer -= Time.fixedDeltaTime;
+                rb.linearVelocity = knockbackVelocity;
+            }
+            else
+            {
+                Vector2 chase = normalizedChase;
+                Vector2 separation = GetSeparation() * separationStrength;
+                Vector2 move = (chase + separation).normalized;
 
-            rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+                rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+            }
         }
         //Enemy dead
         else
@@ -205,6 +218,12 @@ public class Mob : MonoBehaviour
     {
         speedMultiplier = multiplier;
         debuffTimer = Mathf.Max(debuffTimer, duration);
+    }
+
+    public void Knockback(Vector2 direction, float force)
+    {
+        knockbackVelocity = direction.normalized * force;
+        knockbackTimer = 0.15f;
     }
 
     private Vector2 GetSeparation()
