@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Pistol : MonoBehaviour
@@ -15,9 +16,10 @@ public class Pistol : MonoBehaviour
     [SerializeField] private Sprite pistol;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private CharacterStats characterStats;
-    [SerializeField] private Mobs mobs;
     [SerializeField] private float bulletSpeed = 50f;
     [SerializeField] private float detectionRange = 20f;
+
+    private List<GameObject> allEnemies;
 
     private void Awake()
     {
@@ -32,7 +34,7 @@ public class Pistol : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        allEnemies = MobManager.Instance.GetAllPooledEnemies();
     }
 
     // Update is called once per frame
@@ -145,7 +147,7 @@ public class Pistol : MonoBehaviour
         GameObject nearestEnemy = null;
         float nearestDistance = detectionRange;
 
-        foreach (GameObject enemy in mobs.enemies)
+        foreach (GameObject enemy in allEnemies)
         {
             if (!enemy.activeInHierarchy)
             {
