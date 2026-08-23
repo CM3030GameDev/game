@@ -20,7 +20,7 @@ public class BeamAttack : MonoBehaviour
         if (hit)
         {
             //Beam stops before pillar
-            transform.localScale = new Vector3(hit.distance, 2f, 1f);
+            transform.localScale = new Vector3(hit.distance + 5f, 2f, 1f);
         }
         //Beam is not hitting pillar
         else
@@ -32,7 +32,7 @@ public class BeamAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Character"))
+        if(collision.CompareTag("Character") && !character.isAttacked)
         {
             character.CharacterAttacked(50);
             character.GrantInvulnerability(2f);
@@ -41,7 +41,7 @@ public class BeamAttack : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Character"))
+        if (collision.gameObject.CompareTag("Character") && !character.isAttacked)
         {
             character.CharacterAttacked(50);
             character.GrantInvulnerability(2f);

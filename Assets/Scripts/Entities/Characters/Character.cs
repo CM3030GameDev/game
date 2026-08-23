@@ -11,11 +11,7 @@ public class Character : MonoBehaviour
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
-    private bool isAttacked;
-    //Attacked state timer
-    private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
+    public bool isAttacked;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -26,8 +22,6 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         isAttacked = false;
-        attackedTime = 1f;
-        attackedDuration = 0.1f;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -42,18 +36,16 @@ public class Character : MonoBehaviour
         Movement();
         Sprite();
 
-        attackedTime += Time.deltaTime;
-
-        //Character can be attacked again
-        if (attackedTime >= attackedDuration)
-        {
-            isAttacked = false;
-            animator.SetBool("attacked", false);
-        }
-
+        //Character cannot be attacked
         if (invulnTimer > 0f)
         {
             invulnTimer -= Time.deltaTime;
+        }
+        //Character can be attacked again
+        else
+        {
+            isAttacked = false;
+            animator.SetBool("attacked", false);
         }
     }
 
@@ -98,14 +90,10 @@ public class Character : MonoBehaviour
     {
         if (IsInvulnerable) return;
 
-        if (!isAttacked)
-        {
-            // Play attacked animation of character
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            cs.health -= amount;
-        }
+        // Play attacked animation of character
+        animator.SetBool("attacked", true);
+        isAttacked = false;
+        cs.health -= amount;
     }
 
     public void GrantInvulnerability(float duration)

@@ -24,7 +24,6 @@ public class MobDeath : StateMachineBehaviour
     {
         animator.gameObject.SetActive(false);
         enemySystem.enemyLeft -= 1;
-        characterStats.expPoint += 5;
 
         // Spawn exp orb on death
         if (expOrbPrefab != null)

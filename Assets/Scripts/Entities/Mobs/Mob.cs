@@ -221,6 +221,7 @@ public class Mob : MonoBehaviour
         {
             Character character = collision.gameObject.GetComponent<Character>();
             character.CharacterAttacked(10);
+            character.GrantInvulnerability(0.1f);
         }
 
         if (collision.gameObject.CompareTag("Sword") && !isAttacked)

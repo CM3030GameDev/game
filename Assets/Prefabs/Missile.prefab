@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2550859374262467089}
   - component: {fileID: 7521500125773281564}
   - component: {fileID: 5045913036276297356}
-  - component: {fileID: 1620123788365514220}
+  - component: {fileID: 730469909668879025}
   - component: {fileID: -1861612075077562512}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: Missile
   m_TagString: Missile
   m_Icon: {fileID: 0}
@@ -90,7 +90,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.125, y: 0.875}
+  m_Size: {x: 1.0625, y: 0.4375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -144,7 +144,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!61 &1620123788365514220
+--- !u!61 &730469909668879025
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -182,13 +182,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.125, y: 0.875}
-    newSize: {x: 2.125, y: 0.875}
+    oldSize: {x: 1.0625, y: 0.4375}
+    newSize: {x: 1.0625, y: 0.4375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.125, y: 0.875}
+  m_Size: {x: 1.0625, y: 0.4375}
   m_EdgeRadius: 0
 --- !u!114 &-1861612075077562512
 MonoBehaviour:
@@ -202,5 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06dbf78a62beac44a00d927878fba68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileAttack
-  missileSpeed: 20
+  missileSpeedMin: 4
+  missileSpeedMax: 6
   rotateSpeed: 5

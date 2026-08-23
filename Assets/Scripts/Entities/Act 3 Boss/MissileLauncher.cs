@@ -30,9 +30,11 @@ public class MissileLauncher : MonoBehaviour
         }
 
         //If player is far away from boss, use homing missile attack
-        if(Vector2.Distance(character.transform.position, transform.position) > 30f && missileInterval <= 0f & !finalBoss.attacking)
+        if (Vector2.Distance(character.transform.position, transform.position) > 30f && missileInterval <= 0f && !missileAttack)
         {
-            finalBoss.attacking = true;
+            missileAttack = true;
+
+            //finalBoss.attacking = true;
             missileInterval = 10f;
 
             //Direction vector from left missile launcher to player
