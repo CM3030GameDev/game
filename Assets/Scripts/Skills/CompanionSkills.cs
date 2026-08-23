@@ -26,7 +26,12 @@ public class CompanionSkills : MonoBehaviour
     public bool MercReady => mercTimer <= 0f;
     public bool SwordReady => swordTimer <= 0f;
 
-    private List<GameObject> allEnemies = MobManager.Instance.GetAllPooledEnemies();
+    private List<GameObject> allEnemies;
+
+    private void Start()
+    {
+        allEnemies = MobManager.Instance.GetAllPooledEnemies();
+    }
 
     private void Update()
     {

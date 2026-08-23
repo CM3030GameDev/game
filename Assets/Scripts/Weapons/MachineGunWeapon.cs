@@ -11,7 +11,7 @@ public class MachineGunWeapon : SecondaryWeapon
     {
         if (Time.timeScale == 0f) return;
 
-        angle += Stats.valueB * Time.deltaTime;   // valueB = rotation speed
+        angle += Stats.valueB * Time.deltaTime;
         if (angle >= 360f) angle -= 360f;
 
         timer += Time.deltaTime;

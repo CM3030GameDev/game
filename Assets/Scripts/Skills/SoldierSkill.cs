@@ -13,13 +13,18 @@ public class SoldierSkill : MonoBehaviour
     [SerializeField] private float strikeInterval = 0.8f;  // Delay between each airstrike
     [SerializeField] private float scatter = 0.8f;   // RandomOffset for each airstrike
 
-    private List<GameObject> allEnemies = MobManager.Instance.GetAllPooledEnemies();
+    private List<GameObject> allEnemies;
 
     private float cooldownTimer;
 
     public bool IsReady => cooldownTimer <= 0f;
     public float CooldownRemaining => Mathf.Max(0f, cooldownTimer);
     public float CooldownDuration => cooldown;
+
+    private void Start()
+    {
+        allEnemies = MobManager.Instance.GetAllPooledEnemies();
+    }
 
     private void Update()
     {

@@ -3,7 +3,6 @@ using UnityEngine;
 public abstract class SecondaryWeapon : MonoBehaviour
 {
     protected SecondaryWeaponData data;
-    protected Mobs mobs;
     protected PlayerAim playerAim;
     protected int level = 1;
     protected float timer;
@@ -14,9 +13,9 @@ public abstract class SecondaryWeapon : MonoBehaviour
     public int Level => level;
     public bool IsMaxLevel => level >= data.MaxLevel;
 
-    public void Init(SecondaryWeaponData d, Mobs m, PlayerAim aim)
+    public void Init(SecondaryWeaponData d, PlayerAim aim)
     {
-        data = d; mobs = m; playerAim = aim; level = 1;
+        data = d; playerAim = aim; level = 1;
         OnInit();
     }
 
@@ -47,7 +46,7 @@ public abstract class SecondaryWeapon : MonoBehaviour
     {
         GameObject nearest = null;
         float nearestDist = Stats.range;
-        foreach (var e in mobs.enemies)
+        foreach (var e in MobManager.Instance.GetAllPooledEnemies())
         {
             if (!e.activeInHierarchy) continue;
             float d = Vector2.Distance(transform.position, e.transform.position);

@@ -8,10 +8,10 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifetime = 2f;
 
     private int hitsRemaining;
+    private float knockbackForce;
 
     private void Awake() { hitsRemaining = pierceCount; }
     private void Start() { Destroy(gameObject, lifetime); }
-    private float knockbackForce;
 
     public void SetDamage(int d) { damage = d; }
     public void SetKnockback(float force) => knockbackForce = force;
@@ -21,11 +21,15 @@ public class Bullet : MonoBehaviour
         if (!other.CompareTag("Enemy")) return;
 
         Mob mob = other.GetComponent<Mob>();
-        if (mob != null) mob.MobAttacked(damage, hitFlash);
-        if (knockbackForce > 0f)
+        if (mob != null)
         {
-            Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
-            mob.Knockback(dir, knockbackForce);
+            mob.MobAttacked(damage, hitFlash);
+
+            if (knockbackForce > 0f)
+            {
+                Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+                mob.Knockback(dir, knockbackForce);
+            }
         }
 
         hitsRemaining--;
