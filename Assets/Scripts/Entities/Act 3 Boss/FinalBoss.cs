@@ -8,10 +8,10 @@ public class FinalBoss : MonoBehaviour
     private Character character;
     //Attacked state
     private bool isAttacked;
+    //Invulnerable timer
+    private float invulnTime;
     //Reflect state
     public bool isReflect;
-    //Attacked state timer
-    private float attackedTime;
     //Barrier timer
     private float barrierTime;
     //Death state
@@ -74,9 +74,9 @@ public class FinalBoss : MonoBehaviour
         }
 
         //Boss cannot be attacked
-        if (attackedTime > 0)
+        if (invulnTime > 0)
         {
-            attackedTime -= Time.deltaTime;
+            invulnTime -= Time.deltaTime;
         }
         //Boss can be attacked
         else
@@ -192,7 +192,7 @@ public class FinalBoss : MonoBehaviour
             sr.material = whiteMaterial;
             isAttacked = true;
             bossHP -= amount;
-            attackedTime = duration;
+            invulnTime = duration;
         }
     }
 

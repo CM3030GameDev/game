@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -2768876274350338680}
   m_Layer: 7
   m_Name: GreenMob
-  m_TagString: Enemy
+  m_TagString: Mobs
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -160,7 +160,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6666666, y: 2.3333333}
+    oldSize: {x: 1, y: 1.4}
     newSize: {x: 2, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

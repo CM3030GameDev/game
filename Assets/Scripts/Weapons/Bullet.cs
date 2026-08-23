@@ -19,15 +19,35 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Enemy")) return;
-
-        Mob mob = other.GetComponent<Mob>();
-        if (mob != null) mob.MobAttacked(damage, hitFlash);
-        if (knockbackForce > 0f)
+        //Mob collision
+        if(other.CompareTag("Mobs"))
         {
-            Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
-            mob.Knockback(dir, knockbackForce);
+            Mob mob = other.GetComponent<Mob>();
+            if (mob != null) mob.MobAttacked(damage, hitFlash);
+            if (knockbackForce > 0f)
+            {
+                Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+                mob.Knockback(dir, knockbackForce);
+            }
         }
+        //Final boss collision
+        else if(other.CompareTag("FinalBoss"))
+        {
+            FinalBoss finalBoss = other.GetComponent<FinalBoss>();
+            if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
+        }
+        //Character collision (Final boss barrier reflected bullet)
+        else if (other.CompareTag("Character"))
+        {
+            Character character = other.GetComponent<Character>();
+            character.CharacterAttacked(damage);
+            character.GrantInvulnerability(hitFlash);
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
+        }
+
         hitsRemaining--;
         if (hitsRemaining <= 0) Destroy(gameObject);
     }

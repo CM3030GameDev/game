@@ -17,6 +17,8 @@ TagManager:
   - Missile
   - Barrier
   - Wall
+  - FinalBoss
+  - Mobs
   layers:
   - Default
   - TransparentFX
