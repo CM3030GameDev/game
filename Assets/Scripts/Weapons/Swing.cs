@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 public class Swing : MonoBehaviour
 {
@@ -11,9 +12,10 @@ public class Swing : MonoBehaviour
     private float attackDuration;
     [SerializeField] private SpriteRenderer companionSprite;
     [SerializeField] private GameObject character;
-    [SerializeField] private Mobs mobs;
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private float detectionRange = 5f;
+
+    private List<GameObject> allEnemies;
 
     private void Awake()
     {
@@ -27,7 +29,7 @@ public class Swing : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        allEnemies = MobManager.Instance.GetAllPooledEnemies();
     }
 
     // Update is called once per frame
@@ -110,7 +112,7 @@ public class Swing : MonoBehaviour
         GameObject nearestEnemy = null;
         float nearestDistance = detectionRange;
 
-        foreach (GameObject enemy in mobs.enemies)
+        foreach (GameObject enemy in allEnemies)
         {
             if(!enemy.activeInHierarchy)
             {

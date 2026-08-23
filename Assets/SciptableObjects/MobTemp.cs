@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Mob : MonoBehaviour
+public class MobTemp : MonoBehaviour
 {
     private Rigidbody2D rb;
     private BoxCollider2D box;
@@ -91,6 +91,8 @@ public class Mob : MonoBehaviour
         {
             animator.SetTrigger("dead");
             death = true;
+
+            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
 
         // Debuff timer that ticks down
@@ -160,7 +162,6 @@ public class Mob : MonoBehaviour
         {
             Character character = collision.gameObject.GetComponent<Character>();
             character.CharacterAttacked(10);
-            character.GrantInvulnerability(0.1f);
         }
 
         if (collision.gameObject.CompareTag("Sword") && !isAttacked)

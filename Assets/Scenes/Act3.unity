@@ -819,7 +819,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &110523447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5268,7 +5268,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1296853439
 Transform:
   m_ObjectHideFlags: 0
@@ -6775,7 +6775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1530783634
 Transform:
   m_ObjectHideFlags: 0
@@ -8632,7 +8632,6 @@ MonoBehaviour:
   companionSprite: {fileID: 2400118685578611383}
   fire: {fileID: 1276156674145639848}
   character: {fileID: 5571074844756069809}
-  mobs: {fileID: 110523447}
   detectionRange: 6
 --- !u!1 &772777457571364760
 GameObject:
@@ -9119,7 +9118,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Swing
   companionSprite: {fileID: 4299820163087559401}
   character: {fileID: 5571074844756069809}
-  mobs: {fileID: 110523447}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   detectionRange: 5
 --- !u!95 &2774176088486107322
@@ -9587,7 +9585,6 @@ MonoBehaviour:
   character: {fileID: 2934848626418924113}
   mercenary: {fileID: 4092348403025292642}
   swordsman: {fileID: 3069659577465586709}
-  mobs: {fileID: 110523447}
   fireFloorPrefab: {fileID: 1094264412346855808, guid: c02ef4216708a184f957ed1e2f723e9b, type: 3}
   mercCooldown: 12
   mercCastTime: 0.4
@@ -9846,7 +9843,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoldierSkill
   cooldown: 4
   explosionPrefab: {fileID: 5157741989187164760, guid: 6f9b764a3d15d3a468695c6757e19674, type: 3}
-  mobs: {fileID: 110523447}
   strikeCount: 10
   strikeInterval: 0.8
   scatter: 0.8

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Flamethrower : MonoBehaviour
@@ -7,8 +8,9 @@ public class Flamethrower : MonoBehaviour
     [SerializeField] private SpriteRenderer companionSprite;
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject character;
-    [SerializeField] private Mobs mobs;
     [SerializeField] private float detectionRange = 6f;
+
+    private List<GameObject> allEnemies;
 
     private void Awake()
     {
@@ -18,7 +20,7 @@ public class Flamethrower : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        allEnemies = MobManager.Instance.GetAllPooledEnemies();
     }
 
     // Update is called once per frame
@@ -87,7 +89,7 @@ public class Flamethrower : MonoBehaviour
         GameObject nearestEnemy = null;
         float nearestDistance = detectionRange;
 
-        foreach (GameObject enemy in mobs.enemies)
+        foreach (GameObject enemy in allEnemies)
         {
             if (!enemy.activeInHierarchy)
             {
