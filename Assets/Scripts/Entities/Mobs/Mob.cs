@@ -61,6 +61,16 @@ public class Mob : MonoBehaviour
         knockbackTimer = 0f;
     }
 
+    private void OnDisable()
+    {
+        // Drops exp orb at mob position when the mob is dead
+        if (expOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+            orb.GetComponent<ExpOrb>().SetExp(expReward);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -110,13 +120,6 @@ public class Mob : MonoBehaviour
 
     public void Despawn()
     {
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
-
         // Account for death of mob
         onDeath?.Invoke();
 
