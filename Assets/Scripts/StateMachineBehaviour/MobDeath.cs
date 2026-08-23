@@ -4,8 +4,6 @@ public class MobDeath : StateMachineBehaviour
 {
     [SerializeField] private EnemySystem enemySystem;
     [SerializeField] private CharacterStats characterStats;
-    [SerializeField] private GameObject expOrbPrefab;
-    [SerializeField] private int expReward = 10;
 
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
@@ -24,13 +22,6 @@ public class MobDeath : StateMachineBehaviour
     {
         animator.gameObject.SetActive(false);
         enemySystem.enemyLeft -= 1;
-
-        // Spawn exp orb on death
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, animator.transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
