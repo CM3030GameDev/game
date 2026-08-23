@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class Generator : MonoBehaviour
 {
     [Header("Generator Shield Object")]
     [SerializeField] private GameObject generatorShield;
+    [SerializeField] private SpriteRenderer generatorShieldSprite;
 
-    [Header("References")]
-    public Act2Manager act2Manager;
+    [Header("Events")]
+    public UnityEvent onGeneratorShieldDown;
+    public UnityEvent onGeneratorDown;
 
     private bool isShieldDown = false;
     private bool isOverdrive = false;
@@ -52,7 +55,7 @@ public class Generator : MonoBehaviour
         }
         else if (isOverdrive && generatorEnergy <= 0)
         {
-            act2Manager.OnGeneratorShieldDown();
+            onGeneratorShieldDown?.Invoke();
             DisableShield();
         }
 
@@ -68,8 +71,9 @@ public class Generator : MonoBehaviour
         isOverdrive = false;
         generatorShield.SetActive(false);
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("hit generator");
         if (isShieldDown && generatorEnergy <= 0 && collision.gameObject.CompareTag("Bullet"))
         {
             generatorHealth -= 1;
@@ -77,11 +81,12 @@ public class Generator : MonoBehaviour
     }
     public void UnlockNextAct()
     {
-        act2Manager.OnGeneratorDown();
+        onGeneratorDown?.Invoke();
     }
     public void EnhancedShield()
     {
-        //change shield color
+        Color g = generatorShieldSprite.color;
+        generatorShieldSprite.color = new Color(1f, 0f, 0f, g.a);
     }
 
     public void SetIsOverdrive(bool overdrive)

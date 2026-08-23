@@ -22,6 +22,8 @@ public class DialogueManager : MonoBehaviour
     private float nextLetterDelay = 0.02f;
     [SerializeField]
     private float nextSentenceDelay = 1f;
+
+    private Coroutine typingCoroutine;
     public bool IsDialogueActive { get; private set; }
 
     private void Awake()
@@ -78,8 +80,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         string sentence = sentences.Dequeue();
-        StopAllCoroutines();
-        StartCoroutine(TypeSentence(sentence));
+        if(typingCoroutine != null)
+            StopCoroutine(typingCoroutine);
+        typingCoroutine = StartCoroutine(TypeSentence(sentence));
     }
 
     IEnumerator TypeSentence(string sentence)

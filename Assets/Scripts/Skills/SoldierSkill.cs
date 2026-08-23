@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SoldierSkill : MonoBehaviour
 {
@@ -8,10 +9,11 @@ public class SoldierSkill : MonoBehaviour
 
     [Header("Airstrike")]
     [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private Mobs mobs;
     [SerializeField] private int strikeCount = 10;    // Number of airstrikes 
     [SerializeField] private float strikeInterval = 0.8f;  // Delay between each airstrike
     [SerializeField] private float scatter = 0.8f;   // RandomOffset for each airstrike
+
+    private List<GameObject> allEnemies = MobManager.Instance.GetAllPooledEnemies();
 
     private float cooldownTimer;
 
@@ -52,7 +54,7 @@ public class SoldierSkill : MonoBehaviour
     {
         // Gather living enemies
         var alive = new System.Collections.Generic.List<GameObject>();
-        foreach (var e in mobs.enemies)
+        foreach (var e in allEnemies)
             if (e.activeInHierarchy) alive.Add(e);
 
         // Hit a random enemy if any exist, otherwise scatter near the player

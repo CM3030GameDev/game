@@ -1,0 +1,247 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class MobManager : MonoBehaviour
+{
+    [System.Serializable]
+    public struct EnemySetup
+    {
+        public EnemyTypes type;
+        public GameObject prefab;
+        public int poolAmount;
+    }
+
+    public Transform playerTransform;
+    public LayerMask groundLayer;
+
+    //temporary serialized, for testing
+    [SerializeField]
+    private int killCount = 0;
+
+    [Header("MinMax spawn distance")]
+    [SerializeField] private float minSpawnDistance = 18f;
+    [SerializeField] private float maxSpawnDistance = 20f;
+
+    [Header("Prefab Mapping")]
+    public List<EnemySetup> enemyPoolConfig = new List<EnemySetup>();
+
+    private Dictionary<string, Coroutine> coroutines = new Dictionary<string, Coroutine>();
+    private Dictionary<EnemyTypes, List<GameObject>> pooledEnemies = new Dictionary<EnemyTypes, List<GameObject>>();
+
+    public enum EnemyTypes
+    {
+        None,
+        REDMOB,
+        BLUEMOB,
+        GREENMOB
+    }
+    public static MobManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+            return;
+        }
+    }
+
+    private void Start()
+    {
+        //Initialising the object pool
+        foreach (EnemySetup enemySetup in enemyPoolConfig)
+        {
+            List<GameObject> tempGameObjectList = new List<GameObject>();
+            for (int i = 0; i < enemySetup.poolAmount; i++)
+            {
+                GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
+                tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                tempEnemy.SetActive(false);
+                tempGameObjectList.Add(tempEnemy);
+            }
+
+            pooledEnemies.Add(enemySetup.type, tempGameObjectList);
+        }
+
+        //test
+        //addCoroutine("aa", 1f, EnemyTypes.AAA);
+        //addCoroutine("bb", 5f, EnemyTypes.BBB);
+    }
+
+    /// <summary>
+    /// Use this function to start a coroutine that constantly spawns mobs until you tell it to stop.
+    /// </summary>
+    /// <param name="coroutineName">Name of the coroutine. Make sure it's unique.</param>
+    /// <param name="delay">The time between each mob spawnning. Lower delay=faster spawning</param>
+    /// <param name="types">Enum of enemy type.</param>
+    /// <param name="location">The Transform of the location you want the mobs to spawn from.</param>
+    /// <param name="spawnAmount">The number of enemies to spawn</param>
+    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, Transform location = null, int spawnAmount = -1)
+    {
+        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, location, spawnAmount));
+        coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
+    }
+
+    /// <summary>
+    /// Use this function to stop a spawner coroutine.
+    /// </summary>
+    /// <param name="coroutineName">The name of the coroutine you want to stop. Make sure it is the same name from "addCoroutine".</param>
+    public void StopSpawnCoroutine(string coroutineName)
+    {
+        if (coroutines.ContainsKey(coroutineName))
+        {
+            StopCoroutine(coroutines[coroutineName]);
+            coroutines.Remove(coroutineName);
+
+            Debug.Log(coroutineName + " has been stopped.");
+        }
+    }
+
+    /// <summary>
+    /// Stops all spawner coroutines.
+    /// </summary>
+    public void StopAllSpawnCoroutines()
+    {
+        foreach (KeyValuePair<string, Coroutine> c in coroutines)
+        {
+            StopCoroutine(c.Value);
+        }
+        coroutines.Clear();
+        Debug.Log("All spawners have been stopped.");
+    }
+
+    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, Transform location = null, int spawnAmount = -1)
+    {
+        int spawnedCount = 0;
+        while (spawnAmount < 0 || spawnedCount < spawnAmount)
+        {
+            GameObject availableEnemy = FindAvaliableEnemyOfType(types);
+            if (availableEnemy != null)
+            {
+                SpawnEnemy(availableEnemy, location);
+                spawnedCount++;
+            }
+
+            yield return new WaitForSeconds(delayBetweenSpawns);
+        }
+        coroutines.Remove(coroutineName);
+        Debug.Log(coroutineName + " has been removed");
+    }
+
+    private GameObject FindAvaliableEnemyOfType(EnemyTypes types)
+    {
+        if (!pooledEnemies.ContainsKey(types))
+            return null;
+
+        foreach (GameObject enemy in pooledEnemies[types])
+        {
+            if (enemy.activeSelf == false)
+                return enemy;
+        }
+        return null;
+    }
+
+    private void SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
+    {
+        float targetX;
+        float targetY;
+
+        if (location != null)
+        {
+            targetX = location.position.x;
+            targetY = location.position.y;
+        }
+        else
+        {
+            Vector2 randomDirection = Random.insideUnitCircle.normalized;
+            float randomDistance = Random.Range(minSpawnDistance, maxSpawnDistance);
+            targetX = playerTransform.position.x + (randomDirection.x * randomDistance);
+            targetY = playerTransform.position.y + (randomDirection.y * randomDistance);
+        }
+
+        Vector3 raycastStartPos = new Vector3(targetX, targetY, -5f);
+
+        RaycastHit2D hit = Physics2D.GetRayIntersection(new Ray(raycastStartPos, Vector3.forward), 10f, groundLayer);
+
+        if (hit.collider != null)
+        {
+            enemyToSpawn.transform.position = new Vector3(targetX, targetY, 0f);
+            enemyToSpawn.SetActive(true);
+        }
+        else
+        {
+            Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
+        }
+    }
+
+    public void instantKillAllActive()
+    {
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
+        {
+            foreach (GameObject mob in pool.Value)
+            {
+                if (mob.activeSelf)
+                {
+                    mob.GetComponent<Mob>().Despawn();
+                }
+            }
+        }
+    }
+
+    /// <summary>
+    /// Checks if any mobs are still alive. Only use after stopping spawners.
+    /// </summary>
+    /// <returns>true if all mobs are dead</returns>
+    public bool AreAllMobsDead()
+    {
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
+        {
+            foreach (GameObject mob in pool.Value)
+            {
+                if (mob.activeSelf)
+                {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+    //maybe just make all the mobs die when generator go kaboom
+
+    //call this when mob dies(not used yet have to touch mob script)
+    public void UpdateKillCount()
+    {
+        killCount++;
+    }
+
+    public int GetKillCount()
+    {
+        return killCount;
+    }
+
+    public List<GameObject> GetAllPooledEnemies()
+    {
+        List<GameObject> allEnemies = new List<GameObject>();
+        foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)
+        {
+            foreach (GameObject mob in pool.Value)
+            {
+                allEnemies.Add(mob);
+            }
+        }
+        return allEnemies;
+    }
+}
+
+//Important note
+//Spawner only works if the ground has a collider. isTrigger is fine.
+//Currently only works if raycast hits a Ground layermask.
+//If need more, change variable to a list instead.
