@@ -12,42 +12,23 @@ public class Bullet : MonoBehaviour
     private void Awake() { hitsRemaining = pierceCount; }
 
     private void Start() { Destroy(gameObject, lifetime); }
+    private float knockbackForce;
 
     public void SetDamage(int d) { damage = d; }
+    public void SetKnockback(float force) => knockbackForce = force;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
-        {
-            Mob mob = other.GetComponent<Mob>();
-            FinalBoss finalBoss = other.GetComponent<FinalBoss>();
-            if (mob != null)
-            {
-                mob.MobAttacked(damage, hitFlash);
-                hitsRemaining--;
-            }
-            else if (finalBoss != null)
-            {
-                finalBoss.BossAttacked(damage, hitFlash);
-                hitsRemaining--;
-            }
+        if (!other.CompareTag("Enemy")) return;
 
-            if (hitsRemaining <= 0)
-            {
-                Destroy(gameObject);
-            }
-        }
-        //Reflected bullet (From final boss's barrier)
-        else if(other.CompareTag("Character"))
+        Mob mob = other.GetComponent<Mob>();
+        if (mob != null) mob.MobAttacked(damage, hitFlash);
+        if (knockbackForce > 0f)
         {
-            Character character = other.GetComponent<Character>();
-            character.CharacterAttacked(damage);
-            character.GrantInvulnerability(hitFlash);
-            hitsRemaining--;
+            Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+            mob.Knockback(dir, knockbackForce);
         }
-        else if (other.CompareTag("Wall"))
-        {
-            Destroy(gameObject);
-        }
+        hitsRemaining--;
+        if (hitsRemaining <= 0) Destroy(gameObject);
     }
 }

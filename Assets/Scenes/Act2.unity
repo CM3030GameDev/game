@@ -10186,9 +10186,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: cb5630fa59a1d8645a7a200a03230623, type: 2}
   - {fileID: 11400000, guid: f44e66651d328ce4d82ce51c84870099, type: 2}
   dualPistolLevel: 5
-  dualPistolUpgrade: {fileID: 11400000, guid: 891fc323da471974ab7c5e02b97a0fff, type: 2}
+  dualPistolTier: {fileID: 11400000, guid: 1f07faa12feee064d93032c2420b1bb0, type: 2}
   assaultRifleLevel: 10
-  assaultRifleUpgrade: {fileID: 11400000, guid: 327c9892ddc28194abcfa4b532c6cf1e, type: 2}
+  assaultRifleTier: {fileID: 11400000, guid: f7b7981d090c7f640bc0c7787f959afb, type: 2}
+  slots: {fileID: 0}
 --- !u!223 &5432743829136891577
 Canvas:
   m_ObjectHideFlags: 0
@@ -10547,6 +10548,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAim
   character: {fileID: 8944264630221300050}
+  mobs: {fileID: 0}
+  autoAimRange: 12
 --- !u!114 &7849604476598921770
 MonoBehaviour:
   m_ObjectHideFlags: 0

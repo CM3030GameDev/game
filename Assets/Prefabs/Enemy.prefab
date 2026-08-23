@@ -90,7 +90,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.6666666, y: 2.3333333}
+  m_Size: {x: 1.2, y: 1.4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -160,8 +160,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.6666666, y: 2.3333333}
-    newSize: {x: 1.6666666, y: 2.3333333}
+    oldSize: {x: 1.2, y: 1.4}
+    newSize: {x: 1.2, y: 1.4}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -202,12 +202,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d29c8b3eb1c704fa5228d9de6acbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  blueMob: {fileID: 9100000, guid: 2423cee03f62c594da08bb3892d53217, type: 2}
-  redMob: {fileID: 9100000, guid: 7ad01bc5afb9b4d439570d3979272e9e, type: 2}
-  greenMob: {fileID: 9100000, guid: 5cc8007eb708c2443a011d778381884b, type: 2}
-  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  enemySystem: {fileID: 11400000, guid: f6719eb6a1e26bf42a0478ff16f9f857, type: 2}
-  sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  maxHP: 100
   chaseSpeed: 4
   expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
   expReward: 10
+  separationRadius: 0.6
+  separationStrength: 2
+  onDeath:
+    m_PersistentCalls:
+      m_Calls: []

@@ -54,10 +54,10 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
+  - name: Ground
     uniqueID: 1400399459
     locked: 0
-  - name: Floor
+  - name: Decoration_Back
     uniqueID: 446537991
     locked: 0
   - name: Companion
@@ -83,6 +83,9 @@ TagManager:
     locked: 0
   - name: Weapon
     uniqueID: 2015552387
+    locked: 0
+  - name: Foreground
+    uniqueID: 339600167
     locked: 0
   - name: HUD
     uniqueID: 3606316447
