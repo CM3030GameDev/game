@@ -94,6 +94,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DeathAnimation
   enemySystem: {fileID: 11400000, guid: f6719eb6a1e26bf42a0478ff16f9f857, type: 2}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
+  expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
+  expReward: 10
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0

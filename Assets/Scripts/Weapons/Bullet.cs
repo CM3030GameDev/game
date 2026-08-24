@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     private float knockbackForce;
 
     private void Awake() { hitsRemaining = pierceCount; }
+
     private void Start() { Destroy(gameObject, lifetime); }
 
     public void SetDamage(int d) { damage = d; }
@@ -30,6 +31,23 @@ public class Bullet : MonoBehaviour
                 Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
                 mob.Knockback(dir, knockbackForce);
             }
+        }
+        //Final boss collision
+        else if(other.CompareTag("FinalBoss"))
+        {
+            FinalBoss finalBoss = other.GetComponent<FinalBoss>();
+            if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
+        }
+        //Character collision (Final boss barrier reflected bullet)
+        else if (other.CompareTag("Character"))
+        {
+            Character character = other.GetComponent<Character>();
+            character.CharacterAttacked(damage);
+            character.GrantInvulnerability(hitFlash);
+        }
+        else if (other.CompareTag("Wall"))
+        {
+            Destroy(gameObject);
         }
 
         hitsRemaining--;

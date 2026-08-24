@@ -19,8 +19,6 @@ public class Mob : MonoBehaviour
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
@@ -42,7 +40,6 @@ public class Mob : MonoBehaviour
         death = false;
         isAttacked = false;
         attackedTime = 0f;
-        attackedDuration = 0f;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         box = GetComponent<BoxCollider2D>();
@@ -64,6 +61,16 @@ public class Mob : MonoBehaviour
         knockbackTimer = 0f;
     }
 
+    private void OnDisable()
+    {
+        // Drops exp orb at mob position when the mob is dead
+        if (expOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+            orb.GetComponent<ExpOrb>().SetExp(expReward);
+        }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -81,22 +88,26 @@ public class Mob : MonoBehaviour
         {
             sr.flipX = false;
         }
-        attackedTime += Time.deltaTime;
 
-        //Enemy can be attacked again
-        if (attackedTime >= attackedDuration)
+        //Mob cannot be attacked
+        if (attackedTime > 0f)
+        {
+            attackedTime -= Time.deltaTime;
+        }
+        //Mob can be attacked
+        else
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
         }
 
-        //Enemy dead
+
+        //Mob dead
         if (currentHP <= 0 && !death)
         {
+            //Death animation & automatically destroys mob
             animator.SetTrigger("dead");
             death = true;
-
-            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
 
         // Debuff timer that ticks down
@@ -109,13 +120,6 @@ public class Mob : MonoBehaviour
 
     public void Despawn()
     {
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
-
         // Account for death of mob
         onDeath?.Invoke();
 
@@ -152,20 +156,9 @@ public class Mob : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Character"))
-        {
-            Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(10);
-        }
-
         if (collision.CompareTag("Sword") && !isAttacked)
         {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.2f;
-            currentHP -= 20;
+            MobAttacked(20, 0.2f);
         }
     }
 
@@ -174,17 +167,11 @@ public class Mob : MonoBehaviour
         if (collision.gameObject.CompareTag("Character"))
         {
             Character character = collision.gameObject.GetComponent<Character>();
-            character.CharacterAttacked(10);
-        }
-
-        if (collision.gameObject.CompareTag("Sword") && !isAttacked)
-        {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.2f;
-            currentHP -= 20;
+            if(!character.isAttacked)
+            {
+                character.CharacterAttacked(10);
+                character.GrantInvulnerability(0.1f);
+            }
         }
     }
 
@@ -192,12 +179,7 @@ public class Mob : MonoBehaviour
     {
         if (other.CompareTag("Flamethrower") && !isAttacked)
         {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.4f;
-            currentHP -= 5;
+            MobAttacked(5, 0.4f);
         }
     }
 
@@ -208,8 +190,7 @@ public class Mob : MonoBehaviour
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
             isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = timer;
+            attackedTime = timer;
             currentHP -= amount;
         }
     }

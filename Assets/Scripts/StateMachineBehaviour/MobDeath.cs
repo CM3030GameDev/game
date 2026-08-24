@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class DeathAnimation : StateMachineBehaviour
+public class MobDeath : StateMachineBehaviour
 {
     [SerializeField] private EnemySystem enemySystem;
     [SerializeField] private CharacterStats characterStats;
+
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     //override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     //{
@@ -21,7 +22,6 @@ public class DeathAnimation : StateMachineBehaviour
     {
         animator.gameObject.SetActive(false);
         enemySystem.enemyLeft -= 1;
-        characterStats.expPoint += 5;
     }
 
     // OnStateMove is called right after Animator.OnAnimatorMove()
