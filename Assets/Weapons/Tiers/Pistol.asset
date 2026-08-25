@@ -19,4 +19,4 @@ MonoBehaviour:
   fireInterval: 1
   spreadAngle: 0
   muzzleOffsets:
-  - {x: 0, y: 0.12}
+  - {x: 0.8, y: -0.2926}
