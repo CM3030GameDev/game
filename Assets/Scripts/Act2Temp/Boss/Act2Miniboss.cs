@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.TextCore.Text;
+using UnityEngine.Events;
 
 public class Act2Miniboss : MonoBehaviour
 {
@@ -10,8 +10,10 @@ public class Act2Miniboss : MonoBehaviour
         IDLE,
         NORMAL,
         AGITATED,
+        ATTACK,
         BEAM,
-        ULTIMATE
+        ULTIMATE,
+        DEAD
     }
 
     private enum FacingDirection
@@ -25,14 +27,9 @@ public class Act2Miniboss : MonoBehaviour
     [SerializeField] private BossState currentState = BossState.NORMAL;
     [SerializeField] private FacingDirection currentDirection = FacingDirection.FRONT;
 
-    //the sprites are all offset a little because of the height difference in sprite, use this as a point instead to get direction
-    [SerializeField] private Transform pivotTransform;
+    public UnityEvent bossDeath;
 
     [Header("Minion Passive")]
-    [SerializeField] private GameObject minionObject;
-    [SerializeField] private int numberOfMinions = 5;
-    [SerializeField] private int gridSpacing = 5;
-    [SerializeField] private float spawnInterval = 1f;
     [SerializeField] private float maxPassiveCooldown = 5f;
     private float currentPassiveCooldown;
     private bool isPassiveOn = false;
@@ -59,37 +56,78 @@ public class Act2Miniboss : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float normalMoveSpeed = 5f;
     [SerializeField] private float agitatedMoveSpeed = 8f;
-    [SerializeField] private float stopDistance = 1f;
+    private Rigidbody2D rb;
+    //[SerializeField] private float stopDistance = 1f;
     private float moveSpeed = 0f;
     private Transform playerTransform;
 
     private MinibossBeamAttack beamAttack;
+    private MinibossUltimate ultAttack;
+    private MinibossPassive passive;
+    private Vector3 currentMoveDir = Vector3.zero;
+    private bool shouldMove = false;
 
     [SerializeField] private Animator animator;
-    private string prevAnim = "";
 
+    private bool hasDeathAnimPlayed = false;
+
+    [SerializeField] private int maxHP = 10;
+
+    //remove later, for testing
+    [SerializeField] private int currentHP = 10;
+
+    [SerializeField] private float maxCollisionCD = 1f;
+    private float currentCollisionCD;
+    private bool hasCollided = false;
+    [SerializeField] private int collisionDamage = 3;
+
+    [SerializeField] private MinibossAttackRange attackRange;
+    [SerializeField] private int attackDamage = 5;
+
+    private bool isInRange = false;
+    private bool hasUltStarted = false;
+
+    private bool hasStartedBeam = false;
+    private BossState stateBeforeAttack = BossState.NORMAL;
     private void Awake()
     {
     }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //minionCoroutine = StartCoroutine(SpawnMinions());
+        currentCollisionCD = maxCollisionCD;
         currentAgitatedStateTimer = maxAgitatedStateTimer;
         currentNormalStateTimer = maxNormalStateTimer;
         currentIdleDuration = maxIdleDuration;
         currentPassiveCooldown = maxPassiveCooldown;
         currentState = BossState.NORMAL;
         isPassiveOn = true;
-        beamAttack = this.GetComponent<MinibossBeamAttack>();
+        beamAttack = GetComponent<MinibossBeamAttack>();
+        ultAttack = GetComponent<MinibossUltimate>();
+        rb = GetComponent<Rigidbody2D>();
+        passive = GetComponent<MinibossPassive>();
         playerTransform = GameObject.FindGameObjectsWithTag("Character")[0].transform;
+        currentHP = maxHP;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        if(hasCollided)
+        {
+            currentCollisionCD -= Time.deltaTime;
+            if(currentCollisionCD <= 0)
+            {
+                hasCollided = false;
+                currentCollisionCD = maxCollisionCD;
+            }
+        }
         HandleDirection();
+
+        if(currentHP <= 0)
+        {
+            currentState = BossState.DEAD;
+        }
 
         switch(currentState)
         {
@@ -110,11 +148,18 @@ public class Act2Miniboss : MonoBehaviour
                 HandleMovement(currentState);
                 HandleDirectionalAnimation("Run", currentDirection);
                 break;
+            case BossState.ATTACK:
+                HandleAttackState();
+                HandleDirectionalAnimation("Punch", currentDirection);
+                break;
             case BossState.BEAM:
                 HandleBeamState();
                 break;
             case BossState.ULTIMATE:
                 HandleUltimateState();
+                break;
+            case BossState.DEAD:
+                HandleDead();
                 break;
             default:
                 break;
@@ -123,7 +168,6 @@ public class Act2Miniboss : MonoBehaviour
         HandlePassive();
     }
 
-    //do i need to reset movespeed to 0
     private void HandleMovement(BossState currState)
     {
         if (playerTransform == null)
@@ -136,15 +180,16 @@ public class Act2Miniboss : MonoBehaviour
 
         float distance = Vector3.Distance(transform.position, playerTransform.position);
 
-        if(distance > stopDistance)
+        if(isInRange == false)
         {
             Vector3 moveDir = (playerTransform.position - transform.position).normalized;
             transform.position += moveDir * moveSpeed * Time.deltaTime;
         }
     }
+
     private void HandleDirection()
     {
-        Vector2 facingVector = playerTransform.position - pivotTransform.position;
+        Vector2 facingVector = playerTransform.position - transform.position;
 
         float angle = Mathf.Atan2(facingVector.y, facingVector.x) * Mathf.Rad2Deg;
 
@@ -152,7 +197,7 @@ public class Act2Miniboss : MonoBehaviour
         {
             angle += 360f;
         }
-        Debug.Log($"facingVector: {facingVector}, angle: {angle}, chosen: {currentDirection}"); // ADD THIS
+
         if (angle >= 45f && angle < 135f)
         {
             currentDirection = FacingDirection.BACK;
@@ -195,7 +240,6 @@ public class Act2Miniboss : MonoBehaviour
 
         string stateName = dir + action;
 
-        // Check the Animator's ACTUAL current state, not a cached guess
         if (animator.GetCurrentAnimatorStateInfo(0).IsName(stateName))
             return;
 
@@ -213,22 +257,23 @@ public class Act2Miniboss : MonoBehaviour
         isSecondNormal = false;
 
         //Still has time but haven't hit player
-        if (currentNormalStateTimer > 0f && !hasLandedHit)
+        if (currentNormalStateTimer > 0f && !attackRange.GetIsInRange())
         {
             currentNormalStateTimer -= Time.deltaTime;
         }
         //Didn't hit player before timer
-        if (currentNormalStateTimer <= 0f && !hasLandedHit)
+        if (currentNormalStateTimer <= 0f && !attackRange.GetIsInRange())
         {
             currentState = BossState.AGITATED;
             ResetNormalState();
         }
 
         //Has hit player before timer
-        if(currentNormalStateTimer > 0f && hasLandedHit)
+        if(currentNormalStateTimer > 0f && attackRange.GetIsInRange())
         {
-            StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
-
+            StartAttackState(currentState);
+            currentState = BossState.ATTACK;
+            
             ResetNormalState();
         }
     }
@@ -237,14 +282,15 @@ public class Act2Miniboss : MonoBehaviour
         isSecondNormal = true;
 
         //Still has time but haven't hit player
-        if (currentNormalStateTimer > 0f && !hasLandedHit)
+        if (currentNormalStateTimer > 0f && !attackRange.GetIsInRange())
         {
             currentNormalStateTimer -= Time.deltaTime;
         }
         //Didn't hit player before timer
-        if (currentNormalStateTimer <= 0f && !hasLandedHit || currentNormalStateTimer > 0f && hasLandedHit)
+        if (currentNormalStateTimer <= 0f && !attackRange.GetIsInRange() || currentNormalStateTimer > 0f && attackRange.GetIsInRange())
         {
-            StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
+            StartAttackState(currentState);
+            currentState = BossState.ATTACK;
 
             ResetNormalState();
         }
@@ -258,12 +304,12 @@ public class Act2Miniboss : MonoBehaviour
     private void HandleAgitatedState()
     {
         //Still has time but haven't hit player
-        if (currentAgitatedStateTimer > 0f && !hasLandedHit)
+        if (currentAgitatedStateTimer > 0f && !attackRange.GetIsInRange())
         {
             currentAgitatedStateTimer -= Time.deltaTime;
         }
         //Didn't hit player before timer
-        if (currentAgitatedStateTimer <= 0f && !hasLandedHit)
+        if (currentAgitatedStateTimer <= 0f && !attackRange.GetIsInRange())
         {
             StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
 
@@ -272,10 +318,12 @@ public class Act2Miniboss : MonoBehaviour
         }
 
         //Has hit player before timer
-        if (currentAgitatedStateTimer > 0f && hasLandedHit)
+        if (currentAgitatedStateTimer > 0f && attackRange.GetIsInRange())
         {
             isSecondNormal = true;
-            StartIdleState(BossState.NORMAL);
+          
+            StartAttackState(currentState);
+            currentState = BossState.ATTACK;
 
             currentAgitatedStateTimer = maxAgitatedStateTimer;
             hasLandedHit = false;
@@ -290,21 +338,54 @@ public class Act2Miniboss : MonoBehaviour
     private void HandleIdleState()
     {
         currentIdleDuration -= Time.deltaTime;
+        rb.linearVelocity = Vector2.zero;
 
-/*        //resetbeam
-        hasStartedBeam = false;*/
-
-        if(currentIdleDuration <= 0f)
+        if (currentIdleDuration <= 0f)
         {
             currentState = stateAfterIdle;
             currentIdleDuration = maxIdleDuration;
         }
     }
 
-    private float maxtemptimer = 5f;
-    private float temptimer = 0f;
-    private bool hasStartedBeam = false;
 
+
+    private void StartAttackState(BossState prevState)
+    {
+        stateBeforeAttack = prevState;
+    }
+
+    private void HandleAttackState()
+    {
+/*        if(stateBeforeAttack == BossState.NORMAL)
+        {
+            StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
+        }
+        else if(stateBeforeAttack == BossState.AGITATED)
+        {
+            StartIdleState(BossState.NORMAL);
+        }*/
+    }
+
+    public void OnHitEvent()
+    {
+        if(attackRange.GetTarget().GetComponent<Character>())
+        {
+            attackRange.GetTarget().GetComponent<Character>().CharacterAttacked(attackDamage);
+        }
+        
+    }
+
+    public void OnHitEndEvent()
+    {
+        if (stateBeforeAttack == BossState.NORMAL)
+        {
+            StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
+        }
+        else if (stateBeforeAttack == BossState.AGITATED)
+        {
+            StartIdleState(BossState.NORMAL);
+        }
+    }
     private void HandleBeamState()
     {
         isSecondNormal = false;
@@ -332,69 +413,61 @@ public class Act2Miniboss : MonoBehaviour
     private void HandleUltimateState()
     {
         isSecondNormal = false;
-
         hasBeamed = false;
-        if (temptimer < maxtemptimer)
+
+        if(!hasUltStarted)
         {
-            temptimer += Time.deltaTime;
+            string dir = currentDirection == FacingDirection.FRONT ? "F"
+                       : currentDirection == FacingDirection.BACK ? "B"
+                       : currentDirection == FacingDirection.LEFT ? "L" : "R";
+
+            ultAttack.SetIsStartUlt(true, dir);
+            ultAttack.SetIsEndUlt(false);
+            hasUltStarted = true;
         }
-        else
+        if(ultAttack.GetIsUltEnd())
         {
             StartIdleState(BossState.NORMAL);
-            temptimer = 0f;
+            hasUltStarted = false;
         }
+            
+
     }
 
     private void HandlePassive()
     {
-        if(currentPassiveCooldown > 0f && isPassiveOn)
+        if (currentPassiveCooldown > 0f && isPassiveOn)
         {
             currentPassiveCooldown -= Time.deltaTime;
         }
-        else if(currentPassiveCooldown <= 0f)
+        else if (currentPassiveCooldown <= 0f)
         {
             isPassiveOn = false;
-            StartCoroutine(SpawnMinions());
+            passive.TriggerSpawn();
             currentPassiveCooldown = maxPassiveCooldown;
+            passive.completedSpawning.AddListener(() => isPassiveOn = true);
         }
     }
 
-    private IEnumerator SpawnMinions()
+    private void HandleDead()
     {
-        if(!hasPlayerPos)
+        if(!hasDeathAnimPlayed)
         {
-            GameObject player = GameObject.FindGameObjectsWithTag("Character")[0];
-            playerPos = player.transform.position;
-            hasPlayerPos = true;
-            topOffset = (numberOfMinions - 1) * gridSpacing / 2f;
-            sideOffset = (numberOfMinions - 1) * gridSpacing / 2f;
+            bossDeath?.Invoke();
+            HandleDirectionalAnimation("Hurt", currentDirection);
+            moveSpeed = 0f;
+            hasDeathAnimPlayed = true;
+            passive.completedSpawning.RemoveListener(() => isPassiveOn = false);
         }
 
-        for (int col = 1; col <= numberOfMinions; col++)
-        {
-            float xOffset = (col - 1) * gridSpacing - topOffset; // shift left by startOffset
-            GameObject y = Instantiate(minionObject, playerPos + new Vector2(xOffset, topOffset), Quaternion.identity);
-            y.GetComponent<Minion>().Initialize(Minion.DirectionFacing.TOP);
-            yield return new WaitForSeconds(spawnInterval);
-        }
-
-        for (int row = 1; row <= numberOfMinions; row++)
-        {
-            float yOffset = (row * gridSpacing) - sideOffset;
-            GameObject x = Instantiate(minionObject, playerPos + new Vector2((-sideOffset) - gridSpacing, -yOffset), Quaternion.identity);
-            x.GetComponent<Minion>().Initialize(Minion.DirectionFacing.LEFT);
-            yield return new WaitForSeconds(spawnInterval);
-        }
-
-        hasPlayerPos = false;
-        isPassiveOn = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.CompareTag("Character") && currentState != BossState.IDLE)
+        if (collision.gameObject.CompareTag("Character"))
         {
-            hasLandedHit = true;
+            hasCollided = true;
+            collision.GetComponent<Character>().CharacterAttacked(collisionDamage);
         }
     }
 }
