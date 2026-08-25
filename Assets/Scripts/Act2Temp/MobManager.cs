@@ -34,7 +34,8 @@ public class MobManager : MonoBehaviour
         None,
         REDMOB,
         BLUEMOB,
-        GREENMOB
+        GREENMOB,
+        ACT2BOSS
     }
     public static MobManager Instance { get; private set; }
 
@@ -50,10 +51,7 @@ public class MobManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-    }
 
-    private void Start()
-    {
         //Initialising the object pool
         foreach (EnemySetup enemySetup in enemyPoolConfig)
         {
@@ -61,13 +59,23 @@ public class MobManager : MonoBehaviour
             for (int i = 0; i < enemySetup.poolAmount; i++)
             {
                 GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
-                tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                Mob mobScript = tempEnemy.GetComponent<Mob>();
+                if (mobScript != null)
+                {
+                    tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                }
                 tempEnemy.SetActive(false);
                 tempGameObjectList.Add(tempEnemy);
             }
 
             pooledEnemies.Add(enemySetup.type, tempGameObjectList);
         }
+    }
+
+    private void Start()
+    {
+        
+        
     }
 
     /// <summary>
@@ -141,6 +149,18 @@ public class MobManager : MonoBehaviour
             if (enemy.activeSelf == false)
                 return enemy;
         }
+        return null;
+    }
+
+    public GameObject SpawnBoss(EnemyTypes type, Transform spawnPos)
+    {
+        GameObject avaliableBoss = FindAvaliableEnemyOfType(type);
+        if (avaliableBoss != null)
+        {
+            avaliableBoss.SetActive(true);
+            return avaliableBoss;
+        }
+
         return null;
     }
 

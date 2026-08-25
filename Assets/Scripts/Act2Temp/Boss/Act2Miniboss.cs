@@ -347,8 +347,6 @@ public class Act2Miniboss : MonoBehaviour
         }
     }
 
-
-
     private void StartAttackState(BossState prevState)
     {
         stateBeforeAttack = prevState;

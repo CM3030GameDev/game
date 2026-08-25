@@ -391,7 +391,7 @@ MonoBehaviour:
   bossDeath:
     m_PersistentCalls:
       m_Calls: []
-  maxPassiveCooldown: 1
+  maxPassiveCooldown: 5
   maxNormalStateTimer: 5
   maxAgitatedStateTimer: 5
   maxIdleDuration: 2
@@ -420,6 +420,10 @@ MonoBehaviour:
   numberOfMinions: 3
   gridSpacing: 5
   spawnInterval: 0.3
+  growthSpeed: 20
+  maxLength: 40
+  moveSpeed: 10
+  damage: 5
   completedSpawning:
     m_PersistentCalls:
       m_Calls: []
@@ -435,17 +439,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ded2930e8c0fdc348a4bb6dcc1780db5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinibossBeamAttack
-  beamObject: {fileID: 8918427435610785416, guid: e32b52089a2f6bf4c96069fdee209f8a, type: 3}
-  bossAnimator: {fileID: 453347392088703674}
-  AttackSpeed: 1
-  beamSpeed: 20
   leftPoint: {fileID: 9127704526305333528}
   rightPoint: {fileID: 5232865154273392760}
   backPoint: {fileID: 1499478131224142451}
   frontPoint: {fileID: 2139113211109037725}
-  shootNumber: 0
+  beamObject: {fileID: 8918427435610785416, guid: e32b52089a2f6bf4c96069fdee209f8a, type: 3}
+  beamLifetime: 5
+  beamDamage: 5
+  beamSpeed: 20
   shotsPerAttack: 6
-  maxAttackDuration: 3
+  bossAnimator: {fileID: 453347392088703674}
+  AttackSpeed: 1
 --- !u!114 &5830537015376165855
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +469,8 @@ MonoBehaviour:
   chargingTime: 1
   maxScale: 5
   throwSpeed: 8
+  ultLifetime: 5
+  ultDamage: 10
 --- !u!70 &5064994520147190441
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -499,8 +505,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.047771275, y: 0.2441631}
-  m_Size: {x: 1.6358901, y: 1.8704957}
+  m_Offset: {x: 0, y: 0.044662952}
+  m_Size: {x: 1.7774706, y: 2.269496}
   m_Direction: 0
 --- !u!50 &4256835616449501198
 Rigidbody2D:

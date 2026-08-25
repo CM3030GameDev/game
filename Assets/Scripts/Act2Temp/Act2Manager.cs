@@ -16,7 +16,6 @@ public class Act2Manager : MonoBehaviour
     
 
     public Generator generator;
-    public GameObject minibossPrefab;
     private GameObject miniboss;
     [SerializeField] private Transform minibossSpawnPoint;
     private bool hasBossSpawned = false;
@@ -47,9 +46,7 @@ public class Act2Manager : MonoBehaviour
 
         if (minibossSpawnPoint != null)
         {
-            miniboss = Instantiate(minibossPrefab, minibossSpawnPoint.position, Quaternion.identity);
-            miniboss.GetComponent<Act2Miniboss>().bossDeath.AddListener(OnBossDeath);
-            miniboss.SetActive(false);
+
         }
     }
 
@@ -75,7 +72,11 @@ public class Act2Manager : MonoBehaviour
         {
             if(!hasBossSpawned)
             {
-                miniboss.SetActive(true);
+                miniboss = MobManager.Instance.SpawnBoss(MobManager.EnemyTypes.ACT2BOSS, minibossSpawnPoint);
+                miniboss.GetComponent<Act2Miniboss>().bossDeath.AddListener(OnBossDeath);
+                MobManager.Instance.AddSpawnCoroutine("bossfight1", 2f, MobManager.EnemyTypes.REDMOB);
+                MobManager.Instance.AddSpawnCoroutine("bossfight2", 4f, MobManager.EnemyTypes.BLUEMOB);
+                MobManager.Instance.AddSpawnCoroutine("bossfight3", 6f, MobManager.EnemyTypes.GREENMOB);
                 hasBossSpawned = true;
                 DialogueManager.Instance.StartDialogue(bossSpawnDialogue);
             }
@@ -86,6 +87,7 @@ public class Act2Manager : MonoBehaviour
     {
         DialogueManager.Instance.StartDialogue(bossDeathDialogue);
         DialogueManager.Instance.onDialogueEnd.AddListener(EnableGenerator);
+        MobManager.Instance.StopAllSpawnCoroutines();
     }
 
     //This is called when starting dialogue ends.Mobs start spawning

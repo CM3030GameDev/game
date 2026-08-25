@@ -2393,8 +2393,8 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 1048576
   killCount: 0
-  minSpawnDistance: 18
-  maxSpawnDistance: 20
+  minSpawnDistance: 22
+  maxSpawnDistance: 25
   enemyPoolConfig:
   - type: 1
     prefab: {fileID: 3254576223579335219, guid: bab5ea3bf2979bc43ac92580ee466794, type: 3}
@@ -2405,6 +2405,9 @@ MonoBehaviour:
   - type: 3
     prefab: {fileID: 472388623571961445, guid: 18db34f16934f674bbca7e62bdc916a2, type: 3}
     poolAmount: 5
+  - type: 4
+    prefab: {fileID: 5126940955098609490, guid: 51f2893200ed60649b1f24da4a708728, type: 3}
+    poolAmount: 1
 --- !u!1 &563307489
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,7 +3939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1053428088
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6875,7 +6878,6 @@ MonoBehaviour:
   generatorDepletedDialogue: {fileID: 11400000, guid: bfcf2c9ad98e0dd41b46145dd740ead3, type: 2}
   generatorDestroyedDialogue: {fileID: 11400000, guid: f5830d992c4b78c42972c133ef12c587, type: 2}
   generator: {fileID: 479614368}
-  minibossPrefab: {fileID: 5126940955098609490, guid: 51f2893200ed60649b1f24da4a708728, type: 3}
   minibossSpawnPoint: {fileID: 1698049775}
 --- !u!4 &1878245151
 Transform:
@@ -7147,7 +7149,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &2069242542
 MonoBehaviour:
   m_ObjectHideFlags: 0
