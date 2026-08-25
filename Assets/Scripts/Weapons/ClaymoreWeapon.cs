@@ -16,7 +16,7 @@ public class ClaymoreWeapon : SecondaryWeapon
 
         GameObject m2 = Instantiate(minePrefab, transform.position, Quaternion.identity);
         Mine mine = m2.GetComponent<Mine>();
-        if (mine != null) mine.Configure(Stats.damage, Stats.valueB);   // valueB = blast radius
+        if (mine != null) mine.Configure(TotalDamage, Stats.valueB);   // valueB = blast radius
         mines.Add(m2);
     }
 }

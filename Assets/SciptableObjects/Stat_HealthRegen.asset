@@ -10,16 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd58c3203bd702f458ccbd4e001da4fc, type: 3}
-  m_Name: Stat_AttackSpeed
+  m_Name: Stat_HealthRegen
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
-  upgradeName: Attack Speed Increase
-  description: Attack Speed increases
+  upgradeName: Health Regeneration
+  description: Regenerate 1 health per second
   icon: {fileID: 0}
-  stat: 2
+  stat: 5
   amountPerLevel:
-  - 0.1
-  - 0.1
-  - 0.1
+  - 1
+  - 1
+  - 1
   iconPerLevel:
   - {fileID: 0}
   - {fileID: 0}

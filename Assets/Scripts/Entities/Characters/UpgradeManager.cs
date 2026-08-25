@@ -9,6 +9,7 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private MainWeapon weapon;
     [SerializeField] private SoldierSkill skill;
     [SerializeField] private WeaponSlots slots;
+    [SerializeField] private StatLevels statLevels;
     [SerializeField] private UpgradeCardUI cardUI;
 
     [Header("Pool")]
@@ -24,7 +25,7 @@ public class UpgradeManager : MonoBehaviour
 
     private void Awake()
     {
-        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots };
+        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots, statLevels = statLevels };
     }
 
     private void OnEnable()

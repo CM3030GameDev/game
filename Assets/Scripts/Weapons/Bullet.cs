@@ -19,21 +19,22 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Enemy")) return;
-
-        Mob mob = other.GetComponent<Mob>();
-        if (mob != null)
+        if (other.CompareTag("Enemy"))
         {
-            mob.MobAttacked(damage, hitFlash);
-
-            if (knockbackForce > 0f)
+            Mob mob = other.GetComponent<Mob>();
+            if (mob != null)
             {
-                Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
-                mob.Knockback(dir, knockbackForce);
+                mob.MobAttacked(damage, hitFlash);
+
+                if (knockbackForce > 0f)
+                {
+                    Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+                    mob.Knockback(dir, knockbackForce);
+                }
             }
         }
         //Final boss collision
-        else if(other.CompareTag("FinalBoss"))
+        else if (other.CompareTag("FinalBoss"))
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
             if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
@@ -48,6 +49,10 @@ public class Bullet : MonoBehaviour
         else if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            return;   // irrelevant collider - don't burn a pierce charge
         }
 
         hitsRemaining--;

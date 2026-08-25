@@ -37,6 +37,7 @@ public class Mob : MonoBehaviour
     public UnityEvent onDeath;
     private void Awake()
     {
+        EnemyMask = LayerMask.GetMask("Enemy");
         death = false;
         isAttacked = false;
         attackedTime = 0f;
@@ -207,15 +208,16 @@ public class Mob : MonoBehaviour
         knockbackTimer = 0.15f;
     }
 
+    private static int EnemyMask;
+
     private Vector2 GetSeparation()
     {
         Vector2 push = Vector2.zero;
-        Collider2D[] neighbours = Physics2D.OverlapCircleAll(transform.position, separationRadius);
+        Collider2D[] neighbours = Physics2D.OverlapCircleAll(transform.position, separationRadius, EnemyMask);
 
         foreach (var n in neighbours)
         {
             if (n.gameObject == gameObject) continue;
-            if (!n.CompareTag("Enemy")) continue;
 
             Vector2 away = (Vector2)transform.position - (Vector2)n.transform.position;
             float dist = away.magnitude;

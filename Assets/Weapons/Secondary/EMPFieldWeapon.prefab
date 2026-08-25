@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb05a53e68c08f04c89361761df55fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EMPFieldWeapon
+  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   fieldVisual: {fileID: 3177607541097114721}
 --- !u!1 &4790288070601583942
 GameObject:

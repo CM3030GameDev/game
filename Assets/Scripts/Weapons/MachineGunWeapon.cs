@@ -32,7 +32,7 @@ public class MachineGunWeapon : SecondaryWeapon
                                        Quaternion.AngleAxis(a, Vector3.forward));
             b.GetComponent<Rigidbody2D>().linearVelocity = dir * bulletSpeed;
             Bullet bl = b.GetComponent<Bullet>();
-            if (bl != null) bl.SetDamage(Stats.damage);
+            if (bl != null) bl.SetDamage(TotalDamage);
         }
     }
 }

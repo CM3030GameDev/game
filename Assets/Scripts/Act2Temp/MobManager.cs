@@ -72,7 +72,6 @@ public class MobManager : MonoBehaviour
         //test
         //addCoroutine("aa", 1f, EnemyTypes.AAA);
         //addCoroutine("bb", 5f, EnemyTypes.BBB);
-        AddSpawnCoroutine("act1_blue", 1.5f, EnemyTypes.BLUEMOB);
     }
 
     /// <summary>

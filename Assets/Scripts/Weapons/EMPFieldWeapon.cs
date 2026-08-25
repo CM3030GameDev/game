@@ -4,6 +4,10 @@ public class EMPFieldWeapon : SecondaryWeapon
 {
     [SerializeField] private SpriteRenderer fieldVisual;
 
+    private static int EnemyMask;
+
+    private void Awake() => EnemyMask = LayerMask.GetMask("Enemy");
+
     protected override void OnInit() => ScaleVisual();
     protected override void OnLevelChanged() => ScaleVisual();
 
@@ -15,14 +19,13 @@ public class EMPFieldWeapon : SecondaryWeapon
 
     protected override void Fire()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, Stats.valueA);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, Stats.valueA, EnemyMask);
         foreach (var h in hits)
         {
-            if (!h.CompareTag("Enemy")) continue;
             Mob mob = h.GetComponent<Mob>();
             if (mob != null)
             {
-                mob.MobAttacked(Stats.damage, 0.05f);
+                mob.MobAttacked(TotalDamage, 0.05f);
                 mob.ApplyDebuff(Stats.valueB, Stats.fireInterval * 1.5f);
             }
         }

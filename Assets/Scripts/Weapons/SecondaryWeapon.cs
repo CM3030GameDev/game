@@ -2,12 +2,15 @@ using UnityEngine;
 
 public abstract class SecondaryWeapon : MonoBehaviour
 {
+    [SerializeField] private CharacterStats characterStats;
+
     protected SecondaryWeaponData data;
     protected PlayerAim playerAim;
     protected int level = 1;
     protected float timer;
 
     protected WeaponLevel Stats => data.levels[level - 1];
+    protected int TotalDamage => Stats.damage + Mathf.RoundToInt(characterStats.damage);
 
     public SecondaryWeaponData Data => data;
     public int Level => level;

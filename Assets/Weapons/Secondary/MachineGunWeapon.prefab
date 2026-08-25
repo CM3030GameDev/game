@@ -44,5 +44,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19902e4a4e3cb694397fa09e3a3b0953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MachineGunWeapon
+  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   bulletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
   bulletSpeed: 18

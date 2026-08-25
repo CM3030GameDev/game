@@ -16,4 +16,12 @@ MonoBehaviour:
   description: Increase move speed by 15%
   icon: {fileID: 0}
   stat: 1
-  amount: 1
+  amountPerLevel:
+  - 1
+  - 1
+  - 1
+  iconPerLevel:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  maxLevel: 3
