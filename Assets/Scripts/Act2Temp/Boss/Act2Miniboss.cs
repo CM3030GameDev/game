@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Act2Miniboss : MonoBehaviour
+public class Act2Miniboss : MonoBehaviour, IDamageable
 {
     private enum BossState
     {
@@ -47,11 +47,6 @@ public class Act2Miniboss : MonoBehaviour
     private bool hasLandedHit = false;
     
     private bool hasBeamed = false;
-    private Vector2 playerPos;
-    private bool hasPlayerPos = false;
-
-    private float topOffset = 0f;
-    private float sideOffset = 0f;
 
     [Header("Movement")]
     [SerializeField] private float normalMoveSpeed = 5f;
@@ -64,8 +59,12 @@ public class Act2Miniboss : MonoBehaviour
     private MinibossBeamAttack beamAttack;
     private MinibossUltimate ultAttack;
     private MinibossPassive passive;
-    private Vector3 currentMoveDir = Vector3.zero;
-    private bool shouldMove = false;
+
+    private bool isAttacked;
+    //Attacked state timer
+    private float attackedTime;
+    //Attacked state duration
+    private float attackedDuration;
 
     [SerializeField] private Animator animator;
 
@@ -110,18 +109,26 @@ public class Act2Miniboss : MonoBehaviour
         currentHP = maxHP;
     }
 
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+        CancelInvoke();
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if(hasCollided)
+        attackedTime += Time.deltaTime;
+        if (attackedTime >= attackedDuration)
+        {
+            isAttacked = false;
+        }
+
+        if (currentCollisionCD > 0f)
         {
             currentCollisionCD -= Time.deltaTime;
-            if(currentCollisionCD <= 0)
-            {
-                hasCollided = false;
-                currentCollisionCD = maxCollisionCD;
-            }
         }
+
         HandleDirection();
 
         if(currentHP <= 0)
@@ -438,12 +445,12 @@ public class Act2Miniboss : MonoBehaviour
         {
             currentPassiveCooldown -= Time.deltaTime;
         }
-        else if (currentPassiveCooldown <= 0f)
+        else if (currentPassiveCooldown <= 0f && isPassiveOn)
         {
             isPassiveOn = false;
             passive.TriggerSpawn();
             currentPassiveCooldown = maxPassiveCooldown;
-            passive.completedSpawning.AddListener(() => isPassiveOn = true);
+            passive.completedSpawning.AddListener(ResetPassiveSpawn);
         }
     }
 
@@ -455,17 +462,56 @@ public class Act2Miniboss : MonoBehaviour
             HandleDirectionalAnimation("Hurt", currentDirection);
             moveSpeed = 0f;
             hasDeathAnimPlayed = true;
-            passive.completedSpawning.RemoveListener(() => isPassiveOn = false);
+            passive.completedSpawning.RemoveListener(ResetPassiveSpawn);
+            isPassiveOn = false;
         }
 
     }
 
+    private void ResetPassiveSpawn()
+    {
+        isPassiveOn = true;
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Character"))
+        HandleContactDamage(collision);
+    }
+
+    // Catches every frame the entity stays glued to the target
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        HandleContactDamage(collision);
+    }
+
+    private void HandleContactDamage(Collider2D collision)
+    {
+        // Only attempt to deal damage if our internal cooldown timer has finished
+        if (currentCollisionCD <= 0f)
         {
-            hasCollided = true;
-            collision.GetComponent<Character>().CharacterAttacked(collisionDamage);
+            // Look for anything that can take damage (Player, Generator, etc.)
+            IDamageable damageableTarget = collision.GetComponent<IDamageable>();
+
+            if (damageableTarget != null)
+            {
+                damageableTarget.TakeDamage(collisionDamage);
+                currentCollisionCD = maxCollisionCD;
+            }
         }
+    }
+    public void MobAttacked(int amount, float timer)
+    {
+        if (!isAttacked)
+        {
+            isAttacked = true;
+            attackedTime = 0f;
+            attackedDuration = timer;
+            currentHP -= amount;
+        }
+    }
+
+    public void TakeDamage(int amount, float cooldown = 0f)
+    {
+        MobAttacked(amount, cooldown);
     }
 }

@@ -14,6 +14,8 @@ public class Swing : MonoBehaviour
     [SerializeField] private GameObject character;
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private float detectionRange = 5f;
+    [SerializeField] private int damage = 6;
+    [SerializeField] private float damageCD = 0.2f;
 
     private List<GameObject> allEnemies;
 
@@ -128,5 +130,14 @@ public class Swing : MonoBehaviour
         }
 
         return nearestEnemy;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enemy"))
+        {
+            IDamageable target = collision.GetComponent<IDamageable>();
+            target?.TakeDamage(damage, damageCD);
+        }
     }
 }

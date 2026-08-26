@@ -158,10 +158,23 @@ public class MobManager : MonoBehaviour
         if (avaliableBoss != null)
         {
             avaliableBoss.SetActive(true);
+            avaliableBoss.transform.position = spawnPos.position;
             return avaliableBoss;
         }
 
         return null;
+    }
+
+    public void DespawnBoss(EnemyTypes type)
+    {
+        if (pooledEnemies.ContainsKey(type))
+        {
+            foreach (GameObject enemy in pooledEnemies[type])
+            {
+                if (enemy.activeSelf == true)
+                    enemy.SetActive(false);
+            }
+        }
     }
 
     private void SpawnEnemy(GameObject enemyToSpawn, Transform location = null)

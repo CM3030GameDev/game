@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class Mob : MonoBehaviour
+public class Mob : MonoBehaviour, IDamageable
 {
     private Rigidbody2D rb;
     private BoxCollider2D box;
@@ -32,6 +32,7 @@ public class Mob : MonoBehaviour
     [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
+    [SerializeField] private int collisionDamage = 1;
 
     public UnityEvent onDeath;
     private void Awake()
@@ -141,11 +142,12 @@ public class Mob : MonoBehaviour
     {
         if (collision.CompareTag("Character"))
         {
-            Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(10);
+            IDamageable target = collision.GetComponent<IDamageable>();
+            target?.TakeDamage(collisionDamage);
+            Debug.Log("collided mob with character");
         }
 
-        if (collision.CompareTag("Sword") && !isAttacked)
+/*        if (collision.CompareTag("Sword") && !isAttacked)
         {
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
@@ -153,18 +155,19 @@ public class Mob : MonoBehaviour
             attackedTime = 0f;
             attackedDuration = 0.2f;
             currentHP -= 20;
-        }
+        }*/
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Character"))
         {
-            Character character = collision.gameObject.GetComponent<Character>();
-            character.CharacterAttacked(10);
+            IDamageable target = collision.gameObject.GetComponent<IDamageable>();
+            target?.TakeDamage(collisionDamage);
+            Debug.Log("collided mob with character");
         }
 
-        if (collision.gameObject.CompareTag("Sword") && !isAttacked)
+/*        if (collision.gameObject.CompareTag("Sword") && !isAttacked)
         {
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
@@ -172,12 +175,12 @@ public class Mob : MonoBehaviour
             attackedTime = 0f;
             attackedDuration = 0.2f;
             currentHP -= 20;
-        }
+        }*/
     }
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Flamethrower") && !isAttacked)
+/*        if (other.CompareTag("Flamethrower") && !isAttacked)
         {
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
@@ -185,7 +188,7 @@ public class Mob : MonoBehaviour
             attackedTime = 0f;
             attackedDuration = 0.4f;
             currentHP -= 5;
-        }
+        }*/
     }
 
     public void MobAttacked(int amount, float timer)
@@ -224,5 +227,10 @@ public class Mob : MonoBehaviour
         }
 
         return push;
+    }
+
+    public void TakeDamage(int amount, float cooldown = 0f)
+    {
+        MobAttacked(amount, cooldown);
     }
 }
