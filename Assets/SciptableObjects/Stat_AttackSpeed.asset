@@ -14,14 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
   upgradeName: Attack Speed Increase
   description: Attack Speed increases
-  icon: {fileID: 0}
+  icon: {fileID: -4384315255773831016, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}
   stat: 2
   amountPerLevel:
   - 0.1
   - 0.1
   - 0.1
-  iconPerLevel:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  maxLevel: 3

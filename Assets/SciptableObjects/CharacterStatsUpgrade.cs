@@ -7,7 +7,6 @@ public class CharacterStatsUpgrade : Upgrade
 {
     public CharacterStatsType stat;
     public float[] amountPerLevel = new float[3];
-    public Sprite[] iconPerLevel = new Sprite[3];
 
     public int MaxLevel => amountPerLevel.Length;
 

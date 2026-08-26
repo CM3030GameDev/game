@@ -26,6 +26,7 @@ public class UpgradeManager : MonoBehaviour
     private void Awake()
     {
         ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots, statLevels = statLevels };
+        slots.SetMainWeaponLevel(1); // Starting Pistol tier counts as level 1 of 3
     }
 
     private void OnEnable()
@@ -44,12 +45,14 @@ public class UpgradeManager : MonoBehaviour
         if (newLevel == dualPistolLevel && dualPistolTier != null)
         {
             weapon.SetTier(dualPistolTier);
-           // slots.SetMainWeaponIcon(dualPistolTier.icon);
+            slots.SetMainWeaponIcon(dualPistolTier.icon);
+            slots.SetMainWeaponLevel(2);
         }
         else if (newLevel == assaultRifleLevel && assaultRifleTier != null)
         {
             weapon.SetTier(assaultRifleTier);
-           // slots.SetMainWeaponIcon(assaultRifleTier.icon);
+            slots.SetMainWeaponIcon(assaultRifleTier.icon);
+            slots.SetMainWeaponLevel(3);
         }
 
         Time.timeScale = 0f; // Pause game when prompted

@@ -57,6 +57,7 @@ public class WeaponSlots : MonoBehaviour
     }
 
     public void SetMainWeaponIcon(Sprite icon) => SetSlotIcon(0, icon);
+    public void SetMainWeaponLevel(int level) => RefreshPips(0, level);
 
     private void RefreshPips(int index, int level)
     {

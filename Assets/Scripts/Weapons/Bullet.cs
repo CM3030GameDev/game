@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
 
     private int hitsRemaining;
     private float knockbackForce;
+    private bool isReflected;
 
     private void Awake() { hitsRemaining = pierceCount; }
 
@@ -16,6 +17,7 @@ public class Bullet : MonoBehaviour
 
     public void SetDamage(int d) { damage = d; }
     public void SetKnockback(float force) => knockbackForce = force;
+    public void MarkReflected() { isReflected = true; }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -33,14 +35,15 @@ public class Bullet : MonoBehaviour
                 }
             }
         }
-        //Final boss collision
+        // Final Boss damage check
         else if (other.CompareTag("FinalBoss"))
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
             if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
         }
-        //Character collision (Final boss barrier reflected bullet)
-        else if (other.CompareTag("Character"))
+        // Character damage check - only if a barrier reflected this bullet back at the player;
+        // otherwise a weapon spawning bullets near the player would hit them immediately.
+        else if (isReflected && other.CompareTag("Character"))
         {
             Character character = other.GetComponent<Character>();
             character.CharacterAttacked(damage);
@@ -52,7 +55,7 @@ public class Bullet : MonoBehaviour
         }
         else
         {
-            return;   // irrelevant collider - don't burn a pierce charge
+            return;
         }
 
         hitsRemaining--;
