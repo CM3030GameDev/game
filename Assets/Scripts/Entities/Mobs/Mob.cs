@@ -19,11 +19,12 @@ public class Mob : MonoBehaviour
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
+    // Knockback (from shotgun etc.)
+    private Vector2 knockbackVelocity;
+    private float knockbackTimer;
 
     [SerializeField] private int maxHP = 100;
     private int currentHP;
@@ -32,14 +33,15 @@ public class Mob : MonoBehaviour
     [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
+    [SerializeField] private float deathAnimationDuration = 0.5f;
 
     public UnityEvent onDeath;
     private void Awake()
     {
+        EnemyMask = LayerMask.GetMask("Enemy");
         death = false;
         isAttacked = false;
         attackedTime = 0f;
-        attackedDuration = 0f;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         box = GetComponent<BoxCollider2D>();
@@ -55,9 +57,21 @@ public class Mob : MonoBehaviour
 
     private void OnEnable()
     {
+        CancelInvoke(nameof(Despawn)); // clear any leftover invoke from an instantKillAllActive() interrupting a death in progress
         isAttacked = false;
         death = false;
         currentHP = maxHP;
+        knockbackTimer = 0f;
+    }
+
+    private void OnDisable()
+    {
+        // Drops exp orb at mob position when the mob is dead
+        if (expOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+            orb.GetComponent<ExpOrb>().SetExp(expReward);
+        }
     }
 
     // Update is called once per frame
@@ -77,22 +91,27 @@ public class Mob : MonoBehaviour
         {
             sr.flipX = false;
         }
-        attackedTime += Time.deltaTime;
 
-        //Enemy can be attacked again
-        if (attackedTime >= attackedDuration)
+        //Mob cannot be attacked
+        if (attackedTime > 0f)
+        {
+            attackedTime -= Time.deltaTime;
+        }
+        //Mob can be attacked
+        else
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
         }
 
-        //Enemy dead
+
+        //Mob dead
         if (currentHP <= 0 && !death)
         {
+            //Death animation, then return to pool once it's finished playing
             animator.SetTrigger("dead");
             death = true;
-
-            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
+            Invoke(nameof(Despawn), deathAnimationDuration);
         }
 
         // Debuff timer that ticks down
@@ -105,13 +124,6 @@ public class Mob : MonoBehaviour
 
     public void Despawn()
     {
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
-
         // Account for death of mob
         onDeath?.Invoke();
 
@@ -124,11 +136,20 @@ public class Mob : MonoBehaviour
         //Enemy alive
         if (currentHP > 0)
         {
-            Vector2 chase = normalizedChase;
-            Vector2 separation = GetSeparation() * separationStrength;
-            Vector2 move = (chase + separation).normalized;
+            if (knockbackTimer > 0f)
+            {
+                // Knockback to counteract normal movement while active
+                knockbackTimer -= Time.fixedDeltaTime;
+                rb.linearVelocity = knockbackVelocity;
+            }
+            else
+            {
+                Vector2 chase = normalizedChase;
+                Vector2 separation = GetSeparation() * separationStrength;
+                Vector2 move = (chase + separation).normalized;
 
-            rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+                rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+            }
         }
         //Enemy dead
         else
@@ -139,20 +160,9 @@ public class Mob : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Character"))
-        {
-            Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(10);
-        }
-
         if (collision.CompareTag("Sword") && !isAttacked)
         {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.2f;
-            currentHP -= 20;
+            MobAttacked(20, 0.2f);
         }
     }
 
@@ -161,17 +171,11 @@ public class Mob : MonoBehaviour
         if (collision.gameObject.CompareTag("Character"))
         {
             Character character = collision.gameObject.GetComponent<Character>();
-            character.CharacterAttacked(10);
-        }
-
-        if (collision.gameObject.CompareTag("Sword") && !isAttacked)
-        {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.2f;
-            currentHP -= 20;
+            if(!character.isAttacked)
+            {
+                character.CharacterAttacked(10);
+                character.GrantInvulnerability(0.1f);
+            }
         }
     }
 
@@ -179,12 +183,7 @@ public class Mob : MonoBehaviour
     {
         if (other.CompareTag("Flamethrower") && !isAttacked)
         {
-            //Mob flashes when attacked
-            animator.SetBool("attacked", true);
-            isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = 0.4f;
-            currentHP -= 5;
+            MobAttacked(5, 0.4f);
         }
     }
 
@@ -195,10 +194,21 @@ public class Mob : MonoBehaviour
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
             isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = timer;
+            attackedTime = timer;
             currentHP -= amount;
         }
+    }
+
+    public bool WouldDie(int amount) => currentHP <= amount;
+
+    // Bypasses the isAttacked guard - for effects that must land on every enemy
+    // regardless of hit-flash state (e.g. a screen-clearing panic skill).
+    public void GuaranteedAttack(int amount, float timer)
+    {
+        animator.SetBool("attacked", true);
+        isAttacked = true;
+        attackedTime = timer;
+        currentHP -= amount;
     }
 
     public void ApplyDebuff(float multiplier, float duration)
@@ -207,20 +217,30 @@ public class Mob : MonoBehaviour
         debuffTimer = Mathf.Max(debuffTimer, duration);
     }
 
+    public void Knockback(Vector2 direction, float force)
+    {
+        knockbackVelocity = direction.normalized * force;
+        knockbackTimer = 0.15f;
+    }
+
+    private static int EnemyMask;
+    private static readonly Collider2D[] SeparationBuffer = new Collider2D[16];
+
     private Vector2 GetSeparation()
     {
         Vector2 push = Vector2.zero;
-        Collider2D[] neighbours = Physics2D.OverlapCircleAll(transform.position, separationRadius);
+        int count = Physics2D.OverlapCircleNonAlloc(transform.position, separationRadius, SeparationBuffer, EnemyMask);
 
-        foreach (var n in neighbours)
+        for (int i = 0; i < count; i++)
         {
+            Collider2D n = SeparationBuffer[i];
             if (n.gameObject == gameObject) continue;
-            if (!n.CompareTag("Enemy")) continue;
 
             Vector2 away = (Vector2)transform.position - (Vector2)n.transform.position;
-            float dist = away.magnitude;
-            if (dist > 0.01f)
-                push += away.normalized / dist; // Push enemies away from each other the closer they are
+            // Clamp the distance used here so nearly-overlapping mobs (e.g. a wave spawning
+            // stacked together) don't get an explosive push force from dividing by ~0.
+            float dist = Mathf.Max(away.magnitude, 0.1f);
+            push += away.normalized / dist; // Push enemies away from each other the closer they are
         }
 
         return push;

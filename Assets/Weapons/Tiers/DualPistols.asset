@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: DualPistols
   m_EditorClassIdentifier: Assembly-CSharp::WeaponTier
   tierName: Pistol
+  icon: {fileID: 7673718483621875303, guid: 5bea2eac64b4d4148bd575f25b13ac4b, type: 3}
   bulletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
   damage: 20
   bulletSpeed: 50
   fireInterval: 0.5
   spreadAngle: 0
   muzzleOffsets:
-  - {x: 0, y: 0.12}
-  - {x: 0, y: 0.12}
+  - {x: 0.8, y: -0.2926}
+  - {x: 1.4, y: -0.2926}

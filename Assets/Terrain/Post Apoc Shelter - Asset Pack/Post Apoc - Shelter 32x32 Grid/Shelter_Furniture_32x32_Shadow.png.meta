@@ -649,7 +649,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -663,7 +663,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -687,7 +687,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -715,12 +715,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_0
       rect:
         serializedVersion: 2
-        x: 6
+        x: 0
         y: 480
-        width: 20
-        height: 19
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -737,12 +737,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_1
       rect:
         serializedVersion: 2
-        x: 41
+        x: 32
         y: 480
-        width: 14
-        height: 26
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -759,12 +759,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_2
       rect:
         serializedVersion: 2
-        x: 73
+        x: 64
         y: 480
-        width: 14
-        height: 24
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -781,12 +781,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_3
       rect:
         serializedVersion: 2
-        x: 103
-        y: 453
-        width: 18
-        height: 38
+        x: 96
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -803,12 +803,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_4
       rect:
         serializedVersion: 2
-        x: 135
-        y: 454
-        width: 18
-        height: 33
+        x: 128
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -825,12 +825,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_5
       rect:
         serializedVersion: 2
-        x: 167
-        y: 452
-        width: 18
-        height: 38
+        x: 160
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -847,12 +847,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_6
       rect:
         serializedVersion: 2
-        x: 199
-        y: 452
-        width: 18
-        height: 38
+        x: 192
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -870,11 +870,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 224
-        y: 448
+        y: 480
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -891,12 +891,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_8
       rect:
         serializedVersion: 2
-        x: 261
-        y: 448
-        width: 22
-        height: 40
+        x: 256
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -913,12 +913,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_9
       rect:
         serializedVersion: 2
-        x: 296
-        y: 423
-        width: 48
-        height: 70
+        x: 288
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -935,12 +935,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_10
       rect:
         serializedVersion: 2
-        x: 359
-        y: 423
-        width: 18
-        height: 85
+        x: 320
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -957,12 +957,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_11
       rect:
         serializedVersion: 2
-        x: 391
-        y: 423
-        width: 18
-        height: 89
+        x: 352
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -979,12 +979,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_12
       rect:
         serializedVersion: 2
-        x: 421
+        x: 384
         y: 480
-        width: 22
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1001,12 +1001,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_13
       rect:
         serializedVersion: 2
-        x: 455
-        y: 481
-        width: 50
-        height: 28
+        x: 416
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1023,12 +1023,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_14
       rect:
         serializedVersion: 2
-        x: 515
+        x: 448
         y: 480
-        width: 26
-        height: 25
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1045,12 +1045,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_15
       rect:
         serializedVersion: 2
-        x: 545
-        y: 416
-        width: 30
-        height: 92
+        x: 480
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1067,12 +1067,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_16
       rect:
         serializedVersion: 2
-        x: 580
-        y: 416
-        width: 56
-        height: 75
+        x: 512
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1089,12 +1089,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_17
       rect:
         serializedVersion: 2
-        x: 6
-        y: 448
-        width: 20
-        height: 30
+        x: 544
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1111,12 +1111,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_18
       rect:
         serializedVersion: 2
-        x: 41
-        y: 448
-        width: 14
+        x: 576
+        y: 480
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1133,12 +1133,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_19
       rect:
         serializedVersion: 2
-        x: 41
-        y: 416
-        width: 14
+        x: 608
+        y: 480
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1155,12 +1155,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_20
       rect:
         serializedVersion: 2
-        x: 73
+        x: 0
         y: 448
-        width: 14
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1177,12 +1177,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_21
       rect:
         serializedVersion: 2
-        x: 73
-        y: 416
-        width: 14
+        x: 32
+        y: 448
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1199,12 +1199,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_22
       rect:
         serializedVersion: 2
-        x: 255
-        y: 415
-        width: 34
-        height: 33
+        x: 64
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1221,12 +1221,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_23
       rect:
         serializedVersion: 2
-        x: 419
-        y: 417
-        width: 26
-        height: 46
+        x: 96
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1243,12 +1243,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_24
       rect:
         serializedVersion: 2
-        x: 449
-        y: 416
-        width: 30
-        height: 64
+        x: 128
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1265,12 +1265,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_25
       rect:
         serializedVersion: 2
-        x: 485
-        y: 416
-        width: 54
-        height: 45
+        x: 160
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1287,12 +1287,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_26
       rect:
         serializedVersion: 2
-        x: 6
-        y: 416
-        width: 20
-        height: 30
+        x: 192
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1309,12 +1309,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_27
       rect:
         serializedVersion: 2
-        x: 103
-        y: 389
-        width: 18
-        height: 38
+        x: 224
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1331,12 +1331,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_28
       rect:
         serializedVersion: 2
-        x: 135
-        y: 390
-        width: 18
-        height: 33
+        x: 256
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1353,12 +1353,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_29
       rect:
         serializedVersion: 2
-        x: 167
-        y: 388
-        width: 18
-        height: 38
+        x: 288
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1375,12 +1375,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_30
       rect:
         serializedVersion: 2
-        x: 199
-        y: 388
-        width: 18
-        height: 38
+        x: 320
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1397,12 +1397,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_31
       rect:
         serializedVersion: 2
-        x: 224
-        y: 384
+        x: 352
+        y: 448
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1419,12 +1419,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_32
       rect:
         serializedVersion: 2
-        x: 265
-        y: 359
-        width: 48
-        height: 57
+        x: 384
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1441,12 +1441,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_33
       rect:
         serializedVersion: 2
-        x: 421
-        y: 384
-        width: 22
+        x: 416
+        y: 448
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1463,12 +1463,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_34
       rect:
         serializedVersion: 2
-        x: 4
-        y: 384
-        width: 21
-        height: 29
+        x: 448
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1485,12 +1485,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_35
       rect:
         serializedVersion: 2
-        x: 40
-        y: 386
-        width: 17
-        height: 22
+        x: 480
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1507,12 +1507,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_36
       rect:
         serializedVersion: 2
-        x: 71
-        y: 386
-        width: 17
-        height: 22
+        x: 512
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1529,12 +1529,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_37
       rect:
         serializedVersion: 2
-        x: 325
-        y: 354
-        width: 22
-        height: 58
+        x: 544
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1551,12 +1551,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_38
       rect:
         serializedVersion: 2
-        x: 357
-        y: 354
-        width: 22
-        height: 58
+        x: 576
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1573,12 +1573,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_39
       rect:
         serializedVersion: 2
-        x: 399
-        y: 354
-        width: 18
-        height: 59
+        x: 608
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1595,12 +1595,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_40
       rect:
         serializedVersion: 2
-        x: 455
-        y: 385
-        width: 50
-        height: 28
+        x: 0
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1617,12 +1617,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_41
       rect:
         serializedVersion: 2
-        x: 515
-        y: 384
-        width: 26
-        height: 25
+        x: 32
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1639,12 +1639,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_42
       rect:
         serializedVersion: 2
-        x: 545
-        y: 320
-        width: 30
-        height: 92
+        x: 64
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1661,12 +1661,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_43
       rect:
         serializedVersion: 2
-        x: 581
-        y: 320
-        width: 54
-        height: 75
+        x: 96
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1683,12 +1683,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_44
       rect:
         serializedVersion: 2
-        x: 5
-        y: 373
-        width: 10
-        height: 11
+        x: 128
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1705,12 +1705,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_45
       rect:
         serializedVersion: 2
-        x: 18
-        y: 369
-        width: 12
-        height: 13
+        x: 160
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1727,12 +1727,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_46
       rect:
         serializedVersion: 2
-        x: 41
-        y: 354
-        width: 17
-        height: 22
+        x: 192
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1749,12 +1749,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_47
       rect:
         serializedVersion: 2
-        x: 72
-        y: 354
-        width: 17
-        height: 22
+        x: 224
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1771,12 +1771,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_48
       rect:
         serializedVersion: 2
-        x: 449
-        y: 320
-        width: 30
-        height: 64
+        x: 256
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1793,12 +1793,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_49
       rect:
         serializedVersion: 2
-        x: 9
-        y: 325
-        width: 14
-        height: 18
+        x: 288
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1815,12 +1815,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_50
       rect:
         serializedVersion: 2
-        x: 41
-        y: 325
-        width: 14
-        height: 18
+        x: 320
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1837,12 +1837,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_51
       rect:
         serializedVersion: 2
-        x: 72
-        y: 323
-        width: 17
-        height: 24
+        x: 352
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1859,12 +1859,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_52
       rect:
         serializedVersion: 2
-        x: 103
-        y: 325
-        width: 18
-        height: 38
+        x: 384
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1881,12 +1881,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_53
       rect:
         serializedVersion: 2
-        x: 135
-        y: 326
-        width: 18
-        height: 33
+        x: 416
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1903,12 +1903,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_54
       rect:
         serializedVersion: 2
-        x: 167
-        y: 324
-        width: 18
-        height: 38
+        x: 448
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1925,12 +1925,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_55
       rect:
         serializedVersion: 2
-        x: 199
-        y: 324
-        width: 18
-        height: 38
+        x: 480
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1947,12 +1947,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_56
       rect:
         serializedVersion: 2
-        x: 224
-        y: 320
+        x: 512
+        y: 416
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1969,12 +1969,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_57
       rect:
         serializedVersion: 2
-        x: 267
-        y: 320
-        width: 10
-        height: 23
+        x: 544
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1991,12 +1991,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_58
       rect:
         serializedVersion: 2
-        x: 297
-        y: 320
-        width: 14
-        height: 26
+        x: 576
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2013,12 +2013,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_59
       rect:
         serializedVersion: 2
-        x: 325
-        y: 288
-        width: 22
-        height: 60
+        x: 608
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2035,12 +2035,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_60
       rect:
         serializedVersion: 2
-        x: 358
-        y: 288
-        width: 22
-        height: 60
+        x: 0
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2057,12 +2057,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_61
       rect:
         serializedVersion: 2
-        x: 387
-        y: 290
-        width: 30
-        height: 60
+        x: 32
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2079,12 +2079,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_62
       rect:
         serializedVersion: 2
-        x: 419
-        y: 321
-        width: 26
-        height: 46
+        x: 64
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2101,12 +2101,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_63
       rect:
         serializedVersion: 2
-        x: 485
-        y: 320
-        width: 54
-        height: 45
+        x: 96
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2123,12 +2123,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_64
       rect:
         serializedVersion: 2
-        x: 9
-        y: 293
-        width: 14
-        height: 17
+        x: 128
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2145,12 +2145,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_65
       rect:
         serializedVersion: 2
-        x: 39
-        y: 289
-        width: 18
-        height: 29
+        x: 160
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2167,12 +2167,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_66
       rect:
         serializedVersion: 2
-        x: 71
-        y: 287
-        width: 18
-        height: 34
+        x: 192
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2189,12 +2189,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_67
       rect:
         serializedVersion: 2
-        x: 103
-        y: 261
-        width: 18
-        height: 38
+        x: 224
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2211,12 +2211,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_68
       rect:
         serializedVersion: 2
-        x: 135
-        y: 262
-        width: 18
-        height: 33
+        x: 256
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2233,12 +2233,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_69
       rect:
         serializedVersion: 2
-        x: 167
-        y: 260
-        width: 18
-        height: 38
+        x: 288
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2255,12 +2255,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_70
       rect:
         serializedVersion: 2
-        x: 199
-        y: 260
-        width: 18
-        height: 38
+        x: 320
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2277,12 +2277,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_71
       rect:
         serializedVersion: 2
-        x: 224
-        y: 256
+        x: 352
+        y: 384
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2299,12 +2299,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_72
       rect:
         serializedVersion: 2
-        x: 265
-        y: 288
-        width: 14
-        height: 20
+        x: 384
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2321,12 +2321,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_73
       rect:
         serializedVersion: 2
-        x: 296
-        y: 288
-        width: 16
-        height: 24
+        x: 416
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2343,12 +2343,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_74
       rect:
         serializedVersion: 2
-        x: 421
-        y: 288
-        width: 22
+        x: 448
+        y: 384
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2365,12 +2365,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_75
       rect:
         serializedVersion: 2
-        x: 456
-        y: 289
-        width: 50
-        height: 28
+        x: 480
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2387,12 +2387,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_76
       rect:
         serializedVersion: 2
-        x: 515
-        y: 288
-        width: 26
-        height: 25
+        x: 512
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2409,12 +2409,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_77
       rect:
         serializedVersion: 2
-        x: 545
-        y: 224
-        width: 30
-        height: 92
+        x: 544
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2431,12 +2431,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_78
       rect:
         serializedVersion: 2
-        x: 581
-        y: 224
-        width: 54
-        height: 75
+        x: 576
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2453,12 +2453,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_79
       rect:
         serializedVersion: 2
-        x: 9
-        y: 260
-        width: 14
-        height: 18
+        x: 608
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2475,12 +2475,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_80
       rect:
         serializedVersion: 2
-        x: 39
-        y: 255
-        width: 18
-        height: 34
+        x: 0
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2497,12 +2497,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_81
       rect:
         serializedVersion: 2
-        x: 71
-        y: 257
-        width: 18
-        height: 29
+        x: 32
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2519,12 +2519,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_82
       rect:
         serializedVersion: 2
-        x: 264
-        y: 264
-        width: 18
-        height: 16
+        x: 64
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2541,12 +2541,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_83
       rect:
         serializedVersion: 2
-        x: 296
-        y: 264
-        width: 18
-        height: 16
+        x: 96
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2563,12 +2563,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_84
       rect:
         serializedVersion: 2
-        x: 321
-        y: 225
-        width: 30
-        height: 61
+        x: 128
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2585,12 +2585,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_85
       rect:
         serializedVersion: 2
-        x: 419
-        y: 225
-        width: 26
-        height: 46
+        x: 160
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2607,12 +2607,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_86
       rect:
         serializedVersion: 2
-        x: 449
-        y: 224
-        width: 30
-        height: 64
+        x: 192
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2629,12 +2629,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_87
       rect:
         serializedVersion: 2
-        x: 485
-        y: 224
-        width: 54
-        height: 45
+        x: 224
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2651,12 +2651,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_88
       rect:
         serializedVersion: 2
-        x: 9
-        y: 229
-        width: 14
-        height: 18
+        x: 256
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2673,12 +2673,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_89
       rect:
         serializedVersion: 2
-        x: 37
-        y: 224
-        width: 22
-        height: 20
+        x: 288
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2695,12 +2695,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_90
       rect:
         serializedVersion: 2
-        x: 69
-        y: 224
-        width: 22
-        height: 23
+        x: 320
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2717,12 +2717,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_91
       rect:
         serializedVersion: 2
-        x: 103
-        y: 197
-        width: 18
-        height: 38
+        x: 352
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2739,12 +2739,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_92
       rect:
         serializedVersion: 2
-        x: 135
-        y: 198
-        width: 18
-        height: 33
+        x: 384
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2761,12 +2761,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_93
       rect:
         serializedVersion: 2
-        x: 167
-        y: 196
-        width: 18
-        height: 38
+        x: 416
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2783,12 +2783,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_94
       rect:
         serializedVersion: 2
-        x: 199
-        y: 196
-        width: 18
-        height: 38
+        x: 448
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2805,12 +2805,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_95
       rect:
         serializedVersion: 2
-        x: 224
-        y: 192
+        x: 480
+        y: 352
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2827,12 +2827,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_96
       rect:
         serializedVersion: 2
-        x: 264
-        y: 224
-        width: 18
-        height: 24
+        x: 512
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2849,12 +2849,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_97
       rect:
         serializedVersion: 2
-        x: 296
-        y: 224
-        width: 18
-        height: 24
+        x: 544
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2871,12 +2871,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_98
       rect:
         serializedVersion: 2
-        x: 356
-        y: 226
-        width: 56
-        height: 37
+        x: 576
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2893,12 +2893,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_99
       rect:
         serializedVersion: 2
-        x: 0
-        y: 202
-        width: 33
-        height: 12
+        x: 608
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2915,12 +2915,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_100
       rect:
         serializedVersion: 2
-        x: 37
-        y: 192
-        width: 22
-        height: 20
+        x: 0
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2937,12 +2937,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_101
       rect:
         serializedVersion: 2
-        x: 69
-        y: 192
-        width: 22
-        height: 23
+        x: 32
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2959,12 +2959,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_102
       rect:
         serializedVersion: 2
-        x: 264
-        y: 201
-        width: 18
-        height: 16
+        x: 64
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2981,12 +2981,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_103
       rect:
         serializedVersion: 2
-        x: 296
-        y: 201
-        width: 18
-        height: 16
+        x: 96
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3003,12 +3003,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_104
       rect:
         serializedVersion: 2
-        x: 321
-        y: 161
-        width: 30
-        height: 61
+        x: 128
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3025,12 +3025,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_105
       rect:
         serializedVersion: 2
-        x: 421
-        y: 192
-        width: 22
+        x: 160
+        y: 320
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3047,12 +3047,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_106
       rect:
         serializedVersion: 2
-        x: 457
-        y: 193
-        width: 50
-        height: 28
+        x: 192
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3069,12 +3069,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_107
       rect:
         serializedVersion: 2
-        x: 515
-        y: 192
-        width: 26
-        height: 25
+        x: 224
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3091,12 +3091,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_108
       rect:
         serializedVersion: 2
-        x: 545
-        y: 128
-        width: 30
-        height: 92
+        x: 256
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3113,12 +3113,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_109
       rect:
         serializedVersion: 2
-        x: 581
-        y: 128
-        width: 54
-        height: 75
+        x: 288
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3135,12 +3135,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_110
       rect:
         serializedVersion: 2
-        x: 10
-        y: 159
-        width: 12
-        height: 34
+        x: 320
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3157,12 +3157,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_111
       rect:
         serializedVersion: 2
-        x: 37
-        y: 160
-        width: 22
-        height: 20
+        x: 352
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3179,12 +3179,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_112
       rect:
         serializedVersion: 2
-        x: 69
-        y: 160
-        width: 22
-        height: 23
+        x: 384
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3201,12 +3201,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_113
       rect:
         serializedVersion: 2
-        x: 103
-        y: 133
-        width: 18
-        height: 38
+        x: 416
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3223,12 +3223,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_114
       rect:
         serializedVersion: 2
-        x: 135
-        y: 134
-        width: 18
-        height: 33
+        x: 448
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3245,12 +3245,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_115
       rect:
         serializedVersion: 2
-        x: 167
-        y: 132
-        width: 18
-        height: 38
+        x: 480
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3267,12 +3267,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_116
       rect:
         serializedVersion: 2
-        x: 199
-        y: 132
-        width: 18
-        height: 38
+        x: 512
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3289,12 +3289,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_117
       rect:
         serializedVersion: 2
-        x: 224
-        y: 128
+        x: 544
+        y: 320
         width: 32
-        height: 39
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3311,12 +3311,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_118
       rect:
         serializedVersion: 2
-        x: 264
-        y: 161
-        width: 18
-        height: 24
+        x: 576
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3333,12 +3333,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_119
       rect:
         serializedVersion: 2
-        x: 296
-        y: 161
-        width: 18
-        height: 24
+        x: 608
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3355,12 +3355,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_120
       rect:
         serializedVersion: 2
-        x: 356
-        y: 162
-        width: 56
-        height: 37
+        x: 0
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3377,12 +3377,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_121
       rect:
         serializedVersion: 2
-        x: 420
-        y: 129
-        width: 26
-        height: 46
+        x: 32
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3399,12 +3399,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_122
       rect:
         serializedVersion: 2
-        x: 449
-        y: 128
-        width: 30
-        height: 64
+        x: 64
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3421,12 +3421,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_123
       rect:
         serializedVersion: 2
-        x: 485
-        y: 128
-        width: 54
-        height: 45
+        x: 96
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3443,12 +3443,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_124
       rect:
         serializedVersion: 2
-        x: 10
-        y: 106
-        width: 44
-        height: 44
+        x: 128
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3465,12 +3465,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_125
       rect:
         serializedVersion: 2
-        x: 63
-        y: 130
-        width: 34
-        height: 31
+        x: 160
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3487,12 +3487,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_126
       rect:
         serializedVersion: 2
-        x: 261
-        y: 132
-        width: 22
-        height: 23
+        x: 192
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3509,12 +3509,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_127
       rect:
         serializedVersion: 2
-        x: 294
-        y: 95
-        width: 20
-        height: 58
+        x: 224
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3531,12 +3531,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_128
       rect:
         serializedVersion: 2
-        x: 322
-        y: 127
-        width: 26
-        height: 16
+        x: 256
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3553,12 +3553,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_129
       rect:
         serializedVersion: 2
-        x: 360
-        y: 127
-        width: 16
-        height: 27
+        x: 288
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3575,12 +3575,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_130
       rect:
         serializedVersion: 2
-        x: 387
-        y: 127
-        width: 26
-        height: 17
+        x: 320
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3597,12 +3597,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_131
       rect:
         serializedVersion: 2
-        x: 71
-        y: 112
-        width: 18
-        height: 9
+        x: 352
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3619,12 +3619,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_132
       rect:
         serializedVersion: 2
-        x: 71
-        y: 104
-        width: 18
-        height: 9
+        x: 384
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3641,12 +3641,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_133
       rect:
         serializedVersion: 2
-        x: 100
-        y: 64
-        width: 24
-        height: 62
+        x: 416
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3663,12 +3663,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_134
       rect:
         serializedVersion: 2
-        x: 135
-        y: 64
-        width: 18
-        height: 62
+        x: 448
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3685,12 +3685,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_135
       rect:
         serializedVersion: 2
-        x: 167
-        y: 64
-        width: 18
-        height: 62
+        x: 480
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3707,12 +3707,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_136
       rect:
         serializedVersion: 2
-        x: 199
-        y: 95
-        width: 18
-        height: 31
+        x: 512
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3729,12 +3729,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_137
       rect:
         serializedVersion: 2
-        x: 231
-        y: 64
-        width: 18
-        height: 62
+        x: 544
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3751,12 +3751,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_138
       rect:
         serializedVersion: 2
-        x: 273
-        y: 96
-        width: 13
-        height: 16
+        x: 576
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3773,12 +3773,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_139
       rect:
         serializedVersion: 2
-        x: 326
-        y: 95
-        width: 20
-        height: 27
+        x: 608
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3795,12 +3795,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_140
       rect:
         serializedVersion: 2
-        x: 352
-        y: 63
+        x: 0
+        y: 256
         width: 32
-        height: 63
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3817,12 +3817,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_141
       rect:
         serializedVersion: 2
-        x: 386
-        y: 95
-        width: 28
-        height: 31
+        x: 32
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3839,12 +3839,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_142
       rect:
         serializedVersion: 2
-        x: 449
-        y: 97
-        width: 17
-        height: 16
+        x: 64
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3861,12 +3861,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_143
       rect:
         serializedVersion: 2
-        x: 458
-        y: 103
-        width: 21
-        height: 24
+        x: 96
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3883,12 +3883,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_144
       rect:
         serializedVersion: 2
-        x: 482
-        y: 95
-        width: 26
-        height: 33
+        x: 128
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3905,12 +3905,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_145
       rect:
         serializedVersion: 2
-        x: 515
-        y: 95
-        width: 26
-        height: 25
+        x: 160
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3927,12 +3927,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_146
       rect:
         serializedVersion: 2
-        x: 544
-        y: 63
+        x: 192
+        y: 256
         width: 32
-        height: 57
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3949,12 +3949,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_147
       rect:
         serializedVersion: 2
-        x: 578
-        y: 95
-        width: 26
-        height: 25
+        x: 224
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3971,12 +3971,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_148
       rect:
         serializedVersion: 2
-        x: 10
-        y: 80
-        width: 12
-        height: 17
+        x: 256
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3993,12 +3993,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_149
       rect:
         serializedVersion: 2
-        x: 71
-        y: 96
-        width: 18
-        height: 9
+        x: 288
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4015,12 +4015,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_150
       rect:
         serializedVersion: 2
-        x: 71
-        y: 88
-        width: 18
-        height: 9
+        x: 320
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4037,12 +4037,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_151
       rect:
         serializedVersion: 2
-        x: 328
-        y: 63
-        width: 16
-        height: 33
+        x: 352
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4059,12 +4059,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_152
       rect:
         serializedVersion: 2
-        x: 424
-        y: 63
-        width: 17
-        height: 43
+        x: 384
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4081,12 +4081,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_153
       rect:
         serializedVersion: 2
-        x: 520
-        y: 63
-        width: 16
-        height: 33
+        x: 416
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4103,12 +4103,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_154
       rect:
         serializedVersion: 2
-        x: 615
-        y: 3
-        width: 18
-        height: 103
+        x: 448
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4125,12 +4125,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_155
       rect:
         serializedVersion: 2
-        x: 31
-        y: 67
-        width: 34
-        height: 26
+        x: 480
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4147,12 +4147,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_156
       rect:
         serializedVersion: 2
-        x: 71
-        y: 80
-        width: 18
-        height: 9
+        x: 512
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4169,12 +4169,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_157
       rect:
         serializedVersion: 2
-        x: 71
-        y: 72
-        width: 18
-        height: 9
+        x: 544
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4191,12 +4191,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_158
       rect:
         serializedVersion: 2
-        x: 199
-        y: 64
-        width: 18
-        height: 22
+        x: 576
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4213,12 +4213,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_159
       rect:
         serializedVersion: 2
-        x: 256
-        y: 63
+        x: 608
+        y: 256
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4235,12 +4235,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_160
       rect:
         serializedVersion: 2
-        x: 288
-        y: 63
+        x: 0
+        y: 224
         width: 32
-        height: 21
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4257,12 +4257,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_161
       rect:
         serializedVersion: 2
-        x: 384
-        y: 63
+        x: 32
+        y: 224
         width: 32
-        height: 25
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4279,12 +4279,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_162
       rect:
         serializedVersion: 2
-        x: 448
-        y: 63
+        x: 64
+        y: 224
         width: 32
-        height: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4301,12 +4301,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_163
       rect:
         serializedVersion: 2
-        x: 480
-        y: 63
+        x: 96
+        y: 224
         width: 32
-        height: 22
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4323,12 +4323,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_164
       rect:
         serializedVersion: 2
-        x: 576
-        y: 63
+        x: 128
+        y: 224
         width: 32
-        height: 26
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4345,12 +4345,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_165
       rect:
         serializedVersion: 2
-        x: 70
-        y: 32
-        width: 20
+        x: 160
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4367,12 +4367,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_166
       rect:
         serializedVersion: 2
-        x: 71
-        y: 64
-        width: 18
-        height: 9
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4389,12 +4389,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_167
       rect:
         serializedVersion: 2
-        x: 102
-        y: 32
-        width: 20
+        x: 224
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4411,12 +4411,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_168
       rect:
         serializedVersion: 2
-        x: 134
-        y: 32
-        width: 20
+        x: 256
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4433,12 +4433,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_169
       rect:
         serializedVersion: 2
-        x: 166
-        y: 32
-        width: 20
+        x: 288
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4455,12 +4455,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_170
       rect:
         serializedVersion: 2
-        x: 198
-        y: 32
-        width: 20
+        x: 320
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4477,12 +4477,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_171
       rect:
         serializedVersion: 2
-        x: 230
-        y: 32
-        width: 20
+        x: 352
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4499,12 +4499,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_172
       rect:
         serializedVersion: 2
-        x: 262
-        y: 32
-        width: 20
+        x: 384
+        y: 224
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4521,12 +4521,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_173
       rect:
         serializedVersion: 2
-        x: 321
-        y: 34
-        width: 28
-        height: 34
+        x: 416
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4543,12 +4543,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_174
       rect:
         serializedVersion: 2
-        x: 384
-        y: 31
+        x: 448
+        y: 224
         width: 32
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4565,12 +4565,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_175
       rect:
         serializedVersion: 2
-        x: 416
-        y: 31
+        x: 480
+        y: 224
         width: 32
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4587,12 +4587,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_176
       rect:
         serializedVersion: 2
-        x: 448
-        y: 31
+        x: 512
+        y: 224
         width: 32
-        height: 33
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4609,12 +4609,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_177
       rect:
         serializedVersion: 2
-        x: 0
-        y: 31
-        width: 31
-        height: 28
+        x: 544
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4631,12 +4631,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_178
       rect:
         serializedVersion: 2
-        x: 32
-        y: 34
+        x: 576
+        y: 224
         width: 32
-        height: 23
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4653,12 +4653,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_179
       rect:
         serializedVersion: 2
-        x: 291
-        y: 34
-        width: 26
-        height: 27
+        x: 608
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4675,12 +4675,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_180
       rect:
         serializedVersion: 2
-        x: 355
-        y: 34
-        width: 26
-        height: 27
+        x: 0
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4697,12 +4697,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_181
       rect:
         serializedVersion: 2
-        x: 482
-        y: 32
-        width: 29
-        height: 30
+        x: 32
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4719,12 +4719,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_182
       rect:
         serializedVersion: 2
-        x: 515
-        y: 36
-        width: 27
-        height: 25
+        x: 64
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4741,12 +4741,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_183
       rect:
         serializedVersion: 2
-        x: 547
-        y: 36
-        width: 27
-        height: 25
+        x: 96
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4763,12 +4763,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_184
       rect:
         serializedVersion: 2
-        x: 579
-        y: 36
-        width: 27
-        height: 25
+        x: 128
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4785,12 +4785,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_185
       rect:
         serializedVersion: 2
-        x: 2
-        y: 15
-        width: 21
-        height: 13
+        x: 160
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4807,12 +4807,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_186
       rect:
         serializedVersion: 2
-        x: 3
-        y: 0
-        width: 29
-        height: 17
+        x: 192
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4829,12 +4829,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_187
       rect:
         serializedVersion: 2
-        x: 34
-        y: 2
-        width: 30
-        height: 18
+        x: 224
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4851,12 +4851,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_188
       rect:
         serializedVersion: 2
-        x: 70
-        y: 0
-        width: 20
+        x: 256
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4873,12 +4873,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_189
       rect:
         serializedVersion: 2
-        x: 102
-        y: 0
-        width: 20
+        x: 288
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4895,12 +4895,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_190
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 20
+        x: 320
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4917,12 +4917,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_191
       rect:
         serializedVersion: 2
-        x: 166
-        y: 0
-        width: 20
+        x: 352
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4939,12 +4939,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_192
       rect:
         serializedVersion: 2
-        x: 198
-        y: 0
-        width: 20
+        x: 384
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4961,12 +4961,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_193
       rect:
         serializedVersion: 2
-        x: 230
-        y: 0
-        width: 20
+        x: 416
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4983,12 +4983,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_194
       rect:
         serializedVersion: 2
-        x: 262
-        y: 0
-        width: 20
+        x: 448
+        y: 192
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5005,12 +5005,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_195
       rect:
         serializedVersion: 2
-        x: 288
-        y: 0
+        x: 480
+        y: 192
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5027,12 +5027,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_196
       rect:
         serializedVersion: 2
-        x: 320
-        y: 0
+        x: 512
+        y: 192
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5049,12 +5049,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_197
       rect:
         serializedVersion: 2
-        x: 352
-        y: 0
+        x: 544
+        y: 192
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5071,12 +5071,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_198
       rect:
         serializedVersion: 2
-        x: 389
-        y: 7
-        width: 22
-        height: 19
+        x: 576
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5093,12 +5093,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_199
       rect:
         serializedVersion: 2
-        x: 418
-        y: 6
-        width: 28
-        height: 22
+        x: 608
+        y: 192
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5115,12 +5115,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_200
       rect:
         serializedVersion: 2
-        x: 456
-        y: 6
-        width: 16
-        height: 22
+        x: 0
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5137,12 +5137,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_201
       rect:
         serializedVersion: 2
-        x: 481
-        y: 4
-        width: 30
-        height: 25
+        x: 32
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5159,12 +5159,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_202
       rect:
         serializedVersion: 2
-        x: 515
-        y: 4
-        width: 27
-        height: 25
+        x: 64
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5181,12 +5181,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_203
       rect:
         serializedVersion: 2
-        x: 547
-        y: 4
-        width: 27
-        height: 25
+        x: 96
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5203,12 +5203,12 @@ TextureImporter:
       name: Shelter_Furniture_32x32_Shadow_204
       rect:
         serializedVersion: 2
-        x: 579
-        y: 4
-        width: 27
-        height: 25
+        x: 128
+        y: 160
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5221,11 +5221,2541 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_205
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9d4272aff884dc4f83107b0d4b69f0f
+      internalID: 1679191706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_206
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1efe5a7d232d34a9a062e56b66c6a4
+      internalID: 212397428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_207
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22170278e89d584ea90399c224774ff
+      internalID: 575112926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_208
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f72c85773d34854da07c4a8bac2d5eb
+      internalID: 1475790402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_209
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5edea9dbadabd7048ab2c02bb8e32d73
+      internalID: -2084950880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5288e87dd3b874496ab0ef4a562b52
+      internalID: -1257182320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_211
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fad1b3e8d6eb3446b73d04dff884ebd
+      internalID: -1373609486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_212
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3847ba55bd2194a9a3a9029860ef51
+      internalID: -246450091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_213
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1145ec9e347facb429f069fa0e4dbf6a
+      internalID: -1724370972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_214
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9b87b9d36b28434fbe54560f1b33289
+      internalID: -1192964714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_215
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f67bc2ef4101845488abffa409c911cf
+      internalID: 64638199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_216
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a477d7248cf97e45aa212928115732d
+      internalID: 735399615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_217
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfc62814a40831409e5fce890d02618
+      internalID: 1869109009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_218
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ed16fb5385dba24cb7ae5340099adbd
+      internalID: -1798805077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_219
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de52e4a02a8ed2e4b9b70f71767bb8d1
+      internalID: -1338176829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5591b5d88a3065429fd97e6ddef69fd
+      internalID: -871359244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_221
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08b2f4e9610ea9c458bc807d32166ec7
+      internalID: -2142579972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_222
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a07495b8265aff42b2e9438f3b4c309
+      internalID: -1896127646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_223
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d178cecbde59a4c44afa7ae70fe874f6
+      internalID: -271193904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edf75b8bb2c434b469b4b27dae2d01b1
+      internalID: -974836871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_225
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0999e6ddd5304d45bb600e62f64509e
+      internalID: 1394765281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_226
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e222c15b1399e2468fcc8e7b1e4de40
+      internalID: -1091320839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_227
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27556a3a3d7033f46864830e528b733a
+      internalID: 1356843458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9884a932fc21e564ca4b72c01c535b4e
+      internalID: 1052854151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_229
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32713ae4d154f734d93876313d5a8264
+      internalID: -637639024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_230
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d52de7955100434c80775b83ec70cf9
+      internalID: 1275819408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_231
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ea0c6f399b20a44840395e036a527a
+      internalID: -2127051448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_232
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fdd0ff4056de6246b60a0ff6eb94786
+      internalID: -1126478408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_233
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f90eaf09896b53045ba9731f541ec1e3
+      internalID: 1659530807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_234
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fff6380421030c74bb07d6e34430c8a9
+      internalID: -41991014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_235
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b848d19e66aa1044b347498da240e73
+      internalID: -1025517456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_236
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca46502c8daf64649a22b742255485e5
+      internalID: 660540235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_237
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ef8acf30143c3e4cbd07bdedf4527bf
+      internalID: 718496955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_238
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8104a0903f146143a9d9f579d6514f3
+      internalID: -1938721475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_239
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c829b80b71d45904c982ca76f293dc23
+      internalID: 804437976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2d5fffc54c1e14ea6f74740445a065
+      internalID: -672014739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_241
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebae40e03cf24d740b90e6f0e8d65656
+      internalID: 718589395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_242
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ab4bbd77426b2459ad71f4b370ca64
+      internalID: 1391236222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_243
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f284748b8571544aa6ff45d10f2598a
+      internalID: 1295735045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_244
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad38efdabd9590b46b06d197c7f530a1
+      internalID: 374640859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84187901a4180549882181946637ade
+      internalID: -269402990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_246
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07652da9359e6840802f03ee19d694d
+      internalID: -1967040397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_247
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff25e3229925a8245a98134dd44732cc
+      internalID: 2072895062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_248
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43b271e6e27b30c4595aeba35e07ab71
+      internalID: -946406962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_249
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765a1e867ab6a7b46bde6bb03b50129b
+      internalID: 214423713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_250
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611bc3bb7e045534891f60d7d9200192
+      internalID: -257197180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_251
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2a062e0f8245a4980f56f432b0a2a8
+      internalID: 206963479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_252
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 808bfc3232b29c84cb7b2d96eace4d14
+      internalID: 1099519097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_253
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d6b66a3650ac1499a7551dcd388ad0
+      internalID: 1010091074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_254
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd97a895d2415f408daa1341f9e8adf
+      internalID: 855030600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_255
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ff78c645e2a994eb00dc206b590003
+      internalID: 2019371989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_256
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 731c637f8edc46348b442972e7190e50
+      internalID: 358707853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_257
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abf941c0bae53145b29ef21beab8950
+      internalID: 1321497826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_258
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9169418820fcafd459f8495f9769451b
+      internalID: -305862705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_259
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f12da0dd3881b49bf2aa46c6be7a53
+      internalID: 986123272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_260
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1644b24fc52a924da6d45f3f86c9332
+      internalID: 1445594242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_261
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612a4db5a11982748ab35b49fd878578
+      internalID: 1834667315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_262
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43f3239481563994e877d691ce82cf18
+      internalID: -1252926986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_263
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550f5d8271cee7248a18092b620dd33f
+      internalID: 512691272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_264
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a440513e2030754fb47e464ec9be269
+      internalID: -1546657091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_265
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef845742835718419351af7ab629db2
+      internalID: -1564005078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_266
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f99ec49f6f0ed342bf56ed8fdf2f892
+      internalID: 1317017063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_267
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c376a22e66b5c13499e4342621fb89ce
+      internalID: 908376365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_268
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 346a6593df1021c4d8c5fe0deb4a9664
+      internalID: 531754349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_269
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1904119404277904bbf9f290b46bc3ad
+      internalID: 431714449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_270
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dcb572215705574b89c8c87fa0860a2
+      internalID: -643622112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_271
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a815f8c31d442b4d9f53f8cb9c95ee2
+      internalID: 173082782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_272
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0bd300805ebe34ab3f51752d2476ec
+      internalID: 2101927352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_273
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c7ee325cd37994f8d0c1a52cfc94e7
+      internalID: 652596466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_274
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ef67d733f27dd4eb56ff55fb227068
+      internalID: 874457921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_275
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073b12d0c26f91d4087db719c3f6069c
+      internalID: -157447104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_276
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15114464f7719cd4e91a8947b5b413ff
+      internalID: -1066318641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_277
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd1dae4410552844a1fbfb357281730
+      internalID: 2059202159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_278
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681c20cfc0975c34db0694101c8b49b3
+      internalID: 2032226426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_279
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52de07dc902b2d94f8385c0b58d7a509
+      internalID: 2133500702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_280
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df1e9a4d0ae96ee41bfb7afdd4804680
+      internalID: -962931767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_281
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecc3025969330a459e556f2efda83b6
+      internalID: 361551291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_282
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc06317be895e864298d03c2a1949c7a
+      internalID: -1334503998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_283
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85ba9e30f17c3b24c87f66525da956f9
+      internalID: 132069278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_284
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22b31ec3cb5325042968bed7b748ab05
+      internalID: -260409769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_285
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c68c95f423d7b64882e2dc314ebb720
+      internalID: 1034862712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_286
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb84c840aa8582241aadf87e44bbcee1
+      internalID: -595614476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_287
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1109386638f03bb4ab93a0f642c80b45
+      internalID: -617624856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_288
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84175e9c9d9d52d4c8d67634cb84cede
+      internalID: 232010689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_289
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a8b05477fcb744e8de5a0b97e587e7
+      internalID: 1289723831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_290
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c0ddf1c911cc2a44aac37f832f8b77f
+      internalID: -377180832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_291
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22133b1af5c7fd74993d865d04cb2762
+      internalID: -1688237032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_292
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c8d6b263a94424eb3ac21f349645da
+      internalID: -1882298049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_293
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff549c8cff384a749bb0dedec11bc917
+      internalID: 450108413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_294
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526c30a7e5a49e54dbe067e424818ac9
+      internalID: -525479436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_295
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07a721735abf004eb270857212c33bf
+      internalID: 1278838542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_296
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d69698e5d2974491f534921928530
+      internalID: 288176460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_297
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c473f6a5b4f0f419ccabf01b44e59c
+      internalID: 1154542977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_298
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fca05cb1bbfe3b47b57581c9b2c1478
+      internalID: 745670737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_299
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67b0386bee4370845a2dfcfd07245162
+      internalID: 794022401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_300
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c22036b42d1605478dd5d439f1bbdc9
+      internalID: 905579032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_301
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d7b705772ebe24aa8a241bf4b451b1
+      internalID: -1077436271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_302
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dfad176b5ff9b140b27c73f5c8744b7
+      internalID: 409145910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_303
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1398aa6502b4bda4280216f0741db7bd
+      internalID: 688524600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_304
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e1da897b6e41e4690b98ca38c6b1ad
+      internalID: 746627218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_305
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32249fae1f0d4374782f13877163b7c8
+      internalID: 554209522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_306
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92cef33099f31f445addb55c4a27e5e6
+      internalID: -108542527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_307
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8f78d68a160cc44b25c0d732186b7a
+      internalID: -490616100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_308
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0db4208965fcf1844b28df2f3c497298
+      internalID: 771050417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_309
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de7a425fbacfcde468ef31ece29f0beb
+      internalID: 221732898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_310
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08959a4d225c93c4c8ebd57b398688c9
+      internalID: -199936595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_311
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04089890fb981184aad709d5d7304180
+      internalID: 1574937592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_312
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a05e468e0626cd84ea79cd5dd61a522c
+      internalID: -1062339927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_313
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac6cbee81b63ff4dbf2f141e11cad29
+      internalID: 351284851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_314
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec02a55ba4df2a44c928709027145b2a
+      internalID: 1817096482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_315
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afa1dd3cf71ef104884bd9f3d83467c1
+      internalID: -2017909536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_316
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28af549b2b14afa4b8e80ce1c6aaea7a
+      internalID: -360785077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_317
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104345f5b7df5b641814aa467119285b
+      internalID: -1761198492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_318
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc1b47988b50ba45ac1569f8bc84d2e
+      internalID: -563511469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shelter_Furniture_32x32_Shadow_319
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 342ba04816317ee40bbbbde1af6813b4
+      internalID: 844499868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: c48fad9e20e9939449db5802e3e40050
     internalID: 0
     vertices: []
     indices: 
@@ -5233,7 +7763,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Shelter_Furniture_32x32_Shadow_0: -8723141629375699566
       Shelter_Furniture_32x32_Shadow_1: -5881473661458484859
@@ -5354,18 +7886,133 @@ TextureImporter:
       Shelter_Furniture_32x32_Shadow_202: -3429222983558697916
       Shelter_Furniture_32x32_Shadow_203: -6036584621104085801
       Shelter_Furniture_32x32_Shadow_204: -6580896363210787217
+      Shelter_Furniture_32x32_Shadow_205: 1679191706
+      Shelter_Furniture_32x32_Shadow_206: 212397428
+      Shelter_Furniture_32x32_Shadow_207: 575112926
+      Shelter_Furniture_32x32_Shadow_208: 1475790402
+      Shelter_Furniture_32x32_Shadow_209: -2084950880
       Shelter_Furniture_32x32_Shadow_21: 1264391194666016274
+      Shelter_Furniture_32x32_Shadow_210: -1257182320
+      Shelter_Furniture_32x32_Shadow_211: -1373609486
+      Shelter_Furniture_32x32_Shadow_212: -246450091
+      Shelter_Furniture_32x32_Shadow_213: -1724370972
+      Shelter_Furniture_32x32_Shadow_214: -1192964714
+      Shelter_Furniture_32x32_Shadow_215: 64638199
+      Shelter_Furniture_32x32_Shadow_216: 735399615
+      Shelter_Furniture_32x32_Shadow_217: 1869109009
+      Shelter_Furniture_32x32_Shadow_218: -1798805077
+      Shelter_Furniture_32x32_Shadow_219: -1338176829
       Shelter_Furniture_32x32_Shadow_22: 8024723697375421376
+      Shelter_Furniture_32x32_Shadow_220: -871359244
+      Shelter_Furniture_32x32_Shadow_221: -2142579972
+      Shelter_Furniture_32x32_Shadow_222: -1896127646
+      Shelter_Furniture_32x32_Shadow_223: -271193904
+      Shelter_Furniture_32x32_Shadow_224: -974836871
+      Shelter_Furniture_32x32_Shadow_225: 1394765281
+      Shelter_Furniture_32x32_Shadow_226: -1091320839
+      Shelter_Furniture_32x32_Shadow_227: 1356843458
+      Shelter_Furniture_32x32_Shadow_228: 1052854151
+      Shelter_Furniture_32x32_Shadow_229: -637639024
       Shelter_Furniture_32x32_Shadow_23: 3220473132843384626
+      Shelter_Furniture_32x32_Shadow_230: 1275819408
+      Shelter_Furniture_32x32_Shadow_231: -2127051448
+      Shelter_Furniture_32x32_Shadow_232: -1126478408
+      Shelter_Furniture_32x32_Shadow_233: 1659530807
+      Shelter_Furniture_32x32_Shadow_234: -41991014
+      Shelter_Furniture_32x32_Shadow_235: -1025517456
+      Shelter_Furniture_32x32_Shadow_236: 660540235
+      Shelter_Furniture_32x32_Shadow_237: 718496955
+      Shelter_Furniture_32x32_Shadow_238: -1938721475
+      Shelter_Furniture_32x32_Shadow_239: 804437976
       Shelter_Furniture_32x32_Shadow_24: -4492324517589794532
+      Shelter_Furniture_32x32_Shadow_240: -672014739
+      Shelter_Furniture_32x32_Shadow_241: 718589395
+      Shelter_Furniture_32x32_Shadow_242: 1391236222
+      Shelter_Furniture_32x32_Shadow_243: 1295735045
+      Shelter_Furniture_32x32_Shadow_244: 374640859
+      Shelter_Furniture_32x32_Shadow_245: -269402990
+      Shelter_Furniture_32x32_Shadow_246: -1967040397
+      Shelter_Furniture_32x32_Shadow_247: 2072895062
+      Shelter_Furniture_32x32_Shadow_248: -946406962
+      Shelter_Furniture_32x32_Shadow_249: 214423713
       Shelter_Furniture_32x32_Shadow_25: 7502209766874071892
+      Shelter_Furniture_32x32_Shadow_250: -257197180
+      Shelter_Furniture_32x32_Shadow_251: 206963479
+      Shelter_Furniture_32x32_Shadow_252: 1099519097
+      Shelter_Furniture_32x32_Shadow_253: 1010091074
+      Shelter_Furniture_32x32_Shadow_254: 855030600
+      Shelter_Furniture_32x32_Shadow_255: 2019371989
+      Shelter_Furniture_32x32_Shadow_256: 358707853
+      Shelter_Furniture_32x32_Shadow_257: 1321497826
+      Shelter_Furniture_32x32_Shadow_258: -305862705
+      Shelter_Furniture_32x32_Shadow_259: 986123272
       Shelter_Furniture_32x32_Shadow_26: 3687235714317525927
+      Shelter_Furniture_32x32_Shadow_260: 1445594242
+      Shelter_Furniture_32x32_Shadow_261: 1834667315
+      Shelter_Furniture_32x32_Shadow_262: -1252926986
+      Shelter_Furniture_32x32_Shadow_263: 512691272
+      Shelter_Furniture_32x32_Shadow_264: -1546657091
+      Shelter_Furniture_32x32_Shadow_265: -1564005078
+      Shelter_Furniture_32x32_Shadow_266: 1317017063
+      Shelter_Furniture_32x32_Shadow_267: 908376365
+      Shelter_Furniture_32x32_Shadow_268: 531754349
+      Shelter_Furniture_32x32_Shadow_269: 431714449
       Shelter_Furniture_32x32_Shadow_27: -8307599755720627622
+      Shelter_Furniture_32x32_Shadow_270: -643622112
+      Shelter_Furniture_32x32_Shadow_271: 173082782
+      Shelter_Furniture_32x32_Shadow_272: 2101927352
+      Shelter_Furniture_32x32_Shadow_273: 652596466
+      Shelter_Furniture_32x32_Shadow_274: 874457921
+      Shelter_Furniture_32x32_Shadow_275: -157447104
+      Shelter_Furniture_32x32_Shadow_276: -1066318641
+      Shelter_Furniture_32x32_Shadow_277: 2059202159
+      Shelter_Furniture_32x32_Shadow_278: 2032226426
+      Shelter_Furniture_32x32_Shadow_279: 2133500702
       Shelter_Furniture_32x32_Shadow_28: -5766583855092948195
+      Shelter_Furniture_32x32_Shadow_280: -962931767
+      Shelter_Furniture_32x32_Shadow_281: 361551291
+      Shelter_Furniture_32x32_Shadow_282: -1334503998
+      Shelter_Furniture_32x32_Shadow_283: 132069278
+      Shelter_Furniture_32x32_Shadow_284: -260409769
+      Shelter_Furniture_32x32_Shadow_285: 1034862712
+      Shelter_Furniture_32x32_Shadow_286: -595614476
+      Shelter_Furniture_32x32_Shadow_287: -617624856
+      Shelter_Furniture_32x32_Shadow_288: 232010689
+      Shelter_Furniture_32x32_Shadow_289: 1289723831
       Shelter_Furniture_32x32_Shadow_29: -3088516572038442548
+      Shelter_Furniture_32x32_Shadow_290: -377180832
+      Shelter_Furniture_32x32_Shadow_291: -1688237032
+      Shelter_Furniture_32x32_Shadow_292: -1882298049
+      Shelter_Furniture_32x32_Shadow_293: 450108413
+      Shelter_Furniture_32x32_Shadow_294: -525479436
+      Shelter_Furniture_32x32_Shadow_295: 1278838542
+      Shelter_Furniture_32x32_Shadow_296: 288176460
+      Shelter_Furniture_32x32_Shadow_297: 1154542977
+      Shelter_Furniture_32x32_Shadow_298: 745670737
+      Shelter_Furniture_32x32_Shadow_299: 794022401
       Shelter_Furniture_32x32_Shadow_3: 7798581499852892940
       Shelter_Furniture_32x32_Shadow_30: 5535951757070230047
+      Shelter_Furniture_32x32_Shadow_300: 905579032
+      Shelter_Furniture_32x32_Shadow_301: -1077436271
+      Shelter_Furniture_32x32_Shadow_302: 409145910
+      Shelter_Furniture_32x32_Shadow_303: 688524600
+      Shelter_Furniture_32x32_Shadow_304: 746627218
+      Shelter_Furniture_32x32_Shadow_305: 554209522
+      Shelter_Furniture_32x32_Shadow_306: -108542527
+      Shelter_Furniture_32x32_Shadow_307: -490616100
+      Shelter_Furniture_32x32_Shadow_308: 771050417
+      Shelter_Furniture_32x32_Shadow_309: 221732898
       Shelter_Furniture_32x32_Shadow_31: 6208006828612782916
+      Shelter_Furniture_32x32_Shadow_310: -199936595
+      Shelter_Furniture_32x32_Shadow_311: 1574937592
+      Shelter_Furniture_32x32_Shadow_312: -1062339927
+      Shelter_Furniture_32x32_Shadow_313: 351284851
+      Shelter_Furniture_32x32_Shadow_314: 1817096482
+      Shelter_Furniture_32x32_Shadow_315: -2017909536
+      Shelter_Furniture_32x32_Shadow_316: -360785077
+      Shelter_Furniture_32x32_Shadow_317: -1761198492
+      Shelter_Furniture_32x32_Shadow_318: -563511469
+      Shelter_Furniture_32x32_Shadow_319: 844499868
       Shelter_Furniture_32x32_Shadow_32: 6786445701172466161
       Shelter_Furniture_32x32_Shadow_33: 824009031757325126
       Shelter_Furniture_32x32_Shadow_34: -282101252901264621

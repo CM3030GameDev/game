@@ -1,76 +1,69 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class SoldierSkill : MonoBehaviour
 {
-    [Header("Cooldown")]
-    [SerializeField] private float cooldown = 8f;
+    [Header("Panic Button")]
+    [SerializeField] private int killsToCharge = 10;
+    [SerializeField] private int damage = 500;
+    [SerializeField] private float hitFlash = 0.1f;
 
-    [Header("Airstrike")]
-    [SerializeField] private GameObject explosionPrefab;
-    [SerializeField] private int strikeCount = 10;    // Number of airstrikes 
-    [SerializeField] private float strikeInterval = 0.8f;  // Delay between each airstrike
-    [SerializeField] private float scatter = 0.8f;   // RandomOffset for each airstrike
+    private int killsSinceLastUse;
+    private int lastSeenKillCount;
 
-    private List<GameObject> allEnemies = MobManager.Instance.GetAllPooledEnemies();
+    public bool IsReady => killsSinceLastUse >= killsToCharge;
+    public float ChargeFraction => Mathf.Clamp01((float)killsSinceLastUse / killsToCharge);
 
-    private float cooldownTimer;
-
-    public bool IsReady => cooldownTimer <= 0f;
-    public float CooldownRemaining => Mathf.Max(0f, cooldownTimer);
-    public float CooldownDuration => cooldown;
+    private void Start()
+    {
+        lastSeenKillCount = MobManager.Instance.GetKillCount();
+    }
 
     private void Update()
     {
         if (Time.timeScale == 0f) return;
 
-        if (cooldownTimer > 0f)
-            cooldownTimer -= Time.deltaTime;
+        // Track kills via MobManager's running count rather than a per-kill event,
+        // so kills caused by this skill's own blast (see Activate) can be excluded.
+        int currentKillCount = MobManager.Instance.GetKillCount();
+        int delta = currentKillCount - lastSeenKillCount;
+        lastSeenKillCount = currentKillCount;
+        if (delta > 0)
+            killsSinceLastUse = Mathf.Min(killsToCharge, killsSinceLastUse + delta);
 
         if (Input.GetMouseButtonDown(1) && IsReady)
-        {
-            StartCoroutine(Airstrike());
-            cooldownTimer = cooldown;
-        }
+            Activate();
     }
 
-    private IEnumerator Airstrike()
+    private void Activate()
     {
-        for (int i = 0; i < strikeCount; i++)
+        killsSinceLastUse = 0;
+
+        // TODO: play panic-button animation once art/animation exists
+
+        int willDieCount = 0;
+        foreach (var e in MobManager.Instance.GetAllPooledEnemies())
         {
-            Vector2 target = PickTarget();
-            // Small scatter so it looks less targeted
-            target += new Vector2(Random.Range(-scatter, scatter),
-                                  Random.Range(-scatter, scatter));
+            if (!e.activeInHierarchy) continue;
 
-            Instantiate(explosionPrefab, target, Quaternion.identity);
+            Mob mob = e.GetComponent<Mob>();
+            if (mob == null) continue;
 
-            yield return new WaitForSeconds(strikeInterval);
+            if (mob.WouldDie(damage)) willDieCount++;
+            mob.GuaranteedAttack(damage, hitFlash);
         }
-    }
 
-    private Vector2 PickTarget()
-    {
-        // Gather living enemies
-        var alive = new System.Collections.Generic.List<GameObject>();
-        foreach (var e in allEnemies)
-            if (e.activeInHierarchy) alive.Add(e);
-
-        // Hit a random enemy if any exist, otherwise scatter near the player
-        if (alive.Count > 0)
-            return alive[Random.Range(0, alive.Count)].transform.position;
-
-        return (Vector2)transform.position +
-               new Vector2(Random.Range(-5f, 5f), Random.Range(-5f, 5f));
+        // These enemies will die and increment MobManager's kill count once their death
+        // animation finishes (a few frames from now) - pre-account for that now so this
+        // blast's own kills don't recharge the skill.
+        lastSeenKillCount += willDieCount;
     }
 
     public void ApplyUpgrade(SkillStat stat, float amount)
     {
         switch (stat)
         {
-            case SkillStat.Cooldown: cooldown = Mathf.Max(2f, cooldown - amount); break;
-            case SkillStat.StrikeCount: strikeCount += (int)amount; break;
+            case SkillStat.Cooldown: killsToCharge = Mathf.Max(1, killsToCharge - (int)amount); break;
+            case SkillStat.StrikeCount: damage += (int)amount; break;
         }
     }
 }

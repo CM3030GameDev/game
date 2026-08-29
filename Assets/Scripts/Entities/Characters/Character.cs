@@ -8,14 +8,11 @@ public class Character : MonoBehaviour
     private SpriteRenderer sr;
     private Vector2 movement;
     private float invulnTimer;
+    private float regenAccumulator;
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
-    private bool isAttacked;
-    //Attacked state timer
-    private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
+    public bool isAttacked;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -26,8 +23,6 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         isAttacked = false;
-        attackedTime = 1f;
-        attackedDuration = 0.1f;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -41,19 +36,18 @@ public class Character : MonoBehaviour
     {
         Movement();
         Sprite();
+        Regenerate();
 
-        attackedTime += Time.deltaTime;
-
-        //Character can be attacked again
-        if (attackedTime >= attackedDuration)
-        {
-            isAttacked = false;
-            animator.SetBool("attacked", false);
-        }
-
+        //Character cannot be attacked
         if (invulnTimer > 0f)
         {
             invulnTimer -= Time.deltaTime;
+        }
+        //Character can be attacked again
+        else
+        {
+            isAttacked = false;
+            animator.SetBool("attacked", false);
         }
     }
 
@@ -94,17 +88,28 @@ public class Character : MonoBehaviour
         sr.flipX = playerAim.AimDirection.x > 0f;
     }
 
+    private void Regenerate()
+    {
+        if (cs.healthRegen <= 0f || cs.health >= cs.maxHealth) return;
+
+        // Accumulate fractional regen so low rates (e.g. 1/sec) still add up over time
+        regenAccumulator += cs.healthRegen * Time.deltaTime;
+        int whole = Mathf.FloorToInt(regenAccumulator);
+        if (whole > 0)
+        {
+            cs.health = Mathf.Min(cs.maxHealth, cs.health + whole);
+            regenAccumulator -= whole;
+        }
+    }
+
     public void CharacterAttacked(int amount)
     {
         if (IsInvulnerable) return;
 
-        if (!isAttacked)
-        {
-            animator.SetBool("attacked", true); // Play attacked animation of character
-            isAttacked = true;
-            attackedTime = 0f;
-            cs.health -= amount;
-        }
+        // Play attacked animation of character
+        animator.SetBool("attacked", true);
+        isAttacked = false;
+        cs.health -= amount;
     }
 
     public void GrantInvulnerability(float duration)

@@ -53,13 +53,13 @@ public class MainWeapon : MonoBehaviour
         float rotZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
 
         GameObject b = Instantiate(currentTier.bulletPrefab, spawnPos,
-                                   Quaternion.AngleAxis(rotZ, Vector3.forward));
+                            Quaternion.AngleAxis(rotZ, Vector3.forward));
 
         var rb = b.GetComponent<Rigidbody2D>();
         if (rb != null) rb.linearVelocity = dir * currentTier.bulletSpeed;
 
         var bullet = b.GetComponent<Bullet>();
-        if (bullet != null) bullet.SetDamage(currentTier.damage);
+        if (bullet != null) bullet.SetDamage(currentTier.damage + Mathf.RoundToInt(characterStats.damage));
     }
 
     // Upgrade card will call this function to upgrade weapons

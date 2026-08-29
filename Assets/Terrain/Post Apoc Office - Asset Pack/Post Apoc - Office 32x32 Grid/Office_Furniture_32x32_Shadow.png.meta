@@ -564,10 +564,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -619,12 +619,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 486
-        width: 21
-        height: 16
+        x: 0
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -641,12 +641,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 486
-        width: 21
-        height: 16
+        x: 32
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -663,12 +663,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_2
       rect:
         serializedVersion: 2
-        x: 69
-        y: 486
-        width: 21
-        height: 16
+        x: 64
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -685,12 +685,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_3
       rect:
         serializedVersion: 2
-        x: 106
-        y: 487
-        width: 12
-        height: 17
+        x: 96
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -707,12 +707,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_4
       rect:
         serializedVersion: 2
-        x: 139
-        y: 487
-        width: 12
-        height: 17
+        x: 128
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -729,12 +729,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_5
       rect:
         serializedVersion: 2
-        x: 170
-        y: 487
-        width: 12
-        height: 17
+        x: 160
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -751,12 +751,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_6
       rect:
         serializedVersion: 2
-        x: 202
-        y: 485
-        width: 13
-        height: 20
+        x: 192
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -773,12 +773,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_7
       rect:
         serializedVersion: 2
-        x: 234
-        y: 485
-        width: 13
-        height: 20
+        x: 224
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -795,12 +795,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_8
       rect:
         serializedVersion: 2
-        x: 271
-        y: 420
-        width: 17
-        height: 75
+        x: 256
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -817,12 +817,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_9
       rect:
         serializedVersion: 2
-        x: 291
-        y: 420
-        width: 29
-        height: 76
+        x: 288
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -839,12 +839,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_10
       rect:
         serializedVersion: 2
-        x: 326
-        y: 485
-        width: 20
-        height: 21
+        x: 320
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -861,12 +861,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_11
       rect:
         serializedVersion: 2
-        x: 360
-        y: 458
-        width: 17
-        height: 41
+        x: 352
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,11 +884,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 481
-        width: 9
-        height: 7
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -905,12 +905,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_13
       rect:
         serializedVersion: 2
-        x: 386
-        y: 447
-        width: 27
-        height: 65
+        x: 416
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -927,12 +927,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_14
       rect:
         serializedVersion: 2
-        x: 423
-        y: 448
-        width: 50
-        height: 41
+        x: 448
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -949,12 +949,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_15
       rect:
         serializedVersion: 2
-        x: 487
-        y: 448
-        width: 50
-        height: 41
+        x: 480
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -971,12 +971,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_16
       rect:
         serializedVersion: 2
-        x: 552
-        y: 448
-        width: 50
-        height: 39
+        x: 512
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -993,12 +993,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_17
       rect:
         serializedVersion: 2
-        x: 611
-        y: 449
-        width: 26
-        height: 53
+        x: 544
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1015,12 +1015,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_18
       rect:
         serializedVersion: 2
-        x: 9
-        y: 417
-        width: 46
-        height: 64
+        x: 576
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1037,12 +1037,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_19
       rect:
         serializedVersion: 2
-        x: 73
-        y: 415
-        width: 46
-        height: 66
+        x: 608
+        y: 480
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1059,12 +1059,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_20
       rect:
         serializedVersion: 2
-        x: 137
-        y: 415
-        width: 46
-        height: 66
+        x: 0
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1081,12 +1081,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_21
       rect:
         serializedVersion: 2
-        x: 201
-        y: 417
-        width: 46
-        height: 64
+        x: 32
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1103,12 +1103,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_22
       rect:
         serializedVersion: 2
-        x: 326
-        y: 449
-        width: 17
-        height: 14
+        x: 64
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1125,12 +1125,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_23
       rect:
         serializedVersion: 2
-        x: 336
-        y: 461
-        width: 7
-        height: 11
+        x: 96
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1147,12 +1147,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_24
       rect:
         serializedVersion: 2
-        x: 325
+        x: 128
         y: 448
-        width: 8
-        height: 6
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1169,12 +1169,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_25
       rect:
         serializedVersion: 2
-        x: 331
-        y: 416
-        width: 10
-        height: 18
+        x: 160
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1191,12 +1191,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_26
       rect:
         serializedVersion: 2
-        x: 357
-        y: 391
-        width: 25
-        height: 48
+        x: 192
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1213,12 +1213,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_27
       rect:
         serializedVersion: 2
-        x: 389
-        y: 385
-        width: 25
-        height: 61
+        x: 224
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1235,12 +1235,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_28
       rect:
         serializedVersion: 2
-        x: 423
-        y: 384
-        width: 50
-        height: 42
+        x: 256
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1257,12 +1257,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_29
       rect:
         serializedVersion: 2
-        x: 487
-        y: 384
-        width: 50
-        height: 42
+        x: 288
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1279,12 +1279,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_30
       rect:
         serializedVersion: 2
-        x: 551
-        y: 384
-        width: 50
-        height: 42
+        x: 320
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1301,12 +1301,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_31
       rect:
         serializedVersion: 2
-        x: 611
-        y: 385
-        width: 26
-        height: 53
+        x: 352
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1323,12 +1323,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_32
       rect:
         serializedVersion: 2
-        x: 9
-        y: 353
-        width: 44
-        height: 42
+        x: 384
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1345,12 +1345,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_33
       rect:
         serializedVersion: 2
-        x: 73
-        y: 353
-        width: 44
-        height: 42
+        x: 416
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1367,12 +1367,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_34
       rect:
         serializedVersion: 2
-        x: 138
-        y: 353
-        width: 44
-        height: 42
+        x: 448
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1389,12 +1389,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_35
       rect:
         serializedVersion: 2
-        x: 202
-        y: 353
-        width: 44
-        height: 42
+        x: 480
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1411,12 +1411,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_36
       rect:
         serializedVersion: 2
-        x: 260
-        y: 351
-        width: 28
-        height: 59
+        x: 512
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1433,12 +1433,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_37
       rect:
         serializedVersion: 2
-        x: 303
-        y: 351
-        width: 17
-        height: 59
+        x: 544
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1455,12 +1455,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_38
       rect:
         serializedVersion: 2
-        x: 330
-        y: 390
-        width: 13
-        height: 17
+        x: 576
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1477,12 +1477,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_39
       rect:
         serializedVersion: 2
-        x: 376
-        y: 390
-        width: 7
-        height: 6
+        x: 608
+        y: 448
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1499,12 +1499,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_40
       rect:
         serializedVersion: 2
-        x: 12
-        y: 293
-        width: 24
-        height: 37
+        x: 0
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1521,12 +1521,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_41
       rect:
         serializedVersion: 2
-        x: 38
-        y: 301
-        width: 13
-        height: 31
+        x: 32
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1543,12 +1543,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_42
       rect:
         serializedVersion: 2
-        x: 73
-        y: 326
-        width: 14
-        height: 19
+        x: 64
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1565,12 +1565,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_43
       rect:
         serializedVersion: 2
-        x: 105
-        y: 288
-        width: 46
-        height: 64
+        x: 96
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1587,12 +1587,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_44
       rect:
         serializedVersion: 2
-        x: 169
-        y: 288
-        width: 46
-        height: 64
+        x: 128
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1609,12 +1609,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_45
       rect:
         serializedVersion: 2
-        x: 233
-        y: 288
-        width: 46
-        height: 64
+        x: 160
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1631,12 +1631,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_46
       rect:
         serializedVersion: 2
-        x: 303
-        y: 259
-        width: 17
-        height: 76
+        x: 192
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1653,12 +1653,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_47
       rect:
         serializedVersion: 2
-        x: 324
-        y: 319
-        width: 24
-        height: 49
+        x: 224
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1675,12 +1675,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_48
       rect:
         serializedVersion: 2
-        x: 356
-        y: 319
-        width: 24
-        height: 49
+        x: 256
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1697,12 +1697,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_49
       rect:
         serializedVersion: 2
-        x: 388
-        y: 319
-        width: 24
-        height: 49
+        x: 288
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1719,12 +1719,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_50
       rect:
         serializedVersion: 2
-        x: 418
-        y: 319
-        width: 31
-        height: 49
+        x: 320
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1741,12 +1741,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_51
       rect:
         serializedVersion: 2
-        x: 461
-        y: 319
-        width: 20
-        height: 49
+        x: 352
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1763,12 +1763,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_52
       rect:
         serializedVersion: 2
-        x: 484
-        y: 319
-        width: 24
-        height: 63
+        x: 384
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1785,12 +1785,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_53
       rect:
         serializedVersion: 2
-        x: 516
-        y: 319
-        width: 24
-        height: 63
+        x: 416
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1807,12 +1807,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_54
       rect:
         serializedVersion: 2
-        x: 548
-        y: 319
-        width: 24
-        height: 63
+        x: 448
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1829,12 +1829,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_55
       rect:
         serializedVersion: 2
-        x: 578
-        y: 319
-        width: 31
-        height: 63
+        x: 480
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1851,12 +1851,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_56
       rect:
         serializedVersion: 2
-        x: 621
-        y: 319
-        width: 19
-        height: 63
+        x: 512
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1873,12 +1873,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_57
       rect:
         serializedVersion: 2
-        x: 73
-        y: 294
-        width: 14
-        height: 19
+        x: 544
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1895,12 +1895,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_58
       rect:
         serializedVersion: 2
-        x: 326
-        y: 255
-        width: 20
-        height: 65
+        x: 576
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1917,12 +1917,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_59
       rect:
         serializedVersion: 2
-        x: 354
-        y: 257
-        width: 60
-        height: 41
+        x: 608
+        y: 416
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1939,12 +1939,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_60
       rect:
         serializedVersion: 2
-        x: 418
-        y: 256
-        width: 60
-        height: 42
+        x: 0
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1961,12 +1961,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_61
       rect:
         serializedVersion: 2
-        x: 484
-        y: 255
-        width: 24
-        height: 63
+        x: 32
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1983,12 +1983,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_62
       rect:
         serializedVersion: 2
-        x: 516
-        y: 255
-        width: 24
-        height: 63
+        x: 64
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2005,12 +2005,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_63
       rect:
         serializedVersion: 2
-        x: 548
-        y: 255
-        width: 24
-        height: 63
+        x: 96
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2027,12 +2027,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_64
       rect:
         serializedVersion: 2
-        x: 578
-        y: 255
-        width: 31
-        height: 63
+        x: 128
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2049,12 +2049,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_65
       rect:
         serializedVersion: 2
-        x: 621
-        y: 255
-        width: 19
-        height: 63
+        x: 160
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2071,12 +2071,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_66
       rect:
         serializedVersion: 2
-        x: 10
-        y: 229
-        width: 26
-        height: 37
+        x: 192
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2093,12 +2093,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_67
       rect:
         serializedVersion: 2
-        x: 38
-        y: 237
-        width: 13
-        height: 31
+        x: 224
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2115,12 +2115,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_68
       rect:
         serializedVersion: 2
-        x: 74
-        y: 229
-        width: 26
-        height: 37
+        x: 256
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2137,12 +2137,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_69
       rect:
         serializedVersion: 2
-        x: 102
-        y: 237
-        width: 13
-        height: 31
+        x: 288
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2159,12 +2159,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_70
       rect:
         serializedVersion: 2
-        x: 138
-        y: 229
-        width: 26
-        height: 37
+        x: 320
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2181,12 +2181,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_71
       rect:
         serializedVersion: 2
-        x: 166
-        y: 237
-        width: 13
-        height: 31
+        x: 352
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2203,12 +2203,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_72
       rect:
         serializedVersion: 2
-        x: 198
-        y: 241
-        width: 25
-        height: 45
+        x: 384
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2225,12 +2225,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_73
       rect:
         serializedVersion: 2
-        x: 226
-        y: 241
-        width: 25
-        height: 48
+        x: 416
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2247,12 +2247,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_74
       rect:
         serializedVersion: 2
-        x: 265
-        y: 263
-        width: 13
-        height: 17
+        x: 448
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2269,12 +2269,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_75
       rect:
         serializedVersion: 2
-        x: 32
-        y: 230
-        width: 7
-        height: 10
+        x: 480
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2291,12 +2291,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_76
       rect:
         serializedVersion: 2
-        x: 96
-        y: 230
-        width: 7
-        height: 10
+        x: 512
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2313,12 +2313,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_77
       rect:
         serializedVersion: 2
-        x: 160
-        y: 230
-        width: 7
-        height: 10
+        x: 544
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2335,12 +2335,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_78
       rect:
         serializedVersion: 2
-        x: 273
-        y: 232
-        width: 13
-        height: 17
+        x: 576
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2357,12 +2357,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_79
       rect:
         serializedVersion: 2
-        x: 297
-        y: 232
-        width: 13
-        height: 14
+        x: 608
+        y: 384
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2379,12 +2379,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_80
       rect:
         serializedVersion: 2
-        x: 331
-        y: 231
-        width: 10
-        height: 16
+        x: 0
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2401,12 +2401,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_81
       rect:
         serializedVersion: 2
-        x: 363
-        y: 231
-        width: 10
-        height: 16
+        x: 32
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2423,12 +2423,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_82
       rect:
         serializedVersion: 2
-        x: 388
-        y: 192
-        width: 24
-        height: 45
+        x: 64
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2445,12 +2445,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_83
       rect:
         serializedVersion: 2
-        x: 453
-        y: 193
-        width: 20
-        height: 42
+        x: 96
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2467,12 +2467,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_84
       rect:
         serializedVersion: 2
-        x: 487
-        y: 193
-        width: 20
-        height: 42
+        x: 128
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2489,12 +2489,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_85
       rect:
         serializedVersion: 2
-        x: 519
-        y: 197
-        width: 20
-        height: 40
+        x: 160
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2511,12 +2511,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_86
       rect:
         serializedVersion: 2
-        x: 551
-        y: 231
-        width: 19
-        height: 16
+        x: 192
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2533,12 +2533,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_87
       rect:
         serializedVersion: 2
-        x: 582
-        y: 197
-        width: 19
-        height: 37
+        x: 224
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2555,12 +2555,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_88
       rect:
         serializedVersion: 2
-        x: 617
-        y: 197
-        width: 19
-        height: 37
+        x: 256
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2577,12 +2577,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_89
       rect:
         serializedVersion: 2
-        x: 12
-        y: 193
-        width: 40
-        height: 29
+        x: 288
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2599,12 +2599,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_90
       rect:
         serializedVersion: 2
-        x: 65
-        y: 193
-        width: 15
+        x: 320
+        y: 352
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2621,12 +2621,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_91
       rect:
         serializedVersion: 2
-        x: 79
-        y: 213
-        width: 9
-        height: 8
+        x: 352
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2643,12 +2643,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_92
       rect:
         serializedVersion: 2
-        x: 79
-        y: 191
-        width: 11
-        height: 23
+        x: 384
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2665,12 +2665,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_93
       rect:
         serializedVersion: 2
-        x: 114
-        y: 204
-        width: 10
-        height: 10
+        x: 416
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2687,12 +2687,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_94
       rect:
         serializedVersion: 2
-        x: 139
-        y: 183
-        width: 13
-        height: 31
+        x: 448
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2709,12 +2709,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_95
       rect:
         serializedVersion: 2
-        x: 201
-        y: 199
-        width: 14
-        height: 18
+        x: 480
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2731,12 +2731,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_96
       rect:
         serializedVersion: 2
-        x: 233
-        y: 199
-        width: 14
-        height: 18
+        x: 512
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2753,12 +2753,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_97
       rect:
         serializedVersion: 2
-        x: 262
-        y: 196
-        width: 13
-        height: 17
+        x: 544
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2775,12 +2775,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_98
       rect:
         serializedVersion: 2
-        x: 289
-        y: 195
-        width: 16
-        height: 24
+        x: 576
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2797,12 +2797,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_99
       rect:
         serializedVersion: 2
-        x: 304
-        y: 201
-        width: 14
-        height: 15
+        x: 608
+        y: 352
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2819,12 +2819,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_100
       rect:
         serializedVersion: 2
-        x: 323
-        y: 199
-        width: 24
-        height: 21
+        x: 0
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2841,12 +2841,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_101
       rect:
         serializedVersion: 2
-        x: 362
-        y: 199
-        width: 12
-        height: 15
+        x: 32
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2863,12 +2863,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_102
       rect:
         serializedVersion: 2
-        x: 420
-        y: 192
-        width: 24
-        height: 38
+        x: 64
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2885,12 +2885,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_103
       rect:
         serializedVersion: 2
-        x: 551
-        y: 192
-        width: 20
-        height: 33
+        x: 96
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2907,12 +2907,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_104
       rect:
         serializedVersion: 2
-        x: 101
-        y: 200
-        width: 10
-        height: 10
+        x: 128
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2929,12 +2929,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_105
       rect:
         serializedVersion: 2
-        x: 153
-        y: 180
-        width: 28
-        height: 23
+        x: 160
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2951,12 +2951,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_106
       rect:
         serializedVersion: 2
-        x: 311
-        y: 196
-        width: 9
-        height: 8
+        x: 192
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2973,12 +2973,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_107
       rect:
         serializedVersion: 2
-        x: 328
-        y: 192
-        width: 9
-        height: 10
+        x: 224
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -2995,12 +2995,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_108
       rect:
         serializedVersion: 2
-        x: 4
-        y: 144
-        width: 24
-        height: 38
+        x: 256
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3017,12 +3017,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_109
       rect:
         serializedVersion: 2
-        x: 37
-        y: 162
-        width: 20
-        height: 25
+        x: 288
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3039,12 +3039,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_110
       rect:
         serializedVersion: 2
-        x: 66
-        y: 144
-        width: 60
-        height: 38
+        x: 320
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3061,12 +3061,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_111
       rect:
         serializedVersion: 2
-        x: 199
-        y: 128
-        width: 19
-        height: 63
+        x: 352
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3083,12 +3083,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_112
       rect:
         serializedVersion: 2
-        x: 230
-        y: 128
-        width: 19
-        height: 63
+        x: 384
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3105,12 +3105,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_113
       rect:
         serializedVersion: 2
-        x: 262
-        y: 132
-        width: 19
-        height: 39
+        x: 416
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3127,12 +3127,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_114
       rect:
         serializedVersion: 2
-        x: 295
-        y: 132
-        width: 19
-        height: 39
+        x: 448
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3149,12 +3149,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_115
       rect:
         serializedVersion: 2
-        x: 328
-        y: 167
-        width: 16
-        height: 17
+        x: 480
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3171,12 +3171,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_116
       rect:
         serializedVersion: 2
-        x: 361
-        y: 164
-        width: 17
-        height: 22
+        x: 512
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3193,12 +3193,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_117
       rect:
         serializedVersion: 2
-        x: 390
-        y: 128
-        width: 20
-        height: 55
+        x: 544
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3215,12 +3215,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_118
       rect:
         serializedVersion: 2
-        x: 422
-        y: 128
-        width: 20
-        height: 55
+        x: 576
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3237,12 +3237,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_119
       rect:
         serializedVersion: 2
-        x: 454
-        y: 128
-        width: 20
-        height: 55
+        x: 608
+        y: 320
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3259,12 +3259,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_120
       rect:
         serializedVersion: 2
-        x: 487
-        y: 160
-        width: 18
-        height: 29
+        x: 0
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3281,12 +3281,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_121
       rect:
         serializedVersion: 2
-        x: 518
-        y: 133
-        width: 20
-        height: 40
+        x: 32
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3303,12 +3303,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_122
       rect:
         serializedVersion: 2
-        x: 551
-        y: 167
-        width: 19
-        height: 22
+        x: 64
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3325,12 +3325,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_123
       rect:
         serializedVersion: 2
-        x: 581
-        y: 133
-        width: 19
-        height: 37
+        x: 96
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3347,12 +3347,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_124
       rect:
         serializedVersion: 2
-        x: 616
-        y: 133
-        width: 19
-        height: 37
+        x: 128
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3369,12 +3369,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_125
       rect:
         serializedVersion: 2
-        x: 36
-        y: 129
-        width: 24
-        height: 31
+        x: 160
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3391,12 +3391,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_126
       rect:
         serializedVersion: 2
-        x: 130
-        y: 128
-        width: 60
-        height: 31
+        x: 192
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3413,12 +3413,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_127
       rect:
         serializedVersion: 2
-        x: 328
-        y: 134
-        width: 16
-        height: 17
+        x: 224
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3435,12 +3435,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_128
       rect:
         serializedVersion: 2
-        x: 363
-        y: 133
-        width: 13
-        height: 14
+        x: 256
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3457,12 +3457,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_129
       rect:
         serializedVersion: 2
-        x: 487
-        y: 128
-        width: 18
-        height: 29
+        x: 288
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3479,12 +3479,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_130
       rect:
         serializedVersion: 2
-        x: 550
-        y: 128
-        width: 20
-        height: 33
+        x: 320
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3501,12 +3501,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_131
       rect:
         serializedVersion: 2
-        x: 70
-        y: 114
-        width: 18
-        height: 15
+        x: 352
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3523,12 +3523,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_132
       rect:
         serializedVersion: 2
-        x: 104
-        y: 114
-        width: 18
-        height: 14
+        x: 384
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3545,12 +3545,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_133
       rect:
         serializedVersion: 2
-        x: 135
-        y: 96
-        width: 18
-        height: 29
+        x: 416
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3567,12 +3567,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_134
       rect:
         serializedVersion: 2
-        x: 167
-        y: 96
-        width: 18
-        height: 29
+        x: 448
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3589,12 +3589,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_135
       rect:
         serializedVersion: 2
-        x: 197
-        y: 96
-        width: 25
-        height: 26
+        x: 480
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3611,12 +3611,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_136
       rect:
         serializedVersion: 2
-        x: 232
-        y: 100
-        width: 17
-        height: 22
+        x: 512
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3633,12 +3633,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_137
       rect:
         serializedVersion: 2
-        x: 257
-        y: 101
-        width: 30
-        height: 26
+        x: 544
+        y: 288
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3655,12 +3655,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_138
       rect:
         serializedVersion: 2
-        x: 289
-        y: 95
-        width: 30
+        x: 576
+        y: 288
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3677,12 +3677,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_139
       rect:
         serializedVersion: 2
-        x: 321
-        y: 95
-        width: 30
+        x: 608
+        y: 288
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3699,12 +3699,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_140
       rect:
         serializedVersion: 2
-        x: 361
-        y: 96
-        width: 46
+        x: 0
+        y: 256
+        width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3721,12 +3721,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_141
       rect:
         serializedVersion: 2
-        x: 425
-        y: 103
-        width: 13
-        height: 16
+        x: 32
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3743,12 +3743,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_142
       rect:
         serializedVersion: 2
-        x: 449
-        y: 64
-        width: 62
-        height: 64
+        x: 64
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3765,12 +3765,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_143
       rect:
         serializedVersion: 2
-        x: 513
-        y: 64
-        width: 62
-        height: 64
+        x: 96
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3787,12 +3787,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_144
       rect:
         serializedVersion: 2
-        x: 577
-        y: 64
-        width: 62
-        height: 64
+        x: 128
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3809,12 +3809,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_145
       rect:
         serializedVersion: 2
-        x: 7
-        y: 95
-        width: 16
-        height: 17
+        x: 160
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3831,12 +3831,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_146
       rect:
         serializedVersion: 2
-        x: 41
-        y: 95
-        width: 16
-        height: 18
+        x: 192
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3853,12 +3853,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_147
       rect:
         serializedVersion: 2
-        x: 183
-        y: 95
-        width: 9
-        height: 9
+        x: 224
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3875,12 +3875,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_148
       rect:
         serializedVersion: 2
-        x: 325
-        y: 65
-        width: 20
-        height: 30
+        x: 256
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3897,12 +3897,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_149
       rect:
         serializedVersion: 2
-        x: 9
-        y: 67
-        width: 6
-        height: 15
+        x: 288
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3919,12 +3919,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_150
       rect:
         serializedVersion: 2
-        x: 15
-        y: 65
-        width: 6
-        height: 15
+        x: 320
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3941,12 +3941,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_151
       rect:
         serializedVersion: 2
-        x: 37
-        y: 71
-        width: 9
-        height: 11
+        x: 352
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3963,12 +3963,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_152
       rect:
         serializedVersion: 2
-        x: 45
-        y: 63
-        width: 6
-        height: 15
+        x: 384
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -3985,12 +3985,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_153
       rect:
         serializedVersion: 2
-        x: 50
-        y: 68
-        width: 6
-        height: 15
+        x: 416
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4007,12 +4007,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_154
       rect:
         serializedVersion: 2
-        x: 63
-        y: 66
-        width: 98
-        height: 27
+        x: 448
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4029,12 +4029,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_155
       rect:
         serializedVersion: 2
-        x: 170
-        y: 65
-        width: 13
-        height: 14
+        x: 480
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4051,12 +4051,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_156
       rect:
         serializedVersion: 2
-        x: 200
-        y: 68
-        width: 17
-        height: 22
+        x: 512
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4073,12 +4073,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_157
       rect:
         serializedVersion: 2
-        x: 232
-        y: 68
-        width: 17
-        height: 22
+        x: 544
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4095,12 +4095,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_158
       rect:
         serializedVersion: 2
-        x: 271
-        y: 1
-        width: 17
-        height: 76
+        x: 576
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4117,12 +4117,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_159
       rect:
         serializedVersion: 2
-        x: 291
-        y: 0
-        width: 29
-        height: 77
+        x: 608
+        y: 256
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4139,12 +4139,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_160
       rect:
         serializedVersion: 2
-        x: 358
-        y: 65
-        width: 18
-        height: 29
+        x: 0
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4161,12 +4161,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_161
       rect:
         serializedVersion: 2
-        x: 387
-        y: 66
-        width: 26
-        height: 26
+        x: 32
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4183,12 +4183,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_162
       rect:
         serializedVersion: 2
-        x: 421
-        y: 66
-        width: 24
-        height: 25
+        x: 64
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4205,12 +4205,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_163
       rect:
         serializedVersion: 2
-        x: 9
-        y: 2
-        width: 46
-        height: 62
+        x: 96
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4227,12 +4227,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_164
       rect:
         serializedVersion: 2
-        x: 73
-        y: 0
-        width: 46
-        height: 64
+        x: 128
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4249,12 +4249,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_165
       rect:
         serializedVersion: 2
-        x: 137
-        y: 0
-        width: 46
-        height: 64
+        x: 160
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4271,12 +4271,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_166
       rect:
         serializedVersion: 2
-        x: 201
-        y: 2
-        width: 46
-        height: 62
+        x: 192
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4293,12 +4293,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_167
       rect:
         serializedVersion: 2
-        x: 321
-        y: 5
-        width: 30
-        height: 50
+        x: 224
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4315,12 +4315,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_168
       rect:
         serializedVersion: 2
-        x: 353
-        y: 1
-        width: 30
-        height: 54
+        x: 256
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4337,12 +4337,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_169
       rect:
         serializedVersion: 2
-        x: 385
-        y: 1
-        width: 30
-        height: 54
+        x: 288
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4359,12 +4359,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_170
       rect:
         serializedVersion: 2
-        x: 417
-        y: 5
-        width: 30
-        height: 50
+        x: 320
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4381,12 +4381,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_171
       rect:
         serializedVersion: 2
-        x: 461
-        y: 5
-        width: 45
-        height: 54
+        x: 352
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4403,12 +4403,12 @@ TextureImporter:
       name: Office_Furniture_32x32_Shadow_172
       rect:
         serializedVersion: 2
-        x: 511
-        y: 0
-        width: 129
-        height: 50
+        x: 384
+        y: 224
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4421,11 +4421,3245 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_173
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec287c8db2000014288f38526a825f3d
+      internalID: 1868071513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_174
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f34c38843d5d1d4eb81cf1313a5c06f
+      internalID: -1847486083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_175
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c6d6304968068a4e812bd90782fccd8
+      internalID: 1927479561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_176
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc932a97fed71048b640f8f6c8f6edb
+      internalID: -428865712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_177
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0150f99e5a5089040841da8483251829
+      internalID: -539609979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_178
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5b26e14a973d4248811e6209764f7c0
+      internalID: -339420755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_179
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 224
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29043bc5dc6361146b1c7a44176b482f
+      internalID: -1217420264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_180
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d87eb1d9c3616474d816d30925770f93
+      internalID: -1162091586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_181
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3cb6b8f10a8db4781d00a714b53acd
+      internalID: 67755646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_182
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4111dc27cb1e8ae479853efaf89ee043
+      internalID: 1108237964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_183
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1193b49e0f2e349af0befde1cffcd0
+      internalID: -1844490190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_184
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844a31f2531898e42b2b265642ac1d8e
+      internalID: 1257793515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_185
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0577d04f1f9a7349859ecb7e297ee99
+      internalID: 1793345323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_186
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc80263dbb714ed488ea30dcca84e390
+      internalID: -54615600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_187
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 630d48e4ac7b5c941a6d553774019aac
+      internalID: 1009158214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_188
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae42d5e663b05f43b50a30af4032ecc
+      internalID: 1701055583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_189
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e10f0a2763cdb8428f8e6cec4f4c694
+      internalID: -49019063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_190
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dc074d4b757ff04f8d24f7a1ddfcab6
+      internalID: -1680616062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_191
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075312c48648b794e96798f066dc2892
+      internalID: -123932344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_192
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7bbffb0f44973843bcf1c6e9a7c8ab7
+      internalID: -1313444838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_193
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dc8b331a54e6ef4895dfccaa4ae061a
+      internalID: -514497168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_194
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7290917ecb243140ae9f753f302a617
+      internalID: 1981682499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_195
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdce27ce01b917448f2ea96d9cc740d
+      internalID: 646107683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_196
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f77acf929a652ed4e85735bf4251c4e7
+      internalID: -736614072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_197
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7c03559cba7fd4faeb0b86ab048125
+      internalID: -609300394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_198
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7baad9197e97f44dada002ab4ad73f4
+      internalID: 681029004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_199
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 192
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fc55c96dc898184198f2776e7c4a816
+      internalID: -434560426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_200
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd0314125246df4b8d15ee9714b42a6
+      internalID: -982243108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_201
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59570018b84217e4e9362a30b8e94bed
+      internalID: 1136976983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_202
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f79ae894996d84b4fa33472d0ad31f13
+      internalID: 1895578697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_203
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88226acb95b2c6459c297aabf852b59
+      internalID: -521311000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_204
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de3256fc73831e54f91cf9e6ff98b13b
+      internalID: -1414047590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_205
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d511fedd378b38e4eb4dcd712e014905
+      internalID: -2055406674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_206
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 327c6924fbeaac2478ca5f4baf475013
+      internalID: 1366063081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_207
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3566738b768dd6489ab7bf21d16cecf
+      internalID: 1903304358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_208
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c1493a09d615f4881a666fddec1f4a
+      internalID: 771428581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_209
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ced626886e7574cab5e4ac8ddab998
+      internalID: 1349479677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_210
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78ec744802e82514b87efc0cd6cc6fe7
+      internalID: 1789466825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_211
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4de87cd5a80bf4aa7e7c2697b2637c
+      internalID: -1091002268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_212
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4764900b8b4e634494372e40c527ccc
+      internalID: -1030145504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_213
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0bd3f74555dd214b947495daf779094
+      internalID: -1987186161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_214
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc9f34c63fbd8145bd01689d6e4a78c
+      internalID: -1115699982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_215
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8578c22848324ab4d999408c32a79db7
+      internalID: 706161342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_216
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85c5cd108b6d3644b8adf6b7e7a2166a
+      internalID: 2129998641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_217
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b2bddce9fb6ece41b95759cf3fc228b
+      internalID: 1217867595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_218
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b0187c592ab7048b34a7ad65399cf4
+      internalID: 320413471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_219
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b2d3d4456e304a42a383641826d5534
+      internalID: 1087922380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_220
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db55a2e7628d00941ba03c563720e8ab
+      internalID: 950869609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_221
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3af40a7e50465014cbdb0c5f4cc5a918
+      internalID: -1186103062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_222
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fa63caef0fc1734886582ac2fc02841
+      internalID: 1744645698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_223
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6722e41ea7b7c904a9e812e547da2950
+      internalID: 1984935202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_224
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27012b8c5ad63f84e90d40eee959ab66
+      internalID: 1931662215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_225
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3245a711c8b6bf7458903f03292824b6
+      internalID: -1145243056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_226
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d7f0063d6985944db496e802c0ccb08
+      internalID: -848220639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_227
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea7dc6ce216199b4586adca34cd168f1
+      internalID: -1971639303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_228
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ccdf38acca596649820c876ae38c526
+      internalID: -1641863149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_229
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b412e0841a71b524aa5c464fc404b8d7
+      internalID: -856046144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_230
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 676c583397d1fd5428cb1bd6124f8d66
+      internalID: -1078868316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_231
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc9c6d2f8895f9468f8cceba22800a5
+      internalID: -1312598806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_232
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720d3cd6590cea745b2a5b7274fc7c06
+      internalID: -26898304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_233
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee69382d47e4a941abda6139ddab51c
+      internalID: 423112798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_234
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11ed164a70b741d409ad5766b82cad21
+      internalID: 4206993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_235
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b038fdd845f5104da7932963e1358ad
+      internalID: -2119033077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_236
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e34904e395fee4b8196c7fa9987daa
+      internalID: 285809646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_237
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236ccfafcf35f674b9632a8a0c948119
+      internalID: -2052461215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_238
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e57e20290940ac4ea62189bc1bafdd7
+      internalID: -1752875228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_239
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d06c29571aefae43bdce606265622e2
+      internalID: -1286629729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_240
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fced3284c04fd644d9ef14d4652c6579
+      internalID: 1973709328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_241
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ea3f35a7bf6284b901ac9ffa67c713
+      internalID: -803153733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_242
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62958cbd97967274ab1318e3480f1c62
+      internalID: 1662743897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_243
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9955ef8c65a944087a7f5e574bde08
+      internalID: 1331773817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_244
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd5aa8df720479b4e9aa0856a2bdabd2
+      internalID: -817554697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_245
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd732dbe0e67844a81b10f514bd0181
+      internalID: -1910668530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_246
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b172fed7fe82bee48a5ec04edc53eaa5
+      internalID: 1957118005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_247
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3873326eb412eb4d9dac2f55610cfe2
+      internalID: -2077859160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_248
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f039004d4ddeb5c43b465d1c73727aab
+      internalID: 1205001103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_249
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323fcefd34aaf364a8cf9bbd5ad5b211
+      internalID: 486416899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_250
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 381de1fdcc29208499f8c22c5492b9e4
+      internalID: 1707537211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_251
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81c912c8b9b5f24cbc19a869d8d2e44
+      internalID: -510227025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_252
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2076a40170a57e9499f759e44c291e64
+      internalID: 1551586596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_253
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f74d94bd9cc364b9811d321c085f28
+      internalID: 268025057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_254
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c081cee30eb4be3478a79d3646e6386c
+      internalID: 1213000619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_255
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9380c32e110786d41b77910c7b49bfdf
+      internalID: 1840960358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_256
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba20cf5248a62e743a27c5c78430527f
+      internalID: -1565280684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_257
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a44a6415556bb0645be936b4ec1628a0
+      internalID: -806663992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_258
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae9fc108f408b94a96feb997f316580
+      internalID: 1618765772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_259
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d1130b9b0c320d43b07811832cf8caf
+      internalID: 1960834271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_260
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5137f98389d6cd4099cabccebbc00e0
+      internalID: -717375389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_261
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ef189e5d7266e4db116cab371736ba
+      internalID: 1964248008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_262
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36bfebd51569a0d48993873368571d34
+      internalID: 1163718920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_263
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a150e98697dd52946be571250dbaf6d2
+      internalID: 114283797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_264
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c811d054d933478408fea7a3f4195da0
+      internalID: -496199194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_265
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4cf2906c01541f48a31b37ee84bf762
+      internalID: -464868741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_266
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02ec81270f4d2e4e8d875158eb6547a
+      internalID: -704813498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_267
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c440c6231ca4254e8c37b6af8e40968
+      internalID: -276841177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_268
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a8eee8a1a120044eb094edbac4b77a3
+      internalID: -1648180643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_269
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc118928243e061448d378ec07b60e0b
+      internalID: -2117662791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_270
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f32d7e33033524c93a1c5a203e6938
+      internalID: -1817577695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_271
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 867f9b36d8305cb4e8623ec0d2023bc4
+      internalID: 141099374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_272
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0df9a628bd1a534da0b11b75b92a1a8
+      internalID: 1914403946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_273
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be54b373679cd34bace8416aca1d135
+      internalID: 751690924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_274
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aee4694319eebfd40a56dd975f41468a
+      internalID: -832160514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_275
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85e258007cd689143a6b4636d200be4c
+      internalID: 943969405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_276
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61eca4dd9f4f38047a89116c41f955e8
+      internalID: -1675576072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_277
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2d06c0ab272d8a4c80d76ac71e190df
+      internalID: 1360148402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_278
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40102dacba0ac0849808953aa342245e
+      internalID: 411497832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_279
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ba551c468a012647a6a3ca8d3f15d08
+      internalID: 678632523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_280
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: effa0291c42cd18498ab7395c4659716
+      internalID: 1370303459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_281
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153173252f59789418688e8e4d3cfa2e
+      internalID: 688803310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_282
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0604de5cdfb57448b160d46060ddc50
+      internalID: 1229962232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_283
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a6cf9141f5371498a6bf5260da5d78
+      internalID: -105231678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_284
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77578748328b6846a6d3a752cc39575
+      internalID: 1970844813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_285
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77968763a8934f44ace57f91922ba02
+      internalID: -1160633036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_286
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77dac6c6335830849826d95a45f04702
+      internalID: -1422601143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_287
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ceff43d9111bf4da6483df09b87527
+      internalID: 530944895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_288
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c316684f2d24040974a26eb294b4e1
+      internalID: 642729813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_289
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e652c72100d233341bb77fa81b43eef5
+      internalID: 973448530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_290
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a343ae7ed54ae4a9e4874bee1c0789
+      internalID: -391160285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_291
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a99435e853e03d4a8dd8cda1201d490
+      internalID: -1677806203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_292
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a63d09eaf8e11394fbd658de766dd70a
+      internalID: 1378425561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_293
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a5e4d2f27eb7a43b8488f0cb4f58ca
+      internalID: 46439960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_294
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e5281e98affa742a9315c980f96c52
+      internalID: -1140146932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_295
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281260441afb4a04cacf5ee069c25c50
+      internalID: -2076774495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_296
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcdda81dafd9c644959db838d9b215a
+      internalID: 67144298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_297
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c206882e93a614589d9046d681e35a
+      internalID: 2007148600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_298
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 080a1e49c5d19de4a87c6796b6ef36e2
+      internalID: -998881787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_299
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac27d80b8d1909740897cccc3badadb2
+      internalID: 155416217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_300
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a0b8b873824c454795020f8331fe098
+      internalID: -1513018845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_301
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f263b2a02504614fae7819c2016b2b0
+      internalID: -892645118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_302
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2e5b99e8bb61441be09b0f45c0d6d3
+      internalID: -95764832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_303
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f47e4692b6fd5146b36d2e6721845c6
+      internalID: 1847378390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_304
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b94b60240de044c928e368493b8c52
+      internalID: 1750265612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_305
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5044e6c59d259ce43b49cdefd82d9b7b
+      internalID: 332201730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_306
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec3324df8e0e2141bb79fca697cbac9
+      internalID: 2110384882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_307
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f033951b04c704999afe3d2ad6b163
+      internalID: -55453500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_308
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2496e92dccb7e4640bbf806bf0d8b3d3
+      internalID: 424276825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_309
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47e4adf0fd6708144891805112a28a1d
+      internalID: 745273886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_310
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dba49fb419f28554da7ccb7ced3bf012
+      internalID: 1764669407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_311
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f97b2b712d8ca84aa964fc346ea0d5f
+      internalID: 430422849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_312
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfcf53e88c359c49a37dba621bdbe54
+      internalID: -999792287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_313
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0548cf1f50e3b24f851e49837fd06b9
+      internalID: -966552115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_314
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a90daf66278b8a54a85583502a9d32a3
+      internalID: -210671872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_315
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e39b0321ae787e540bcd874f7d733888
+      internalID: 208902187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_316
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f7fa5ec16fe56744b7036402743c562
+      internalID: 723766502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_317
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7632eaa956dde545985e1b3548dc259
+      internalID: -1968233609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_318
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb185fb96cce1e42ab5f961091532a9
+      internalID: -1740268046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Office_Furniture_32x32_Shadow_319
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63b8e37a49402e24ea826bb8997eafad
+      internalID: -545746043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: bdbf1c68e78e7044d9b4d2535bdd235c
     internalID: 0
     vertices: []
     indices: 
@@ -4433,7 +7667,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Office_Furniture_32x32_Shadow_0: -6797689542920247516
       Office_Furniture_32x32_Shadow_1: -5568328298181985
@@ -4518,22 +7754,169 @@ TextureImporter:
       Office_Furniture_32x32_Shadow_170: 4550651700322044822
       Office_Furniture_32x32_Shadow_171: -1953191763192374657
       Office_Furniture_32x32_Shadow_172: -7035776491430693606
+      Office_Furniture_32x32_Shadow_173: 1868071513
+      Office_Furniture_32x32_Shadow_174: -1847486083
+      Office_Furniture_32x32_Shadow_175: 1927479561
+      Office_Furniture_32x32_Shadow_176: -428865712
+      Office_Furniture_32x32_Shadow_177: -539609979
+      Office_Furniture_32x32_Shadow_178: -339420755
+      Office_Furniture_32x32_Shadow_179: -1217420264
       Office_Furniture_32x32_Shadow_18: 7079379589668830567
+      Office_Furniture_32x32_Shadow_180: -1162091586
+      Office_Furniture_32x32_Shadow_181: 67755646
+      Office_Furniture_32x32_Shadow_182: 1108237964
+      Office_Furniture_32x32_Shadow_183: -1844490190
+      Office_Furniture_32x32_Shadow_184: 1257793515
+      Office_Furniture_32x32_Shadow_185: 1793345323
+      Office_Furniture_32x32_Shadow_186: -54615600
+      Office_Furniture_32x32_Shadow_187: 1009158214
+      Office_Furniture_32x32_Shadow_188: 1701055583
+      Office_Furniture_32x32_Shadow_189: -49019063
       Office_Furniture_32x32_Shadow_19: -6926899751229515880
+      Office_Furniture_32x32_Shadow_190: -1680616062
+      Office_Furniture_32x32_Shadow_191: -123932344
+      Office_Furniture_32x32_Shadow_192: -1313444838
+      Office_Furniture_32x32_Shadow_193: -514497168
+      Office_Furniture_32x32_Shadow_194: 1981682499
+      Office_Furniture_32x32_Shadow_195: 646107683
+      Office_Furniture_32x32_Shadow_196: -736614072
+      Office_Furniture_32x32_Shadow_197: -609300394
+      Office_Furniture_32x32_Shadow_198: 681029004
+      Office_Furniture_32x32_Shadow_199: -434560426
       Office_Furniture_32x32_Shadow_2: 2236539977134699115
       Office_Furniture_32x32_Shadow_20: 6271382919608692745
+      Office_Furniture_32x32_Shadow_200: -982243108
+      Office_Furniture_32x32_Shadow_201: 1136976983
+      Office_Furniture_32x32_Shadow_202: 1895578697
+      Office_Furniture_32x32_Shadow_203: -521311000
+      Office_Furniture_32x32_Shadow_204: -1414047590
+      Office_Furniture_32x32_Shadow_205: -2055406674
+      Office_Furniture_32x32_Shadow_206: 1366063081
+      Office_Furniture_32x32_Shadow_207: 1903304358
+      Office_Furniture_32x32_Shadow_208: 771428581
+      Office_Furniture_32x32_Shadow_209: 1349479677
       Office_Furniture_32x32_Shadow_21: 6823982126415608579
+      Office_Furniture_32x32_Shadow_210: 1789466825
+      Office_Furniture_32x32_Shadow_211: -1091002268
+      Office_Furniture_32x32_Shadow_212: -1030145504
+      Office_Furniture_32x32_Shadow_213: -1987186161
+      Office_Furniture_32x32_Shadow_214: -1115699982
+      Office_Furniture_32x32_Shadow_215: 706161342
+      Office_Furniture_32x32_Shadow_216: 2129998641
+      Office_Furniture_32x32_Shadow_217: 1217867595
+      Office_Furniture_32x32_Shadow_218: 320413471
+      Office_Furniture_32x32_Shadow_219: 1087922380
       Office_Furniture_32x32_Shadow_22: -9162207203001290485
+      Office_Furniture_32x32_Shadow_220: 950869609
+      Office_Furniture_32x32_Shadow_221: -1186103062
+      Office_Furniture_32x32_Shadow_222: 1744645698
+      Office_Furniture_32x32_Shadow_223: 1984935202
+      Office_Furniture_32x32_Shadow_224: 1931662215
+      Office_Furniture_32x32_Shadow_225: -1145243056
+      Office_Furniture_32x32_Shadow_226: -848220639
+      Office_Furniture_32x32_Shadow_227: -1971639303
+      Office_Furniture_32x32_Shadow_228: -1641863149
+      Office_Furniture_32x32_Shadow_229: -856046144
       Office_Furniture_32x32_Shadow_23: -6868535038620470650
+      Office_Furniture_32x32_Shadow_230: -1078868316
+      Office_Furniture_32x32_Shadow_231: -1312598806
+      Office_Furniture_32x32_Shadow_232: -26898304
+      Office_Furniture_32x32_Shadow_233: 423112798
+      Office_Furniture_32x32_Shadow_234: 4206993
+      Office_Furniture_32x32_Shadow_235: -2119033077
+      Office_Furniture_32x32_Shadow_236: 285809646
+      Office_Furniture_32x32_Shadow_237: -2052461215
+      Office_Furniture_32x32_Shadow_238: -1752875228
+      Office_Furniture_32x32_Shadow_239: -1286629729
       Office_Furniture_32x32_Shadow_24: 3406865776203400335
+      Office_Furniture_32x32_Shadow_240: 1973709328
+      Office_Furniture_32x32_Shadow_241: -803153733
+      Office_Furniture_32x32_Shadow_242: 1662743897
+      Office_Furniture_32x32_Shadow_243: 1331773817
+      Office_Furniture_32x32_Shadow_244: -817554697
+      Office_Furniture_32x32_Shadow_245: -1910668530
+      Office_Furniture_32x32_Shadow_246: 1957118005
+      Office_Furniture_32x32_Shadow_247: -2077859160
+      Office_Furniture_32x32_Shadow_248: 1205001103
+      Office_Furniture_32x32_Shadow_249: 486416899
       Office_Furniture_32x32_Shadow_25: 881103818818393930
+      Office_Furniture_32x32_Shadow_250: 1707537211
+      Office_Furniture_32x32_Shadow_251: -510227025
+      Office_Furniture_32x32_Shadow_252: 1551586596
+      Office_Furniture_32x32_Shadow_253: 268025057
+      Office_Furniture_32x32_Shadow_254: 1213000619
+      Office_Furniture_32x32_Shadow_255: 1840960358
+      Office_Furniture_32x32_Shadow_256: -1565280684
+      Office_Furniture_32x32_Shadow_257: -806663992
+      Office_Furniture_32x32_Shadow_258: 1618765772
+      Office_Furniture_32x32_Shadow_259: 1960834271
       Office_Furniture_32x32_Shadow_26: -4774390083731303283
+      Office_Furniture_32x32_Shadow_260: -717375389
+      Office_Furniture_32x32_Shadow_261: 1964248008
+      Office_Furniture_32x32_Shadow_262: 1163718920
+      Office_Furniture_32x32_Shadow_263: 114283797
+      Office_Furniture_32x32_Shadow_264: -496199194
+      Office_Furniture_32x32_Shadow_265: -464868741
+      Office_Furniture_32x32_Shadow_266: -704813498
+      Office_Furniture_32x32_Shadow_267: -276841177
+      Office_Furniture_32x32_Shadow_268: -1648180643
+      Office_Furniture_32x32_Shadow_269: -2117662791
       Office_Furniture_32x32_Shadow_27: 1831315530618213746
+      Office_Furniture_32x32_Shadow_270: -1817577695
+      Office_Furniture_32x32_Shadow_271: 141099374
+      Office_Furniture_32x32_Shadow_272: 1914403946
+      Office_Furniture_32x32_Shadow_273: 751690924
+      Office_Furniture_32x32_Shadow_274: -832160514
+      Office_Furniture_32x32_Shadow_275: 943969405
+      Office_Furniture_32x32_Shadow_276: -1675576072
+      Office_Furniture_32x32_Shadow_277: 1360148402
+      Office_Furniture_32x32_Shadow_278: 411497832
+      Office_Furniture_32x32_Shadow_279: 678632523
       Office_Furniture_32x32_Shadow_28: -2254822595110992321
+      Office_Furniture_32x32_Shadow_280: 1370303459
+      Office_Furniture_32x32_Shadow_281: 688803310
+      Office_Furniture_32x32_Shadow_282: 1229962232
+      Office_Furniture_32x32_Shadow_283: -105231678
+      Office_Furniture_32x32_Shadow_284: 1970844813
+      Office_Furniture_32x32_Shadow_285: -1160633036
+      Office_Furniture_32x32_Shadow_286: -1422601143
+      Office_Furniture_32x32_Shadow_287: 530944895
+      Office_Furniture_32x32_Shadow_288: 642729813
+      Office_Furniture_32x32_Shadow_289: 973448530
       Office_Furniture_32x32_Shadow_29: -1446463321379271923
+      Office_Furniture_32x32_Shadow_290: -391160285
+      Office_Furniture_32x32_Shadow_291: -1677806203
+      Office_Furniture_32x32_Shadow_292: 1378425561
+      Office_Furniture_32x32_Shadow_293: 46439960
+      Office_Furniture_32x32_Shadow_294: -1140146932
+      Office_Furniture_32x32_Shadow_295: -2076774495
+      Office_Furniture_32x32_Shadow_296: 67144298
+      Office_Furniture_32x32_Shadow_297: 2007148600
+      Office_Furniture_32x32_Shadow_298: -998881787
+      Office_Furniture_32x32_Shadow_299: 155416217
       Office_Furniture_32x32_Shadow_3: -1756663051018115391
       Office_Furniture_32x32_Shadow_30: 6364283865225148416
+      Office_Furniture_32x32_Shadow_300: -1513018845
+      Office_Furniture_32x32_Shadow_301: -892645118
+      Office_Furniture_32x32_Shadow_302: -95764832
+      Office_Furniture_32x32_Shadow_303: 1847378390
+      Office_Furniture_32x32_Shadow_304: 1750265612
+      Office_Furniture_32x32_Shadow_305: 332201730
+      Office_Furniture_32x32_Shadow_306: 2110384882
+      Office_Furniture_32x32_Shadow_307: -55453500
+      Office_Furniture_32x32_Shadow_308: 424276825
+      Office_Furniture_32x32_Shadow_309: 745273886
       Office_Furniture_32x32_Shadow_31: -7886393261935217338
+      Office_Furniture_32x32_Shadow_310: 1764669407
+      Office_Furniture_32x32_Shadow_311: 430422849
+      Office_Furniture_32x32_Shadow_312: -999792287
+      Office_Furniture_32x32_Shadow_313: -966552115
+      Office_Furniture_32x32_Shadow_314: -210671872
+      Office_Furniture_32x32_Shadow_315: 208902187
+      Office_Furniture_32x32_Shadow_316: 723766502
+      Office_Furniture_32x32_Shadow_317: -1968233609
+      Office_Furniture_32x32_Shadow_318: -1740268046
+      Office_Furniture_32x32_Shadow_319: -545746043
       Office_Furniture_32x32_Shadow_32: 1821468097420388887
       Office_Furniture_32x32_Shadow_33: 7686294531701042349
       Office_Furniture_32x32_Shadow_34: 867911981500844211

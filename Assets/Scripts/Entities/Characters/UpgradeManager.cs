@@ -8,24 +8,25 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private CharacterStats stats;
     [SerializeField] private MainWeapon weapon;
     [SerializeField] private SoldierSkill skill;
+    [SerializeField] private WeaponSlots slots;
+    [SerializeField] private StatLevels statLevels;
     [SerializeField] private UpgradeCardUI cardUI;
 
     [Header("Pool")]
     [SerializeField] private List<Upgrade> upgradePool = new List<Upgrade>();
 
-    [Header("Guaranteed weapon tiers")]
+    [Header("Automatic main weapon tiers")]
     [SerializeField] private int dualPistolLevel = 5;
-    [SerializeField] private WeaponTierUpgrade dualPistolUpgrade;
+    [SerializeField] private WeaponTier dualPistolTier;
     [SerializeField] private int assaultRifleLevel = 10;
-    [SerializeField] private WeaponTierUpgrade assaultRifleUpgrade;
-
-    private readonly HashSet<Upgrade> taken = new HashSet<Upgrade>();
+    [SerializeField] private WeaponTier assaultRifleTier;
 
     private UpgradeContext ctx;
 
     private void Awake()
     {
-        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill };
+        ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots, statLevels = statLevels };
+        slots.SetMainWeaponLevel(1); // Starting Pistol tier counts as level 1 of 3
     }
 
     private void OnEnable()
@@ -40,31 +41,35 @@ public class UpgradeManager : MonoBehaviour
 
     private void HandleLevelUp(int newLevel)
     {
-        List<Upgrade> choices = BuildChoices(newLevel);
+        // Main Weapon upgrades automatically
+        if (newLevel == dualPistolLevel && dualPistolTier != null)
+        {
+            weapon.SetTier(dualPistolTier);
+            slots.SetMainWeaponIcon(dualPistolTier.icon);
+            slots.SetMainWeaponLevel(2);
+        }
+        else if (newLevel == assaultRifleLevel && assaultRifleTier != null)
+        {
+            weapon.SetTier(assaultRifleTier);
+            slots.SetMainWeaponIcon(assaultRifleTier.icon);
+            slots.SetMainWeaponLevel(3);
+        }
+
         Time.timeScale = 0f; // Pause game when prompted
+        List<Upgrade> choices = BuildChoices(newLevel);
         cardUI.Show(choices, Choose);
     }
 
     private List<Upgrade> BuildChoices(int level)
     {
-        var choices = new List<Upgrade>();
-
-        // Guaranteed weapon tier at set levels
-        if (level == dualPistolLevel && dualPistolUpgrade != null)
-            choices.Add(dualPistolUpgrade);
-        else if (level == assaultRifleLevel && assaultRifleUpgrade != null)
-            choices.Add(assaultRifleUpgrade);
-
-        // Fill remaining slots randomly from available upgrades
         var candidates = new List<Upgrade>();
         foreach (var u in upgradePool)
         {
-            if (taken.Contains(u)) continue;
             if (!u.IsAvailable(ctx)) continue;
-            if (choices.Contains(u)) continue;
             candidates.Add(u);
         }
 
+        var choices = new List<Upgrade>();
         while (choices.Count < 4 && candidates.Count > 0)
         {
             int i = Random.Range(0, candidates.Count);
@@ -78,12 +83,6 @@ public class UpgradeManager : MonoBehaviour
     private void Choose(Upgrade picked)
     {
         picked.Apply(ctx);
-
-        // Weapon tiers and one-off upgrades shouldn't reappear.
-        // Stat upgrades are repeatable (temp)
-        if (!(picked is CharacterStatsUpgrade))
-            taken.Add(picked);
-
         Time.timeScale = 1f; // Resume game
     }
 }
