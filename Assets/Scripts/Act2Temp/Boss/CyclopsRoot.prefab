@@ -398,8 +398,8 @@ MonoBehaviour:
   normalMoveSpeed: 5
   agitatedMoveSpeed: 8
   animator: {fileID: 453347392088703674}
-  maxHP: 10
-  currentHP: 10
+  maxHP: 109
+  currentHP: 100
   maxCollisionCD: 1
   collisionDamage: 3
   attackRange: {fileID: 6825106318674803794}

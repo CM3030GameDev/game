@@ -947,6 +947,8 @@ MonoBehaviour:
   character: {fileID: 563307489}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   detectionRange: 5
+  damage: 6
+  damageCD: 0.2
 --- !u!61 &209576884
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2185,7 +2187,7 @@ Transform:
   m_GameObject: {fileID: 479614365}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 117.8, z: 0}
+  m_LocalPosition: {x: 0.1, y: 61.8, z: 0}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3681,8 +3683,8 @@ Transform:
   m_GameObject: {fileID: 822216335}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 33.3, z: 0}
-  m_LocalScale: {x: 130, y: 120, z: 1}
+  m_LocalPosition: {x: 0, y: 4.5, z: 0}
+  m_LocalScale: {x: 130, y: 62.496, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 493554982}
@@ -4287,6 +4289,8 @@ MonoBehaviour:
   fire: {fileID: 746538288}
   character: {fileID: 563307489}
   detectionRange: 6
+  damage: 2
+  damageCD: 0.4
 --- !u!212 &1108369532
 SpriteRenderer:
   serializedVersion: 2
@@ -5860,7 +5864,7 @@ Transform:
   m_GameObject: {fileID: 1698049772}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 101.29, z: 0}
+  m_LocalPosition: {x: 0, y: 45.289997, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6167,7 +6171,7 @@ Transform:
   m_GameObject: {fileID: 1734732599}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 94.7, z: 0}
+  m_LocalPosition: {x: 0, y: 38.699993, z: 0}
   m_LocalScale: {x: 130, y: 130, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
