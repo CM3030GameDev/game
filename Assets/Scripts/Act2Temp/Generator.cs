@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class Generator : MonoBehaviour
+public class Generator : MonoBehaviour, IDamageable
 {
     [Header("Generator Shield Object")]
     [SerializeField] private GameObject generatorShield;
@@ -73,11 +73,16 @@ public class Generator : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hit generator");
         if (isShieldDown && generatorEnergy <= 0 && collision.gameObject.CompareTag("Bullet"))
         {
-            generatorHealth -= 1;
+            IDamageable target = GetComponent<IDamageable>();
+            target?.TakeDamage(1);
         }
+    }
+
+    public void TakeDamage(int amount, float cooldown = 0f)
+    {
+        generatorHealth -= amount;
     }
     public void UnlockNextAct()
     {

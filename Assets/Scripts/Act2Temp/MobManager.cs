@@ -34,7 +34,8 @@ public class MobManager : MonoBehaviour
         None,
         REDMOB,
         BLUEMOB,
-        GREENMOB
+        GREENMOB,
+        ACT2BOSS
     }
     public static MobManager Instance { get; private set; }
 
@@ -50,10 +51,7 @@ public class MobManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-    }
 
-    private void Start()
-    {
         //Initialising the object pool
         foreach (EnemySetup enemySetup in enemyPoolConfig)
         {
@@ -61,17 +59,23 @@ public class MobManager : MonoBehaviour
             for (int i = 0; i < enemySetup.poolAmount; i++)
             {
                 GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
-                tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                Mob mobScript = tempEnemy.GetComponent<Mob>();
+                if (mobScript != null)
+                {
+                    tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                }
                 tempEnemy.SetActive(false);
                 tempGameObjectList.Add(tempEnemy);
             }
 
             pooledEnemies.Add(enemySetup.type, tempGameObjectList);
         }
+    }
 
-        //test
-        //addCoroutine("aa", 1f, EnemyTypes.AAA);
-        //addCoroutine("bb", 5f, EnemyTypes.BBB);
+    private void Start()
+    {
+        
+        
     }
 
     /// <summary>
@@ -122,7 +126,7 @@ public class MobManager : MonoBehaviour
     {
         Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, location, spawnAmount));
         coroutines.Add(coroutineName, c);
-        Debug.Log(coroutineName + " has been added.");
+        //Debug.Log(coroutineName + " has been added.");
     }
 
     /// <summary>
@@ -136,7 +140,7 @@ public class MobManager : MonoBehaviour
             StopCoroutine(coroutines[coroutineName]);
             coroutines.Remove(coroutineName);
 
-            Debug.Log(coroutineName + " has been stopped.");
+            //Debug.Log(coroutineName + " has been stopped.");
         }
     }
 
@@ -150,7 +154,7 @@ public class MobManager : MonoBehaviour
             StopCoroutine(c.Value);
         }
         coroutines.Clear();
-        Debug.Log("All spawners have been stopped.");
+        //Debug.Log("All spawners have been stopped.");
     }
 
     /// <summary>
@@ -209,7 +213,7 @@ public class MobManager : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenSpawns);
         }
         coroutines.Remove(coroutineName);
-        Debug.Log(coroutineName + " has been removed");
+        //Debug.Log(coroutineName + " has been removed");
     }
 
     private GameObject FindAvaliableEnemyOfType(EnemyTypes types)
@@ -223,6 +227,31 @@ public class MobManager : MonoBehaviour
                 return enemy;
         }
         return null;
+    }
+
+    public GameObject SpawnBoss(EnemyTypes type, Transform spawnPos)
+    {
+        GameObject avaliableBoss = FindAvaliableEnemyOfType(type);
+        if (avaliableBoss != null)
+        {
+            avaliableBoss.SetActive(true);
+            avaliableBoss.transform.position = spawnPos.position;
+            return avaliableBoss;
+        }
+
+        return null;
+    }
+
+    public void DespawnBoss(EnemyTypes type)
+    {
+        if (pooledEnemies.ContainsKey(type))
+        {
+            foreach (GameObject enemy in pooledEnemies[type])
+            {
+                if (enemy.activeSelf == true)
+                    enemy.SetActive(false);
+            }
+        }
     }
 
     private void SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
@@ -254,7 +283,7 @@ public class MobManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
+            //Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
         }
     }
 

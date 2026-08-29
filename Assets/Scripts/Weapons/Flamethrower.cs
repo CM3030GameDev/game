@@ -9,6 +9,8 @@ public class Flamethrower : MonoBehaviour
     [SerializeField] private GameObject fire;
     [SerializeField] private GameObject character;
     [SerializeField] private float detectionRange = 6f;
+    [SerializeField] private int damage = 2;
+    [SerializeField] private float damageCD = 0.4f;
 
     private List<GameObject> allEnemies;
 
@@ -33,7 +35,7 @@ public class Flamethrower : MonoBehaviour
         if (target != null)
         {
             fire.SetActive(true);
-
+            fire.GetComponent<Fire>().SetDamage(damage, damageCD);
             //Vector direction between nearest enemy and mercenary
             direction = target.transform.position - transform.position;
 

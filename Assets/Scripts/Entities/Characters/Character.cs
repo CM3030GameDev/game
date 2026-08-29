@@ -116,4 +116,6 @@ public class Character : MonoBehaviour
     {
         invulnTimer = Mathf.Max(invulnTimer, duration);
     }
+
+    public void TakeDamage(int amount, float cooldown = 0f) => CharacterAttacked(amount);
 }

@@ -6,12 +6,19 @@ public class Act2Manager : MonoBehaviour
     //probably should use a list instead..
     [Header("Narrator Lines")]
     public DialogueData actStartDialogue;
+
+    public DialogueData bossSpawnDialogue;
+    public DialogueData bossDeathDialogue;
+
     public DialogueData generatorStartDialogue;
     public DialogueData generatorDepletedDialogue;
     public DialogueData generatorDestroyedDialogue;
     
 
     public Generator generator;
+    private GameObject miniboss;
+    [SerializeField] private Transform minibossSpawnPoint;
+    private bool hasBossSpawned = false;
 
     private enum CurrentState
     {
@@ -23,8 +30,6 @@ public class Act2Manager : MonoBehaviour
     }
 
     private CurrentState state = CurrentState.START;
-    private bool isBossSpawned = false;
-    private bool hasGeneratorStarted = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -37,6 +42,10 @@ public class Act2Manager : MonoBehaviour
         generator.onGeneratorShieldDown.AddListener(OnGeneratorShieldDown);
         generator.onGeneratorDown.AddListener(OnGeneratorDown);
 
+        if (minibossSpawnPoint != null)
+        {
+
+        }
     }
 
     private void OnDestroy()
@@ -51,27 +60,32 @@ public class Act2Manager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-/*        if(state == CurrentState.MOBHUNTING && enemies.Count <= 0 && isBossSpawned == false)
-        {
-            Debug.Log("state changed to BossFight");
-            state = CurrentState.BOSSFIGHT;
-            SpawnBoss();
-            isBossSpawned = true;
-        }*/
-
         if(state == CurrentState.MOBHUNTING && MobManager.Instance.GetKillCount() >= 2)
         {
             MobManager.Instance.StopAllSpawnCoroutines();
-            //state = CurrentState.BOSSFIGHT;
-            //no boss yet, skip to generator
-            state = CurrentState.GENERATOR;
+            state = CurrentState.BOSSFIGHT;
         }
 
-        if(state == CurrentState.GENERATOR && hasGeneratorStarted == false)
+        if(state == CurrentState.BOSSFIGHT)
         {
-            hasGeneratorStarted = true;
-            OnBossDead();
+            if(!hasBossSpawned)
+            {
+                miniboss = MobManager.Instance.SpawnBoss(MobManager.EnemyTypes.ACT2BOSS, minibossSpawnPoint);
+                miniboss.GetComponent<Act2Miniboss>().bossDeath.AddListener(OnBossDeath);
+                MobManager.Instance.AddSpawnCoroutine("bossfight1", 2f, MobManager.EnemyTypes.REDMOB);
+                MobManager.Instance.AddSpawnCoroutine("bossfight2", 4f, MobManager.EnemyTypes.BLUEMOB);
+                MobManager.Instance.AddSpawnCoroutine("bossfight3", 6f, MobManager.EnemyTypes.GREENMOB);
+                hasBossSpawned = true;
+                DialogueManager.Instance.StartDialogue(bossSpawnDialogue);
+            }
         }
+    }
+
+    private void OnBossDeath()
+    {
+        DialogueManager.Instance.StartDialogue(bossDeathDialogue);
+        DialogueManager.Instance.onDialogueEnd.AddListener(EnableGenerator);
+        MobManager.Instance.StopAllSpawnCoroutines();
     }
 
     //This is called when starting dialogue ends.Mobs start spawning
@@ -82,19 +96,12 @@ public class Act2Manager : MonoBehaviour
         MobManager.Instance.AddSpawnCoroutine("mobhunting1", 1f, MobManager.EnemyTypes.REDMOB, null, 1);
         MobManager.Instance.AddSpawnCoroutine("mobhunting2", 1f, MobManager.EnemyTypes.BLUEMOB, null, 1);
     }
-    private void SpawnBoss()
+
+    public void EnableGenerator()
     {
-        if (state != CurrentState.MOBHUNTING)
-            return;
-
-        //boss dialogue
-        //bossPrefab.SetActive(true);
-
-        state = CurrentState.BOSSFIGHT;
-    }
-
-    public void OnBossDead()
-    {
+        miniboss.GetComponent<Act2Miniboss>().bossDeath.RemoveListener(OnBossDeath);
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(EnableGenerator);
+        MobManager.Instance.DespawnBoss(MobManager.EnemyTypes.ACT2BOSS);
         generator.SetIsOverdrive(true);
         state = CurrentState.GENERATOR;
         MobManager.Instance.AddSpawnCoroutine("generatorMobs1", 1f, MobManager.EnemyTypes.REDMOB);

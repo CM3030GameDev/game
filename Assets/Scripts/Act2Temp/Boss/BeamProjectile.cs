@@ -4,25 +4,27 @@ using System.Collections;
 
 public class BeamProjectile : MonoBehaviour
 {
-    public float speed = 12f;
-    public float lifetime = 5f; // safety despawn if it never hits anything or leaves the screen
-    public int damage = 5;
-
     private Vector3 moveDir;
+    private float speed = 25f;
+    private float lifetime = 5f;
+    private int damage = 5;
     private bool isInitialized = false;
 
-    // Call this right after Instantiate to set travel direction
-    public void SetDirection(Vector3 direction)
+    public void SetBeam(Vector3 direction, float moveSpeed, float timer, int damageDone)
     {
+        lifetime = timer;
+        damage = damageDone;
         moveDir = direction.normalized;
+        speed = moveSpeed;
         isInitialized = true;
-        Destroy(gameObject, lifetime); // auto-cleanup safety net
+        Destroy(gameObject, lifetime);
     }
 
     void Update()
     {
         if (!isInitialized) return;
-        transform.position += moveDir * speed * Time.deltaTime;
+
+            transform.position += moveDir * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

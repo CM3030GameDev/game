@@ -9,12 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 051ea4598165371449ac058a5bb09f54, type: 3}
-  m_Name: CharacterStats
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
-  health: 199
-  maxHealth: 100
-  expPoint: 515
-  level: 9
-  moveSpeed: 7
-  attackSpeed: 0
+  m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
+  m_Name: miniboss2DeathDialogue
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueData
+  speakerName: Boss2
+  sentences:
+  - im ded.. generator go brrrr
