@@ -39,7 +39,8 @@ public class Bullet : MonoBehaviour
         else if (other.CompareTag("FinalBoss"))
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
-            if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
+            finalBoss.BossAttacked(damage, hitFlash);
+            hitsRemaining--;
         }
         // Character damage check - only if a barrier reflected this bullet back at the player;
         // otherwise a weapon spawning bullets near the player would hit them immediately.
@@ -48,6 +49,7 @@ public class Bullet : MonoBehaviour
             Character character = other.GetComponent<Character>();
             character.CharacterAttacked(damage);
             character.GrantInvulnerability(hitFlash);
+            hitsRemaining--;
         }
         else if (other.CompareTag("Wall"))
         {
@@ -58,7 +60,6 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        hitsRemaining--;
         if (hitsRemaining <= 0) Destroy(gameObject);
     }
 }
