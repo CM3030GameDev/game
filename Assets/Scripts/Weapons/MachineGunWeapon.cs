@@ -9,9 +9,9 @@ public class MachineGunWeapon : SecondaryWeapon
 
     protected override void Update()
     {
-        if (Time.timeScale == 0f) return;
+        if (data == null || Time.timeScale == 0f) return;
 
-        angle += Stats.valueB * Time.deltaTime;   // valueB = rotation speed
+        angle += Stats.valueB * Time.deltaTime;
         if (angle >= 360f) angle -= 360f;
 
         timer += Time.deltaTime;
@@ -32,7 +32,7 @@ public class MachineGunWeapon : SecondaryWeapon
                                        Quaternion.AngleAxis(a, Vector3.forward));
             b.GetComponent<Rigidbody2D>().linearVelocity = dir * bulletSpeed;
             Bullet bl = b.GetComponent<Bullet>();
-            if (bl != null) bl.SetDamage(Stats.damage);
+            if (bl != null) bl.SetDamage(TotalDamage);
         }
     }
 }

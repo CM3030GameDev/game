@@ -21,6 +21,15 @@ public class CharacterStats : ScriptableObject
     //Current attack speed(Starts at 0 attack speed, capped at 0.8 attack speed)
     public float attackSpeed = 0f;
 
+    //Flat bonus damage added to all weapon hits
+    public float damage = 0f;
+
+    //Exp orb magnet radius
+    public float pickupRadius = 8f;
+
+    //Health regenerated per second
+    public float healthRegen = 0f;
+
     //Reset to default
     public void ResetStats()
     {
@@ -30,5 +39,8 @@ public class CharacterStats : ScriptableObject
         level = 1;
         moveSpeed = 7f;
         attackSpeed = 0f;
+        damage = 0f;
+        pickupRadius = 8f;
+        healthRegen = 0f;
     }
 }

@@ -14,6 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
   upgradeName: Move Speed Increase
   description: Increase move speed by 15%
-  icon: {fileID: 0}
+  icon: {fileID: 4600334878205345844, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}
   stat: 1
-  amount: 1
+  amountPerLevel:
+  - 1
+  - 1
+  - 1

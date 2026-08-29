@@ -59,7 +59,7 @@ public class MainWeapon : MonoBehaviour
         if (rb != null) rb.linearVelocity = dir * currentTier.bulletSpeed;
 
         var bullet = b.GetComponent<Bullet>();
-        if (bullet != null) bullet.SetDamage(currentTier.damage);
+        if (bullet != null) bullet.SetDamage(currentTier.damage + Mathf.RoundToInt(characterStats.damage));
     }
 
     // Upgrade card will call this function to upgrade weapons

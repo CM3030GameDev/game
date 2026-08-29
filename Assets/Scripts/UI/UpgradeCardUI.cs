@@ -16,6 +16,10 @@ public class UpgradeCardUI : MonoBehaviour
     [SerializeField] private TMP_Text statsText;
     [SerializeField] private CharacterStats stats;
 
+    [Header("Focus")]
+    [SerializeField] private CanvasGroup persistentHud;   // HP bar, EXP bar, weapon/stat pips etc.
+    [SerializeField] private float dimmedAlpha = 0.3f;
+
     private Action<Upgrade> onChosen;
 
     private void Awake()
@@ -27,6 +31,7 @@ public class UpgradeCardUI : MonoBehaviour
     {
         onChosen = callback;
         panel.SetActive(true);
+        if (persistentHud != null) persistentHud.alpha = dimmedAlpha;
         RefreshStats();
 
         for (int i = 0; i < cardButtons.Length; i++)
@@ -59,12 +64,16 @@ public class UpgradeCardUI : MonoBehaviour
             $"LEVEL   {stats.level}\n" +
             $"HP      {stats.health} / {stats.maxHealth}\n" +
             $"SPEED   {stats.moveSpeed:F1}\n" +
-            $"HASTE   {stats.attackSpeed:F2}";
+            $"HASTE   {stats.attackSpeed:F2}\n" +
+            $"DAMAGE  +{stats.damage:F0}\n" +
+            $"RANGE   {stats.pickupRadius:F1}\n" +
+            $"REGEN   {stats.healthRegen:F1}/s";
     }
 
     private void Pick(Upgrade u)
     {
         panel.SetActive(false);
+        if (persistentHud != null) persistentHud.alpha = 1f;
         onChosen?.Invoke(u);
     }
 }

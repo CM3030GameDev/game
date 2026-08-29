@@ -116,12 +116,12 @@ TextureImporter:
       name: Beam_Shoot_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 10
         y: 7
-        width: 91
-        height: 61
+        width: 89
+        height: 59
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cf15d279f1fad0b48b40960e75bb6c01
     internalID: 0
     vertices: []
     indices: 

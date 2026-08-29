@@ -1,0 +1,742 @@
+fileFormatVersion: 2
+guid: 8465b5d4d31dfed4bb8c013c77bca7c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8923816889928587885
+    second: Left_Drone_0
+  - first:
+      213: -4716380582825413294
+    second: Left_Drone_1
+  - first:
+      213: -1119866756431493701
+    second: Left_Drone_2
+  - first:
+      213: -7116165209614998236
+    second: Left_Drone_3
+  - first:
+      213: -2509866140979736138
+    second: Left_Drone_4
+  - first:
+      213: 7724055501469386453
+    second: Left_Drone_5
+  - first:
+      213: 3642342966684728804
+    second: Left_Drone_6
+  - first:
+      213: 6977725898833504519
+    second: Left_Drone_7
+  - first:
+      213: 8844930969589797356
+    second: Left_Drone_8
+  - first:
+      213: -5295333946234037412
+    second: Left_Drone_9
+  - first:
+      213: 1974594231567794098
+    second: Left_Drone_10
+  - first:
+      213: 965533765125110040
+    second: Left_Drone_11
+  - first:
+      213: -2865923632287204853
+    second: Left_Drone_12
+  - first:
+      213: 4634663351886604748
+    second: Left_Drone_13
+  - first:
+      213: 6141850700967798460
+    second: Left_Drone_14
+  - first:
+      213: 174716429650211488
+    second: Left_Drone_15
+  - first:
+      213: -7265595900628587639
+    second: Left_Drone_16
+  - first:
+      213: -2576770405592225319
+    second: Left_Drone_17
+  - first:
+      213: 746068974894546785
+    second: Left_Drone_18
+  - first:
+      213: -5910313421766844418
+    second: Left_Drone_19
+  - first:
+      213: -3131064957614336726
+    second: Left_Drone_20
+  - first:
+      213: 8999906513996589967
+    second: Left_Drone_21
+  - first:
+      213: 7411290806981129448
+    second: Left_Drone_22
+  - first:
+      213: -5752230453664124342
+    second: Left_Drone_23
+  - first:
+      213: -3442336827383084989
+    second: Left_Drone_24
+  - first:
+      213: 5596144361811320943
+    second: Left_Drone_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Left_Drone_0
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 254
+        width: 74
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6a13d45e24c7db70800000000000000
+      internalID: 8923816889928587885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_1
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 254
+        width: 76
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 255342f29dc0c8eb0800000000000000
+      internalID: -4716380582825413294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 253
+        width: 78
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb5c12b4e1f6570f0800000000000000
+      internalID: -1119866756431493701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_3
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 252
+        width: 79
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425a7e5e17d4e3d90800000000000000
+      internalID: -7116165209614998236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_4
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 274
+        width: 26
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b15f19ea0a2b2dd0800000000000000
+      internalID: -2509866140979736138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_8
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 269
+        width: 14
+        height: 18
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce15049bad18fba70800000000000000
+      internalID: 8844930969589797356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_20.5
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 135
+        width: 72
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b17afe4d13386b0800000000000000
+      internalID: -5295333946234037412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_10
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 158
+        width: 74
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bf3224edfa276b10800000000000000
+      internalID: 1974594231567794098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 158
+        width: 74
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8197de008d3466d00800000000000000
+      internalID: 965533765125110040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_12
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 156
+        width: 74
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0abf1804a13a38d0800000000000000
+      internalID: -2865923632287204853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_13
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 154
+        width: 72
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc9e8b653c1a15040800000000000000
+      internalID: 4634663351886604748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 152
+        width: 72
+        height: 64
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb66baeebac3c3550800000000000000
+      internalID: 6141850700967798460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_15
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 146
+        width: 72
+        height: 65
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2b9b5caa7bc6200800000000000000
+      internalID: 174716429650211488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_16
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 136
+        width: 72
+        height: 68
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98baf7de50b6b2b90800000000000000
+      internalID: -7265595900628587639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_17
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 134
+        width: 72
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9afeae7f87d3cd0800000000000000
+      internalID: -2576770405592225319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_18
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 134
+        width: 72
+        height: 67
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f7782a7c19a5a00800000000000000
+      internalID: 746068974894546785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_19
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 136
+        width: 72
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff1d50d1495afda0800000000000000
+      internalID: -5910313421766844418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_20
+      rect:
+        serializedVersion: 2
+        x: 967
+        y: 135
+        width: 72
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2559b892093c84d0800000000000000
+      internalID: -3131064957614336726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 46
+        width: 51
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8bad7a7a4716ec70800000000000000
+      internalID: 8999906513996589967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_22
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 47
+        width: 51
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e47a35e8b13ad660800000000000000
+      internalID: 7411290806981129448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_23
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 45
+        width: 51
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a427a2701e8fb20b0800000000000000
+      internalID: -5752230453664124342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_24
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 43
+        width: 51
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 348069ec4ec5a30d0800000000000000
+      internalID: -3442336827383084989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left_Drone_25
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 46
+        width: 51
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f60a19db5af79ad40800000000000000
+      internalID: 5596144361811320943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 01986f5edaf98894da4f0c1eb8a563dc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.3499999940395355},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":9,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Left_Drone_0: 8923816889928587885
+      Left_Drone_1: -4716380582825413294
+      Left_Drone_10: 1974594231567794098
+      Left_Drone_11: 965533765125110040
+      Left_Drone_12: -2865923632287204853
+      Left_Drone_13: 4634663351886604748
+      Left_Drone_14: 6141850700967798460
+      Left_Drone_15: 174716429650211488
+      Left_Drone_16: -7265595900628587639
+      Left_Drone_17: -2576770405592225319
+      Left_Drone_18: 746068974894546785
+      Left_Drone_19: -5910313421766844418
+      Left_Drone_2: -1119866756431493701
+      Left_Drone_20: -3131064957614336726
+      Left_Drone_20.5: -5295333946234037412
+      Left_Drone_21: 8999906513996589967
+      Left_Drone_22: 7411290806981129448
+      Left_Drone_23: -5752230453664124342
+      Left_Drone_24: -3442336827383084989
+      Left_Drone_25: 5596144361811320943
+      Left_Drone_3: -7116165209614998236
+      Left_Drone_4: -2509866140979736138
+      Left_Drone_5: 7724055501469386453
+      Left_Drone_6: 3642342966684728804
+      Left_Drone_7: 6977725898833504519
+      Left_Drone_8: 8844930969589797356
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

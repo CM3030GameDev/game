@@ -3,42 +3,49 @@ using UnityEngine;
 public class FinalBoss : MonoBehaviour
 {
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
-    private Animator animator;
+    public SpriteRenderer sr;
+    public Animator animator;
     private Character character;
+    private DashAttack dashAttack;
+    private Vector2 normalizedChase;
     //Attacked state
     private bool isAttacked;
     //Invulnerable timer
     private float invulnTime;
-    //Reflect state
-    public bool isReflect;
-    //Barrier timer
-    private float barrierTime;
+    //Attack timer
+    public float attackTime;
     //Death state
     private bool death;
     //Attacking state
     public bool attacking;
-    //Charging state
-    private bool charging;
     //Dashing state
-    private bool dashing;
-    //Character position
-    private Vector2 characterPos;
-    //Dash direction
-    private Vector2 dashDirection;
+    public bool dashing;
     //Beam direction (False is right, true is left)
     public bool beamDirection;
+    //Random probability for boss pattern
+    public float randomNum;
     [SerializeField] private GameObject soldier;
+    [SerializeField] private GameObject eyeLaser;
     [SerializeField] private GameObject barrier;
+    [SerializeField] private GameObject missileLauncher;
+    [SerializeField] private GameObject dash;
+    [SerializeField] private GameObject suction;
+    [SerializeField] private GameObject wind;
+    [SerializeField] private GameObject range;
+    [SerializeField] private GameObject leftDrone;
+    [SerializeField] private GameObject rightDrone;
     //Default material
     private Material defaultMaterial;
     //White material
     [SerializeField] private Material whiteMaterial;
     //Boss HP
     [SerializeField] private int bossHP;
+    //Boss speed
+    [SerializeField] private int bossSpeed;
     //Boss damage
     [SerializeField] private int damage;
-    [SerializeField] private int dashSpeed;
+    //Interval timer
+    [SerializeField] private float intervals;
 
     private void Awake()
     {
@@ -47,7 +54,8 @@ public class FinalBoss : MonoBehaviour
         animator = GetComponent<Animator>();
         attacking = false;
         isAttacked = false;
-        isReflect = false;
+        attackTime = 0f;
+        randomNum = Random.Range(0f, 1f);
         defaultMaterial = sr.material;
     }
 
@@ -55,22 +63,18 @@ public class FinalBoss : MonoBehaviour
     void Start()
     {
         character = soldier.GetComponent<Character>();
+        dashAttack = dash.GetComponent<DashAttack>();
+
+        leftDrone.SetActive(true);
+        rightDrone.SetActive(true);
     }
 
     // Update is called once per frame
     void Update()
     {
-        //chaseDirection = character.transform.position - transform.position;
-        //normalizedChase = chaseDirection.normalized;
-
-        //Flip sprite to face character
-        if (character.transform.position.x > transform.position.x && !attacking)
+        if (attackTime < intervals)
         {
-            sr.flipX = false;
-        }
-        else
-        {
-            sr.flipX = true;
+            attackTime += Time.deltaTime;
         }
 
         //Boss cannot be attacked
@@ -86,37 +90,6 @@ public class FinalBoss : MonoBehaviour
             isAttacked = false;
         }
 
-        //Dashing towards player
-        if (charging && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
-        {
-            charging = false;
-            dashing = true;
-            //Dash towards player current position after charging
-            characterPos = character.transform.position;
-            dashDirection = (character.transform.position - transform.position).normalized;
-        }
-
-        if (dashing && (Vector2)transform.position == characterPos)
-        {
-            dashing = false;
-            animator.SetBool("dash", false);
-            rb.linearVelocity = Vector2.zero;
-        }
-
-        Barrier();
-
-        //Barrier activated
-        if (barrierTime > 0)
-        {
-            barrierTime -= Time.deltaTime;
-        }
-        //Barrier de-activated
-        else
-        {
-            isReflect = false;
-            barrier.SetActive(false);
-        }
-
         //Boss dead
         if (bossHP <= 0 && !death)
         {
@@ -124,67 +97,135 @@ public class FinalBoss : MonoBehaviour
             death = true;
         }
 
-        //For testing purpose only
-        if(Input.GetKeyDown(KeyCode.F))
+        Vector2 chaseDirection = character.transform.position - transform.position;
+        normalizedChase = chaseDirection.normalized;
+
+        //Flip sprite to face character
+        if(!attacking)
         {
-            Beam();
+            if (character.transform.position.x > transform.position.x)
+            {
+                sr.flipX = false;
+            }
+            else
+            {
+                sr.flipX = true;
+            }
+
+            if(attackTime > intervals)
+            {
+                attacking = true;
+
+                //If boss is far
+                if (Vector2.Distance(character.transform.position, transform.position) > 20f)
+                {
+                    if (randomNum < 0.5f)
+                    {
+                        Dash();
+                    }
+                    else if (randomNum < 0.7f)
+                    {
+                        Suction();
+                    }
+                    else if(randomNum < 0.8f)
+                    {
+                        Laser();
+                    }
+                    else if (randomNum < 0.9f)
+                    {
+                        Missile();
+                    }
+                    else
+                    {
+                        Beam();
+                    }
+                }
+                //If boss is close
+                else
+                {
+                    if (randomNum > 0.5f)
+                    {
+                        Laser();
+                    }
+                    else if (randomNum < 0.7f)
+                    {
+                        Suction();
+                    }
+                    else if (randomNum < 0.9f)
+                    {
+                        Missile();
+                    }
+                    else
+                    {
+                        Beam();
+                    }
+                }
+            }
         }
 
-        //For testing purpose only
-        if (Input.GetKeyDown(KeyCode.G))
-        {
-            Dash();
-        }
+        Barrier();
     }
 
     private void FixedUpdate()
     {
-        if(dashing)
+        //Move towards player
+        if (!attacking)
         {
-            rb.linearVelocity = dashDirection * dashSpeed;
+            rb.linearVelocity = normalizedChase * bossSpeed;
+        }
+        else
+        {
+            //Dash towards player
+            if (dashing)
+            {
+                rb.linearVelocity = dashAttack.dashDirection * dashAttack.dashSpeed;
+            }
+            //Stationary
+            else
+            {
+                rb.linearVelocity = Vector2.zero;
+            }
         }
     }
 
     private void Dash()
     {
-        if(Vector2.Distance(character.transform.position, transform.position) > 5f && !dashing && !charging)
-        {
-            charging = true;
-            animator.SetBool("dash", true);
-        }
+        animator.SetBool("dash", true);
+        dash.SetActive(true);
+    }
+
+    private void Laser()
+    {
+        eyeLaser.SetActive(true);
+    }
+
+    private void Missile()
+    {
+        missileLauncher.SetActive(true);
+    }
+
+    private void Suction()
+    {
+        suction.SetActive(true);
+        wind.SetActive(true);
+        range.SetActive(true);
     }
 
     private void Beam()
     {
-        if(!attacking)
-        {
-            attacking = true;
-            //Beam starts from right
-            if (character.transform.position.x > transform.position.x)
-            {
-                beamDirection = false;
-            }
-            //Beam starts from left
-            else
-            {
-                beamDirection = true;
-            }
-            animator.SetTrigger("beam_start");
-        }
+        animator.SetTrigger("beam_start");
     }
 
     private void Barrier()
     {
-        //Barrier only appears at 5% chance when boss is less than 50% health
-        if(bossHP < 500 && Random.Range(0f, 1f) <= 0.05f)
+        //Barrier only appears at 10% chance when boss is less than 50% health
+        if(bossHP < 500 && randomNum < 0.1f && !barrier.activeSelf)
         {
-            isReflect = true;
             barrier.SetActive(true);
-            barrierTime = 10f;
         }
     }
 
-    public void BossAttacked(int amount, float duration)
+    public void BossAttacked(int amount, float seconds)
     {
         if (!isAttacked)
         {
@@ -192,7 +233,7 @@ public class FinalBoss : MonoBehaviour
             sr.material = whiteMaterial;
             isAttacked = true;
             bossHP -= amount;
-            invulnTime = duration;
+            invulnTime = seconds;
         }
     }
 

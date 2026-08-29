@@ -5,7 +5,6 @@ public enum AimMode { Auto, Manual }
 public class PlayerAim : MonoBehaviour
 {
     [SerializeField] private Character character;
-    [SerializeField] private Mobs mobs;
     [SerializeField] private float autoAimRange = 12f;
 
     private Camera cam;
@@ -51,7 +50,7 @@ public class PlayerAim : MonoBehaviour
         GameObject nearest = null;
         float nearestDist = autoAimRange;
 
-        foreach (GameObject e in mobs.enemies)
+        foreach (GameObject e in MobManager.Instance.GetAllPooledEnemies())
         {
             if (!e.activeInHierarchy) continue;
             float d = Vector2.Distance(transform.position, e.transform.position);

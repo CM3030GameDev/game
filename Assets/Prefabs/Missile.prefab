@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -1861612075077562512}
   m_Layer: 0
   m_Name: Missile
-  m_TagString: Missile
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 425002817
-  m_SortingLayer: 6
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -202,6 +202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d06dbf78a62beac44a00d927878fba68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MissileAttack
-  missileSpeedMin: 4
-  missileSpeedMax: 6
+  missileSpeedMin: 7
+  missileSpeedMax: 7
   rotateSpeed: 5

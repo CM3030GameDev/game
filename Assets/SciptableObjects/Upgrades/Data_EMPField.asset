@@ -35,5 +35,5 @@ MonoBehaviour:
     valueA: 4
     valueB: 0.45
     levelDescription: EMP Field Lvl 3 Desc
-  combinesWith: {fileID: 0}
+  combinesWithStat: {fileID: 11400000, guid: f44e66651d328ce4d82ce51c84870099, type: 2}
   combinedResult: {fileID: 0}
