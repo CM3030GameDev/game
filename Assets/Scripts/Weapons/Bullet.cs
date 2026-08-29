@@ -23,18 +23,20 @@ public class Bullet : MonoBehaviour
         if(other.CompareTag("Mobs"))
         {
             Mob mob = other.GetComponent<Mob>();
-            if (mob != null) mob.MobAttacked(damage, hitFlash);
+            mob.MobAttacked(damage, hitFlash);
             if (knockbackForce > 0f)
             {
                 Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
                 mob.Knockback(dir, knockbackForce);
             }
+            hitsRemaining--;
         }
         //Final boss collision
         else if(other.CompareTag("FinalBoss"))
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
-            if (finalBoss != null) finalBoss.BossAttacked(damage, hitFlash);
+            finalBoss.BossAttacked(damage, hitFlash);
+            hitsRemaining--;
         }
         //Character collision (Final boss barrier reflected bullet)
         else if (other.CompareTag("Character"))
@@ -42,13 +44,13 @@ public class Bullet : MonoBehaviour
             Character character = other.GetComponent<Character>();
             character.CharacterAttacked(damage);
             character.GrantInvulnerability(hitFlash);
+            hitsRemaining--;
         }
         else if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);
         }
 
-        hitsRemaining--;
         if (hitsRemaining <= 0) Destroy(gameObject);
     }
 }

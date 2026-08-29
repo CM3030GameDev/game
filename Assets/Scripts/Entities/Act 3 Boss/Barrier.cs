@@ -2,6 +2,15 @@ using UnityEngine;
 
 public class Barrier : MonoBehaviour
 {
+    private float currentTime;
+    //Barrier timer
+    [SerializeField] private float barrierTime;
+
+    private void OnEnable()
+    {
+        currentTime = 0f;
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -11,7 +20,10 @@ public class Barrier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if(currentTime > barrierTime)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

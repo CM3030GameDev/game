@@ -14,11 +14,11 @@ TagManager:
   - Bullet
   - Companion
   - FMA
-  - Missile
   - Barrier
   - Wall
   - FinalBoss
   - Mobs
+  - Projectile
   layers:
   - Default
   - TransparentFX
@@ -32,8 +32,8 @@ TagManager:
   - HUD
   - Background
   - Menu
-  - Pillar
-  - 
+  - Buildings
+  - Detect
   - 
   - 
   - 
@@ -65,14 +65,14 @@ TagManager:
   - name: Companion
     uniqueID: 539685799
     locked: 0
-  - name: Temporary
-    uniqueID: 3548693121
+  - name: Beam
+    uniqueID: 2193736927
+    locked: 0
+  - name: Warning
+    uniqueID: 1048383203
     locked: 0
   - name: Enemy
     uniqueID: 2937264421
-    locked: 0
-  - name: Projectile
-    uniqueID: 425002817
     locked: 0
   - name: Pillar
     uniqueID: 2113944213
@@ -82,6 +82,9 @@ TagManager:
     locked: 0
   - name: Character
     uniqueID: 691850385
+    locked: 0
+  - name: Projectile
+    uniqueID: 425002817
     locked: 0
   - name: Weapon
     uniqueID: 2015552387

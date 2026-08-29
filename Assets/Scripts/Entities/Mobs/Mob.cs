@@ -105,7 +105,7 @@ public class Mob : MonoBehaviour
         //Mob dead
         if (currentHP <= 0 && !death)
         {
-            //Death animation & automatically destroys mob
+            //Death animation & automatically return mob to pool
             animator.SetTrigger("dead");
             death = true;
         }
@@ -123,8 +123,8 @@ public class Mob : MonoBehaviour
         // Account for death of mob
         onDeath?.Invoke();
 
-        //Return to pool
-        gameObject.SetActive(false);
+        //Death animation & automatically return mob to pool
+        animator.SetTrigger("dead");
     }
 
     private void FixedUpdate()
