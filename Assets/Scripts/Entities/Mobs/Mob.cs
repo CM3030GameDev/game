@@ -19,11 +19,12 @@ public class Mob : MonoBehaviour, IDamageable
     private bool isAttacked;
     //Attacked state timer
     private float attackedTime;
-    //Attacked state duration
-    private float attackedDuration;
     // Debuff (slow) from fire floor
     private float debuffTimer;
     private float speedMultiplier = 1f;
+    // Knockback (from shotgun etc.)
+    private Vector2 knockbackVelocity;
+    private float knockbackTimer;
 
     [SerializeField] private int maxHP = 100;
     private int currentHP;
@@ -40,7 +41,6 @@ public class Mob : MonoBehaviour, IDamageable
         death = false;
         isAttacked = false;
         attackedTime = 0f;
-        attackedDuration = 0f;
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         box = GetComponent<BoxCollider2D>();
@@ -59,6 +59,17 @@ public class Mob : MonoBehaviour, IDamageable
         isAttacked = false;
         death = false;
         currentHP = maxHP;
+        knockbackTimer = 0f;
+    }
+
+    private void OnDisable()
+    {
+        // Drops exp orb at mob position when the mob is dead
+        if (expOrbPrefab != null)
+        {
+            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
+            orb.GetComponent<ExpOrb>().SetExp(expReward);
+        }
     }
 
     // Update is called once per frame
@@ -78,22 +89,26 @@ public class Mob : MonoBehaviour, IDamageable
         {
             sr.flipX = false;
         }
-        attackedTime += Time.deltaTime;
 
-        //Enemy can be attacked again
-        if (attackedTime >= attackedDuration)
+        //Mob cannot be attacked
+        if (attackedTime > 0f)
+        {
+            attackedTime -= Time.deltaTime;
+        }
+        //Mob can be attacked
+        else
         {
             isAttacked = false;
             animator.SetBool("attacked", false);
         }
 
-        //Enemy dead
+
+        //Mob dead
         if (currentHP <= 0 && !death)
         {
+            //Death animation & automatically destroys mob
             animator.SetTrigger("dead");
             death = true;
-
-            Despawn(); //temp function to despawn the enemy, remove this later when we add death animations that reference this!!!
         }
 
         // Debuff timer that ticks down
@@ -106,13 +121,6 @@ public class Mob : MonoBehaviour, IDamageable
 
     public void Despawn()
     {
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
-        {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
-        }
-
         // Account for death of mob
         onDeath?.Invoke();
 
@@ -125,11 +133,20 @@ public class Mob : MonoBehaviour, IDamageable
         //Enemy alive
         if (currentHP > 0)
         {
-            Vector2 chase = normalizedChase;
-            Vector2 separation = GetSeparation() * separationStrength;
-            Vector2 move = (chase + separation).normalized;
+            if (knockbackTimer > 0f)
+            {
+                // Knockback to counteract normal movement while active
+                knockbackTimer -= Time.fixedDeltaTime;
+                rb.linearVelocity = knockbackVelocity;
+            }
+            else
+            {
+                Vector2 chase = normalizedChase;
+                Vector2 separation = GetSeparation() * separationStrength;
+                Vector2 move = (chase + separation).normalized;
 
-            rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+                rb.linearVelocity = move * chaseSpeed * speedMultiplier;
+            }
         }
         //Enemy dead
         else
@@ -198,8 +215,7 @@ public class Mob : MonoBehaviour, IDamageable
             //Mob flashes when attacked
             animator.SetBool("attacked", true);
             isAttacked = true;
-            attackedTime = 0f;
-            attackedDuration = timer;
+            attackedTime = timer;
             currentHP -= amount;
         }
     }
@@ -208,6 +224,12 @@ public class Mob : MonoBehaviour, IDamageable
     {
         speedMultiplier = multiplier;
         debuffTimer = Mathf.Max(debuffTimer, duration);
+    }
+
+    public void Knockback(Vector2 direction, float force)
+    {
+        knockbackVelocity = direction.normalized * force;
+        knockbackTimer = 0.15f;
     }
 
     private Vector2 GetSeparation()
