@@ -22,6 +22,9 @@ public class Barrier : MonoBehaviour
             Rigidbody2D rb = collision.attachedRigidbody;
             //Direct incoming attack in the opposite direction at the same speed
             rb.linearVelocity = rb.linearVelocity * -1;
+
+            Bullet bullet = collision.GetComponent<Bullet>();
+            if (bullet != null) bullet.MarkReflected();
         }
     }
 }

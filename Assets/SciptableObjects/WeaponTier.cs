@@ -4,6 +4,7 @@ using UnityEngine;
 public class WeaponTier : ScriptableObject
 {
     public string tierName = "Pistol";
+    public Sprite icon;
     public GameObject bulletPrefab;
     public int damage = 20;
     public float bulletSpeed = 50f;

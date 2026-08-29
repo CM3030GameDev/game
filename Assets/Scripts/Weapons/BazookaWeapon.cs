@@ -17,6 +17,6 @@ public class BazookaWeapon : SecondaryWeapon
         r.GetComponent<Rigidbody2D>().linearVelocity = dir * rocketSpeed;
 
         Rocket rk = r.GetComponent<Rocket>();
-        if (rk != null) rk.Configure(Stats.damage, Stats.valueA);   // valueA = blast radius
+        if (rk != null) rk.Configure(TotalDamage, Stats.valueA);   // valueA = blast radius
     }
 }

@@ -36,5 +36,5 @@ MonoBehaviour:
     valueB: 130
     levelDescription: 'Increases the damage and firing speed of the Machine Gun.
       Gain +1 Machine Gun. '
-  combinesWith: {fileID: 0}
+  combinesWithStat: {fileID: 11400000, guid: 94c782ab541038e4593cbe9d34230b14, type: 2}
   combinedResult: {fileID: 0}

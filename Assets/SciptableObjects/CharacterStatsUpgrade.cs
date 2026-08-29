@@ -1,22 +1,24 @@
 using UnityEngine;
 
-public enum CharacterStatsType { MaxHealth, MoveSpeed, AttackSpeed, PickupRadius }
+public enum CharacterStatsType { MaxHealth, MoveSpeed, AttackSpeed, PickupRadius, Damage, HealthRegen }
 
 [CreateAssetMenu(menuName = "Scriptable Objects/Upgrades/Stat")]
 public class CharacterStatsUpgrade : Upgrade
 {
     public CharacterStatsType stat;
-    public float[] amountPerLevel = new float[3]; // 3 max upgrades for each stat (Lvl 1 -> 2 -> Max (3))
-    public int maxLevel = 3;
+    public float[] amountPerLevel = new float[3];
+
+    public int MaxLevel => amountPerLevel.Length;
 
     public override bool IsAvailable(UpgradeContext ctx)
     {
-        return ctx.statLevels.GetLevel(this) < maxLevel;
+        return ctx.statLevels != null && ctx.statLevels.CanOffer(this);
     }
 
     public override void Apply(UpgradeContext ctx)
     {
         int newLevel = ctx.statLevels.Increment(this);
+        ctx.statLevels.RefreshSlot(this);
         float amount = amountPerLevel[newLevel - 1];
 
         switch (stat)
@@ -32,6 +34,13 @@ public class CharacterStatsUpgrade : Upgrade
                 ctx.stats.attackSpeed = Mathf.Min(0.8f, ctx.stats.attackSpeed + amount);
                 break;
             case CharacterStatsType.PickupRadius:
+                ctx.stats.pickupRadius += amount;
+                break;
+            case CharacterStatsType.Damage:
+                ctx.stats.damage += amount;
+                break;
+            case CharacterStatsType.HealthRegen:
+                ctx.stats.healthRegen += amount;
                 break;
         }
     }

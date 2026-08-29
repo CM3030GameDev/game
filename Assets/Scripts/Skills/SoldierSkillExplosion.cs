@@ -10,10 +10,10 @@ public class SoldierSkillExplosion : MonoBehaviour
     private void Start()
     {
         // Damage everything in radius of the explosion
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius);
+        int enemyMask = LayerMask.GetMask("Enemy");
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius, enemyMask);
         foreach (var h in hits)
         {
-            if (!h.CompareTag("Enemy")) continue;
             Mob mob = h.GetComponent<Mob>();
             if (mob != null) mob.MobAttacked(damage, hitFlash);
         }
