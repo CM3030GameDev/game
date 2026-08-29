@@ -1155,6 +1155,8 @@ MonoBehaviour:
   - {fileID: 0}
   statsText: {fileID: 1112470742}
   stats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
+  persistentHud: {fileID: 0}
+  dimmedAlpha: 0.3
 --- !u!1 &217904754
 GameObject:
   m_ObjectHideFlags: 0
@@ -6772,6 +6774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f38f98f2856eb3b40838c1bde77670f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Bar
+  fillImage: {fileID: 0}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   progression: {fileID: 445901367}
 --- !u!114 &1662708245
@@ -9226,11 +9229,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b036497967e83ad4182ed671ba6a6cc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoldierSkill
-  cooldown: 4
-  explosionPrefab: {fileID: 5157741989187164760, guid: 6f9b764a3d15d3a468695c6757e19674, type: 3}
-  strikeCount: 10
-  strikeInterval: 0.8
-  scatter: 0.8
+  killsToCharge: 10
+  damage: 500
+  hitFlash: 0.1
 --- !u!1 &426164247149726176
 GameObject:
   m_ObjectHideFlags: 0
@@ -9453,6 +9454,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6094ec8bb99377b44ba4ed5c7a6cf4ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Hp
+  fillImage: {fileID: 0}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
 --- !u!1 &1688398125962391005
@@ -9545,7 +9547,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 10
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
@@ -10085,7 +10087,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 9
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -10177,6 +10179,8 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   weapon: {fileID: 1151201867451928542}
   skill: {fileID: 257017924979634838}
+  slots: {fileID: 0}
+  statLevels: {fileID: 0}
   cardUI: {fileID: 197184486}
   upgradePool:
   - {fileID: 11400000, guid: a48857717a55ed544b7df1c680d70824, type: 2}
@@ -10189,7 +10193,6 @@ MonoBehaviour:
   dualPistolTier: {fileID: 11400000, guid: 1f07faa12feee064d93032c2420b1bb0, type: 2}
   assaultRifleLevel: 10
   assaultRifleTier: {fileID: 11400000, guid: f7b7981d090c7f640bc0c7787f959afb, type: 2}
-  slots: {fileID: 0}
 --- !u!223 &5432743829136891577
 Canvas:
   m_ObjectHideFlags: 0
@@ -10317,7 +10320,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 10
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1948861429554965999, guid: 41a87f82d72b0e8458125f2b8cfc850f, type: 3}
@@ -10376,7 +10379,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 9
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -10548,7 +10551,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerAim
   character: {fileID: 8944264630221300050}
-  mobs: {fileID: 0}
   autoAimRange: 12
 --- !u!114 &7849604476598921770
 MonoBehaviour:
@@ -10715,7 +10717,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 9
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
