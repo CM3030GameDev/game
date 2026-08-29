@@ -12,5 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
   m_Name: Act1_Room2Cleared
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
-  sentences: []
+  speakerName: Mercernary
+  sentences:
+  - The area's secured. I think I heard something further ahead.
+  - Let's head deeper.
