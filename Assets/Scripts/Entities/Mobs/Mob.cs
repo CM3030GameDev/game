@@ -33,6 +33,7 @@ public class Mob : MonoBehaviour
     [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
+    [SerializeField] private float deathAnimationDuration = 0.5f;
 
     public UnityEvent onDeath;
     private void Awake()
@@ -56,6 +57,7 @@ public class Mob : MonoBehaviour
 
     private void OnEnable()
     {
+        CancelInvoke(nameof(Despawn)); // clear any leftover invoke from an instantKillAllActive() interrupting a death in progress
         isAttacked = false;
         death = false;
         currentHP = maxHP;
@@ -106,9 +108,10 @@ public class Mob : MonoBehaviour
         //Mob dead
         if (currentHP <= 0 && !death)
         {
-            //Death animation & automatically destroys mob
+            //Death animation, then return to pool once it's finished playing
             animator.SetTrigger("dead");
             death = true;
+            Invoke(nameof(Despawn), deathAnimationDuration);
         }
 
         // Debuff timer that ticks down
@@ -196,6 +199,18 @@ public class Mob : MonoBehaviour
         }
     }
 
+    public bool WouldDie(int amount) => currentHP <= amount;
+
+    // Bypasses the isAttacked guard - for effects that must land on every enemy
+    // regardless of hit-flash state (e.g. a screen-clearing panic skill).
+    public void GuaranteedAttack(int amount, float timer)
+    {
+        animator.SetBool("attacked", true);
+        isAttacked = true;
+        attackedTime = timer;
+        currentHP -= amount;
+    }
+
     public void ApplyDebuff(float multiplier, float duration)
     {
         speedMultiplier = multiplier;
@@ -209,20 +224,23 @@ public class Mob : MonoBehaviour
     }
 
     private static int EnemyMask;
+    private static readonly Collider2D[] SeparationBuffer = new Collider2D[16];
 
     private Vector2 GetSeparation()
     {
         Vector2 push = Vector2.zero;
-        Collider2D[] neighbours = Physics2D.OverlapCircleAll(transform.position, separationRadius, EnemyMask);
+        int count = Physics2D.OverlapCircleNonAlloc(transform.position, separationRadius, SeparationBuffer, EnemyMask);
 
-        foreach (var n in neighbours)
+        for (int i = 0; i < count; i++)
         {
+            Collider2D n = SeparationBuffer[i];
             if (n.gameObject == gameObject) continue;
 
             Vector2 away = (Vector2)transform.position - (Vector2)n.transform.position;
-            float dist = away.magnitude;
-            if (dist > 0.01f)
-                push += away.normalized / dist; // Push enemies away from each other the closer they are
+            // Clamp the distance used here so nearly-overlapping mobs (e.g. a wave spawning
+            // stacked together) don't get an explosive push force from dividing by ~0.
+            float dist = Mathf.Max(away.magnitude, 0.1f);
+            push += away.normalized / dist; // Push enemies away from each other the closer they are
         }
 
         return push;

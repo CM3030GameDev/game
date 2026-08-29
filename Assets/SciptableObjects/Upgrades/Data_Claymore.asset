@@ -35,5 +35,5 @@ MonoBehaviour:
     valueA: 7
     valueB: 2.5
     levelDescription: Claymore Lvl 3
-  combinesWith: {fileID: 0}
+  combinesWithStat: {fileID: 11400000, guid: cb5630fa59a1d8645a7a200a03230623, type: 2}
   combinedResult: {fileID: 0}

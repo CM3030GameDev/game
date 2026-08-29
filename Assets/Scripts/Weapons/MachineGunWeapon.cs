@@ -9,7 +9,7 @@ public class MachineGunWeapon : SecondaryWeapon
 
     protected override void Update()
     {
-        if (Time.timeScale == 0f) return;
+        if (data == null || Time.timeScale == 0f) return;
 
         angle += Stats.valueB * Time.deltaTime;
         if (angle >= 360f) angle -= 360f;

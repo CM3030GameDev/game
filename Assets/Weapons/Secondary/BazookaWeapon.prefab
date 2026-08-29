@@ -45,5 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BazookaWeapon
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  rocketPrefab: {fileID: 150084739827944196}
-  rocketSpeed: 10
+  rocketPrefab: {fileID: 4044461622111086408, guid: 93d917ae730fea84588f639f93d42317, type: 3}
+  rocketSpeed: 5

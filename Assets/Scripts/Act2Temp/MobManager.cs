@@ -75,6 +75,42 @@ public class MobManager : MonoBehaviour
     }
 
     /// <summary>
+    /// Keeps roughly targetPopulation of this type alive at all times - checks periodically and
+    /// tops up whenever the current count has dropped below target (e.g. after a kill), rather
+    /// than spawning in discrete batches that all need to die before the next batch appears.
+    /// </summary>
+    public void AddPopulationSpawnCoroutine(string coroutineName, EnemyTypes types, int targetPopulation, float checkInterval = 0.5f, Transform location = null)
+    {
+        Coroutine c = StartCoroutine(PopulationSpawnLoop(coroutineName, types, targetPopulation, checkInterval, location));
+        coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
+    }
+
+    private IEnumerator PopulationSpawnLoop(string coroutineName, EnemyTypes types, int targetPopulation, float checkInterval, Transform location)
+    {
+        while (true)
+        {
+            if (CountActive(types) < targetPopulation)
+            {
+                GameObject availableEnemy = FindAvaliableEnemyOfType(types);
+                if (availableEnemy != null) SpawnEnemy(availableEnemy, location);
+            }
+            yield return new WaitForSeconds(checkInterval);
+        }
+    }
+
+    private int CountActive(EnemyTypes types)
+    {
+        if (!pooledEnemies.ContainsKey(types)) return 0;
+        int count = 0;
+        foreach (GameObject enemy in pooledEnemies[types])
+        {
+            if (enemy.activeSelf) count++;
+        }
+        return count;
+    }
+
+    /// <summary>
     /// Use this function to start a coroutine that constantly spawns mobs until you tell it to stop.
     /// </summary>
     /// <param name="coroutineName">Name of the coroutine. Make sure it's unique.</param>
@@ -115,6 +151,47 @@ public class MobManager : MonoBehaviour
         }
         coroutines.Clear();
         Debug.Log("All spawners have been stopped.");
+    }
+
+    /// <summary>
+    /// Spawns a batch of enemies, then waits until every one of that type is dead before
+    /// spawning the next batch. Repeats forever until stopped. Batch size is randomized
+    /// between minWaveSize and maxWaveSize (inclusive) each time.
+    /// </summary>
+    public void AddWaveSpawnCoroutine(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval = 0.15f, Transform location = null)
+    {
+        Coroutine c = StartCoroutine(WaveSpawnLoop(coroutineName, types, minWaveSize, maxWaveSize, spawnInterval, location));
+        coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
+    }
+
+    private IEnumerator WaveSpawnLoop(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval, Transform location)
+    {
+        while (true)
+        {
+            int waveSize = Random.Range(minWaveSize, maxWaveSize + 1);
+            for (int i = 0; i < waveSize; i++)
+            {
+                GameObject availableEnemy = FindAvaliableEnemyOfType(types);
+                if (availableEnemy != null)
+                    SpawnEnemy(availableEnemy, location);
+
+                yield return new WaitForSeconds(spawnInterval);
+            }
+
+            yield return new WaitUntil(() => AllOfTypeDead(types));
+        }
+    }
+
+    private bool AllOfTypeDead(EnemyTypes types)
+    {
+        if (!pooledEnemies.ContainsKey(types)) return true;
+
+        foreach (GameObject mob in pooledEnemies[types])
+        {
+            if (mob.activeSelf) return false;
+        }
+        return true;
     }
 
     private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, Transform location = null, int spawnAmount = -1)

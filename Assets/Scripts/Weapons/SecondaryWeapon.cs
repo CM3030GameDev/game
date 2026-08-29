@@ -33,7 +33,7 @@ public abstract class SecondaryWeapon : MonoBehaviour
 
     protected virtual void Update()
     {
-        if (Time.timeScale == 0f) return;
+        if (data == null || Time.timeScale == 0f) return;
 
         timer += Time.deltaTime;
         if (timer >= Stats.fireInterval)
