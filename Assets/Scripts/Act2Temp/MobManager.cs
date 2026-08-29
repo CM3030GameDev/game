@@ -34,7 +34,8 @@ public class MobManager : MonoBehaviour
         None,
         REDMOB,
         BLUEMOB,
-        GREENMOB
+        GREENMOB,
+        ACT2BOSS
     }
     public static MobManager Instance { get; private set; }
 
@@ -50,10 +51,7 @@ public class MobManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-    }
 
-    private void Start()
-    {
         //Initialising the object pool
         foreach (EnemySetup enemySetup in enemyPoolConfig)
         {
@@ -61,17 +59,59 @@ public class MobManager : MonoBehaviour
             for (int i = 0; i < enemySetup.poolAmount; i++)
             {
                 GameObject tempEnemy = Instantiate(enemySetup.prefab, gameObject.transform);
-                tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                Mob mobScript = tempEnemy.GetComponent<Mob>();
+                if (mobScript != null)
+                {
+                    tempEnemy.GetComponent<Mob>().onDeath.AddListener(UpdateKillCount);
+                }
                 tempEnemy.SetActive(false);
                 tempGameObjectList.Add(tempEnemy);
             }
 
             pooledEnemies.Add(enemySetup.type, tempGameObjectList);
         }
+    }
 
-        //test
-        //addCoroutine("aa", 1f, EnemyTypes.AAA);
-        //addCoroutine("bb", 5f, EnemyTypes.BBB);
+    private void Start()
+    {
+        
+        
+    }
+
+    /// <summary>
+    /// Keeps roughly targetPopulation of this type alive at all times - checks periodically and
+    /// tops up whenever the current count has dropped below target (e.g. after a kill), rather
+    /// than spawning in discrete batches that all need to die before the next batch appears.
+    /// </summary>
+    public void AddPopulationSpawnCoroutine(string coroutineName, EnemyTypes types, int targetPopulation, float checkInterval = 0.5f, Transform location = null)
+    {
+        Coroutine c = StartCoroutine(PopulationSpawnLoop(coroutineName, types, targetPopulation, checkInterval, location));
+        coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
+    }
+
+    private IEnumerator PopulationSpawnLoop(string coroutineName, EnemyTypes types, int targetPopulation, float checkInterval, Transform location)
+    {
+        while (true)
+        {
+            if (CountActive(types) < targetPopulation)
+            {
+                GameObject availableEnemy = FindAvaliableEnemyOfType(types);
+                if (availableEnemy != null) SpawnEnemy(availableEnemy, location);
+            }
+            yield return new WaitForSeconds(checkInterval);
+        }
+    }
+
+    private int CountActive(EnemyTypes types)
+    {
+        if (!pooledEnemies.ContainsKey(types)) return 0;
+        int count = 0;
+        foreach (GameObject enemy in pooledEnemies[types])
+        {
+            if (enemy.activeSelf) count++;
+        }
+        return count;
     }
 
     /// <summary>
@@ -86,7 +126,7 @@ public class MobManager : MonoBehaviour
     {
         Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, location, spawnAmount));
         coroutines.Add(coroutineName, c);
-        Debug.Log(coroutineName + " has been added.");
+        //Debug.Log(coroutineName + " has been added.");
     }
 
     /// <summary>
@@ -100,7 +140,7 @@ public class MobManager : MonoBehaviour
             StopCoroutine(coroutines[coroutineName]);
             coroutines.Remove(coroutineName);
 
-            Debug.Log(coroutineName + " has been stopped.");
+            //Debug.Log(coroutineName + " has been stopped.");
         }
     }
 
@@ -114,7 +154,48 @@ public class MobManager : MonoBehaviour
             StopCoroutine(c.Value);
         }
         coroutines.Clear();
-        Debug.Log("All spawners have been stopped.");
+        //Debug.Log("All spawners have been stopped.");
+    }
+
+    /// <summary>
+    /// Spawns a batch of enemies, then waits until every one of that type is dead before
+    /// spawning the next batch. Repeats forever until stopped. Batch size is randomized
+    /// between minWaveSize and maxWaveSize (inclusive) each time.
+    /// </summary>
+    public void AddWaveSpawnCoroutine(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval = 0.15f, Transform location = null)
+    {
+        Coroutine c = StartCoroutine(WaveSpawnLoop(coroutineName, types, minWaveSize, maxWaveSize, spawnInterval, location));
+        coroutines.Add(coroutineName, c);
+        Debug.Log(coroutineName + " has been added.");
+    }
+
+    private IEnumerator WaveSpawnLoop(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval, Transform location)
+    {
+        while (true)
+        {
+            int waveSize = Random.Range(minWaveSize, maxWaveSize + 1);
+            for (int i = 0; i < waveSize; i++)
+            {
+                GameObject availableEnemy = FindAvaliableEnemyOfType(types);
+                if (availableEnemy != null)
+                    SpawnEnemy(availableEnemy, location);
+
+                yield return new WaitForSeconds(spawnInterval);
+            }
+
+            yield return new WaitUntil(() => AllOfTypeDead(types));
+        }
+    }
+
+    private bool AllOfTypeDead(EnemyTypes types)
+    {
+        if (!pooledEnemies.ContainsKey(types)) return true;
+
+        foreach (GameObject mob in pooledEnemies[types])
+        {
+            if (mob.activeSelf) return false;
+        }
+        return true;
     }
 
     private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, Transform location = null, int spawnAmount = -1)
@@ -132,7 +213,7 @@ public class MobManager : MonoBehaviour
             yield return new WaitForSeconds(delayBetweenSpawns);
         }
         coroutines.Remove(coroutineName);
-        Debug.Log(coroutineName + " has been removed");
+        //Debug.Log(coroutineName + " has been removed");
     }
 
     private GameObject FindAvaliableEnemyOfType(EnemyTypes types)
@@ -145,6 +226,18 @@ public class MobManager : MonoBehaviour
             if (enemy.activeSelf == false)
                 return enemy;
         }
+        return null;
+    }
+
+    public GameObject SpawnBoss(EnemyTypes type, Transform spawnPos)
+    {
+        GameObject avaliableBoss = FindAvaliableEnemyOfType(type);
+        if (avaliableBoss != null)
+        {
+            avaliableBoss.SetActive(true);
+            return avaliableBoss;
+        }
+
         return null;
     }
 
@@ -177,7 +270,7 @@ public class MobManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
+            //Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
         }
     }
 

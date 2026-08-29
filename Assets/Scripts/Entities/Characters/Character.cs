@@ -8,6 +8,7 @@ public class Character : MonoBehaviour
     private SpriteRenderer sr;
     private Vector2 movement;
     private float invulnTimer;
+    private float regenAccumulator;
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
@@ -35,6 +36,7 @@ public class Character : MonoBehaviour
     {
         Movement();
         Sprite();
+        Regenerate();
 
         //Character cannot be attacked
         if (invulnTimer > 0f)
@@ -84,6 +86,20 @@ public class Character : MonoBehaviour
     {
         // Flips the player's sprite based on where they are looking
         sr.flipX = playerAim.AimDirection.x > 0f;
+    }
+
+    private void Regenerate()
+    {
+        if (cs.healthRegen <= 0f || cs.health >= cs.maxHealth) return;
+
+        // Accumulate fractional regen so low rates (e.g. 1/sec) still add up over time
+        regenAccumulator += cs.healthRegen * Time.deltaTime;
+        int whole = Mathf.FloorToInt(regenAccumulator);
+        if (whole > 0)
+        {
+            cs.health = Mathf.Min(cs.maxHealth, cs.health + whole);
+            regenAccumulator -= whole;
+        }
     }
 
     public void CharacterAttacked(int amount)

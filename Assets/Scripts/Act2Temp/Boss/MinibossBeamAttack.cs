@@ -2,26 +2,30 @@ using UnityEngine;
 
 public class MinibossBeamAttack : MonoBehaviour
 {
-    [Header("Beam Settings")]
-    public GameObject beamObject;
-    public Transform shootPoint;
-
-    [Header("Animation")]
-    public Animator bossAnimator;
-    public string beamAttackAnimName = "BeamAttack";
-    public string attackSpeedParam = "AttackSpeed"; // Animator float parameter name
-    public float AttackSpeed = 1f; // tune in Inspector - higher = faster clip playback
-
-    private Transform playerPos;
-    private bool isFiring = false;
-    private bool hasFired = false;
-
+    [Header("Firing Positions")]
     [SerializeField] private Transform leftPoint;
     [SerializeField] private Transform rightPoint;
     [SerializeField] private Transform backPoint;
     [SerializeField] private Transform frontPoint;
 
+    [Header("Beam Settings")]
+    public GameObject beamObject;
+    [SerializeField] private float beamLifetime = 5f;
+    [SerializeField] private int beamDamage = 5;
+    [SerializeField] private float beamSpeed = 1f;
+    [SerializeField] private int shotsPerAttack = 6;
+
+    [Header("Animation")]
+    public Animator bossAnimator;
+    [Tooltip("attack speed is based on animation speed")]
+    public float AttackSpeed = 1f;
+
+    private Transform playerPos;
     private Transform currentPoint;
+
+    private bool beamEnd = false;
+    private int shotsFired = 0;
+    private string currentDir = "F";
 
     void Start()
     {
@@ -29,15 +33,6 @@ public class MinibossBeamAttack : MonoBehaviour
         playerPos = player.transform;
         currentPoint = frontPoint;
     }
-
-
-    private int r = 0;
-
-
-    private int shotsFired = 0;
-    private int shotsPerAttack = 3;
-    private bool beamEnd = false;
-    private string currentDir = "F";
 
     public void EnableBeamAttack(string direction)
     {
@@ -56,15 +51,15 @@ public class MinibossBeamAttack : MonoBehaviour
 
         if (bossAnimator != null)
         {
-            bossAnimator.SetFloat(attackSpeedParam, 1f);
+            bossAnimator.SetFloat("AttackSpeed", AttackSpeed);
             bossAnimator.Play(direction + "Attack");
         }
     }
 
-    // Animation Event, placed once, repeats each time the looping clip cycles
+    // Play this animation event every time the boss fires a beam
     public void OnBeamShotEvent()
     {
-        if (beamEnd) return; // already done, ignore any late/extra calls
+        if (beamEnd) return;
 
         SpawnBeam();
         shotsFired++;
@@ -73,32 +68,24 @@ public class MinibossBeamAttack : MonoBehaviour
         {
             beamEnd = true;
             if (bossAnimator != null)
-                bossAnimator.Play(currentDir + "Idle"); // stop the loop immediately
+                bossAnimator.Play(currentDir + "Idle"); //stop the loop immediately
         }
     }
 
-    public bool GetBeamEnd() => beamEnd;
-
-    // Hook this up as an Animation Event at the very end of the beam attack clip
-
-    public void OnBeamAttackEndEvent()
+    public bool GetBeamEnd()
     {
-        isFiring = false;
-        hasFired = true;
+        return beamEnd;
     }
 
     private void SpawnBeam()
     {
-        if (playerPos == null || beamObject == null) return;
+        if (playerPos == null || beamObject == null)
+            return;
 
         Vector3 spawnPos = currentPoint.position;
-        Vector3 direction = playerPos.position - spawnPos; // re-aims fresh each shot
+        Vector3 direction = playerPos.position - spawnPos;
 
         GameObject beam = Instantiate(beamObject, spawnPos, Quaternion.identity);
-        beam.GetComponent<BeamProjectile>().SetDirection(direction);
+        beam.GetComponent<BeamProjectile>().SetBeam(direction, beamSpeed, beamLifetime, beamDamage);
     }
-
-    public bool GetIsFiring() => isFiring;
-    public void SetIsFiring(bool setFiring) => isFiring = setFiring;
-    public bool GetHasFired() => hasFired;
 }

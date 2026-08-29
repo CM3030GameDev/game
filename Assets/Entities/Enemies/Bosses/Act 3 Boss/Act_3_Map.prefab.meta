@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Entities/Enemies/Bosses/Act 3 Boss/Act_3_Map.prefab.meta
 guid: c95cf1e3babedcc4c86d283421671474
 PrefabImporter:
+========
+guid: 74cff5757445e6b49954997bc5f6c6a6
+DefaultImporter:
+>>>>>>>> 249ca3a0139648da4830334dbdb7a665f326fc9f:Assets/Scenes/Act4.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

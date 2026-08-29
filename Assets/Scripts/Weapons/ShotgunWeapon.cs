@@ -23,7 +23,7 @@ public class ShotgunWeapon : SecondaryWeapon
             p.GetComponent<Rigidbody2D>().linearVelocity = dir * pelletSpeed;
 
             Bullet b = p.GetComponent<Bullet>();
-            if (b != null) { b.SetDamage(Stats.damage); b.SetKnockback(knockback); }
+            if (b != null) { b.SetDamage(TotalDamage); b.SetKnockback(knockback); }
         }
     }
 }

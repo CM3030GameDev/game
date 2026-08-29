@@ -4,6 +4,23 @@ using System.Collections;
 
 public class Minion : MonoBehaviour
 {
+    [SerializeField] private Animator anim;
+    [SerializeField] private SpriteRenderer warningBox;
+    [SerializeField] private float growthSpeed = 20f;
+    [SerializeField] private float maxLength = 150f;
+    [SerializeField] private float moveSpeed = 10f;
+    [SerializeField] private int damage = 5;
+
+    private Vector3 startPos;
+    private bool hasStartPos = false;
+
+    private DirectionFacing dir = DirectionFacing.LEFT;
+    private MinionState currentState = MinionState.WARNING;
+
+    private Vector3 moveDir;
+    private bool isInitialized = false;
+    private float worldSpaceTravelDistance;
+
     public enum DirectionFacing
     {
         LEFT,
@@ -17,25 +34,6 @@ public class Minion : MonoBehaviour
         END
     }
 
-    private string faceDir;
-    public Animator anim;
-    public SpriteRenderer warningBox;
-    public float growthSpeed = 20f;
-    public float maxLength = 150f;
-    public float moveSpeed = 10f;
-
-    private Vector3 startPos;
-    private bool hasStartPos = false;
-
-    private int damage = 5;
-
-    private DirectionFacing dir = DirectionFacing.LEFT;
-    private MinionState currentState = MinionState.WARNING;
-    private Vector3 moveDir;
-    private bool isInitialized = false;
-    private float worldSpaceTravelDistance;
-
-    // Remove Start() logic so it doesn't run prematurely before assignment
     void Update()
     {
         if (!isInitialized) return;
@@ -61,8 +59,6 @@ public class Minion : MonoBehaviour
             default:
                 break;
         }
-
-        
     }
 
     private void HandleWarning()
@@ -130,8 +126,12 @@ public class Minion : MonoBehaviour
         Destroy(gameObject);
     }
 
-    public void Initialize(DirectionFacing df)
+    public void Initialize(DirectionFacing df, float speed, float growth, int dmg, float maxlength)
     {
+        maxLength = maxlength;
+        moveSpeed = speed;
+        growthSpeed = growth;
+        damage = dmg;
         dir = df;
         isInitialized = true;
         ApplyDirection();
@@ -151,35 +151,13 @@ public class Minion : MonoBehaviour
         }
     }
 
-    public enum FacingDirection
-    {
-        Up,
-        Down,
-        Left,
-        Right
-    }
-
-    public static class BossDirectionHelper
-    {
-        public static FacingDirection GetFacingDirection(Vector3 fromPos, Vector3 toPos)
-        {
-            Vector3 diff = toPos - fromPos;
-
-            if (Mathf.Abs(diff.x) > Mathf.Abs(diff.y))
-                return diff.x > 0 ? FacingDirection.Right : FacingDirection.Left;
-            else
-                return diff.y > 0 ? FacingDirection.Up : FacingDirection.Down;
-        }
-    }
-
-    //THIS IS HITTING THE CHARACTER MULTIPLE TIMES I THINK ITS CUS THE CHARATER HAS MULTIPLE COLLIDERS
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Character"))
+        if (collision.gameObject.CompareTag("Character") && collision.isTrigger)
         {
-            Debug.Log("hit" + collision.gameObject.name);
             Character character = collision.gameObject.GetComponent<Character>();
-            character.CharacterAttacked(damage);
+            if (character != null)
+                character.CharacterAttacked(damage);
         }
     }
 }

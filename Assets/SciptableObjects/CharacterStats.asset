@@ -14,7 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
   health: 100
   maxHealth: 100
-  expPoint: 300
-  level: 9
+  expPoint: 0
+  level: 1
   moveSpeed: 7
   attackSpeed: 0
+  damage: 0
+  pickupRadius: 8
+  healthRegen: 0

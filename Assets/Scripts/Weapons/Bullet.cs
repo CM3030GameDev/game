@@ -8,38 +8,43 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float lifetime = 2f;
 
     private int hitsRemaining;
+    private float knockbackForce;
+    private bool isReflected;
 
     private void Awake() { hitsRemaining = pierceCount; }
 
     private void Start() { Destroy(gameObject, lifetime); }
-    private float knockbackForce;
 
     public void SetDamage(int d) { damage = d; }
     public void SetKnockback(float force) => knockbackForce = force;
+    public void MarkReflected() { isReflected = true; }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Mob collision
-        if(other.CompareTag("Mobs"))
+        if (other.CompareTag("Enemy"))
         {
             Mob mob = other.GetComponent<Mob>();
-            mob.MobAttacked(damage, hitFlash);
-            if (knockbackForce > 0f)
+            if (mob != null)
             {
-                Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
-                mob.Knockback(dir, knockbackForce);
+                mob.MobAttacked(damage, hitFlash);
+
+                if (knockbackForce > 0f)
+                {
+                    Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
+                    mob.Knockback(dir, knockbackForce);
+                }
             }
-            hitsRemaining--;
         }
-        //Final boss collision
-        else if(other.CompareTag("FinalBoss"))
+        // Final Boss damage check
+        else if (other.CompareTag("FinalBoss"))
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
             finalBoss.BossAttacked(damage, hitFlash);
             hitsRemaining--;
         }
-        //Character collision (Final boss barrier reflected bullet)
-        else if (other.CompareTag("Character"))
+        // Character damage check - only if a barrier reflected this bullet back at the player;
+        // otherwise a weapon spawning bullets near the player would hit them immediately.
+        else if (isReflected && other.CompareTag("Character"))
         {
             Character character = other.GetComponent<Character>();
             character.CharacterAttacked(damage);
@@ -49,6 +54,10 @@ public class Bullet : MonoBehaviour
         else if (other.CompareTag("Wall"))
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            return;
         }
 
         if (hitsRemaining <= 0) Destroy(gameObject);

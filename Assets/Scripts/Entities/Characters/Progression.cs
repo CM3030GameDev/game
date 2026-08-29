@@ -6,7 +6,7 @@ public class Progression : MonoBehaviour
 {
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private int expPerLevel = 100;
-    [SerializeField] private int maxLevel = 15;
+    [SerializeField] private int maxLevel = 25;
 
     public event Action<int> OnLevelUp;   // Event to catch level ups
 

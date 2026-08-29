@@ -11,8 +11,11 @@ public class MercernarySkill : MonoBehaviour
 
     private float tickTimer;
 
+    private static int EnemyMask;
+
     private void Start()
     {
+        EnemyMask = LayerMask.GetMask("Enemy");
         Destroy(gameObject, duration);
     }
 
@@ -22,10 +25,9 @@ public class MercernarySkill : MonoBehaviour
         if (tickTimer < tickInterval) return;
         tickTimer = 0f;
 
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, radius, EnemyMask);
         foreach (var h in hits)
         {
-            if (!h.CompareTag("Enemy")) continue;
             Mob mob = h.GetComponent<Mob>();
             if (mob != null)
             {

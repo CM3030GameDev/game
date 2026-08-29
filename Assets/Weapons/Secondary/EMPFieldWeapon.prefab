@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7300210014782864563}
   - component: {fileID: 2355040083005840783}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: EMPFieldWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb05a53e68c08f04c89361761df55fe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EMPFieldWeapon
+  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   fieldVisual: {fileID: 3177607541097114721}
 --- !u!1 &4790288070601583942
 GameObject:
@@ -56,7 +57,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1568449332952765833}
   - component: {fileID: 3177607541097114721}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: FieldVisual
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +129,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
-  m_Color: {r: 0, g: 0.6727629, b: 1, a: 0.23529412}
+  m_Color: {r: 0, g: 0.6727629, b: 1, a: 0.48235294}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
