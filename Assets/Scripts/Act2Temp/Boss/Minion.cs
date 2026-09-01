@@ -7,7 +7,7 @@ public class Minion : MonoBehaviour
     [SerializeField] private Animator anim;
     [SerializeField] private SpriteRenderer warningBox;
     [SerializeField] private float growthSpeed = 20f;
-    [SerializeField] private float maxLength = 150f;
+    [SerializeField] private float maxLength = 80f;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private int damage = 5;
 

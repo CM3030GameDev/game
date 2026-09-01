@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class Act2Manager : MonoBehaviour
 {
-    //probably should use a list instead..
     [Header("Narrator Lines")]
     public DialogueData actStartDialogue;
 
@@ -43,11 +42,6 @@ public class Act2Manager : MonoBehaviour
 
         generator.onGeneratorShieldDown.AddListener(OnGeneratorShieldDown);
         generator.onGeneratorDown.AddListener(OnGeneratorDown);
-
-        if (minibossSpawnPoint != null)
-        {
-
-        }
     }
 
     private void OnDestroy()
