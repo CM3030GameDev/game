@@ -62,6 +62,9 @@ TagManager:
   - name: Ground
     uniqueID: 1400399459
     locked: 0
+  - name: Foreground
+    uniqueID: 339600167
+    locked: 0
   - name: Decoration_Back
     uniqueID: 446537991
     locked: 0
@@ -80,23 +83,20 @@ TagManager:
   - name: Pillar
     uniqueID: 2113944213
     locked: 0
-  - name: Attack
-    uniqueID: 176793315
-    locked: 0
-  - name: Foreground
-    uniqueID: 339600167
+  - name: Decoration
+    uniqueID: 3412924687
     locked: 0
   - name: Character
     uniqueID: 691850385
+    locked: 0
+  - name: Attack
+    uniqueID: 176793315
     locked: 0
   - name: Projectile
     uniqueID: 425002817
     locked: 0
   - name: Weapon
     uniqueID: 2015552387
-    locked: 0
-  - name: Decoration
-    uniqueID: 3412924687
     locked: 0
   - name: Temporary
     uniqueID: 3548693121
