@@ -4,43 +4,42 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Floor
-  - Enemy
-  - UI
-  - Flamethrower
-  - Pistol
-  - Sword
-  - Character
-  - Bullet
-  - Companion
   - FMA
   - Barrier
   - Wall
   - FinalBoss
-  - Mobs
+  - UI
+  - Flamethrower
+  - Companion
+  - Character
+  - Sword
   - Projectile
+  - Mobs
+  - Bullet
+  - Enemy
+  - Floor
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Floor
+  - Character
   - Water
   - UI
-  - Character
-  - Enemy
-  - Projectile
-  - HUD
-  - Background
-  - Menu
+  - Companion
   - Buildings
-  - Detect
-  - 
-  - 
-  - 
-  - 
-  - 
-  - Walls
   - Ground
+  - SafeZone
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
   - 
   - 
   - 
@@ -56,75 +55,23 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Background
-    uniqueID: 3141961243
-    locked: 0
   - name: Ground
-    uniqueID: 1400399459
-    locked: 0
-  - name: Decoration_Back
-    uniqueID: 446537991
-    locked: 0
-<<<<<<< HEAD
-  - name: Companion
-    uniqueID: 539685799
-    locked: 0
-  - name: Beam
-    uniqueID: 2193736927
-    locked: 0
-  - name: Warning
-    uniqueID: 1048383203
+    uniqueID: 1710379025
     locked: 0
   - name: Enemy
-    uniqueID: 2937264421
-    locked: 0
-  - name: Pillar
-    uniqueID: 2113944213
-    locked: 0
-  - name: Attack
-    uniqueID: 176793315
-=======
-  - name: Foreground
-    uniqueID: 339600167
->>>>>>> 249ca3a0139648da4830334dbdb7a665f326fc9f
+    uniqueID: 3862524963
     locked: 0
   - name: Character
-    uniqueID: 691850385
-    locked: 0
-<<<<<<< HEAD
-  - name: Projectile
-    uniqueID: 425002817
-=======
-  - name: Companion
-    uniqueID: 539685799
->>>>>>> 249ca3a0139648da4830334dbdb7a665f326fc9f
-    locked: 0
-  - name: Weapon
-    uniqueID: 2015552387
-    locked: 0
-  - name: Attack
-    uniqueID: 176793315
+    uniqueID: 4258655829
     locked: 0
   - name: Projectile
-    uniqueID: 425002817
+    uniqueID: 3097106685
     locked: 0
-  - name: Enemy
-    uniqueID: 2937264421
-    locked: 0
-  - name: Decoration
-    uniqueID: 3412924687
-    locked: 0
-  - name: Pillar
-    uniqueID: 2113944213
-    locked: 0
-  - name: Temporary
-    uniqueID: 3548693121
+  - name: Buildings
+    uniqueID: 2093157797
     locked: 0
   - name: HUD
-    uniqueID: 3606316447
-    locked: 0
-  - name: Menu
-    uniqueID: 1682915153
+    uniqueID: 3465149437
     locked: 0
   m_RenderingLayers:
   - Default

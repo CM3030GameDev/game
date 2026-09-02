@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: 88501248dcb68264a9622d28eea05b74
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1682304807095387179
+    second: Ground_Impact_0
+  - first:
+      213: -8481145209291098413
+    second: Ground_Impact_1
+  - first:
+      213: 5522313597670358641
+    second: Ground_Impact_2
+  - first:
+      213: -590885263003612373
+    second: Ground_Impact_3
+  - first:
+      213: 7891787654258589390
+    second: Ground_Impact_4
+  - first:
+      213: -7770161450031641984
+    second: Ground_Impact_5
+  - first:
+      213: -8462564916050424134
+    second: Ground_Impact_6
+  - first:
+      213: 9096139127046328408
+    second: Ground_Impact_7
+  - first:
+      213: -1075410949195109307
+    second: Ground_Impact_8
+  - first:
+      213: 522822719826933791
+    second: Ground_Impact_9
+  - first:
+      213: 843052452260812856
+    second: Ground_Impact_10
+  - first:
+      213: 784394426960132986
+    second: Ground_Impact_11
+  - first:
+      213: -8333699906701184345
+    second: Ground_Impact_12
+  - first:
+      213: -7103658351716771757
+    second: Ground_Impact_13
+  - first:
+      213: -4647736115366704844
+    second: Ground_Impact_14
+  - first:
+      213: -101835569691737214
+    second: Ground_Impact_15
+  - first:
+      213: 8609204336629220443
+    second: Ground_Impact_16
+  - first:
+      213: 5888202746845667078
+    second: Ground_Impact_17
+  - first:
+      213: -5984965190928027693
+    second: Ground_Impact_18
+  - first:
+      213: 2015006727848775029
+    second: Ground_Impact_19
+  - first:
+      213: 7450485002505772221
+    second: Ground_Impact_20
+  - first:
+      213: 2017609714320986222
+    second: Ground_Impact_21
+  - first:
+      213: 5535436456540062620
+    second: Ground_Impact_22
+  - first:
+      213: 8527550419339396241
+    second: Ground_Impact_23
+  - first:
+      213: -3075787434842745219
+    second: Ground_Impact_24
+  - first:
+      213: -4516900252775064348
+    second: Ground_Impact_25
+  - first:
+      213: -6358537294272847087
+    second: Ground_Impact_26
+  - first:
+      213: 3588270488645007708
+    second: Ground_Impact_27
+  - first:
+      213: 8506719005659279015
+    second: Ground_Impact_28
+  - first:
+      213: 1756350719213505382
+    second: Ground_Impact_29
+  - first:
+      213: 5907390904743462376
+    second: Ground_Impact_30
+  - first:
+      213: 1532506106891301899
+    second: Ground_Impact_31
+  - first:
+      213: 4664710254299787364
+    second: Ground_Impact_32
+  - first:
+      213: -6316188142691029057
+    second: Ground_Impact_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ground_Impact_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 1
+        width: 92
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbb521f0b047a8e0800000000000000
+      internalID: -1682304807095387179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_1
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 102
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b08a3ebf0ccc7f0800000000000000
+      internalID: -590885263003612373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_2
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 1
+        width: 112
+        height: 40
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece75ee1f03458d60800000000000000
+      internalID: 7891787654258589390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_6
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 14
+        width: 132
+        height: 36
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08a0e6b4457da2490800000000000000
+      internalID: -7770161450031641984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_3
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1
+        width: 126
+        height: 45
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54ce8a1807f5311f0800000000000000
+      internalID: -1075410949195109307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_4
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 2
+        width: 132
+        height: 46
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc5bbaa2a0756760800000000000000
+      internalID: 7450485002505772221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Impact_5
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 11
+        width: 134
+        height: 39
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19445fcece1f75670800000000000000
+      internalID: 8527550419339396241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Ground_Impact_0: -1682304807095387179
+      Ground_Impact_1: -590885263003612373
+      Ground_Impact_10: 843052452260812856
+      Ground_Impact_11: 784394426960132986
+      Ground_Impact_12: -8333699906701184345
+      Ground_Impact_13: -7103658351716771757
+      Ground_Impact_14: -4647736115366704844
+      Ground_Impact_15: -101835569691737214
+      Ground_Impact_16: 8609204336629220443
+      Ground_Impact_17: 5888202746845667078
+      Ground_Impact_18: -5984965190928027693
+      Ground_Impact_19: 2015006727848775029
+      Ground_Impact_2: 7891787654258589390
+      Ground_Impact_21: 2017609714320986222
+      Ground_Impact_22: 5535436456540062620
+      Ground_Impact_24: -3075787434842745219
+      Ground_Impact_25: -4516900252775064348
+      Ground_Impact_26: -6358537294272847087
+      Ground_Impact_27: 3588270488645007708
+      Ground_Impact_28: 8506719005659279015
+      Ground_Impact_29: 1756350719213505382
+      Ground_Impact_3: -1075410949195109307
+      Ground_Impact_30: 5907390904743462376
+      Ground_Impact_31: 1532506106891301899
+      Ground_Impact_32: 4664710254299787364
+      Ground_Impact_33: -6316188142691029057
+      Ground_Impact_4: 7450485002505772221
+      Ground_Impact_5: 8527550419339396241
+      Ground_Impact_6: -7770161450031641984
+      Ground_Impact_7: -8462564916050424134
+      Ground_Impact_9: 522822719826933791
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

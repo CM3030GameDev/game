@@ -8,6 +8,8 @@ public class FinalBoss : MonoBehaviour
     private Character character;
     private DashAttack dashAttack;
     private Vector2 normalizedChase;
+    //Player's last position
+    public Vector2 lastPos;
     //Attacked state
     private bool isAttacked;
     //Invulnerable timer
@@ -20,18 +22,23 @@ public class FinalBoss : MonoBehaviour
     public bool attacking;
     //Dashing state
     public bool dashing;
+    //Character last position
+    public Vector3 characterPos;
     //Beam direction (False is right, true is left)
     public bool beamDirection;
     //Random probability for boss pattern
     public float randomNum;
     [SerializeField] private GameObject soldier;
     [SerializeField] private GameObject eyeLaser;
+    [SerializeField] private GameObject beams;
     [SerializeField] private GameObject barrier;
     [SerializeField] private GameObject missileLauncher;
     [SerializeField] private GameObject dash;
-    [SerializeField] private GameObject suction;
-    [SerializeField] private GameObject wind;
-    [SerializeField] private GameObject range;
+    [SerializeField] private GameObject suctionEffect;
+    [SerializeField] private GameObject windEffect;
+    [SerializeField] private GameObject rangeIndicator;
+    [SerializeField] private GameObject groundSmash;
+    [SerializeField] private GameObject fireCannon;
     [SerializeField] private GameObject leftDrone;
     [SerializeField] private GameObject rightDrone;
     //Default material
@@ -116,50 +123,52 @@ public class FinalBoss : MonoBehaviour
             {
                 attacking = true;
 
-                //If boss is far
-                if (Vector2.Distance(character.transform.position, transform.position) > 20f)
-                {
-                    if (randomNum < 0.5f)
-                    {
-                        Dash();
-                    }
-                    else if (randomNum < 0.7f)
-                    {
-                        Suction();
-                    }
-                    else if(randomNum < 0.8f)
-                    {
-                        Laser();
-                    }
-                    else if (randomNum < 0.9f)
-                    {
-                        Missile();
-                    }
-                    else
-                    {
-                        Beam();
-                    }
-                }
-                //If boss is close
-                else
-                {
-                    if (randomNum > 0.5f)
-                    {
-                        Laser();
-                    }
-                    else if (randomNum < 0.7f)
-                    {
-                        Suction();
-                    }
-                    else if (randomNum < 0.9f)
-                    {
-                        Missile();
-                    }
-                    else
-                    {
-                        Beam();
-                    }
-                }
+                FireCannon();
+
+                ////If boss is far
+                //if (Vector2.Distance(character.transform.position, transform.position) > 20f)
+                //{
+                //    if (randomNum < 0.5f)
+                //    {
+                //        Dash();
+                //    }
+                //    else if (randomNum < 0.7f)
+                //    {
+                //        Suction();
+                //    }
+                //    else if(randomNum < 0.8f)
+                //    {
+                //        Laser();
+                //    }
+                //    else if (randomNum < 0.9f)
+                //    {
+                //        Missile();
+                //    }
+                //    else
+                //    {
+                //        Beam();
+                //    }
+                //}
+                ////If boss is close
+                //else
+                //{
+                //    if (randomNum > 0.5f)
+                //    {
+                //        Laser();
+                //    }
+                //    else if (randomNum < 0.7f)
+                //    {
+                //        Suction();
+                //    }
+                //    else if (randomNum < 0.9f)
+                //    {
+                //        Missile();
+                //    }
+                //    else
+                //    {
+                //        Beam();
+                //    }
+                //}
             }
         }
 
@@ -178,7 +187,7 @@ public class FinalBoss : MonoBehaviour
             //Dash towards player
             if (dashing)
             {
-                rb.linearVelocity = dashAttack.dashDirection * dashAttack.dashSpeed;
+                rb.linearVelocity = dashAttack.dashNormalized * dashAttack.dashSpeed;
             }
             //Stationary
             else
@@ -188,34 +197,56 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
+    //Increases movement speed for a period of time
     private void Dash()
     {
         animator.SetBool("dash", true);
         dash.SetActive(true);
     }
 
+    //Shoot laser at player position
     private void Laser()
     {
         eyeLaser.SetActive(true);
     }
 
-    private void Missile()
+    //Missile that chases player and detonate upon collision or automatically by itself after a period of time
+    private void HomingMissile()
     {
         missileLauncher.SetActive(true);
     }
 
+    //Pulls player in before unleashing a shockwave nearby
     private void Suction()
     {
-        suction.SetActive(true);
-        wind.SetActive(true);
-        range.SetActive(true);
+        animator.SetBool("attack", true);
+        suctionEffect.SetActive(true);
+        windEffect.SetActive(true);
+        rangeIndicator.SetActive(true);
     }
 
+    //4 directional beam that rotates in a full circle (Random starting rotation, random direction)
     private void Beam()
     {
-        animator.SetTrigger("beam_start");
+        animator.SetBool("attack", true);
+        beams.SetActive(true);
     }
 
+    //Spawns ground impact attacks that chases player when smashing the ground
+    private void GroundSmash()
+    {
+        animator.SetBool("smash", true);
+        groundSmash.SetActive(true);
+    }
+
+    //Spray fire attack consecutively at player at close range
+    private void FireCannon()
+    {
+        animator.SetBool("attack", true);
+        fireCannon.SetActive(true);
+    }
+
+    //Shield that reflects bullets
     private void Barrier()
     {
         //Barrier only appears at 10% chance when boss is less than 50% health

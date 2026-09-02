@@ -20,9 +20,15 @@ public class Barrier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Turn off barrier if it exceeds barrier timer
         if(currentTime > barrierTime)
         {
             gameObject.SetActive(false);
+        }
+        //Barrier continues to stay on
+        else
+        {
+            currentTime += Time.deltaTime;
         }
     }
 

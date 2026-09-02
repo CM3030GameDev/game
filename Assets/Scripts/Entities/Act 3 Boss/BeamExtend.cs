@@ -5,7 +5,6 @@ public class BeamExtend : MonoBehaviour
     private SpriteRenderer sr;
     private BoxCollider2D boxCollider;
     [SerializeField] private LayerMask buildingsLayer;
-    [SerializeField] private Character character;
     [SerializeField] private Sprite box;
     [SerializeField] private Sprite beam;
 
@@ -55,16 +54,12 @@ public class BeamExtend : MonoBehaviour
         }
     }
 
-    public void RayCast()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Character") && !character.isAttacked)
+        if(collision.CompareTag("Character"))
         {
-            character.CharacterAttacked(50);
+            Character character = collision.GetComponent<Character>();
+            character.CharacterAttacked(30);
             character.GrantInvulnerability(0.5f);
         }
     }

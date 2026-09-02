@@ -2,12 +2,12 @@ using UnityEngine;
 
 public class DashAttack : MonoBehaviour
 {
-    private Vector2 characterPos;
-    public Vector2 dashDirection;
+    public Vector2 dashNormalized;
+    private Vector2 targetPos;
     public int dashSpeed;
     [SerializeField] private GameObject character;
     [SerializeField] private FinalBoss finalBoss;
-    [SerializeField] private LayerMask buildingsLayer;
+    [SerializeField] private LayerMask layers;
 
     private void OnEnable()
     {
@@ -20,19 +20,16 @@ public class DashAttack : MonoBehaviour
             finalBoss.sr.flipX = true;
         }
 
-        //Target player current position
-        characterPos = character.transform.position;
-        //Direction towards player current position
-        dashDirection = (character.transform.position - transform.position).normalized;
+        Vector2 dashDirection = character.transform.position - transform.position;
+        dashNormalized = dashDirection.normalized;
 
         //Raycast to check if there is obstacle between boss and player
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, dashDirection, 15f, buildingsLayer.value);
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, dashNormalized, 15f, layers.value);
 
-        //Collide with obstacle
+        //Dash to either obstacle position or player position
         if (hit)
         {
-            //Dash till obstacle
-            characterPos = hit.point - (dashDirection * 5f);
+            targetPos = hit.point;
         }
 
         //Boss is currently dashing
@@ -49,7 +46,7 @@ public class DashAttack : MonoBehaviour
     void Update()
     {
         //Stop dashing after reaching target position
-        if (Vector2.Distance(transform.position, characterPos) < 1f)
+        if (Vector2.Distance(transform.position, targetPos) < 2f)
         {
             finalBoss.dashing = false;
             finalBoss.animator.SetBool("dash", false);
