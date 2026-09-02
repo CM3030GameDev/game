@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a01be52bc889754d93990fc6d2bb295, type: 3}
   m_Name: SceneState
   m_EditorClassIdentifier: Assembly-CSharp::SceneState
-  pause: 1
+  pause: 0
   mission: 0
   dead: 0
   act: 2

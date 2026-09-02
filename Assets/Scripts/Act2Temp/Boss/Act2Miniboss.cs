@@ -78,6 +78,7 @@ public class Act2Miniboss : MonoBehaviour
     private float currentCollisionCD;
     private bool hasCollided = false;
     [SerializeField] private int collisionDamage = 3;
+    [SerializeField] private float playerInvulnerability = 0.3f;
 
     [SerializeField] private MinibossAttackRange attackRange;
     [SerializeField] private int attackDamage = 5;
@@ -171,8 +172,6 @@ public class Act2Miniboss : MonoBehaviour
         if (playerTransform == null)
             return;
 
-        Debug.Log($"state={currState}, playerTransform={playerTransform}, isInRange={isInRange}, rb={rb}, moveSpeed={moveSpeed}");
-
         if (currState == BossState.NORMAL)
             moveSpeed = normalMoveSpeed;
         else if (currState == BossState.AGITATED)
@@ -244,12 +243,6 @@ public class Act2Miniboss : MonoBehaviour
             return;
 
         animator.Play(stateName);
-
-        /*        string animationName = dir + action; // e.g. "L" + "Walk" = "LWalk"
-                if (animationName == prevAnim) return;
-
-                animator.Play(animationName);
-                prevAnim = animationName;*/
     }
 
     private void HandleNormalState()
@@ -472,12 +465,35 @@ public class Act2Miniboss : MonoBehaviour
 
     }
 
+    public void MobAttacked(int amount, float timer)
+    {
+        currentHP -= amount;
+    }
+
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Character"))
         {
-            hasCollided = true;
-            collision.GetComponent<Character>().CharacterAttacked(collisionDamage);
+            Character character = collision.gameObject.GetComponent<Character>();
+            if (!character.isAttacked && character != null)
+            {
+                character.CharacterAttacked(collisionDamage);
+                character.GrantInvulnerability(playerInvulnerability);
+            }
+        }
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Character"))
+        {
+            Character character = collision.gameObject.GetComponent<Character>();
+            if (!character.isAttacked && character != null)
+            {
+                character.CharacterAttacked(collisionDamage);
+                character.GrantInvulnerability(playerInvulnerability);
+            }
         }
     }
 }

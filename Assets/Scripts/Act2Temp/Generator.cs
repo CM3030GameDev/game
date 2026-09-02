@@ -7,6 +7,7 @@ public class Generator : MonoBehaviour
     [Header("Generator Shield Object")]
     [SerializeField] private GameObject generatorShield;
     [SerializeField] private SpriteRenderer generatorShieldSprite;
+    [SerializeField] private Animator shieldAnimator;
 
     [Header("Events")]
     public UnityEvent onGeneratorShieldDown;
@@ -15,6 +16,8 @@ public class Generator : MonoBehaviour
     private bool isShieldDown = false;
     private bool isOverdrive = false;
     private bool isGeneratorDown = false;
+    private bool isShieldEnhanced = false;
+    StateTrigger exitTrigger;
 
     [Header("Generator Stats")]
     [SerializeField] private int maxGeneratorHealth = 5;
@@ -30,10 +33,12 @@ public class Generator : MonoBehaviour
     void Start()
     {
         generatorShield.SetActive(true);
+        shieldAnimator.Play("GeneratorShieldBlue");
         generatorHealth = maxGeneratorHealth;
         generatorEnergy = maxGeneratorEnergy;
 
         canvasUI.SetActive(false);
+        exitTrigger = shieldAnimator.GetBehaviour<StateTrigger>();
     }
     void Update()
     {
@@ -65,15 +70,18 @@ public class Generator : MonoBehaviour
             UnlockNextAct();
         }
     }
-    public void DisableShield() //killing the boss disables the shield
+    private void DisableShield() //killing the boss disables the shield
     {
-        isShieldDown = true;
-        isOverdrive = false;
-        generatorShield.SetActive(false);
+        if(!isShieldDown && isOverdrive)
+        {
+            isShieldDown = true;
+            isOverdrive = false;
+            shieldAnimator.Play("GeneratorShieldCollapse");
+        }
     }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("hit generator");
         if (isShieldDown && generatorEnergy <= 0 && collision.gameObject.CompareTag("Bullet"))
         {
             generatorHealth -= 1;
@@ -85,8 +93,28 @@ public class Generator : MonoBehaviour
     }
     public void EnhancedShield()
     {
-        Color g = generatorShieldSprite.color;
-        generatorShieldSprite.color = new Color(1f, 0f, 0f, g.a);
+        if(!isShieldEnhanced)
+        {
+            isShieldEnhanced = true;
+            shieldAnimator.Play("GeneratorShieldYellow");
+            // 2. Fetch the generic exit behavior from that specific state
+            
+
+            if (exitTrigger != null)
+            {
+                // Clear any old subscriptions to prevent bugs
+                exitTrigger.OnStateExitAction = null;
+
+                // 3. Subscribe to the exit event
+                exitTrigger.OnStateExitAction += OnAnimationEnd;
+            }
+        }
+    }
+
+    private void OnAnimationEnd()
+    {
+        generatorShield.SetActive(false);
+        exitTrigger.OnStateExitAction = null;
     }
 
     public void SetIsOverdrive(bool overdrive)

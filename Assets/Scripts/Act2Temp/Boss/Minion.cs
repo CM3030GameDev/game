@@ -10,6 +10,7 @@ public class Minion : MonoBehaviour
     [SerializeField] private float maxLength = 80f;
     [SerializeField] private float moveSpeed = 10f;
     [SerializeField] private int damage = 5;
+    [SerializeField] private float playerInvulnerability = 0.1f;
 
     private Vector3 startPos;
     private bool hasStartPos = false;
@@ -153,11 +154,14 @@ public class Minion : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Character") && collision.isTrigger)
+        if (collision.gameObject.CompareTag("Character"))
         {
             Character character = collision.gameObject.GetComponent<Character>();
-            if (character != null)
+            if (!character.isAttacked && character != null)
+            {
                 character.CharacterAttacked(damage);
+                character.GrantInvulnerability(playerInvulnerability);
+            }
         }
     }
 }

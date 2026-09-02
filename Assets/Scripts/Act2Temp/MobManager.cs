@@ -12,7 +12,7 @@ public class MobManager : MonoBehaviour
         public int poolAmount;
     }
 
-    public Transform playerTransform;
+    private Transform playerTransform;
     public LayerMask groundLayer;
 
     //temporary serialized, for testing
@@ -74,8 +74,7 @@ public class MobManager : MonoBehaviour
 
     private void Start()
     {
-        
-        
+        playerTransform = GameObject.FindGameObjectsWithTag("Character")[0].transform;
     }
 
     /// <summary>
@@ -206,8 +205,9 @@ public class MobManager : MonoBehaviour
             GameObject availableEnemy = FindAvaliableEnemyOfType(types);
             if (availableEnemy != null)
             {
-                SpawnEnemy(availableEnemy, location);
-                spawnedCount++;
+                bool hasSpawned = SpawnEnemy(availableEnemy, location);
+                if (hasSpawned)
+                    spawnedCount++;
             }
 
             yield return new WaitForSeconds(delayBetweenSpawns);
@@ -234,6 +234,7 @@ public class MobManager : MonoBehaviour
         GameObject avaliableBoss = FindAvaliableEnemyOfType(type);
         if (avaliableBoss != null)
         {
+            avaliableBoss.transform.position = spawnPos.position;
             avaliableBoss.SetActive(true);
             return avaliableBoss;
         }
@@ -241,7 +242,19 @@ public class MobManager : MonoBehaviour
         return null;
     }
 
-    private void SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
+    public void DespawnBoss(EnemyTypes type)
+    {
+        if (!pooledEnemies.ContainsKey(type))
+            return;
+
+        foreach (GameObject enemy in pooledEnemies[type])
+        {
+            if (enemy.activeSelf)
+                enemy.SetActive(false);
+        }
+    }
+
+    private bool SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
     {
         float targetX;
         float targetY;
@@ -267,10 +280,12 @@ public class MobManager : MonoBehaviour
         {
             enemyToSpawn.transform.position = new Vector3(targetX, targetY, 0f);
             enemyToSpawn.SetActive(true);
+            return true;
         }
         else
         {
             //Debug.Log("X:" + targetX + " Y: " + targetY + " has no ground");
+            return false;
         }
     }
 

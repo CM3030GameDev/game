@@ -29,8 +29,6 @@ public class Act2Manager : MonoBehaviour
     }
 
     private CurrentState state = CurrentState.START;
-    private bool isBossSpawned = false;
-    private bool hasGeneratorStarted = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -96,6 +94,7 @@ public class Act2Manager : MonoBehaviour
     public void EnableGenerator()
     {
         miniboss.GetComponent<Act2Miniboss>().bossDeath.RemoveListener(OnBossDeath);
+        MobManager.Instance.DespawnBoss(MobManager.EnemyTypes.ACT2BOSS);
         DialogueManager.Instance.onDialogueEnd.RemoveListener(EnableGenerator);
         generator.SetIsOverdrive(true);
         state = CurrentState.GENERATOR;

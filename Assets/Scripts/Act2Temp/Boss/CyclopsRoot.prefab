@@ -31,37 +31,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 123181415779152722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1114794678178808157
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5592716787196272806}
-  m_Layer: 0
-  m_Name: LPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5592716787196272806
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1114794678178808157}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9, y: 3.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7818063693142972008}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1451995950783793048
 GameObject:
   m_ObjectHideFlags: 0
@@ -74,9 +43,10 @@ GameObject:
   - component: {fileID: 7897100620906042304}
   - component: {fileID: 453347392088703674}
   - component: {fileID: 3846571047558629251}
+  - component: {fileID: 3169859250998729671}
   m_Layer: 0
   m_Name: Cyclops
-  m_TagString: Enemy
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,15 +60,10 @@ Transform:
   m_GameObject: {fileID: 1451995950783793048}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.85, z: 0}
+  m_LocalPosition: {x: 0, y: -1.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 5592716787196272806}
-  - {fileID: 870162138594265454}
-  - {fileID: 5416256049625130140}
-  - {fileID: 8364867445693297413}
-  - {fileID: 5526665675568968878}
+  m_Children: []
   m_Father: {fileID: 123181415779152722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &7897100620906042304
@@ -194,37 +159,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 694135ff97ae87c449804fe62ce93d60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinibossAnimationEvent
---- !u!1 &2152676508999319534
-GameObject:
+--- !u!114 &3169859250998729671
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 870162138594265454}
-  m_Layer: 0
-  m_Name: RPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &870162138594265454
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2152676508999319534}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 3.14, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7818063693142972008}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1451995950783793048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 694135ff97ae87c449804fe62ce93d60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinibossAnimationEvent
 --- !u!1 &2416177513569356501
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,68 +201,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 123181415779152722}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3234833218441097681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5416256049625130140}
-  m_Layer: 0
-  m_Name: BPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5416256049625130140
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3234833218441097681}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 5.34, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7818063693142972008}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &3846625424258270261
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8364867445693297413}
-  m_Layer: 0
-  m_Name: FPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8364867445693297413
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3846625424258270261}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.79, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7818063693142972008}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5126940955098609490
 GameObject:
@@ -350,7 +234,7 @@ Transform:
   m_GameObject: {fileID: 5126940955098609490}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.39, y: 5.27, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -402,6 +286,7 @@ MonoBehaviour:
   currentHP: 10
   maxCollisionCD: 1
   collisionDamage: 3
+  playerInvulnerability: 0.3
   attackRange: {fileID: 6825106318674803794}
   attackDamage: 5
 --- !u!114 &6552288463554767109
@@ -443,11 +328,12 @@ MonoBehaviour:
   rightPoint: {fileID: 5232865154273392760}
   backPoint: {fileID: 1499478131224142451}
   frontPoint: {fileID: 2139113211109037725}
-  beamObject: {fileID: 8918427435610785416, guid: e32b52089a2f6bf4c96069fdee209f8a, type: 3}
+  beamObject: {fileID: 2861502851783681118, guid: 98f60a47d2ca9e948848291ee726fb28, type: 3}
   beamLifetime: 5
   beamDamage: 5
   beamSpeed: 20
   shotsPerAttack: 6
+  playerInvulnerability: 0.1
   bossAnimator: {fileID: 453347392088703674}
   AttackSpeed: 1
 --- !u!114 &5830537015376165855
@@ -463,7 +349,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MinibossUltimate
   bossAnimator: {fileID: 453347392088703674}
-  ult: {fileID: 2299123669726126074, guid: 9567616b6f33ccf45a766803428d6cf9, type: 3}
+  ult: {fileID: 4425267643033088998, guid: 9567616b6f33ccf45a766803428d6cf9, type: 3}
   topPoint: {fileID: 1499478131224142451}
   numberOfThrows: 3
   chargingTime: 1
@@ -471,6 +357,7 @@ MonoBehaviour:
   throwSpeed: 8
   ultLifetime: 5
   ultDamage: 10
+  playerInvulnerability: 0.1
 --- !u!70 &5064994520147190441
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -505,8 +392,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.044662952}
-  m_Size: {x: 1.7774706, y: 2.269496}
+  m_Offset: {x: -0.014114141, y: -0.01}
+  m_Size: {x: 1.052944, y: 1.5543787}
   m_Direction: 0
 --- !u!50 &4256835616449501198
 Rigidbody2D:
@@ -535,37 +422,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!1 &5744212345084213342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 5526665675568968878}
-  m_Layer: 0
-  m_Name: CyclopsPivot
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &5526665675568968878
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5744212345084213342}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.61, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 7818063693142972008}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7416212011621632906
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,8 +431,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4845593362465619129}
-  - component: {fileID: 5511447328226567994}
   - component: {fileID: 6825106318674803794}
+  - component: {fileID: 2015827835191047946}
   m_Layer: 0
   m_Name: AttackRangeDetector
   m_TagString: Untagged
@@ -599,8 +455,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 123181415779152722}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!70 &5511447328226567994
-CapsuleCollider2D:
+--- !u!114 &6825106318674803794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7416212011621632906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7933d07dc954a6479ccb8116d2dcc3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MinibossAttackRange
+--- !u!58 &2015827835191047946
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -634,20 +502,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.0121365, y: 3.0121365}
-  m_Direction: 0
---- !u!114 &6825106318674803794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7416212011621632906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7933d07dc954a6479ccb8116d2dcc3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::MinibossAttackRange
+  m_Radius: 1.47
 --- !u!1 &7991736498845558058
 GameObject:
   m_ObjectHideFlags: 0
