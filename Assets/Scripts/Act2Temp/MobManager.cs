@@ -121,9 +121,9 @@ public class MobManager : MonoBehaviour
     /// <param name="types">Enum of enemy type.</param>
     /// <param name="location">The Transform of the location you want the mobs to spawn from.</param>
     /// <param name="spawnAmount">The number of enemies to spawn</param>
-    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, Transform location = null, int spawnAmount = -1)
+    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, int spawnAmount = -1, Transform location = null)
     {
-        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, location, spawnAmount));
+        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, spawnAmount, location));
         coroutines.Add(coroutineName, c);
         //Debug.Log(coroutineName + " has been added.");
     }
@@ -197,7 +197,7 @@ public class MobManager : MonoBehaviour
         return true;
     }
 
-    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, Transform location = null, int spawnAmount = -1)
+    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, int spawnAmount = -1, Transform location = null)
     {
         int spawnedCount = 0;
         while (spawnAmount < 0 || spawnedCount < spawnAmount)
@@ -333,6 +333,11 @@ public class MobManager : MonoBehaviour
     public int GetKillCount()
     {
         return killCount;
+    }
+
+    public void ResetKillCount()
+    {
+        killCount = 0;
     }
 
     public List<GameObject> GetAllPooledEnemies()

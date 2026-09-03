@@ -83,9 +83,6 @@ TagManager:
   - name: Attack
     uniqueID: 176793315
     locked: 0
-  - name: Foreground
-    uniqueID: 339600167
-    locked: 0
   - name: Character
     uniqueID: 691850385
     locked: 0
@@ -94,6 +91,9 @@ TagManager:
     locked: 0
   - name: Weapon
     uniqueID: 2015552387
+    locked: 0
+  - name: Foreground
+    uniqueID: 339600167
     locked: 0
   - name: Decoration
     uniqueID: 3412924687

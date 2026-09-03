@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4339269876809990682}
   - component: {fileID: 245365229778648271}
   m_Layer: 0
-  m_Name: Square
+  m_Name: WarningBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1357702875
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -172,8 +172,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1357702875
+  m_SortingLayer: 7
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2579792133662569173, guid: 8135ff675f7ad29498cc771a91328ebe, type: 3}
@@ -241,6 +241,7 @@ MonoBehaviour:
   maxLength: 55
   moveSpeed: 25
   damage: 5
+  playerInvulnerability: 0.1
 --- !u!95 &4493481254761712578
 Animator:
   serializedVersion: 7
