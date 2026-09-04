@@ -31,14 +31,19 @@ public class Act2Manager : MonoBehaviour
 
     [Header("Room 1 - Kill Count")]
     private int room1TargetKillCount;
+    [SerializeField] private GameObject room1Ground;
     [SerializeField] private List<EnemySpawnSetting> room1SpawnerList = new List<EnemySpawnSetting>();
     private const string Room1WaveName = "room1_killcount";
+    [SerializeField] private Act2ObjectiveTrigger room1GateTrigger;
 
     [Header("Room 2 Part 1 - Boss")]
+    [SerializeField] private GameObject room2Ground;
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList1 = new List<EnemySpawnSetting>();
+    [SerializeField] private Act2ObjectiveTrigger act3GateTrigger;
 
     [Header("Room 2 Part 2 - Generator")]
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList2 = new List<EnemySpawnSetting>();
+    //[SerializeField] private Act2ObjectiveTrigger act3GateTrigger;
 
     [Header("Mission Text - edit wording here, not in code")]
     [SerializeField] private string room1Header = "Act 2 - Push Deeper Into the City";
@@ -60,10 +65,6 @@ public class Act2Manager : MonoBehaviour
     [SerializeField] private Transform room2EntranceTarget;
     [SerializeField] private Transform act3EntranceTarget;
     [SerializeField] private Transform generatorTarget;
-
-    [Header("Gates (physically block the way until each stage opens up)")]
-    [SerializeField] private GameObject room1ToBossGate;
-    [SerializeField] private GameObject BossToAct3Gate;
 
     public Generator generator;
     private GameObject miniboss;
@@ -94,6 +95,9 @@ public class Act2Manager : MonoBehaviour
         //Event listeners for the generator
         generator.onGeneratorShieldDown.AddListener(OnGeneratorShieldDown);
         generator.onGeneratorDown.AddListener(OnGeneratorDown);
+
+        //Mission UI
+        missionUI?.SetMission(room1Header, room1Task, null);
     }
 
     // Update is called once per frame
@@ -106,15 +110,15 @@ public class Act2Manager : MonoBehaviour
                 MobManager.Instance.StopAllSpawnCoroutines();
                 isRoom1Cleared = true;
                 //Mission UI
-                missionUI?.SetMission(room1Header, room1ClearedTask, room2EntranceTarget);
+                missionUI?.SetMission(room1Header, room1ClearedTask, room1GateTrigger.transform);
+
+                //Open gate to next room
+                room1GateTrigger.OpenGate();
             }
             else
             {
-
+                WaitForRoomEnter();
             }
-            WaitForRoomEnter();
-
-            
         }
 
         if(state == CurrentState.BOSSFIGHT)
@@ -130,7 +134,8 @@ public class Act2Manager : MonoBehaviour
                 {
                     if (setting.minWave > 0 && setting.maxWave > 0)
                     {
-                        MobManager.Instance.AddWaveSpawnCoroutine(setting.name, setting.enemyType, setting.minWave, setting.maxWave, setting.spawnInterval);
+                        MobManager.Instance.AddWaveSpawnCoroutine(setting.name, setting.enemyType, setting.minWave, setting.maxWave,
+                            setting.spawnInterval, null, room2Ground.name);
                     }
                     else
                         MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount);
@@ -141,19 +146,22 @@ public class Act2Manager : MonoBehaviour
                 DialogueManager.Instance.StartDialogue(bossSpawnDialogue);
 
                 //Mission UI
-                missionUI?.SetMission(room2Header1, room2Task1, room2EntranceTarget);
+                missionUI?.SetMission(room2Header1, room2Task1, null);
             }
         }
 
         if(state == CurrentState.END)
         {
-            //open gate
+            act3GateTrigger.OpenGate();
         }
     }
 
     private void WaitForRoomEnter()
     {
-        state = CurrentState.BOSSFIGHT;
+        if(room1GateTrigger.GetIsGateTriggered())
+        {
+            state = CurrentState.BOSSFIGHT;
+        }
     }
     private void OnBossDeath()
     {
@@ -161,7 +169,7 @@ public class Act2Manager : MonoBehaviour
         DialogueManager.Instance.StartDialogue(bossDeathDialogue);
 
         //Mission UI
-        missionUI?.SetMission(room2Header1, room2ClearedTask1, room2EntranceTarget);
+        missionUI?.SetMission(room2Header1, room2ClearedTask1, null);
 
         //Remove this function's listener
         miniboss.GetComponent<Act2Miniboss>().bossDeath.RemoveListener(OnBossDeath);
@@ -174,9 +182,6 @@ public class Act2Manager : MonoBehaviour
     //This is called when starting dialogue ends. Mobs start spawning
     private void SpawnRoom1Mobs()
     {
-        //Mission UI
-        missionUI?.SetMission(room1Header, room1Task, room2EntranceTarget);
-
         //Remove this function's listener 
         DialogueManager.Instance.onDialogueEnd.RemoveListener(SpawnRoom1Mobs);
 
@@ -185,15 +190,9 @@ public class Act2Manager : MonoBehaviour
         //Add mob spawn coroutines
         foreach (EnemySpawnSetting setting in room1SpawnerList)
         {
-            if (setting.minWave > 0 && setting.maxWave > 0)
-            {
-                MobManager.Instance.AddWaveSpawnCoroutine(setting.name, setting.enemyType, setting.minWave, setting.maxWave, setting.spawnInterval);
-            }
-            else
-            {
-                MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount);
-                room1TargetKillCount += setting.spawnCount;
-            }
+
+            MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount, null, room1Ground.name);
+            room1TargetKillCount += setting.spawnCount;
         }
     }
 
@@ -204,14 +203,16 @@ public class Act2Manager : MonoBehaviour
         DialogueManager.Instance.onDialogueEnd.RemoveListener(EnableGenerator);
 
         //Mission UI
-        missionUI?.SetMission(room2Header2, room2Task2, room2EntranceTarget);
+        missionUI?.SetMission(room2Header2, room2Task2, null);
 
         generator.SetIsOverdrive(true);
         state = CurrentState.GENERATOR;
 
-        MobManager.Instance.AddSpawnCoroutine("generatorMobs1", 1f, MobManager.EnemyTypes.REDMOB);
-        MobManager.Instance.AddSpawnCoroutine("generatorMobs2", 3f, MobManager.EnemyTypes.BLUEMOB);
-        MobManager.Instance.AddSpawnCoroutine("generatorMobs3", 6f, MobManager.EnemyTypes.GREENMOB);
+        //Add mob spawn coroutines
+        foreach (EnemySpawnSetting setting in room2SpawnerList2)
+        {
+            MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount, null, room2Ground.name);
+        }
 
         //Enable generator start dialogue
         DialogueManager.Instance.StartDialogue(generatorStartDialogue);
@@ -220,7 +221,7 @@ public class Act2Manager : MonoBehaviour
     public void OnGeneratorShieldDown()
     {
         //Mission UI
-        missionUI?.SetMission(room2Header3, room2Task3, room2EntranceTarget);
+        missionUI?.SetMission(room2Header3, room2Task3, generator.transform);
 
         //Enable generator depleted dialogue and stop all spawners
         DialogueManager.Instance.StartDialogue(generatorDepletedDialogue);
@@ -233,7 +234,7 @@ public class Act2Manager : MonoBehaviour
     public void OnGeneratorDown()
     {
         //Mission UI
-        missionUI?.SetMission(room2Header3, room2ClearedTask3, room2EntranceTarget);
+        missionUI?.SetMission(room2Header3, room2ClearedTask3, act3GateTrigger.transform);
 
         //Enable generator destroyed dialogue and kill all active mobs
         DialogueManager.Instance.StartDialogue(generatorDestroyedDialogue);

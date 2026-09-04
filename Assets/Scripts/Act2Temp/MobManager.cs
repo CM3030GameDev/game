@@ -121,9 +121,9 @@ public class MobManager : MonoBehaviour
     /// <param name="types">Enum of enemy type.</param>
     /// <param name="location">The Transform of the location you want the mobs to spawn from.</param>
     /// <param name="spawnAmount">The number of enemies to spawn</param>
-    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, int spawnAmount = -1, Transform location = null)
+    public void AddSpawnCoroutine(string coroutineName, float delay, EnemyTypes types, int spawnAmount = -1, Transform location = null, string groundName = null)
     {
-        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, spawnAmount, location));
+        Coroutine c = StartCoroutine(ConstantSpawnLoop(coroutineName, delay, types, spawnAmount, location, groundName));
         coroutines.Add(coroutineName, c);
         //Debug.Log(coroutineName + " has been added.");
     }
@@ -161,23 +161,28 @@ public class MobManager : MonoBehaviour
     /// spawning the next batch. Repeats forever until stopped. Batch size is randomized
     /// between minWaveSize and maxWaveSize (inclusive) each time.
     /// </summary>
-    public void AddWaveSpawnCoroutine(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval = 0.15f, Transform location = null)
+    public void AddWaveSpawnCoroutine(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval = 0.15f, Transform location = null, string groundName = null)
     {
-        Coroutine c = StartCoroutine(WaveSpawnLoop(coroutineName, types, minWaveSize, maxWaveSize, spawnInterval, location));
+        Coroutine c = StartCoroutine(WaveSpawnLoop(coroutineName, types, minWaveSize, maxWaveSize, spawnInterval, location, groundName));
         coroutines.Add(coroutineName, c);
         Debug.Log(coroutineName + " has been added.");
     }
 
-    private IEnumerator WaveSpawnLoop(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval, Transform location)
+    private IEnumerator WaveSpawnLoop(string coroutineName, EnemyTypes types, int minWaveSize, int maxWaveSize, float spawnInterval, Transform location, string groundName)
     {
         while (true)
         {
             int waveSize = Random.Range(minWaveSize, maxWaveSize + 1);
-            for (int i = 0; i < waveSize; i++)
+            for (int i = 0; i < waveSize;)
             {
                 GameObject availableEnemy = FindAvaliableEnemyOfType(types);
                 if (availableEnemy != null)
-                    SpawnEnemy(availableEnemy, location);
+                {
+                    bool hasSpawned = SpawnEnemy(availableEnemy, location, groundName);
+                    if (hasSpawned)
+                        i++;
+                }
+                    
 
                 yield return new WaitForSeconds(spawnInterval);
             }
@@ -197,7 +202,7 @@ public class MobManager : MonoBehaviour
         return true;
     }
 
-    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, int spawnAmount = -1, Transform location = null)
+    private IEnumerator ConstantSpawnLoop(string coroutineName, float delayBetweenSpawns, EnemyTypes types, int spawnAmount = -1, Transform location = null, string groundName = null)
     {
         int spawnedCount = 0;
         while (spawnAmount < 0 || spawnedCount < spawnAmount)
@@ -205,7 +210,7 @@ public class MobManager : MonoBehaviour
             GameObject availableEnemy = FindAvaliableEnemyOfType(types);
             if (availableEnemy != null)
             {
-                bool hasSpawned = SpawnEnemy(availableEnemy, location);
+                bool hasSpawned = SpawnEnemy(availableEnemy, location, groundName);
                 if (hasSpawned)
                     spawnedCount++;
             }
@@ -254,7 +259,7 @@ public class MobManager : MonoBehaviour
         }
     }
 
-    private bool SpawnEnemy(GameObject enemyToSpawn, Transform location = null)
+    private bool SpawnEnemy(GameObject enemyToSpawn, Transform location = null, string groundName = null)
     {
         float targetX;
         float targetY;
@@ -278,9 +283,13 @@ public class MobManager : MonoBehaviour
 
         if (hit.collider != null)
         {
-            enemyToSpawn.transform.position = new Vector3(targetX, targetY, 0f);
-            enemyToSpawn.SetActive(true);
-            return true;
+            if (groundName == null || groundName == "" || hit.collider.gameObject.name == groundName)
+            {
+                enemyToSpawn.transform.position = new Vector3(targetX, targetY, 0f);
+                enemyToSpawn.SetActive(true);
+                return true;
+            }
+            return false;
         }
         else
         {

@@ -460,6 +460,7 @@ public class Act2Miniboss : MonoBehaviour
             moveSpeed = 0f;
             hasDeathAnimPlayed = true;
             passive.completedSpawning.RemoveListener(HandlePassiveSpawnComplete);
+            passive.StopAllCoroutines();
             isPassiveOn = false;
         }
 
