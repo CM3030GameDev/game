@@ -121,40 +121,12 @@ public class FinalBoss : MonoBehaviour
                 sr.flipX = true;
             }
 
-            if(Input.GetKeyDown(KeyCode.T))
-            {
-                Suction();
-            }
-
-            if(!Input.GetKeyDown(KeyCode.Y))
-            {
-                Laser();
-            }
-
-            if (!Input.GetKeyDown(KeyCode.G))
-            {
-                HomingMissile();
-            }
-
-            if (!Input.GetKeyDown(KeyCode.H))
-            {
-                FireCannon();
-            }
-
-            if (!Input.GetKeyDown(KeyCode.B))
-            {
-                Beams();
-            }
-
-            if (!Input.GetKeyDown(KeyCode.N))
-            {
-                ElementalProjectile();
-            }
-
             //Random attack between fixed intervals
             if (attackTime > intervals)
             {
                 attacking = true;
+
+                Suction();
 
                 ////If boss is far
                 //if (Vector2.Distance(character.transform.position, transform.position) > 20f)
