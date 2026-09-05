@@ -1,6 +1,7 @@
+using System;
 using System.Collections;
-using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine;
 
 /// <summary>
 /// Central manager for UI sound effects and menu background music.
@@ -66,6 +67,21 @@ public class UIAudioManager : MonoBehaviour
     // Played when a UI panel/menu is closed.
     [SerializeField] private AudioClip panelCloseSound;
 
+    // ============================================================
+    // INGAME BACKGROUND MUSIC
+    // ============================================================
+
+    [Header("Background Music")]
+
+    [SerializeField] private List<AudioClip> backgroundMusic;
+
+    // ============================================================
+    // INGAME SOUND EFFECTS
+    // ============================================================
+
+    [Header("Sound Effects")]
+
+    [SerializeField] private List<AudioClip> soundEffects;
 
     // ============================================================
     // UI VOLUME SETTINGS
@@ -73,13 +89,13 @@ public class UIAudioManager : MonoBehaviour
 
     [Header("UI Volume")]
 
-    // Hover sounds are slightly quieter because they may play often.
+    // Background music volume
     [Range(0f, 1f)]
-    [SerializeField] private float hoverVolume = 0.6f;
+    [SerializeField] private float bgmVolume = 0.6f;
 
-    // General volume used for button/action sounds.
+    // Sound Effect Volume
     [Range(0f, 1f)]
-    [SerializeField] private float clickVolume = 0.8f;
+    [SerializeField] private float sfxVolume = 0.8f;
 
     // ============================================================
     // MUSIC SETTINGS
@@ -147,6 +163,19 @@ public class UIAudioManager : MonoBehaviour
         FadeMusicIn();
     }
 
+    // ============================================================
+    // INGAME BACKGROUND MUSIC & SOUNDEFFECT METHODS
+    // ============================================================
+
+    public void PlayBGM(int index)
+    {
+        musicAudioSource.PlayOneShot(backgroundMusic[index], sfxVolume);
+    }
+
+    public void PlaySFX(int index)
+    {
+        uiAudioSource.PlayOneShot(soundEffects[index], sfxVolume);
+    }
 
     // ============================================================
     // UI SOUND METHODS
@@ -161,7 +190,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 hoverSound,
-                hoverVolume
+                sfxVolume
             );
         }
     }
@@ -176,7 +205,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 clickSound,
-                clickVolume
+                sfxVolume
             );
         }
     }
@@ -191,7 +220,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 backSound,
-                clickVolume
+                sfxVolume
             );
         }
     }
@@ -207,7 +236,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 confirmSound,
-                clickVolume
+                sfxVolume
             );
         }
     }
@@ -223,7 +252,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 errorSound,
-                clickVolume
+                sfxVolume
             );
         }
     }
