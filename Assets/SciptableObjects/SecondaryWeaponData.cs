@@ -23,6 +23,8 @@ public class SecondaryWeaponData : ScriptableObject
     [Header("Combo")]
     public CharacterStatsUpgrade combinesWithStat;
     public SecondaryWeaponData combinedResult;
+    [Tooltip("Tick on the combined variants themselves. Gates their special behaviour and stops them re-combining.")]
+    public bool isCombinedForm;
 
     public int MaxLevel => levels.Length;
 }

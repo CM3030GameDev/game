@@ -298,6 +298,37 @@ public class MobManager : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Spawns one pooled enemy at an exact position.
+    /// Intended for controlled/tutorial encounters where
+    /// ground validation is not required.
+    /// </summary>
+    public GameObject SpawnEnemyAtPosition(
+        EnemyTypes type,
+        Vector3 position
+    )
+    {
+        GameObject availableEnemy = FindAvaliableEnemyOfType(type);
+
+        if (availableEnemy == null)
+        {
+            Debug.LogWarning(
+                "No available pooled enemy of type: " + type
+            );
+
+            return null;
+        }
+
+        availableEnemy.transform.position = position;
+        availableEnemy.SetActive(true);
+
+        Debug.Log(
+            "Enemy spawned directly at: " + position
+        );
+
+        return availableEnemy;
+    }
+
     public void instantKillAllActive()
     {
         foreach (KeyValuePair<EnemyTypes, List<GameObject>> pool in pooledEnemies)

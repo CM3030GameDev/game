@@ -12,28 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b63acc66bde0904fba7698ed2fdcf99, type: 3}
   m_Name: Data_Bazooka
   m_EditorClassIdentifier: Assembly-CSharp::SecondaryWeaponData
-  weaponName: Weapon
+  weaponName: Bazooka
   description: Bazooka Weapon
-  icon: {fileID: -6620131365891478404, guid: 56c08acd522bf94428ee12c201c347b3, type: 3}
+  icon: {fileID: -5419044198574814951, guid: 56c08acd522bf94428ee12c201c347b3, type: 3}
   weaponPrefab: {fileID: 150084739827944196, guid: b51a29bb4de1b0d4b8739ba205e69d8b, type: 3}
   levels:
-  - fireInterval: 7
+  - fireInterval: 6
     damage: 60
     range: 12
     valueA: 2
     valueB: 0
-    levelDescription: Bazooka Lvl 1
-  - fireInterval: 5
-    damage: 85
+    levelDescription: Obtain a Bazooka. Fires rockets at the nearest enemy.
+  - fireInterval: 4.5
+    damage: 80
     range: 12
-    valueA: 2.6
+    valueA: 2.5
     valueB: 0
-    levelDescription: Bazooka Lvl 2
+    levelDescription: 25% faster fire, 33% more damage, 25% bigger blast.
   - fireInterval: 3
-    damage: 120
+    damage: 100
     range: 14
-    valueA: 3.2
+    valueA: 3
     valueB: 0
-    levelDescription: Bazooka Lvl 3
+    levelDescription: 33% faster fire, 25% more damage, 20% bigger blast.
   combinesWithStat: {fileID: 11400000, guid: 971c7b15777371b4881c38114fff1309, type: 2}
-  combinedResult: {fileID: 0}
+  combinedResult: {fileID: 11400000, guid: d1ebf5aba85142c48b70b08bd5d9c7b3, type: 2}
+  isCombinedForm: 0

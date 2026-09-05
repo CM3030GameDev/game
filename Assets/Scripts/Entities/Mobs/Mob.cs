@@ -66,6 +66,11 @@ public class Mob : MonoBehaviour
 
     private void OnDisable()
     {
+        // Only drop exp if this mob actually died. OnDisable also fires when MobManager builds
+        // the pool at startup (Instantiate -> SetActive(false)) and when the scene unloads,
+        // both of which would otherwise spawn phantom orbs.
+        if (!death) return;
+
         // Drops exp orb at mob position when the mob is dead
         if (expOrbPrefab != null)
         {
