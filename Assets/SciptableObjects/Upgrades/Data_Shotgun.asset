@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b63acc66bde0904fba7698ed2fdcf99, type: 3}
   m_Name: Data_Shotgun
   m_EditorClassIdentifier: Assembly-CSharp::SecondaryWeaponData
-  weaponName: Weapon
+  weaponName: Shotgun
   description: 
-  icon: {fileID: -4347228463431677107, guid: 56c08acd522bf94428ee12c201c347b3, type: 3}
+  icon: {fileID: 568309836126457701, guid: 5bea2eac64b4d4148bd575f25b13ac4b, type: 3}
   weaponPrefab: {fileID: 2387869667034213611, guid: 2314cc9d1767ddd4681c4d0767379cae, type: 3}
   levels:
   - fireInterval: 2
@@ -22,18 +22,19 @@ MonoBehaviour:
     range: 10
     valueA: 5
     valueB: 25
-    levelDescription: Aquire Shotgun.
-  - fireInterval: 1.8
+    levelDescription: Obtain a Shotgun. Fires a spread of pellets.
+  - fireInterval: 1.5
     damage: 15
     range: 10
     valueA: 7
     valueB: 25
-    levelDescription: Shotgun Lvl 2 Description
-  - fireInterval: 1.6
-    damage: 18
+    levelDescription: Two more pellets. 25% faster fire, 25% more damage.
+  - fireInterval: 1
+    damage: 20
     range: 10
     valueA: 9
     valueB: 35
-    levelDescription: Shotgun Lvl 3 Description
+    levelDescription: Two more pellets. 33% faster fire, 33% more damage.
   combinesWithStat: {fileID: 11400000, guid: 12bee8f9d6b216449ac330053fe7577e, type: 2}
-  combinedResult: {fileID: 0}
+  combinedResult: {fileID: 11400000, guid: 58dc29c1be0441e798326ccdb78a80ec, type: 2}
+  isCombinedForm: 0

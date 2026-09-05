@@ -15,18 +15,52 @@ public class UpgradeManager : MonoBehaviour
     [Header("Pool")]
     [SerializeField] private List<Upgrade> upgradePool = new List<Upgrade>();
 
-    [Header("Automatic main weapon tiers")]
-    [SerializeField] private int dualPistolLevel = 5;
-    [SerializeField] private WeaponTier dualPistolTier;
-    [SerializeField] private int assaultRifleLevel = 10;
-    [SerializeField] private WeaponTier assaultRifleTier;
+    [System.Serializable]
+    public struct MainWeaponStep
+    {
+        public WeaponTier tier;
+        public int requiredLevel;   // 1 for the starting weapon
+    }
+
+    [Header("Automatic main weapon tiers (in order, first entry = starting weapon)")]
+    [SerializeField] private MainWeaponStep[] mainWeaponTrack;
+
+    public IReadOnlyList<MainWeaponStep> MainWeaponTrack => mainWeaponTrack;
 
     private UpgradeContext ctx;
 
     private void Awake()
     {
         ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots, statLevels = statLevels };
-        slots.SetMainWeaponLevel(1); // Starting Pistol tier counts as level 1 of 3
+        BuildStatPartners();
+        ApplyMainWeaponTier(0);   // also sets the starting icon, which used to be skipped
+    }
+
+    private void ApplyMainWeaponTier(int index)
+    {
+        if (mainWeaponTrack == null || index < 0 || index >= mainWeaponTrack.Length) return;
+
+        WeaponTier tier = mainWeaponTrack[index].tier;
+        if (tier == null) return;
+
+        weapon.SetTier(tier);
+        slots.SetMainWeaponIcon(tier.icon);
+        slots.SetMainWeaponLevel(index + 1);
+    }
+
+    // Walk the pool once so stat cards can name the weapon they evolve. Derived rather than
+    // stored on the stat assets, so the pairing can't drift out of sync with the weapon data.
+    private void BuildStatPartners()
+    {
+        foreach (var u in upgradePool)
+        {
+            if (!(u is SecondaryWeaponUpgrade wu) || wu.weapon == null) continue;
+
+            SecondaryWeaponData d = wu.weapon;
+            if (d.combinesWithStat == null || d.combinedResult == null) continue;
+
+            ctx.statPartners[d.combinesWithStat] = d;
+        }
     }
 
     private void OnEnable()
@@ -41,23 +75,17 @@ public class UpgradeManager : MonoBehaviour
 
     private void HandleLevelUp(int newLevel)
     {
-        // Main Weapon upgrades automatically
-        if (newLevel == dualPistolLevel && dualPistolTier != null)
+        // Main Weapon upgrades automatically at its configured levels
+        for (int i = 0; i < mainWeaponTrack.Length; i++)
         {
-            weapon.SetTier(dualPistolTier);
-            slots.SetMainWeaponIcon(dualPistolTier.icon);
-            slots.SetMainWeaponLevel(2);
-        }
-        else if (newLevel == assaultRifleLevel && assaultRifleTier != null)
-        {
-            weapon.SetTier(assaultRifleTier);
-            slots.SetMainWeaponIcon(assaultRifleTier.icon);
-            slots.SetMainWeaponLevel(3);
+            if (mainWeaponTrack[i].requiredLevel != newLevel) continue;
+            ApplyMainWeaponTier(i);
+            break;
         }
 
         Time.timeScale = 0f; // Pause game when prompted
         List<Upgrade> choices = BuildChoices(newLevel);
-        cardUI.Show(choices, Choose);
+        cardUI.Show(choices, ctx, Choose);
     }
 
     private List<Upgrade> BuildChoices(int level)
@@ -82,7 +110,33 @@ public class UpgradeManager : MonoBehaviour
 
     private void Choose(Upgrade picked)
     {
-        picked.Apply(ctx);
-        Time.timeScale = 1f; // Resume game
+        // finally, so a broken upgrade can't leave the game stuck at timeScale 0
+        try
+        {
+            picked.Apply(ctx);
+            TryCombineWeapons();
+        }
+        finally
+        {
+            Time.timeScale = 1f; // Resume game
+        }
+    }
+
+    // A weapon evolves once it AND its paired stat are both maxed. Checked after every pick,
+    // since either half of the pair could have been the one that just completed.
+    private void TryCombineWeapons()
+    {
+        if (slots == null || statLevels == null) return;
+
+        foreach (var w in slots.Active)
+        {
+            SecondaryWeaponData d = w.Data;
+            if (d == null || d.isCombinedForm) continue;
+            if (d.combinedResult == null || d.combinesWithStat == null) continue;
+            if (!w.IsMaxLevel) continue;
+            if (!statLevels.IsMaxLevel(d.combinesWithStat)) continue;
+
+            slots.Combine(w, d.combinedResult);
+        }
     }
 }

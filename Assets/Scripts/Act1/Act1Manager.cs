@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 // Act1Manager (this is to manage missions, enemy spawns etc)
 public class Act1Manager : MonoBehaviour
 {
-    private enum State { Room1Travel, Room2Secure, Room3Approach, Room3Miniboss, Room3Talk, Done }
+    private enum State { Room1Travel, Room2Secure, Room2Miniboss, Room3Transition, Done }
     private State state;
 
     [Header("References")]
@@ -11,18 +12,15 @@ public class Act1Manager : MonoBehaviour
     [SerializeField] private MissionUI missionUI;
 
     [Header("Opening Dialogue")]
-    [SerializeField] private DialogueData openingDialogue; // leave empty to skip straight to Room 1
+    [SerializeField] private DialogueData openingDialogue; // leave this empty if you guys want to skip straight to Room 1
 
     [Header("Mission Text - edit wording here, not in code")]
     [SerializeField] private string room1Header = "Act 1 - Push Deeper Into the City";
     [SerializeField] private string room1Task = "Clear a path forward.";
     [SerializeField] private string room2Header = "Act 1 - Secure the Area";
-    [SerializeField] private string room2ClearedTask = "Area secured. Move on.";
-    [SerializeField] private string room3Header = "Act 1 - The Miniboss";
-    [SerializeField] private string room3MinibossTask = "Defeat the miniboss.";
-    [SerializeField] private string room3TalkTask = "Talk to the Swordsman.";
-    [SerializeField] private string doneHeader = "Act 1 - Area Secured";
-    [SerializeField] private string doneTask = "The Swordsman has joined your party.";
+    [SerializeField] private string room2MinibossTask = "Defeat the miniboss.";
+    [SerializeField] private string room3Header = "Act 1 - Fall Back";
+    [SerializeField] private string room3Task = "Move to the extraction point.";
 
     [Header("Room 1 - Small Group")]
     [SerializeField] private MobManager.EnemyTypes room1EnemyType = MobManager.EnemyTypes.BLUEMOB;
@@ -30,9 +28,10 @@ public class Act1Manager : MonoBehaviour
     private const string Room1WaveName = "room1_wave";
 
     [Header("Room 2 - Secure Area")]
+    // Both objectives must be met before the miniboss spawns
     [SerializeField] private int secureLevelTarget = 10;
-    [SerializeField] private int room2KillDisplayTarget = 15; // just for the task readout, doesn't gate progress
-    [SerializeField] private DialogueData room2ClearedDialogue; // plays once level target is hit, before opening the Room 3 gate
+    [UnityEngine.Serialization.FormerlySerializedAs("room2KillDisplayTarget")]
+    [SerializeField] private int room2KillTarget = 15;
     private int killsAtRoom2Start;
 
     [System.Serializable]
@@ -44,31 +43,44 @@ public class Act1Manager : MonoBehaviour
     }
     [SerializeField] private SpawnWave[] room2Waves;
 
+    [Header("Room 2 - Miniboss")]
+    [SerializeField] private GameObject room2MinibossObject; // starts disabled; wire its death event to OnMinibossDefeated()
+    [SerializeField] private DialogueData minibossSpawnDialogue; // plays once the area is secured, before the miniboss appears
+    [SerializeField] private DialogueData minibossCutscene; // plays once the miniboss dies, before the Swordsman joins
+
     [Header("Objective Targets (for the direction arrow)")]
     [SerializeField] private Transform room2EntranceTarget;
     [SerializeField] private Transform room3EntranceTarget;
-    [SerializeField] private Transform swordsmanTarget;
 
     [Header("Gates (physically block the way until each stage opens up)")]
     [SerializeField] private GameObject room1To2Gate;
     [SerializeField] private GameObject room2To3Gate;
 
     [Header("Swordsman")]
-    [SerializeField] private Companion swordsmanCompanion; // starts disabled until recruited
+    [SerializeField] private Companion swordsmanCompanion; // starts disabled, auto-enabled after the cutscene
+
+    [Header("Act Transition")]
+    [SerializeField] private string nextSceneName = "Act4";
 
     private void Start()
     {
         state = State.Room1Travel;
+        PlayThen(openingDialogue, BeginRoom1);
+    }
 
-        if (openingDialogue != null)
+    // Plays a dialogue and continues afterwards, or continues immediately if there's none.
+    // The mission panel is hidden for the duration so an objective doesn't sit over the cutscene.
+    private void PlayThen(DialogueData dialogue, UnityEngine.Events.UnityAction next)
+    {
+        if (dialogue == null)
         {
-            DialogueManager.Instance.StartDialogue(openingDialogue);
-            DialogueManager.Instance.onDialogueEnd.AddListener(BeginRoom1);
+            next();
+            return;
         }
-        else
-        {
-            BeginRoom1();
-        }
+
+        missionUI?.Hide();
+        DialogueManager.Instance.StartDialogue(dialogue);
+        DialogueManager.Instance.onDialogueEnd.AddListener(next);
     }
 
     private void BeginRoom1()
@@ -78,42 +90,54 @@ public class Act1Manager : MonoBehaviour
         MobManager.Instance.AddPopulationSpawnCoroutine(Room1WaveName, room1EnemyType, room1TargetPopulation);
     }
 
+    private int lastShownKills = -1;
+    private int lastShownLevel = -1;
+
     private void Update()
     {
-        if (state == State.Room2Secure)
+        if (state != State.Room2Secure) return;
+
+        // Only rebuild the HUD string when a number actually changes - this runs every frame
+        // and SetTasks now re-evaluates panel visibility, so it isn't free.
+        int kills = MobManager.Instance.GetKillCount() - killsAtRoom2Start;
+        if (kills != lastShownKills || stats.level != lastShownLevel)
         {
+            lastShownKills = kills;
+            lastShownLevel = stats.level;
             missionUI?.SetTasks(BuildRoom2Tasks());
+        }
 
-            if (stats.level >= secureLevelTarget)
-            {
-                MobManager.Instance.StopAllSpawnCoroutines();
-                state = State.Room3Approach; // set immediately so this block can't re-trigger next frame
-
-                if (room2ClearedDialogue != null)
-                {
-                    DialogueManager.Instance.StartDialogue(room2ClearedDialogue);
-                    DialogueManager.Instance.onDialogueEnd.AddListener(OpenRoom3);
-                }
-                else
-                {
-                    OpenRoom3();
-                }
-            }
+        if (stats.level >= secureLevelTarget && kills >= room2KillTarget)
+        {
+            MobManager.Instance.StopAllSpawnCoroutines();
+            state = State.Room2Miniboss; // set immediately so this block can't re-trigger next frame
+            PlayThen(minibossSpawnDialogue, SpawnMiniboss);
         }
     }
 
-    private void OpenRoom3()
+    private void SpawnMiniboss()
     {
-        DialogueManager.Instance.onDialogueEnd.RemoveListener(OpenRoom3);
-        missionUI?.SetMission(room2Header, room2ClearedTask, room3EntranceTarget);
-        if (room2To3Gate != null) room2To3Gate.SetActive(false);
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(SpawnMiniboss);
+
+        if (room2MinibossObject != null) room2MinibossObject.SetActive(true);
+
+        // Point the arrow at the miniboss so the player can find it in a big room
+        Transform target = room2MinibossObject != null ? room2MinibossObject.transform : null;
+        missionUI?.SetMission(room2Header, room2MinibossTask, target);
     }
 
     private string BuildRoom2Tasks()
     {
-        int kills = MobManager.Instance.GetKillCount() - killsAtRoom2Start;
-        return $"Defeat enemies {kills}/{room2KillDisplayTarget}\nReach level {stats.level}/{secureLevelTarget}";
+        int kills = Mathf.Min(MobManager.Instance.GetKillCount() - killsAtRoom2Start, room2KillTarget);
+        int level = Mathf.Min(stats.level, secureLevelTarget);
+
+        return Objective($"Defeat enemies {kills}/{room2KillTarget}", kills >= room2KillTarget) + "\n" +
+               Objective($"Reach level {level}/{secureLevelTarget}", level >= secureLevelTarget);
     }
+
+    // Completed objectives turn green, so the player can see which half is still outstanding
+    private static string Objective(string text, bool done)
+        => done ? $"<color=#7CFC7C>{text}</color>" : text;
 
     // Room1 -> Room2 trigger
     public void EnterRoom2()
@@ -129,29 +153,27 @@ public class Act1Manager : MonoBehaviour
             MobManager.Instance.AddSpawnCoroutine(wave.coroutineName, wave.interval, wave.type);
     }
 
-    // Room2 -> Room3 trigger
-    public void EnterRoom3()
-    {
-        if (state != State.Room3Approach) return;
-        state = State.Room3Miniboss;
-        missionUI?.SetMission(room3Header, room3MinibossTask, null);
-    }
-
-    // Called by Act1Miniboss when it dies
+    // Called by the Room 2 miniboss when it dies (wire its death event to this method in the Inspector)
     public void OnMinibossDefeated()
     {
-        if (state != State.Room3Miniboss) return;
-        state = State.Room3Talk;
-        missionUI?.SetMission(room3Header, room3TalkTask, swordsmanTarget);
+        if (state != State.Room2Miniboss) return;
+        PlayThen(minibossCutscene, OpenRoom3);
     }
 
-    // Trigger placed near the Swordsman
-    public void TalkToSwordsman()
+    private void OpenRoom3()
     {
-        if (state != State.Room3Talk) return;
-        state = State.Done;
-        missionUI?.SetMission(doneHeader, doneTask, null);
-
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(OpenRoom3);
+        state = State.Room3Transition;
         if (swordsmanCompanion != null) swordsmanCompanion.enabled = true;
+        missionUI?.SetMission(room3Header, room3Task, room3EntranceTarget);
+        if (room2To3Gate != null) room2To3Gate.SetActive(false);
+    }
+
+    // Room 3 trigger - hands off to the next Act
+    public void TransitionToNextAct()
+    {
+        if (state != State.Room3Transition) return;
+        state = State.Done;
+        SceneManager.LoadScene(nextSceneName);
     }
 }

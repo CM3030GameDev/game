@@ -15,6 +15,7 @@ public class MinibossUltimate : MonoBehaviour
     [SerializeField] private float throwSpeed = 8f;
     [SerializeField] private float ultLifetime = 5f;
     [SerializeField] private int ultDamage = 10;
+    [SerializeField] private float playerInvulnerability = 0.1f;
 
     private bool isUltStart = false;
     private bool isUltEnd = false;
@@ -82,7 +83,7 @@ public class MinibossUltimate : MonoBehaviour
         UltProjectile projectile = instance.GetComponent<UltProjectile>();
         if (projectile != null)
         {
-            projectile.Launch(direction, throwSpeed, ultLifetime, ultDamage);
+            projectile.Launch(direction, throwSpeed, ultLifetime, ultDamage, playerInvulnerability);
             projectile.GetComponent<CircleCollider2D>().enabled = true;
         }
             

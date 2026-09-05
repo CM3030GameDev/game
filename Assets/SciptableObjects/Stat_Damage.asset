@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd58c3203bd702f458ccbd4e001da4fc, type: 3}
   m_Name: Stat_Damage
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
-  upgradeName: Damage Increase
-  description: Increase all weapon damage by 5
-  icon: {fileID: 3435581668939855945, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}
+  upgradeName: Damage
+  description: Increase all weapon damage by 5.
+  icon: {fileID: 1233434049884517991, guid: 28e004383e3e97b4580d938c5f861401, type: 3}
   stat: 4
   amountPerLevel:
   - 5

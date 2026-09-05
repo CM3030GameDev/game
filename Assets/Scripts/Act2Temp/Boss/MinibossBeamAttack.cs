@@ -14,6 +14,7 @@ public class MinibossBeamAttack : MonoBehaviour
     [SerializeField] private int beamDamage = 5;
     [SerializeField] private float beamSpeed = 1f;
     [SerializeField] private int shotsPerAttack = 6;
+    [SerializeField] private float playerInvulnerability = 0.1f;
 
     [Header("Animation")]
     public Animator bossAnimator;
@@ -86,6 +87,6 @@ public class MinibossBeamAttack : MonoBehaviour
         Vector3 direction = playerPos.position - spawnPos;
 
         GameObject beam = Instantiate(beamObject, spawnPos, Quaternion.identity);
-        beam.GetComponent<BeamProjectile>().SetBeam(direction, beamSpeed, beamLifetime, beamDamage);
+        beam.GetComponent<BeamProjectile>().SetBeam(direction, beamSpeed, beamLifetime, beamDamage, playerInvulnerability);
     }
 }
