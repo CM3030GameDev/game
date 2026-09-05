@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b63acc66bde0904fba7698ed2fdcf99, type: 3}
+  m_Name: Data_EMPField_Combined
+  m_EditorClassIdentifier: Assembly-CSharp::SecondaryWeaponData
+  weaponName: Overload Field
+  description: A wider field that can freeze enemies outright.
+  icon: {fileID: -3029590100310656207, guid: 61896b501c3c18d47aa52b4cbcc98e79, type: 3}
+  weaponPrefab: {fileID: 0}
+  levels:
+  - fireInterval: 0.4
+    damage: 0
+    range: 0
+    valueA: 6
+    valueB: 0.25
+    levelDescription: 50% wider field. Slows by 75% and can freeze enemies outright.
+  combinesWithStat: {fileID: 0}
+  combinedResult: {fileID: 0}
+  isCombinedForm: 1

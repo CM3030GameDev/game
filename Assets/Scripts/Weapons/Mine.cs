@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Mine : MonoBehaviour
@@ -6,14 +7,19 @@ public class Mine : MonoBehaviour
 
     private int damage = 50;
     private float blastRadius = 1.5f;
+    private bool detonatesTwice;
+    private float secondBlastDelay = 3f;
+    private bool hasBlastedOnce;
 
     private static int EnemyLayer;
     private static int EnemyMask;
 
-    public void Configure(int dmg, float radius)
+    public void Configure(int dmg, float radius, bool twice = false, float delay = 3f)
     {
         damage = dmg;
         blastRadius = radius;
+        detonatesTwice = twice;
+        secondBlastDelay = delay;
     }
 
     private void Awake()
@@ -25,7 +31,11 @@ public class Mine : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.layer != EnemyLayer) return;
+        Detonate();
+    }
 
+    private void Detonate()
+    {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, blastRadius, EnemyMask);
         foreach (var h in hits)
         {
@@ -36,6 +46,28 @@ public class Mine : MonoBehaviour
         if (explosionPrefab != null)
             Instantiate(explosionPrefab, transform.position, Quaternion.identity);
 
+        // Combined mine: stays on the field and goes off once more after a delay, then it's spent
+        if (detonatesTwice && !hasBlastedOnce)
+        {
+            hasBlastedOnce = true;
+            StartCoroutine(SecondBlast());
+            return;
+        }
+
         Destroy(gameObject);
+    }
+
+    private IEnumerator SecondBlast()
+    {
+        // Collider off so a mob standing on it can't re-trigger during the recharge, but the
+        // sprite stays visible so the player can see the mine is still live.
+        SetCollidersEnabled(false);
+        yield return new WaitForSeconds(secondBlastDelay);
+        Detonate();
+    }
+
+    private void SetCollidersEnabled(bool value)
+    {
+        foreach (var c in GetComponents<Collider2D>()) c.enabled = value;
     }
 }
