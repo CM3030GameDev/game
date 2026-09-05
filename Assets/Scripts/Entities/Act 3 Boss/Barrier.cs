@@ -3,6 +3,7 @@ using UnityEngine;
 public class Barrier : MonoBehaviour
 {
     private float currentTime;
+    [SerializeField] private FinalBoss finalBoss;
     //Barrier timer
     [SerializeField] private float barrierTime;
 
@@ -23,6 +24,7 @@ public class Barrier : MonoBehaviour
         //Turn off barrier if it exceeds barrier timer
         if(currentTime > barrierTime)
         {
+            finalBoss.shielded = false;
             gameObject.SetActive(false);
         }
         //Barrier continues to stay on
@@ -41,8 +43,8 @@ public class Barrier : MonoBehaviour
             //Direct incoming attack in the opposite direction at the same speed
             rb.linearVelocity = rb.linearVelocity * -1;
 
-            Bullet bullet = collision.GetComponent<Bullet>();
-            if (bullet != null) bullet.MarkReflected();
+            //Update reflect state of bullet to be true
+            collision.GetComponent<Bullet>().MarkReflected();
         }
     }
 }

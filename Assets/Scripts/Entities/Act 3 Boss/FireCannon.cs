@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public class FireCannon : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class FireCannon : MonoBehaviour
     private int counts;
     private bool canAttack;
     [SerializeField] private GameObject firePrefab;
+    [SerializeField] private GameObject targetPrefab;
     [SerializeField] private GameObject character;
     [SerializeField] private Animator animator;
     //Fire attack speed
@@ -68,11 +70,15 @@ public class FireCannon : MonoBehaviour
     {
         canAttack = false;
         Vector3 targetPos = character.transform.position;
+        //Show hitbox indicator at targeted position;
+        GameObject target = Instantiate(targetPrefab, targetPos, Quaternion.identity);
         yield return new WaitForSeconds(seconds);
         //Decrease fire attack count left by 1
         counts--;
         //Start boss fire cannon attack animation
         animator.SetTrigger("fire");
+        //Remove hitbox indicator before firing at target position
+        Destroy(target);
         //Spawn fire attack gameobject from object pool
         GameObject fire = fires.Dequeue();
         //Fire attack appears at player's last position

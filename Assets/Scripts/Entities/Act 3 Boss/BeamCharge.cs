@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Experimental.GraphView.GraphView;
 
 public class BeamCharge : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class BeamCharge : MonoBehaviour
     [SerializeField] private BoxCollider2D bodyCollider;
     [SerializeField] private BeamRotate beamRotate;
     [SerializeField] private GameObject beams;
+    //Layer for pillar and safe zone
+    [SerializeField] private LayerMask layers;
 
     private void Awake()
     {
@@ -28,6 +31,33 @@ public class BeamCharge : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Raycast beam charge
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100f, layers.value);
+
+        //Beam charge hits pillar or safezone
+        if (hit)
+        {
+            //Beam stops before pillar or safezone
+            transform.localScale = new Vector3(Mathf.Min(hit.distance, 1f), 1f, 1f);
+
+            ////Collider is very close to beam charge
+            //if(hit.distance <= 1f)
+            //{
+            //    //Retract beam charge fully
+            //    transform.localScale = new Vector3(0f, 1f, 1f);
+            //}
+            //else
+            //{
+            //    //Retain full length of beam charge
+            //    transform.localScale = new Vector3(1f, 1f, 1f);
+            //}
+        }
+        else
+        {
+            //Retain full length of beam charge
+            transform.localScale = new Vector3(1f, 1f, 1f);
+        }
+
         //Beam charge starting animation finished
         if (animator.GetCurrentAnimatorStateInfo(0).IsName("Beam_Charge_Start") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
         {

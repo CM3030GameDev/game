@@ -20,6 +20,8 @@ public class FinalBoss : MonoBehaviour
     private bool death;
     //Attacking state
     public bool attacking;
+    //Shielded state (Barrier active state)
+    public bool shielded;
     //Dashing state
     public bool dashing;
     //Character last position
@@ -39,6 +41,7 @@ public class FinalBoss : MonoBehaviour
     [SerializeField] private GameObject rangeIndicator;
     [SerializeField] private GameObject groundSmash;
     [SerializeField] private GameObject fireCannon;
+    [SerializeField] private GameObject elementalProjectile;
     [SerializeField] private GameObject leftDrone;
     [SerializeField] private GameObject rightDrone;
     //Default material
@@ -61,6 +64,7 @@ public class FinalBoss : MonoBehaviour
         animator = GetComponent<Animator>();
         attacking = false;
         isAttacked = false;
+        shielded = false;
         attackTime = 0f;
         randomNum = Random.Range(0f, 1f);
         defaultMaterial = sr.material;
@@ -71,9 +75,6 @@ public class FinalBoss : MonoBehaviour
     {
         character = soldier.GetComponent<Character>();
         dashAttack = dash.GetComponent<DashAttack>();
-
-        leftDrone.SetActive(true);
-        rightDrone.SetActive(true);
     }
 
     // Update is called once per frame
@@ -107,9 +108,10 @@ public class FinalBoss : MonoBehaviour
         Vector2 chaseDirection = character.transform.position - transform.position;
         normalizedChase = chaseDirection.normalized;
 
-        //Flip sprite to face character
-        if(!attacking)
+        //Boss is alive and currently not attacking
+        if(!death && !attacking)
         {
+            //Flip sprite to face character
             if (character.transform.position.x > transform.position.x)
             {
                 sr.flipX = false;
@@ -119,11 +121,40 @@ public class FinalBoss : MonoBehaviour
                 sr.flipX = true;
             }
 
-            if(attackTime > intervals)
+            if(Input.GetKeyDown(KeyCode.T))
+            {
+                Suction();
+            }
+
+            if(!Input.GetKeyDown(KeyCode.Y))
+            {
+                Laser();
+            }
+
+            if (!Input.GetKeyDown(KeyCode.G))
+            {
+                HomingMissile();
+            }
+
+            if (!Input.GetKeyDown(KeyCode.H))
+            {
+                FireCannon();
+            }
+
+            if (!Input.GetKeyDown(KeyCode.B))
+            {
+                Beams();
+            }
+
+            if (!Input.GetKeyDown(KeyCode.N))
+            {
+                ElementalProjectile();
+            }
+
+            //Random attack between fixed intervals
+            if (attackTime > intervals)
             {
                 attacking = true;
-
-                FireCannon();
 
                 ////If boss is far
                 //if (Vector2.Distance(character.transform.position, transform.position) > 20f)
@@ -132,21 +163,25 @@ public class FinalBoss : MonoBehaviour
                 //    {
                 //        Dash();
                 //    }
-                //    else if (randomNum < 0.7f)
+                //    else if (randomNum < 0.6f)
                 //    {
                 //        Suction();
                 //    }
-                //    else if(randomNum < 0.8f)
+                //    else if (randomNum < 0.7f)
                 //    {
                 //        Laser();
                 //    }
-                //    else if (randomNum < 0.9f)
+                //    else if (randomNum < 0.8f)
                 //    {
-                //        Missile();
+                //        HomingMissile();
+                //    }
+                //    else if(randomNum < 0.9f)
+                //    {
+                //        Beams();
                 //    }
                 //    else
                 //    {
-                //        Beam();
+                //        FireCannon();
                 //    }
                 //}
                 ////If boss is close
@@ -162,11 +197,11 @@ public class FinalBoss : MonoBehaviour
                 //    }
                 //    else if (randomNum < 0.9f)
                 //    {
-                //        Missile();
+                //        HomingMissile();
                 //    }
                 //    else
                 //    {
-                //        Beam();
+                //        Beams();
                 //    }
                 //}
             }
@@ -177,22 +212,32 @@ public class FinalBoss : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Move towards player
-        if (!attacking)
+        //Boss died
+        if(death)
         {
-            rb.linearVelocity = normalizedChase * bossSpeed;
+            //Stop moving
+            rb.linearVelocity = Vector2.zero;
         }
+        //Boss alive
         else
         {
-            //Dash towards player
-            if (dashing)
+            //Move towards player
+            if (!attacking)
             {
-                rb.linearVelocity = dashAttack.dashNormalized * dashAttack.dashSpeed;
+                rb.linearVelocity = normalizedChase * bossSpeed;
             }
-            //Stationary
             else
             {
-                rb.linearVelocity = Vector2.zero;
+                //Dash towards player
+                if (dashing)
+                {
+                    rb.linearVelocity = dashAttack.dashNormalized * dashAttack.dashSpeed;
+                }
+                //Stationary when attacking
+                else
+                {
+                    rb.linearVelocity = Vector2.zero;
+                }
             }
         }
     }
@@ -226,7 +271,7 @@ public class FinalBoss : MonoBehaviour
     }
 
     //4 directional beam that rotates in a full circle (Random starting rotation, random direction)
-    private void Beam()
+    private void Beams()
     {
         animator.SetBool("attack", true);
         beams.SetActive(true);
@@ -246,14 +291,29 @@ public class FinalBoss : MonoBehaviour
         fireCannon.SetActive(true);
     }
 
+    //Shoot elemental projectile attacks consecutively at player
+    private void ElementalProjectile()
+    {
+        animator.SetBool("attack", true);
+        elementalProjectile.SetActive(true);
+    }
+
     //Shield that reflects bullets
     private void Barrier()
     {
         //Barrier only appears at 10% chance when boss is less than 50% health
         if(bossHP < 500 && randomNum < 0.1f && !barrier.activeSelf)
         {
+            shielded = true;
             barrier.SetActive(true);
         }
+    }
+
+    //Summon drones that hover at the left and right side of the viewport respectively
+    private void SummonDrone()
+    {
+        leftDrone.SetActive(true);
+        rightDrone.SetActive(true);
     }
 
     public void BossAttacked(int amount, float seconds)
@@ -270,12 +330,12 @@ public class FinalBoss : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.CompareTag("Character") && !character.isAttacked)
+        if(collision.gameObject.CompareTag("Character") && !character.isAttacked && !shielded)
         {
             character.CharacterAttacked(damage);
             character.GrantInvulnerability(0.1f);
         }
-        else if (collision.gameObject.CompareTag("Sword") && !isAttacked)
+        else if (collision.gameObject.CompareTag("Sword") && !isAttacked && !shielded)
         {
             //Final boss flashes and take damage when attacked
             BossAttacked(50, 0.3f);
@@ -284,7 +344,7 @@ public class FinalBoss : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Flamethrower") && !isAttacked)
+        if (other.CompareTag("Flamethrower") && !isAttacked && !shielded)
         {
             //Final boss flashes and take damage when attacked
             BossAttacked(5, 0.4f);
