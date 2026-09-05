@@ -1,0 +1,2093 @@
+fileFormatVersion: 2
+guid: dd82f4760898cf7428ac58ae5019954e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5707858181932495353
+    second: LettersNumbers_Tileset_noAA_0
+  - first:
+      213: 5578273803492512026
+    second: LettersNumbers_Tileset_noAA_1
+  - first:
+      213: -4473856283414933406
+    second: LettersNumbers_Tileset_noAA_2
+  - first:
+      213: 5944285339554472151
+    second: LettersNumbers_Tileset_noAA_3
+  - first:
+      213: 2339998034080848885
+    second: LettersNumbers_Tileset_noAA_4
+  - first:
+      213: 3166898852845996530
+    second: LettersNumbers_Tileset_noAA_5
+  - first:
+      213: 448659142567648555
+    second: LettersNumbers_Tileset_noAA_6
+  - first:
+      213: -1981938812399658103
+    second: LettersNumbers_Tileset_noAA_7
+  - first:
+      213: -588376896266188021
+    second: LettersNumbers_Tileset_noAA_8
+  - first:
+      213: -7269787528301125129
+    second: LettersNumbers_Tileset_noAA_9
+  - first:
+      213: 1997319513501544544
+    second: LettersNumbers_Tileset_noAA_10
+  - first:
+      213: 408929594601001096
+    second: LettersNumbers_Tileset_noAA_11
+  - first:
+      213: 6115939983485641916
+    second: LettersNumbers_Tileset_noAA_12
+  - first:
+      213: 4429688249583828889
+    second: LettersNumbers_Tileset_noAA_13
+  - first:
+      213: -7098989981881546245
+    second: LettersNumbers_Tileset_noAA_14
+  - first:
+      213: 8749935891958964640
+    second: LettersNumbers_Tileset_noAA_15
+  - first:
+      213: 7265832805911849449
+    second: LettersNumbers_Tileset_noAA_16
+  - first:
+      213: 7238504683108177562
+    second: LettersNumbers_Tileset_noAA_17
+  - first:
+      213: -4310896124780972026
+    second: LettersNumbers_Tileset_noAA_18
+  - first:
+      213: 6538736206705493688
+    second: LettersNumbers_Tileset_noAA_19
+  - first:
+      213: 5506369299872089072
+    second: LettersNumbers_Tileset_noAA_20
+  - first:
+      213: 5810264399083702105
+    second: LettersNumbers_Tileset_noAA_21
+  - first:
+      213: -8351604274701230577
+    second: LettersNumbers_Tileset_noAA_22
+  - first:
+      213: -3978733419098416748
+    second: LettersNumbers_Tileset_noAA_23
+  - first:
+      213: -2692383502226260859
+    second: LettersNumbers_Tileset_noAA_24
+  - first:
+      213: 1773797532931297666
+    second: LettersNumbers_Tileset_noAA_25
+  - first:
+      213: -3974792523253156791
+    second: LettersNumbers_Tileset_noAA_26
+  - first:
+      213: -917647493848624371
+    second: LettersNumbers_Tileset_noAA_27
+  - first:
+      213: 8560124621131046748
+    second: LettersNumbers_Tileset_noAA_28
+  - first:
+      213: 1403233627700809878
+    second: LettersNumbers_Tileset_noAA_29
+  - first:
+      213: 472631333852175075
+    second: LettersNumbers_Tileset_noAA_30
+  - first:
+      213: -3702600443871709421
+    second: LettersNumbers_Tileset_noAA_31
+  - first:
+      213: 5977908311378929471
+    second: LettersNumbers_Tileset_noAA_32
+  - first:
+      213: -2515494855232731533
+    second: LettersNumbers_Tileset_noAA_33
+  - first:
+      213: -2256681729401737683
+    second: LettersNumbers_Tileset_noAA_34
+  - first:
+      213: 3294296378149090534
+    second: LettersNumbers_Tileset_noAA_35
+  - first:
+      213: 4681872501660322291
+    second: LettersNumbers_Tileset_noAA_36
+  - first:
+      213: -8216064044703378612
+    second: LettersNumbers_Tileset_noAA_37
+  - first:
+      213: -7449649695656678827
+    second: LettersNumbers_Tileset_noAA_38
+  - first:
+      213: -6115946337046594018
+    second: LettersNumbers_Tileset_noAA_39
+  - first:
+      213: -8595433036820221677
+    second: LettersNumbers_Tileset_noAA_40
+  - first:
+      213: -5334479223388061069
+    second: LettersNumbers_Tileset_noAA_41
+  - first:
+      213: -6267909949275330522
+    second: LettersNumbers_Tileset_noAA_42
+  - first:
+      213: 2558274751217876119
+    second: LettersNumbers_Tileset_noAA_43
+  - first:
+      213: 3213570888950199767
+    second: LettersNumbers_Tileset_noAA_44
+  - first:
+      213: 8097900043950147638
+    second: LettersNumbers_Tileset_noAA_45
+  - first:
+      213: -8824059957371358182
+    second: LettersNumbers_Tileset_noAA_46
+  - first:
+      213: -8797154984827908822
+    second: LettersNumbers_Tileset_noAA_47
+  - first:
+      213: 4106526320641097798
+    second: LettersNumbers_Tileset_noAA_48
+  - first:
+      213: -7190030415422594975
+    second: LettersNumbers_Tileset_noAA_49
+  - first:
+      213: 8010778519545840744
+    second: LettersNumbers_Tileset_noAA_50
+  - first:
+      213: -2309353122547972942
+    second: LettersNumbers_Tileset_noAA_51
+  - first:
+      213: 1947219514204203294
+    second: LettersNumbers_Tileset_noAA_52
+  - first:
+      213: -2589301141011443530
+    second: LettersNumbers_Tileset_noAA_53
+  - first:
+      213: 8658347969932681524
+    second: LettersNumbers_Tileset_noAA_54
+  - first:
+      213: -4217229719890569714
+    second: LettersNumbers_Tileset_noAA_55
+  - first:
+      213: 5186639586350820336
+    second: LettersNumbers_Tileset_noAA_56
+  - first:
+      213: -1773193793276783469
+    second: LettersNumbers_Tileset_noAA_57
+  - first:
+      213: 3345591741497287644
+    second: LettersNumbers_Tileset_noAA_58
+  - first:
+      213: -2744114329241515050
+    second: LettersNumbers_Tileset_noAA_59
+  - first:
+      213: 3053650206050763370
+    second: LettersNumbers_Tileset_noAA_60
+  - first:
+      213: -4967019304583805097
+    second: LettersNumbers_Tileset_noAA_61
+  - first:
+      213: -4612948694198572235
+    second: LettersNumbers_Tileset_noAA_62
+  - first:
+      213: -2315439705958697524
+    second: LettersNumbers_Tileset_noAA_63
+  - first:
+      213: 7286893621852182646
+    second: LettersNumbers_Tileset_noAA_64
+  - first:
+      213: 6682236408133898514
+    second: LettersNumbers_Tileset_noAA_65
+  - first:
+      213: -1246553720446642494
+    second: LettersNumbers_Tileset_noAA_66
+  - first:
+      213: -2380773874796141080
+    second: LettersNumbers_Tileset_noAA_67
+  - first:
+      213: -271551950798827008
+    second: LettersNumbers_Tileset_noAA_68
+  - first:
+      213: -2384033966149638824
+    second: LettersNumbers_Tileset_noAA_69
+  - first:
+      213: -2074863366214148018
+    second: LettersNumbers_Tileset_noAA_70
+  - first:
+      213: -4014521787549316293
+    second: LettersNumbers_Tileset_noAA_71
+  - first:
+      213: 531178575069696180
+    second: LettersNumbers_Tileset_noAA_72
+  - first:
+      213: -7981035192857269134
+    second: LettersNumbers_Tileset_noAA_73
+  - first:
+      213: -2101051288321492627
+    second: LettersNumbers_Tileset_noAA_74
+  - first:
+      213: 8554026491947698358
+    second: LettersNumbers_Tileset_noAA_75
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 47
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1b46266c2663f40800000000000000
+      internalID: 5707858181932495353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 31
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a11d90528720a6d40800000000000000
+      internalID: 5578273803492512026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_2
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26057eae96ba9e1c0800000000000000
+      internalID: -4473856283414933406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_3
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d0e4bba5085e7250800000000000000
+      internalID: 5944285339554472151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_4
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fb508c60d7597020800000000000000
+      internalID: 2339998034080848885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_5
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f94a7b4ab513fb20800000000000000
+      internalID: 3166898852845996530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2dd9f1fc15f93600800000000000000
+      internalID: 448659142567648555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98bdb50a62dbe74e0800000000000000
+      internalID: -1981938812399658103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_8
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0bc108845aa5d7f0800000000000000
+      internalID: -588376896266188021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f1eb0f82c68c1b90800000000000000
+      internalID: -7269787528301125129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0603739e387e7bb10800000000000000
+      internalID: 1997319513501544544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_11
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8805658bc4fcca500800000000000000
+      internalID: 408929594601001096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_12
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb42547e20f20e450800000000000000
+      internalID: 6115939983485641916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99f7a265ef9697d30800000000000000
+      internalID: 4429688249583828889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_14
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf9c4e939325b7d90800000000000000
+      internalID: -7098989981881546245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_15
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a1a7a7a5540e6970800000000000000
+      internalID: 8749935891958964640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_16
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e961c1e07c65d460800000000000000
+      internalID: 7265832805911849449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_17
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a961aa578a5547460800000000000000
+      internalID: 7238504683108177562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60872da80de9c24c0800000000000000
+      internalID: -4310896124780972026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_19
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b68aa0bfe14eba50800000000000000
+      internalID: 6538736206705493688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_20
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f30ef844bd8a6c40800000000000000
+      internalID: 5506369299872089072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9578b76dfa432a050800000000000000
+      internalID: 5810264399083702105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_22
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0e9ccd2924291c80800000000000000
+      internalID: -8351604274701230577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_23
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499d9aa1903b8c8c0800000000000000
+      internalID: -3978733419098416748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_24
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58c7ea6387bb2aad0800000000000000
+      internalID: -2692383502226260859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_25
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28195dd457bcd9810800000000000000
+      internalID: 1773797532931297666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_26
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 944fd9b6243b6d8c0800000000000000
+      internalID: -3974792523253156791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_27
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03102c577cd343f0800000000000000
+      internalID: -917647493848624371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_28
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f579b4dfbabc670800000000000000
+      internalID: 8560124621131046748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_29
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6905dfbbc89497310800000000000000
+      internalID: 1403233627700809878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_30
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ea5afba1bf1f8600800000000000000
+      internalID: 472631333852175075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_31
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317b2d57388bd9cc0800000000000000
+      internalID: -3702600443871709421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_32
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f37a897dfebc5f250800000000000000
+      internalID: 5977908311378929471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_33
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376c78fb1ca271dd0800000000000000
+      internalID: -2515494855232731533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_34
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e25eb6ce7aea0e0800000000000000
+      internalID: -2256681729401737683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_35
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e4be6c1a11b7bd20800000000000000
+      internalID: 3294296378149090534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_36
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f902211c3a59f040800000000000000
+      internalID: 4681872501660322291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_37
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 31
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c43989b284daafd80800000000000000
+      internalID: -8216064044703378612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 15
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a694d52178d9890800000000000000
+      internalID: -7449649695656678827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_39
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e7cfac53bcf1ba0800000000000000
+      internalID: -6115946337046594018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_40
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3117cad8133e6b880800000000000000
+      internalID: -8595433036820221677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_41
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 372c04cd86f18f5b0800000000000000
+      internalID: -5334479223388061069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_42
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628ae452c19e309a0800000000000000
+      internalID: -6267909949275330522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_43
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c3138f451d08320800000000000000
+      internalID: 2558274751217876119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_44
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d5b96082b5e89c20800000000000000
+      internalID: 3213570888950199767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_45
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 638c44a7f25816070800000000000000
+      internalID: 8097900043950147638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_46
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14b12c7834aa8580800000000000000
+      internalID: -8824059957371358182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_47
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d864f862a3ae580800000000000000
+      internalID: -8797154984827908822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_48
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 640ca9a6eef4df830800000000000000
+      internalID: 4106526320641097798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_49
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1606b7c7e61e73c90800000000000000
+      internalID: -7190030415422594975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_50
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8640cdfde900c2f60800000000000000
+      internalID: 8010778519545840744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_51
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c69d029783ffd0800000000000000
+      internalID: -2309353122547972942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_52
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e19a9d3d4d9e50b10800000000000000
+      internalID: 1947219514204203294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_53
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b0df79b454f01cd0800000000000000
+      internalID: -2589301141011443530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_54
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 431ef81da91a82870800000000000000
+      internalID: 8658347969932681524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_55
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06d3b1e9e36975c0800000000000000
+      internalID: -4217229719890569714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_56
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fb6b6a4935aaf740800000000000000
+      internalID: 5186639586350820336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_57
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3945fc9c3a95467e0800000000000000
+      internalID: -1773193793276783469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_58
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd32d6396fded6e20800000000000000
+      internalID: 3345591741497287644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_59
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db00867e82fae9d0800000000000000
+      internalID: -2744114329241515050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_60
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6244f7feaeb06a20800000000000000
+      internalID: 3053650206050763370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_61
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75746c5424a911bb0800000000000000
+      internalID: -4967019304583805097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_62
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b21336a938bffb0800000000000000
+      internalID: -4612948694198572235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_63
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc53f7bead7eddfd0800000000000000
+      internalID: -2315439705958697524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_64
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6781f86342f302560800000000000000
+      internalID: 7286893621852182646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_65
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211d004fb921cbc50800000000000000
+      internalID: 6682236408133898514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_66
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6165beef953bee0800000000000000
+      internalID: -1246553720446642494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_67
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e5ee3656cac5fed0800000000000000
+      internalID: -2380773874796141080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_68
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 002529280f04b3cf0800000000000000
+      internalID: -271551950798827008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_69
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8556f2b2db53aeed0800000000000000
+      internalID: -2384033966149638824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_70
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e40a553f2ca9433e0800000000000000
+      internalID: -2074863366214148018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_71
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b8e0e34bd8948c0800000000000000
+      internalID: -4014521787549316293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_72
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b0d35789102f5700800000000000000
+      internalID: 531178575069696180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_73
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27ce9d507caad3190800000000000000
+      internalID: -7981035192857269134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_74
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 15
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6978b03cf097d2e0800000000000000
+      internalID: -2101051288321492627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LettersNumbers_Tileset_noAA_75
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8c2d3f5c106b670800000000000000
+      internalID: 8554026491947698358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LettersNumbers_Tileset_noAA_0: 5707858181932495353
+      LettersNumbers_Tileset_noAA_1: 5578273803492512026
+      LettersNumbers_Tileset_noAA_10: 1997319513501544544
+      LettersNumbers_Tileset_noAA_11: 408929594601001096
+      LettersNumbers_Tileset_noAA_12: 6115939983485641916
+      LettersNumbers_Tileset_noAA_13: 4429688249583828889
+      LettersNumbers_Tileset_noAA_14: -7098989981881546245
+      LettersNumbers_Tileset_noAA_15: 8749935891958964640
+      LettersNumbers_Tileset_noAA_16: 7265832805911849449
+      LettersNumbers_Tileset_noAA_17: 7238504683108177562
+      LettersNumbers_Tileset_noAA_18: -4310896124780972026
+      LettersNumbers_Tileset_noAA_19: 6538736206705493688
+      LettersNumbers_Tileset_noAA_2: -4473856283414933406
+      LettersNumbers_Tileset_noAA_20: 5506369299872089072
+      LettersNumbers_Tileset_noAA_21: 5810264399083702105
+      LettersNumbers_Tileset_noAA_22: -8351604274701230577
+      LettersNumbers_Tileset_noAA_23: -3978733419098416748
+      LettersNumbers_Tileset_noAA_24: -2692383502226260859
+      LettersNumbers_Tileset_noAA_25: 1773797532931297666
+      LettersNumbers_Tileset_noAA_26: -3974792523253156791
+      LettersNumbers_Tileset_noAA_27: -917647493848624371
+      LettersNumbers_Tileset_noAA_28: 8560124621131046748
+      LettersNumbers_Tileset_noAA_29: 1403233627700809878
+      LettersNumbers_Tileset_noAA_3: 5944285339554472151
+      LettersNumbers_Tileset_noAA_30: 472631333852175075
+      LettersNumbers_Tileset_noAA_31: -3702600443871709421
+      LettersNumbers_Tileset_noAA_32: 5977908311378929471
+      LettersNumbers_Tileset_noAA_33: -2515494855232731533
+      LettersNumbers_Tileset_noAA_34: -2256681729401737683
+      LettersNumbers_Tileset_noAA_35: 3294296378149090534
+      LettersNumbers_Tileset_noAA_36: 4681872501660322291
+      LettersNumbers_Tileset_noAA_37: -8216064044703378612
+      LettersNumbers_Tileset_noAA_38: -7449649695656678827
+      LettersNumbers_Tileset_noAA_39: -6115946337046594018
+      LettersNumbers_Tileset_noAA_4: 2339998034080848885
+      LettersNumbers_Tileset_noAA_40: -8595433036820221677
+      LettersNumbers_Tileset_noAA_41: -5334479223388061069
+      LettersNumbers_Tileset_noAA_42: -6267909949275330522
+      LettersNumbers_Tileset_noAA_43: 2558274751217876119
+      LettersNumbers_Tileset_noAA_44: 3213570888950199767
+      LettersNumbers_Tileset_noAA_45: 8097900043950147638
+      LettersNumbers_Tileset_noAA_46: -8824059957371358182
+      LettersNumbers_Tileset_noAA_47: -8797154984827908822
+      LettersNumbers_Tileset_noAA_48: 4106526320641097798
+      LettersNumbers_Tileset_noAA_49: -7190030415422594975
+      LettersNumbers_Tileset_noAA_5: 3166898852845996530
+      LettersNumbers_Tileset_noAA_50: 8010778519545840744
+      LettersNumbers_Tileset_noAA_51: -2309353122547972942
+      LettersNumbers_Tileset_noAA_52: 1947219514204203294
+      LettersNumbers_Tileset_noAA_53: -2589301141011443530
+      LettersNumbers_Tileset_noAA_54: 8658347969932681524
+      LettersNumbers_Tileset_noAA_55: -4217229719890569714
+      LettersNumbers_Tileset_noAA_56: 5186639586350820336
+      LettersNumbers_Tileset_noAA_57: -1773193793276783469
+      LettersNumbers_Tileset_noAA_58: 3345591741497287644
+      LettersNumbers_Tileset_noAA_59: -2744114329241515050
+      LettersNumbers_Tileset_noAA_6: 448659142567648555
+      LettersNumbers_Tileset_noAA_60: 3053650206050763370
+      LettersNumbers_Tileset_noAA_61: -4967019304583805097
+      LettersNumbers_Tileset_noAA_62: -4612948694198572235
+      LettersNumbers_Tileset_noAA_63: -2315439705958697524
+      LettersNumbers_Tileset_noAA_64: 7286893621852182646
+      LettersNumbers_Tileset_noAA_65: 6682236408133898514
+      LettersNumbers_Tileset_noAA_66: -1246553720446642494
+      LettersNumbers_Tileset_noAA_67: -2380773874796141080
+      LettersNumbers_Tileset_noAA_68: -271551950798827008
+      LettersNumbers_Tileset_noAA_69: -2384033966149638824
+      LettersNumbers_Tileset_noAA_7: -1981938812399658103
+      LettersNumbers_Tileset_noAA_70: -2074863366214148018
+      LettersNumbers_Tileset_noAA_71: -4014521787549316293
+      LettersNumbers_Tileset_noAA_72: 531178575069696180
+      LettersNumbers_Tileset_noAA_73: -7981035192857269134
+      LettersNumbers_Tileset_noAA_74: -2101051288321492627
+      LettersNumbers_Tileset_noAA_75: 8554026491947698358
+      LettersNumbers_Tileset_noAA_8: -588376896266188021
+      LettersNumbers_Tileset_noAA_9: -7269787528301125129
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

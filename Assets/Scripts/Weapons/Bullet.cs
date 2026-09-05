@@ -10,6 +10,8 @@ public class Bullet : MonoBehaviour
     private int hitsRemaining;
     private float knockbackForce;
     private bool isReflected;
+    private float stunChance;
+    private float stunDuration;
 
     private void Awake() { hitsRemaining = pierceCount; }
 
@@ -17,6 +19,7 @@ public class Bullet : MonoBehaviour
 
     public void SetDamage(int d) { damage = d; }
     public void SetKnockback(float force) => knockbackForce = force;
+    public void SetStun(float chance, float duration) { stunChance = chance; stunDuration = duration; }
     public void MarkReflected() { isReflected = true; }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -33,6 +36,10 @@ public class Bullet : MonoBehaviour
                     Vector2 dir = ((Vector2)other.transform.position - (Vector2)transform.position).normalized;
                     mob.Knockback(dir, knockbackForce);
                 }
+
+                // Stun is a zero-speed debuff - reuses the existing slow system
+                if (stunChance > 0f && Random.value < stunChance)
+                    mob.ApplyDebuff(0f, stunDuration);
             }
         }
         // Final Boss damage check
@@ -40,6 +47,13 @@ public class Bullet : MonoBehaviour
         {
             FinalBoss finalBoss = other.GetComponent<FinalBoss>();
             finalBoss.BossAttacked(damage, hitFlash);
+            hitsRemaining--;
+        }
+        // Act 1 miniboss damage check
+        else if (other.CompareTag("MiniBoss"))
+        {
+            Act1Boss miniboss = other.GetComponent<Act1Boss>();
+            miniboss.BossAttacked(damage, hitFlash);
             hitsRemaining--;
         }
         // Character damage check - only if a barrier reflected this bullet back at the player;

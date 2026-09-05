@@ -14,26 +14,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SecondaryWeaponData
   weaponName: EMP Field
   description: EMP Field Desc
-  icon: {fileID: -685174750832777968, guid: 56c08acd522bf94428ee12c201c347b3, type: 3}
-  weaponPrefab: {fileID: 2346830960355318442, guid: 8c401460a140145489e48e138fbf4a3b, type: 3}
+  icon: {fileID: -3029590100310656207, guid: 61896b501c3c18d47aa52b4cbcc98e79, type: 3}
+  weaponPrefab: {fileID: 396326074087300072, guid: b494c063fd19c1c49908a658235f9730, type: 3}
   levels:
   - fireInterval: 0.5
-    damage: 4
+    damage: 0
     range: 0
     valueA: 2.5
     valueB: 0.75
-    levelDescription: EMP Field Lvl 1 Desc
+    levelDescription: Obtain an EMP Field. Slows enemies inside it by 25%.
   - fireInterval: 0.5
-    damage: 6
+    damage: 0
     range: 0
-    valueA: 3.2
+    valueA: 3
     valueB: 0.6
-    levelDescription: EMP Field Lvl 2 Desc
+    levelDescription: 20% wider field. Now slows by 40%.
   - fireInterval: 0.4
-    damage: 8
+    damage: 0
     range: 0
     valueA: 4
-    valueB: 0.45
-    levelDescription: EMP Field Lvl 3 Desc
+    valueB: 0.5
+    levelDescription: 33% wider field. Now slows by 50%.
   combinesWithStat: {fileID: 11400000, guid: f44e66651d328ce4d82ce51c84870099, type: 2}
-  combinedResult: {fileID: 0}
+  combinedResult: {fileID: 11400000, guid: 2cfcac8809e64139a87d9be140b19483, type: 2}
+  isCombinedForm: 0

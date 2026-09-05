@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd58c3203bd702f458ccbd4e001da4fc, type: 3}
   m_Name: Stat_MaxHealth
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
-  upgradeName: Max Health Increase
-  description: Increase max health by 20
-  icon: {fileID: 801451789778697559, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}
+  upgradeName: Max Health
+  description: Increase max health by 20.
+  icon: {fileID: 3053136028022104249, guid: 28e004383e3e97b4580d938c5f861401, type: 3}
   stat: 0
   amountPerLevel:
   - 20

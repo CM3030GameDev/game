@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd58c3203bd702f458ccbd4e001da4fc, type: 3}
   m_Name: Stat_AttackSpeed
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
-  upgradeName: Attack Speed Increase
-  description: Attack Speed increases
-  icon: {fileID: -4384315255773831016, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}
+  upgradeName: Attack Speed
+  description: Fire 0.1s faster.
+  icon: {fileID: -3845879347591765587, guid: 28e004383e3e97b4580d938c5f861401, type: 3}
   stat: 2
   amountPerLevel:
   - 0.1

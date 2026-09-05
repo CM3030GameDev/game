@@ -5,6 +5,8 @@ public class ShotgunWeapon : SecondaryWeapon
     [SerializeField] private GameObject pelletPrefab;
     [SerializeField] private float pelletSpeed = 20f;
     [SerializeField] private float knockback = 4f;
+    [SerializeField] private float combinedStunChance = 0.25f;      // combined form only
+    [SerializeField] private float combinedStunDuration = 1.5f;
 
     protected override void Fire()
     {
@@ -23,7 +25,12 @@ public class ShotgunWeapon : SecondaryWeapon
             p.GetComponent<Rigidbody2D>().linearVelocity = dir * pelletSpeed;
 
             Bullet b = p.GetComponent<Bullet>();
-            if (b != null) { b.SetDamage(TotalDamage); b.SetKnockback(knockback); }
+            if (b != null)
+            {
+                b.SetDamage(TotalDamage);
+                b.SetKnockback(knockback);
+                if (IsCombined) b.SetStun(combinedStunChance, combinedStunDuration);
+            }
         }
     }
 }

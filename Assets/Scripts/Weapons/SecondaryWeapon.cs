@@ -15,6 +15,15 @@ public abstract class SecondaryWeapon : MonoBehaviour
     public SecondaryWeaponData Data => data;
     public int Level => level;
     public bool IsMaxLevel => level >= data.MaxLevel;
+    public bool IsCombined => data != null && data.isCombinedForm;
+
+    public void Combine(SecondaryWeaponData combined)
+    {
+        data = combined;
+        level = 1;
+        timer = 0f;
+        OnLevelChanged();
+    }
 
     public void Init(SecondaryWeaponData d, PlayerAim aim)
     {

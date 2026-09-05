@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1d9d3fc050192046a72dccebcddc88a, type: 3}
   m_Name: Upgrade_Bazooka
   m_EditorClassIdentifier: Assembly-CSharp::SecondaryWeaponUpgrade
-  upgradeName: Bazooka Upgrade
+  upgradeName: Bazooka
   description: Bazooka Upgrades
   icon: {fileID: -6620131365891478404, guid: 56c08acd522bf94428ee12c201c347b3, type: 3}
   weapon: {fileID: 11400000, guid: 74a0e42d7a6d41a45ad502ff20aa8045, type: 2}

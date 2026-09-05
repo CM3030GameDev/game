@@ -12,6 +12,17 @@ public class WeaponSlots : MonoBehaviour
 
     private readonly List<SecondaryWeapon> active = new List<SecondaryWeapon>();
     public bool IsFull => active.Count >= maxSlots;
+    public IReadOnlyList<SecondaryWeapon> Active => active;
+
+    // Evolves an owned weapon into its combined form. Pips stay full - it was already maxed to get here.
+    public void Combine(SecondaryWeapon w, SecondaryWeaponData combined)
+    {
+        int i = active.IndexOf(w);
+        if (i < 0) return;
+
+        w.Combine(combined);
+        SetSlotIcon(i + secondaryOffset, combined.icon);
+    }
 
     public SecondaryWeapon Find(SecondaryWeaponData d)
     {
@@ -37,6 +48,12 @@ public class WeaponSlots : MonoBehaviour
         }
         if (IsFull) return false;
 
+        if (d.weaponPrefab == null)
+        {
+            Debug.LogError($"{d.name} has no Weapon Prefab assigned - it cannot be equipped.", d);
+            return false;
+        }
+
         int index = active.Count + secondaryOffset;
         GameObject go = Instantiate(d.weaponPrefab, transform.position,
                                     Quaternion.identity, transform);
@@ -53,6 +70,7 @@ public class WeaponSlots : MonoBehaviour
     {
         if (index < 0 || index >= weaponSlotImages.Length) return;
         weaponSlotImages[index].sprite = icon;
+        weaponSlotImages[index].preserveAspect = true;
         weaponSlotImages[index].color = Color.white;
     }
 
