@@ -267,7 +267,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 panelOpenSound,
-                clickVolume
+                sfxVolume
             );
         }
     }
@@ -282,7 +282,7 @@ public class UIAudioManager : MonoBehaviour
         {
             uiAudioSource.PlayOneShot(
                 panelCloseSound,
-                clickVolume
+                sfxVolume
             );
         }
     }

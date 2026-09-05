@@ -501,6 +501,66 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!1 &69534915
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 69534917}
+  - component: {fileID: 69534916}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &69534916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69534915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4983098777030954fac250db8d3b16a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UIAudioManager
+  uiAudioSource: {fileID: 0}
+  musicAudioSource: {fileID: 0}
+  hoverSound: {fileID: 0}
+  clickSound: {fileID: 0}
+  backSound: {fileID: 0}
+  confirmSound: {fileID: 0}
+  errorSound: {fileID: 0}
+  panelOpenSound: {fileID: 0}
+  panelCloseSound: {fileID: 0}
+  backgroundMusic: []
+  soundEffects: []
+  bgmVolume: 0.6
+  sfxVolume: 0.8
+  targetMusicVolume: 0.3
+  musicFadeInDuration: 2.5
+  musicFadeOutDuration: 1
+--- !u!4 &69534917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69534915}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 5.99374, y: -0.44732, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &95171519
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +1023,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &133685545
 Transform:
   m_ObjectHideFlags: 0
@@ -1055,7 +1115,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 6.28125, y: 6.28125}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -1249,7 +1309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!199 &142059501
 ParticleSystemRenderer:
   serializedVersion: 7
@@ -23860,19 +23920,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83693344739bd6040903f6bb2dda0df0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CompanionSkills
-  character: {fileID: 349060610}
-  mercenary: {fileID: 4092348403025292642}
-  swordsman: {fileID: 3069659577465586709}
-  fireFloorPrefab: {fileID: 1094264412346855808, guid: c02ef4216708a184f957ed1e2f723e9b, type: 3}
-  mercCooldown: 12
-  mercCastTime: 0.4
-  invulnDuration: 3
-  swordCooldown: 15
-  swordCastTime: 0.4
-  mercTimer: 0
-  swordTimer: 0
-  casting: 0
-  allEnemies: []
 --- !u!114 &349060607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25147,8 +25194,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.5}
-    oldSize: {x: 2.6666667, y: 3.0833333}
-    newSize: {x: 2.6666667, y: 3.0833333}
+    oldSize: {x: 2.0833333, y: 1.5}
+    newSize: {x: 2.0833333, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -25209,7 +25256,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6666667, y: 3.0833333}
+  m_Size: {x: 2.0833333, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -25256,7 +25303,7 @@ MonoBehaviour:
   beams: {fileID: 918586155}
   layers:
     serializedVersion: 2
-    m_Bits: 20480
+    m_Bits: 4096
 --- !u!1 &498729691
 GameObject:
   m_ObjectHideFlags: 0
@@ -25381,67 +25428,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 528772957}
   m_CullTransparentMesh: 1
---- !u!1 &568296188
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 568296190}
-  - component: {fileID: 568296189}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &568296189
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568296188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4983098777030954fac250db8d3b16a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::UIAudioManager
-  uiAudioSource: {fileID: 0}
-  musicAudioSource: {fileID: 0}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
-  backSound: {fileID: 0}
-  confirmSound: {fileID: 0}
-  errorSound: {fileID: 0}
-  panelOpenSound: {fileID: 0}
-  panelCloseSound: {fileID: 0}
-  backgroundMusic: {fileID: 0}
-  soundEffects:
-  - {fileID: 0}
-  hoverVolume: 0.6
-  clickVolume: 0.8
-  targetMusicVolume: 0.3
-  musicFadeInDuration: 2.5
-  musicFadeOutDuration: 1
---- !u!4 &568296190
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 568296188}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.99374, y: -0.44732, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &568883076
 GameObject:
   m_ObjectHideFlags: 0
@@ -25546,8 +25532,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0.5}
-    oldSize: {x: 2.6666667, y: 3.0833333}
-    newSize: {x: 2.6666667, y: 3.0833333}
+    oldSize: {x: 2.0833333, y: 1.5}
+    newSize: {x: 2.0833333, y: 1.5}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -25608,7 +25594,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.6666667, y: 3.0833333}
+  m_Size: {x: 2.0833333, y: 1.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -25655,7 +25641,7 @@ MonoBehaviour:
   beams: {fileID: 918586155}
   layers:
     serializedVersion: 2
-    m_Bits: 20480
+    m_Bits: 4096
 --- !u!1 &585134745
 GameObject:
   m_ObjectHideFlags: 0
@@ -28649,7 +28635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!212 &838949604
 SpriteRenderer:
   serializedVersion: 2
@@ -30262,7 +30248,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1221551465
 Transform:
   m_ObjectHideFlags: 0
@@ -33860,7 +33846,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::BeamExtend
   layers:
     serializedVersion: 2
-    m_Bits: 20480
+    m_Bits: 4096
   box: {fileID: -2095201519772841500, guid: c340424aa5a04294eb998484145cada7, type: 3}
   beam: {fileID: -7357873357605312705, guid: 08fc51320eab2bd4386b9a2c47eb2a10, type: 3}
 --- !u!1 &1774656404
@@ -36381,4 +36367,4 @@ SceneRoots:
   - {fileID: 1612899638}
   - {fileID: 2018681966}
   - {fileID: 652439032}
-  - {fileID: 568296190}
+  - {fileID: 69534917}
