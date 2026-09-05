@@ -10,10 +10,7 @@ public class Suction : MonoBehaviour
     [SerializeField] private FinalBoss finalBoss;
     [SerializeField] private GameObject wind;
     [SerializeField] private GameObject range;
-    [SerializeField] private GameObject explosionTop;
-    [SerializeField] private GameObject explosionBottom;
-    [SerializeField] private GameObject explosionLeft;
-    [SerializeField] private GameObject explosionRight;
+    [SerializeField] private GameObject shockwave;
     [SerializeField] private float maxForce;
 
     private void Awake()
@@ -33,24 +30,21 @@ public class Suction : MonoBehaviour
         //After 10 cycles
         if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 10f)
         {
-            //Disable suction, wind and range effect
+            //Disable suction effect
             gameObject.SetActive(false);
+            //Disable wind effect
             wind.SetActive(false);
+            //Disable hitbox indicator
             range.SetActive(false);
-            explosionTop.SetActive(true);
-            explosionBottom.SetActive(true);
-            explosionLeft.SetActive(true);
-            explosionRight.SetActive(true);
-            //Reset attack probability and timer
-            finalBoss.randomNum = Random.Range(0f, 1f);
-            finalBoss.attackTime = 0f;
+            //Enable shockwave effect
+            shockwave.SetActive(true);
         }
 
-        //Direction vector from boss to character
+        //Direction vector from character to boss
         Vector2 direction = character.transform.position - transform.position;
         Vector2 normalizedDirection = direction.normalized;
 
-        //Raycast to check if player can be pulled
+        //Raycast to check for either player or obstacle collision
         RaycastHit2D hit = Physics2D.Raycast(transform.position, direction, 100f, layers.value);
 
         //If raycast hits a collider

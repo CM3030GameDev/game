@@ -4,14 +4,15 @@ public class BeamExtend : MonoBehaviour
 {
     private SpriteRenderer sr;
     private BoxCollider2D boxCollider;
-    [SerializeField] private LayerMask buildingsLayer;
-    [SerializeField] private Character character;
+    //Layer for pillar and safe zone
+    [SerializeField] private LayerMask layers;
     [SerializeField] private Sprite box;
     [SerializeField] private Sprite beam;
 
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
     }
 
     private void OnEnable()
@@ -31,23 +32,16 @@ public class BeamExtend : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100f, buildingsLayer.value);
+        //Raycast beam body
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 100f, layers.value);
 
-        //Beam hits pillar
+        //Beam body hits pillar or safezone
         if (hit)
         {
-            if(hit.distance > 5f)
-            {
-                //Beam stops before pillar
-                transform.localScale = new Vector3(hit.distance + 5f, 2f, 1f);
-            }
-            else
-            {
-                //Beam stops before pillar
-                transform.localScale = new Vector3(hit.distance, 2f, 1f);
-            }
+            //Beam stops before pillar or safezone
+            transform.localScale = new Vector3(hit.distance, 2f, 1f);
         }
-        //Beam is not hitting pillar
+        //Beam body is not hitting pillar or safezone
         else
         {
             //Beam extends
@@ -55,16 +49,12 @@ public class BeamExtend : MonoBehaviour
         }
     }
 
-    public void RayCast()
-    {
-
-    }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Character") && !character.isAttacked)
+        if(collision.CompareTag("Character"))
         {
-            character.CharacterAttacked(50);
+            Character character = collision.GetComponent<Character>();
+            character.CharacterAttacked(30);
             character.GrantInvulnerability(0.5f);
         }
     }

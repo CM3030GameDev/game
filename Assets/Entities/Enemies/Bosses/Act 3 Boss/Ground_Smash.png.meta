@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 7e934bb400246724ea53f31acb5c3be6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 173135886747526706
+    second: Ground_Smash 1_0
+  - first:
+      213: -8680700018934082608
+    second: Ground_Smash 1_1
+  - first:
+      213: 3949443416538332914
+    second: Ground_Smash 1_2
+  - first:
+      213: 7911439058250289437
+    second: Ground_Smash 1_3
+  - first:
+      213: 6939371511754644100
+    second: Ground_Smash 1_4
+  - first:
+      213: 3216546771160872319
+    second: Ground_Smash 1_5
+  - first:
+      213: 3834528134925159973
+    second: Ground_Smash 1_6
+  - first:
+      213: -4843062709824474254
+    second: Ground_Smash 1_7
+  - first:
+      213: 1290245854563283476
+    second: Ground_Smash 1_8
+  - first:
+      213: 1605429359125153245
+    second: Ground_Smash 1_9
+  - first:
+      213: 3232109917187978399
+    second: Ground_Smash 1_10
+  - first:
+      213: -322325261447307612
+    second: Ground_Smash 1_11
+  - first:
+      213: 6138901626929057247
+    second: Ground_Smash 1_12
+  - first:
+      213: -5609737909329554634
+    second: Ground_Smash 1_13
+  - first:
+      213: -4738390119120426611
+    second: Ground_Smash 1_14
+  - first:
+      213: 8789127744408989421
+    second: Ground_Smash 1_15
+  - first:
+      213: 566559253522178586
+    second: Ground_Smash 1_16
+  - first:
+      213: 8658862271338446437
+    second: Ground_Smash 1_17
+  - first:
+      213: -8139131178778638252
+    second: Ground_Smash 1_18
+  - first:
+      213: -320823724419323031
+    second: Ground_Smash 1_19
+  - first:
+      213: 7627299574625704364
+    second: Ground_Smash 1_20
+  - first:
+      213: 8702826961488579246
+    second: Ground_Smash 1_21
+  - first:
+      213: 7290879145137405555
+    second: Ground_Smash 1_22
+  - first:
+      213: -2370289756441826120
+    second: Ground_Smash 1_23
+  - first:
+      213: 8734958096404226819
+    second: Ground_Smash 1_24
+  - first:
+      213: -4082890662626417339
+    second: Ground_Smash 1_25
+  - first:
+      213: -442020449452520068
+    second: Ground_Smash 1_26
+  - first:
+      213: -6536136893263249911
+    second: Ground_Smash 1_27
+  - first:
+      213: -3756710242654610413
+    second: Ground_Smash 1_28
+  - first:
+      213: -838084653694358013
+    second: Ground_Smash 1_29
+  - first:
+      213: 5701610893811226072
+    second: Ground_Smash 1_30
+  - first:
+      213: -247476504470456587
+    second: Ground_Smash 1_31
+  - first:
+      213: -334799281399924673
+    second: Ground_Smash 1_32
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 6
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ground_Smash_4
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 210
+        width: 61
+        height: 25
+      alignment: 9
+      pivot: {x: 0.5, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e8473c50bf63530800000000000000
+      internalID: 3834528134925159973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Smash_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 111
+        width: 65
+        height: 29
+      alignment: 9
+      pivot: {x: 0.5, y: 0.17097078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 273b8f3002cf9ccb0800000000000000
+      internalID: -4843062709824474254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Smash_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 108
+        width: 69
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.23241305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4123a2ac4cfd7e110800000000000000
+      internalID: 1290245854563283476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Smash_7
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 105
+        width: 69
+        height: 36
+      alignment: 9
+      pivot: {x: 0.5, y: 0.29633182}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e5e72a6da0715644960037f43ef1ed0
+      internalID: -681060317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Smash_9
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 99
+        width: 61
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f02c2c8eab00a747b2a9966ffa514c8
+      internalID: -1697911745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ground_Smash_8
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 102
+        width: 81
+        height: 39
+      alignment: 9
+      pivot: {x: 0.5, y: 0.32857415}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a1bc45eabb0b904eb3deedcbc6e8ebb
+      internalID: -1519327910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: adc43a2e9f11fc94983035313269faaf
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Ground_Smash 1_0: 173135886747526706
+      Ground_Smash 1_1: -8680700018934082608
+      Ground_Smash 1_10: 3232109917187978399
+      Ground_Smash 1_11: -322325261447307612
+      Ground_Smash 1_12: 6138901626929057247
+      Ground_Smash 1_13: -5609737909329554634
+      Ground_Smash 1_14: -4738390119120426611
+      Ground_Smash 1_15: 8789127744408989421
+      Ground_Smash 1_16: 566559253522178586
+      Ground_Smash 1_17: 8658862271338446437
+      Ground_Smash 1_18: -8139131178778638252
+      Ground_Smash 1_19: -320823724419323031
+      Ground_Smash 1_2: 3949443416538332914
+      Ground_Smash 1_20: 7627299574625704364
+      Ground_Smash 1_21: 8702826961488579246
+      Ground_Smash 1_22: 7290879145137405555
+      Ground_Smash 1_23: -2370289756441826120
+      Ground_Smash 1_24: 8734958096404226819
+      Ground_Smash 1_25: -4082890662626417339
+      Ground_Smash 1_26: -442020449452520068
+      Ground_Smash 1_27: -6536136893263249911
+      Ground_Smash 1_28: -3756710242654610413
+      Ground_Smash 1_29: -838084653694358013
+      Ground_Smash 1_30: 5701610893811226072
+      Ground_Smash 1_31: -247476504470456587
+      Ground_Smash 1_32: -334799281399924673
+      Ground_Smash 1_5: 3216546771160872319
+      Ground_Smash 1_9: 1605429359125153245
+      Ground_Smash1: 7911439058250289437
+      Ground_Smash_: 6939371511754644100
+      Ground_Smash_0: -132015474
+      Ground_Smash_4: 3834528134925159973
+      Ground_Smash_5: -4843062709824474254
+      Ground_Smash_6: 1290245854563283476
+      Ground_Smash_7: -681060317
+      Ground_Smash_8: -1519327910
+      Ground_Smash_9: -1697911745
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
