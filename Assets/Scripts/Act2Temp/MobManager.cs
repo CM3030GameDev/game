@@ -41,16 +41,15 @@ public class MobManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        // Deliberately NOT DontDestroyOnLoad. This holds scene-specific state - playerTransform,
+        // the pool config, the kill count - so persisting it across a scene load leaves the next
+        // Act running on the previous Act's references and kill total.
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
+        Instance = this;
 
         //Initialising the object pool
         foreach (EnemySetup enemySetup in enemyPoolConfig)
@@ -75,6 +74,13 @@ public class MobManager : MonoBehaviour
     private void Start()
     {
         playerTransform = GameObject.FindGameObjectsWithTag("Character")[0].transform;
+    }
+
+    private void OnDestroy()
+    {
+        // Clear the static so the next scene's manager claims it, rather than relying on
+        // Unity's destroyed-object null semantics to do it implicitly.
+        if (Instance == this) Instance = null;
     }
 
     /// <summary>
