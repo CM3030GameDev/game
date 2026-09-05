@@ -63,9 +63,6 @@ TagManager:
   - name: Ground
     uniqueID: 1400399459
     locked: 0
-  - name: Decoration_Back
-    uniqueID: 446537991
-    locked: 0
   - name: Companion
     uniqueID: 539685799
     locked: 0
@@ -93,11 +90,14 @@ TagManager:
   - name: Weapon
     uniqueID: 2015552387
     locked: 0
-  - name: Decoration
-    uniqueID: 3412924687
-    locked: 0
   - name: Foreground
     uniqueID: 339600167
+    locked: 0
+  - name: Decoration_Back
+    uniqueID: 446537991
+    locked: 0
+  - name: Decoration
+    uniqueID: 3412924687
     locked: 0
   - name: Temporary
     uniqueID: 3548693121
