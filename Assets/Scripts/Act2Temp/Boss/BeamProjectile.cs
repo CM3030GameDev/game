@@ -8,23 +8,56 @@ public class BeamProjectile : MonoBehaviour
     private float speed = 25f;
     private float lifetime = 5f;
     private int damage = 5;
+    private float playerInvulnerability = 0.1f;
+    private Animator anim;
     private bool isInitialized = false;
+    StateTrigger exitTrigger;
 
-    public void SetBeam(Vector3 direction, float moveSpeed, float timer, int damageDone)
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        if (anim != null)
+            exitTrigger = anim.GetBehaviour<StateTrigger>();
+    }
+    public void SetBeam(Vector3 direction, float moveSpeed, float timer, int damageDone, float invulnerability)
     {
         lifetime = timer;
         damage = damageDone;
         moveDir = direction.normalized;
         speed = moveSpeed;
+        playerInvulnerability = invulnerability;
         isInitialized = true;
-        Destroy(gameObject, lifetime);
+
+        float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
+        transform.rotation = Quaternion.Euler(0f, 0f, angle);
+
+        if (anim != null)
+        {
+            anim.Play("SkillShot");
+
+            if (exitTrigger != null)
+            {
+                exitTrigger.OnStateExitAction = null;
+                exitTrigger.OnStateExitAction += OnAnimationEnd;
+            }
+        }
     }
 
     void Update()
     {
-        if (!isInitialized) return;
+        if (!isInitialized)
+            return;
 
-            transform.position += moveDir * speed * Time.deltaTime;
+        transform.position += moveDir * speed * Time.deltaTime;
+        if (lifetime > 0f)
+        {
+            lifetime -= Time.deltaTime;
+        }
+        else if (lifetime <= 0f)
+        {
+            isInitialized = false;
+            BeamExplode();
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -32,10 +65,21 @@ public class BeamProjectile : MonoBehaviour
         if (collision.gameObject.CompareTag("Character"))
         {
             Character character = collision.gameObject.GetComponent<Character>();
-            if (character != null)
+            if (!character.isAttacked && character != null)
+            {
                 character.CharacterAttacked(damage);
-
-            Destroy(gameObject);
+                character.GrantInvulnerability(playerInvulnerability);
+            }
+            BeamExplode();
         }
+    }
+
+    private void BeamExplode()
+    {
+        anim.Play("BeamExplode");
+    }
+    private void OnAnimationEnd()
+    {
+        Destroy(gameObject);
     }
 }

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d354e195c6e4b7c41b86aa98220d6bca, type: 3}
   m_Name: AssaultRifle
   m_EditorClassIdentifier: Assembly-CSharp::WeaponTier
-  tierName: Pistol
+  tierName: Assault Rifle
   icon: {fileID: 8957679999252473407, guid: 5bea2eac64b4d4148bd575f25b13ac4b, type: 3}
   bulletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
-  damage: 20
+  damage: 15
   bulletSpeed: 50
-  fireInterval: 0.5
+  fireInterval: 0.8
   spreadAngle: 0
   muzzleOffsets:
   - {x: 0.8, y: -0.2926}

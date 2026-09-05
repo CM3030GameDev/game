@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd58c3203bd702f458ccbd4e001da4fc, type: 3}
   m_Name: Stat_PickupRadius
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStatsUpgrade
-  upgradeName: Pickup Range Increases
-  description: Increase pickup range by +(3)
-  icon: {fileID: -6007869707964244330, guid: b0306f124455cbe4385ae61f61e72db4, type: 3}
+  upgradeName: Pickup Range
+  description: Increase pickup range by 3.
+  icon: {fileID: -1130957821722783716, guid: 28e004383e3e97b4580d938c5f861401, type: 3}
   stat: 3
   amountPerLevel:
   - 3

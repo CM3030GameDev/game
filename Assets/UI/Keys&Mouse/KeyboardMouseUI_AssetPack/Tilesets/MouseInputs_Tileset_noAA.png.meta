@@ -1,0 +1,1131 @@
+fileFormatVersion: 2
+guid: 8b529887503898f46b45d088b9f102cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5347523669148304978
+    second: MouseInputs_Tileset_noAA_0
+  - first:
+      213: 640743541884193159
+    second: MouseInputs_Tileset_noAA_1
+  - first:
+      213: 4174660079051618199
+    second: MouseInputs_Tileset_noAA_2
+  - first:
+      213: 4839357969535114275
+    second: MouseInputs_Tileset_noAA_3
+  - first:
+      213: -4588310840336982288
+    second: MouseInputs_Tileset_noAA_4
+  - first:
+      213: -6028942548715609708
+    second: MouseInputs_Tileset_noAA_5
+  - first:
+      213: 1663786837023085651
+    second: MouseInputs_Tileset_noAA_6
+  - first:
+      213: -2094501355990816155
+    second: MouseInputs_Tileset_noAA_7
+  - first:
+      213: 7156341043211747965
+    second: MouseInputs_Tileset_noAA_8
+  - first:
+      213: 7594819810400053793
+    second: MouseInputs_Tileset_noAA_9
+  - first:
+      213: 4926668189439091840
+    second: MouseInputs_Tileset_noAA_10
+  - first:
+      213: 8756842579192828664
+    second: MouseInputs_Tileset_noAA_11
+  - first:
+      213: 3584788737430926330
+    second: MouseInputs_Tileset_noAA_12
+  - first:
+      213: 256754848202359110
+    second: MouseInputs_Tileset_noAA_13
+  - first:
+      213: 7813676008440779505
+    second: MouseInputs_Tileset_noAA_14
+  - first:
+      213: -6605101306579328255
+    second: MouseInputs_Tileset_noAA_15
+  - first:
+      213: -245071248293807663
+    second: MouseInputs_Tileset_noAA_16
+  - first:
+      213: 4366966878713446401
+    second: MouseInputs_Tileset_noAA_17
+  - first:
+      213: -4728126131319810346
+    second: MouseInputs_Tileset_noAA_18
+  - first:
+      213: 3119480859412882427
+    second: MouseInputs_Tileset_noAA_19
+  - first:
+      213: -958607510475274399
+    second: MouseInputs_Tileset_noAA_20
+  - first:
+      213: -6763093905796626474
+    second: MouseInputs_Tileset_noAA_21
+  - first:
+      213: 8850693881472963507
+    second: MouseInputs_Tileset_noAA_22
+  - first:
+      213: -800364443529152524
+    second: MouseInputs_Tileset_noAA_23
+  - first:
+      213: -7045308035946135091
+    second: MouseInputs_Tileset_noAA_24
+  - first:
+      213: 3597351268228763958
+    second: MouseInputs_Tileset_noAA_25
+  - first:
+      213: -829639136476381335
+    second: MouseInputs_Tileset_noAA_26
+  - first:
+      213: 2198114991120656320
+    second: MouseInputs_Tileset_noAA_27
+  - first:
+      213: -5762306199672741808
+    second: MouseInputs_Tileset_noAA_28
+  - first:
+      213: 1428850621862024143
+    second: MouseInputs_Tileset_noAA_29
+  - first:
+      213: 549364381098507141
+    second: MouseInputs_Tileset_noAA_30
+  - first:
+      213: 8394229694876036910
+    second: MouseInputs_Tileset_noAA_31
+  - first:
+      213: 64162242564186090
+    second: MouseInputs_Tileset_noAA_32
+  - first:
+      213: -6987795907731404462
+    second: MouseInputs_Tileset_noAA_33
+  - first:
+      213: -3453802919727302420
+    second: MouseInputs_Tileset_noAA_34
+  - first:
+      213: 7760093029837022664
+    second: MouseInputs_Tileset_noAA_35
+  - first:
+      213: -6781086910697230517
+    second: MouseInputs_Tileset_noAA_36
+  - first:
+      213: 1322568421621314867
+    second: MouseInputs_Tileset_noAA_37
+  - first:
+      213: -3184562845133780881
+    second: MouseInputs_Tileset_noAA_38
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2560497d178363a40800000000000000
+      internalID: 5347523669148304978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78902264bd064e800800000000000000
+      internalID: 640743541884193159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_2
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79730ed393f5fe930800000000000000
+      internalID: 4174660079051618199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_3
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32c981bee6ad82340800000000000000
+      internalID: 4839357969535114275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_4
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fed3a2c99b0350c0800000000000000
+      internalID: -4588310840336982288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_5
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4916194d1b4e45ca0800000000000000
+      internalID: -6028942548715609708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_6
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3545bba2055f61710800000000000000
+      internalID: 1663786837023085651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_7
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56ae7962d16dee2e0800000000000000
+      internalID: -2094501355990816155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_8
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d724f2c434e605360800000000000000
+      internalID: 7156341043211747965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_9
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12aaef3e068366960800000000000000
+      internalID: 7594819810400053793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_10
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 084ebbd9d9a0f5440800000000000000
+      internalID: 4926668189439091840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_11
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2ddc61eed868970800000000000000
+      internalID: 8756842579192828664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_12
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af334691d5abfb130800000000000000
+      internalID: 3584788737430926330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_13
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64106719c2d209300800000000000000
+      internalID: 256754848202359110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_14
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f2da195ee0cf6c60800000000000000
+      internalID: 7813676008440779505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_15
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103eed36b57f554a0800000000000000
+      internalID: -6605101306579328255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_16
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d939c48ff4599cf0800000000000000
+      internalID: -245071248293807663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_17
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 22
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1008c9f2d359a9c30800000000000000
+      internalID: 4366966878713446401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_18
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 15
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d6d0719552526eb0800000000000000
+      internalID: -4728126131319810346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_19
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 15
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf36fec505f9a4b20800000000000000
+      internalID: 3119480859412882427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_20
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16789135c8752b2f0800000000000000
+      internalID: -958607510475274399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_21
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d70262dce9a422a0800000000000000
+      internalID: -6763093905796626474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_22
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b35be4313bf3da70800000000000000
+      internalID: 8850693881472963507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_23
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f7779477c884e4f0800000000000000
+      internalID: -800364443529152524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_24
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc1c9304ba90a3e90800000000000000
+      internalID: -7045308035946135091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_25
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 631931b3beb5ce130800000000000000
+      internalID: 3597351268228763958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_26
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96f309ad9978c74f0800000000000000
+      internalID: -829639136476381335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c7253530f5418e10800000000000000
+      internalID: 2198114991120656320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_28
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 050a9799a0d2800b0800000000000000
+      internalID: -5762306199672741808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_29
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc39e29f11c44d310800000000000000
+      internalID: 1428850621862024143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_30
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bf0a37efbbf9700800000000000000
+      internalID: 549364381098507141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_31
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2f2f16de6b4e7470800000000000000
+      internalID: 8394229694876036910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_32
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefd70c3833f3e000800000000000000
+      internalID: 64162242564186090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_33
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 259cdb415ac560f90800000000000000
+      internalID: -6987795907731404462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_34
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce872752b80a110d0800000000000000
+      internalID: -3453802919727302420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_35
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 6
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5ab63fe7361bb60800000000000000
+      internalID: 7760093029837022664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_36
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 0
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f27d8e16db4e1a0800000000000000
+      internalID: -6781086910697230517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_37
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33533e1e8f4ba5210800000000000000
+      internalID: 1322568421621314867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MouseInputs_Tileset_noAA_38
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68c4e207f82ec3d0800000000000000
+      internalID: -3184562845133780881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MouseInputs_Tileset_noAA_0: 5347523669148304978
+      MouseInputs_Tileset_noAA_1: 640743541884193159
+      MouseInputs_Tileset_noAA_10: 4926668189439091840
+      MouseInputs_Tileset_noAA_11: 8756842579192828664
+      MouseInputs_Tileset_noAA_12: 3584788737430926330
+      MouseInputs_Tileset_noAA_13: 256754848202359110
+      MouseInputs_Tileset_noAA_14: 7813676008440779505
+      MouseInputs_Tileset_noAA_15: -6605101306579328255
+      MouseInputs_Tileset_noAA_16: -245071248293807663
+      MouseInputs_Tileset_noAA_17: 4366966878713446401
+      MouseInputs_Tileset_noAA_18: -4728126131319810346
+      MouseInputs_Tileset_noAA_19: 3119480859412882427
+      MouseInputs_Tileset_noAA_2: 4174660079051618199
+      MouseInputs_Tileset_noAA_20: -958607510475274399
+      MouseInputs_Tileset_noAA_21: -6763093905796626474
+      MouseInputs_Tileset_noAA_22: 8850693881472963507
+      MouseInputs_Tileset_noAA_23: -800364443529152524
+      MouseInputs_Tileset_noAA_24: -7045308035946135091
+      MouseInputs_Tileset_noAA_25: 3597351268228763958
+      MouseInputs_Tileset_noAA_26: -829639136476381335
+      MouseInputs_Tileset_noAA_27: 2198114991120656320
+      MouseInputs_Tileset_noAA_28: -5762306199672741808
+      MouseInputs_Tileset_noAA_29: 1428850621862024143
+      MouseInputs_Tileset_noAA_3: 4839357969535114275
+      MouseInputs_Tileset_noAA_30: 549364381098507141
+      MouseInputs_Tileset_noAA_31: 8394229694876036910
+      MouseInputs_Tileset_noAA_32: 64162242564186090
+      MouseInputs_Tileset_noAA_33: -6987795907731404462
+      MouseInputs_Tileset_noAA_34: -3453802919727302420
+      MouseInputs_Tileset_noAA_35: 7760093029837022664
+      MouseInputs_Tileset_noAA_36: -6781086910697230517
+      MouseInputs_Tileset_noAA_37: 1322568421621314867
+      MouseInputs_Tileset_noAA_38: -3184562845133780881
+      MouseInputs_Tileset_noAA_4: -4588310840336982288
+      MouseInputs_Tileset_noAA_5: -6028942548715609708
+      MouseInputs_Tileset_noAA_6: 1663786837023085651
+      MouseInputs_Tileset_noAA_7: -2094501355990816155
+      MouseInputs_Tileset_noAA_8: 7156341043211747965
+      MouseInputs_Tileset_noAA_9: 7594819810400053793
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

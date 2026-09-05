@@ -1,0 +1,1652 @@
+fileFormatVersion: 2
+guid: 3dc185bccdbbecf4db278d86abe3019a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7163967458792002335
+    second: Effect_Hyperspeed_1_258x257_0
+  - first:
+      213: 4535472529293965743
+    second: Effect_Hyperspeed_1_258x257_1
+  - first:
+      213: -1279633900581530945
+    second: Effect_Hyperspeed_1_258x257_2
+  - first:
+      213: -2151590126072943107
+    second: Effect_Hyperspeed_1_258x257_3
+  - first:
+      213: 1903041984768164531
+    second: Effect_Hyperspeed_1_258x257_4
+  - first:
+      213: -5037769674114186013
+    second: Effect_Hyperspeed_1_258x257_5
+  - first:
+      213: -5030565007502676036
+    second: Effect_Hyperspeed_1_258x257_6
+  - first:
+      213: 8087585584273439077
+    second: Effect_Hyperspeed_1_258x257_7
+  - first:
+      213: -2881372696247241885
+    second: Effect_Hyperspeed_1_258x257_8
+  - first:
+      213: -5957679268680360751
+    second: Effect_Hyperspeed_1_258x257_9
+  - first:
+      213: -3545363098127739967
+    second: Effect_Hyperspeed_1_258x257_10
+  - first:
+      213: 2623102502256521386
+    second: Effect_Hyperspeed_1_258x257_11
+  - first:
+      213: 1388884999537665733
+    second: Effect_Hyperspeed_1_258x257_12
+  - first:
+      213: -250383249952368522
+    second: Effect_Hyperspeed_1_258x257_13
+  - first:
+      213: -176723734453924194
+    second: Effect_Hyperspeed_1_258x257_14
+  - first:
+      213: -5276652131799489914
+    second: Effect_Hyperspeed_1_258x257_15
+  - first:
+      213: -444013558433086688
+    second: Effect_Hyperspeed_1_258x257_16
+  - first:
+      213: -3414367160073843993
+    second: Effect_Hyperspeed_1_258x257_17
+  - first:
+      213: -6601899800855333029
+    second: Effect_Hyperspeed_1_258x257_18
+  - first:
+      213: 447706594733803418
+    second: Effect_Hyperspeed_1_258x257_19
+  - first:
+      213: 1763569010141911231
+    second: Effect_Hyperspeed_1_258x257_20
+  - first:
+      213: 7693601273122043355
+    second: Effect_Hyperspeed_1_258x257_21
+  - first:
+      213: 6584752712540163272
+    second: Effect_Hyperspeed_1_258x257_22
+  - first:
+      213: -7167114440405870210
+    second: Effect_Hyperspeed_1_258x257_23
+  - first:
+      213: 36248526001830366
+    second: Effect_Hyperspeed_1_258x257_24
+  - first:
+      213: 640801735877544690
+    second: Effect_Hyperspeed_1_258x257_25
+  - first:
+      213: -5038441407546741887
+    second: Effect_Hyperspeed_1_258x257_26
+  - first:
+      213: 1079140602994841566
+    second: Effect_Hyperspeed_1_258x257_27
+  - first:
+      213: 5278703182497588668
+    second: Effect_Hyperspeed_1_258x257_28
+  - first:
+      213: -847459946938146662
+    second: Effect_Hyperspeed_1_258x257_29
+  - first:
+      213: 8025838758242362217
+    second: Effect_Hyperspeed_1_258x257_30
+  - first:
+      213: 2528651010005533124
+    second: Effect_Hyperspeed_1_258x257_31
+  - first:
+      213: 6087749074954746766
+    second: Effect_Hyperspeed_1_258x257_32
+  - first:
+      213: 3341763223534001233
+    second: Effect_Hyperspeed_1_258x257_33
+  - first:
+      213: -8544653493310187608
+    second: Effect_Hyperspeed_1_258x257_34
+  - first:
+      213: -3119104583825616275
+    second: Effect_Hyperspeed_1_258x257_35
+  - first:
+      213: 6931635625945018775
+    second: Effect_Hyperspeed_1_258x257_36
+  - first:
+      213: 6252788254131982215
+    second: Effect_Hyperspeed_1_258x257_37
+  - first:
+      213: 7067052092059584202
+    second: Effect_Hyperspeed_1_258x257_38
+  - first:
+      213: -1802360042434113981
+    second: Effect_Hyperspeed_1_258x257_39
+  - first:
+      213: 2591656826008222901
+    second: Effect_Hyperspeed_1_258x257_40
+  - first:
+      213: 6188004157255527844
+    second: Effect_Hyperspeed_1_258x257_41
+  - first:
+      213: -2206969344762553782
+    second: Effect_Hyperspeed_1_258x257_42
+  - first:
+      213: -3515266123583153978
+    second: Effect_Hyperspeed_1_258x257_43
+  - first:
+      213: 6434830878049484561
+    second: Effect_Hyperspeed_1_258x257_44
+  - first:
+      213: 1640275516457795061
+    second: Effect_Hyperspeed_1_258x257_45
+  - first:
+      213: -1564349893649566086
+    second: Effect_Hyperspeed_1_258x257_46
+  - first:
+      213: -6511592188620320956
+    second: Effect_Hyperspeed_1_258x257_47
+  - first:
+      213: 3312988130193616995
+    second: Effect_Hyperspeed_1_258x257_48
+  - first:
+      213: 4741939692738183851
+    second: Effect_Hyperspeed_1_258x257_49
+  - first:
+      213: -4092102102907163477
+    second: Effect_Hyperspeed_1_258x257_50
+  - first:
+      213: 3143871280494365180
+    second: Effect_Hyperspeed_1_258x257_51
+  - first:
+      213: 3161167526477942148
+    second: Effect_Hyperspeed_1_258x257_52
+  - first:
+      213: 1761869435669385280
+    second: Effect_Hyperspeed_1_258x257_53
+  - first:
+      213: 7221766161746024999
+    second: Effect_Hyperspeed_1_258x257_54
+  - first:
+      213: 7971366737149640081
+    second: Effect_Hyperspeed_1_258x257_55
+  - first:
+      213: 1110366842150005546
+    second: Effect_Hyperspeed_1_258x257_56
+  - first:
+      213: -2347482852682827110
+    second: Effect_Hyperspeed_1_258x257_57
+  - first:
+      213: 5189106873242118683
+    second: Effect_Hyperspeed_1_258x257_58
+  - first:
+      213: 1595860330298521343
+    second: Effect_Hyperspeed_1_258x257_59
+  - first:
+      213: -1120462500943703989
+    second: Effect_Hyperspeed_1_258x257_60
+  - first:
+      213: 2755250978352828821
+    second: Effect_Hyperspeed_1_258x257_61
+  - first:
+      213: -1263108227392445489
+    second: Effect_Hyperspeed_1_258x257_62
+  - first:
+      213: 1448274684465295728
+    second: Effect_Hyperspeed_1_258x257_63
+  - first:
+      213: 4827507278662656365
+    second: Effect_Hyperspeed_1_258x257_64
+  - first:
+      213: -5636741861614118764
+    second: Effect_Hyperspeed_1_258x257_65
+  - first:
+      213: 5551622820460178506
+    second: Effect_Hyperspeed_1_258x257_66
+  - first:
+      213: -8267181958553585053
+    second: Effect_Hyperspeed_1_258x257_67
+  - first:
+      213: -6488655523706573829
+    second: Effect_Hyperspeed_1_258x257_68
+  - first:
+      213: 182541121300184688
+    second: Effect_Hyperspeed_1_258x257_69
+  - first:
+      213: 5790592139963999330
+    second: Effect_Hyperspeed_1_258x257_70
+  - first:
+      213: 267720577600366059
+    second: Effect_Hyperspeed_1_258x257_71
+  - first:
+      213: 879873564494088305
+    second: Effect_Hyperspeed_1_258x257_72
+  - first:
+      213: 4969807517960246455
+    second: Effect_Hyperspeed_1_258x257_73
+  - first:
+      213: 8729241629771552661
+    second: Effect_Hyperspeed_1_258x257_74
+  - first:
+      213: 2921850974654115717
+    second: Effect_Hyperspeed_1_258x257_75
+  - first:
+      213: -1781168301185562216
+    second: Effect_Hyperspeed_1_258x257_76
+  - first:
+      213: 1920806050752968288
+    second: Effect_Hyperspeed_1_258x257_77
+  - first:
+      213: 512038507507911086
+    second: Effect_Hyperspeed_1_258x257_78
+  - first:
+      213: -2082699883857848755
+    second: Effect_Hyperspeed_1_258x257_79
+  - first:
+      213: 2654279564998201944
+    second: Effect_Hyperspeed_1_258x257_80
+  - first:
+      213: 403599658957528119
+    second: Effect_Hyperspeed_1_258x257_81
+  - first:
+      213: -7209048809623223760
+    second: Effect_Hyperspeed_1_258x257_82
+  - first:
+      213: -3564245394208946257
+    second: Effect_Hyperspeed_1_258x257_83
+  - first:
+      213: -494381988252676903
+    second: Effect_Hyperspeed_1_258x257_84
+  - first:
+      213: -3266011439132745578
+    second: Effect_Hyperspeed_1_258x257_85
+  - first:
+      213: -2764556150943980330
+    second: Effect_Hyperspeed_1_258x257_86
+  - first:
+      213: -3064387333937018100
+    second: Effect_Hyperspeed_1_258x257_87
+  - first:
+      213: -8207345761566711551
+    second: Effect_Hyperspeed_1_258x257_88
+  - first:
+      213: 1609914408878764880
+    second: Effect_Hyperspeed_1_258x257_89
+  - first:
+      213: -4330910624535965932
+    second: Effect_Hyperspeed_1_258x257_90
+  - first:
+      213: 6920065892299545149
+    second: Effect_Hyperspeed_1_258x257_91
+  - first:
+      213: -8257724380742476078
+    second: Effect_Hyperspeed_1_258x257_92
+  - first:
+      213: 1512360963265002630
+    second: Effect_Hyperspeed_1_258x257_93
+  - first:
+      213: -3698700891521422738
+    second: Effect_Hyperspeed_1_258x257_94
+  - first:
+      213: -5979770894965952576
+    second: Effect_Hyperspeed_1_258x257_95
+  - first:
+      213: -4655149382472770181
+    second: Effect_Hyperspeed_1_258x257_96
+  - first:
+      213: 3800411301633576283
+    second: Effect_Hyperspeed_1_258x257_97
+  - first:
+      213: -6307624502321859159
+    second: Effect_Hyperspeed_1_258x257_98
+  - first:
+      213: -3295941972471949812
+    second: Effect_Hyperspeed_1_258x257_99
+  - first:
+      213: -1950512924126044385
+    second: Effect_Hyperspeed_1_258x257_100
+  - first:
+      213: 7453652471715340183
+    second: Effect_Hyperspeed_1_258x257_101
+  - first:
+      213: 984084656877480642
+    second: Effect_Hyperspeed_1_258x257_102
+  - first:
+      213: -539491146683122328
+    second: Effect_Hyperspeed_1_258x257_103
+  - first:
+      213: 3462497999126365119
+    second: Effect_Hyperspeed_1_258x257_104
+  - first:
+      213: -727405964830867272
+    second: Effect_Hyperspeed_1_258x257_105
+  - first:
+      213: 2456582306752711018
+    second: Effect_Hyperspeed_1_258x257_106
+  - first:
+      213: 917360568202196997
+    second: Effect_Hyperspeed_1_258x257_107
+  - first:
+      213: 645534606358487630
+    second: Effect_Hyperspeed_1_258x257_108
+  - first:
+      213: -9108941439365373112
+    second: Effect_Hyperspeed_1_258x257_109
+  - first:
+      213: 1404501808566858306
+    second: Effect_Hyperspeed_1_258x257_110
+  - first:
+      213: -2353348527783520571
+    second: Effect_Hyperspeed_1_258x257_111
+  - first:
+      213: -5780339831526082115
+    second: Effect_Hyperspeed_1_258x257_112
+  - first:
+      213: 6041815195964108794
+    second: Effect_Hyperspeed_1_258x257_113
+  - first:
+      213: -7723514266370099015
+    second: Effect_Hyperspeed_1_258x257_114
+  - first:
+      213: 4569720774941670304
+    second: Effect_Hyperspeed_1_258x257_115
+  - first:
+      213: 8791148909935841179
+    second: Effect_Hyperspeed_1_258x257_116
+  - first:
+      213: 8699609388186621472
+    second: Effect_Hyperspeed_1_258x257_117
+  - first:
+      213: 3007555504614819261
+    second: Effect_Hyperspeed_1_258x257_118
+  - first:
+      213: 2190335324019108966
+    second: Effect_Hyperspeed_1_258x257_119
+  - first:
+      213: 5711973183491406407
+    second: Effect_Hyperspeed_1_258x257_120
+  - first:
+      213: 271606064276994872
+    second: Effect_Hyperspeed_1_258x257_121
+  - first:
+      213: -8885082898154934596
+    second: Effect_Hyperspeed_1_258x257_122
+  - first:
+      213: -6173348959420398607
+    second: Effect_Hyperspeed_1_258x257_123
+  - first:
+      213: 3204646590851159901
+    second: Effect_Hyperspeed_1_258x257_124
+  - first:
+      213: 65918864561091104
+    second: Effect_Hyperspeed_1_258x257_125
+  - first:
+      213: 1607076873157142942
+    second: Effect_Hyperspeed_1_258x257_126
+  - first:
+      213: -8213886854943455750
+    second: Effect_Hyperspeed_1_258x257_127
+  - first:
+      213: 150259468038144438
+    second: Effect_Hyperspeed_1_258x257_128
+  - first:
+      213: -8872892510561254067
+    second: Effect_Hyperspeed_1_258x257_129
+  - first:
+      213: 9041230232924637955
+    second: Effect_Hyperspeed_1_258x257_130
+  - first:
+      213: 8179181542257138831
+    second: Effect_Hyperspeed_1_258x257_131
+  - first:
+      213: -3312155110728520042
+    second: Effect_Hyperspeed_1_258x257_132
+  - first:
+      213: 8508870541576516628
+    second: Effect_Hyperspeed_1_258x257_133
+  - first:
+      213: -7725963625231000413
+    second: Effect_Hyperspeed_1_258x257_134
+  - first:
+      213: 257411917671556789
+    second: Effect_Hyperspeed_1_258x257_135
+  - first:
+      213: 4241267434466208562
+    second: Effect_Hyperspeed_1_258x257_136
+  - first:
+      213: -2570428177101016408
+    second: Effect_Hyperspeed_1_258x257_137
+  - first:
+      213: 3819806161113176272
+    second: Effect_Hyperspeed_1_258x257_138
+  - first:
+      213: 2238980773440222145
+    second: Effect_Hyperspeed_1_258x257_139
+  - first:
+      213: -1597068645831063003
+    second: Effect_Hyperspeed_1_258x257_140
+  - first:
+      213: 3289377708091780889
+    second: Effect_Hyperspeed_1_258x257_141
+  - first:
+      213: 8398041578397262197
+    second: Effect_Hyperspeed_1_258x257_142
+  - first:
+      213: 8328795081420544604
+    second: Effect_Hyperspeed_1_258x257_143
+  - first:
+      213: 8375203764543050046
+    second: Effect_Hyperspeed_1_258x257_144
+  - first:
+      213: -4235520586230211176
+    second: Effect_Hyperspeed_1_258x257_145
+  - first:
+      213: 8296930188273202659
+    second: Effect_Hyperspeed_1_258x257_146
+  - first:
+      213: -7907111302387725252
+    second: Effect_Hyperspeed_1_258x257_147
+  - first:
+      213: 2539806999993600319
+    second: Effect_Hyperspeed_1_258x257_148
+  - first:
+      213: 7753314626962755920
+    second: Effect_Hyperspeed_1_258x257_149
+  - first:
+      213: -3964068025691440467
+    second: Effect_Hyperspeed_1_258x257_150
+  - first:
+      213: -8302391746562021489
+    second: Effect_Hyperspeed_1_258x257_151
+  - first:
+      213: 1006958974741860393
+    second: Effect_Hyperspeed_1_258x257_152
+  - first:
+      213: 8300230316219745384
+    second: Effect_Hyperspeed_1_258x257_153
+  - first:
+      213: -8262804692938652729
+    second: Effect_Hyperspeed_1_258x257_154
+  - first:
+      213: 2993513554463903184
+    second: Effect_Hyperspeed_1_258x257_155
+  - first:
+      213: -5379333738987234651
+    second: Effect_Hyperspeed_1_258x257_156
+  - first:
+      213: -1515696386975937563
+    second: Effect_Hyperspeed_1_258x257_157
+  - first:
+      213: -5853902337040489973
+    second: Effect_Hyperspeed_1_258x257_158
+  - first:
+      213: -2715311618389303000
+    second: Effect_Hyperspeed_1_258x257_159
+  - first:
+      213: 3734555234394648647
+    second: Effect_Hyperspeed_1_258x257_160
+  - first:
+      213: 8906775939686325317
+    second: Effect_Hyperspeed_1_258x257_161
+  - first:
+      213: 4000790266484141383
+    second: Effect_Hyperspeed_1_258x257_162
+  - first:
+      213: -1861198623187623800
+    second: Effect_Hyperspeed_1_258x257_163
+  - first:
+      213: 5456081392447366857
+    second: Effect_Hyperspeed_1_258x257_164
+  - first:
+      213: 3997992793762931548
+    second: Effect_Hyperspeed_1_258x257_165
+  - first:
+      213: 8504780294993666733
+    second: Effect_Hyperspeed_1_258x257_166
+  - first:
+      213: 4891592439864276929
+    second: Effect_Hyperspeed_1_258x257_167
+  - first:
+      213: 6613133269117533896
+    second: Effect_Hyperspeed_1_258x257_168
+  - first:
+      213: 1144332117938668761
+    second: Effect_Hyperspeed_1_258x257_169
+  - first:
+      213: -8945202184073497900
+    second: Effect_Hyperspeed_1_258x257_170
+  - first:
+      213: -1097371380293691331
+    second: Effect_Hyperspeed_1_258x257_171
+  - first:
+      213: -5578118205000650298
+    second: Effect_Hyperspeed_1_258x257_172
+  - first:
+      213: -4085829456730676309
+    second: Effect_Hyperspeed_1_258x257_173
+  - first:
+      213: 6701466262401471529
+    second: Effect_Hyperspeed_1_258x257_174
+  - first:
+      213: -2763199424341455666
+    second: Effect_Hyperspeed_1_258x257_175
+  - first:
+      213: 5851521862235158359
+    second: Effect_Hyperspeed_1_258x257_176
+  - first:
+      213: -7385686700231840231
+    second: Effect_Hyperspeed_1_258x257_177
+  - first:
+      213: -5833431985820513633
+    second: Effect_Hyperspeed_1_258x257_178
+  - first:
+      213: 3074730406850625585
+    second: Effect_Hyperspeed_1_258x257_179
+  - first:
+      213: -8768304322834101211
+    second: Effect_Hyperspeed_1_258x257_180
+  - first:
+      213: 1692812634686124358
+    second: Effect_Hyperspeed_1_258x257_181
+  - first:
+      213: 6669427575604974084
+    second: Effect_Hyperspeed_1_258x257_182
+  - first:
+      213: -2655910971915345624
+    second: Effect_Hyperspeed_1_258x257_183
+  - first:
+      213: 9080279093250953739
+    second: Effect_Hyperspeed_1_258x257_184
+  - first:
+      213: -3850392163929257435
+    second: Effect_Hyperspeed_1_258x257_185
+  - first:
+      213: -3823425560567004130
+    second: Effect_Hyperspeed_1_258x257_186
+  - first:
+      213: -8137803409634881923
+    second: Effect_Hyperspeed_1_258x257_187
+  - first:
+      213: -7710063750347208502
+    second: Effect_Hyperspeed_1_258x257_188
+  - first:
+      213: -2789399328819041374
+    second: Effect_Hyperspeed_1_258x257_189
+  - first:
+      213: -5093808317540469739
+    second: Effect_Hyperspeed_1_258x257_190
+  - first:
+      213: 8398906496544832020
+    second: Effect_Hyperspeed_1_258x257_191
+  - first:
+      213: -5458202193386179152
+    second: Effect_Hyperspeed_1_258x257_192
+  - first:
+      213: 5550914061980034093
+    second: Effect_Hyperspeed_1_258x257_193
+  - first:
+      213: 2409090569500358211
+    second: Effect_Hyperspeed_1_258x257_194
+  - first:
+      213: -4814254093040841814
+    second: Effect_Hyperspeed_1_258x257_195
+  - first:
+      213: 7030908095160888015
+    second: Effect_Hyperspeed_1_258x257_196
+  - first:
+      213: -1937153130971688147
+    second: Effect_Hyperspeed_1_258x257_197
+  - first:
+      213: 2129682966300221421
+    second: Effect_Hyperspeed_1_258x257_198
+  - first:
+      213: -2264040112266990707
+    second: Effect_Hyperspeed_1_258x257_199
+  - first:
+      213: 1911884245254744819
+    second: Effect_Hyperspeed_1_258x257_200
+  - first:
+      213: -417145813179282837
+    second: Effect_Hyperspeed_1_258x257_201
+  - first:
+      213: -18718549589170458
+    second: Effect_Hyperspeed_1_258x257_202
+  - first:
+      213: -6510255675301024302
+    second: Effect_Hyperspeed_1_258x257_203
+  - first:
+      213: 9049285748032706680
+    second: Effect_Hyperspeed_1_258x257_204
+  - first:
+      213: -2801964818194719144
+    second: Effect_Hyperspeed_1_258x257_205
+  - first:
+      213: 6177797096909478205
+    second: Effect_Hyperspeed_1_258x257_206
+  - first:
+      213: 8108113125724956105
+    second: Effect_Hyperspeed_1_258x257_207
+  - first:
+      213: 888074478884460638
+    second: Effect_Hyperspeed_1_258x257_208
+  - first:
+      213: -2942288079774853714
+    second: Effect_Hyperspeed_1_258x257_209
+  - first:
+      213: 7295410698772886794
+    second: Effect_Hyperspeed_1_258x257_210
+  - first:
+      213: 1271274376627825326
+    second: Effect_Hyperspeed_1_258x257_211
+  - first:
+      213: 7479577291496977111
+    second: Effect_Hyperspeed_1_258x257_212
+  - first:
+      213: 771942631261183394
+    second: Effect_Hyperspeed_1_258x257_213
+  - first:
+      213: -1117878816581323886
+    second: Effect_Hyperspeed_1_258x257_214
+  - first:
+      213: -3507931875073962064
+    second: Effect_Hyperspeed_1_258x257_215
+  - first:
+      213: 6471745554610359311
+    second: Effect_Hyperspeed_1_258x257_216
+  - first:
+      213: 2455167031632365331
+    second: Effect_Hyperspeed_1_258x257_217
+  - first:
+      213: 7085256014486848838
+    second: Effect_Hyperspeed_1_258x257_218
+  - first:
+      213: 1227556592006869005
+    second: Effect_Hyperspeed_1_258x257_219
+  - first:
+      213: -5418476521406723123
+    second: Effect_Hyperspeed_1_258x257_220
+  - first:
+      213: -334570451147649495
+    second: Effect_Hyperspeed_1_258x257_221
+  - first:
+      213: 3922439539512798839
+    second: Effect_Hyperspeed_1_258x257_222
+  - first:
+      213: 5717501566519165079
+    second: Effect_Hyperspeed_1_258x257_223
+  - first:
+      213: 4375886693397501501
+    second: Effect_Hyperspeed_1_258x257_224
+  - first:
+      213: -5679926961667502677
+    second: Effect_Hyperspeed_1_258x257_225
+  - first:
+      213: 4555563839987691262
+    second: Effect_Hyperspeed_1_258x257_226
+  - first:
+      213: -1207277490141551542
+    second: Effect_Hyperspeed_1_258x257_227
+  - first:
+      213: 3489250822870803531
+    second: Effect_Hyperspeed_1_258x257_228
+  - first:
+      213: 1453423554095473915
+    second: Effect_Hyperspeed_1_258x257_229
+  - first:
+      213: 8307460484112756582
+    second: Effect_Hyperspeed_1_258x257_230
+  - first:
+      213: -1559880680766627769
+    second: Effect_Hyperspeed_1_258x257_231
+  - first:
+      213: 5932884869476140694
+    second: Effect_Hyperspeed_1_258x257_232
+  - first:
+      213: 5588170687650317847
+    second: Effect_Hyperspeed_1_258x257_233
+  - first:
+      213: -5783819501515956201
+    second: Effect_Hyperspeed_1_258x257_234
+  - first:
+      213: 8273068948640775552
+    second: Effect_Hyperspeed_1_258x257_235
+  - first:
+      213: 7587429591794349304
+    second: Effect_Hyperspeed_1_258x257_236
+  - first:
+      213: 8726205676479669948
+    second: Effect_Hyperspeed_1_258x257_237
+  - first:
+      213: 8654552015889806925
+    second: Effect_Hyperspeed_1_258x257_238
+  - first:
+      213: 6486473530948699193
+    second: Effect_Hyperspeed_1_258x257_239
+  - first:
+      213: -8441422894263882699
+    second: Effect_Hyperspeed_1_258x257_240
+  - first:
+      213: 6591967345450197542
+    second: Effect_Hyperspeed_1_258x257_241
+  - first:
+      213: -8746513750576014886
+    second: Effect_Hyperspeed_1_258x257_242
+  - first:
+      213: 1625115663047812088
+    second: Effect_Hyperspeed_1_258x257_243
+  - first:
+      213: -4044648804304140326
+    second: Effect_Hyperspeed_1_258x257_244
+  - first:
+      213: 8096074479561499095
+    second: Effect_Hyperspeed_1_258x257_245
+  - first:
+      213: 8567346134757419469
+    second: Effect_Hyperspeed_1_258x257_246
+  - first:
+      213: 6134204315707453909
+    second: Effect_Hyperspeed_1_258x257_247
+  - first:
+      213: -8255530296113900720
+    second: Effect_Hyperspeed_1_258x257_248
+  - first:
+      213: 887071752406378686
+    second: Effect_Hyperspeed_1_258x257_249
+  - first:
+      213: 8124981546494613553
+    second: Effect_Hyperspeed_1_258x257_250
+  - first:
+      213: 4030463137156004699
+    second: Effect_Hyperspeed_1_258x257_251
+  - first:
+      213: -2045794644287819538
+    second: Effect_Hyperspeed_1_258x257_252
+  - first:
+      213: 3962603960026768532
+    second: Effect_Hyperspeed_1_258x257_253
+  - first:
+      213: -5174360148349849373
+    second: Effect_Hyperspeed_1_258x257_254
+  - first:
+      213: 6173818196807028348
+    second: Effect_Hyperspeed_1_258x257_255
+  - first:
+      213: 1611231349857500972
+    second: Effect_Hyperspeed_1_258x257_256
+  - first:
+      213: 884541623651040485
+    second: Effect_Hyperspeed_1_258x257_257
+  - first:
+      213: 7751873854515116436
+    second: Effect_Hyperspeed_1_258x257_258
+  - first:
+      213: 6046258492972895880
+    second: Effect_Hyperspeed_1_258x257_259
+  - first:
+      213: 4031411380681010818
+    second: Effect_Hyperspeed_1_258x257_260
+  - first:
+      213: -5015463542239905777
+    second: Effect_Hyperspeed_1_258x257_261
+  - first:
+      213: 3640860919106582722
+    second: Effect_Hyperspeed_1_258x257_262
+  - first:
+      213: -2202410051469736220
+    second: Effect_Hyperspeed_1_258x257_263
+  - first:
+      213: 4806562670759807799
+    second: Effect_Hyperspeed_1_258x257_264
+  - first:
+      213: -7814674102581572807
+    second: Effect_Hyperspeed_1_258x257_265
+  - first:
+      213: 8069217022898449084
+    second: Effect_Hyperspeed_1_258x257_266
+  - first:
+      213: 53338351906359783
+    second: Effect_Hyperspeed_1_258x257_267
+  - first:
+      213: -2111289665072027593
+    second: Effect_Hyperspeed_1_258x257_268
+  - first:
+      213: 1059877238358156267
+    second: Effect_Hyperspeed_1_258x257_269
+  - first:
+      213: 9081529601443340338
+    second: Effect_Hyperspeed_1_258x257_270
+  - first:
+      213: -5652790784314719237
+    second: Effect_Hyperspeed_1_258x257_271
+  - first:
+      213: 2205470445597197577
+    second: Effect_Hyperspeed_1_258x257_272
+  - first:
+      213: -3433743076761663311
+    second: Effect_Hyperspeed_1_258x257_273
+  - first:
+      213: 3876124497070523968
+    second: Effect_Hyperspeed_1_258x257_274
+  - first:
+      213: -2721983464740954866
+    second: Effect_Hyperspeed_1_258x257_275
+  - first:
+      213: 387463343505173450
+    second: Effect_Hyperspeed_1_258x257_276
+  - first:
+      213: -5169665324843833169
+    second: Effect_Hyperspeed_1_258x257_277
+  - first:
+      213: 285961039145876895
+    second: Effect_Hyperspeed_1_258x257_278
+  - first:
+      213: -2764949055882155823
+    second: Effect_Hyperspeed_1_258x257_279
+  - first:
+      213: -3028279381987556190
+    second: Effect_Hyperspeed_1_258x257_280
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecae347d89749c90800000000000000
+      internalID: -7163967458792002335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_1
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa9fb154c3c31fe30800000000000000
+      internalID: 4535472529293965743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb25a494fb3dd3ee0800000000000000
+      internalID: -1279633900581530945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_3
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfd2f211e240422e0800000000000000
+      internalID: -2151590126072943107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_4
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2c2c63a96f86a10800000000000000
+      internalID: 1903041984768164531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_5
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 1028
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e440323c2f361ab0800000000000000
+      internalID: -5037769674114186013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbfea4c57c7df2ab0800000000000000
+      internalID: -5030565007502676036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_7
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56930313d30ec3070800000000000000
+      internalID: 8087585584273439077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_8
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3637ca68cce4308d0800000000000000
+      internalID: -2881372696247241885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_9
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc19903542125da0800000000000000
+      internalID: -5957679268680360751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_10
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c35150eb075ccec0800000000000000
+      internalID: -3545363098127739967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_11
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 771
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa03078f3d1276420800000000000000
+      internalID: 2623102502256521386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6af476c8f464310800000000000000
+      internalID: 1388884999537665733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_13
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67891e0c2c5768cf0800000000000000
+      internalID: -250383249952368522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_14
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9e4e7823b62c8df0800000000000000
+      internalID: -176723734453924194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_15
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682a8c0d7d095c6b0800000000000000
+      internalID: -5276652131799489914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_16
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0238326650c86d9f0800000000000000
+      internalID: -444013558433086688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_17
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 514
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ea0a03782bbd90d0800000000000000
+      internalID: -3414367160073843993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b57bb470c175164a0800000000000000
+      internalID: -6601899800855333029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_19
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9745be96c2963600800000000000000
+      internalID: 447706594733803418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_20
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb85562cba4797810800000000000000
+      internalID: 1763569010141911231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_21
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5beef689925ca60800000000000000
+      internalID: 7693601273122043355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_22
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cc0fbc54bdb16b50800000000000000
+      internalID: 6584752712540163272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_23
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 257
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e791903b36b498c90800000000000000
+      internalID: -7167114440405870210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed978f3a7d7c08000800000000000000
+      internalID: 36248526001830366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_25
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fa4f6e98c594e800800000000000000
+      internalID: 640801735877544690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_26
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18bae811c3cd31ab0800000000000000
+      internalID: -5038441407546741887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_27
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed7553039a0e9fe00800000000000000
+      internalID: 1079140602994841566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_28
+      rect:
+        serializedVersion: 2
+        x: 1032
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb52e73a398b14940800000000000000
+      internalID: 5278703182497588668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Effect_Hyperspeed_1_258x257_29
+      rect:
+        serializedVersion: 2
+        x: 1290
+        y: 0
+        width: 258
+        height: 257
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9061651ba73d34f0800000000000000
+      internalID: -847459946938146662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c9a132e17f1836740bc80ff89daf4c0b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":258.0,"y":257.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Effect_Hyperspeed_1_258x257_0: -7163967458792002335
+      Effect_Hyperspeed_1_258x257_1: 4535472529293965743
+      Effect_Hyperspeed_1_258x257_10: -3545363098127739967
+      Effect_Hyperspeed_1_258x257_11: 2623102502256521386
+      Effect_Hyperspeed_1_258x257_12: 1388884999537665733
+      Effect_Hyperspeed_1_258x257_13: -250383249952368522
+      Effect_Hyperspeed_1_258x257_14: -176723734453924194
+      Effect_Hyperspeed_1_258x257_15: -5276652131799489914
+      Effect_Hyperspeed_1_258x257_16: -444013558433086688
+      Effect_Hyperspeed_1_258x257_17: -3414367160073843993
+      Effect_Hyperspeed_1_258x257_18: -6601899800855333029
+      Effect_Hyperspeed_1_258x257_19: 447706594733803418
+      Effect_Hyperspeed_1_258x257_2: -1279633900581530945
+      Effect_Hyperspeed_1_258x257_20: 1763569010141911231
+      Effect_Hyperspeed_1_258x257_21: 7693601273122043355
+      Effect_Hyperspeed_1_258x257_22: 6584752712540163272
+      Effect_Hyperspeed_1_258x257_23: -7167114440405870210
+      Effect_Hyperspeed_1_258x257_24: 36248526001830366
+      Effect_Hyperspeed_1_258x257_25: 640801735877544690
+      Effect_Hyperspeed_1_258x257_26: -5038441407546741887
+      Effect_Hyperspeed_1_258x257_27: 1079140602994841566
+      Effect_Hyperspeed_1_258x257_28: 5278703182497588668
+      Effect_Hyperspeed_1_258x257_29: -847459946938146662
+      Effect_Hyperspeed_1_258x257_3: -2151590126072943107
+      Effect_Hyperspeed_1_258x257_4: 1903041984768164531
+      Effect_Hyperspeed_1_258x257_5: -5037769674114186013
+      Effect_Hyperspeed_1_258x257_6: -5030565007502676036
+      Effect_Hyperspeed_1_258x257_7: 8087585584273439077
+      Effect_Hyperspeed_1_258x257_8: -2881372696247241885
+      Effect_Hyperspeed_1_258x257_9: -5957679268680360751
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

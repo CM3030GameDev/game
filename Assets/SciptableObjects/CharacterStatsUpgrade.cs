@@ -15,6 +15,34 @@ public class CharacterStatsUpgrade : Upgrade
         return ctx.statLevels != null && ctx.statLevels.CanOffer(this);
     }
 
+    // Names the weapon this stat evolves, and flags when that weapon is already maxed.
+    public override string GetComboText(UpgradeContext ctx)
+    {
+        SecondaryWeaponData partner = Partner(ctx, out SecondaryWeapon owned);
+        if (partner == null) return null;
+
+        bool weaponMaxed = owned != null && owned.IsMaxLevel;
+        return ComboLine(partner.weaponName, weaponMaxed);
+    }
+
+    public override Sprite GetComboIcon(UpgradeContext ctx)
+    {
+        SecondaryWeaponData partner = Partner(ctx, out _);
+        return partner != null ? partner.icon : null;
+    }
+
+    private SecondaryWeaponData Partner(UpgradeContext ctx, out SecondaryWeapon owned)
+    {
+        owned = null;
+        if (ctx.statPartners == null) return null;
+        if (!ctx.statPartners.TryGetValue(this, out SecondaryWeaponData partner)) return null;
+
+        owned = ctx.slots != null ? ctx.slots.Find(partner) : null;
+        if (owned != null && owned.IsCombined) return null;   // already evolved, nothing left to hint
+
+        return partner;
+    }
+
     public override void Apply(UpgradeContext ctx)
     {
         int newLevel = ctx.statLevels.Increment(this);
