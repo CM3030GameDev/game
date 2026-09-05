@@ -1,11 +1,31 @@
 Final Boss By: Elthen (https://elthen.itch.io/)
 
-Boss_Missile By: diggy (https://opengameart.org/users/diggy)
+Missile By: diggy (https://opengameart.org/users/diggy)
 
-Missile_Explosion By: ansimuz (https://ansimuz.itch.io/)
+AoE_Explosion By: unTied Games(https://untiedgames.itch.io/)
 
 Drone By: Vivicat (https://vivicat.itch.io/)
 
 Suction By: Julien (https://opengameart.org/users/julien)
 
-Air_Blast By: Cethiel (https://opengameart.org/users/cethiel)
+Shockwave By: EmiEmiGames (https://emiemigames.itch.io/)
+
+Ground_Smash By: nerijs (https://nerijs.itch.io/)
+
+Ground_Impact By: unTied Games (https://untiedgames.itch.io/)
+
+Fire Cannon By: a_klingon (https://aklingon.itch.io/)
+
+Fire Attack By: pimen (https://pimen.itch.io/)
+
+Missile_Explosion By: ansimuz (https://ansimuz.itch.io/)
+
+Lightning_Bolt By: ansimuz (https://ansimuz.itch.io/)
+
+AirBlast By: Cethiel (https://opengameart.org/users/cethiel)
+
+Barrier By: GameProgrammingSlave (https://opengameart.org/users/gameprogrammingslave)
+
+Target By: Learn GameMaker (https://learngamemaker.itch.io/)
+
+Fog By: LFA (https://opengameart.org/users/lfa)

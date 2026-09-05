@@ -1,0 +1,999 @@
+fileFormatVersion: 2
+guid: f97967733bab02a48855b0dc7a24d7aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1400715978648558217
+    second: AoE_Explosion_0
+  - first:
+      213: -4093120329731075863
+    second: AoE_Explosion_1
+  - first:
+      213: -4951359747659051681
+    second: AoE_Explosion_2
+  - first:
+      213: 4955744227764635090
+    second: AoE_Explosion_3
+  - first:
+      213: 7796013149778832263
+    second: AoE_Explosion_4
+  - first:
+      213: 4888202643826623667
+    second: AoE_Explosion_5
+  - first:
+      213: -2680608650574498873
+    second: AoE_Explosion_6
+  - first:
+      213: 7217853490195610103
+    second: AoE_Explosion_7
+  - first:
+      213: -332983155763715107
+    second: AoE_Explosion_8
+  - first:
+      213: -5375742229251686302
+    second: AoE_Explosion_9
+  - first:
+      213: -7977840383274997968
+    second: AoE_Explosion_10
+  - first:
+      213: -6142073867633542775
+    second: AoE_Explosion_11
+  - first:
+      213: 1129508776804565336
+    second: AoE_Explosion_12
+  - first:
+      213: -4428474793234501316
+    second: AoE_Explosion_13
+  - first:
+      213: -8560152833856532996
+    second: AoE_Explosion_14
+  - first:
+      213: -7367224906751495815
+    second: AoE_Explosion_15
+  - first:
+      213: -5625327867583871123
+    second: AoE_Explosion_16
+  - first:
+      213: 4172090773608719944
+    second: AoE_Explosion_17
+  - first:
+      213: 999639957140221109
+    second: AoE_Explosion_18
+  - first:
+      213: 4345386168375526610
+    second: AoE_Explosion_19
+  - first:
+      213: -5748445743015895872
+    second: AoE_Explosion_20
+  - first:
+      213: -8885378186594210207
+    second: AoE_Explosion_21
+  - first:
+      213: -976402173450508499
+    second: AoE_Explosion_22
+  - first:
+      213: 4029729029673468633
+    second: AoE_Explosion_23
+  - first:
+      213: 8234883501111842929
+    second: AoE_Explosion_24
+  - first:
+      213: -1615307306304196632
+    second: AoE_Explosion_25
+  - first:
+      213: -6082261154249951204
+    second: AoE_Explosion_26
+  - first:
+      213: 579083968657230508
+    second: AoE_Explosion_27
+  - first:
+      213: -8679893732787249637
+    second: AoE_Explosion_28
+  - first:
+      213: -2886927982051865643
+    second: AoE_Explosion_29
+  - first:
+      213: 7392328513902145607
+    second: AoE_Explosion_30
+  - first:
+      213: 9122918804969267447
+    second: AoE_Explosion_31
+  - first:
+      213: -5795021435586470426
+    second: AoE_Explosion_32
+  - first:
+      213: -8371715260409376803
+    second: AoE_Explosion_33
+  - first:
+      213: 2460051792939913266
+    second: AoE_Explosion_34
+  - first:
+      213: 5673640431101079369
+    second: AoE_Explosion_35
+  - first:
+      213: 7679077466516595056
+    second: AoE_Explosion_36
+  - first:
+      213: -5876515779167453778
+    second: AoE_Explosion_37
+  - first:
+      213: 7600964056623542022
+    second: AoE_Explosion_38
+  - first:
+      213: 37352446369380791
+    second: AoE_Explosion_39
+  - first:
+      213: -4924288977060492297
+    second: AoE_Explosion_40
+  - first:
+      213: -8033555490704891718
+    second: AoE_Explosion_41
+  - first:
+      213: -7652711135446569995
+    second: AoE_Explosion_42
+  - first:
+      213: 7101606791567682416
+    second: AoE_Explosion_43
+  - first:
+      213: -168090180155649097
+    second: AoE_Explosion_44
+  - first:
+      213: 3726945558534421909
+    second: AoE_Explosion_45
+  - first:
+      213: 7372903497459231838
+    second: AoE_Explosion_46
+  - first:
+      213: -1995740823725192063
+    second: AoE_Explosion_47
+  - first:
+      213: -8065332504510030322
+    second: AoE_Explosion_48
+  - first:
+      213: 3296682457301972340
+    second: AoE_Explosion_49
+  - first:
+      213: 2799191163169004743
+    second: AoE_Explosion_50
+  - first:
+      213: -4959175891593708591
+    second: AoE_Explosion_51
+  - first:
+      213: 2518967431480235800
+    second: AoE_Explosion_52
+  - first:
+      213: -4616681375215700767
+    second: AoE_Explosion_53
+  - first:
+      213: 8029111701430129915
+    second: AoE_Explosion_54
+  - first:
+      213: -4081142159746665487
+    second: AoE_Explosion_55
+  - first:
+      213: -4217598099109469351
+    second: AoE_Explosion_56
+  - first:
+      213: 3928527788632305199
+    second: AoE_Explosion_57
+  - first:
+      213: -8671558687121492914
+    second: AoE_Explosion_58
+  - first:
+      213: 6657423701900742164
+    second: AoE_Explosion_59
+  - first:
+      213: -1924715218201231550
+    second: AoE_Explosion_60
+  - first:
+      213: -8761095909128140384
+    second: AoE_Explosion_61
+  - first:
+      213: -6227256678266085805
+    second: AoE_Explosion_62
+  - first:
+      213: 9125005374872693057
+    second: AoE_Explosion_63
+  - first:
+      213: 2205065627560441909
+    second: AoE_Explosion_64
+  - first:
+      213: -5663685906038289327
+    second: AoE_Explosion_65
+  - first:
+      213: 8700679871528484752
+    second: AoE_Explosion_66
+  - first:
+      213: 804417509577627706
+    second: AoE_Explosion_67
+  - first:
+      213: 1144842691371523017
+    second: AoE_Explosion_68
+  - first:
+      213: -3508344962318758217
+    second: AoE_Explosion_69
+  - first:
+      213: -2135549853142520029
+    second: AoE_Explosion_70
+  - first:
+      213: 111836154104134959
+    second: AoE_Explosion_71
+  - first:
+      213: 1009091404821915416
+    second: AoE_Explosion_72
+  - first:
+      213: 1430180680576851027
+    second: AoE_Explosion_73
+  - first:
+      213: -7535933643499494132
+    second: AoE_Explosion_74
+  - first:
+      213: -351168860035568841
+    second: AoE_Explosion_75
+  - first:
+      213: 7204312098779717487
+    second: AoE_Explosion_76
+  - first:
+      213: 545430034490816046
+    second: AoE_Explosion_77
+  - first:
+      213: 2823859814132504499
+    second: AoE_Explosion_78
+  - first:
+      213: -4600576656652546886
+    second: AoE_Explosion_79
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AoE_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 6
+        width: 52
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 775607d1d38af8ce0800000000000000
+      internalID: -1400715978648558217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 6
+        width: 54
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e013731fb05237c0800000000000000
+      internalID: -4093120329731075863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 77
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5d4d9dfa8c394bb0800000000000000
+      internalID: -4951359747659051681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_3
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 10
+        width: 58
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d58a955e1756c440800000000000000
+      internalID: 4955744227764635090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_4
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 8
+        width: 60
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd3e3848591016bf0800000000000000
+      internalID: -332983155763715107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 6
+        width: 62
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8514f148f32dcaf00800000000000000
+      internalID: 1129508776804565336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 0
+        width: 65
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 971baa40bfb52c990800000000000000
+      internalID: -7367224906751495815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_22
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 52
+        width: 34
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d27209d756f1372f0800000000000000
+      internalID: -976402173450508499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_23
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 0
+        width: 48
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d244cab3397ce730800000000000000
+      internalID: 4029729029673468633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_24
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 47
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1781f7af9ee284270800000000000000
+      internalID: 8234883501111842929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_25
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 57
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ef25ac20964599e0800000000000000
+      internalID: -1615307306304196632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_26
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 55
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1836c594b7779ba0800000000000000
+      internalID: -6082261154249951204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_27
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 56
+        width: 15
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caa00f62dc1590800800000000000000
+      internalID: 579083968657230508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_28
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 56
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e931953a2da8780800000000000000
+      internalID: -8679893732787249637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_29
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 55
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbc9a1cb429fe7d0800000000000000
+      internalID: -2886927982051865643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_30
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 57
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740f02efd93d69660800000000000000
+      internalID: 7392328513902145607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_31
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 42
+        width: 75
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0acec515e1b9e70800000000000000
+      internalID: 9122918804969267447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_34
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 30
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2301f3f521cd32220800000000000000
+      internalID: 2460051792939913266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_35
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 44
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94fe21f69e1dcbe40800000000000000
+      internalID: 5673640431101079369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_36
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 49
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 071ad623540919a60800000000000000
+      internalID: 7679077466516595056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_37
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 45
+        width: 22
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eadfeb1b80c627ea0800000000000000
+      internalID: -5876515779167453778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_38
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 49
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60fee81b98c0c7960800000000000000
+      internalID: 7600964056623542022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_39
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 44
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9b6512ad3b48000800000000000000
+      internalID: 37352446369380791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 20
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb00fee34969abb0800000000000000
+      internalID: -4924288977060492297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AoE_Explosion_50
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 37
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ccd91b3889b8d620800000000000000
+      internalID: 2799191163169004743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: edf1f7ce2c32aed48aa896593d899ab1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AoE_0: -4924288977060492297
+      AoE_1: -1400715978648558217
+      AoE_2: -4093120329731075863
+      AoE_3: 4955744227764635090
+      AoE_4: -332983155763715107
+      AoE_5: 1129508776804565336
+      AoE_6: -7367224906751495815
+      AoE_7: -4951359747659051681
+      AoE_Explosion_10: -7977840383274997968
+      AoE_Explosion_11: -6142073867633542775
+      AoE_Explosion_13: -4428474793234501316
+      AoE_Explosion_14: -8560152833856532996
+      AoE_Explosion_16: -5625327867583871123
+      AoE_Explosion_17: 4172090773608719944
+      AoE_Explosion_18: 999639957140221109
+      AoE_Explosion_19: 4345386168375526610
+      AoE_Explosion_20: -5748445743015895872
+      AoE_Explosion_21: -8885378186594210207
+      AoE_Explosion_22: -976402173450508499
+      AoE_Explosion_23: 4029729029673468633
+      AoE_Explosion_24: 8234883501111842929
+      AoE_Explosion_25: -1615307306304196632
+      AoE_Explosion_26: -6082261154249951204
+      AoE_Explosion_27: 579083968657230508
+      AoE_Explosion_28: -8679893732787249637
+      AoE_Explosion_29: -2886927982051865643
+      AoE_Explosion_30: 7392328513902145607
+      AoE_Explosion_31: 9122918804969267447
+      AoE_Explosion_32: -5795021435586470426
+      AoE_Explosion_33: -8371715260409376803
+      AoE_Explosion_34: 2460051792939913266
+      AoE_Explosion_35: 5673640431101079369
+      AoE_Explosion_36: 7679077466516595056
+      AoE_Explosion_37: -5876515779167453778
+      AoE_Explosion_38: 7600964056623542022
+      AoE_Explosion_39: 37352446369380791
+      AoE_Explosion_41: -8033555490704891718
+      AoE_Explosion_42: -7652711135446569995
+      AoE_Explosion_43: 7101606791567682416
+      AoE_Explosion_44: -168090180155649097
+      AoE_Explosion_45: 3726945558534421909
+      AoE_Explosion_46: 7372903497459231838
+      AoE_Explosion_47: -1995740823725192063
+      AoE_Explosion_48: -8065332504510030322
+      AoE_Explosion_49: 3296682457301972340
+      AoE_Explosion_5: 4888202643826623667
+      AoE_Explosion_50: 2799191163169004743
+      AoE_Explosion_51: -4959175891593708591
+      AoE_Explosion_52: 2518967431480235800
+      AoE_Explosion_53: -4616681375215700767
+      AoE_Explosion_54: 8029111701430129915
+      AoE_Explosion_55: -4081142159746665487
+      AoE_Explosion_56: -4217598099109469351
+      AoE_Explosion_57: 3928527788632305199
+      AoE_Explosion_58: -8671558687121492914
+      AoE_Explosion_59: 6657423701900742164
+      AoE_Explosion_6: -2680608650574498873
+      AoE_Explosion_60: -1924715218201231550
+      AoE_Explosion_61: -8761095909128140384
+      AoE_Explosion_62: -6227256678266085805
+      AoE_Explosion_63: 9125005374872693057
+      AoE_Explosion_64: 2205065627560441909
+      AoE_Explosion_65: -5663685906038289327
+      AoE_Explosion_66: 8700679871528484752
+      AoE_Explosion_67: 804417509577627706
+      AoE_Explosion_68: 1144842691371523017
+      AoE_Explosion_69: -3508344962318758217
+      AoE_Explosion_7: 7217853490195610103
+      AoE_Explosion_70: -2135549853142520029
+      AoE_Explosion_71: 111836154104134959
+      AoE_Explosion_72: 1009091404821915416
+      AoE_Explosion_73: 1430180680576851027
+      AoE_Explosion_74: -7535933643499494132
+      AoE_Explosion_75: -351168860035568841
+      AoE_Explosion_76: 7204312098779717487
+      AoE_Explosion_77: 545430034490816046
+      AoE_Explosion_78: 2823859814132504499
+      AoE_Explosion_79: -4600576656652546886
+      AoE_Explosion_9: -5375742229251686302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

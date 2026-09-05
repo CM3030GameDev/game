@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 /// <summary>
 /// Central manager for UI sound effects and menu background music.
@@ -80,7 +81,6 @@ public class UIAudioManager : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] private float clickVolume = 0.8f;
 
-
     // ============================================================
     // MUSIC SETTINGS
     // ============================================================
@@ -100,7 +100,6 @@ public class UIAudioManager : MonoBehaviour
     // Stores the currently running music fade.
     // This allows us to stop an existing fade before starting another.
     private Coroutine musicFadeCoroutine;
-
 
     // ============================================================
     // UNITY LIFECYCLE
@@ -346,7 +345,6 @@ public class UIAudioManager : MonoBehaviour
             )
         );
     }
-
 
     /// <summary>
     /// Coroutine responsible for smoothly changing the
