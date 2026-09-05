@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
   m_Name: Tutorial_MercenarySkill
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: 
-  sentences: []
+  speakerName: Narrator
+  sentences:
+  - Your companions also have special abilities.
+  - Press 1 to activate the Mercenary's skill.
+  - Use it on the enemies ahead.
