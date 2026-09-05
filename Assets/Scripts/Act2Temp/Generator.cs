@@ -20,7 +20,7 @@ public class Generator : MonoBehaviour
     StateTrigger exitTrigger;
 
     [Header("Generator Stats")]
-    [SerializeField] private int maxGeneratorHealth = 5;
+    [SerializeField] private int maxGeneratorHealth = 10;
     [SerializeField] private float maxGeneratorEnergy = 100f;
     [SerializeField] private int generatorHealth;
     [SerializeField] private float generatorEnergy;
@@ -97,15 +97,10 @@ public class Generator : MonoBehaviour
         {
             isShieldEnhanced = true;
             shieldAnimator.Play("GeneratorShieldYellow");
-            // 2. Fetch the generic exit behavior from that specific state
-            
 
             if (exitTrigger != null)
             {
-                // Clear any old subscriptions to prevent bugs
                 exitTrigger.OnStateExitAction = null;
-
-                // 3. Subscribe to the exit event
                 exitTrigger.OnStateExitAction += OnAnimationEnd;
             }
         }

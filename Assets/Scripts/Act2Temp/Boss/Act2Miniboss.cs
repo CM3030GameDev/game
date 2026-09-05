@@ -24,7 +24,7 @@ public class Act2Miniboss : MonoBehaviour
         RIGHT
     }
 
-    [SerializeField] private BossState currentState = BossState.NORMAL;
+    [SerializeField] private BossState currentState = BossState.IDLE;
     [SerializeField] private FacingDirection currentDirection = FacingDirection.FRONT;
 
     public UnityEvent bossDeath;
