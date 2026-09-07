@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class Act2Miniboss : MonoBehaviour
 {
@@ -24,17 +25,22 @@ public class Act2Miniboss : MonoBehaviour
         RIGHT
     }
 
+    [Header("States")]
     [SerializeField] private BossState currentState = BossState.IDLE;
     [SerializeField] private FacingDirection currentDirection = FacingDirection.FRONT;
+    private BossState stateBeforeAttack = BossState.NORMAL;
 
-    public UnityEvent bossDeath;
+    [Header("Skill References")]
+    private MinibossBeamAttack beamAttack;
+    private MinibossUltimate ultAttack;
+    private MinibossPassive passive;
 
     [Header("Minion Passive")]
     [SerializeField] private float maxPassiveCooldown = 5f;
     private float currentPassiveCooldown;
     private bool isPassiveOn = false;
 
-    [Header("Timers")]
+    [Header("State Timers")]
     [SerializeField] private float maxNormalStateTimer = 5f;
     private float currentNormalStateTimer = 0f;
     [SerializeField] private float maxAgitatedStateTimer = 5f;
@@ -43,54 +49,41 @@ public class Act2Miniboss : MonoBehaviour
     private float currentIdleDuration = 0f;
     private BossState stateAfterIdle;
 
-    private bool isSecondNormal = false;
-    private bool hasLandedHit = false;
-    
-    private bool hasBeamed = false;
-    private Vector2 playerPos;
-    private bool hasPlayerPos = false;
-
+    [Header("Health")]
+    [SerializeField] private int maxHP = 1000;
+    [SerializeField] private int currentHP = 1000;
+    [SerializeField] private Image hpFill;
 
     [Header("Movement")]
     [SerializeField] private float normalMoveSpeed = 5f;
     [SerializeField] private float agitatedMoveSpeed = 8f;
     private Rigidbody2D rb;
-    //[SerializeField] private float stopDistance = 1f;
     private float moveSpeed = 0f;
     private Transform playerTransform;
 
-    private MinibossBeamAttack beamAttack;
-    private MinibossUltimate ultAttack;
-    private MinibossPassive passive;
-    private Vector3 currentMoveDir = Vector3.zero;
-    private bool shouldMove = false;
-
+    [Header("Animation")]
     [SerializeField] private Animator animator;
-
     private bool hasDeathAnimPlayed = false;
 
-    [SerializeField] private int maxHP = 10;
-
-    //remove later, for testing
-    [SerializeField] private int currentHP = 10;
-
+    [Header("Collision")]
     [SerializeField] private float maxCollisionCD = 1f;
     private float currentCollisionCD;
     private bool hasCollided = false;
     [SerializeField] private int collisionDamage = 3;
     [SerializeField] private float playerInvulnerability = 0.3f;
 
+    [Header("Attack")]
     [SerializeField] private MinibossAttackRange attackRange;
     [SerializeField] private int attackDamage = 5;
 
-    private bool isInRange = false;
     private bool hasUltStarted = false;
-
     private bool hasStartedBeam = false;
-    private BossState stateBeforeAttack = BossState.NORMAL;
-    private void Awake()
-    {
-    }
+    private bool isSecondNormal = false;
+    private bool hasBeamed = false;
+
+    public UnityEvent bossDeath;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -123,6 +116,8 @@ public class Act2Miniboss : MonoBehaviour
         }
         HandleDirection();
 
+        hpFill.fillAmount = (float)currentHP / (float)maxHP;
+
         if(currentHP <= 0)
         {
             currentState = BossState.DEAD;
@@ -148,7 +143,6 @@ public class Act2Miniboss : MonoBehaviour
                 HandleDirectionalAnimation("Run", currentDirection);
                 break;
             case BossState.ATTACK:
-                HandleAttackState();
                 HandleDirectionalAnimation("Punch", currentDirection);
                 break;
             case BossState.BEAM:
@@ -258,7 +252,7 @@ public class Act2Miniboss : MonoBehaviour
         if (currentNormalStateTimer <= 0f && !attackRange.GetIsInRange())
         {
             currentState = BossState.AGITATED;
-            ResetNormalState();
+            currentNormalStateTimer = maxNormalStateTimer;
         }
 
         //Has hit player before timer
@@ -266,8 +260,8 @@ public class Act2Miniboss : MonoBehaviour
         {
             StartAttackState(currentState);
             currentState = BossState.ATTACK;
-            
-            ResetNormalState();
+
+            currentNormalStateTimer = maxNormalStateTimer;
         }
     }
     private void HandleSecondNormalState()
@@ -284,21 +278,15 @@ public class Act2Miniboss : MonoBehaviour
         if (currentNormalStateTimer <= 0f && !attackRange.GetIsInRange())
         {
             StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
-            ResetNormalState();
+            currentNormalStateTimer = maxNormalStateTimer;
         }
         //Has hit player before timer
         else if (currentNormalStateTimer > 0f && attackRange.GetIsInRange())
         {
             StartAttackState(currentState);
             currentState = BossState.ATTACK;
-            ResetNormalState();
+            currentNormalStateTimer = maxNormalStateTimer;
         }
-    }
-
-    private void ResetNormalState()
-    {
-        currentNormalStateTimer = maxNormalStateTimer;
-        hasLandedHit = false;
     }
     private void HandleAgitatedState()
     {
@@ -313,7 +301,6 @@ public class Act2Miniboss : MonoBehaviour
             StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
 
             currentAgitatedStateTimer = maxAgitatedStateTimer;
-            hasLandedHit = false;
         }
 
         //Has hit player before timer
@@ -325,7 +312,6 @@ public class Act2Miniboss : MonoBehaviour
             currentState = BossState.ATTACK;
 
             currentAgitatedStateTimer = maxAgitatedStateTimer;
-            hasLandedHit = false;
         }
     }
 
@@ -349,18 +335,6 @@ public class Act2Miniboss : MonoBehaviour
     private void StartAttackState(BossState prevState)
     {
         stateBeforeAttack = prevState;
-    }
-
-    private void HandleAttackState()
-    {
-/*        if(stateBeforeAttack == BossState.NORMAL)
-        {
-            StartIdleState(hasBeamed ? BossState.ULTIMATE : BossState.BEAM);
-        }
-        else if(stateBeforeAttack == BossState.AGITATED)
-        {
-            StartIdleState(BossState.NORMAL);
-        }*/
     }
 
     public void OnHitEvent()
@@ -427,7 +401,6 @@ public class Act2Miniboss : MonoBehaviour
             StartIdleState(BossState.NORMAL);
             hasUltStarted = false;
         }
-            
 
     }
 
@@ -445,12 +418,10 @@ public class Act2Miniboss : MonoBehaviour
             passive.completedSpawning.AddListener(HandlePassiveSpawnComplete);
         }
     }
-
     private void HandlePassiveSpawnComplete()
     {
         isPassiveOn = true;
     }
-
     private void HandleDead()
     {
         if(!hasDeathAnimPlayed)
@@ -465,19 +436,17 @@ public class Act2Miniboss : MonoBehaviour
         }
 
     }
-
     public void MobAttacked(int amount, float timer)
     {
         currentHP -= amount;
     }
-
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Character"))
         {
             Character character = collision.gameObject.GetComponent<Character>();
-            if (!character.isAttacked && character != null)
+            if (character != null && !character.isAttacked)
             {
                 character.CharacterAttacked(collisionDamage);
                 character.GrantInvulnerability(playerInvulnerability);

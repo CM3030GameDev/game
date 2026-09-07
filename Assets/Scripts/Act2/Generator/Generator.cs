@@ -8,6 +8,7 @@ public class Generator : MonoBehaviour
     [SerializeField] private GameObject generatorShield;
     [SerializeField] private SpriteRenderer generatorShieldSprite;
     [SerializeField] private Animator shieldAnimator;
+    [SerializeField] private ParticleSystem smokeParticle;
 
     [Header("Events")]
     public UnityEvent onGeneratorShieldDown;
@@ -33,7 +34,7 @@ public class Generator : MonoBehaviour
     void Start()
     {
         generatorShield.SetActive(true);
-        shieldAnimator.Play("GeneratorShieldBlue");
+        shieldAnimator.Play("GeneratorShieldDisabled");
         generatorHealth = maxGeneratorHealth;
         generatorEnergy = maxGeneratorEnergy;
 
@@ -76,7 +77,11 @@ public class Generator : MonoBehaviour
         {
             isShieldDown = true;
             isOverdrive = false;
-            shieldAnimator.Play("GeneratorShieldCollapse");
+            shieldAnimator.Play("GeneratorShieldExplode");
+
+            //Play smoke particle
+            ParticleSystem smoke = Instantiate(smokeParticle, transform.position, Quaternion.identity);
+            smoke.Play();
         }
     }
 
@@ -96,7 +101,7 @@ public class Generator : MonoBehaviour
         if(!isShieldEnhanced)
         {
             isShieldEnhanced = true;
-            shieldAnimator.Play("GeneratorShieldYellow");
+            shieldAnimator.Play("GeneratorShieldEnabled");
 
             if (exitTrigger != null)
             {

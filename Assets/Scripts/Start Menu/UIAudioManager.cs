@@ -107,6 +107,7 @@ public class UIAudioManager : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] private float targetMusicVolume = 0.3f;
 
+    private float clickVolume = 0f;
     // Time taken for music to fade in when the menu starts.
     [SerializeField] private float musicFadeInDuration = 2.5f;
 

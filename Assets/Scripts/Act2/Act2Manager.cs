@@ -3,16 +3,6 @@ using UnityEngine;
 
 public class Act2Manager : MonoBehaviour
 {
-    [Header("Narrator Lines")]
-    public DialogueData actStartDialogue;
-
-    public DialogueData bossSpawnDialogue;
-    public DialogueData bossDeathDialogue;
-
-    public DialogueData generatorStartDialogue;
-    public DialogueData generatorDepletedDialogue;
-    public DialogueData generatorDestroyedDialogue;
-
     [System.Serializable]
     public struct EnemySpawnSetting
     {
@@ -27,23 +17,32 @@ public class Act2Manager : MonoBehaviour
     [Header("References")]
     [SerializeField] private CharacterStats stats;
     [SerializeField] private MissionUI missionUI;
+    [SerializeField] private Transform minibossSpawnPoint;
+    [SerializeField] private Generator generator;
 
+    [Header("Ground and trigger")]
+    [SerializeField] private GameObject room1Ground;
+    [SerializeField] private GameObject room2Ground;
+    [SerializeField] private Act2ObjectiveTrigger room1GateTrigger;
+    [SerializeField] private Act2ObjectiveTrigger act3GateTrigger;
+
+    [Header("Dialogues")]
+    public DialogueData actStartDialogue;
+    public DialogueData bossSpawnDialogue;
+    public DialogueData bossDeathDialogue;
+    public DialogueData generatorStartDialogue;
+    public DialogueData generatorDepletedDialogue;
+    public DialogueData generatorDestroyedDialogue;
 
     [Header("Room 1 - Kill Count")]
-    private int room1TargetKillCount;
-    [SerializeField] private GameObject room1Ground;
     [SerializeField] private List<EnemySpawnSetting> room1SpawnerList = new List<EnemySpawnSetting>();
-    private const string Room1WaveName = "room1_killcount";
-    [SerializeField] private Act2ObjectiveTrigger room1GateTrigger;
+    private int room1TargetKillCount;
 
     [Header("Room 2 Part 1 - Boss")]
-    [SerializeField] private GameObject room2Ground;
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList1 = new List<EnemySpawnSetting>();
-    [SerializeField] private Act2ObjectiveTrigger act3GateTrigger;
 
     [Header("Room 2 Part 2 - Generator")]
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList2 = new List<EnemySpawnSetting>();
-    //[SerializeField] private Act2ObjectiveTrigger act3GateTrigger;
 
     [Header("Mission Text - edit wording here, not in code")]
     [SerializeField] private string room1Header = "Act 2 - Push Deeper Into the City";
@@ -61,14 +60,8 @@ public class Act2Manager : MonoBehaviour
     [SerializeField] private string room2Task3 = "Act 2 - Destroy the generator";
     [SerializeField] private string room2ClearedTask3 = "Generator has been destroyed.";
 
-    [Header("Objective Targets (for the direction arrow)")]
-    [SerializeField] private Transform room2EntranceTarget;
-    [SerializeField] private Transform act3EntranceTarget;
-    [SerializeField] private Transform generatorTarget;
-
-    public Generator generator;
     private GameObject miniboss;
-    [SerializeField] private Transform minibossSpawnPoint;
+    
     private bool hasBossSpawned = false;
     private bool isRoom1Cleared = false;
 
