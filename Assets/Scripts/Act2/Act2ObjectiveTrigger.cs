@@ -19,11 +19,6 @@ public class Act2ObjectiveTrigger : MonoBehaviour
         }
     }
 
-    private void Update()
-    {
-        Debug.Log(isGateOpen);
-    }
-
     public void OpenGate()
     {
         if (gateObject != null && !isGateOpen)
@@ -31,7 +26,6 @@ public class Act2ObjectiveTrigger : MonoBehaviour
             gateObject.SetActive(false);
             isGateOpen = true;
         }
-        Debug.Log("aa" + isGateOpen);
     }
 
     private void CloseGate()

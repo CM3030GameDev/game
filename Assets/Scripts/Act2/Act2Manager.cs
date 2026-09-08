@@ -37,6 +37,7 @@ public class Act2Manager : MonoBehaviour
     [Header("Room 1 - Kill Count")]
     [SerializeField] private List<EnemySpawnSetting> room1SpawnerList = new List<EnemySpawnSetting>();
     private int room1TargetKillCount;
+    private int currentKillCount = 0;
 
     [Header("Room 2 Part 1 - Boss")]
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList1 = new List<EnemySpawnSetting>();
@@ -90,12 +91,17 @@ public class Act2Manager : MonoBehaviour
         generator.onGeneratorDown.AddListener(OnGeneratorDown);
 
         //Mission UI
-        missionUI?.SetMission(room1Header, room1Task, null);
+        //missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(state == CurrentState.ROOM1 && MobManager.Instance.GetKillCount() > currentKillCount)
+        {
+            currentKillCount = MobManager.Instance.GetKillCount();
+            missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
+        }
         if(state == CurrentState.ROOM1 && MobManager.Instance.GetKillCount() >= room1TargetKillCount)
         {
             if (!isRoom1Cleared)
@@ -187,6 +193,7 @@ public class Act2Manager : MonoBehaviour
             MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount, null, room1Ground.name);
             room1TargetKillCount += setting.spawnCount;
         }
+        missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
     }
 
     public void EnableGenerator()
