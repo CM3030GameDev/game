@@ -18,11 +18,24 @@ public class CharacterStatsUpgrade : Upgrade
     // Names the weapon this stat evolves, and flags when that weapon is already maxed.
     public override string GetComboText(UpgradeContext ctx)
     {
-        SecondaryWeaponData partner = Partner(ctx, out SecondaryWeapon owned);
+        SecondaryWeaponData partner = Partner(ctx, out _);
         if (partner == null) return null;
 
-        bool weaponMaxed = owned != null && owned.IsMaxLevel;
-        return ComboLine(partner.weaponName, weaponMaxed);
+        return ComboLine(partner.weaponName, IsComboReady(ctx));
+    }
+
+    // The player already carries the paired weapon, at any level.
+    public override bool OwnsComboPartner(UpgradeContext ctx)
+    {
+        SecondaryWeaponData partner = Partner(ctx, out SecondaryWeapon owned);
+        return partner != null && owned != null;
+    }
+
+    // The paired weapon is owned and maxed, so this stat is one finished track from evolving.
+    public override bool IsComboReady(UpgradeContext ctx)
+    {
+        SecondaryWeaponData partner = Partner(ctx, out SecondaryWeapon owned);
+        return partner != null && owned != null && owned.IsMaxLevel;
     }
 
     public override Sprite GetComboIcon(UpgradeContext ctx)
@@ -38,7 +51,7 @@ public class CharacterStatsUpgrade : Upgrade
         if (!ctx.statPartners.TryGetValue(this, out SecondaryWeaponData partner)) return null;
 
         owned = ctx.slots != null ? ctx.slots.Find(partner) : null;
-        if (owned != null && owned.IsCombined) return null;   // already evolved, nothing left to hint
+        if (owned != null && owned.IsCombined) return null;   // already evolved, nothing to hint
 
         return partner;
     }

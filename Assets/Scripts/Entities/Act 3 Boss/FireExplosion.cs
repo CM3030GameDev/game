@@ -31,8 +31,7 @@ public class FireExplosion : MonoBehaviour
         if (collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(50);
-            character.GrantInvulnerability(0.5f);
+            character.CharacterAttacked(50, 0.5f);
         }
     }
 }

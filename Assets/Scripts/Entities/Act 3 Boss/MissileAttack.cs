@@ -81,8 +81,7 @@ public class MissileAttack : MonoBehaviour
             //Player is attackable
             if(!character.isAttacked)
             {
-                character.CharacterAttacked(30);
-                character.GrantInvulnerability(0.1f);
+                character.CharacterAttacked(30, 0.1f);
             }
             explode = true;
             //Explosion animation

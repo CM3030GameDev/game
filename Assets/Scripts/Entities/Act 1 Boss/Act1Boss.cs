@@ -159,8 +159,7 @@ public class Act1Boss : MonoBehaviour
             Character c = hit.GetComponent<Character>();
             if (c != null)
             {
-                c.CharacterAttacked(aoeDamage);
-                c.GrantInvulnerability(0.3f);
+                c.CharacterAttacked(aoeDamage, 0.3f);
             }
         }
 
@@ -189,8 +188,7 @@ public class Act1Boss : MonoBehaviour
         Character c = collision.gameObject.GetComponent<Character>();
         if (c != null)
         {
-            c.CharacterAttacked(contactDamage);
-            c.GrantInvulnerability(contactInvulnerability);
+            c.CharacterAttacked(contactDamage, contactInvulnerability);
         }
     }
 

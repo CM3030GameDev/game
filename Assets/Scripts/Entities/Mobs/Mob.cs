@@ -25,6 +25,8 @@ public class Mob : MonoBehaviour
     // Knockback (from shotgun etc.)
     private Vector2 knockbackVelocity;
     private float knockbackTimer;
+    // Companion hits get their own cooldown (see CompanionAttacked)
+    private float companionHitTimer;
 
     [SerializeField] private int maxHP = 100;
     private int currentHP;
@@ -34,6 +36,15 @@ public class Mob : MonoBehaviour
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
     [SerializeField] private float deathAnimationDuration = 0.5f;
+    [Header("Contact damage")]
+    [SerializeField] private int contactDamage = 10;
+    [Tooltip("Seconds the player is immune after touching any enemy.")]
+    [SerializeField] private float contactInvulnerability = 0.5f;
+    [Header("Companion damage")]
+    [SerializeField] private int swordDamage = 20;
+    [SerializeField] private float swordCooldown = 0.5f;
+    [SerializeField] private int flamethrowerDamage = 5;
+    [SerializeField] private float flamethrowerCooldown = 0.25f;
 
     public UnityEvent onDeath;
     private void Awake()
@@ -62,13 +73,12 @@ public class Mob : MonoBehaviour
         death = false;
         currentHP = maxHP;
         knockbackTimer = 0f;
+        companionHitTimer = 0f;
     }
 
     private void OnDisable()
     {
-        // Only drop exp if this mob actually died. OnDisable also fires when MobManager builds
-        // the pool at startup (Instantiate -> SetActive(false)) and when the scene unloads,
-        // both of which would otherwise spawn phantom orbs.
+        // Only drop exp on a real death, since OnDisable also fires when the pool is built.
         if (!death) return;
 
         // Drops exp orb at mob position when the mob is dead
@@ -119,6 +129,8 @@ public class Mob : MonoBehaviour
             Invoke(nameof(Despawn), deathAnimationDuration);
         }
 
+        if (companionHitTimer > 0f) companionHitTimer -= Time.deltaTime;
+
         // Debuff timer that ticks down
         if (debuffTimer > 0f)
         {
@@ -163,33 +175,15 @@ public class Mob : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Sword") && !isAttacked)
-        {
-            MobAttacked(20, 0.2f);
-        }
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.CompareTag("Character"))
-        {
-            Character character = collision.gameObject.GetComponent<Character>();
-            if(!character.isAttacked)
-            {
-                character.CharacterAttacked(10);
-                character.GrantInvulnerability(0.1f);
-            }
-        }
-    }
-
+    // Stay, not Enter, so standing in a crowd keeps hurting instead of only the first touch.
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Flamethrower") && !isAttacked)
-        {
-            MobAttacked(5, 0.4f);
-        }
+        if (other.CompareTag("Character"))
+            other.GetComponent<Character>()?.CharacterAttacked(contactDamage, contactInvulnerability);
+        else if (other.CompareTag("Sword"))
+            CompanionAttacked(swordDamage, swordCooldown);
+        else if (other.CompareTag("Flamethrower"))
+            CompanionAttacked(flamethrowerDamage, flamethrowerCooldown);
     }
 
     public void MobAttacked(int amount, float timer)
@@ -204,10 +198,26 @@ public class Mob : MonoBehaviour
         }
     }
 
+    // Its own cooldown, because player bullets hold isAttacked down and would eat these hits.
+    public void CompanionAttacked(int amount, float cooldown)
+    {
+        if (companionHitTimer > 0f) return;
+        companionHitTimer = cooldown;
+        UnblockedAttack(amount, 0.1f);
+    }
+
+    // Damage and flash without taking the isAttacked lock, for sources that limit themselves.
+    public void UnblockedAttack(int amount, float flash)
+    {
+        if (death) return;
+        currentHP -= amount;
+        animator.SetBool("attacked", true);
+        attackedTime = Mathf.Max(attackedTime, flash);
+    }
+
     public bool WouldDie(int amount) => currentHP <= amount;
 
-    // Bypasses the isAttacked guard - for effects that must land on every enemy
-    // regardless of hit-flash state (e.g. a screen-clearing panic skill).
+    // Bypasses the isAttacked guard, for effects that must land on every enemy.
     public void GuaranteedAttack(int amount, float timer)
     {
         animator.SetBool("attacked", true);
@@ -242,8 +252,7 @@ public class Mob : MonoBehaviour
             if (n.gameObject == gameObject) continue;
 
             Vector2 away = (Vector2)transform.position - (Vector2)n.transform.position;
-            // Clamp the distance used here so nearly-overlapping mobs (e.g. a wave spawning
-            // stacked together) don't get an explosive push force from dividing by ~0.
+            // Clamp the distance so stacked mobs do not get a huge push from dividing by zero.
             float dist = Mathf.Max(away.magnitude, 0.1f);
             push += away.normalized / dist; // Push enemies away from each other the closer they are
         }

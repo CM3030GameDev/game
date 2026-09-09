@@ -29,15 +29,30 @@ public class UpgradeCardUI : MonoBehaviour
     [SerializeField] private string pickupRangeIcon;
     [SerializeField] private string healthRegenIcon;
 
+    [Header("Combination highlight")]
+    [Tooltip("Card tint when picking it would evolve a weapon. Default is 00FF33.")]
+    [SerializeField] private Color combineColor = new Color(0f, 1f, 0.2f, 1f);
+
     [Header("Focus")]
     [SerializeField] private CanvasGroup persistentHud;   // HP bar, EXP bar, weapon/stat pips etc.
     [SerializeField] private float dimmedAlpha = 0.3f;
 
     private Action<Upgrade> onChosen;
 
+    // Authored card colours, captured before anything tints them.
+    // ColorTint multiplies against Image.color, so tinting the Image directly survives hover.
+    private Color[] baseColors;
+
     private void Awake()
     {
         panel.SetActive(false);
+
+        baseColors = new Color[cardButtons.Length];
+        for (int i = 0; i < cardButtons.Length; i++)
+        {
+            Graphic g = cardButtons[i] != null ? cardButtons[i].targetGraphic : null;
+            baseColors[i] = g != null ? g.color : Color.white;
+        }
     }
 
     public void Show(List<Upgrade> choices, UpgradeContext ctx, Action<Upgrade> callback)
@@ -64,6 +79,7 @@ public class UpgradeCardUI : MonoBehaviour
                 }
 
                 SetComboIcon(i, u.GetComboIcon(ctx));
+                SetCombineHighlight(i, u.OwnsComboPartner(ctx));
 
                 cardButtons[i].onClick.RemoveAllListeners();
                 cardButtons[i].onClick.AddListener(() => Pick(u));
@@ -91,6 +107,15 @@ public class UpgradeCardUI : MonoBehaviour
         }
     }
 
+    // Set on every Show, so a card that lit up last level goes back to normal.
+    private void SetCombineHighlight(int i, bool combining)
+    {
+        if (baseColors == null || i >= cardButtons.Length || cardButtons[i] == null) return;
+
+        Graphic g = cardButtons[i].targetGraphic;
+        if (g != null) g.color = combining ? combineColor : baseColors[i];
+    }
+
     private void SetComboIcon(int i, Sprite sprite)
     {
         if (cardComboIcons == null || i >= cardComboIcons.Length || cardComboIcons[i] == null) return;
@@ -116,8 +141,7 @@ public class UpgradeCardUI : MonoBehaviour
             $"{stats.healthRegen:F0}/s",
         };
 
-        // Header lives in its own object when wired, so it can stay centred while the rows
-        // below align left/right independently. Otherwise it's baked into the label column.
+        // Header sits in its own object when wired, so it stays centred while rows align.
         string left, right;
         if (statsLevelText != null)
         {
@@ -131,8 +155,7 @@ public class UpgradeCardUI : MonoBehaviour
             right = "\n\n";   // blank lines matching the header, so rows line up
         }
 
-        // Two text objects lets labels sit flush left and values flush right. Falls back to a
-        // single <pos> column when the values object isn't wired.
+        // Two text objects put labels left and values right. Falls back to one column.
         if (statsValues != null)
         {
             for (int i = 0; i < labels.Length; i++)

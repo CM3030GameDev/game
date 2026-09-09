@@ -304,8 +304,7 @@ public class FinalBoss : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Character") && !character.isAttacked && !shielded)
         {
-            character.CharacterAttacked(damage);
-            character.GrantInvulnerability(0.1f);
+            character.CharacterAttacked(damage, 0.1f);
         }
         else if (collision.gameObject.CompareTag("Sword") && !isAttacked && !shielded)
         {

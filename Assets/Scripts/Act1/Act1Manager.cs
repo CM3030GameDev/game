@@ -68,8 +68,7 @@ public class Act1Manager : MonoBehaviour
         PlayThen(openingDialogue, BeginRoom1);
     }
 
-    // Plays a dialogue and continues afterwards, or continues immediately if there's none.
-    // The mission panel is hidden for the duration so an objective doesn't sit over the cutscene.
+    // Plays a dialogue then continues, hiding the mission panel so it does not sit over it.
     private void PlayThen(DialogueData dialogue, UnityEngine.Events.UnityAction next)
     {
         if (dialogue == null)
@@ -97,8 +96,7 @@ public class Act1Manager : MonoBehaviour
     {
         if (state != State.Room2Secure) return;
 
-        // Only rebuild the HUD string when a number actually changes - this runs every frame
-        // and SetTasks now re-evaluates panel visibility, so it isn't free.
+        // Only rebuild the HUD text when a number actually changed, since this runs every frame.
         int kills = MobManager.Instance.GetKillCount() - killsAtRoom2Start;
         if (kills != lastShownKills || stats.level != lastShownLevel)
         {
@@ -119,7 +117,12 @@ public class Act1Manager : MonoBehaviour
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(SpawnMiniboss);
 
-        if (room2MinibossObject != null) room2MinibossObject.SetActive(true);
+        if (room2MinibossObject != null)
+        {
+            room2MinibossObject.SetActive(true);
+            // Subscribed in code because a UnityEvent dragged onto the wrong object fails silently.
+            room2MinibossObject.GetComponent<Act1Boss>()?.bossDeath.AddListener(OnMinibossDefeated);
+        }
 
         // Point the arrow at the miniboss so the player can find it in a big room
         Transform target = room2MinibossObject != null ? room2MinibossObject.transform : null;
@@ -139,7 +142,7 @@ public class Act1Manager : MonoBehaviour
     private static string Objective(string text, bool done)
         => done ? $"<color=#7CFC7C>{text}</color>" : text;
 
-    // Room1 -> Room2 trigger
+    // Room 1 to Room 2 trigger
     public void EnterRoom2()
     {
         if (state != State.Room1Travel) return;
@@ -164,13 +167,13 @@ public class Act1Manager : MonoBehaviour
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(OpenRoom3);
         state = State.Room3Transition;
-        if (swordsmanCompanion != null) swordsmanCompanion.enabled = true;
+        if (swordsmanCompanion != null) swordsmanCompanion.gameObject.SetActive(true);
         missionUI?.SetMission(room3Header, room3Task, room3EntranceTarget);
         if (room2To3Gate != null) room2To3Gate.SetActive(false);
     }
 
-    // Room 3 trigger - hands off to the next Act
-    public void TransitionToNextAct()
+    // Room 3 trigger that hands off to the next Act
+    public void EnterRoom3()
     {
         if (state != State.Room3Transition) return;
         state = State.Done;

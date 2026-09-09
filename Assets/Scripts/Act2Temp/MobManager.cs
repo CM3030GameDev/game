@@ -41,9 +41,7 @@ public class MobManager : MonoBehaviour
 
     private void Awake()
     {
-        // Deliberately NOT DontDestroyOnLoad. This holds scene-specific state - playerTransform,
-        // the pool config, the kill count - so persisting it across a scene load leaves the next
-        // Act running on the previous Act's references and kill total.
+        // Not DontDestroyOnLoad on purpose, since this holds scene specific state and kill count.
         if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
@@ -78,15 +76,12 @@ public class MobManager : MonoBehaviour
 
     private void OnDestroy()
     {
-        // Clear the static so the next scene's manager claims it, rather than relying on
-        // Unity's destroyed-object null semantics to do it implicitly.
+        // Clear the static so the next scene's manager can claim it.
         if (Instance == this) Instance = null;
     }
 
     /// <summary>
-    /// Keeps roughly targetPopulation of this type alive at all times - checks periodically and
-    /// tops up whenever the current count has dropped below target (e.g. after a kill), rather
-    /// than spawning in discrete batches that all need to die before the next batch appears.
+    /// Keeps roughly targetPopulation alive, topping up after kills instead of spawning batches.
     /// </summary>
     public void AddPopulationSpawnCoroutine(string coroutineName, EnemyTypes types, int targetPopulation, float checkInterval = 0.5f, Transform location = null)
     {

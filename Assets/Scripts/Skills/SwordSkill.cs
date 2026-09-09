@@ -1,9 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-// Swordsman - Guard. Defensive: a burst of speed plus a window of invulnerability, so it's a
-// reposition tool rather than just a damage sponge. The hyperspeed screen effect is wired
-// through PlayerSkill's Screen Effect field.
+// Swordsman Guard. A speed burst plus invulnerability, so it is a tool for repositioning.
 public class SwordSkill : PlayerSkill
 {
     [Header("Guard")]
@@ -31,8 +29,7 @@ public class SwordSkill : PlayerSkill
         }
         finally
         {
-            // finally, because moveSpeed lives on a ScriptableObject - an interrupted cast
-            // would otherwise leave the bonus applied permanently.
+            // finally, because moveSpeed lives on a ScriptableObject and would stay boosted.
             stats.moveSpeed -= speedBonus;
             if (shieldVisual != null) shieldVisual.SetActive(false);
         }

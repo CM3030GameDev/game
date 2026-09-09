@@ -102,14 +102,15 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void CharacterAttacked(int amount)
+    // Starts the invulnerability window itself, so no caller has to remember to.
+    public void CharacterAttacked(int amount, float invulnerability = 0.5f)
     {
         if (IsInvulnerable) return;
 
         // Play attacked animation of character
         animator.SetBool("attacked", true);
-        isAttacked = false;
         cs.health -= amount;
+        GrantInvulnerability(invulnerability);
     }
 
     public void GrantInvulnerability(float duration)
