@@ -161,6 +161,7 @@ public class Minion : MonoBehaviour
             {
                 character.CharacterAttacked(damage);
                 character.GrantInvulnerability(playerInvulnerability);
+                UIAudioManager.Instance.PlaySFXOneShot(7);
             }
         }
     }

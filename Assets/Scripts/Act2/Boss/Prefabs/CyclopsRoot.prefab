@@ -526,24 +526,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Act2Miniboss
   currentState: 1
   currentDirection: 0
-  bossDeath:
-    m_PersistentCalls:
-      m_Calls: []
   maxPassiveCooldown: 5
   maxNormalStateTimer: 5
   maxAgitatedStateTimer: 5
   maxIdleDuration: 2
+  maxHP: 100
+  currentHP: 100
+  hpFill: {fileID: 5187002225271641208}
   normalMoveSpeed: 5
   agitatedMoveSpeed: 8
   animator: {fileID: 453347392088703674}
-  hpFill: {fileID: 5187002225271641208}
-  maxHP: 100
-  currentHP: 100
   maxCollisionCD: 1
   collisionDamage: 3
   playerInvulnerability: 0.3
   attackRange: {fileID: 6825106318674803794}
   attackDamage: 5
+  sr: {fileID: 7897100620906042304}
+  hitFlashColor: {r: 1, g: 0, b: 0, a: 1}
+  bossDeath:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &6552288463554767109
 MonoBehaviour:
   m_ObjectHideFlags: 0

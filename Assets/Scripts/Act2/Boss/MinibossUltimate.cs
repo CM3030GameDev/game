@@ -52,9 +52,11 @@ public class MinibossUltimate : MonoBehaviour
 
         for (int i = 0; i < numberOfThrows; i++)
         {
+            UIAudioManager.Instance.PlaySFX(2);
             GameObject ultObject = Instantiate(ult, topPoint.position, Quaternion.identity);
             ultObject.GetComponent<CircleCollider2D>().enabled = false;
             yield return StartCoroutine(GrowUlt(ultObject));
+            UIAudioManager.Instance.StopSFX();
             ThrowUlt(ultObject);
         }
         isUltEnd = true;
@@ -86,7 +88,7 @@ public class MinibossUltimate : MonoBehaviour
             projectile.Launch(direction, throwSpeed, ultLifetime, ultDamage, playerInvulnerability);
             projectile.GetComponent<CircleCollider2D>().enabled = true;
         }
-            
+        UIAudioManager.Instance.PlaySFXOneShot(3);   
     }
 
     public void SetIsStartUlt(bool startUlt, string direction = "F")

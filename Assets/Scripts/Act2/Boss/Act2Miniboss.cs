@@ -75,6 +75,9 @@ public class Act2Miniboss : MonoBehaviour
     [Header("Attack")]
     [SerializeField] private MinibossAttackRange attackRange;
     [SerializeField] private int attackDamage = 5;
+    [SerializeField] private SpriteRenderer sr;
+    [SerializeField] private Color hitFlashColor = Color.red;
+    private float hitFlashTimer = 0f;
 
     private bool hasUltStarted = false;
     private bool hasStartedBeam = false;
@@ -105,6 +108,8 @@ public class Act2Miniboss : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HandleHitFlash();
+
         if(hasCollided)
         {
             currentCollisionCD -= Time.deltaTime;
@@ -341,6 +346,7 @@ public class Act2Miniboss : MonoBehaviour
     {
         if(attackRange.GetTarget().GetComponent<Character>())
         {
+            UIAudioManager.Instance.PlaySFXOneShot(0);
             attackRange.GetTarget().GetComponent<Character>().CharacterAttacked(attackDamage);
         }
         
@@ -439,6 +445,14 @@ public class Act2Miniboss : MonoBehaviour
     public void MobAttacked(int amount, float timer)
     {
         currentHP -= amount;
+        hitFlashTimer = timer;
+    }
+    private void HandleHitFlash()
+    {
+        if (sr == null || hitFlashTimer <= 0f) return;
+
+        hitFlashTimer -= Time.deltaTime;
+        sr.color = hitFlashTimer > 0f ? hitFlashColor : Color.white;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -464,6 +478,10 @@ public class Act2Miniboss : MonoBehaviour
                 character.CharacterAttacked(collisionDamage);
                 character.GrantInvulnerability(playerInvulnerability);
             }
+        }
+        if (collision.CompareTag("Flamethrower"))
+        {
+            MobAttacked(5, 0.4f);
         }
     }
 }

@@ -12,12 +12,13 @@ public class UltProjectile : MonoBehaviour
     private Vector3 moveDir;
     private bool isLaunched = false;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
-        if(anim != null)
+        if (anim != null)
             exitTrigger = anim.GetBehaviour<StateTrigger>();
     }
+
     public void Launch(Vector3 direction, float launchSpeed, float lifeTimer, int damageDone, float invulnerability)
     {
         damage = damageDone;
@@ -53,9 +54,6 @@ public class UltProjectile : MonoBehaviour
                 UltExplode();
             }
         }
-            
-
-
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -68,7 +66,7 @@ public class UltProjectile : MonoBehaviour
                 character.CharacterAttacked(damage);
                 character.GrantInvulnerability(playerInvulnerability);
             }
-
+            UIAudioManager.Instance.PlaySFXOneShot(7);
             UltExplode();
         }
     }
@@ -77,6 +75,7 @@ public class UltProjectile : MonoBehaviour
     {
         isLaunched = false;
         anim.Play("UltExplode");
+        UIAudioManager.Instance.PlaySFXOneShot(5);
     }
 
     private void OnAnimationEnd()

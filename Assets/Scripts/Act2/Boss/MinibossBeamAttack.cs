@@ -88,5 +88,7 @@ public class MinibossBeamAttack : MonoBehaviour
 
         GameObject beam = Instantiate(beamObject, spawnPos, Quaternion.identity);
         beam.GetComponent<BeamProjectile>().SetBeam(direction, beamSpeed, beamLifetime, beamDamage, playerInvulnerability);
+
+        UIAudioManager.Instance.PlaySFXOneShot(4);
     }
 }

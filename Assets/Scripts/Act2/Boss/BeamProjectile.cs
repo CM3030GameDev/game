@@ -12,8 +12,9 @@ public class BeamProjectile : MonoBehaviour
     private Animator anim;
     private bool isInitialized = false;
     StateTrigger exitTrigger;
+    private bool isLaunched = false;
 
-    private void Start()
+    private void Awake()
     {
         anim = GetComponent<Animator>();
         if (anim != null)
@@ -27,6 +28,7 @@ public class BeamProjectile : MonoBehaviour
         speed = moveSpeed;
         playerInvulnerability = invulnerability;
         isInitialized = true;
+        isLaunched = true;
 
         float angle = Mathf.Atan2(moveDir.y, moveDir.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, angle);
@@ -48,15 +50,19 @@ public class BeamProjectile : MonoBehaviour
         if (!isInitialized)
             return;
 
-        transform.position += moveDir * speed * Time.deltaTime;
-        if (lifetime > 0f)
+        if (isLaunched)
         {
-            lifetime -= Time.deltaTime;
-        }
-        else if (lifetime <= 0f)
-        {
-            isInitialized = false;
-            BeamExplode();
+            transform.position += moveDir * speed * Time.deltaTime;
+            if (lifetime > 0f)
+            {
+                lifetime -= Time.deltaTime;
+            }
+            else if (lifetime <= 0f)
+            {
+                isLaunched = false;
+                isInitialized = false;
+                BeamExplode();
+            }
         }
     }
 
@@ -76,10 +82,13 @@ public class BeamProjectile : MonoBehaviour
 
     private void BeamExplode()
     {
-        anim.Play("BeamExplode");
+        isLaunched = false;
+        anim.Play("SkillImpact");
+        UIAudioManager.Instance.PlaySFXOneShot(7);
     }
     private void OnAnimationEnd()
     {
+        exitTrigger.OnStateExitAction = null;
         Destroy(gameObject);
     }
 }

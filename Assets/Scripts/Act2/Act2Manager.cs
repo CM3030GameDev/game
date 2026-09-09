@@ -81,7 +81,7 @@ public class Act2Manager : MonoBehaviour
     void Start()
     {
         state = CurrentState.START;
-
+        UIAudioManager.Instance.PlayBGM(1, true);
         //Enable starting dialogue, and an even listener to begin the act when dialogue ends
         DialogueManager.Instance.StartDialogue(actStartDialogue);
         DialogueManager.Instance.onDialogueEnd.AddListener(SpawnRoom1Mobs);
@@ -146,6 +146,8 @@ public class Act2Manager : MonoBehaviour
 
                 //Mission UI
                 missionUI?.SetMission(room2Header1, room2Task1, null);
+
+                UIAudioManager.Instance.PlayBGM(0, true);
             }
         }
 
@@ -204,6 +206,8 @@ public class Act2Manager : MonoBehaviour
 
         //Mission UI
         missionUI?.SetMission(room2Header2, room2Task2, null);
+
+        UIAudioManager.Instance.PlayBGM(2, true);
 
         generator.SetIsOverdrive(true);
         state = CurrentState.GENERATOR;
