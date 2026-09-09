@@ -107,6 +107,7 @@ public class UIAudioManager : MonoBehaviour
     [Range(0f, 1f)]
     [SerializeField] private float targetMusicVolume = 0.3f;
 
+    private float clickVolume = 0f;
     // Time taken for music to fade in when the menu starts.
     [SerializeField] private float musicFadeInDuration = 2.5f;
 
@@ -167,16 +168,38 @@ public class UIAudioManager : MonoBehaviour
     // INGAME BACKGROUND MUSIC & SOUNDEFFECT METHODS
     // ============================================================
 
-    public void PlayBGM(int index)
+    public void PlayBGMOneShot(int index)
     {
         musicAudioSource.PlayOneShot(backgroundMusic[index], sfxVolume);
     }
 
-    public void PlaySFX(int index)
+    public void PlayBGM(int index, bool isLooping = false)
+    {
+        musicAudioSource.clip = backgroundMusic[index];
+        musicAudioSource.loop = isLooping;
+        musicAudioSource.Play();
+    }
+
+    public void StopBGM()
+    {
+        musicAudioSource.Stop();
+    }
+
+    public void PlaySFXOneShot(int index)
     {
         uiAudioSource.PlayOneShot(soundEffects[index], sfxVolume);
     }
 
+    public void PlaySFX(int index)
+    {
+        uiAudioSource.clip = soundEffects[index];
+        uiAudioSource.Play();
+    }
+
+    public void StopSFX()
+    {
+        uiAudioSource.Stop();
+    }
     // ============================================================
     // UI SOUND METHODS
     // ============================================================
