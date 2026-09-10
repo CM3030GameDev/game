@@ -8,11 +8,14 @@ public class Character : MonoBehaviour
     private SpriteRenderer sr;
     private Vector2 movement;
     private float invulnTimer;
+    private float flickerTimer;
     private float regenAccumulator;
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
     public bool isAttacked;
+    [Tooltip("Seconds per on/off step while blinking after a hit.")]
+    [SerializeField] private float flickerInterval = 0.08f;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -49,6 +52,8 @@ public class Character : MonoBehaviour
             isAttacked = false;
             animator.SetBool("attacked", false);
         }
+
+        Flicker();
     }
 
     private void FixedUpdate()
@@ -111,6 +116,18 @@ public class Character : MonoBehaviour
         animator.SetBool("attacked", true);
         cs.health -= amount;
         GrantInvulnerability(invulnerability);
+        flickerTimer = invulnerability;
+    }
+
+    // Blinks on its own timer rather than on invulnTimer, because GrantInvulnerability is also
+    // used by the Guard skill, which lasts seconds and has its own shield visual.
+    private void Flicker()
+    {
+        if (flickerTimer <= 0f) return;
+
+        flickerTimer -= Time.deltaTime;
+        sr.enabled = flickerTimer <= 0f ||
+                     Mathf.Repeat(flickerTimer, flickerInterval * 2f) > flickerInterval;
     }
 
     public void GrantInvulnerability(float duration)

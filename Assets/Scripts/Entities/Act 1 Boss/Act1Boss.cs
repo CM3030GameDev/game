@@ -8,9 +8,16 @@ public class Act1Boss : MonoBehaviour
     [Header("Health")]
     [SerializeField] private int maxHP = 300;
     [SerializeField] private Image healthBarFill; // Image Type: Filled, Horizontal, Origin Left
+    [Header("Companion damage")]
+    [SerializeField] private int swordDamage = 20;
+    [SerializeField] private float swordCooldown = 0.5f;
+    [SerializeField] private int flamethrowerDamage = 5;
+    [SerializeField] private float flamethrowerCooldown = 0.25f;
+
     [SerializeField] private Color hitFlashColor = Color.red;
     private int currentHP;
     private float hitFlashTimer;
+    private float companionHitTimer;
 
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 3f;
@@ -66,6 +73,7 @@ public class Act1Boss : MonoBehaviour
     private void Update()
     {
         HandleHitFlash();
+        if (companionHitTimer > 0f) companionHitTimer -= Time.deltaTime;
 
         if (currentHP <= 0) { rb.linearVelocity = Vector2.zero; return; }
 
@@ -180,15 +188,31 @@ public class Act1Boss : MonoBehaviour
         transform.position = basePos;
     }
 
-    // Touching the boss hurts - during a dash or just walking into it
-    private void OnCollisionEnter2D(Collision2D collision)
+    // Companion weapons reach the boss the same way they reach a Mob, on their own cooldown.
+    // BossAttacked has no rate limit of its own, so without this the flame would tick every frame.
+    private void OnTriggerStay2D(Collider2D other)
     {
-        if (!collision.gameObject.CompareTag("Character")) return;
+        if (currentHP <= 0) return;
 
-        Character c = collision.gameObject.GetComponent<Character>();
-        if (c != null)
+        // Contact damage is Stay, not Enter, because the boss collider is a trigger so the player
+        // can walk through it. The player's own i-frames rate limit this.
+        if (other.CompareTag("Character"))
         {
-            c.CharacterAttacked(contactDamage, contactInvulnerability);
+            other.GetComponent<Character>()?.CharacterAttacked(contactDamage, contactInvulnerability);
+            return;
+        }
+
+        if (companionHitTimer > 0f) return;
+
+        if (other.CompareTag("Sword"))
+        {
+            companionHitTimer = swordCooldown;
+            BossAttacked(swordDamage, 0.1f);
+        }
+        else if (other.CompareTag("Flamethrower"))
+        {
+            companionHitTimer = flamethrowerCooldown;
+            BossAttacked(flamethrowerDamage, 0.1f);
         }
     }
 

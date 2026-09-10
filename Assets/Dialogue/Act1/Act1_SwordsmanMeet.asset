@@ -10,9 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
-  m_Name: Act1_StartDialogue
+  m_Name: Act1_SwordsmanMeet
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Soldier
+  speakerName: Swordsman
   sentences:
-  - We have to make our way deeper into the city quickly.
-  - Let's move fast. It's time to stop the robots once and for all.
+  - I have not seen another soul in a long time.
+  - You are the first one to come through here alive.
+  - You seek to destroy them once and for all too?
+  - Allow me to assist.
+  - There is a passage into the city above us. Let's go.

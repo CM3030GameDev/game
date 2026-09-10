@@ -6,8 +6,14 @@ public class ExpOrb : MonoBehaviour
     [SerializeField] private int expValue = 10;        // Flat Value (change later!!)
     [SerializeField] private float moveSpeed = 12f;      // Move speed of the exp orb when the player is in range
     [SerializeField] private float collectDistance = 0.3f;
+    [Tooltip("Top speed a magnetised orb reaches. Orbs far from the player travel at this, " +
+             "easing back to Move Speed as they arrive.")]
+    [SerializeField] private float magnetSpeed = 20f;
+    [Tooltip("Distance at which a magnetised orb is already at full Magnet Speed.")]
+    [SerializeField] private float magnetRampDistance = 15f;
 
     private Transform player;
+    private bool magnetised;
 
     private void Start()
     {
@@ -21,11 +27,17 @@ public class ExpOrb : MonoBehaviour
 
         float dist = Vector2.Distance(transform.position, player.position);
 
-        // Magnet effect when ExpOrb is within the player's pickup radius
-        if (dist <= characterStats.pickupRadius)
+        // Magnet effect within the player's pickup radius, or from anywhere once magnetised
+        if (magnetised || dist <= characterStats.pickupRadius)
         {
+            // Magnetised orbs scale their speed with distance, so ones across the map come in
+            // quickly instead of crawling, then ease back to normal speed as they arrive.
+            float speed = magnetised
+                ? Mathf.Lerp(moveSpeed, magnetSpeed, Mathf.Clamp01(dist / magnetRampDistance))
+                : moveSpeed;
+
             transform.position = Vector2.MoveTowards(
-                transform.position, player.position, moveSpeed * Time.deltaTime);
+                transform.position, player.position, speed * Time.deltaTime);
         }
 
         // Collects when close enough and deletes the exp orb once collected
@@ -36,9 +48,7 @@ public class ExpOrb : MonoBehaviour
         }
     }
 
-    // Exp Value of each exp orb
-    public void SetExp(int value)
-    {
-        expValue = value;
-    }
+    // Called by a Magnet pickup. Ignores pickupRadius from here on, so the orb crosses the
+    // whole map instead of waiting for the player to walk near it.
+    public void Magnetise() => magnetised = true;
 }

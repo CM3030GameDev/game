@@ -31,8 +31,16 @@ public class Mob : MonoBehaviour
     [SerializeField] private int maxHP = 100;
     private int currentHP;
     [SerializeField] private float chaseSpeed = 5f;
-    [SerializeField] private GameObject expOrbPrefab;
-    [SerializeField] private int expReward = 10;   // Flat value for exp (change later!!)
+    [Header("Exp drop")]
+    [Tooltip("Highest value first. The roll is paid out greedily, so tiers of 10/5/1 turn a 7 " +
+             "into one blue and two greens. Order is enforced at startup.")]
+    [SerializeField] private OrbTier[] orbTiers;
+    [SerializeField] private int minExpDrop = 2;
+    [SerializeField] private int maxExpDrop = 4;
+    [Tooltip("Orbs and pickups scatter within this radius so a drop does not stack on one pixel.")]
+    [SerializeField] private float dropSpread = 0.6f;
+    [Tooltip("Rolled independently per entry, so two pickups can drop from the same kill.")]
+    [SerializeField] private PickupDrop[] pickupDrops;
     [SerializeField] private float separationRadius = 0.6f;
     [SerializeField] private float separationStrength = 2f;
     [SerializeField] private float deathAnimationDuration = 0.5f;
@@ -46,6 +54,20 @@ public class Mob : MonoBehaviour
     [SerializeField] private int flamethrowerDamage = 5;
     [SerializeField] private float flamethrowerCooldown = 0.25f;
 
+    [System.Serializable]
+    public struct OrbTier
+    {
+        public GameObject prefab;
+        public int value;
+    }
+
+    [System.Serializable]
+    public struct PickupDrop
+    {
+        public GameObject prefab;
+        [Range(0f, 1f)] public float chance;
+    }
+
     public UnityEvent onDeath;
     private void Awake()
     {
@@ -58,6 +80,10 @@ public class Mob : MonoBehaviour
         box = GetComponent<BoxCollider2D>();
         animator = GetComponent<Animator>();
         character = GameObject.FindGameObjectsWithTag("Character")[0];
+
+        // Greedy payout only works from the largest denomination down, so don't rely on
+        // whoever filled the array in the Inspector getting the order right.
+        if (orbTiers != null) System.Array.Sort(orbTiers, (a, b) => b.value.CompareTo(a.value));
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -81,12 +107,44 @@ public class Mob : MonoBehaviour
         // Only drop exp on a real death, since OnDisable also fires when the pool is built.
         if (!death) return;
 
-        // Drops exp orb at mob position when the mob is dead
-        if (expOrbPrefab != null)
+        DropExp();
+        DropPickups();
+    }
+
+    private void DropPickups()
+    {
+        if (pickupDrops == null) return;
+
+        foreach (PickupDrop drop in pickupDrops)
         {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
+            if (drop.prefab == null || Random.value > drop.chance) continue;
+            Spawn(drop.prefab);
         }
+    }
+
+    // Rolls an exp budget and pays it out in the largest orbs that fit, so one number per mob
+    // decides both how much exp it is worth and which orbs it drops.
+    private void DropExp()
+    {
+        if (orbTiers == null) return;
+
+        int remaining = Random.Range(minExpDrop, maxExpDrop + 1);
+
+        foreach (OrbTier tier in orbTiers)
+        {
+            if (tier.prefab == null || tier.value <= 0) continue;
+
+            int count = remaining / tier.value;
+            remaining -= count * tier.value;
+
+            for (int i = 0; i < count; i++) Spawn(tier.prefab);
+        }
+    }
+
+    private void Spawn(GameObject prefab)
+    {
+        Vector2 offset = Random.insideUnitCircle * dropSpread;
+        Instantiate(prefab, (Vector2)transform.position + offset, Quaternion.identity);
     }
 
     // Update is called once per frame

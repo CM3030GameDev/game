@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 5
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4751893443564779339, guid: 2ea7dfc84810b5d439f9d91e9d3d80de, type: 3}
@@ -203,11 +203,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Mob
   maxHP: 150
-  chaseSpeed: 1
-  expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
-  expReward: 15
+  chaseSpeed: 3
+  orbTiers:
+  - prefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
+    value: 1
+  - prefab: {fileID: 1073098421734408591, guid: 4274d0089b62b3b46ae59aff79dcf70e, type: 3}
+    value: 5
+  - prefab: {fileID: 2074261435746582316, guid: eded516243b737a4c844c3dc0f26ea85, type: 3}
+    value: 10
+  minExpDrop: 7
+  maxExpDrop: 10
+  dropSpread: 0.6
+  pickupDrops:
+  - prefab: {fileID: 7767265991423164901, guid: 305713df5aa3b47478b91f09d4c72145, type: 3}
+    chance: 0.05
+  - prefab: {fileID: 179824977991621873, guid: acba51a9c5809e54db0cbade9fb515b4, type: 3}
+    chance: 0.08
   separationRadius: 0.6
   separationStrength: 2
+  deathAnimationDuration: 0.5
+  contactDamage: 10
+  contactInvulnerability: 0.5
+  swordDamage: 20
+  swordCooldown: 0.5
+  flamethrowerDamage: 5
+  flamethrowerCooldown: 0.25
   onDeath:
     m_PersistentCalls:
       m_Calls: []

@@ -108,8 +108,8 @@ public class MobTemp : MonoBehaviour
         // Drops exp orb at mob position when the mob is dead
         if (expOrbPrefab != null)
         {
-            GameObject orb = Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
-            orb.GetComponent<ExpOrb>().SetExp(expReward);
+            // Orb prefabs carry their own exp value now, so nothing to set here.
+            Instantiate(expOrbPrefab, transform.position, Quaternion.identity);
         }
 
         // Account for death of mob

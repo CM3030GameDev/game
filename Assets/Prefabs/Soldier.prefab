@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 9
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4109989988012210610, guid: 36e082e2b549f6d468ed1966cf60cef2, type: 3}
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 12
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
@@ -555,6 +555,7 @@ MonoBehaviour:
   fillImage: {fileID: 0}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  valueText: {fileID: 0}
 --- !u!1 &8857959753512833621
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +652,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 10
+  m_SortingLayer: 13
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -763,6 +764,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
   isAttacked: 0
+  flickerInterval: 0.08
   playerAim: {fileID: 6794367839972719044}
   cs: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
 --- !u!114 &7859788852804536456
@@ -795,7 +797,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Progression
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  expPerLevel: 100
+  baseExp: 10
+  expGrowth: 10
   maxLevel: 25
 --- !u!114 &2317956446373592222
 MonoBehaviour:
@@ -811,7 +814,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoldierSkill
   activationKey: 32
   useRightMouse: 1
-  killsToCharge: 2
+  cooldown: 30
+  secondsPerKill: 1
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
   companion: {fileID: 0}
@@ -921,7 +925,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb85a73d29fa29458ab15ebe1a0b93b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TempExpSpawn
-  expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
+  expOrbPrefab: {fileID: 2074261435746582316, guid: eded516243b737a4c844c3dc0f26ea85, type: 3}
   cam: {fileID: 0}
 --- !u!114 &3060023109355740636
 MonoBehaviour:
@@ -937,7 +941,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireSkill
   activationKey: 49
   useRightMouse: 0
-  killsToCharge: 2
+  cooldown: 30
+  secondsPerKill: 1
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
   companion: {fileID: 0}
@@ -945,8 +950,6 @@ MonoBehaviour:
   hud: {fileID: 0}
   fireOverlay: {fileID: 0}
   duration: 8
-  bandHeight: 2.5
-  tickDamage: 8
   tickInterval: 0.4
   slowMultiplier: 0.4
 --- !u!114 &4930700049808492635
@@ -963,7 +966,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwordSkill
   activationKey: 50
   useRightMouse: 0
-  killsToCharge: 2
+  cooldown: 30
+  secondsPerKill: 1
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
   companion: {fileID: 0}
