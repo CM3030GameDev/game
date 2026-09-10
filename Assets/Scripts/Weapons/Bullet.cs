@@ -56,6 +56,13 @@ public class Bullet : MonoBehaviour
             miniboss.BossAttacked(damage, hitFlash);
             hitsRemaining--;
         }
+        // Act 2 miniboss damage check
+        else if (other.CompareTag("MiniBoss2"))
+        {
+            Act2Miniboss miniboss = other.GetComponent<Act2Miniboss>();
+            miniboss.MobAttacked(damage, hitFlash);
+            hitsRemaining--;
+        }
         // Character damage check - only if a barrier reflected this bullet back at the player;
         // otherwise a weapon spawning bullets near the player would hit them immediately.
         else if (isReflected && other.CompareTag("Character"))
