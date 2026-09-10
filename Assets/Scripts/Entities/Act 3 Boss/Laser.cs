@@ -20,8 +20,7 @@ public class Laser : MonoBehaviour
         if(collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(10);
-            character.GrantInvulnerability(0.05f);
+            character.CharacterAttacked(10, 0.05f);
             Destroy(gameObject);
         }
         else if(collision.CompareTag("Wall"))

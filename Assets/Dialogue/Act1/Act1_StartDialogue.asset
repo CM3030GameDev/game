@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Soldier
   sentences:
-  - We need to move deeper into the city.
+  - We have to make our way deeper into the city quickly.
+  - Let's move fast. It's time to stop the robots once and for all.

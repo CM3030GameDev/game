@@ -11,7 +11,7 @@ public class StatLevels : MonoBehaviour
     private readonly Dictionary<CharacterStatsUpgrade, int> levels
         = new Dictionary<CharacterStatsUpgrade, int>();
 
-    // Slot assignment is by acquisition order, same idea as WeaponSlots - first stat picked gets slot 0, etc.
+    // Slots are assigned in acquisition order, like WeaponSlots (first stat picked gets slot 0)
     private readonly List<CharacterStatsUpgrade> order = new List<CharacterStatsUpgrade>();
 
     public bool IsFull => order.Count >= maxSlots;
@@ -38,6 +38,14 @@ public class StatLevels : MonoBehaviour
 
     // For the HUD stat slot row (Top Left Cluster on HUD in Hiearchy)
     public IEnumerable<KeyValuePair<CharacterStatsUpgrade, int>> All => levels;
+
+    // Called when this stat's paired weapon evolves, since both halves were maxed to get here.
+    public void MarkCombined(CharacterStatsUpgrade u)
+    {
+        int i = order.IndexOf(u);
+        if (i < 0 || i >= statSlotPips.Length || statSlotPips[i] == null) return;
+        statSlotPips[i].SetCombined(true);
+    }
 
     public void RefreshSlot(CharacterStatsUpgrade u)
     {

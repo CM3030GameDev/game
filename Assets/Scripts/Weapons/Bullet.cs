@@ -68,8 +68,7 @@ public class Bullet : MonoBehaviour
         else if (isReflected && other.CompareTag("Character"))
         {
             Character character = other.GetComponent<Character>();
-            character.CharacterAttacked(damage);
-            character.GrantInvulnerability(hitFlash);
+            character.CharacterAttacked(damage, hitFlash);
             hitsRemaining--;
         }
         else if (other.CompareTag("Wall"))

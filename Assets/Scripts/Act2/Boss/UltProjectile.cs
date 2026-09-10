@@ -63,8 +63,7 @@ public class UltProjectile : MonoBehaviour
             Character character = collision.gameObject.GetComponent<Character>();
             if (!character.isAttacked && character != null)
             {
-                character.CharacterAttacked(damage);
-                character.GrantInvulnerability(playerInvulnerability);
+                character.CharacterAttacked(damage, playerInvulnerability);
             }
             UIAudioManager.Instance.PlaySFXOneShot(7);
             UltExplode();

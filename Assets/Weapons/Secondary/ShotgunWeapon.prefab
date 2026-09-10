@@ -45,6 +45,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShotgunWeapon
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  pelletPrefab: {fileID: 3854921703585842725, guid: 8b13d099aac82f24d836f58ff8631a9f, type: 3}
+  pelletPrefab: {fileID: 6096917248793708765, guid: cb5259c164e84b6449ffbfb4d5f31063, type: 3}
   pelletSpeed: 20
-  knockback: 4
+  knockback: 8
+  combinedStunChance: 0.25
+  combinedStunDuration: 1.5

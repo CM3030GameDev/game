@@ -56,8 +56,7 @@ public class Shockwave : MonoBehaviour
     {
         if (collision.CompareTag("Character"))
         {
-            character.CharacterAttacked(50);
-            character.GrantInvulnerability(0.5f);
+            character.CharacterAttacked(50, 0.5f);
             knockBack = true;
         }
     }

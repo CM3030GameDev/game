@@ -10,8 +10,7 @@ public class UpgradeContext
     public StatLevels statLevels;
     public Color cardColor = Color.black;
 
-    // stat -> the weapon it evolves. Only SecondaryWeaponData knows its partner, so
-    // UpgradeManager builds the reverse map once and stat cards read it from here.
+    // Maps a stat to the weapon it evolves. UpgradeManager builds it so the pairing cannot drift.
     public Dictionary<CharacterStatsUpgrade, SecondaryWeaponData> statPartners
         = new Dictionary<CharacterStatsUpgrade, SecondaryWeaponData>();
 }
@@ -34,9 +33,14 @@ public abstract class Upgrade : ScriptableObject
     // Icon of the partner this combines with, or null when there's no pairing to show.
     public virtual Sprite GetComboIcon(UpgradeContext ctx) => null;
 
-    // "Combines with X" line, or null. Kept separate from GetDescription so the card can
-    // put it in its own styled row; UpgradeCardUI appends it to the description if there isn't one.
+    // The "Combines with X" line, kept separate so the card can style it as its own row.
     public virtual string GetComboText(UpgradeContext ctx) => null;
+
+    // True when the player already holds the other half at any level. Drives the card highlight.
+    public virtual bool OwnsComboPartner(UpgradeContext ctx) => false;
+
+    // True when the other half is maxed. Drives the wording, which is a progress readout.
+    public virtual bool IsComboReady(UpgradeContext ctx) => false;
 
     // Shared wording so both card types phrase the combination hint identically.
     protected static string ComboLine(string partnerName, bool partnerReady)

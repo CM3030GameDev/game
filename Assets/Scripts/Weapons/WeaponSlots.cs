@@ -14,7 +14,7 @@ public class WeaponSlots : MonoBehaviour
     public bool IsFull => active.Count >= maxSlots;
     public IReadOnlyList<SecondaryWeapon> Active => active;
 
-    // Evolves an owned weapon into its combined form. Pips stay full - it was already maxed to get here.
+    // Evolves an owned weapon into its combined form. Pips stay full since it was already maxed.
     public void Combine(SecondaryWeapon w, SecondaryWeaponData combined)
     {
         int i = active.IndexOf(w);
@@ -22,6 +22,13 @@ public class WeaponSlots : MonoBehaviour
 
         w.Combine(combined);
         SetSlotIcon(i + secondaryOffset, combined.icon);
+        MarkCombined(i + secondaryOffset);
+    }
+
+    private void MarkCombined(int index)
+    {
+        if (index < 0 || index >= weaponSlotPips.Length || weaponSlotPips[index] == null) return;
+        weaponSlotPips[index].SetCombined(true);
     }
 
     public SecondaryWeapon Find(SecondaryWeaponData d)

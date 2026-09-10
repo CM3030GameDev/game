@@ -462,8 +462,7 @@ public class Act2Miniboss : MonoBehaviour
             Character character = collision.gameObject.GetComponent<Character>();
             if (character != null && !character.isAttacked)
             {
-                character.CharacterAttacked(collisionDamage);
-                character.GrantInvulnerability(playerInvulnerability);
+                character.CharacterAttacked(collisionDamage, playerInvulnerability);
             }
         }
     }
@@ -475,8 +474,7 @@ public class Act2Miniboss : MonoBehaviour
             Character character = collision.gameObject.GetComponent<Character>();
             if (!character.isAttacked && character != null)
             {
-                character.CharacterAttacked(collisionDamage);
-                character.GrantInvulnerability(playerInvulnerability);
+                character.CharacterAttacked(collisionDamage, playerInvulnerability);
             }
         }
         if (collision.CompareTag("Flamethrower"))

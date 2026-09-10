@@ -6,7 +6,11 @@ public abstract class PlayerSkill : MonoBehaviour
     [Header("Activation")]
     [SerializeField] private KeyCode activationKey = KeyCode.Alpha1;
     [SerializeField] private bool useRightMouse;
-    [SerializeField] protected int killsToCharge = 30;
+    [Tooltip("Seconds before the skill is available again after use.")]
+    [SerializeField] protected float cooldown = 30f;
+    [Tooltip("Seconds knocked off the remaining cooldown per enemy killed. Kills shorten the " +
+             "wait; they don't replace it, so the cooldown is a floor rather than a kill quota.")]
+    [SerializeField] private float secondsPerKill = 1f;
 
     [Header("Screen Effect")]
     [SerializeField] private GameObject screenEffect;
@@ -19,18 +23,18 @@ public abstract class PlayerSkill : MonoBehaviour
     [Header("HUD")]
     [SerializeField] private SkillCooldownUI hud;
 
-    private int killsSinceLastUse;
+    private float cooldownRemaining;
     private int lastSeenKillCount;
 
-    private static bool anyoneCasting;
-
-    public bool IsReady => killsSinceLastUse >= killsToCharge;
-    public float ChargeFraction => Mathf.Clamp01((float)killsSinceLastUse / killsToCharge);
+    public bool IsReady => cooldownRemaining <= 0f;
+    // Inverted so the HUD radial still fills up towards ready rather than draining.
+    public float ChargeFraction => cooldown <= 0f ? 1f : Mathf.Clamp01(1f - cooldownRemaining / cooldown);
 
     protected virtual void Start()
     {
         lastSeenKillCount = MobManager.Instance.GetKillCount();
-        anyoneCasting = false;
+        // Start on cooldown, so the first use still has to be earned.
+        cooldownRemaining = cooldown;
         if (screenEffect != null) screenEffect.SetActive(false);
     }
 
@@ -38,55 +42,53 @@ public abstract class PlayerSkill : MonoBehaviour
     {
         if (Time.timeScale == 0f) return;
 
-        TrackKills();
+        TickCooldown();
 
         if (hud != null) hud.SetCharge(ChargeFraction, IsReady);
 
-        if (anyoneCasting || !IsReady) return;
+        if (!IsReady) return;
         if (!PressedActivate()) return;
 
-        killsSinceLastUse = 0;
+        cooldownRemaining = cooldown;
         StartCoroutine(RunCast());
     }
 
     private bool PressedActivate()
         => useRightMouse ? Input.GetMouseButtonDown(1) : Input.GetKeyDown(activationKey);
 
-    private void TrackKills()
+    // Time and kills pay down the same counter, so quiet and busy stretches both recharge it.
+    private void TickCooldown()
     {
+        // Drain the counter every frame, or banked kills would refund the next cooldown at once.
         int current = MobManager.Instance.GetKillCount();
         int delta = current - lastSeenKillCount;
         lastSeenKillCount = current;
 
-        if (delta > 0)
-            killsSinceLastUse = Mathf.Min(killsToCharge, killsSinceLastUse + delta);
+        if (cooldownRemaining <= 0f) return;
+
+        cooldownRemaining -= Time.deltaTime;
+        if (delta > 0) cooldownRemaining -= delta * secondsPerKill;
+        if (cooldownRemaining < 0f) cooldownRemaining = 0f;
     }
 
     protected void IgnoreKills(int count) => lastSeenKillCount += count;
 
+    // Skills can overlap on purpose. Spending the charge up front stops one retriggering itself.
     private IEnumerator RunCast()
     {
-        anyoneCasting = true;
-        try
+        if (companion != null)
         {
-            if (companion != null)
-            {
-                companion.position = transform.position;
-                yield return new WaitForSeconds(castTime);
-            }
-
-            if (screenEffect != null)
-            {
-                screenEffect.SetActive(true);
-                StartCoroutine(HideScreenEffect());
-            }
-
-            yield return Cast();
+            companion.position = transform.position;
+            yield return new WaitForSeconds(castTime);
         }
-        finally
+
+        if (screenEffect != null)
         {
-            anyoneCasting = false;
+            screenEffect.SetActive(true);
+            StartCoroutine(HideScreenEffect());
         }
+
+        yield return Cast();
     }
 
     private IEnumerator HideScreenEffect()

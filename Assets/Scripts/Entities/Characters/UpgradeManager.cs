@@ -48,8 +48,7 @@ public class UpgradeManager : MonoBehaviour
         slots.SetMainWeaponLevel(index + 1);
     }
 
-    // Walk the pool once so stat cards can name the weapon they evolve. Derived rather than
-    // stored on the stat assets, so the pairing can't drift out of sync with the weapon data.
+    // Derived from the pool so stat cards can name their weapon without storing it twice.
     private void BuildStatPartners()
     {
         foreach (var u in upgradePool)
@@ -122,8 +121,7 @@ public class UpgradeManager : MonoBehaviour
         }
     }
 
-    // A weapon evolves once it AND its paired stat are both maxed. Checked after every pick,
-    // since either half of the pair could have been the one that just completed.
+    // A weapon evolves once it and its paired stat are both maxed. Checked after every pick.
     private void TryCombineWeapons()
     {
         if (slots == null || statLevels == null) return;
@@ -137,6 +135,7 @@ public class UpgradeManager : MonoBehaviour
             if (!statLevels.IsMaxLevel(d.combinesWithStat)) continue;
 
             slots.Combine(w, d.combinedResult);
+            statLevels.MarkCombined(d.combinesWithStat);   // green the stat pips too
         }
     }
 }
