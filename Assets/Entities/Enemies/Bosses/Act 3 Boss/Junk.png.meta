@@ -1,0 +1,1716 @@
+fileFormatVersion: 2
+guid: 51690d15b6973a440af92a44bc42b349
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -356559711771614372
+    second: Junk_0
+  - first:
+      213: -6202080158447412410
+    second: Junk_1
+  - first:
+      213: 1652598227201966343
+    second: Junk_2
+  - first:
+      213: -5084452829603593578
+    second: Junk_3
+  - first:
+      213: -8136557852892684794
+    second: Junk_4
+  - first:
+      213: -2713304425791096656
+    second: Junk_5
+  - first:
+      213: -6039854466756094275
+    second: Junk_6
+  - first:
+      213: -1851803517735521742
+    second: Junk_7
+  - first:
+      213: 5109187545415067648
+    second: Junk_8
+  - first:
+      213: -6932341525033972622
+    second: Junk_9
+  - first:
+      213: -330120944008343760
+    second: Junk_10
+  - first:
+      213: -2615484048483076412
+    second: Junk_11
+  - first:
+      213: -626975633288318131
+    second: Junk_12
+  - first:
+      213: -8482017470526529657
+    second: Junk_13
+  - first:
+      213: -1872045029646301275
+    second: Junk_14
+  - first:
+      213: -5705317685263540537
+    second: Junk_15
+  - first:
+      213: 6644282397752575523
+    second: Junk_16
+  - first:
+      213: -5611807098843868305
+    second: Junk_17
+  - first:
+      213: -1736687292302692646
+    second: Junk_18
+  - first:
+      213: -6284976252164312555
+    second: Junk_19
+  - first:
+      213: -6408151286366803926
+    second: Junk_20
+  - first:
+      213: 3224839884466521621
+    second: Junk_21
+  - first:
+      213: 7311275218623594616
+    second: Junk_22
+  - first:
+      213: -2195727767001645224
+    second: Junk_23
+  - first:
+      213: -136887725197696848
+    second: Junk_24
+  - first:
+      213: -274197903410951098
+    second: Junk_25
+  - first:
+      213: -2316806395216696997
+    second: Junk_26
+  - first:
+      213: -4192091935935147013
+    second: Junk_27
+  - first:
+      213: -1256879283948219717
+    second: Junk_28
+  - first:
+      213: 8748138509335684765
+    second: Junk_29
+  - first:
+      213: 5967641472618469680
+    second: Junk_30
+  - first:
+      213: -3577221413396152339
+    second: Junk_31
+  - first:
+      213: -2580603185723061887
+    second: Junk_32
+  - first:
+      213: -4214035519201549961
+    second: Junk_33
+  - first:
+      213: 462511002040052201
+    second: Junk_34
+  - first:
+      213: -1572755700627330288
+    second: Junk_35
+  - first:
+      213: -4004336945761152283
+    second: Junk_36
+  - first:
+      213: 8843941704975098542
+    second: Junk_37
+  - first:
+      213: 4471716798506993554
+    second: Junk_38
+  - first:
+      213: -6407300231847289261
+    second: Junk_39
+  - first:
+      213: 1973734907485104985
+    second: Junk_40
+  - first:
+      213: 2881958968119383752
+    second: Junk_41
+  - first:
+      213: 2853371835728194666
+    second: Junk_42
+  - first:
+      213: 4282926812112715802
+    second: Junk_43
+  - first:
+      213: -8053329211765037735
+    second: Junk_44
+  - first:
+      213: 4867936617909670956
+    second: Junk_45
+  - first:
+      213: -6102576178982154382
+    second: Junk_46
+  - first:
+      213: 6058032690202632800
+    second: Junk_47
+  - first:
+      213: -31251134081197657
+    second: Junk_48
+  - first:
+      213: -5862569108257443955
+    second: Junk_49
+  - first:
+      213: -6086926245855965329
+    second: Junk_50
+  - first:
+      213: 1568406603499752277
+    second: Junk_51
+  - first:
+      213: -9149081500819742790
+    second: Junk_52
+  - first:
+      213: -8584305830079690893
+    second: Junk_53
+  - first:
+      213: -7585105954071456387
+    second: Junk_54
+  - first:
+      213: 4001621819105485734
+    second: Junk_55
+  - first:
+      213: -8961745702722545844
+    second: Junk_56
+  - first:
+      213: 5542784129619597748
+    second: Junk_57
+  - first:
+      213: -9130025036814633903
+    second: Junk_58
+  - first:
+      213: -8817447796112741178
+    second: Junk_59
+  - first:
+      213: 5091963775361202902
+    second: Junk_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Junk_0
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 674
+        width: 64
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5323aec4de3d0bf0800000000000000
+      internalID: -356559711771614372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_1
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 671
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64b5e37b4f8cde9a0800000000000000
+      internalID: -6202080158447412410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_2
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 611
+        width: 96
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70140d0f4553fe610800000000000000
+      internalID: 1652598227201966343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_3
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 723
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6928f3e07156079b0800000000000000
+      internalID: -5084452829603593578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 646
+        width: 240
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60e9aebfdb3251f80800000000000000
+      internalID: -8136557852892684794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_5
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 677
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b8f93d1008685ad0800000000000000
+      internalID: -2713304425791096656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_6
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 671
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db652fdec502e2ca0800000000000000
+      internalID: -6039854466756094275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_7
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 625
+        width: 93
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2323e8b03821d46e0800000000000000
+      internalID: -1851803517735521742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_8
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 575
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008a05fb00b77e640800000000000000
+      internalID: 5109187545415067648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_9
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 611
+        width: 64
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c09a2bc106bcf90800000000000000
+      internalID: -6932341525033972622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_10
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 603
+        width: 32
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f477f10cc2b6bf0800000000000000
+      internalID: -330120944008343760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_11
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 583
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c637768d1fe3bbd0800000000000000
+      internalID: -2615484048483076412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 547
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d43360fbbf88c47f0800000000000000
+      internalID: -626975633288318131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_13
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 548
+        width: 30
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78fdb9adc02d94a80800000000000000
+      internalID: -8482017470526529657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_14
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 514
+        width: 63
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a7856cc6f82506e0800000000000000
+      internalID: -1872045029646301275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_15
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 518
+        width: 64
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cedc171bc3a2d0b0800000000000000
+      internalID: -5705317685263540537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_16
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 527
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3264c6943ab353c50800000000000000
+      internalID: 6644282397752575523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_17
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 533
+        width: 76
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f63556d1d2bde12b0800000000000000
+      internalID: -5611807098843868305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_18
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 539
+        width: 130
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adeec58eb1c06e7e0800000000000000
+      internalID: -1736687292302692646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_19
+      rect:
+        serializedVersion: 2
+        x: 673
+        y: 533
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512fafbd56747c8a0800000000000000
+      internalID: -6284976252164312555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_20
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 532
+        width: 34
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a28e42d5b5ca117a0800000000000000
+      internalID: -6408151286366803926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_21
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 449
+        width: 94
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516832bf9cee0cc20800000000000000
+      internalID: 3224839884466521621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_22
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 487
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8700d25131ed67560800000000000000
+      internalID: 7311275218623594616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_23
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 487
+        width: 30
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85fb768ba353781e0800000000000000
+      internalID: -2195727767001645224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_24
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 395
+        width: 146
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b0ea75d65da91ef0800000000000000
+      internalID: -136887725197696848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_25
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 401
+        width: 130
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c8809a57ad13cf0800000000000000
+      internalID: -274197903410951098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_26
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 483
+        width: 44
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5961c7cbdc09dfd0800000000000000
+      internalID: -2316806395216696997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_27
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 440
+        width: 50
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf35ecc4892b2d5c0800000000000000
+      internalID: -4192091935935147013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_28
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 439
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb218b253faae8ee0800000000000000
+      internalID: -1256879283948219717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_29
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 439
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d966ed6ef91a76970800000000000000
+      internalID: 8748138509335684765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_30
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 431
+        width: 30
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 039105a2d4251d250800000000000000
+      internalID: 5967641472618469680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_31
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 354
+        width: 128
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deff993d3182b5ec0800000000000000
+      internalID: -3577221413396152339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_32
+      rect:
+        serializedVersion: 2
+        x: 343
+        y: 383
+        width: 34
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1894cb0431bdf2cd0800000000000000
+      internalID: -2580603185723061887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_33
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 388
+        width: 28
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 771ec1fa50db485c0800000000000000
+      internalID: -4214035519201549961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_34
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 358
+        width: 72
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e9ae4d4e4b2b6600800000000000000
+      internalID: 462511002040052201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_35
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 356
+        width: 87
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01b23a9e5037c2ae0800000000000000
+      internalID: -1572755700627330288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_36
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 394
+        width: 36
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e21fe283ccbd68c0800000000000000
+      internalID: -4004336945761152283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_37
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 239
+        width: 128
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2ad4b9f1efbba70800000000000000
+      internalID: 8843941704975098542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_38
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 337
+        width: 48
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297082f6cbabe0e30800000000000000
+      internalID: 4471716798506993554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_39
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 259
+        width: 254
+        height: 127
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35ed67fe262b417a0800000000000000
+      internalID: -6407300231847289261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_40
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 208
+        width: 254
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95b2079e07d146b10800000000000000
+      internalID: 1973734907485104985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_41
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 126
+        width: 126
+        height: 115
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c6d1088966cef720800000000000000
+      internalID: 2881958968119383752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_42
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 196
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ceea81196399720800000000000000
+      internalID: 2853371835728194666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_43
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 196
+        width: 175
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1089f26e33007b30800000000000000
+      internalID: 4282926812112715802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_44
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 69
+        width: 127
+        height: 124
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 955e77110c3dc3090800000000000000
+      internalID: -8053329211765037735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_45
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 67
+        width: 127
+        height: 126
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c245f9300926e8340800000000000000
+      internalID: 4867936617909670956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_46
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 149
+        width: 73
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f020d4c4b4f4ba0800000000000000
+      internalID: -6102576178982154382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_47
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 51
+        width: 127
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0626b3982a4721450800000000000000
+      internalID: 6058032690202632800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_48
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 154
+        width: 31
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a913465249f09ff0800000000000000
+      internalID: -31251134081197657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_49
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 105
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fe22f0578f3aea0800000000000000
+      internalID: -5862569108257443955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_50
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 124
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6fc0cd44d4e68ba0800000000000000
+      internalID: -6086926245855965329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_51
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 124
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55bcaf00f7914c510800000000000000
+      internalID: 1568406603499752277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_52
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 95
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf9a8259dee70180800000000000000
+      internalID: -9149081500819742790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_53
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 47
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37709c2445b6ed880800000000000000
+      internalID: -8584305830079690893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Steampunk_Tile
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75ded7825a4cb690800000000000000
+      internalID: -7585105954071456387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_55
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 0
+        width: 98
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a32c3dc7dd988730800000000000000
+      internalID: 4001621819105485734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_56
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 4
+        width: 94
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c47d6d5c3cb71a380800000000000000
+      internalID: -8961745702722545844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_57
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 91
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b916a88cccebec40800000000000000
+      internalID: 5542784129619597748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_58
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 3
+        width: 58
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154bd3a1a92ab4180800000000000000
+      internalID: -9130025036814633903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_59
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 4
+        width: 123
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cc262f32f122a580800000000000000
+      internalID: -8817447796112741178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Junk_60
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 11
+        width: 96
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dabf87431a4aa640800000000000000
+      internalID: 5091963775361202902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e26159d0c27d2f34e8c14a8f87e5c884
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Junk_0: -356559711771614372
+      Junk_1: -6202080158447412410
+      Junk_10: -330120944008343760
+      Junk_11: -2615484048483076412
+      Junk_12: -626975633288318131
+      Junk_13: -8482017470526529657
+      Junk_14: -1872045029646301275
+      Junk_15: -5705317685263540537
+      Junk_16: 6644282397752575523
+      Junk_17: -5611807098843868305
+      Junk_18: -1736687292302692646
+      Junk_19: -6284976252164312555
+      Junk_2: 1652598227201966343
+      Junk_20: -6408151286366803926
+      Junk_21: 3224839884466521621
+      Junk_22: 7311275218623594616
+      Junk_23: -2195727767001645224
+      Junk_24: -136887725197696848
+      Junk_25: -274197903410951098
+      Junk_26: -2316806395216696997
+      Junk_27: -4192091935935147013
+      Junk_28: -1256879283948219717
+      Junk_29: 8748138509335684765
+      Junk_3: -5084452829603593578
+      Junk_30: 5967641472618469680
+      Junk_31: -3577221413396152339
+      Junk_32: -2580603185723061887
+      Junk_33: -4214035519201549961
+      Junk_34: 462511002040052201
+      Junk_35: -1572755700627330288
+      Junk_36: -4004336945761152283
+      Junk_37: 8843941704975098542
+      Junk_38: 4471716798506993554
+      Junk_39: -6407300231847289261
+      Junk_4: -8136557852892684794
+      Junk_40: 1973734907485104985
+      Junk_41: 2881958968119383752
+      Junk_42: 2853371835728194666
+      Junk_43: 4282926812112715802
+      Junk_44: -8053329211765037735
+      Junk_45: 4867936617909670956
+      Junk_46: -6102576178982154382
+      Junk_47: 6058032690202632800
+      Junk_48: -31251134081197657
+      Junk_49: -5862569108257443955
+      Junk_5: -2713304425791096656
+      Junk_50: -6086926245855965329
+      Junk_51: 1568406603499752277
+      Junk_52: -9149081500819742790
+      Junk_53: -8584305830079690893
+      Junk_55: 4001621819105485734
+      Junk_56: -8961745702722545844
+      Junk_57: 5542784129619597748
+      Junk_58: -9130025036814633903
+      Junk_59: -8817447796112741178
+      Junk_6: -6039854466756094275
+      Junk_60: 5091963775361202902
+      Junk_7: -1851803517735521742
+      Junk_8: 5109187545415067648
+      Junk_9: -6932341525033972622
+      Steampunk_Tile: -7585105954071456387
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

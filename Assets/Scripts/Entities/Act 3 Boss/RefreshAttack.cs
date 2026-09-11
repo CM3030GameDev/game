@@ -17,12 +17,12 @@ public class RefreshAttack : StateMachineBehaviour
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        FinalBoss finalBoss = animator.GetComponent<FinalBoss>();
+        FinalBossTwo finalBoss = animator.GetComponent<FinalBossTwo>();
         //Randomize next boss attack
         finalBoss.randomNum = Random.Range(0f, 1f);
         //Reset boss attack timer
         finalBoss.attackTime = 0f;
-        //Allow boss to move again
+        //Update boss attack state to allow it to move again
         finalBoss.attacking = false;
     }
 

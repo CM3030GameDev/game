@@ -4,6 +4,7 @@ public class PlaceholderReset : MonoBehaviour
 {
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private SceneState sceneState;
+    [SerializeField] private GameObject gameOver;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -19,6 +20,7 @@ public class PlaceholderReset : MonoBehaviour
         {
             characterStats.ResetStats();
             sceneState.ResetStates();
+            gameOver.SetActive(false);
         }
     }
 }

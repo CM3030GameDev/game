@@ -20,6 +20,9 @@ TagManager:
   - Mobs
   - Projectile
   - MiniBoss
+  - Water
+  - Drone
+  - Hydrant
   layers:
   - Default
   - TransparentFX
@@ -81,11 +84,11 @@ TagManager:
   - name: Attack
     uniqueID: 176793315
     locked: 0
-  - name: Character
-    uniqueID: 691850385
-    locked: 0
   - name: Projectile
     uniqueID: 425002817
+    locked: 0
+  - name: Character
+    uniqueID: 691850385
     locked: 0
   - name: Weapon
     uniqueID: 2015552387
@@ -101,6 +104,9 @@ TagManager:
     locked: 0
   - name: Temporary
     uniqueID: 3548693121
+    locked: 0
+  - name: Wall
+    uniqueID: 3809879709
     locked: 0
   - name: HUD
     uniqueID: 3606316447

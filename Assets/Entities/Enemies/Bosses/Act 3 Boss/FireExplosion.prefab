@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 425002817
-  m_SortingLayer: 11
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -174,3 +174,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 672eee8c59805f444b43e1ce0ca78c18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FireExplosion
+  damage: 20

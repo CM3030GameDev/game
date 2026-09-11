@@ -9,6 +9,7 @@ public class Character : MonoBehaviour
     private Vector2 movement;
     private float invulnTimer;
     private float regenAccumulator;
+    public bool confused;
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
@@ -23,6 +24,7 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         isAttacked = false;
+        confused = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -56,7 +58,16 @@ public class Character : MonoBehaviour
         //Character alive
         if(cs.health > 0)
         {
-            rb.linearVelocity = movement * cs.moveSpeed;
+            //Normal status
+            if(!confused)
+            {
+                rb.linearVelocity = movement * cs.moveSpeed;
+            }
+            //Confused status effect
+            else
+            {
+                rb.linearVelocity = movement * -1 * cs.moveSpeed;
+            }
         }
         //Character dead
         else

@@ -2847,7 +2847,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_124
+      name: Darkblue_Floor_Top_Left
       rect:
         serializedVersion: 2
         x: 64
@@ -2869,7 +2869,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_125
+      name: Darkblue_Floor_Top_Center
       rect:
         serializedVersion: 2
         x: 96
@@ -2891,7 +2891,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_126
+      name: Darkblue_Floor_Top_Right
       rect:
         serializedVersion: 2
         x: 128
@@ -2913,7 +2913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_127
+      name: White_Floor_Top_Left
       rect:
         serializedVersion: 2
         x: 160
@@ -2935,7 +2935,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_128
+      name: White_Floor_Top_Center
       rect:
         serializedVersion: 2
         x: 192
@@ -2957,7 +2957,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_129
+      name: White_Floor_Top_Right
       rect:
         serializedVersion: 2
         x: 224
@@ -3045,7 +3045,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_133
+      name: Darkblue_Floor_Bottom_Left
       rect:
         serializedVersion: 2
         x: 64
@@ -3067,7 +3067,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_134
+      name: Darkblue_Floor_Bottom_Center
       rect:
         serializedVersion: 2
         x: 96
@@ -3089,7 +3089,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_135
+      name: Darkblue_Floor_Bottom_Right
       rect:
         serializedVersion: 2
         x: 128
@@ -3111,7 +3111,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_136
+      name: White_Floor_Bottom_Left
       rect:
         serializedVersion: 2
         x: 160
@@ -3133,7 +3133,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_137
+      name: White_Floor_Bottom_Center
       rect:
         serializedVersion: 2
         x: 192
@@ -3155,7 +3155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Floor_138
+      name: White_Floor_Bottom_Right
       rect:
         serializedVersion: 2
         x: 224
@@ -3258,6 +3258,12 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Darkblue_Floor_Bottom_Center: -1596928077
+      Darkblue_Floor_Bottom_Left: 1547860645
+      Darkblue_Floor_Bottom_Right: -695098198
+      Darkblue_Floor_Top_Center: -258594565
+      Darkblue_Floor_Top_Left: -2114528516
+      Darkblue_Floor_Top_Right: -947359381
       Lab_Floor_0: -8095414998663383585
       Lab_Floor_1: -7137518018297000910
       Lab_Floor_10: -254030611
@@ -3287,22 +3293,10 @@ TextureImporter:
       Lab_Floor_121: -711801973
       Lab_Floor_122: 693410730
       Lab_Floor_123: -12716859
-      Lab_Floor_124: -2114528516
-      Lab_Floor_125: -258594565
-      Lab_Floor_126: -947359381
-      Lab_Floor_127: 1730973383
-      Lab_Floor_128: -1475002541
-      Lab_Floor_129: -460188383
       Lab_Floor_13: -1544547682
       Lab_Floor_130: -1801615933
       Lab_Floor_131: -1503365740
       Lab_Floor_132: -1817581430
-      Lab_Floor_133: 1547860645
-      Lab_Floor_134: -1596928077
-      Lab_Floor_135: -695098198
-      Lab_Floor_136: -990748950
-      Lab_Floor_137: -1012967446
-      Lab_Floor_138: 494373487
       Lab_Floor_139: 1424974891
       Lab_Floor_14: 1571850057
       Lab_Floor_140: 1113130283
@@ -3400,6 +3394,12 @@ TextureImporter:
       Lab_Floor_Top_Center: 82735489
       Lab_Floor_Top_Left: -1444604974
       Lab_Floor_Top_Right: 67379992
+      White_Floor_Bottom_Center: -1012967446
+      White_Floor_Bottom_Left: -990748950
+      White_Floor_Bottom_Right: 494373487
+      White_Floor_Top_Center: -1475002541
+      White_Floor_Top_Left: 1730973383
+      White_Floor_Top_Right: -460188383
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

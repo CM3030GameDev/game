@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: 12bbd545e0fe649449e564c6969ef772
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7677323900054454711
+    second: TrackBot_0
+  - first:
+      213: 1387901693245259472
+    second: TrackBot_1
+  - first:
+      213: -6884635512110429653
+    second: TrackBot_2
+  - first:
+      213: -2387278902809278613
+    second: TrackBot_3
+  - first:
+      213: 4185544401427938186
+    second: TrackBot_4
+  - first:
+      213: -3819027630292076673
+    second: TrackBot_5
+  - first:
+      213: -5590887770457380191
+    second: TrackBot_6
+  - first:
+      213: -2577026182804199791
+    second: TrackBot_7
+  - first:
+      213: 5050079091521771778
+    second: TrackBot_8
+  - first:
+      213: -1843847107696479401
+    second: TrackBot_9
+  - first:
+      213: 6196599173686076299
+    second: TrackBot_10
+  - first:
+      213: -8254515728456098420
+    second: TrackBot_11
+  - first:
+      213: 2568810854042283464
+    second: TrackBot_12
+  - first:
+      213: -1163072998964000372
+    second: TrackBot_13
+  - first:
+      213: -213853531312255832
+    second: TrackBot_14
+  - first:
+      213: -749069399521539426
+    second: TrackBot_15
+  - first:
+      213: -5215534836650300514
+    second: TrackBot_16
+  - first:
+      213: 1246757563885188146
+    second: TrackBot_17
+  - first:
+      213: 935261650658911096
+    second: TrackBot_18
+  - first:
+      213: 6007491092634506850
+    second: TrackBot_19
+  - first:
+      213: -4067329916050141603
+    second: TrackBot_20
+  - first:
+      213: 3281198443119093267
+    second: TrackBot_21
+  - first:
+      213: -389323177451167806
+    second: TrackBot_22
+  - first:
+      213: 2789437636036615862
+    second: TrackBot_23
+  - first:
+      213: -1947274272655761077
+    second: TrackBot_24
+  - first:
+      213: -5865455745672637277
+    second: TrackBot_25
+  - first:
+      213: 5473191062611939358
+    second: TrackBot_26
+  - first:
+      213: -7839276505757014765
+    second: TrackBot_27
+  - first:
+      213: 1429150095284808117
+    second: TrackBot_28
+  - first:
+      213: -765720161688525457
+    second: TrackBot_29
+  - first:
+      213: -3359310846698831298
+    second: TrackBot_30
+  - first:
+      213: -1950549774791804580
+    second: TrackBot_31
+  - first:
+      213: -517337299940001595
+    second: TrackBot_32
+  - first:
+      213: -7591189328205880290
+    second: TrackBot_33
+  - first:
+      213: 5278925315316131778
+    second: TrackBot_34
+  - first:
+      213: -2754452312917262046
+    second: TrackBot_35
+  - first:
+      213: -1786669668142572226
+    second: TrackBot_36
+  - first:
+      213: 4014755984942266896
+    second: TrackBot_37
+  - first:
+      213: -3900827145337455739
+    second: TrackBot_38
+  - first:
+      213: 4910339596371551407
+    second: TrackBot_39
+  - first:
+      213: 6297122204419524125
+    second: TrackBot_40
+  - first:
+      213: -3940123787556766002
+    second: TrackBot_41
+  - first:
+      213: 793527339398165064
+    second: TrackBot_42
+  - first:
+      213: 8139257520645259908
+    second: TrackBot_43
+  - first:
+      213: -7556579025389215606
+    second: TrackBot_44
+  - first:
+      213: -1638232156314681149
+    second: TrackBot_45
+  - first:
+      213: -6727055570561114074
+    second: TrackBot_46
+  - first:
+      213: -4906431454754787049
+    second: TrackBot_47
+  - first:
+      213: 1423127606901126154
+    second: TrackBot_48
+  - first:
+      213: 7549944808867411071
+    second: TrackBot_49
+  - first:
+      213: -5707718253626197586
+    second: TrackBot_50
+  - first:
+      213: 8382702252809825588
+    second: TrackBot_51
+  - first:
+      213: 3330557147049004051
+    second: TrackBot_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TrackBot_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b1cc5039655b8a60800000000000000
+      internalID: 7677323900054454711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0defb019c31d24310800000000000000
+      internalID: 1387901693245259472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_2
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2a4e946a7cd470a0800000000000000
+      internalID: -6884635512110429653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67c44a7c7eaeded0800000000000000
+      internalID: -2387278902809278613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_4
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8bbcb6057a061a30800000000000000
+      internalID: 4185544401427938186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 289
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f77f905ba96100bc0800000000000000
+      internalID: -3819027630292076673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_6
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 262
+        width: 227
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aaefcec13d2962b0800000000000000
+      internalID: -5590887770457380191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 196231527509c3cd0800000000000000
+      internalID: -2577026182804199791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_8
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20958c16d2c751640800000000000000
+      internalID: 5050079091521771778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_9
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 753be9d13d65966e0800000000000000
+      internalID: -1843847107696479401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_10
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b83a9031e1ebef550800000000000000
+      internalID: 6196599173686076299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_11
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ddf74eda1127d80800000000000000
+      internalID: -8254515728456098420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 257
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cdab529cdf36a320800000000000000
+      internalID: 2568810854042283464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_13
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 262
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8907e8054febdfe0800000000000000
+      internalID: -1163072998964000372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_14
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 256
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ac8b28a85d380df0800000000000000
+      internalID: -213853531312255832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_15
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 255
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9a47619955ca95f0800000000000000
+      internalID: -749069399521539426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_16
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 255
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9ba8cbf2b2be97b0800000000000000
+      internalID: -5215534836650300514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_17
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 256
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2347864166f5d4110800000000000000
+      internalID: 1246757563885188146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_18
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873e19b1487bafc00800000000000000
+      internalID: 935261650658911096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_19
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2669dc7d155ee5350800000000000000
+      internalID: 6007491092634506850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_20
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5e0381bdf0fd87c0800000000000000
+      internalID: -4067329916050141603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_21
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 316ada77998298d20800000000000000
+      internalID: 3281198443119093267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_22
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2cf523102a8d89af0800000000000000
+      internalID: -389323177451167806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_23
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 225
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6be511b30c216b620800000000000000
+      internalID: 2789437636036615862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_24
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 203
+        width: 11
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41a81abd54e9f4e0800000000000000
+      internalID: -1947274272655761077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_25
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a498696317b99ea0800000000000000
+      internalID: -5865455745672637277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_26
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e10d3d2f54ea4fb40800000000000000
+      internalID: 5473191062611939358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_27
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 223
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 315a9426d8b453390800000000000000
+      internalID: -7839276505757014765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_28
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b9aa20907c55d310800000000000000
+      internalID: 1429150095284808117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_29
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f656335e19d9f55f0800000000000000
+      internalID: -765720161688525457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_30
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e32466455945161d0800000000000000
+      internalID: -3359310846698831298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_31
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c59f0d470514ee4e0800000000000000
+      internalID: -1950549774791804580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_32
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c83408777c02d8f0800000000000000
+      internalID: -517337299940001595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_33
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 193
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e146d8d968da6a690800000000000000
+      internalID: -7591189328205880290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_34
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 201
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c72c37fa92824940800000000000000
+      internalID: 5278925315316131778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_35
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22140d1173836c9d0800000000000000
+      internalID: -2754452312917262046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_36
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3d956b27697437e0800000000000000
+      internalID: -1786669668142572226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_37
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 198
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a7b561c4747b730800000000000000
+      internalID: 4014755984942266896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_38
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 199
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58bb5f7f06a7dd9c0800000000000000
+      internalID: -3900827145337455739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_39
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4e248c8d7052440800000000000000
+      internalID: 4910339596371551407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_40
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1686a5084fd36750800000000000000
+      internalID: 6297122204419524125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_41
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecebc977a4ed159c0800000000000000
+      internalID: -3940123787556766002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_42
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 842736039ec230b00800000000000000
+      internalID: 793527339398165064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_43
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482cc75679374f070800000000000000
+      internalID: 8139257520645259908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_44
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 161
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a802282b963a12790800000000000000
+      internalID: -7556579025389215606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 130
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c0cd379884d349e0800000000000000
+      internalID: -1638232156314681149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_46
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 129
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 620646c9992b4a2a0800000000000000
+      internalID: -6727055570561114074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_47
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 711b988569ad8ebb0800000000000000
+      internalID: -4906431454754787049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_48
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a04b467b407ffb310800000000000000
+      internalID: 1423127606901126154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_49
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f74b8566dcac6c860800000000000000
+      internalID: 7549944808867411071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_50
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9f8963d7c1ac0b0800000000000000
+      internalID: -5707718253626197586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_51
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43da8941947555470800000000000000
+      internalID: 8382702252809825588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TrackBot_52
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 98
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c8ef54414883e20800000000000000
+      internalID: 3330557147049004051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 216af26b38594d84a8138d0f8f742ba6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      1: -1638232156314681149
+      TrackBot_0: 7677323900054454711
+      TrackBot_1: 1387901693245259472
+      TrackBot_10: 6196599173686076299
+      TrackBot_11: -8254515728456098420
+      TrackBot_12: 2568810854042283464
+      TrackBot_13: -1163072998964000372
+      TrackBot_14: -213853531312255832
+      TrackBot_15: -749069399521539426
+      TrackBot_16: -5215534836650300514
+      TrackBot_17: 1246757563885188146
+      TrackBot_18: 935261650658911096
+      TrackBot_19: 6007491092634506850
+      TrackBot_2: -6884635512110429653
+      TrackBot_20: -4067329916050141603
+      TrackBot_21: 3281198443119093267
+      TrackBot_22: -389323177451167806
+      TrackBot_23: 2789437636036615862
+      TrackBot_24: -1947274272655761077
+      TrackBot_25: -5865455745672637277
+      TrackBot_26: 5473191062611939358
+      TrackBot_27: -7839276505757014765
+      TrackBot_28: 1429150095284808117
+      TrackBot_29: -765720161688525457
+      TrackBot_3: -2387278902809278613
+      TrackBot_30: -3359310846698831298
+      TrackBot_31: -1950549774791804580
+      TrackBot_32: -517337299940001595
+      TrackBot_33: -7591189328205880290
+      TrackBot_34: 5278925315316131778
+      TrackBot_35: -2754452312917262046
+      TrackBot_36: -1786669668142572226
+      TrackBot_37: 4014755984942266896
+      TrackBot_38: -3900827145337455739
+      TrackBot_39: 4910339596371551407
+      TrackBot_4: 4185544401427938186
+      TrackBot_40: 6297122204419524125
+      TrackBot_41: -3940123787556766002
+      TrackBot_42: 793527339398165064
+      TrackBot_43: 8139257520645259908
+      TrackBot_44: -7556579025389215606
+      TrackBot_46: -6727055570561114074
+      TrackBot_47: -4906431454754787049
+      TrackBot_48: 1423127606901126154
+      TrackBot_49: 7549944808867411071
+      TrackBot_5: -3819027630292076673
+      TrackBot_50: -5707718253626197586
+      TrackBot_51: 8382702252809825588
+      TrackBot_52: 3330557147049004051
+      TrackBot_6: -5590887770457380191
+      TrackBot_7: -2577026182804199791
+      TrackBot_8: 5050079091521771778
+      TrackBot_9: -1843847107696479401
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
