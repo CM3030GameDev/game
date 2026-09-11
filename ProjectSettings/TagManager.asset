@@ -20,8 +20,9 @@ TagManager:
   - Mobs
   - Projectile
   - MiniBoss
+  - Water
   - Drone
-  - MiniBoss2
+  - Hydrant
   layers:
   - Default
   - TransparentFX
@@ -74,8 +75,23 @@ TagManager:
   - name: Warning
     uniqueID: 1048383203
     locked: 0
+  - name: Enemy
+    uniqueID: 2937264421
+    locked: 0
   - name: Pillar
     uniqueID: 2113944213
+    locked: 0
+  - name: Attack
+    uniqueID: 176793315
+    locked: 0
+  - name: Projectile
+    uniqueID: 425002817
+    locked: 0
+  - name: Character
+    uniqueID: 691850385
+    locked: 0
+  - name: Weapon
+    uniqueID: 2015552387
     locked: 0
   - name: Foreground
     uniqueID: 339600167
@@ -86,23 +102,11 @@ TagManager:
   - name: Decoration
     uniqueID: 3412924687
     locked: 0
-  - name: Attack
-    uniqueID: 176793315
-    locked: 0
-  - name: Projectile
-    uniqueID: 425002817
-    locked: 0
-  - name: Enemy
-    uniqueID: 2937264421
-    locked: 0
-  - name: Character
-    uniqueID: 691850385
-    locked: 0
-  - name: Weapon
-    uniqueID: 2015552387
-    locked: 0
   - name: Temporary
     uniqueID: 3548693121
+    locked: 0
+  - name: Wall
+    uniqueID: 3809879709
     locked: 0
   - name: HUD
     uniqueID: 3606316447

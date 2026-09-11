@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7590700647966513187}
   m_Layer: 0
   m_Name: Red_Laser
-  m_TagString: Untagged
+  m_TagString: Projectile
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -1197860611
-  m_SortingLayer: 4
+  m_SortingLayerID: 425002817
+  m_SortingLayer: 9
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3515322637311528564, guid: ef726ef20d81aa44a87902f792fca590, type: 3}

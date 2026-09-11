@@ -45,8 +45,18 @@ public class Bullet : MonoBehaviour
         // Final Boss damage check
         else if (other.CompareTag("FinalBoss"))
         {
-            FinalBoss finalBoss = other.GetComponent<FinalBoss>();
-            finalBoss.BossAttacked(damage, hitFlash);
+            //Final boss phase 1
+            if(other.GetComponent<FinalBossOne>() != null)
+            {
+                FinalBossOne finalBossOne = other.GetComponent<FinalBossOne>();
+                finalBossOne.BossAttacked(damage, hitFlash);
+            }
+            //Final boss phase 2
+            else
+            {
+                FinalBossTwo finalBoss = other.GetComponent<FinalBossTwo>();
+                finalBoss.BossAttacked(damage, hitFlash);
+            }
             hitsRemaining--;
         }
         // Act 1 miniboss damage check
@@ -70,6 +80,12 @@ public class Bullet : MonoBehaviour
             Character character = other.GetComponent<Character>();
             character.CharacterAttacked(damage, hitFlash);
             hitsRemaining--;
+        }
+        else if(other.CompareTag("Hydrant"))
+        {
+            Hydrant hydrant = other.GetComponent<Hydrant>();
+            hydrant.hydrantHP -= damage;
+            Destroy(gameObject);
         }
         else if (other.CompareTag("Wall"))
         {

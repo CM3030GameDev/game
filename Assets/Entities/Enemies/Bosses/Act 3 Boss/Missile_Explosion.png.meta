@@ -218,7 +218,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Missile_Explosion_0
+      name: Missile_Explosion_11
       rect:
         serializedVersion: 2
         x: 835
@@ -226,7 +226,7 @@ TextureImporter:
         width: 58
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -240,7 +240,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_2
+      name: Missile_Explosion_10
       rect:
         serializedVersion: 2
         x: 771
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_8
+      name: Missile_Explosion_7
       rect:
         serializedVersion: 2
         x: 590
@@ -284,7 +284,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_9
+      name: Missile_Explosion_8
       rect:
         serializedVersion: 2
         x: 648
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_10
+      name: Missile_Explosion_9
       rect:
         serializedVersion: 2
         x: 709
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_21
+      name: Missile_Explosion_6
       rect:
         serializedVersion: 2
         x: 532
@@ -350,7 +350,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Missile_Explosion_27
+      name: Missile_Explosion_5
       rect:
         serializedVersion: 2
         x: 476
@@ -385,10 +385,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Missile_Explosion_0: -8813588922562210144
-      Missile_Explosion_1: -344790419013012614
-      Missile_Explosion_10: 3490298204698877852
-      Missile_Explosion_11: 1970559711603835114
+      Missile_Explosion_10: -8373158550045808909
+      Missile_Explosion_11: -8813588922562210144
       Missile_Explosion_12: 563859959533907213
       Missile_Explosion_13: -6766858969007822858
       Missile_Explosion_14: 8011286825998406549
@@ -397,15 +395,12 @@ TextureImporter:
       Missile_Explosion_17: -210945915867096583
       Missile_Explosion_18: 3546316784784702233
       Missile_Explosion_19: 7248863441568492341
-      Missile_Explosion_2: -8373158550045808909
       Missile_Explosion_20: -6685867221959470400
-      Missile_Explosion_21: -5902049922768632149
       Missile_Explosion_22: -6472464213687135603
       Missile_Explosion_23: -1043973063485114248
       Missile_Explosion_24: -3278276772146019578
       Missile_Explosion_25: -5840433175199282852
       Missile_Explosion_26: -1142943465856152003
-      Missile_Explosion_27: 6738176515449389234
       Missile_Explosion_28: 975346852215402973
       Missile_Explosion_29: 115701473859121234
       Missile_Explosion_3: -8747032231743195026
@@ -416,11 +411,11 @@ TextureImporter:
       Missile_Explosion_34: -2720608603595287900
       Missile_Explosion_35: 3729066443101183167
       Missile_Explosion_4: -8971831176399990126
-      Missile_Explosion_5: -616250831312547741
-      Missile_Explosion_6: 3818196674964009207
-      Missile_Explosion_7: 1627183723815429842
-      Missile_Explosion_8: 4294627985494099050
-      Missile_Explosion_9: -6770307145173988930
+      Missile_Explosion_5: 6738176515449389234
+      Missile_Explosion_6: -5902049922768632149
+      Missile_Explosion_7: 4294627985494099050
+      Missile_Explosion_8: -6770307145173988930
+      Missile_Explosion_9: 3490298204698877852
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

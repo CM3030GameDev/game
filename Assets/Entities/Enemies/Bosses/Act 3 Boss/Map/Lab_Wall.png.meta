@@ -1367,7 +1367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Wall_57
+      name: Bottom_Right_2
       rect:
         serializedVersion: 2
         x: 32
@@ -1389,7 +1389,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Lab_Wall_58
+      name: Bottom_Right_1
       rect:
         serializedVersion: 2
         x: 64
@@ -4154,6 +4154,8 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":32.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      Bottom_Right_1: -1163761775
+      Bottom_Right_2: 1943325269
       Lab_Wall_1: -1185646978
       Lab_Wall_10: -974112975
       Lab_Wall_100: -596837347
@@ -4284,8 +4286,6 @@ TextureImporter:
       Lab_Wall_54: -1681421660
       Lab_Wall_55: 493230027
       Lab_Wall_56: -1004082958
-      Lab_Wall_57: 1943325269
-      Lab_Wall_58: -1163761775
       Lab_Wall_59: -1672506394
       Lab_Wall_6: 346719320
       Lab_Wall_60: 1372677898
