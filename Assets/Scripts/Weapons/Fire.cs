@@ -1,5 +1,6 @@
 using UnityEngine;
 
+[RequireComponent(typeof(BoxCollider2D))]
 public class Fire : MonoBehaviour
 {
     private BoxCollider2D box;
@@ -9,12 +10,6 @@ public class Fire : MonoBehaviour
     {
         box = GetComponent<BoxCollider2D>();
         sr = GetComponent<SpriteRenderer>();
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
     }
 
     // Update is called once per frame

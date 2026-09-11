@@ -19,20 +19,20 @@ MonoBehaviour:
   levels:
   - fireInterval: 3
     damage: 10
-    range: 3
+    range: 4
     valueA: 1
     valueB: 8
     levelDescription: Obtain a Combat Drone. It orbits you and shocks enemies it
       touches.
   - fireInterval: 3
     damage: 15
-    range: 3
+    range: 4
     valueA: 2
     valueB: 8
     levelDescription: A second drone. 50% more damage.
   - fireInterval: 3
     damage: 20
-    range: 3.5
+    range: 4
     valueA: 3
     valueB: 8
     levelDescription: A third drone. 33% more damage.

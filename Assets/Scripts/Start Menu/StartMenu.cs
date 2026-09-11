@@ -11,11 +11,7 @@ public class StartMenu : MonoBehaviour
 
     private void Start()
     {
-        if (startButton != null)
-        {
-            startButton.onClick.AddListener(StartOption);
-        }
-
+       
         if (creditsButton != null)
         {
             creditsButton.onClick.AddListener(CreditsOption);
@@ -29,11 +25,6 @@ public class StartMenu : MonoBehaviour
 
     private void OnDestroy()
     {
-        if (startButton != null)
-        {
-            startButton.onClick.RemoveListener(StartOption);
-        }
-
         if (creditsButton != null)
         {
             creditsButton.onClick.RemoveListener(CreditsOption);
@@ -43,11 +34,6 @@ public class StartMenu : MonoBehaviour
         {
             exitButton.onClick.RemoveListener(ExitOption);
         }
-    }
-
-    private void StartOption()
-    {
-        SceneManager.LoadScene("Act1", LoadSceneMode.Single);
     }
 
     private void CreditsOption()

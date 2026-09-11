@@ -152,7 +152,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -204,8 +204,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   maxHP: 100
   chaseSpeed: 4
-  expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
-  expReward: 10
+  orbTiers: []
+  minExpDrop: 0
+  maxExpDrop: 0
+  dropSpread: 0.6
   separationRadius: 0.6
   separationStrength: 2
   deathAnimationDuration: 0.5

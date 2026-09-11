@@ -54,8 +54,7 @@ public class BeamExtend : MonoBehaviour
         if(collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(30);
-            character.GrantInvulnerability(0.5f);
+            character.CharacterAttacked(30, 0.5f);
         }
     }
 }

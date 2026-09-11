@@ -25,7 +25,7 @@ public class CharacterStats : ScriptableObject
     public float damage = 0f;
 
     //Exp orb magnet radius
-    public float pickupRadius = 8f;
+    public float pickupRadius = 3f;
 
     //Health regenerated per second
     public float healthRegen = 0f;
@@ -40,7 +40,7 @@ public class CharacterStats : ScriptableObject
         moveSpeed = 7f;
         attackSpeed = 0f;
         damage = 0f;
-        pickupRadius = 8f;
+        pickupRadius = 3f;
         healthRegen = 0f;
     }
 }

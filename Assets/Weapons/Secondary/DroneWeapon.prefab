@@ -46,5 +46,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DroneWeapon
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   dronePrefab: {fileID: 5903711552012609783, guid: d52e164800aee1c40a9e7a0900bab94a, type: 3}
-  orbitSpeed: 90
-  hitCooldown: 2
+  orbitSpeed: 120
+  orbitSpeedPerDrone: 0.33
+  hitCooldown: 0.5

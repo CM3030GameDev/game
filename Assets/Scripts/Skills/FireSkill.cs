@@ -1,17 +1,12 @@
 using System.Collections;
 using UnityEngine;
 
-// Mercenary - Fire Line. Utility: sets the top and bottom edges of the screen alight, so
-// everything walking in from off-screen gets burned and slowed on the way. Mobs spawn well
-// outside the view and path inward, which is what makes the screen edges the right place
-// to put a gate rather than a zone around the player.
+// Mercenary Smokescreen. Slows every enemy on screen for the duration and deals no damage.
 public class FireSkill : PlayerSkill
 {
-    [Header("Fire Line")]
+    [Header("Smokescreen")]
     [SerializeField] private GameObject fireOverlay;      // the top/bottom fire strips, under the HUD
     [SerializeField] private float duration = 8f;
-    [SerializeField] private float bandHeight = 2.5f;     // world-space thickness of each burning edge
-    [SerializeField] private int tickDamage = 8;
     [SerializeField] private float tickInterval = 0.4f;
     [SerializeField] private float slowMultiplier = 0.4f;
 
@@ -35,7 +30,7 @@ public class FireSkill : PlayerSkill
             float elapsed = 0f;
             while (elapsed < duration)
             {
-                BurnScreenEdges();
+                SlowEnemiesOnScreen();
                 yield return new WaitForSeconds(tickInterval);
                 elapsed += tickInterval;
             }
@@ -46,29 +41,20 @@ public class FireSkill : PlayerSkill
         }
     }
 
-    // Recomputed each tick rather than cached, since the camera follows the player.
-    private void BurnScreenEdges()
+    // Re-applied each tick, since the camera moves and enemies can walk in partway through.
+    private void SlowEnemiesOnScreen()
     {
         if (cam == null) return;
 
-        float halfHeight = cam.orthographicSize;
-        float width = halfHeight * cam.aspect * 2f;
-        Vector2 centre = cam.transform.position;
+        float height = cam.orthographicSize * 2f;
+        Vector2 size = new Vector2(height * cam.aspect, height);
 
-        Burn(new Vector2(centre.x, centre.y + halfHeight - bandHeight * 0.5f), width);
-        Burn(new Vector2(centre.x, centre.y - halfHeight + bandHeight * 0.5f), width);
-    }
-
-    private void Burn(Vector2 centre, float width)
-    {
-        Collider2D[] hits = Physics2D.OverlapBoxAll(centre, new Vector2(width, bandHeight), 0f, EnemyMask);
+        // OverlapBoxAll, since a full screen can hold more enemies than a fixed buffer.
+        Collider2D[] hits = Physics2D.OverlapBoxAll(cam.transform.position, size, 0f, EnemyMask);
         foreach (var h in hits)
         {
             Mob mob = h.GetComponent<Mob>();
-            if (mob == null) continue;
-
-            mob.MobAttacked(tickDamage, 0.1f);
-            mob.ApplyDebuff(slowMultiplier, tickInterval * 1.5f);
+            if (mob != null) mob.ApplyDebuff(slowMultiplier, tickInterval * 1.5f);
         }
     }
 }

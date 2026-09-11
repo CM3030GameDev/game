@@ -3121,6 +3121,28 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Stone_UI_Sprite_Sheet_121
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 226
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b02422de75365d4e8a2d6f6ea2086e1
+      internalID: -1599203405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -3161,6 +3183,7 @@ TextureImporter:
       Stone_UI_Sprite_Sheet_119: 472941715297960783
       Stone_UI_Sprite_Sheet_12: 2310416495936622974
       Stone_UI_Sprite_Sheet_120: -2623150836830228960
+      Stone_UI_Sprite_Sheet_121: -1599203405
       Stone_UI_Sprite_Sheet_13: 465698560015648433
       Stone_UI_Sprite_Sheet_14: -6673246056837633175
       Stone_UI_Sprite_Sheet_15: 3468626997851779485

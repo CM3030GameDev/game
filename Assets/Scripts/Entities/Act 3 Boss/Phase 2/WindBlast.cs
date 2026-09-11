@@ -21,8 +21,7 @@ public class WindBlast : MonoBehaviour
         if(collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(damage);
-            character.GrantInvulnerability(0.05f);
+            character.CharacterAttacked(damage, 0.05f);
 
             //Confusion status effect
             PhaseTwoManager.Instance.Confusion();

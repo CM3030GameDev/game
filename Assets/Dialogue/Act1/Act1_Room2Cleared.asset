@@ -14,5 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Mercernary
   sentences:
-  - The area's secured. I think I heard something further ahead.
-  - Let's head deeper.
+  - We did it. We cleared them out!
+  - The road east looks to be the path we need to take.
+  - Is there someone standing there?

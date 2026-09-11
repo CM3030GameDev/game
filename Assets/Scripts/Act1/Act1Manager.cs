@@ -4,7 +4,12 @@ using UnityEngine.SceneManagement;
 // Act1Manager (this is to manage missions, enemy spawns etc)
 public class Act1Manager : MonoBehaviour
 {
-    private enum State { Room1Travel, Room2Secure, Room2Miniboss, Room3Transition, Done }
+    // Room2Intro exists so Update ignores the kill/level gate while the entry dialogue plays,
+    // which would otherwise re-show the mission panel over the cutscene.
+    // Room2Intro exists so Update ignores the kill/level gate while the entry dialogue plays.
+    // Room 3 is two stages: walk to the waiting swordsman, then move out together.
+    private enum State { Room1Travel, Room2Intro, Room2Secure, Room2Miniboss,
+                         Room3Travel, Room3Meeting, Room3Escort, Done }
     private State state;
 
     [Header("References")]
@@ -13,6 +18,7 @@ public class Act1Manager : MonoBehaviour
 
     [Header("Opening Dialogue")]
     [SerializeField] private DialogueData openingDialogue; // leave this empty if you guys want to skip straight to Room 1
+    [SerializeField] private DialogueData room2EntryDialogue; // plays on entering Room 2, before the waves start
 
     [Header("Mission Text - edit wording here, not in code")]
     [SerializeField] private string room1Header = "Act 1 - Push Deeper Into the City";
@@ -57,7 +63,16 @@ public class Act1Manager : MonoBehaviour
     [SerializeField] private GameObject room2To3Gate;
 
     [Header("Swordsman")]
-    [SerializeField] private Companion swordsmanCompanion; // starts disabled, auto-enabled after the cutscene
+    [SerializeField] private Companion swordsmanCompanion; // stays hidden until he agrees to come along
+    [Tooltip("A plain sprite standing in Room 3. Shown while he is waiting, then swapped for the " +
+             "real companion at the same position so there is never one of each on screen.")]
+    [SerializeField] private GameObject swordsmanStandIn;
+
+    [Header("Room 3")]
+    [SerializeField] private DialogueData swordsmanDialogue;  // he agrees to come along and names the route
+    [SerializeField] private DialogueData actEndDialogue;     // last line before Act 2 loads
+    [SerializeField] private string room3EscortTask = "Follow the swordsman's route deeper into the city.";
+    [SerializeField] private Transform actExitTarget;         // arrow target once the swordsman joins
 
     [Header("Act Transition")]
     [SerializeField] private string nextSceneName = "Act4";
@@ -68,8 +83,7 @@ public class Act1Manager : MonoBehaviour
         PlayThen(openingDialogue, BeginRoom1);
     }
 
-    // Plays a dialogue and continues afterwards, or continues immediately if there's none.
-    // The mission panel is hidden for the duration so an objective doesn't sit over the cutscene.
+    // Plays a dialogue then continues, hiding the mission panel so it does not sit over it.
     private void PlayThen(DialogueData dialogue, UnityEngine.Events.UnityAction next)
     {
         if (dialogue == null)
@@ -97,8 +111,7 @@ public class Act1Manager : MonoBehaviour
     {
         if (state != State.Room2Secure) return;
 
-        // Only rebuild the HUD string when a number actually changes - this runs every frame
-        // and SetTasks now re-evaluates panel visibility, so it isn't free.
+        // Only rebuild the HUD text when a number actually changed, since this runs every frame.
         int kills = MobManager.Instance.GetKillCount() - killsAtRoom2Start;
         if (kills != lastShownKills || stats.level != lastShownLevel)
         {
@@ -119,7 +132,12 @@ public class Act1Manager : MonoBehaviour
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(SpawnMiniboss);
 
-        if (room2MinibossObject != null) room2MinibossObject.SetActive(true);
+        if (room2MinibossObject != null)
+        {
+            room2MinibossObject.SetActive(true);
+            // Subscribed in code because a UnityEvent dragged onto the wrong object fails silently.
+            room2MinibossObject.GetComponent<Act1Boss>()?.bossDeath.AddListener(OnMinibossDefeated);
+        }
 
         // Point the arrow at the miniboss so the player can find it in a big room
         Transform target = room2MinibossObject != null ? room2MinibossObject.transform : null;
@@ -139,15 +157,24 @@ public class Act1Manager : MonoBehaviour
     private static string Objective(string text, bool done)
         => done ? $"<color=#7CFC7C>{text}</color>" : text;
 
-    // Room1 -> Room2 trigger
+    // Room 1 to Room 2 trigger
     public void EnterRoom2()
     {
         if (state != State.Room1Travel) return;
+        state = State.Room2Intro;
+
         MobManager.Instance.StopSpawnCoroutine(Room1WaveName);
-        state = State.Room2Secure;
         killsAtRoom2Start = MobManager.Instance.GetKillCount();
-        missionUI?.SetMission(room2Header, BuildRoom2Tasks(), null);
         if (room1To2Gate != null) room1To2Gate.SetActive(false);
+
+        PlayThen(room2EntryDialogue, BeginRoom2Waves);
+    }
+
+    private void BeginRoom2Waves()
+    {
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(BeginRoom2Waves);
+        state = State.Room2Secure;
+        missionUI?.SetMission(room2Header, BuildRoom2Tasks(), null);
 
         foreach (var wave in room2Waves)
             MobManager.Instance.AddSpawnCoroutine(wave.coroutineName, wave.interval, wave.type);
@@ -163,17 +190,56 @@ public class Act1Manager : MonoBehaviour
     private void OpenRoom3()
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(OpenRoom3);
-        state = State.Room3Transition;
-        if (swordsmanCompanion != null) swordsmanCompanion.enabled = true;
+        state = State.Room3Travel;
+
+        // The stand-in does the waiting. The companion has follow AI, a collider and an animator,
+        // none of which should run until he actually joins.
+        if (swordsmanStandIn != null) swordsmanStandIn.SetActive(true);
+
         missionUI?.SetMission(room3Header, room3Task, room3EntranceTarget);
         if (room2To3Gate != null) room2To3Gate.SetActive(false);
     }
 
-    // Room 3 trigger - hands off to the next Act
-    public void TransitionToNextAct()
+    // Room 3 trigger that hands off to the next Act
+    // Reaching the swordsman waiting in Room 3
+    public void EnterRoom3()
     {
-        if (state != State.Room3Transition) return;
+        if (state != State.Room3Travel) return;
+        state = State.Room3Meeting;
+        PlayThen(swordsmanDialogue, SwordsmanJoins);
+    }
+
+    private void SwordsmanJoins()
+    {
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(SwordsmanJoins);
+        state = State.Room3Escort;
+
+        // Hand over at the stand-in's position, so the companion appears exactly where the
+        // player was just talking to him rather than popping in from wherever he was parked.
+        if (swordsmanCompanion != null)
+        {
+            if (swordsmanStandIn != null)
+                swordsmanCompanion.transform.position = swordsmanStandIn.transform.position;
+
+            swordsmanCompanion.gameObject.SetActive(true);
+            swordsmanCompanion.enabled = true;
+        }
+        if (swordsmanStandIn != null) swordsmanStandIn.SetActive(false);
+
+        missionUI?.SetMission(room3Header, room3EscortTask, actExitTarget);
+    }
+
+    // The exit further up, past the swordsman
+    public void EnterExtraction()
+    {
+        if (state != State.Room3Escort) return;
         state = State.Done;
+        PlayThen(actEndDialogue, LoadNextAct);
+    }
+
+    private void LoadNextAct()
+    {
+        DialogueManager.Instance.onDialogueEnd.RemoveListener(LoadNextAct);
         SceneManager.LoadScene(nextSceneName);
     }
 }

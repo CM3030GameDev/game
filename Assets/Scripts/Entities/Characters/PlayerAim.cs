@@ -9,12 +9,18 @@ public class PlayerAim : MonoBehaviour
 
     private Camera cam;
 
+    // Overlap query rather than MobManager's pool: bosses are placed in the scene, not pooled,
+    // so a pool walk cannot see them. Anything on the Enemy layer is a valid target.
+    private static readonly Collider2D[] Hits = new Collider2D[32];
+    private static int EnemyMask;
+
     public AimMode Mode { get; private set; } = AimMode.Auto;
     public Vector2 AimDirection { get; private set; } = Vector2.right;
 
     private void Awake()
     {
         cam = Camera.main;
+        EnemyMask = LayerMask.GetMask("Enemy");
     }
 
     private void Update()
@@ -34,10 +40,10 @@ public class PlayerAim : MonoBehaviour
         }
         else
         {
-            GameObject target = FindNearestEnemy();
+            Transform target = FindNearestEnemy();
             if (target != null)
             {
-                Vector2 toTarget = (Vector2)target.transform.position - (Vector2)transform.position;
+                Vector2 toTarget = (Vector2)target.position - (Vector2)transform.position;
                 if (toTarget.sqrMagnitude > 0.001f)
                     AimDirection = toTarget.normalized;
             }
@@ -45,16 +51,16 @@ public class PlayerAim : MonoBehaviour
         }
     }
 
-    private GameObject FindNearestEnemy()
+    private Transform FindNearestEnemy()
     {
-        GameObject nearest = null;
-        float nearestDist = autoAimRange;
+        int count = Physics2D.OverlapCircleNonAlloc(transform.position, autoAimRange, Hits, EnemyMask);
 
-        foreach (GameObject e in MobManager.Instance.GetAllPooledEnemies())
+        Transform nearest = null;
+        float nearestSqr = float.MaxValue;
+        for (int i = 0; i < count; i++)
         {
-            if (!e.activeInHierarchy) continue;
-            float d = Vector2.Distance(transform.position, e.transform.position);
-            if (d < nearestDist) { nearestDist = d; nearest = e; }
+            float sqr = ((Vector2)Hits[i].transform.position - (Vector2)transform.position).sqrMagnitude;
+            if (sqr < nearestSqr) { nearestSqr = sqr; nearest = Hits[i].transform; }
         }
         return nearest;
     }

@@ -1,8 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-// Soldier - Air Strike. Offensive panic button: hits every enemy on the field at once,
-// with explosions staggered across them so it reads as a bombardment.
+// Soldier Air Strike. Hits every enemy on the field at once, with staggered explosions.
 public class SoldierSkill : PlayerSkill
 {
     [Header("Air Strike")]
@@ -46,7 +45,7 @@ public class SoldierSkill : PlayerSkill
     {
         switch (stat)
         {
-            case SkillStat.Cooldown: killsToCharge = Mathf.Max(1, killsToCharge - (int)amount); break;
+            case SkillStat.Cooldown: cooldown = Mathf.Max(1f, cooldown - amount); break;
             case SkillStat.StrikeCount: damage += (int)amount; break;
         }
     }

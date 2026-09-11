@@ -36,12 +36,24 @@ public class SecondaryWeaponUpgrade : Upgrade
         CharacterStatsUpgrade partner = Partner();
         if (partner == null) return null;
 
-        bool statMaxed = ctx.statLevels != null && ctx.statLevels.IsMaxLevel(partner);
-        return ComboLine(partner.upgradeName, statMaxed);
+        return ComboLine(partner.upgradeName, IsComboReady(ctx));
     }
 
-    // The weapon data owns the icon, so the card, the HUD slot and other weapons' combo
-    // badges all show the same art. Falls back to this asset's own icon if the data has none.
+    // The player has taken the paired stat at least once.
+    public override bool OwnsComboPartner(UpgradeContext ctx)
+    {
+        CharacterStatsUpgrade partner = Partner();
+        return partner != null && ctx.statLevels != null && ctx.statLevels.GetLevel(partner) > 0;
+    }
+
+    // The paired stat is maxed, so this weapon is one finished track from evolving.
+    public override bool IsComboReady(UpgradeContext ctx)
+    {
+        CharacterStatsUpgrade partner = Partner();
+        return partner != null && ctx.statLevels != null && ctx.statLevels.IsMaxLevel(partner);
+    }
+
+    // The weapon data owns the icon, so card, HUD slot and combo badges all show the same art.
     public override Sprite GetIcon(UpgradeContext ctx)
         => weapon != null && weapon.icon != null ? weapon.icon : icon;
 

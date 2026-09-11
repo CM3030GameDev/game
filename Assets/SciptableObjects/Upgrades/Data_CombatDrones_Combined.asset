@@ -19,7 +19,7 @@ MonoBehaviour:
   levels:
   - fireInterval: 2
     damage: 25
-    range: 3.5
+    range: 4
     valueA: 4
     valueB: 0
     levelDescription: A fourth drone, and they never expire. 25% more damage.
