@@ -170,7 +170,11 @@ public class FinalBossTwo : MonoBehaviour
                             {
                                 HomingMissile();
                             }
-                            else if (randomNum < 0.9f)
+                            else if (randomNum < 0.8f)
+                            {
+                                GroundSmash();
+                            }
+                            else if(randomNum < 0.9f)
                             {
                                 Laser();
                             }
@@ -182,11 +186,11 @@ public class FinalBossTwo : MonoBehaviour
                         //If boss is close to player current position
                         else
                         {
-                            if (randomNum < 0.5f)
+                            if (randomNum < 0.3f)
                             {
                                 GroundSmash();
                             }
-                            else if (randomNum < 0.7f)
+                            else if (randomNum < 0.6f)
                             {
                                 ElementalProjectile();
                             }

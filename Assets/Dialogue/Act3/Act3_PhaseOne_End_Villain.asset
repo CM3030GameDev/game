@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Villain
   sentences:
-  - History will repeat itself again, Solider.
-  - And I will have the last... laugh...
+  - It's too late, Soldier.
+  - It has already begun.

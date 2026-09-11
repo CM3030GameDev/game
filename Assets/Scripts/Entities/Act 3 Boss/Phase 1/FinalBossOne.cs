@@ -173,12 +173,6 @@ public class FinalBossOne : MonoBehaviour
                 }
             }
         }
-        //Boss died
-        else
-        {
-            //End of phase one dialogue
-            DialogueManager.Instance.StartDialogue(end);
-        }
     }
 
     private void FixedUpdate()
