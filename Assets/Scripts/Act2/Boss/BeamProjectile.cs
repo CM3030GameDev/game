@@ -74,6 +74,7 @@ public class BeamProjectile : MonoBehaviour
             if (!character.isAttacked && character != null)
             {
                 character.CharacterAttacked(damage, playerInvulnerability);
+                UIAudioManager.Instance.PlaySFXOneShot(7);
             }
             BeamExplode();
         }
@@ -83,7 +84,6 @@ public class BeamProjectile : MonoBehaviour
     {
         isLaunched = false;
         anim.Play("SkillImpact");
-        UIAudioManager.Instance.PlaySFXOneShot(7);
     }
     private void OnAnimationEnd()
     {
