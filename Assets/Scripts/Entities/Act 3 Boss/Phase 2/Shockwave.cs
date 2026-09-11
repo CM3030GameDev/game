@@ -53,12 +53,8 @@ public class Shockwave : MonoBehaviour
     {
         if (collision.CompareTag("Character"))
         {
-<<<<<<< HEAD:Assets/Scripts/Entities/Act 3 Boss/Phase 2/Shockwave.cs
             PhaseTwoManager.Instance.character.CharacterAttacked(50);
             PhaseTwoManager.Instance.character.GrantInvulnerability(0.5f);
-=======
-            character.CharacterAttacked(50, 0.5f);
->>>>>>> 13cc813efaef79a302517e60d6c0a173d8d56bcd:Assets/Scripts/Entities/Act 3 Boss/Shockwave.cs
             knockBack = true;
         }
     }
