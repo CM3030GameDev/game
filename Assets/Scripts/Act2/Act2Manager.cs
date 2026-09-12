@@ -20,6 +20,9 @@ public class Act2Manager : MonoBehaviour
     [SerializeField] private MissionUI missionUI;
     [SerializeField] private Transform minibossSpawnPoint;
     [SerializeField] private Generator generator;
+    [SerializeField] private PlayerRespawn playerRespawn;
+    [SerializeField] private Transform room1Spawn;
+    [SerializeField] private Transform room2Spawn;
 
     [Header("Ground and trigger")]
     [SerializeField] private GameObject room1Ground;
@@ -37,7 +40,7 @@ public class Act2Manager : MonoBehaviour
 
     [Header("Room 1 - Kill Count")]
     [SerializeField] private List<EnemySpawnSetting> room1SpawnerList = new List<EnemySpawnSetting>();
-    private int room1TargetKillCount;
+    [SerializeField] private int room1TargetKillCount = 33;
     private int currentKillCount = 0;
 
     [Header("Room 2 Part 1 - Boss")]
@@ -100,17 +103,21 @@ public class Act2Manager : MonoBehaviour
 
         //Mission UI
         //missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
+
+        //Player respawn point
+        playerRespawn = GameObject.FindGameObjectWithTag("Character").GetComponent<PlayerRespawn>();
+        playerRespawn.SetSpawnPoint(room1Spawn);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(state == CurrentState.ROOM1 && MobManager.Instance.GetKillCount() > currentKillCount)
+        if(state == CurrentState.ROOM1 && MobManager.Instance.GetKillCount() > currentKillCount && !isRoom1Cleared)
         {
             currentKillCount = MobManager.Instance.GetKillCount();
             missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
         }
-        if(state == CurrentState.ROOM1 && MobManager.Instance.GetKillCount() >= room1TargetKillCount)
+        else if(state == CurrentState.ROOM1 && currentKillCount >= room1TargetKillCount)
         {
             if (!isRoom1Cleared)
             {
@@ -121,6 +128,8 @@ public class Act2Manager : MonoBehaviour
 
                 //Open gate to next room
                 room1GateTrigger.OpenGate();
+
+                MobManager.Instance.instantKillAllActive();
             }
             else
             {
@@ -181,6 +190,7 @@ public class Act2Manager : MonoBehaviour
     {
         if(room1GateTrigger.GetIsGateTriggered())
         {
+            playerRespawn.SetSpawnPoint(room2Spawn);
             state = CurrentState.BOSSFIGHT;
         }
     }
@@ -213,7 +223,6 @@ public class Act2Manager : MonoBehaviour
         {
 
             MobManager.Instance.AddSpawnCoroutine(setting.name, setting.spawnInterval, setting.enemyType, setting.spawnCount, null, room1Ground.name);
-            room1TargetKillCount += setting.spawnCount;
         }
         missionUI?.SetMission(room1Header, room1Task + currentKillCount + "/" + room1TargetKillCount, null);
     }

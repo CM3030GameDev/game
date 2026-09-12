@@ -33,6 +33,10 @@ public class PlayerRespawn : MonoBehaviour
         StartCoroutine(Respawn());
     }
 
+    public void SetSpawnPoint(Transform spawn)
+    {
+        spawnPoint = spawn;
+    }
     private IEnumerator Respawn()
     {
         respawning = true;

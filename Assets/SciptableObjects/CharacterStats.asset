@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 051ea4598165371449ac058a5bb09f54, type: 3}
   m_Name: CharacterStats
   m_EditorClassIdentifier: Assembly-CSharp::CharacterStats
-  health: 2893
+  health: 354
   maxHealth: 120
-  expPoint: 20
+  expPoint: 75
   level: 8
   moveSpeed: 7
   attackSpeed: 0.3

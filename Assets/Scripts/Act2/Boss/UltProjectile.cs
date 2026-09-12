@@ -65,7 +65,7 @@ public class UltProjectile : MonoBehaviour
             {
                 character.CharacterAttacked(damage, playerInvulnerability);
             }
-            UIAudioManager.Instance.PlaySFXOneShot(7);
+            UIAudioManager.Instance.PlaySFXOneShot(6);
             UltExplode();
         }
     }
@@ -74,7 +74,7 @@ public class UltProjectile : MonoBehaviour
     {
         isLaunched = false;
         anim.Play("UltExplode");
-        UIAudioManager.Instance.PlaySFXOneShot(5);
+        UIAudioManager.Instance.PlaySFXOneShot(4);
     }
 
     private void OnAnimationEnd()
