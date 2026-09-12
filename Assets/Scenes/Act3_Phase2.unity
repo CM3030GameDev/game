@@ -9284,9 +9284,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22cc61cabc6d9c84f877a2b2a2513562, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
-  nameText: {fileID: 0}
-  dialogueText: {fileID: 0}
-  dialoguePanel: {fileID: 0}
+  nameText: {fileID: 1705584179}
+  dialogueText: {fileID: 1705584178}
+  dialoguePanel: {fileID: 1705584180}
   onDialogueStart:
     m_PersistentCalls:
       m_Calls: []
@@ -12113,11 +12113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.004519
+      value: 25.008862
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.40627
+      value: -13.40626
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -38983,7 +38983,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   pauseMenu: {fileID: 859945235}
-  missionInterface: {fileID: 344007912}
   gameOver: {fileID: 1807198225}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
@@ -40469,6 +40468,33 @@ Transform:
   - {fileID: 1409081843}
   m_Father: {fileID: 291773250}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1705584178 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6224477937272741901, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+  m_PrefabInstance: {fileID: 2116455276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &1705584179 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8457795794178444587, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+  m_PrefabInstance: {fileID: 2116455276}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!1 &1705584180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 757203031621988137, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+  m_PrefabInstance: {fileID: 2116455276}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1706570416
 GameObject:
   m_ObjectHideFlags: 0
