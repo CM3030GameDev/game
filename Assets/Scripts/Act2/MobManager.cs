@@ -343,7 +343,7 @@ public class MobManager : MonoBehaviour
             {
                 if (mob.activeSelf)
                 {
-                    mob.GetComponent<Mob>().Despawn();
+                    mob.GetComponent<Mob>().SetDead();
                 }
             }
         }
