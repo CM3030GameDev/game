@@ -13,8 +13,16 @@ public class MineWeapon : SecondaryWeapon
     {
         mines.RemoveAll(m => m == null);   // clear spent mines
 
-        int maxMines = Mathf.Min(Mathf.RoundToInt(Stats.valueA), mineCap);
-        if (mines.Count >= maxMines) return;
+        int maxMines = Mathf.Max(1, Mathf.Min(Mathf.RoundToInt(Stats.valueA), mineCap));
+
+        // At the cap, retire the oldest instead of refusing to place. A mine you laid a minute
+        // ago is worth less than one under the enemy in front of you.
+        while (mines.Count >= maxMines)
+        {
+            GameObject oldest = mines[0];
+            mines.RemoveAt(0);
+            if (oldest != null) Destroy(oldest);
+        }
 
         GameObject m2 = Instantiate(minePrefab, transform.position, Quaternion.identity);
 

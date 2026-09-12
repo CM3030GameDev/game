@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Act2Manager : MonoBehaviour
 {
@@ -41,6 +42,13 @@ public class Act2Manager : MonoBehaviour
 
     [Header("Room 2 Part 1 - Boss")]
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList1 = new List<EnemySpawnSetting>();
+
+    [Header("Act Transition")]
+    [SerializeField] private MenuSceneTransition sceneTransition;
+    [SerializeField] private string nextSceneName = "Act3";
+    [Tooltip("Card shown on the black screen while the next act loads.")]
+    [SerializeField] private string nextActTitle = "Act 3 - Final Fight";
+    private bool hasLeftAct;
 
     [Header("Room 2 Part 2 - Generator")]
     [SerializeField] private List<EnemySpawnSetting> room2SpawnerList2 = new List<EnemySpawnSetting>();
@@ -154,6 +162,18 @@ public class Act2Manager : MonoBehaviour
         if(state == CurrentState.END)
         {
             act3GateTrigger.OpenGate();
+
+            // Same handoff as Act 1: once the player has crossed the gate, fade out with a
+            // title card. GetIsGateTriggered only flips after they leave the trigger volume.
+            if (!hasLeftAct && act3GateTrigger.GetIsGateTriggered())
+            {
+                hasLeftAct = true;
+
+                if (sceneTransition != null)
+                    sceneTransition.LoadSceneWithFade(nextSceneName, nextActTitle);
+                else
+                    SceneManager.LoadScene(nextSceneName);
+            }
         }
     }
 
