@@ -399,7 +399,7 @@ public class Act2Miniboss : MonoBehaviour
                        : currentDirection == FacingDirection.LEFT ? "L" : "R";
 
             ultAttack.SetIsStartUlt(true, dir);
-            ultAttack.SetIsEndUlt(false);
+            ultAttack.SetIsEndUlt(false, this);
             hasUltStarted = true;
         }
         if(ultAttack.GetIsUltEnd())

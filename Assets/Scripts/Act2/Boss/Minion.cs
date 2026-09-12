@@ -42,7 +42,7 @@ public class Minion : MonoBehaviour
 
         if(!hasStartPos)
         {
-            UIAudioManager.Instance.PlaySFXOneShot(6);
+            UIAudioManager.Instance.PlaySFXOneShot(5);
             startPos = transform.position;
             hasStartPos = true;
         }
@@ -110,7 +110,7 @@ public class Minion : MonoBehaviour
     {
         if(!startMoving)
         {
-            UIAudioManager.Instance.PlaySFXOneShot(3);
+            UIAudioManager.Instance.PlaySFXOneShot(2);
             startMoving = true;
         }
 
@@ -168,7 +168,7 @@ public class Minion : MonoBehaviour
             if (!character.isAttacked && character != null)
             {
                 character.CharacterAttacked(damage, playerInvulnerability);
-                UIAudioManager.Instance.PlaySFXOneShot(7);
+                UIAudioManager.Instance.PlaySFXOneShot(6);
             }
         }
     }

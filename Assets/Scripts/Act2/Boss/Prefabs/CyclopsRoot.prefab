@@ -262,7 +262,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8514067066054356044, guid: 8135ff675f7ad29498cc771a91328ebe, type: 3}
@@ -530,8 +530,8 @@ MonoBehaviour:
   maxNormalStateTimer: 5
   maxAgitatedStateTimer: 5
   maxIdleDuration: 2
-  maxHP: 100
-  currentHP: 100
+  maxHP: 3500
+  currentHP: 3500
   hpFill: {fileID: 5187002225271641208}
   normalMoveSpeed: 5
   agitatedMoveSpeed: 8
