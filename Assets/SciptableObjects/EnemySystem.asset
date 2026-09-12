@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddf896196ebb0a64da2972e6ea93df8c, type: 3}
   m_Name: EnemySystem
   m_EditorClassIdentifier: Assembly-CSharp::EnemySystem
-  enemyLeft: 10
-  currentWave: 0
+  enemySpawn: 0
+  enemyLeft: 0
+  enemyRespawn: 1

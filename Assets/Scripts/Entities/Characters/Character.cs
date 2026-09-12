@@ -20,6 +20,7 @@ public class Character : MonoBehaviour
     [Tooltip("Index into UIAudioManager's Sound Effects list, played when the player is hit. " +
              "-1 plays nothing.")]
     [SerializeField] private int hurtSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float hurtSfxVolume = 0.7f;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -133,8 +134,7 @@ public class Character : MonoBehaviour
         flickerTimer = invulnerability;
 
         // Inside the IsInvulnerable guard above, so repeated contact does not machine-gun the clip.
-        if (hurtSfx >= 0 && UIAudioManager.Instance != null)
-            UIAudioManager.Instance.PlaySFXOneShot(hurtSfx);
+        UIAudioManager.Sfx(hurtSfx, hurtSfxVolume);
     }
 
     // Blinks on its own timer rather than on invulnTimer, because GrantInvulnerability is also

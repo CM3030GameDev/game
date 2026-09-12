@@ -12701,8 +12701,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::UIAudioManager
   uiAudioSource: {fileID: 397318810}
   musicAudioSource: {fileID: 397318811}
-  hoverSound: {fileID: 0}
-  clickSound: {fileID: 0}
+  hoverSound: {fileID: 8300000, guid: 7597b7b854a9efd4b8a89d189ee528c7, type: 3}
+  clickSound: {fileID: 8300000, guid: 72dce6bf31fc06f41aa6c7dfd7bd3d9c, type: 3}
   backSound: {fileID: 0}
   confirmSound: {fileID: 0}
   errorSound: {fileID: 0}
@@ -12720,6 +12720,16 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e8371a51574d13743a2544053134331e, type: 3}
   - {fileID: 8300000, guid: 90474646efd9f0b45a4b317f94c377b9, type: 3}
   - {fileID: 8300000, guid: bbe7ad03771f35146b7cfba4d614b90f, type: 3}
+  - {fileID: 8300000, guid: bbe7ad03771f35146b7cfba4d614b90f, type: 3}
+  - {fileID: 8300000, guid: 7597b7b854a9efd4b8a89d189ee528c7, type: 3}
+  - {fileID: 8300000, guid: 72dce6bf31fc06f41aa6c7dfd7bd3d9c, type: 3}
+  - {fileID: 8300000, guid: b2535c091f29d674095c39410494e845, type: 3}
+  - {fileID: 8300000, guid: 0823703ac3439604ea252380cf347232, type: 3}
+  - {fileID: 8300000, guid: ba19921649d23c148a0a3ff1431d3a06, type: 3}
+  - {fileID: 8300000, guid: cedc2c4cc2e02f748908a4061d3235e1, type: 3}
+  - {fileID: 8300000, guid: ef80aae2f133aa44a9e3402c87605812, type: 3}
+  - {fileID: 8300000, guid: ad17afe2cee750f48b62fb571695d4ce, type: 3}
+  - {fileID: 8300000, guid: 3447607bfdf1f6e48aad810bc8a0449b, type: 3}
   bgmVolume: 0.6
   sfxVolume: 0.8
   targetMusicVolume: 0.3

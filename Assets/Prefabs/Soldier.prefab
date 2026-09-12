@@ -767,7 +767,8 @@ MonoBehaviour:
   confused: 0
   isAttacked: 0
   flickerInterval: 0.08
-  hurtSfx: -1
+  hurtSfx: 12
+  hurtSfxVolume: 0.7
   playerAim: {fileID: 6794367839972719044}
   cs: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
 --- !u!114 &7859788852804536456
@@ -787,6 +788,8 @@ MonoBehaviour:
   currentTier: {fileID: 11400000, guid: e621edf1e9e9a8344ae40120855f0d99, type: 2}
   gunSprite: {fileID: 6561390801326322390}
   gunRenderer: {fileID: 1878892047716282404}
+  fireSfx: 16
+  fireSfxVolume: 0.15
 --- !u!114 &1494602146680389243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -803,6 +806,8 @@ MonoBehaviour:
   baseExp: 10
   expGrowth: 10
   maxLevel: 25
+  levelUpSfx: 13
+  levelUpSfxVolume: 0.9
 --- !u!114 &2317956446373592222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -821,6 +826,8 @@ MonoBehaviour:
   secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 17
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}
@@ -949,6 +956,8 @@ MonoBehaviour:
   secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 18
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}
@@ -974,6 +983,8 @@ MonoBehaviour:
   secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 19
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}

@@ -11,6 +11,9 @@ public class Pickup : MonoBehaviour
     [Tooltip("Health only. Healing is capped at max health.")]
     [SerializeField] private int healAmount = 25;
     [SerializeField] private float collectDistance = 0.8f;
+    [Tooltip("Index into UIAudioManager's Sound Effects list. Set per prefab. -1 plays nothing.")]
+    [SerializeField] private int collectSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float collectSfxVolume = 0.8f;
     [SerializeField] private float moveSpeed = 12f;
 
     private Transform player;
@@ -40,6 +43,7 @@ public class Pickup : MonoBehaviour
         if (dist > collectDistance) return;
 
         Collect();
+        UIAudioManager.Sfx(collectSfx, collectSfxVolume);
         Destroy(gameObject);
     }
 
