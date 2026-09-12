@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
   m_Name: generatorDestroyedDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Narrator
+  speakerName: Swordsman
   sentences:
   - The city has lost power, the gates to the center is now open.

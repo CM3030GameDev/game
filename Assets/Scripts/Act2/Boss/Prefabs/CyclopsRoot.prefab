@@ -533,8 +533,8 @@ MonoBehaviour:
   maxHP: 3500
   currentHP: 3500
   hpFill: {fileID: 5187002225271641208}
-  normalMoveSpeed: 5
-  agitatedMoveSpeed: 8
+  normalMoveSpeed: 7
+  agitatedMoveSpeed: 12
   animator: {fileID: 453347392088703674}
   maxCollisionCD: 1
   collisionDamage: 3
@@ -589,7 +589,7 @@ MonoBehaviour:
   beamLifetime: 5
   beamDamage: 5
   beamSpeed: 20
-  shotsPerAttack: 6
+  shotsPerAttack: 12
   playerInvulnerability: 0.1
   bossAnimator: {fileID: 453347392088703674}
   AttackSpeed: 1
@@ -611,7 +611,7 @@ MonoBehaviour:
   numberOfThrows: 3
   chargingTime: 1
   maxScale: 5
-  throwSpeed: 8
+  throwSpeed: 10
   ultLifetime: 5
   ultDamage: 10
   playerInvulnerability: 0.1

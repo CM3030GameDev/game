@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
   m_Name: actStartDialogue
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Narrator
+  speakerName: Swordsman
   sentences:
   - The generator is protected by the boss.
   - Kill the mobs to lure the boss out.
