@@ -20,7 +20,9 @@ TagManager:
   - Mobs
   - Projectile
   - MiniBoss
+  - Water
   - Drone
+  - Hydrant
   - MiniBoss2
   layers:
   - Default
@@ -65,17 +67,20 @@ TagManager:
   - name: Ground
     uniqueID: 1400399459
     locked: 0
-  - name: Companion
-    uniqueID: 539685799
-    locked: 0
   - name: Beam
     uniqueID: 2193736927
     locked: 0
   - name: Warning
     uniqueID: 1048383203
     locked: 0
+  - name: Enemy
+    uniqueID: 2937264421
+    locked: 0
   - name: Pillar
     uniqueID: 2113944213
+    locked: 0
+  - name: Weapon
+    uniqueID: 2015552387
     locked: 0
   - name: Foreground
     uniqueID: 339600167
@@ -83,23 +88,23 @@ TagManager:
   - name: Decoration_Back
     uniqueID: 446537991
     locked: 0
-  - name: Decoration
-    uniqueID: 3412924687
-    locked: 0
-  - name: Attack
-    uniqueID: 176793315
+  - name: Wall
+    uniqueID: 3809879709
     locked: 0
   - name: Projectile
     uniqueID: 425002817
     locked: 0
-  - name: Enemy
-    uniqueID: 2937264421
+  - name: Attack
+    uniqueID: 176793315
+    locked: 0
+  - name: Companion
+    uniqueID: 539685799
     locked: 0
   - name: Character
     uniqueID: 691850385
     locked: 0
-  - name: Weapon
-    uniqueID: 2015552387
+  - name: Decoration
+    uniqueID: 3412924687
     locked: 0
   - name: Temporary
     uniqueID: 3548693121

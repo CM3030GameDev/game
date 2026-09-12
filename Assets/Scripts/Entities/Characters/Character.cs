@@ -10,12 +10,16 @@ public class Character : MonoBehaviour
     private float invulnTimer;
     private float flickerTimer;
     private float regenAccumulator;
+    public bool confused;
     public bool IsInvulnerable => invulnTimer > 0f;
     public Vector2 MoveInput => movement;
     //Attacked state
     public bool isAttacked;
     [Tooltip("Seconds per on/off step while blinking after a hit.")]
     [SerializeField] private float flickerInterval = 0.08f;
+    [Tooltip("Index into UIAudioManager's Sound Effects list, played when the player is hit. " +
+             "-1 plays nothing.")]
+    [SerializeField] private int hurtSfx = -1;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -26,6 +30,7 @@ public class Character : MonoBehaviour
         animator = GetComponent<Animator>();
         sr = GetComponent<SpriteRenderer>();
         isAttacked = false;
+        confused = false;
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -61,7 +66,16 @@ public class Character : MonoBehaviour
         //Character alive
         if(cs.health > 0)
         {
-            rb.linearVelocity = movement * cs.moveSpeed;
+            //Normal status
+            if(!confused)
+            {
+                rb.linearVelocity = movement * cs.moveSpeed;
+            }
+            //Confused status effect
+            else
+            {
+                rb.linearVelocity = movement * -1 * cs.moveSpeed;
+            }
         }
         //Character dead
         else
@@ -117,6 +131,10 @@ public class Character : MonoBehaviour
         cs.health -= amount;
         GrantInvulnerability(invulnerability);
         flickerTimer = invulnerability;
+
+        // Inside the IsInvulnerable guard above, so repeated contact does not machine-gun the clip.
+        if (hurtSfx >= 0 && UIAudioManager.Instance != null)
+            UIAudioManager.Instance.PlaySFXOneShot(hurtSfx);
     }
 
     // Blinks on its own timer rather than on invulnTimer, because GrantInvulnerability is also

@@ -35,7 +35,9 @@ public class MobManager : MonoBehaviour
         REDMOB,
         BLUEMOB,
         GREENMOB,
-        ACT2BOSS
+        ROBOTMOB,
+        ACT2BOSS,
+        ACT3BOSS
     }
     public static MobManager Instance { get; private set; }
 
@@ -48,6 +50,9 @@ public class MobManager : MonoBehaviour
             return;
         }
         Instance = this;
+
+        //Reference to character scene object
+        playerTransform = GameObject.FindGameObjectsWithTag("Character")[0].transform;
 
         //Initialising the object pool
         foreach (EnemySetup enemySetup in enemyPoolConfig)
@@ -71,7 +76,7 @@ public class MobManager : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindGameObjectsWithTag("Character")[0].transform;
+
     }
 
     private void OnDestroy()

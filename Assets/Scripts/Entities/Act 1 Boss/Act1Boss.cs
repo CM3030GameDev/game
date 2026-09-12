@@ -8,6 +8,12 @@ public class Act1Boss : MonoBehaviour
     [Header("Health")]
     [SerializeField] private int maxHP = 300;
     [SerializeField] private Image healthBarFill; // Image Type: Filled, Horizontal, Origin Left
+    [Header("Audio")]
+    [Tooltip("Index into UIAudioManager's Sound Effects list. -1 plays nothing.")]
+    [SerializeField] private int dashSfx = -1;
+    [SerializeField] private int slamSfx = -1;
+    [SerializeField] private int deathSfx = -1;
+
     [Header("Companion damage")]
     [SerializeField] private int swordDamage = 20;
     [SerializeField] private float swordCooldown = 0.5f;
@@ -98,10 +104,17 @@ public class Act1Boss : MonoBehaviour
         // between the two ranges: keep chasing, don't burn the cooldown slamming at nothing
     }
 
+    // Every scene owns its own UIAudioManager, so this is null whenever a scene has none.
+    private static void PlaySfx(int index)
+    {
+        if (index >= 0 && UIAudioManager.Instance != null) UIAudioManager.Instance.PlaySFXOneShot(index);
+    }
+
     private IEnumerator DashAttackRoutine()
     {
         isAttacking = true;
         rb.linearVelocity = Vector2.zero;
+        PlaySfx(dashSfx);
 
         Vector2 dashDir = ((Vector2)player.position - (Vector2)transform.position).normalized;
 
@@ -133,6 +146,7 @@ public class Act1Boss : MonoBehaviour
     {
         isAttacking = true;
         rb.linearVelocity = Vector2.zero;
+        PlaySfx(slamSfx);
 
         if (aoeIndicator != null)
         {
@@ -244,6 +258,7 @@ public class Act1Boss : MonoBehaviour
     private void Die()
     {
         StopAllCoroutines();
+        PlaySfx(deathSfx);
         bossDeath?.Invoke();
         gameObject.SetActive(false);
     }

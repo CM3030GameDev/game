@@ -179,6 +179,7 @@ public class UpgradeCardUI : MonoBehaviour
 
     private void Pick(Upgrade u)
     {
+        if (UIAudioManager.Instance != null) UIAudioManager.Instance.PlayClick();
         panel.SetActive(false);
         if (persistentHud != null) persistentHud.alpha = 1f;
         onChosen?.Invoke(u);

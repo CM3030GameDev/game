@@ -1,0 +1,2158 @@
+fileFormatVersion: 2
+guid: 81263c8cce9166c4f8fe9afec09af105
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7277033138425545128
+    second: Lab_Objects_0
+  - first:
+      213: -8220518781838238679
+    second: Lab_Objects_1
+  - first:
+      213: -677195597623669724
+    second: Lab_Objects_2
+  - first:
+      213: -2088534459582954010
+    second: Lab_Objects_3
+  - first:
+      213: 1365178338632335250
+    second: Lab_Objects_4
+  - first:
+      213: -8816387738827672554
+    second: Lab_Objects_5
+  - first:
+      213: -315569458512915749
+    second: Lab_Objects_6
+  - first:
+      213: 9165326043819471494
+    second: Lab_Objects_7
+  - first:
+      213: -8042977129091105643
+    second: Lab_Objects_8
+  - first:
+      213: -7221989887473594479
+    second: Lab_Objects_9
+  - first:
+      213: 595024080577435877
+    second: Lab_Objects_10
+  - first:
+      213: 4181648684932420437
+    second: Lab_Objects_11
+  - first:
+      213: 9097019139382311603
+    second: Lab_Objects_12
+  - first:
+      213: 904104425123044372
+    second: Lab_Objects_13
+  - first:
+      213: 7205909207408235973
+    second: Lab_Objects_14
+  - first:
+      213: -7019498603412046450
+    second: Lab_Objects_15
+  - first:
+      213: 528130692698178743
+    second: Lab_Objects_16
+  - first:
+      213: 1021195887862624560
+    second: Lab_Objects_17
+  - first:
+      213: 8525513828149772003
+    second: Lab_Objects_18
+  - first:
+      213: 6640242858457609769
+    second: Lab_Objects_19
+  - first:
+      213: 1329377991732119356
+    second: Lab_Objects_20
+  - first:
+      213: 6894172025148085379
+    second: Lab_Objects_21
+  - first:
+      213: -2121522401309801484
+    second: Lab_Objects_22
+  - first:
+      213: 3642768904572225762
+    second: Lab_Objects_23
+  - first:
+      213: -6471324149525189656
+    second: Lab_Objects_24
+  - first:
+      213: 1862750882809095612
+    second: Lab_Objects_25
+  - first:
+      213: 5613685020902919719
+    second: Lab_Objects_26
+  - first:
+      213: -3210276868946095231
+    second: Lab_Objects_27
+  - first:
+      213: 1303120092275956120
+    second: Lab_Objects_28
+  - first:
+      213: 6597233574061553192
+    second: Lab_Objects_29
+  - first:
+      213: 3271206275964591470
+    second: Lab_Objects_30
+  - first:
+      213: 6933618150531796076
+    second: Lab_Objects_31
+  - first:
+      213: 3194368972312624136
+    second: Lab_Objects_32
+  - first:
+      213: 31285084616865461
+    second: Lab_Objects_33
+  - first:
+      213: 1755885008313689080
+    second: Lab_Objects_34
+  - first:
+      213: 8954832676176070314
+    second: Lab_Objects_35
+  - first:
+      213: 1036604133730201444
+    second: Lab_Objects_36
+  - first:
+      213: -5510164916311255254
+    second: Lab_Objects_37
+  - first:
+      213: -2241583990495872135
+    second: Lab_Objects_38
+  - first:
+      213: -741865013714639606
+    second: Lab_Objects_39
+  - first:
+      213: 8539382061810744059
+    second: Lab_Objects_40
+  - first:
+      213: -3986075576505010209
+    second: Lab_Objects_41
+  - first:
+      213: -8516790455242603474
+    second: Lab_Objects_42
+  - first:
+      213: -4888554652930707266
+    second: Lab_Objects_43
+  - first:
+      213: -5939142646877275804
+    second: Lab_Objects_44
+  - first:
+      213: -5831300771859233716
+    second: Lab_Objects_45
+  - first:
+      213: 3663727583632479367
+    second: Lab_Objects_46
+  - first:
+      213: -4881275373849048106
+    second: Lab_Objects_47
+  - first:
+      213: -3647618899838587540
+    second: Lab_Objects_48
+  - first:
+      213: -6777922066263845978
+    second: Lab_Objects_49
+  - first:
+      213: -3710828595304682723
+    second: Lab_Objects_50
+  - first:
+      213: -5709642003192940772
+    second: Lab_Objects_51
+  - first:
+      213: 888061949007656119
+    second: Lab_Objects_52
+  - first:
+      213: 3030803682847885250
+    second: Lab_Objects_53
+  - first:
+      213: -2084835697145730693
+    second: Lab_Objects_54
+  - first:
+      213: 6525341113515050555
+    second: Lab_Objects_55
+  - first:
+      213: -7388690206631206857
+    second: Lab_Objects_56
+  - first:
+      213: 9058051951227842629
+    second: Lab_Objects_57
+  - first:
+      213: -6285843461840091632
+    second: Lab_Objects_58
+  - first:
+      213: 104693227276392954
+    second: Lab_Objects_59
+  - first:
+      213: -2429282014497375161
+    second: Lab_Objects_60
+  - first:
+      213: 5980346892695057303
+    second: Lab_Objects_61
+  - first:
+      213: -7872372752062346391
+    second: Lab_Objects_62
+  - first:
+      213: 549633063840242170
+    second: Lab_Objects_63
+  - first:
+      213: -8465731739494908027
+    second: Lab_Objects_64
+  - first:
+      213: -7584982531323348407
+    second: Lab_Objects_65
+  - first:
+      213: -5886390443523921592
+    second: Lab_Objects_66
+  - first:
+      213: -7899847254662114016
+    second: Lab_Objects_67
+  - first:
+      213: -3858244941376157999
+    second: Lab_Objects_68
+  - first:
+      213: 5047906415532174767
+    second: Lab_Objects_69
+  - first:
+      213: -1265160468633074889
+    second: Lab_Objects_70
+  - first:
+      213: -7200666356718015110
+    second: Lab_Objects_71
+  - first:
+      213: -3710487777920751829
+    second: Lab_Objects_72
+  - first:
+      213: -5729244949086315321
+    second: Lab_Objects_73
+  - first:
+      213: -7967261433239923049
+    second: Lab_Objects_74
+  - first:
+      213: -4920399618361857493
+    second: Lab_Objects_75
+  - first:
+      213: -1039639718137508705
+    second: Lab_Objects_76
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 24
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lab_Objects_0
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 487
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e366d7ae8c20b90800000000000000
+      internalID: -7277033138425545128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_1
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 463
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cda1bd8b9daed80800000000000000
+      internalID: -8220518781838238679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_2
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 483
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42cce20213e1a96f0800000000000000
+      internalID: -677195597623669724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 463
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e5456b79f80403e0800000000000000
+      internalID: -2088534459582954010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_4
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 465
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ffc39477612f210800000000000000
+      internalID: 1365178338632335250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 383
+        width: 44
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61431111016e5a580800000000000000
+      internalID: -8816387738827672554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_6
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 447
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd2106bdf3fde9bf0800000000000000
+      internalID: -315569458512915749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_7
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 447
+        width: 66
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 682fe741a77c13f70800000000000000
+      internalID: 9165326043819471494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_8
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 455
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59cfee32aea916090800000000000000
+      internalID: -8042977129091105643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_9
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 453
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19f4ca9067656cb90800000000000000
+      internalID: -7221989887473594479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_10
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 453
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e81f9baf33f14800800000000000000
+      internalID: 595024080577435877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_11
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 453
+        width: 20
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55350e8d253380a30800000000000000
+      internalID: 4181648684932420437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_12
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 453
+        width: 16
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3baffcd85ba1f3e70800000000000000
+      internalID: 9097019139382311603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_13
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 453
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41c515b3f260c8c00800000000000000
+      internalID: 904104425123044372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_14
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 319
+        width: 26
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5d84fde38800460800000000000000
+      internalID: 7205909207408235973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_15
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 383
+        width: 258
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d364a063bb59e90800000000000000
+      internalID: -7019498603412046450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_16
+      rect:
+        serializedVersion: 2
+        x: 739
+        y: 405
+        width: 60
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4814d111c445700800000000000000
+      internalID: 528130692698178743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_17
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 405
+        width: 46
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 031342edf340c2e00800000000000000
+      internalID: 1021195887862624560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_18
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 415
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee3c8618a5b05670800000000000000
+      internalID: 8525513828149772003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_19
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 415
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926b0b0c2b1e62c50800000000000000
+      internalID: 6640242858457609769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_20
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 415
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c374a697d36e27210800000000000000
+      internalID: 1329377991732119356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_21
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 415
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38413631ee40daf50800000000000000
+      internalID: 6894172025148085379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_22
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 415
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f345e6cd96de82e0800000000000000
+      internalID: -2121522401309801484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_23
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 423
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e8cddbb407bd8230800000000000000
+      internalID: 3642768904572225762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_24
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 423
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ebe429f8fc3136a0800000000000000
+      internalID: -6471324149525189656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_25
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 423
+        width: 16
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb5a1e20f02d9d910800000000000000
+      internalID: 1862750882809095612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_26
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 423
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72e89dfa8c0d7ed40800000000000000
+      internalID: 5613685020902919719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_27
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 291
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18390db423ec273d0800000000000000
+      internalID: -3210276868946095231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_28
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 291
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89958c7d1dc951210800000000000000
+      internalID: 1303120092275956120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_29
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 331
+        width: 162
+        height: 38
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82638326bf41e8b50800000000000000
+      internalID: 6597233574061553192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_31
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 319
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c06a6d8f8293060800000000000000
+      internalID: 6933618150531796076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Door_Blue_Close
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 116
+        width: 22
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80c3934e7ada45c20800000000000000
+      internalID: 3194368972312624136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Door_Blue_Open
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 116
+        width: 22
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b63b536e952f6000800000000000000
+      internalID: 31285084616865461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_34
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 213
+        width: 20
+        height: 82
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f3a8faac182e5810800000000000000
+      internalID: 1755885008313689080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_35
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 219
+        width: 24
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa6098ecfd4f54c70800000000000000
+      internalID: 8954832676176070314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_36
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 257
+        width: 86
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46fa0bba7f1c26e00800000000000000
+      internalID: 1036604133730201444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Capsule
+      rect:
+        serializedVersion: 2
+        x: 985
+        y: 175
+        width: 46
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a279275e336f783b0800000000000000
+      internalID: -5510164916311255254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_38
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 287
+        width: 30
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b7a40bc3b44e0e0800000000000000
+      internalID: -2241583990495872135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_39
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 287
+        width: 58
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a05af3a53bd54b5f0800000000000000
+      internalID: -741865013714639606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_40
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 289
+        width: 29
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfa729bddbaf18670800000000000000
+      internalID: 8539382061810744059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_41
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 195
+        width: 24
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd7fe8ed16d9ea8c0800000000000000
+      internalID: -3986075576505010209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_42
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 195
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24c3d074384ec980800000000000000
+      internalID: -8516790455242603474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_43
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 195
+        width: 24
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb07bfe917d582cb0800000000000000
+      internalID: -4888554652930707266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_44
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 195
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469b186ca3de39da0800000000000000
+      internalID: -5939142646877275804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top_Bottom_Door_Close
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 196
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c448ed2f7de031fa0800000000000000
+      internalID: -5831300771859233716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_46
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 223
+        width: 98
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 784d63873dc28d230800000000000000
+      internalID: 3663727583632479367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_47
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 255
+        width: 98
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6db8ddad8e9324cb0800000000000000
+      internalID: -4881275373849048106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 99
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6dae1fbfed016dc0800000000000000
+      internalID: -3647618899838587540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Door_Red_Close
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 20
+        width: 22
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a3df0daacbffe1a0800000000000000
+      internalID: -6777922066263845978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_51
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 99
+        width: 174
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17f80d59d643c0b0800000000000000
+      internalID: -5709642003192940772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_52
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 99
+        width: 16
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b4742133a7035c00800000000000000
+      internalID: 888061949007656119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Wall_1
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 96
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c7081444e39f0a20800000000000000
+      internalID: 3030803682847885250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Wall_2
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 96
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b792398bafc2113e0800000000000000
+      internalID: -2084835697145730693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Top_Bottom_Door_Open
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 164
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3601558b2bae8a50800000000000000
+      internalID: 6525341113515050555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning_Rod
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 160
+        width: 20
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 730e65e6769167990800000000000000
+      internalID: -7388690206631206857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_57
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 27
+        width: 186
+        height: 192
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54038fd024aa4bd70800000000000000
+      internalID: 9058051951227842629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_58
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 127
+        width: 62
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0164f4fdca234c8a0800000000000000
+      internalID: -6285843461840091632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_59
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 127
+        width: 30
+        height: 120
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9d23e7fe1f37100800000000000000
+      internalID: 104693227276392954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_61
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 63
+        width: 28
+        height: 76
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79333bc40d57ef250800000000000000
+      internalID: 5980346892695057303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_62
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 95
+        width: 94
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96b0cdd01b6bfb290800000000000000
+      internalID: -7872372752062346391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_63
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 129
+        width: 22
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9d1070c50b0a700800000000000000
+      internalID: 549633063840242170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_64
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 3
+        width: 24
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58ff7a716dda38a80800000000000000
+      internalID: -8465731739494908027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_65
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 3
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94abde0239abcb690800000000000000
+      internalID: -7584982531323348407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_66
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 3
+        width: 24
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 849a08c34175f4ea0800000000000000
+      internalID: -5886390443523921592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_67
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 3
+        width: 36
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 025150ee6ca1e5290800000000000000
+      internalID: -7899847254662114016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_68
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 3
+        width: 78
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d683dceaa2c47ac0800000000000000
+      internalID: -3858244941376157999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_69
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 18
+        width: 98
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fade535d324cd0640800000000000000
+      internalID: 5047906415532174767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_70
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 63
+        width: 94
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7334243c14f317ee0800000000000000
+      internalID: -1265160468633074889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_71
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 0
+        width: 94
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7d67bd6918121c90800000000000000
+      internalID: -7200666356718015110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_72
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 0
+        width: 18
+        height: 121
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b27ea956603b18cc0800000000000000
+      internalID: -3710487777920751829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lab_Objects_74
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 21
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796901750f99e6190800000000000000
+      internalID: -7967261433239923049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Button_Top
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 38
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2ae292dd9a37bbb0800000000000000
+      internalID: -4920399618361857493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Button_Top
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 6
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9cc6024f257291f0800000000000000
+      internalID: -1039639718137508705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Side_Door_Red_Open
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 19
+        width: 22
+        height: 172
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 531490d240ac38547a29401124a670b9
+      internalID: 1176276956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Green_Button_Side
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 36
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae9d9873bc9f264890818422cdc73e0
+      internalID: 1036490059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Red_Button_Side
+      rect:
+        serializedVersion: 2
+        x: 852
+        y: 4
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2727e19a0a8defc458693416f9bb0a05
+      internalID: -1763134044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Wall_3
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7942a4faa8f347d46b59131b2cc969f5
+      internalID: -20136931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Yellow_Wall_4
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 0
+        width: 24
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 062b31b0a3cef7e41bb60ba97582c74a
+      internalID: 509325200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6358fcd277e2d394ba7b1b8e3790e96f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Capsule: -5510164916311255254
+      Green_Button_Side: 1036490059
+      Green_Button_Top: -4920399618361857493
+      Lab_Objects_0: -7277033138425545128
+      Lab_Objects_1: -8220518781838238679
+      Lab_Objects_10: 595024080577435877
+      Lab_Objects_11: 4181648684932420437
+      Lab_Objects_12: 9097019139382311603
+      Lab_Objects_13: 904104425123044372
+      Lab_Objects_14: 7205909207408235973
+      Lab_Objects_15: -7019498603412046450
+      Lab_Objects_16: 528130692698178743
+      Lab_Objects_17: 1021195887862624560
+      Lab_Objects_18: 8525513828149772003
+      Lab_Objects_19: 6640242858457609769
+      Lab_Objects_2: -677195597623669724
+      Lab_Objects_20: 1329377991732119356
+      Lab_Objects_21: 6894172025148085379
+      Lab_Objects_22: -2121522401309801484
+      Lab_Objects_23: 3642768904572225762
+      Lab_Objects_24: -6471324149525189656
+      Lab_Objects_25: 1862750882809095612
+      Lab_Objects_26: 5613685020902919719
+      Lab_Objects_27: -3210276868946095231
+      Lab_Objects_28: 1303120092275956120
+      Lab_Objects_29: 6597233574061553192
+      Lab_Objects_3: -2088534459582954010
+      Lab_Objects_31: 6933618150531796076
+      Lab_Objects_34: 1755885008313689080
+      Lab_Objects_35: 8954832676176070314
+      Lab_Objects_36: 1036604133730201444
+      Lab_Objects_38: -2241583990495872135
+      Lab_Objects_39: -741865013714639606
+      Lab_Objects_4: 1365178338632335250
+      Lab_Objects_40: 8539382061810744059
+      Lab_Objects_41: -3986075576505010209
+      Lab_Objects_42: -8516790455242603474
+      Lab_Objects_43: -4888554652930707266
+      Lab_Objects_44: -5939142646877275804
+      Lab_Objects_46: 3663727583632479367
+      Lab_Objects_47: -4881275373849048106
+      Lab_Objects_48: -3647618899838587540
+      Lab_Objects_5: -8816387738827672554
+      Lab_Objects_50: -3710828595304682723
+      Lab_Objects_51: -5709642003192940772
+      Lab_Objects_52: 888061949007656119
+      Lab_Objects_57: 9058051951227842629
+      Lab_Objects_58: -6285843461840091632
+      Lab_Objects_59: 104693227276392954
+      Lab_Objects_6: -315569458512915749
+      Lab_Objects_60: -2429282014497375161
+      Lab_Objects_61: 5980346892695057303
+      Lab_Objects_62: -7872372752062346391
+      Lab_Objects_63: 549633063840242170
+      Lab_Objects_64: -8465731739494908027
+      Lab_Objects_65: -7584982531323348407
+      Lab_Objects_66: -5886390443523921592
+      Lab_Objects_67: -7899847254662114016
+      Lab_Objects_68: -3858244941376157999
+      Lab_Objects_69: 5047906415532174767
+      Lab_Objects_7: 9165326043819471494
+      Lab_Objects_70: -1265160468633074889
+      Lab_Objects_71: -7200666356718015110
+      Lab_Objects_72: -3710487777920751829
+      Lab_Objects_73: -5729244949086315321
+      Lab_Objects_74: -7967261433239923049
+      Lab_Objects_8: -8042977129091105643
+      Lab_Objects_9: -7221989887473594479
+      Lightning_Rod: -7388690206631206857
+      Red_Button_Side: -1763134044
+      Red_Button_Top: -1039639718137508705
+      Side_Door_Blue_Close: 3194368972312624136
+      Side_Door_Blue_Open: 31285084616865461
+      Side_Door_Red_Close: -6777922066263845978
+      Side_Door_Red_Open: 3271206275964591470
+      Top_Bottom_Door_Close: -5831300771859233716
+      Top_Bottom_Door_Open: 6525341113515050555
+      Yellow_Wall_1: 3030803682847885250
+      Yellow_Wall_2: -2084835697145730693
+      Yellow_Wall_3: -20136931
+      Yellow_Wall_4: 509325200
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

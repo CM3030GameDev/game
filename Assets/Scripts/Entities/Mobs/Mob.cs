@@ -201,9 +201,6 @@ public class Mob : MonoBehaviour
     {
         // Account for death of mob
         onDeath?.Invoke();
-
-        //Death animation & automatically return mob to pool
-        animator.SetTrigger("dead");
     }
 
     private void FixedUpdate()

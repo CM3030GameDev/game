@@ -16,11 +16,8 @@ public class Hp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (characterStats.health <= 0)
-        {
-            characterStats.health = 0;
-            sceneState.dead = true;
-        }
+        // Clamp only. PlayerRespawn owns what actually happens when the player hits zero.
+        if (characterStats.health <= 0) characterStats.health = 0;
 
         fillImage.fillAmount = (float)characterStats.health / characterStats.maxHealth;
 
