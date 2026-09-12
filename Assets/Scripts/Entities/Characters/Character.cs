@@ -17,6 +17,9 @@ public class Character : MonoBehaviour
     public bool isAttacked;
     [Tooltip("Seconds per on/off step while blinking after a hit.")]
     [SerializeField] private float flickerInterval = 0.08f;
+    [Tooltip("Index into UIAudioManager's Sound Effects list, played when the player is hit. " +
+             "-1 plays nothing.")]
+    [SerializeField] private int hurtSfx = -1;
     [SerializeField] private PlayerAim playerAim;
     [SerializeField] private CharacterStats cs;
 
@@ -128,6 +131,10 @@ public class Character : MonoBehaviour
         cs.health -= amount;
         GrantInvulnerability(invulnerability);
         flickerTimer = invulnerability;
+
+        // Inside the IsInvulnerable guard above, so repeated contact does not machine-gun the clip.
+        if (hurtSfx >= 0 && UIAudioManager.Instance != null)
+            UIAudioManager.Instance.PlaySFXOneShot(hurtSfx);
     }
 
     // Blinks on its own timer rather than on invulnTimer, because GrantInvulnerability is also

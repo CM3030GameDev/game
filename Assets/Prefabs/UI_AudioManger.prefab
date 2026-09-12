@@ -253,8 +253,21 @@ MonoBehaviour:
   errorSound: {fileID: 0}
   panelOpenSound: {fileID: 0}
   panelCloseSound: {fileID: 0}
-  backgroundMusic: []
-  soundEffects: []
+  backgroundMusic:
+  - {fileID: 8300000, guid: 7eaacf801d5c286478d8ff584919f88a, type: 3}
+  - {fileID: 8300000, guid: f2ec9c6b9b2efd145a510d528ec404f8, type: 3}
+  - {fileID: 8300000, guid: a33e4156928e5f04887a34476487438c, type: 3}
+  soundEffects:
+  - {fileID: 8300000, guid: a398bc2d4014fe84cb174ede453c0288, type: 3}
+  - {fileID: 8300000, guid: 9ff29e99df3fac04f97b05194413c09b, type: 3}
+  - {fileID: 8300000, guid: 89f856ff9e69b8e44bffefd0a44350f6, type: 3}
+  - {fileID: 8300000, guid: 80f9a08cdb5cc0340978b8b5eeab4487, type: 3}
+  - {fileID: 8300000, guid: 3437ebe229fadaf4caaae2e897071e66, type: 3}
+  - {fileID: 8300000, guid: e8371a51574d13743a2544053134331e, type: 3}
+  - {fileID: 8300000, guid: 90474646efd9f0b45a4b317f94c377b9, type: 3}
+  - {fileID: 8300000, guid: bbe7ad03771f35146b7cfba4d614b90f, type: 3}
+  - {fileID: 8300000, guid: 7597b7b854a9efd4b8a89d189ee528c7, type: 3}
+  - {fileID: 8300000, guid: 72dce6bf31fc06f41aa6c7dfd7bd3d9c, type: 3}
   bgmVolume: 0.6
   sfxVolume: 0.8
   targetMusicVolume: 0.3

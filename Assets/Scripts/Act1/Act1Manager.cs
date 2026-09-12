@@ -16,6 +16,10 @@ public class Act1Manager : MonoBehaviour
     [SerializeField] private CharacterStats stats;
     [SerializeField] private MissionUI missionUI;
 
+    [Header("Audio")]
+    [Tooltip("Index into UIAudioManager's Background Music list. -1 plays nothing.")]
+    [SerializeField] private int actMusicIndex = -1;
+
     [Header("Opening Dialogue")]
     [SerializeField] private DialogueData openingDialogue; // leave this empty if you guys want to skip straight to Room 1
     [SerializeField] private DialogueData room2EntryDialogue; // plays on entering Room 2, before the waves start
@@ -76,9 +80,15 @@ public class Act1Manager : MonoBehaviour
 
     [Header("Act Transition")]
     [SerializeField] private string nextSceneName = "Act4";
+    [Tooltip("Card shown on the black screen while the next act loads.")]
+    [SerializeField] private string nextActTitle = "Act 2 - The City";
+    [SerializeField] private MenuSceneTransition sceneTransition;
 
     private void Start()
     {
+        if (actMusicIndex >= 0 && UIAudioManager.Instance != null)
+            UIAudioManager.Instance.PlayBGM(actMusicIndex, true);
+
         state = State.Room1Travel;
         PlayThen(openingDialogue, BeginRoom1);
     }
@@ -240,6 +250,8 @@ public class Act1Manager : MonoBehaviour
     private void LoadNextAct()
     {
         DialogueManager.Instance.onDialogueEnd.RemoveListener(LoadNextAct);
-        SceneManager.LoadScene(nextSceneName);
+
+        if (sceneTransition != null) sceneTransition.LoadSceneWithFade(nextSceneName, nextActTitle);
+        else SceneManager.LoadScene(nextSceneName);   // no transition wired: still leave the act
     }
 }

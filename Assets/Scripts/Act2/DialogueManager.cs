@@ -26,26 +26,30 @@ public class DialogueManager : MonoBehaviour
     private Coroutine typingCoroutine;
     public bool IsDialogueActive { get; private set; }
 
+    // Deliberately NOT DontDestroyOnLoad. nameText, dialogueText and dialoguePanel all point
+    // into this scene's HUD, so persisting this across a load leaves the next act driving
+    // destroyed objects and dialogue silently stops working.
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
-    
+        Instance = this;
 
         sentences = new Queue<string>();
-        dialoguePanel.SetActive(false);
+
+        // Listeners are wired per scene, so a stale one from the previous act would fire here.
+        onDialogueEnd.RemoveAllListeners();
+
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
     }
 
-    private void Update()
+    private void OnDestroy()
     {
+        // Clear the static so the next scene's manager claims it.
+        if (Instance == this) Instance = null;
     }
 
     public void StartDialogue(DialogueData dialogue)
@@ -57,9 +61,9 @@ public class DialogueManager : MonoBehaviour
         }
 
         IsDialogueActive = true;
-        dialoguePanel.SetActive(true);
+        if (dialoguePanel != null) dialoguePanel.SetActive(true);
+        if (nameText != null) nameText.text = dialogue.speakerName;
 
-        nameText.text = dialogue.speakerName;
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -87,6 +91,7 @@ public class DialogueManager : MonoBehaviour
 
     IEnumerator TypeSentence(string sentence)
     {
+        if (dialogueText == null) yield break;
         dialogueText.text = "";
 
         foreach(char letter in sentence.ToCharArray())
@@ -100,7 +105,7 @@ public class DialogueManager : MonoBehaviour
     private void EndDialogue()
     {
         IsDialogueActive = false;
-        dialoguePanel.SetActive(false);
+        if (dialoguePanel != null) dialoguePanel.SetActive(false);
         onDialogueEnd?.Invoke();
     }
 }
