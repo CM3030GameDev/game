@@ -7,6 +7,10 @@ public class MainWeapon : MonoBehaviour
     [SerializeField] private WeaponTier currentTier;          // starts as Pistol asset (changes based on the current tier)
     [SerializeField] private Transform gunSprite;
     [SerializeField] private SpriteRenderer gunRenderer;
+    [Header("Audio")]
+    [Tooltip("Index into UIAudioManager's Sound Effects list. -1 plays nothing.")]
+    [SerializeField] private int fireSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float fireSfxVolume = 0.35f;
 
     private float fireTimer;
     private int muzzleIndex;   // for alternating dual fire (dual pistols etc.)
@@ -60,6 +64,8 @@ public class MainWeapon : MonoBehaviour
 
         var bullet = b.GetComponent<Bullet>();
         if (bullet != null) bullet.SetDamage(currentTier.damage + Mathf.RoundToInt(characterStats.damage));
+
+        UIAudioManager.Sfx(fireSfx, fireSfxVolume);
     }
 
     // Upgrade card will call this function to upgrade weapons

@@ -12113,11 +12113,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.008862
+      value: 25.037315
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.40626
+      value: -13.40628
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -46046,6 +46046,20 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 9af9a23339ddaba40a5a687909039955, type: 3}
   - {fileID: 8300000, guid: 19dadf2f9134f1c41b97eaea6d4c5bcc, type: 3}
   - {fileID: 8300000, guid: 59f9479a85956f84dacf0c4bb4417cb4, type: 3}
+  - {fileID: 8300000, guid: 59f9479a85956f84dacf0c4bb4417cb4, type: 3}
+  - {fileID: 8300000, guid: 59f9479a85956f84dacf0c4bb4417cb4, type: 3}
+  - {fileID: 8300000, guid: 72dce6bf31fc06f41aa6c7dfd7bd3d9c, type: 3}
+  - {fileID: 8300000, guid: 72dce6bf31fc06f41aa6c7dfd7bd3d9c, type: 3}
+  - {fileID: 8300000, guid: b2535c091f29d674095c39410494e845, type: 3}
+  - {fileID: 8300000, guid: 0823703ac3439604ea252380cf347232, type: 3}
+  - {fileID: 8300000, guid: ba19921649d23c148a0a3ff1431d3a06, type: 3}
+  - {fileID: 8300000, guid: cedc2c4cc2e02f748908a4061d3235e1, type: 3}
+  - {fileID: 8300000, guid: ef80aae2f133aa44a9e3402c87605812, type: 3}
+  - {fileID: 8300000, guid: ad17afe2cee750f48b62fb571695d4ce, type: 3}
+  - {fileID: 8300000, guid: 3447607bfdf1f6e48aad810bc8a0449b, type: 3}
+  - {fileID: 8300000, guid: 29173b6eb2ec543479d50f9375160489, type: 3}
+  - {fileID: 8300000, guid: c69966f18870e3d48bd50f3382290ac2, type: 3}
+  - {fileID: 8300000, guid: 1cd75512bd347914eac06ac1059534f9, type: 3}
   bgmVolume: 0.6
   sfxVolume: 0.8
   targetMusicVolume: 0.3

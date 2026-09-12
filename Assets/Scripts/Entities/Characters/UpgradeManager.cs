@@ -48,16 +48,6 @@ public class UpgradeManager : MonoBehaviour
     {
         if (loadout == null) return;
 
-        foreach (LoadoutState.OwnedWeapon w in loadout.weapons)
-        {
-            if (w.data == null) continue;
-
-            slots.AcquireOrLevel(w.data);
-            SecondaryWeapon sw = slots.Find(w.data);
-            while (sw != null && sw.Level < w.level && !sw.IsMaxLevel) sw.LevelUp();
-            if (sw != null) slots.SetSlotLevel(sw);
-        }
-
         foreach (LoadoutState.OwnedStat st in loadout.stats)
         {
             if (st.stat == null) continue;
@@ -65,6 +55,42 @@ public class UpgradeManager : MonoBehaviour
             while (statLevels.GetLevel(st.stat) < st.level) statLevels.Increment(st.stat);
             statLevels.RefreshSlot(st.stat);
         }
+
+        foreach (LoadoutState.OwnedWeapon w in loadout.weapons)
+        {
+            if (w.data == null) continue;
+
+            // Combined forms have no prefab, so rebuild the maxed base weapon and combine it again
+            SecondaryWeaponData baseData = w.data.isCombinedForm ? FindBaseWeapon(w.data) : w.data;
+            if (baseData == null) continue;
+
+            slots.AcquireOrLevel(baseData);
+            SecondaryWeapon sw = slots.Find(baseData);
+            if (sw == null) continue;
+
+            if (w.data.isCombinedForm)
+            {
+                while (!sw.IsMaxLevel) sw.LevelUp();
+                slots.SetSlotLevel(sw);
+                slots.Combine(sw, w.data);
+                statLevels.MarkCombined(baseData.combinesWithStat);
+                continue;
+            }
+
+            while (sw.Level < w.level && !sw.IsMaxLevel) sw.LevelUp();
+            slots.SetSlotLevel(sw);
+        }
+    }
+
+    // Finds the base weapon in the pool that evolves into this combined form
+    private SecondaryWeaponData FindBaseWeapon(SecondaryWeaponData combined)
+    {
+        foreach (var u in upgradePool)
+            if (u is SecondaryWeaponUpgrade wu && wu.weapon != null && wu.weapon.combinedResult == combined)
+                return wu.weapon;
+
+        Debug.LogError($"No base weapon in the upgrade pool combines into {combined.name}.", combined);
+        return null;
     }
 
     // Snapshot after every pick, so a mid-act scene change keeps the loadout.

@@ -11,6 +11,9 @@ public class Progression : MonoBehaviour
              "then have to be earned.")]
     [SerializeField] private int expGrowth = 10;
     [SerializeField] private int maxLevel = 25;
+    [Tooltip("Index into UIAudioManager's Sound Effects list. -1 plays nothing.")]
+    [SerializeField] private int levelUpSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float levelUpSfxVolume = 0.9f;
 
     public event Action<int> OnLevelUp;   // Event to catch level ups
 
@@ -22,12 +25,16 @@ public class Progression : MonoBehaviour
     private void Update()
     {
         // To handle multiple level ups in one frame
+        bool leveled = false;
         while (characterStats.expPoint >= ExpPerLevel && characterStats.level < maxLevel)
         {
             characterStats.expPoint -= ExpPerLevel;
             characterStats.level += 1;
+            leveled = true;
             OnLevelUp?.Invoke(characterStats.level);
         }
+        // Once, not per level, so a big orb granting two levels does not stack the sound.
+        if (leveled) UIAudioManager.Sfx(levelUpSfx, levelUpSfxVolume);
         // Stop accumulating exp past a full exp bar when max level is reached by the player
         if (characterStats.level >= maxLevel && characterStats.expPoint > ExpPerLevel)
             characterStats.expPoint = ExpPerLevel;

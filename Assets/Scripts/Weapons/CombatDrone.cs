@@ -14,15 +14,13 @@ public class CombatDrone : MonoBehaviour
     private CircleCollider2D col;
 
     // Cooldown is per drone and per enemy, so drones never skip mobs or block each other.
-    private readonly Dictionary<Mob, float> nextHitTime = new Dictionary<Mob, float>();
+    private readonly Dictionary<Component, float> nextHitTime = new Dictionary<Component, float>();   // mob or boss
 
-    private static int EnemyMask;
     private static readonly Collider2D[] Hits = new Collider2D[16];
 
     private void Awake()
     {
         col = GetComponent<CircleCollider2D>();
-        EnemyMask = LayerMask.GetMask("Enemy");
     }
 
     public void Configure(DroneWeapon weapon, float cooldown)
@@ -38,17 +36,20 @@ public class CombatDrone : MonoBehaviour
 
         // lossyScale, because the prefab is scaled and the collider radius is local.
         float radius = col.radius * Mathf.Abs(transform.lossyScale.x);
-        int count = Physics2D.OverlapCircleNonAlloc(transform.position, radius, Hits, EnemyMask);
+        int count = Physics2D.OverlapCircleNonAlloc(transform.position, radius, Hits, BossDamage.Mask);
 
         for (int i = 0; i < count; i++)
         {
             Mob mob = Hits[i].GetComponent<Mob>();
-            if (mob == null) continue;
+            Component target = mob != null ? mob : BossDamage.Find(Hits[i]);
+            if (target == null) continue;
 
-            if (nextHitTime.TryGetValue(mob, out float ready) && Time.time < ready) continue;
-            nextHitTime[mob] = Time.time + hitCooldown;
+            // Keyed per target, which also stops a boss's extra colliders from being hit twice.
+            if (nextHitTime.TryGetValue(target, out float ready) && Time.time < ready) continue;
+            nextHitTime[target] = Time.time + hitCooldown;
 
-            mob.UnblockedAttack(owner.DroneDamage, hitFlash);
+            if (mob != null) mob.UnblockedAttack(owner.DroneDamage, hitFlash);
+            else BossDamage.Damage((MonoBehaviour)target, owner.DroneDamage, hitFlash);
         }
     }
 }

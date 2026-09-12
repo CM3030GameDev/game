@@ -16,6 +16,11 @@ public abstract class PlayerSkill : MonoBehaviour
     [SerializeField] private GameObject screenEffect;
     [SerializeField] private float screenEffectDuration = 0.5f;
 
+    [Header("Audio")]
+    [Tooltip("Index into UIAudioManager's Sound Effects list, played as the skill goes off. -1 plays nothing.")]
+    [SerializeField] private int castSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float castSfxVolume = 0.8f;
+
     [Header("Companion")]
     [SerializeField] private Transform companion;
     [SerializeField] private float castTime = 0.4f;
@@ -94,6 +99,9 @@ public abstract class PlayerSkill : MonoBehaviour
             companion.position = transform.position;
             yield return new WaitForSeconds(castTime);
         }
+
+        // After the companion's cast wait, so the sound lands with the visual instead of before it.
+        UIAudioManager.Sfx(castSfx, castSfxVolume);
 
         if (screenEffect != null)
         {

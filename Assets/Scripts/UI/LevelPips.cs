@@ -9,14 +9,18 @@ public class LevelPips : MonoBehaviour
              "under its own Pip so the layout group never sees it. Safe to leave empty.")]
     [SerializeField] private GameObject[] combinedPips;
 
+    private bool initialised; // set once anything writes the pips, so Awake never wipes a restored loadout
+
     private void Awake()
     {
+        if (initialised) return;
         SetLevel(0);
         SetCombined(false);   // a fresh run always starts uncombined
     }
 
     public void SetLevel(int level)
     {
+        initialised = true;
         for (int i = 0; i < filledPips.Length; i++)
             filledPips[i].SetActive(i < level);
     }

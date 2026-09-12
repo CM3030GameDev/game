@@ -81,7 +81,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 425002817
-  m_SortingLayer: 9
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7452363916759497500, guid: 5bea2eac64b4d4148bd575f25b13ac4b, type: 3}
@@ -170,4 +170,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rocket
   explosionPrefab: {fileID: 5157741989187164760, guid: 6f9b764a3d15d3a468695c6757e19674, type: 3}
+  explodeSfx: 15
+  explodeSfxVolume: 0.6
   lifetime: 4
