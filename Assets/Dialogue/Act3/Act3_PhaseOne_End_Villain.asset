@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
   speakerName: Villain
   sentences:
-  - It's too late, Soldier.
-  - It has already begun.
+  - You are strong..., Soldier.

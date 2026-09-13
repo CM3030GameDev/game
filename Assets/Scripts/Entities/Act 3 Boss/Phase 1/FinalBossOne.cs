@@ -5,6 +5,9 @@ public class FinalBossOne : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator animator;
+    private BoxCollider2D box;
+    //Default material
+    private Material defaultMaterial;
     //Boss max health
     public int bossHP;
     //Boss current health
@@ -30,29 +33,34 @@ public class FinalBossOne : MonoBehaviour
     //Check if smokescreen has been used (Can only use once)
     private bool smoked;
     //Death state
-    private bool death;
-    //Default material
-    private Material defaultMaterial;
+    public bool death;
+
+    [Header("References")]
     [SerializeField] private CharacterStats characterStats;
+    [SerializeField] private DialogueData begin;
+    [SerializeField] private DialogueData end;
+    //White material
+    [SerializeField] private Material whiteMaterial;
+
+    [Header("Attacks")]
     [SerializeField] private GameObject attacks;
     [SerializeField] private GameObject dash;
     [SerializeField] private GameObject flames;
     [SerializeField] private GameObject fireCannon;
     [SerializeField] private GameObject missileBarrage;
     [SerializeField] private GameObject smokeScreens;
-    //White material
-    [SerializeField] private Material whiteMaterial;
+
+    [Header("Values")]
     //Attack interval
     [SerializeField] private float intervals;
     [SerializeField] private int damage;
-    [SerializeField] private DialogueData begin;
-    [SerializeField] private DialogueData end;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        box = GetComponent<BoxCollider2D>();
         defaultMaterial = sr.material;
         currentHP = bossHP;
         currentSpeed = characterStats.moveSpeed - 2;
@@ -66,12 +74,14 @@ public class FinalBossOne : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //Play Villain dialogue
+        //Play Villain starting dialogue
         DialogueManager.Instance.StartDialogue(begin);
-        //Initialise boss healthbar display
+        //Set quest arrow target to be pointed towards Villain
+        PhaseOneManager.Instance.missionUI.SetArrowTarget(transform);
+        //Initialise villain healthbar display
         PhaseOneManager.Instance.slider.maxValue = bossHP;
         PhaseOneManager.Instance.slider.value = bossHP;
-        //Initialise boss healthbar text value
+        //Initialise villain healthbar text value
         PhaseOneManager.Instance.tmp.text = $"{bossHP}/{bossHP}";
     }
 
@@ -100,13 +110,29 @@ public class FinalBossOne : MonoBehaviour
         if (currentHP <= 0 && !death)
         {
             death = true;
-            //Stop all attacks currently
-            attacks.SetActive(false);
             //Boss death animation
             animator.SetTrigger("dead");
-            death = true;
-            //Play Villain dialogue
+            //Play death sound effect
+            UIAudioManager.Instance.PlaySFXOneShot(5, 1f);
+            //Hide mission UI
+            PhaseOneManager.Instance.missionUI.Hide();
+            //Play Villain death dialogue
             DialogueManager.Instance.StartDialogue(end);
+            //Stop spawning robot mobs
+            MobManager.Instance.StopAllSpawnCoroutines();
+            //Disable boss collider
+            box.enabled = false;
+            //Point quest arrow towards door position
+            PhaseOneManager.Instance.ArrowPointer();
+            //Enable door collider for player to transition to Act 3 phase 2 scene when within range of door
+            PhaseOneManager.Instance.doorCollider.enabled = true;
+            //Stop all attacks that are child gameobject of Villain
+            attacks.SetActive(false);
+            //Stop all other attacks that are not child gameobject of Villain
+            for(int i = 0; i < PhaseOneManager.Instance.attackList.Count; i++)
+            {
+                PhaseOneManager.Instance.attackList[i].SetActive(false);
+            }
         }
 
         Vector2 chaseDirection = PhaseOneManager.Instance.characterTransform.position - transform.position;
@@ -161,7 +187,7 @@ public class FinalBossOne : MonoBehaviour
                     {
                         attacking = true;
 
-                        if (randomNum < 0.7f)
+                        if (randomNum < 0.6f)
                         {
                             FireCannon();
                         }
@@ -233,6 +259,8 @@ public class FinalBossOne : MonoBehaviour
         animator.SetBool("attack", true);
         //Start smokescreen animation
         smokeScreens.SetActive(true);
+        //PLAY LOOPING SMOKE SOUND EFFECT (TO REFERENCE TO ANOTHER AUDIOSOURCE THAT HAS LOOP COMPONENT ENABLED)
+
         //Fog slowly appear
         PhaseOneManager.Instance.fogs.SetActive(true);
     }
@@ -256,14 +284,14 @@ public class FinalBossOne : MonoBehaviour
     {
         if (!isAttacked && !death)
         {
-            //Boss flashes white
+            //Villain flashes white
             sr.material = whiteMaterial;
             isAttacked = true;
             currentHP -= amount;
             invulnTime = seconds;
-            //Update boss health display
+            //Update villain health display
             PhaseOneManager.Instance.slider.value = currentHP;
-            //Update boss health text value
+            //Update villain health text value
             PhaseOneManager.Instance.tmp.text = $"{currentHP}/{bossHP}";
         }
     }

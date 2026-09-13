@@ -489,6 +489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Barrier
   finalBossTwo: {fileID: 2590996190143146076}
   duration: 20
+  activate: {fileID: 11400000, guid: a493b22939f08144288e049c9d1d9951, type: 2}
 --- !u!1 &2296011895687884381
 GameObject:
   m_ObjectHideFlags: 0
@@ -686,7 +687,7 @@ GameObject:
   - component: {fileID: 1098811767652559807}
   - component: {fileID: 7870355592225760378}
   - component: {fileID: 2590996190143146076}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Final_Boss_Phase_2
   m_TagString: FinalBoss
   m_Icon: {fileID: 0}
@@ -755,7 +756,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}

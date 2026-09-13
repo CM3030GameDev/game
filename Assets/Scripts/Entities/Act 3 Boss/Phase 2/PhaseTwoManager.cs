@@ -5,10 +5,17 @@ using UnityEngine.UI;
 
 public class PhaseTwoManager : MonoBehaviour
 {
+    [Header("References")]
     public Transform characterTransform;
     public Character character;
     public Slider slider;
     public TextMeshProUGUI tmp;
+    public MissionUI missionUI;
+    public MenuSceneTransition transition;
+    [SerializeField] private ActThreeMobCount actThreeMobCount;
+    [SerializeField] private Transform bossPos;
+
+    [Header("Object Pools")]
     //Gameobject pool for homing missile attacks
     public Queue<GameObject> missiles;
     //Gameobject pool for ground impact attacks
@@ -18,8 +25,9 @@ public class PhaseTwoManager : MonoBehaviour
     //Gameobject pool for indicator marks
     public Queue<GameObject> indicators;
 
-    [SerializeField] private ActThreeMobCount actThreeMobCount;
-    [SerializeField] private Transform bossPos;
+    [Header("Attack List")]
+    //List for all attacks (To be used for disabling all concurrent attacks when Boss die)
+    public List<GameObject> attackList;
 
     [Header("Boss Attacks")]
     [SerializeField] private GameObject missilePrefab;
@@ -33,6 +41,9 @@ public class PhaseTwoManager : MonoBehaviour
     [SerializeField] private GameObject stunned;
     [SerializeField] private GameObject confusion;
     [SerializeField] private GameObject burnt;
+
+    [Header("Mission Header")]
+    [SerializeField] private string header;
 
 
     //Create singleton instance
@@ -48,6 +59,9 @@ public class PhaseTwoManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        //Resume timescale
+        Time.timeScale = 1f;
 
         missiles = new Queue<GameObject>();
         impacts = new Queue<GameObject>();
@@ -83,6 +97,8 @@ public class PhaseTwoManager : MonoBehaviour
             missile.SetActive(false);
             //Add new missile prefab to object pool
             missiles.Enqueue(missile);
+            //Add missile to attack list
+            attackList.Add(missile);
 
             //Create new impact prefab
             GameObject impact = Instantiate(impactPrefab, transform.position, Quaternion.identity);
@@ -90,6 +106,8 @@ public class PhaseTwoManager : MonoBehaviour
             impact.SetActive(false);
             //Add new impact prefab to object pool
             impacts.Enqueue(impact);
+            //Add impact to attack list
+            attackList.Add(impact);
 
             //Create new indicator prefab
             GameObject indicator = Instantiate(indicatorPrefab, transform.position, Quaternion.identity);
@@ -97,12 +115,16 @@ public class PhaseTwoManager : MonoBehaviour
             indicator.SetActive(false);
             //Add new indicator prefab to object pool
             indicators.Enqueue(indicator);
+            //Add indicator to attack list
+            attackList.Add(indicator);
         }
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Display mission header for Act 3 Phase Two
+        missionUI.SetHeader(header);
         //Reset mob count
         actThreeMobCount.ResetMobCount();
         //Spawn up to 10 maximum robot mobs at any point in time on the map
@@ -114,11 +136,11 @@ public class PhaseTwoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Stop spawning robot mobs after 30 robot mobs are destroyed
-        if (actThreeMobCount.mobCount <= 0)
-        {
-            MobManager.Instance.StopAllSpawnCoroutines();
-        }
+        ////Stop spawning robot mobs after 30 robot mobs are destroyed
+        //if (actThreeMobCount.mobCount <= 0)
+        //{
+        //    MobManager.Instance.StopAllSpawnCoroutines();
+        //}
     }
 
     public void Stunned()

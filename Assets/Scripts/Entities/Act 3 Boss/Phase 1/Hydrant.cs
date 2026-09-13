@@ -7,6 +7,7 @@ public class Hydrant : MonoBehaviour
     public int hydrantHP;
     [SerializeField] private GameObject puddle;
     [SerializeField] private DialogueData hint;
+    [SerializeField] private string puddleTask;
 
     private void Awake()
     {
@@ -25,7 +26,7 @@ public class Hydrant : MonoBehaviour
     {
         if(!leak)
         {
-            if(hydrantHP < 0)
+            if(hydrantHP <= 0)
             {
                 leak = true;
                 //Start hydrant leakage animation
@@ -35,6 +36,8 @@ public class Hydrant : MonoBehaviour
                 if(!PhaseOneManager.Instance.hydrantHint)
                 {
                     PhaseOneManager.Instance.hydrantHint = true;
+                    //Mission task prompt to inform player how to extinguish boss flame using fire hydrant puddle
+                    PhaseOneManager.Instance.missionUI.SetTasks(puddleTask);
                     //Dialogue only appears after the first hydrant has been broken (Subsequent hydrant will not)
                     DialogueManager.Instance.StartDialogue(hint);
                 }

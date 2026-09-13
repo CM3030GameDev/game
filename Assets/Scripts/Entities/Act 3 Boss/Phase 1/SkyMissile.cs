@@ -55,6 +55,8 @@ public class SkyMissile : MonoBehaviour
             transform.rotation = Quaternion.identity;
             //Start missile explosion animation
             animator.SetTrigger("explode");
+            //Play missile explosion sound effect
+            UIAudioManager.Instance.PlaySFXOneShot(2, 0.5f);
         }
 
         if(animator.GetCurrentAnimatorStateInfo(0).IsName("Base Layer.Missile_Barrage_Explosion") && animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f)
