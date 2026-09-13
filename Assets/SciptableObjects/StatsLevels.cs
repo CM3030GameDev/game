@@ -53,6 +53,7 @@ public class StatLevels : MonoBehaviour
         if (i < 0 || i >= statSlotImages.Length) return;
         int level = GetLevel(u);
         statSlotImages[i].sprite = u.icon;
+        statSlotImages[i].preserveAspect = true;   // stat icons are not square; match the weapon slots
         statSlotImages[i].color = Color.white;
 
         if (i < statSlotPips.Length && statSlotPips[i] != null)

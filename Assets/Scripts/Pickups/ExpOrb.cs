@@ -6,6 +6,9 @@ public class ExpOrb : MonoBehaviour
     [SerializeField] private int expValue = 10;        // Flat Value (change later!!)
     [SerializeField] private float moveSpeed = 12f;      // Move speed of the exp orb when the player is in range
     [SerializeField] private float collectDistance = 0.3f;
+    [Tooltip("Index into UIAudioManager's Sound Effects list. -1 plays nothing.")]
+    [SerializeField] private int collectSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float collectSfxVolume = 0.4f;
     [Tooltip("Top speed a magnetised orb reaches. Orbs far from the player travel at this, " +
              "easing back to Move Speed as they arrive.")]
     [SerializeField] private float magnetSpeed = 20f;
@@ -44,6 +47,7 @@ public class ExpOrb : MonoBehaviour
         if (dist <= collectDistance)
         {
             characterStats.expPoint += expValue;
+            UIAudioManager.Sfx(collectSfx, collectSfxVolume);
             Destroy(gameObject);
         }
     }

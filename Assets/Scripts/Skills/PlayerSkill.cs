@@ -16,6 +16,11 @@ public abstract class PlayerSkill : MonoBehaviour
     [SerializeField] private GameObject screenEffect;
     [SerializeField] private float screenEffectDuration = 0.5f;
 
+    [Header("Audio")]
+    [Tooltip("Index into UIAudioManager's Sound Effects list, played as the skill goes off. -1 plays nothing.")]
+    [SerializeField] private int castSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float castSfxVolume = 0.8f;
+
     [Header("Companion")]
     [SerializeField] private Transform companion;
     [SerializeField] private float castTime = 0.4f;
@@ -26,13 +31,16 @@ public abstract class PlayerSkill : MonoBehaviour
     private float cooldownRemaining;
     private int lastSeenKillCount;
 
-    public bool IsReady => cooldownRemaining <= 0f;
+    public bool IsReady => cooldownRemaining <= 0f && IsAvailable;
+
+    // Overridden where a skill depends on something else being present, e.g. a companion.
+    protected virtual bool IsAvailable => true;
     // Inverted so the HUD radial still fills up towards ready rather than draining.
     public float ChargeFraction => cooldown <= 0f ? 1f : Mathf.Clamp01(1f - cooldownRemaining / cooldown);
 
     protected virtual void Start()
     {
-        lastSeenKillCount = MobManager.Instance.GetKillCount();
+        lastSeenKillCount = KillCount;
         // Start on cooldown, so the first use still has to be earned.
         cooldownRemaining = cooldown;
         if (screenEffect != null) screenEffect.SetActive(false);
@@ -44,7 +52,13 @@ public abstract class PlayerSkill : MonoBehaviour
 
         TickCooldown();
 
-        if (hud != null) hud.SetCharge(ChargeFraction, IsReady);
+        // The slot is hidden entirely while the skill is unavailable, so a scene without the
+        // companion shows two slots rather than a dead third one.
+        if (hud != null)
+        {
+            if (hud.gameObject.activeSelf != IsAvailable) hud.gameObject.SetActive(IsAvailable);
+            if (IsAvailable) hud.SetCharge(ChargeFraction, IsReady);
+        }
 
         if (!IsReady) return;
         if (!PressedActivate()) return;
@@ -60,7 +74,7 @@ public abstract class PlayerSkill : MonoBehaviour
     private void TickCooldown()
     {
         // Drain the counter every frame, or banked kills would refund the next cooldown at once.
-        int current = MobManager.Instance.GetKillCount();
+        int current = KillCount;
         int delta = current - lastSeenKillCount;
         lastSeenKillCount = current;
 
@@ -70,6 +84,10 @@ public abstract class PlayerSkill : MonoBehaviour
         if (delta > 0) cooldownRemaining -= delta * secondsPerKill;
         if (cooldownRemaining < 0f) cooldownRemaining = 0f;
     }
+
+    // Guarded so a scene without a MobManager leaves the skill on a plain timer instead of
+    // throwing every frame, which would stop the HUD updating at all.
+    private static int KillCount => MobManager.Instance != null ? MobManager.Instance.GetKillCount() : 0;
 
     protected void IgnoreKills(int count) => lastSeenKillCount += count;
 
@@ -81,6 +99,9 @@ public abstract class PlayerSkill : MonoBehaviour
             companion.position = transform.position;
             yield return new WaitForSeconds(castTime);
         }
+
+        // After the companion's cast wait, so the sound lands with the visual instead of before it.
+        UIAudioManager.Sfx(castSfx, castSfxVolume);
 
         if (screenEffect != null)
         {

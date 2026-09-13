@@ -21,7 +21,8 @@ public class MinibossUltimate : MonoBehaviour
     private bool isUltEnd = false;
     private Transform playerTransform;
     private string facingDir = "F";
-    
+    private Act2Miniboss boss;
+    private GameObject ultObject;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -52,8 +53,8 @@ public class MinibossUltimate : MonoBehaviour
 
         for (int i = 0; i < numberOfThrows; i++)
         {
-            UIAudioManager.Instance.PlaySFX(2);
-            GameObject ultObject = Instantiate(ult, topPoint.position, Quaternion.identity);
+            UIAudioManager.Instance.PlaySFX(1);
+            ultObject = Instantiate(ult, topPoint.position, Quaternion.identity);
             ultObject.GetComponent<CircleCollider2D>().enabled = false;
             yield return StartCoroutine(GrowUlt(ultObject));
             UIAudioManager.Instance.StopSFX();
@@ -86,9 +87,10 @@ public class MinibossUltimate : MonoBehaviour
         if (projectile != null)
         {
             projectile.Launch(direction, throwSpeed, ultLifetime, ultDamage, playerInvulnerability);
+            UIAudioManager.Instance.PlaySFXOneShot(2);
             projectile.GetComponent<CircleCollider2D>().enabled = true;
         }
-        UIAudioManager.Instance.PlaySFXOneShot(3);   
+        
     }
 
     public void SetIsStartUlt(bool startUlt, string direction = "F")
@@ -97,9 +99,17 @@ public class MinibossUltimate : MonoBehaviour
         facingDir = direction;
     }
 
-    public void SetIsEndUlt(bool endUlt)
+    public void SetIsEndUlt(bool endUlt, Act2Miniboss miniboss)
     {
         isUltEnd = endUlt;
+        boss = miniboss;
+        boss.bossDeath.AddListener(BossDeath);
+    }
+
+    private void BossDeath()
+    {
+        StopAllCoroutines();
+        Destroy(ultObject);
     }
 
     public bool GetIsUltEnd()

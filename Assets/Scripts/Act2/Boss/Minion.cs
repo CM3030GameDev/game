@@ -14,6 +14,7 @@ public class Minion : MonoBehaviour
 
     private Vector3 startPos;
     private bool hasStartPos = false;
+    private bool startMoving = false;
 
     private DirectionFacing dir = DirectionFacing.LEFT;
     private MinionState currentState = MinionState.WARNING;
@@ -41,6 +42,7 @@ public class Minion : MonoBehaviour
 
         if(!hasStartPos)
         {
+            UIAudioManager.Instance.PlaySFXOneShot(5);
             startPos = transform.position;
             hasStartPos = true;
         }
@@ -106,6 +108,12 @@ public class Minion : MonoBehaviour
 
     private void HandleMoving()
     {
+        if(!startMoving)
+        {
+            UIAudioManager.Instance.PlaySFXOneShot(2);
+            startMoving = true;
+        }
+
         if (dir == DirectionFacing.LEFT)
             moveDir = Vector3.right;
         else if (dir == DirectionFacing.TOP)
@@ -160,7 +168,7 @@ public class Minion : MonoBehaviour
             if (!character.isAttacked && character != null)
             {
                 character.CharacterAttacked(damage, playerInvulnerability);
-                UIAudioManager.Instance.PlaySFXOneShot(7);
+                UIAudioManager.Instance.PlaySFXOneShot(6);
             }
         }
     }

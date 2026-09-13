@@ -11,6 +11,8 @@ public class UpgradeManager : MonoBehaviour
     [SerializeField] private WeaponSlots slots;
     [SerializeField] private StatLevels statLevels;
     [SerializeField] private UpgradeCardUI cardUI;
+    [Tooltip("Carries the picked upgrades between acts. Without it the loadout resets each scene.")]
+    [SerializeField] private LoadoutState loadout;
 
     [Header("Pool")]
     [SerializeField] private List<Upgrade> upgradePool = new List<Upgrade>();
@@ -33,7 +35,76 @@ public class UpgradeManager : MonoBehaviour
     {
         ctx = new UpgradeContext { stats = stats, weapon = weapon, skill = skill, slots = slots, statLevels = statLevels };
         BuildStatPartners();
-        ApplyMainWeaponTier(0);   // also sets the starting icon, which used to be skipped
+
+        // Rebuild what the player already owns before applying the tier, so the HUD slots and
+        // pips are populated by the time anything reads them.
+        RestoreLoadout();
+        ApplyMainWeaponTier(loadout != null ? loadout.mainWeaponTier : 0);
+    }
+
+    // Replays the picks as bookkeeping only. Upgrade.Apply is deliberately NOT called: the stat
+    // effects are already baked into CharacterStats, which persists on its own.
+    private void RestoreLoadout()
+    {
+        if (loadout == null) return;
+
+        foreach (LoadoutState.OwnedStat st in loadout.stats)
+        {
+            if (st.stat == null) continue;
+
+            while (statLevels.GetLevel(st.stat) < st.level) statLevels.Increment(st.stat);
+            statLevels.RefreshSlot(st.stat);
+        }
+
+        foreach (LoadoutState.OwnedWeapon w in loadout.weapons)
+        {
+            if (w.data == null) continue;
+
+            // Combined forms have no prefab, so rebuild the maxed base weapon and combine it again
+            SecondaryWeaponData baseData = w.data.isCombinedForm ? FindBaseWeapon(w.data) : w.data;
+            if (baseData == null) continue;
+
+            slots.AcquireOrLevel(baseData);
+            SecondaryWeapon sw = slots.Find(baseData);
+            if (sw == null) continue;
+
+            if (w.data.isCombinedForm)
+            {
+                while (!sw.IsMaxLevel) sw.LevelUp();
+                slots.SetSlotLevel(sw);
+                slots.Combine(sw, w.data);
+                statLevels.MarkCombined(baseData.combinesWithStat);
+                continue;
+            }
+
+            while (sw.Level < w.level && !sw.IsMaxLevel) sw.LevelUp();
+            slots.SetSlotLevel(sw);
+        }
+    }
+
+    // Finds the base weapon in the pool that evolves into this combined form
+    private SecondaryWeaponData FindBaseWeapon(SecondaryWeaponData combined)
+    {
+        foreach (var u in upgradePool)
+            if (u is SecondaryWeaponUpgrade wu && wu.weapon != null && wu.weapon.combinedResult == combined)
+                return wu.weapon;
+
+        Debug.LogError($"No base weapon in the upgrade pool combines into {combined.name}.", combined);
+        return null;
+    }
+
+    // Snapshot after every pick, so a mid-act scene change keeps the loadout.
+    private void SaveLoadout()
+    {
+        if (loadout == null) return;
+
+        loadout.weapons.Clear();
+        foreach (SecondaryWeapon w in slots.Active)
+            loadout.weapons.Add(new LoadoutState.OwnedWeapon { data = w.Data, level = w.Level });
+
+        loadout.stats.Clear();
+        foreach (var kv in statLevels.All)
+            loadout.stats.Add(new LoadoutState.OwnedStat { stat = kv.Key, level = kv.Value });
     }
 
     private void ApplyMainWeaponTier(int index)
@@ -46,6 +117,7 @@ public class UpgradeManager : MonoBehaviour
         weapon.SetTier(tier);
         slots.SetMainWeaponIcon(tier.icon);
         slots.SetMainWeaponLevel(index + 1);
+        if (loadout != null) loadout.mainWeaponTier = index;
     }
 
     // Derived from the pool so stat cards can name their weapon without storing it twice.
@@ -114,6 +186,7 @@ public class UpgradeManager : MonoBehaviour
         {
             picked.Apply(ctx);
             TryCombineWeapons();
+            SaveLoadout();
         }
         finally
         {

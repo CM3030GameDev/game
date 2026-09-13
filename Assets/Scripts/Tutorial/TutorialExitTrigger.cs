@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,28 +6,17 @@ public class TutorialExitTrigger : MonoBehaviour
     [Header("Dialogue")]
     [SerializeField] private DialogueData tutorialCompleteDialogue;
 
-    [Header("Fade Overlay")]
-    [SerializeField] private CanvasGroup fadeOverlay;
-
     [Header("Transition")]
+    [SerializeField] private MenuSceneTransition sceneTransition;
     [SerializeField] private string nextSceneName = "Act1";
-    [SerializeField] private float fadeToBlackDuration = 1f;
+    [Tooltip("Card shown on the black screen while the next act loads.")]
+    [SerializeField] private string nextActTitle = "Act 1 - City Outskirts";
 
     [Header("Settings")]
     [SerializeField] private bool triggerOnlyOnce = true;
 
     private bool hasTriggered = false;
     private bool waitingForDialogue = false;
-
-    private void Start()
-    {
-        if (fadeOverlay != null)
-        {
-            fadeOverlay.alpha = 0f;
-            fadeOverlay.blocksRaycasts = false;
-            fadeOverlay.interactable = false;
-        }
-    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -74,57 +62,15 @@ public class TutorialExitTrigger : MonoBehaviour
             OnDialogueFinished
         );
 
-        StartCoroutine(TransitionToAct1());
+        LeaveTutorial();
     }
 
-    private IEnumerator TransitionToAct1()
+    // The fade, the music fade and the title card all live in MenuSceneTransition, so every act
+    // hands off the same way instead of each one owning a copy of the sequence.
+    private void LeaveTutorial()
     {
-        // Stop the player interacting with UI while transitioning.
-        if (fadeOverlay != null)
-        {
-            fadeOverlay.blocksRaycasts = true;
-            fadeOverlay.interactable = true;
-
-            float startAlpha = fadeOverlay.alpha;
-            float elapsed = 0f;
-
-            while (elapsed < fadeToBlackDuration)
-            {
-                elapsed += Time.unscaledDeltaTime;
-
-                fadeOverlay.alpha = Mathf.Lerp(
-                    startAlpha,
-                    1f,
-                    elapsed / fadeToBlackDuration
-                );
-
-                yield return null;
-            }
-
-            // Ensure completely black before scene change.
-            fadeOverlay.alpha = 1f;
-        }
-        else
-        {
-            Debug.LogWarning(
-                "TutorialExitTrigger: Fade Overlay is not assigned."
-            );
-
-            yield return new WaitForSecondsRealtime(
-                fadeToBlackDuration
-            );
-        }
-
-        // Fade music out after / during the screen transition.
-        if (UIAudioManager.Instance != null)
-        {
-            yield return UIAudioManager.Instance.FadeMusicOutAndWait();
-        }
-
-        // Small pause while fully black.
-        yield return new WaitForSecondsRealtime(0.2f);
-
-        SceneManager.LoadScene(nextSceneName);
+        if (sceneTransition != null) sceneTransition.LoadSceneWithFade(nextSceneName, nextActTitle);
+        else SceneManager.LoadScene(nextSceneName);
     }
 
     private void OnDestroy()

@@ -3,13 +3,15 @@ using UnityEngine;
 public class Rocket : MonoBehaviour
 {
     [SerializeField] private GameObject explosionPrefab;
+    [Tooltip("Index into UIAudioManager's Sound Effects list, played on each explosion. -1 plays nothing.")]
+    [SerializeField] private int explodeSfx = -1;
+    [Range(0f, 1f)][SerializeField] private float explodeSfxVolume = 0.6f;
     [SerializeField] private float lifetime = 4f;
 
     private int damage = 60;
     private float blastRadius = 2f;
 
     private static int EnemyLayer;
-    private static int EnemyMask;
 
     public void Configure(int dmg, float radius)
     {
@@ -20,24 +22,29 @@ public class Rocket : MonoBehaviour
     private void Awake()
     {
         EnemyLayer = LayerMask.NameToLayer("Enemy");
-        EnemyMask = LayerMask.GetMask("Enemy");
     }
 
     private void Start() => Destroy(gameObject, lifetime);
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.layer != EnemyLayer) return;
+        // Final boss phases are not on the Enemy layer, so check for a boss as well.
+        if (other.gameObject.layer != EnemyLayer && BossDamage.Find(other) == null) return;
         Detonate();
     }
 
     private void Detonate()
     {
-        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, blastRadius, EnemyMask);
+        UIAudioManager.Sfx(explodeSfx, explodeSfxVolume);
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, blastRadius, BossDamage.Mask);
+        var bossesHit = new System.Collections.Generic.HashSet<MonoBehaviour>();   // one hit per boss, even with several colliders
         foreach (var h in hits)
         {
             Mob mob = h.GetComponent<Mob>();
-            if (mob != null) mob.MobAttacked(damage, 0.1f);
+            if (mob != null) { mob.MobAttacked(damage, 0.1f); continue; }
+
+            MonoBehaviour boss = BossDamage.Find(h);
+            if (boss != null && bossesHit.Add(boss)) BossDamage.Damage(boss, damage, 0.1f);
         }
 
         if (explosionPrefab != null)

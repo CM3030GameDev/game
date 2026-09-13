@@ -73,6 +73,16 @@ public class WeaponSlots : MonoBehaviour
         return true;
     }
 
+    // Used when a loadout is restored and the weapon's level was set without going through
+    // AcquireOrLevel for each step.
+    public void SetSlotLevel(SecondaryWeapon w)
+    {
+        int i = active.IndexOf(w);
+        if (i < 0) return;
+        SetSlotIcon(i + secondaryOffset, w.Data.icon);
+        RefreshPips(i + secondaryOffset, w.Level);
+    }
+
     public void SetSlotIcon(int index, Sprite icon)
     {
         if (index < 0 || index >= weaponSlotImages.Length) return;

@@ -80,7 +80,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -746274175
-  m_SortingLayer: 15
+  m_SortingLayer: 16
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1130957821722783716, guid: 28e004383e3e97b4580d938c5f861401, type: 3}
@@ -109,6 +109,9 @@ MonoBehaviour:
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   healAmount: 0
   collectDistance: 0.8
+  collectSfx: 14
+  collectSfxVolume: 0.8
+  moveSpeed: 12
 --- !u!114 &3715986076236831225
 MonoBehaviour:
   m_ObjectHideFlags: 0

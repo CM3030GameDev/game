@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 10
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4109989988012210610, guid: 36e082e2b549f6d468ed1966cf60cef2, type: 3}
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 14
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
@@ -579,6 +579,7 @@ GameObject:
   - component: {fileID: 1332619158323253300}
   - component: {fileID: 3060023109355740636}
   - component: {fileID: 4930700049808492635}
+  - component: {fileID: -7835466623713447648}
   m_Layer: 6
   m_Name: Soldier
   m_TagString: Character
@@ -652,7 +653,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 13
+  m_SortingLayer: 14
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -763,8 +764,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a0d6dea0d8dc3a4f8abccaf67bf0b4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
+  confused: 0
   isAttacked: 0
   flickerInterval: 0.08
+  hurtSfx: 12
+  hurtSfxVolume: 0.7
   playerAim: {fileID: 6794367839972719044}
   cs: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
 --- !u!114 &7859788852804536456
@@ -784,6 +788,8 @@ MonoBehaviour:
   currentTier: {fileID: 11400000, guid: e621edf1e9e9a8344ae40120855f0d99, type: 2}
   gunSprite: {fileID: 6561390801326322390}
   gunRenderer: {fileID: 1878892047716282404}
+  fireSfx: 16
+  fireSfxVolume: 0.15
 --- !u!114 &1494602146680389243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -800,6 +806,8 @@ MonoBehaviour:
   baseExp: 10
   expGrowth: 10
   maxLevel: 25
+  levelUpSfx: 13
+  levelUpSfxVolume: 0.9
 --- !u!114 &2317956446373592222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -814,10 +822,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SoldierSkill
   activationKey: 32
   useRightMouse: 1
-  cooldown: 30
-  secondsPerKill: 1
+  cooldown: 180
+  secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 17
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}
@@ -844,6 +854,7 @@ MonoBehaviour:
   slots: {fileID: 5836751505678602339}
   statLevels: {fileID: 4035137110877519996}
   cardUI: {fileID: 0}
+  loadout: {fileID: 0}
   upgradePool:
   - {fileID: 11400000, guid: 94c782ab541038e4593cbe9d34230b14, type: 2}
   - {fileID: 11400000, guid: 971c7b15777371b4881c38114fff1309, type: 2}
@@ -941,10 +952,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FireSkill
   activationKey: 49
   useRightMouse: 0
-  cooldown: 30
-  secondsPerKill: 1
+  cooldown: 120
+  secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 18
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}
@@ -966,10 +979,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::SwordSkill
   activationKey: 50
   useRightMouse: 0
-  cooldown: 30
-  secondsPerKill: 1
+  cooldown: 60
+  secondsPerKill: 3
   screenEffect: {fileID: 0}
   screenEffectDuration: 0.5
+  castSfx: 19
+  castSfxVolume: 0.8
   companion: {fileID: 0}
   castTime: 0.4
   hud: {fileID: 0}
@@ -978,6 +993,25 @@ MonoBehaviour:
   invulnDuration: 4
   shieldVisual: {fileID: 4244438606794618534}
   speedBonus: 3
+  swordsman: {fileID: 0}
+--- !u!114 &-7835466623713447648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8857959753512833621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07a93020c964dff44984201287165fa4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerRespawn
+  stats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
+  sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  spawnPoint: {fileID: 0}
+  respawnDelay: 1
+  healthOnRespawn: 0.5
+  respawnInvulnerability: 2
 --- !u!1 &9060806514941553255
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,7 +1091,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -746274175
-  m_SortingLayer: 15
+  m_SortingLayer: 16
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8707456579027042020, guid: 73cf93d09298f6d4582e5051eac31304, type: 3}

@@ -10,12 +10,19 @@ public class SwordSkill : PlayerSkill
     [SerializeField] private float invulnDuration = 4f;
     [SerializeField] private GameObject shieldVisual;   // sits on the player, hidden by default
     [SerializeField] private float speedBonus = 3f;
+    [Tooltip("The Swordsman companion. The skill stays unavailable until he has joined.")]
+    [SerializeField] private Companion swordsman;
 
     protected override void Start()
     {
         base.Start();
         if (shieldVisual != null) shieldVisual.SetActive(false);
     }
+
+    // No Swordsman assigned means no Swordsman in this scene, so the skill is unavailable rather
+    // than defaulting to on. He is also inactive until Act1Manager hands him over.
+    protected override bool IsAvailable =>
+        swordsman != null && swordsman.isActiveAndEnabled && swordsman.gameObject.activeInHierarchy;
 
     protected override IEnumerator Cast()
     {

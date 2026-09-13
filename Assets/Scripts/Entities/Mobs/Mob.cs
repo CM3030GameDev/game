@@ -196,6 +196,15 @@ public class Mob : MonoBehaviour
             if (debuffTimer <= 0f) speedMultiplier = 1f;
         }
     }
+    public void SetDead()
+    {
+        if (!death)
+        {
+            animator.SetTrigger("dead");
+            death = true;
+            Invoke(nameof(Despawn), deathAnimationDuration);
+        }
+    }
 
     public void Despawn()
     {

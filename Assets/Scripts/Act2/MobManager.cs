@@ -159,7 +159,7 @@ public class MobManager : MonoBehaviour
             StopCoroutine(c.Value);
         }
         coroutines.Clear();
-        //Debug.Log("All spawners have been stopped.");
+        Debug.Log("All spawners have been stopped." + coroutines.Count);
     }
 
     /// <summary>
@@ -343,7 +343,7 @@ public class MobManager : MonoBehaviour
             {
                 if (mob.activeSelf)
                 {
-                    mob.GetComponent<Mob>().Despawn();
+                    mob.GetComponent<Mob>().SetDead();
                 }
             }
         }

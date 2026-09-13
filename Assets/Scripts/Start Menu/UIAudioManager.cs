@@ -185,9 +185,20 @@ public class UIAudioManager : MonoBehaviour
         musicAudioSource.Stop();
     }
 
-    public void PlaySFXOneShot(int index)
+    public void PlaySFXOneShot(int index) => PlaySFXOneShot(index, 1f);
+
+    // volumeScale is the clip's own loudness, applied under the SFX slider (sfxVolume).
+    public void PlaySFXOneShot(int index, float volumeScale)
     {
-        uiAudioSource.PlayOneShot(soundEffects[index], sfxVolume);
+        if (index < 0 || index >= soundEffects.Count || soundEffects[index] == null) return;
+        uiAudioSource.PlayOneShot(soundEffects[index], sfxVolume * volumeScale);
+    }
+
+    // Null-safe shortcut for gameplay code: a scene with no audio manager, or index -1, is silent.
+    public static void Sfx(int index, float volumeScale = 1f)
+    {
+        if (index < 0 || Instance == null) return;
+        Instance.PlaySFXOneShot(index, volumeScale);
     }
 
     public void PlaySFX(int index)

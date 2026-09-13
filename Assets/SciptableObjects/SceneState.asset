@@ -15,4 +15,4 @@ MonoBehaviour:
   pause: 0
   mission: 0
   dead: 0
-  act: 2
+  act: 1
