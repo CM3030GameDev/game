@@ -10,6 +10,7 @@ public class PhaseOneManager : MonoBehaviour
     public GameObject fogs;
     public Slider slider;
     public TextMeshProUGUI tmp;
+    public bool hydrantHint;
     //Gameobject pool for missile barrage attacks
     public Queue<GameObject> missiles;
     //Gameobject pool for fire cannon attacks
@@ -38,6 +39,9 @@ public class PhaseOneManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        //Initialise no hydrant to be broken yet
+        hydrantHint = false;
 
         missiles = new Queue<GameObject>();
         explosions = new Queue<GameObject>();

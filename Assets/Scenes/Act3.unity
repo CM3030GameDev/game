@@ -892,7 +892,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1462948312}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &116339684
 Animator:
@@ -11041,7 +11040,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 326971591}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &187099386
 Animator:
@@ -11842,7 +11840,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1638659700}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &252080683
 Animator:
@@ -12021,7 +12018,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1328404453}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &252377525
 Animator:
@@ -12650,7 +12646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1998091671}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &279313542
 Animator:
@@ -12779,6 +12774,17 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!114 &284342989 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6370233958418725041, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+  m_PrefabInstance: {fileID: 1463628777207544359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1 &319919868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7522579391147188837, guid: e5979e830339bb241a2eb56212f2a8f0, type: 3}
@@ -13009,7 +13015,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1461774603}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &328161568
 Animator:
@@ -13349,7 +13354,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1531061133}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &366293683
 Animator:
@@ -13655,7 +13659,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1709178936}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!1 &381410978 stripped
 GameObject:
@@ -13913,7 +13916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 600513247}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &414984386
 Animator:
@@ -14501,7 +14503,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 248483603}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &455353438
 Animator:
@@ -14996,7 +14997,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1273862707}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &490131133
 Animator:
@@ -15159,7 +15159,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 222515036}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &517655708
 Animator:
@@ -15566,7 +15565,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 794738570}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &545190936
 Animator:
@@ -93109,7 +93107,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1677551427}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &675565225
 Animator:
@@ -93449,7 +93446,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 248963479}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &713834448
 Animator:
@@ -93789,7 +93785,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 387437591}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &742203659
 Animator:
@@ -94275,7 +94270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 447558120}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &826638108
 Animator:
@@ -94454,7 +94448,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1533510315}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &828885272
 Animator:
@@ -94633,7 +94626,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1448640109}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &851111532
 Animator:
@@ -94859,7 +94851,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 470804691}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &853622302
 Animator:
@@ -95361,7 +95352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1606335090}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &907036460
 Animator:
@@ -95524,7 +95514,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1117397511}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &931074545
 Animator:
@@ -96156,7 +96145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 969503731}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &949668661
 Animator:
@@ -96457,7 +96445,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 273037621}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &956274351
 Animator:
@@ -96897,7 +96884,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 157951877}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1035343986
 Animator:
@@ -97691,7 +97677,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1344245040}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1202786755
 Animator:
@@ -97870,7 +97855,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 273981987}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1212882677
 Animator:
@@ -99110,7 +99094,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1794743212}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1355115607
 Animator:
@@ -99507,7 +99490,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 723753329}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1386456445
 Animator:
@@ -100381,7 +100363,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1060280295}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1511976913
 Animator:
@@ -100542,8 +100523,9 @@ MonoBehaviour:
   characterTransform: {fileID: 945017055}
   character: {fileID: 945017065}
   fogs: {fileID: 381410978}
-  slider: {fileID: 0}
-  tmp: {fileID: 0}
+  slider: {fileID: 1995221690}
+  tmp: {fileID: 284342989}
+  hydrantHint: 0
   actThreeMobCount: {fileID: 11400000, guid: 94849a4d7fe59e14a8efaef62768b32a, type: 2}
   bossPos: {fileID: 152421637}
   missilePrefab: {fileID: 2171256437083689116, guid: fbf947a8a1932374e9efa98d8af21324, type: 3}
@@ -100614,7 +100596,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 616092407}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1530371517
 Animator:
@@ -104966,7 +104947,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 417934507}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1670276007
 Animator:
@@ -105306,7 +105286,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1373986592}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1695639121
 Animator:
@@ -115170,7 +115149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 708139009}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1699050393
 Animator:
@@ -198067,7 +198045,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 2065562299}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1922616836
 Animator:
@@ -198636,7 +198613,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Hydrant
   hydrantHP: 500
   puddle: {fileID: 1214303112}
-  flames: {fileID: 0}
   hint: {fileID: 11400000, guid: 2dd0e0e4a42af1948aa5fc3654f44b9c, type: 2}
 --- !u!95 &1958605606
 Animator:
@@ -198941,6 +198917,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1981429543}
   m_CullTransparentMesh: 1
+--- !u!114 &1995221690 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2185740310139857149, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+  m_PrefabInstance: {fileID: 1463628777207544359}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &1998091671
 GameObject:
   m_ObjectHideFlags: 0
@@ -199433,11 +199420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 12.268049
+      value: 11.269023
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0018216759
+      value: 0.0018416943
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -199844,6 +199831,30 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3105037424330049274, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3203511968360734761, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -199956,6 +199967,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3851997135595441723, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4388622431986015770, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -200035,6 +200050,10 @@ PrefabInstance:
     - target: {fileID: 4552879794147003378, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4601237271851861467, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4625902031363421376, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_Pivot.x
@@ -200164,6 +200183,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5021231741589466515, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 2090671976}
     - target: {fileID: 5833794531615700865, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -200238,7 +200261,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6667407070903480725, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6780452556590110573, guid: 37c25e45bdd6c3f4d96439a18ec885b1, type: 3}
       propertyPath: m_AnchorMax.y

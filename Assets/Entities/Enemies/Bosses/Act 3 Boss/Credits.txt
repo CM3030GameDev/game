@@ -1,12 +1,12 @@
 Villain By Twitter: Gif (@gif_not_jif), Noiracide (@Noiracide), Romi (@DessRomaric)
 
-Status Effect By: Nockzoo (https://nockzoo.itch.io/)
-
 Final Boss Phase 1 By: Emcee Flesher (https://opengameart.org/users/emcee-flesher)
 
 Final Boss Phase 2 By: Elthen (https://elthen.itch.io/)
 
 Robot Mobs By: ashenremains (https://ashenremains.itch.io/)
+
+Status Effect By: Nockzoo (https://nockzoo.itch.io/)
 
 Keyboard E Button By: MegaCrash (https://megacrash.itch.io/)
 
@@ -22,13 +22,13 @@ Exhaust By: KlenchAndrei (https://klenchandrei.itch.io/)
 
 Homing_Missile By: diggy (https://opengameart.org/users/diggy)
 
+Missile_Explosion By: ansimuz (https://ansimuz.itch.io/)
+
 Missile Barrage By: Silas Games (https://silasgamedev.itch.io/)
 
+Missile Barrage Explosion By: unTied Games(https://untiedgames.itch.io/)
+
 Eye_Laser By: caeden_8o8gamestudio (https://caeden-8o8gamestudio.itch.io/)
-
-AoE_Explosion By: unTied Games(https://untiedgames.itch.io/)
-
-Drone By: Vivicat (https://vivicat.itch.io/)
 
 Suction By: Julien (https://opengameart.org/users/julien)
 
@@ -38,11 +38,9 @@ Ground_Smash By: nerijs (https://nerijs.itch.io/)
 
 Ground_Impact By: unTied Games (https://untiedgames.itch.io/)
 
-Fire Cannon By: a_klingon (https://aklingon.itch.io/)
+Fire Cannon Shoot By: a_klingon (https://aklingon.itch.io/)
 
-Fire Attack By: pimen (https://pimen.itch.io/)
-
-Missile_Explosion By: ansimuz (https://ansimuz.itch.io/)
+Fire Cannon Explosion By: pimen (https://pimen.itch.io/)
 
 Lightning_Bolt By: ansimuz (https://ansimuz.itch.io/)
 
