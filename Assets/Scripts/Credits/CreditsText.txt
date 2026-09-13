@@ -1,0 +1,135 @@
+<align=center><size=200%><b>THE END</b></size>
+
+
+
+<size=140%><b>Team</b></size>
+
+<color=#9A9A9A>Tutorial</color>
+Nicholas
+
+<color=#9A9A9A>Act 1</color>
+Harold
+
+<color=#9A9A9A>Act 2</color>
+Kang Kang
+
+<color=#9A9A9A>Act 3</color>
+Hong Shuai
+
+
+
+<size=140%><b>Created by the Team</b></size>
+
+<b>Character Hitflash</b>  Hong Shuai
+<size=70%><color=#9A9A9A>Original, authored for this project  |  Characters</color></size>
+
+<b>Stats Sprites</b>  Harold
+<size=70%><color=#9A9A9A>Original, authored for this project  |  Stat icons, upgrade panel</color></size>
+
+<b>Combat Drone</b>  Harold
+<size=70%><color=#9A9A9A>Original, authored for this project  |  Weapon</color></size>
+
+
+
+<size=140%><b>Visual Assets</b></size>
+
+<b>Animated City Background</b>  owmyknees
+<size=70%><color=#9A9A9A>owmyknees.itch.io  |  Free  |  Level backgrounds, all acts</color></size>
+
+<b>Buildings & Wirefence</b>  0_mem0ry
+<size=70%><color=#9A9A9A>0-mem0ry.itch.io  |  Free  |  City environment tiles</color></size>
+
+<b>Doors</b>  Joao9396
+<size=70%><color=#9A9A9A>joao9396.itch.io  |  Free  |  Environment, level transitions</color></size>
+
+<b>Road</b>  GuttyKreum
+<size=70%><color=#9A9A9A>guttykreum.itch.io  |  Free  |  City environment tiles</color></size>
+
+<b>Factory Asset v.2 Teaser</b>  Blood_seller
+<size=70%><color=#9A9A9A>blood-seller.itch.io/factory-asset-v2-teaser  |  Free  |  Environment props</color></size>
+
+<b>PixelVehicles</b>  Minzinn
+<size=70%><color=#9A9A9A>minzinn.itch.io/pixelvehicles  |  Free  |  Environmental props</color></size>
+
+<b>Soldier, Mercenary, Swordsman</b>  Gif (@gif_not_jif), Noiracide (@Noiracide), Romi (@DessRomaric)
+<size=70%><color=#9A9A9A>Free  |  Playable characters</color></size>
+
+<b>Enemy Robotic Dogs</b>  Silver Ink
+<size=70%><color=#9A9A9A>silverink.itch.io  |  Free  |  Standard enemies</color></size>
+
+<b>Act 1 Boss</b>  Fly
+<size=70%><color=#9A9A9A>floatingkites.itch.io  |  Free  |  Act 1 boss</color></size>
+
+<b>Act 2 Boss</b>  Art man oil
+<size=70%><color=#9A9A9A>art-man-oil.itch.io  |  Free  |  Act 2 boss</color></size>
+
+<b>Act 3 Final Boss</b>  Elthen
+<size=70%><color=#9A9A9A>elthen.itch.io  |  Free  |  Act 3 two-phase final boss</color></size>
+
+<b>Weapons Pack</b>  Jestan
+<size=70%><color=#9A9A9A>jestan.itch.io/weapons-pack  |  Free  |  Weapon sprites</color></size>
+
+<b>Modern Weapon Pack</b>  lapoulemexicaine
+<size=70%><color=#9A9A9A>lapoulemexicaine.itch.io/modern-weapon-pack  |  Free  |  Weapon sprites</color></size>
+
+<b>Fire Pixel Bullet 16x16</b>  BDragon1727
+<size=70%><color=#9A9A9A>bdragon1727.itch.io/fire-pixel-bullet-16x16  |  Free  |  Projectile sprites</color></size>
+
+<b>Bullet Impact Explosion 32x32</b>  BDragon1727
+<size=70%><color=#9A9A9A>bdragon1727.itch.io/free-effect-bullet-impact-explosion-32x32  |  Free  |  Bullet impact VFX</color></size>
+
+<b>VFX Free Pack</b>  CodeManu
+<size=70%><color=#9A9A9A>codemanu.itch.io/vfx-free-pack  |  Free  |  Skill VFX</color></size>
+
+<b>RPG Ability Icons</b>  Frosty Rabbid
+<size=70%><color=#9A9A9A>frosty-rabbid.itch.io/rpg-ability-icons  |  Free  |  Skill icons (HUD)</color></size>
+
+<b>Stone UI Free Asset</b>  Canvas Coven
+<size=70%><color=#9A9A9A>canvas-coven.itch.io/stone-ui-free-asset  |  Free  |  GUI panels, level-up panel</color></size>
+
+<b>Keyboard & Mouse UI</b>  goncalomcoliveira
+<size=70%><color=#9A9A9A>goncalomcoliveira.itch.io/keyboard-mouse-ui  |  Free  |  Control prompts, tutorial</color></size>
+
+<b>Basic Pixel Health Bar & Scroll Bar</b>  BDragon1727
+<size=70%><color=#9A9A9A>bdragon1727.itch.io/basic-pixel-health-bar-and-scroll-bar  |  Free  |  Health and EXP bars</color></size>
+
+
+
+<size=140%><b>Audio</b></size>
+
+<b>6 Dark Fantasy Boss Battle Tracks</b>  alkakrab
+<size=70%><color=#9A9A9A>Unity Asset Store  |  Free  |  Boss fight BGM</color></size>
+
+<b>400 Sounds Pack</b>  ci
+<size=70%><color=#9A9A9A>ci.itch.io/400-sounds-pack  |  Free  |  General SFX (pickups, UI, level-up)</color></size>
+
+<b>PUNCH-BOXING-02</b>  newagesoup (Freesound)
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Melee hit SFX</color></size>
+
+<b>062708 Laser Charging</b>  Freesound Community
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Skill charge-up</color></size>
+
+<b>Magic Chargeup</b>  cribbler (Freesound)
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Skill charge-up</color></size>
+
+<b>Whoosh Motion</b>  DRAGON-STUDIO
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Character swap / dash</color></size>
+
+<b>Laser</b>  Ahmed_Abdulaal
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Laser weapon fire</color></size>
+
+<b>Fire Spell Impact</b>  DRAGON-STUDIO
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Fire skill impact</color></size>
+
+<b>Cinematic Low Hit</b>  Universfield
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Boss impact stinger</color></size>
+
+<b>Metal Slam 5</b>  floraphonic
+<size=70%><color=#9A9A9A>Pixabay  |  Free  |  Robot / door impact</color></size>
+
+
+
+
+<size=160%><b>Thank you for playing</b></size>
+
+<size=70%><color=#9A9A9A>Press Esc to return to the menu</color></size>

@@ -33,7 +33,8 @@ public class WeaponSlots : MonoBehaviour
 
     public SecondaryWeapon Find(SecondaryWeaponData d)
     {
-        foreach (var w in active) if (w.Data == d) return w;
+        // Also matches the evolved form, so a combined weapon still counts as owning its base
+        foreach (var w in active) if (w.Data == d || (d.combinedResult != null && w.Data == d.combinedResult)) return w;
         return null;
     }
 
