@@ -198,7 +198,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 6
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -12891,7 +12891,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1285060094962827177, guid: cb2de30a37706d84e846137663ee1210, type: 3}
@@ -106077,7 +106077,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 12
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -106742,7 +106742,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 12
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4192190911462359383, guid: c47e749ff81a2cb4fa5c8caa9f38ae0a, type: 3}
@@ -107211,7 +107211,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -109461,7 +109461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048752074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110767,7 +110767,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 539685799
-  m_SortingLayer: 13
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -270319,7 +270319,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 14
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -271025,7 +271025,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6717884257390833292, guid: 13a88e10d299652488a0bb89a34e8c82, type: 3}
@@ -271176,7 +271176,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 7
+  m_SortingLayer: 14
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1948861429554965999, guid: 41a87f82d72b0e8458125f2b8cfc850f, type: 3}
@@ -271306,7 +271306,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -271541,19 +271541,19 @@ MonoBehaviour:
   - name: spawner1
     enemyType: 1
     spawnCount: -1
-    spawnInterval: 1.5
+    spawnInterval: 1
     minWave: 0
     maxWave: 0
   - name: spawner2
     enemyType: 2
     spawnCount: -1
-    spawnInterval: 3
+    spawnInterval: 2
     minWave: 0
     maxWave: 0
   - name: spawner3
     enemyType: 3
     spawnCount: -1
-    spawnInterval: 5
+    spawnInterval: 3.5
     minWave: 0
     maxWave: 0
   room1TargetKillCount: 35
@@ -271583,19 +271583,19 @@ MonoBehaviour:
   - name: 1
     enemyType: 1
     spawnCount: -1
-    spawnInterval: 0.5
+    spawnInterval: 0.3
     minWave: 0
     maxWave: 0
   - name: 2
     enemyType: 2
     spawnCount: -1
-    spawnInterval: 1
+    spawnInterval: 0.6
     minWave: 0
     maxWave: 0
   - name: 3
     enemyType: 3
     spawnCount: -1
-    spawnInterval: 2
+    spawnInterval: 1.5
     minWave: 0
     maxWave: 0
   room1Header: Act 2 - Push Deeper Into the City
@@ -271779,7 +271779,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 339600167
-  m_SortingLayer: 8
+  m_SortingLayer: 7
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
