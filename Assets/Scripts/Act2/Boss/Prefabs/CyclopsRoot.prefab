@@ -530,8 +530,8 @@ MonoBehaviour:
   maxNormalStateTimer: 5
   maxAgitatedStateTimer: 5
   maxIdleDuration: 2
-  maxHP: 3500
-  currentHP: 3500
+  maxHP: 4000
+  currentHP: 4000
   hpFill: {fileID: 5187002225271641208}
   normalMoveSpeed: 7
   agitatedMoveSpeed: 12
