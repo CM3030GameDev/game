@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4586642917853179307}
   - component: {fileID: 3705638480017166016}
   - component: {fileID: -4124061834216121315}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Robot_Mob
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -82,7 +82,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -204,11 +204,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Mob
   maxHP: 100
   chaseSpeed: 3
-  expOrbPrefab: {fileID: 7391130996717795188, guid: 5be578c4cecfff04dbe08425c5c4f66b, type: 3}
-  expReward: 10
+  orbTiers: []
+  minExpDrop: 2
+  maxExpDrop: 4
+  dropSpread: 0.6
+  pickupDrops: []
   separationRadius: 0.6
   separationStrength: 2
   deathAnimationDuration: 0.5
+  contactDamage: 10
+  contactInvulnerability: 0.5
+  swordDamage: 20
+  swordCooldown: 0.5
+  flamethrowerDamage: 5
+  flamethrowerCooldown: 0.25
   onDeath:
     m_PersistentCalls:
       m_Calls:

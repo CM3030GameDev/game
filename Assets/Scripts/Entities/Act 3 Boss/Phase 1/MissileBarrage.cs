@@ -60,6 +60,8 @@ public class MissileBarrage : MonoBehaviour
         missile.transform.rotation = Quaternion.Euler(0f, 0f, 90f);
         //Start shooting missile
         missile.SetActive(true);
+        //Play missile sound effect
+        UIAudioManager.Instance.PlaySFXOneShot(1, 0.3f);
         Rigidbody2D rb = missile.GetComponent<Rigidbody2D>();
         rb.linearVelocity = transform.right * 10f;
         yield return new WaitForSeconds(seconds);

@@ -85,9 +85,6 @@ TagManager:
   - name: Decoration_Back
     uniqueID: 446537991
     locked: 0
-  - name: Wall
-    uniqueID: 3809879709
-    locked: 0
   - name: Projectile
     uniqueID: 425002817
     locked: 0
@@ -102,6 +99,9 @@ TagManager:
     locked: 0
   - name: Weapon
     uniqueID: 2015552387
+    locked: 0
+  - name: Wall
+    uniqueID: 3809879709
     locked: 0
   - name: Decoration
     uniqueID: 3412924687

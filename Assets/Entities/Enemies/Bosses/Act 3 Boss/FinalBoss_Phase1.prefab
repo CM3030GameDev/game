@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 7284307543066192040}
   - component: {fileID: 5128671769743908263}
   - component: {fileID: 6924938606282922939}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FinalBoss_Phase1
   m_TagString: FinalBoss
   m_Icon: {fileID: 0}
@@ -342,7 +342,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1357702875
-  m_SortingLayer: 6
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -469,6 +469,7 @@ MonoBehaviour:
   randomNum: 0
   attacking: 0
   dashing: 0
+  death: 0
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   attacks: {fileID: 6305171749554830494}
   dash: {fileID: 6084834175835150013}
@@ -817,10 +818,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe9577ed60a66004baf51d4f1ec115ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Flames
-  broken: 0
   flameHP: 100
   damage: 10
   hint: {fileID: 11400000, guid: 6cc0c11631351a742a7275658744b608, type: 2}
+  counterAttack: {fileID: 11400000, guid: 66a11e5b0fb027f4eabc8f5ca76f2541, type: 2}
+  extinguishTask: Extinguish flame
+  extinguishedTask: 'Extinguish flame: Lure to puddle'
 --- !u!1 &8529370947682804396
 GameObject:
   m_ObjectHideFlags: 0

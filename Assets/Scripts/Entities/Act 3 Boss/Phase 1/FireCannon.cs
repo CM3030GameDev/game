@@ -14,8 +14,8 @@ public class FireCannon : MonoBehaviour
 
     private void OnEnable()
     {
-        //Random number of fire attacks ranging from 20 to 30
-        counts = Random.Range(20, 31);
+        //Random number of fire attacks ranging from 10 to 20
+        counts = Random.Range(10, 21);
         canFire = true;
     }
 
@@ -28,6 +28,11 @@ public class FireCannon : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(finalBossOne.death)
+        {
+
+        }
+
         //Continue spraying fire
         if (counts > 0)
         {
@@ -87,6 +92,8 @@ public class FireCannon : MonoBehaviour
         explosion.transform.position = targetPos;
         //Start firing explosion
         explosion.SetActive(true);
+        //Play fire explosion sound effect
+        UIAudioManager.Instance.PlaySFXOneShot(2, 0.5f);
         //Update fire state
         canFire = true;
     }

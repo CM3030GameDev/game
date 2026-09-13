@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41be7abd3632a5c4ab0d9ad096ad6358, type: 3}
-  m_Name: Act3_PhaseOne_Hydrant
+  m_Name: Act3_PhaseTwo_Barrier
   m_EditorClassIdentifier: Assembly-CSharp::DialogueData
-  speakerName: Swordsman
+  speakerName: Boss
   sentences:
-  - The fire hydrant could be the water source we need.
-  - Let's try breaking it first.
+  - Activate reflective barrier.

@@ -6,6 +6,8 @@ public class FinalBossTwo : MonoBehaviour
     public SpriteRenderer sr;
     public Animator animator;
     private Vector2 normalizedChase;
+    //Default material
+    private Material defaultMaterial;
     //Boss max health
     public int bossHP;
     //Boss current health
@@ -34,12 +36,14 @@ public class FinalBossTwo : MonoBehaviour
     public bool beamDirection;
     //Random probability for boss pattern
     public float randomNum;
-    //Default material
-    private Material defaultMaterial;
+
+    [Header("References")]
     [SerializeField] private CharacterStats characterStats;
     [SerializeField] private DialogueData begin;
-    [SerializeField] private DialogueData end;
-    [Header("Boss Attacks")]
+    //White material
+    [SerializeField] private Material whiteMaterial;
+
+    [Header("Attacks")]
     [SerializeField] private GameObject attacks;
     [SerializeField] private GameObject eyeLaser;
     [SerializeField] private GameObject beams;
@@ -50,8 +54,8 @@ public class FinalBossTwo : MonoBehaviour
     [SerializeField] private GameObject rangeIndicator;
     [SerializeField] private GameObject groundSmash;
     [SerializeField] private GameObject elementalProjectile;
-    //White material
-    [SerializeField] private Material whiteMaterial;
+
+    [Header("Values")]
     //Boss damage
     [SerializeField] private int damage;
     //Attack interval
@@ -75,6 +79,10 @@ public class FinalBossTwo : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Play boss starting dialogue
+        DialogueManager.Instance.StartDialogue(begin);
+        //Set quest arrow target to be pointed towards Boss
+        PhaseTwoManager.Instance.missionUI.SetArrowTarget(transform);
         //Initialise boss healthbar display
         PhaseTwoManager.Instance.slider.maxValue = bossHP;
         PhaseTwoManager.Instance.slider.value = bossHP;
@@ -107,12 +115,24 @@ public class FinalBossTwo : MonoBehaviour
         if (currentHP <= 0 && !death)
         {
             death = true;
-            //Stop all attacks currently
-            attacks.SetActive(false);
+            //Pause everything in the scene except boss death animation
+            Time.timeScale = 0f;
+            animator.updateMode = AnimatorUpdateMode.UnscaledTime;
             //Boss death animation
             animator.SetTrigger("dead");
-            //Play boss dialogue
-            DialogueManager.Instance.StartDialogue(end);
+            //Hide mission UI
+            PhaseTwoManager.Instance.missionUI.Hide();
+            //Stop spawning robot mobs
+            MobManager.Instance.StopAllSpawnCoroutines();
+            //Stop all attacks that are child gameobject of Boss
+            attacks.SetActive(false);
+            //Stop all other attacks that are not child gameobject of Boss
+            for (int i = 0; i < PhaseTwoManager.Instance.attackList.Count; i++)
+            {
+                PhaseTwoManager.Instance.attackList[i].SetActive(false);
+            }
+            //Fade into darkness to transition to next scene
+            PhaseTwoManager.Instance.transition.LoadSceneWithFade("Credits");
         }
 
         Vector2 chaseDirection = PhaseTwoManager.Instance.characterTransform.position - transform.position;

@@ -6,9 +6,13 @@ public class Barrier : MonoBehaviour
     [SerializeField] private FinalBossTwo finalBossTwo;
     //Barrier timer
     [SerializeField] private float duration;
+    [SerializeField] private DialogueData activate;
 
     private void OnEnable()
     {
+        //Boss barrier activate dialogue
+        DialogueManager.Instance.StartDialogue(activate);
+        //Barrier activation duration
         StartCoroutine(BarrierTime(duration));
     }
 
