@@ -87,9 +87,10 @@ public class MinibossUltimate : MonoBehaviour
         if (projectile != null)
         {
             projectile.Launch(direction, throwSpeed, ultLifetime, ultDamage, playerInvulnerability);
+            UIAudioManager.Instance.PlaySFXOneShot(2);
             projectile.GetComponent<CircleCollider2D>().enabled = true;
         }
-        UIAudioManager.Instance.PlaySFXOneShot(3);   
+        
     }
 
     public void SetIsStartUlt(bool startUlt, string direction = "F")
