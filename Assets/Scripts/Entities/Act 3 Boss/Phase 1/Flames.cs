@@ -5,8 +5,6 @@ public class Flames : MonoBehaviour
     private float currentTime;
     //Check if fire hydrant hint has been given already
     private bool hydrantHint;
-    //Check if at least one first hydrant has been broken
-    public bool broken;
     //Flame current health
     private int currentHP;
     [SerializeField] private int flameHP;
@@ -18,7 +16,6 @@ public class Flames : MonoBehaviour
     {
         currentTime = 0f;
         hydrantHint = false;
-        broken = false;
         currentHP = flameHP;
 
         //Give hint via dialogue prompt that water source is needed to extinguish boss flames
@@ -37,8 +34,8 @@ public class Flames : MonoBehaviour
 
         currentTime += Time.deltaTime;
 
-        //Inform player through dialogue prompt that the fire hydrant is a water source (To help players if they are stucked)
-        if (!hydrantHint && !broken && currentTime > 30f)
+        //Inform player through dialogue prompt that the fire hydrant is a water source if they have yet to break a hydrant after a period of time
+        if (!hydrantHint && !PhaseOneManager.Instance.hydrantHint && currentTime > 20f)
         {
             hydrantHint = true;
             DialogueManager.Instance.StartDialogue(hint);
@@ -64,8 +61,7 @@ public class Flames : MonoBehaviour
         else if (collision.CompareTag("Character"))
         {
             Character character = collision.GetComponent<Character>();
-            character.CharacterAttacked(damage);
-            character.GrantInvulnerability(0.05f);
+            character.CharacterAttacked(damage, 0.05f);
         }
     }
 }

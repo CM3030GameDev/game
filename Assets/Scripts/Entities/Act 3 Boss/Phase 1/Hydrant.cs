@@ -6,7 +6,6 @@ public class Hydrant : MonoBehaviour
     private bool leak;
     public int hydrantHP;
     [SerializeField] private GameObject puddle;
-    [SerializeField] private Flames flames;
     [SerializeField] private DialogueData hint;
 
     private void Awake()
@@ -33,12 +32,12 @@ public class Hydrant : MonoBehaviour
                 animator.SetTrigger("leak");
 
                 //Inform player via dialogue prompt that we have to lure the boss flames into the fire hydrant puddle to slowly extinguish it
-                if(!flames.broken)
+                if(!PhaseOneManager.Instance.hydrantHint)
                 {
+                    PhaseOneManager.Instance.hydrantHint = true;
                     //Dialogue only appears after the first hydrant has been broken (Subsequent hydrant will not)
                     DialogueManager.Instance.StartDialogue(hint);
                 }
-                flames.broken = true;
             }
         }
         else
