@@ -12337,7 +12337,10 @@ MonoBehaviour:
   noButton: {fileID: 886476530}
   options: {fileID: 176864905}
   confirmation: {fileID: 2086784484}
+  controlsPanel: {fileID: 0}
+  settingsPanel: {fileID: 0}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  sortOrder: 50
 --- !u!224 &269246818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -92857,7 +92860,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &595935837
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -200274,11 +200277,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.090454
+      value: 13.853361
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0018416943
+      value: 0.0017616206
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.z

@@ -106298,7 +106298,10 @@ MonoBehaviour:
   noButton: {fileID: 507435427}
   options: {fileID: 1474712947}
   confirmation: {fileID: 1825196380}
+  controlsPanel: {fileID: 0}
+  settingsPanel: {fileID: 0}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  sortOrder: 50
 --- !u!224 &669750456
 RectTransform:
   m_ObjectHideFlags: 0
@@ -109461,7 +109464,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048752074
 MonoBehaviour:
   m_ObjectHideFlags: 0
