@@ -106803,7 +106803,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -110626,7 +110626,7 @@ GameObject:
   - component: {fileID: 1488725719}
   - component: {fileID: 1488725718}
   - component: {fileID: 1488725717}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Swordsman
   m_TagString: Companion
   m_Icon: {fileID: 0}

@@ -60,8 +60,11 @@ Hong Shuai
 <b>Act 2 Boss</b>  Art man oil
 <size=70%><color=#9A9A9A>art-man-oil.itch.io  |  Free  |  Act 2 boss</color></size>
 
-<b>Act 3 Final Boss</b>  Elthen
-<size=70%><color=#9A9A9A>elthen.itch.io  |  Free  |  Act 3 two-phase final boss</color></size>
+<b>Act 3 Final Boss Phase 1</b>  Emcee Flesher
+<size=70%><color=#9A9A9A>opengameart.org/users/emcee-flesher  |  Final boss phase 1</color></size>
+
+<b>Act 3 Final Boss Phase 2</b>  Elthen
+<size=70%><color=#9A9A9A>elthen.itch.io  |  Free  |  Final boss phase 2</color></size>
 
 <b>Weapons Pack</b>  Jestan
 <size=70%><color=#9A9A9A>jestan.itch.io/weapons-pack  |  Free  |  Weapon sprites</color></size>
@@ -123,6 +126,160 @@ Hong Shuai
 
 <b>Metal Slam 5</b>  floraphonic
 <size=70%><color=#9A9A9A>Pixabay  |  Free  |  Robot / door impact</color></size>
+
+
+
+
+<size=140%><b>Act 3 Map</b></size>
+
+<b>Water</b>  SciGho
+<size=70%><color=#9A9A9A>ninjikin.itch.io</color></size>
+
+<b>Bridge</b>  Reemax
+<size=70%><color=#9A9A9A>opengameart.org/users/reemax</color></size>
+
+<b>Road</b>  Faufilage
+<size=70%><color=#9A9A9A>opengameart.org/users/faufilage</color></size>
+
+<b>Laboratory</b>  Hyptosis
+<size=70%><color=#9A9A9A>hyptosis.itch.io</color></size>
+
+<b>Lab</b>  marceles
+<size=70%><color=#9A9A9A>opengameart.org/users/marceles</color></size>
+
+<b>Plaza</b>  n2liquid
+<size=70%><color=#9A9A9A>opengameart.org/content/exterior-32x32-town-tileset</color></size>
+
+<b>Buildings</b>  AO85, TomothyCreates, 0_mem0ry
+<size=70%><color=#9A9A9A>ao-85.itch.io  |  ttomothyy.itch.io  |  0-mem0ry.itch.io</color></size>
+
+<b>Building</b>  William Thompsonj, Sharm
+<size=70%><color=#9A9A9A>opengameart.org/content/lpc-terrain-repack</color></size>
+
+<b>Scrap & Junk</b>  Haydeos
+<size=70%><color=#9A9A9A>haydeos.itch.io</color></size>
+
+<b>Pillar</b>  InThePixel
+<size=70%><color=#9A9A9A>opengameart.org/users/inthepixel</color></size>
+
+
+
+<size=140%><b>Act 3 Visual Assets</b></size>
+
+<b>Villain</b>  Gif (@gif_not_jif), Noiracide (@Noiracide), Romi (@DessRomaric)
+<size=70%><color=#9A9A9A>Twitter</color></size>
+
+<b>Robot Mobs</b>  ashenremains
+<size=70%><color=#9A9A9A>ashenremains.itch.io</color></size>
+
+<b>Status Effect</b>  Nockzoo
+<size=70%><color=#9A9A9A>nockzoo.itch.io</color></size>
+
+<b>Keyboard E Button</b>  MegaCrash
+<size=70%><color=#9A9A9A>megacrash.itch.io</color></size>
+
+<b>Hydrant</b>  thekingphoenix
+<size=70%><color=#9A9A9A>opengameart.org/users/thekingphoenix</color></size>
+
+<b>Hydrant Water</b>  Foozle
+<size=70%><color=#9A9A9A>foozlecc.itch.io</color></size>
+
+<b>Hydrant Puddle</b>  Diarandor
+<size=70%><color=#9A9A9A>deviantart.com/diarandor/gallery</color></size>
+
+<b>Flame Circle</b>  Frostwindz
+<size=70%><color=#9A9A9A>frostwindz.itch.io</color></size>
+
+<b>Exhaust</b>  KlenchAndrei
+<size=70%><color=#9A9A9A>klenchandrei.itch.io</color></size>
+
+<b>Homing Missile</b>  diggy
+<size=70%><color=#9A9A9A>opengameart.org/users/diggy</color></size>
+
+<b>Missile Explosion</b>  ansimuz
+<size=70%><color=#9A9A9A>ansimuz.itch.io</color></size>
+
+<b>Missile Barrage</b>  Silas Games
+<size=70%><color=#9A9A9A>silasgamedev.itch.io</color></size>
+
+<b>Missile Barrage Explosion</b>  unTied Games
+<size=70%><color=#9A9A9A>untiedgames.itch.io</color></size>
+
+<b>Eye Laser</b>  caeden_8o8gamestudio
+<size=70%><color=#9A9A9A>caeden-8o8gamestudio.itch.io</color></size>
+
+<b>Suction</b>  Julien
+<size=70%><color=#9A9A9A>opengameart.org/users/julien</color></size>
+
+<b>Shockwave</b>  EmiEmiGames
+<size=70%><color=#9A9A9A>emiemigames.itch.io</color></size>
+
+<b>Ground Smash</b>  nerijs
+<size=70%><color=#9A9A9A>nerijs.itch.io</color></size>
+
+<b>Ground Impact</b>  unTied Games
+<size=70%><color=#9A9A9A>untiedgames.itch.io</color></size>
+
+<b>Fire Cannon Shoot</b>  a_klingon
+<size=70%><color=#9A9A9A>aklingon.itch.io</color></size>
+
+<b>Fire Cannon Explosion</b>  pimen
+<size=70%><color=#9A9A9A>pimen.itch.io</color></size>
+
+<b>Lightning Bolt</b>  ansimuz
+<size=70%><color=#9A9A9A>ansimuz.itch.io</color></size>
+
+<b>Air Blast</b>  Cethiel
+<size=70%><color=#9A9A9A>opengameart.org/users/cethiel</color></size>
+
+<b>Fireball</b>  NYKNCK
+<size=70%><color=#9A9A9A>nyknck.itch.io</color></size>
+
+<b>Barrier</b>  GameProgrammingSlave
+<size=70%><color=#9A9A9A>opengameart.org/users/gameprogrammingslave</color></size>
+
+<b>Target</b>  Learn GameMaker
+<size=70%><color=#9A9A9A>learngamemaker.itch.io</color></size>
+
+<b>Smoke Screen</b>  pimen
+<size=70%><color=#9A9A9A>pimen.itch.io</color></size>
+
+<b>Fog</b>  LFA
+<size=70%><color=#9A9A9A>opengameart.org/users/lfa</color></size>
+
+
+
+<size=140%><b>Act 3 Audio</b></size>
+
+<b>Evilhome BGM</b>  ikimiuki
+<size=70%><color=#9A9A9A>ikimiuki.itch.io  |  Lab discovery and final boss music</color></size>
+
+<b>Boss Battle Theme</b>
+<size=70%><color=#9A9A9A>opengameart.org/content/boss-battle-theme</color></size>
+
+<b>Good-Bye</b>
+<size=70%><color=#9A9A9A>opengameart.org/content/good-bye  |  Credits music</color></size>
+
+<b>Elemental Projectile</b>  dklon
+<size=70%><color=#9A9A9A>opengameart.org/users/dklon</color></size>
+
+<b>Missile Launcher</b>  dklon
+<size=70%><color=#9A9A9A>opengameart.org/users/dklon</color></size>
+
+<b>Final Boss Death</b>  OptimusGnu
+<size=70%><color=#9A9A9A>opengameart.org/users/optimusgnu</color></size>
+
+<b>Fire Cannon</b>  Thimras
+<size=70%><color=#9A9A9A>opengameart.org/users/thimras</color></size>
+
+<b>Smoke</b>  pyranostudios
+<size=70%><color=#9A9A9A>opengameart.org/users/pyranostudios</color></size>
+
+<b>Laser</b>  Kenney
+<size=70%><color=#9A9A9A>kenney.nl</color></size>
+
+<b>Explosion</b>  Dragon-Studio
+<size=70%><color=#9A9A9A>pixabay.com/users/dragon-studio-38165424</color></size>
 
 
 

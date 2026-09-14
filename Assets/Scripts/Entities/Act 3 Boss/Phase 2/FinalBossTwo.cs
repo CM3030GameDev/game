@@ -100,6 +100,8 @@ public class FinalBossTwo : MonoBehaviour
             attackTime += Time.deltaTime;
         }
 
+        if (companionHitTimer > 0f) companionHitTimer -= Time.deltaTime;
+
         //Boss cannot be attacked
         if (invulnTime > 0)
         {
@@ -344,13 +346,14 @@ public class FinalBossTwo : MonoBehaviour
 
     public void BossAttacked(int amount, float seconds)
     {
-        if (!isAttacked && !death)
+        // Every hit lands, the timer only drives the white flash, so shotgun pellets arriving together all count
+        if (!death)
         {
             //Boss flashes white
             sr.material = whiteMaterial;
             isAttacked = true;
             currentHP -= amount;
-            invulnTime = seconds;
+            invulnTime = Mathf.Max(invulnTime, seconds);
             //Update boss health display
             PhaseTwoManager.Instance.slider.value = currentHP;
             //Update boss health text value
@@ -369,18 +372,23 @@ public class FinalBossTwo : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Sword") && !isAttacked && !shielded)
+        if (collision.gameObject.CompareTag("Sword") && companionHitTimer <= 0f && !shielded)
         {
             //Final boss flashes and take damage when attacked
+            companionHitTimer = 0.3f;
             BossAttacked(50, 0.3f);
         }
     }
 
+    // Companions use their own cooldown, since player shots now keep isAttacked on almost constantly
+    private float companionHitTimer;
+
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Flamethrower") && !isAttacked && !shielded)
+        if (other.CompareTag("Flamethrower") && companionHitTimer <= 0f && !shielded)
         {
             //Final boss flashes and take damage when attacked
+            companionHitTimer = 0.4f;
             BossAttacked(5, 0.4f);
         }
     }

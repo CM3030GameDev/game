@@ -1650,7 +1650,7 @@ GameObject:
   - component: {fileID: 57879156}
   - component: {fileID: 57879155}
   - component: {fileID: 57879154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Mercenary
   m_TagString: Companion
   m_Icon: {fileID: 0}
@@ -7789,7 +7789,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 25.03187
+      value: 25.04495
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32437,7 +32437,7 @@ GameObject:
   - component: {fileID: 1321255917}
   - component: {fileID: 1321255916}
   - component: {fileID: 1321255915}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Swordsman
   m_TagString: Companion
   m_Icon: {fileID: 0}
