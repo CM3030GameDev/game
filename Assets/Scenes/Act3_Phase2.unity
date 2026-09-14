@@ -2560,6 +2560,10 @@ MonoBehaviour:
   tmp: {fileID: 1861183620}
   missionUI: {fileID: 1081499421}
   transition: {fileID: 155863502}
+<<<<<<< HEAD
+=======
+  actThreeMobCount: {fileID: 11400000, guid: 94849a4d7fe59e14a8efaef62768b32a, type: 2}
+>>>>>>> 957d1d41324f4bb64688078fba83c7d43da1a965
   bossPos: {fileID: 2053775870}
   attackList: []
   missilePrefab: {fileID: 7272718651554464755, guid: 02769784d502781468e7e1c66dc7db8e, type: 3}
@@ -7468,6 +7472,24 @@ MonoBehaviour:
   options: {fileID: 1744439591}
   confirmation: {fileID: 193613489}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  sortOrder: 50
+  controls: 'Move | W A S D
+
+    Toggle Auto / Manual Aim | Left Click
+
+    Aim (Manual)
+    | Mouse
+
+    Air Strike | Right Click
+
+    Smokescreen | 1
+
+    Guard | 2
+
+    Pause
+    | Esc'
+  volumeStep: 0.1
+  panelSize: {x: 900, y: 850}
 --- !u!114 &859945237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7771,7 +7793,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.x
+<<<<<<< HEAD
       value: 25.03187
+=======
+      value: 25.04495
+>>>>>>> 957d1d41324f4bb64688078fba83c7d43da1a965
       objectReference: {fileID: 0}
     - target: {fileID: 5513436150074968465, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
       propertyPath: m_LocalPosition.y
@@ -32785,8 +32811,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4845238069062731392, guid: ac10a3716d4f519458a97576461b0df8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -528298247683571893, guid: 09c49aac948b77f458c1a78ffb81745d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -32794,7 +32820,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.01
 --- !u!222 &1375589410
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -154,8 +154,25 @@ public class UpgradeManager : MonoBehaviour
             break;
         }
 
+        // Counted, since one big orb can grant several levels in the same frame
+        pendingPicks++;
+        if (pendingPicks == 1) ShowNextPick();
+    }
+
+    private int pendingPicks;
+
+    private void ShowNextPick()
+    {
+        List<Upgrade> choices = BuildChoices(stats.level);
+
+        // Everything maxed, so there is nothing to offer and the game must not pause on an empty panel
+        if (choices.Count == 0)
+        {
+            pendingPicks = 0;
+            return;
+        }
+
         Time.timeScale = 0f; // Pause game when prompted
-        List<Upgrade> choices = BuildChoices(newLevel);
         cardUI.Show(choices, ctx, Choose);
     }
 
@@ -190,7 +207,9 @@ public class UpgradeManager : MonoBehaviour
         }
         finally
         {
+            pendingPicks--;
             Time.timeScale = 1f; // Resume game
+            if (pendingPicks > 0) ShowNextPick();
         }
     }
 

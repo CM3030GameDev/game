@@ -106077,7 +106077,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -106299,6 +106299,24 @@ MonoBehaviour:
   options: {fileID: 1474712947}
   confirmation: {fileID: 1825196380}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
+  sortOrder: 50
+  controls: 'Move | W A S D
+
+    Toggle Auto / Manual Aim | Left Click
+
+    Aim (Manual)
+    | Mouse
+
+    Air Strike | Right Click
+
+    Smokescreen | 1
+
+    Guard | 2
+
+    Pause
+    | Esc'
+  volumeStep: 0.1
+  panelSize: {x: 900, y: 850}
 --- !u!224 &669750456
 RectTransform:
   m_ObjectHideFlags: 0
@@ -106742,7 +106760,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 11
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4192190911462359383, guid: c47e749ff81a2cb4fa5c8caa9f38ae0a, type: 3}
@@ -107107,7 +107125,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: -688650849
+  m_SortingLayerID: -746274175
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &917075971
@@ -110082,7 +110100,7 @@ PrefabInstance:
     - target: {fileID: 3060023109355740636, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: fireOverlay
       value: 
-      objectReference: {fileID: 1609067519}
+      objectReference: {fileID: 1552710243}
     - target: {fileID: 3060023109355740636, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: screenEffect
       value: 
@@ -110138,7 +110156,7 @@ PrefabInstance:
     - target: {fileID: 4930700049808492635, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: companion
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1488725722}
     - target: {fileID: 4930700049808492635, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: swordsman
       value: 
@@ -110767,7 +110785,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 539685799
-  m_SortingLayer: 12
+  m_SortingLayer: 11
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -267738,6 +267756,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
+--- !u!1 &1552710243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4993721773846166969, guid: ee3326d886f3a7145ac7e9436e89fdb7, type: 3}
+  m_PrefabInstance: {fileID: 1552710242}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1553504926
 GameObject:
   m_ObjectHideFlags: 0
@@ -270319,7 +270342,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 13
+  m_SortingLayer: 12
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -270889,8 +270912,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4845238069062731392, guid: ac10a3716d4f519458a97576461b0df8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -528298247683571893, guid: 09c49aac948b77f458c1a78ffb81745d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -270898,7 +270921,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.01
 --- !u!222 &1816506732
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -271176,7 +271199,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 14
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 1948861429554965999, guid: 41a87f82d72b0e8458125f2b8cfc850f, type: 3}

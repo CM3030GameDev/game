@@ -17,6 +17,9 @@ public class MainWeapon : MonoBehaviour
 
     private void Update()
     {
+        // Holds fire while dead, so the gun does not keep shooting behind the respawn screen
+        if (characterStats.health <= 0) return;
+
         fireTimer += Time.deltaTime;
 
         // Effective interval: tier base minus the character's attackSpeed bonus

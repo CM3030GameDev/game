@@ -7,6 +7,13 @@ public class Interface : MonoBehaviour
     [SerializeField] private SceneState sceneState;
     [SerializeField] private CharacterStats characterStats;
 
+    private PauseMenu menu;
+
+    private void Awake()
+    {
+        menu = pauseMenu.GetComponent<PauseMenu>();
+    }
+
     private void Update()
     {
         //Display game over interface
@@ -15,13 +22,16 @@ public class Interface : MonoBehaviour
             gameOver.SetActive(true);
         }
 
-        //Display pause menu
-        if (Input.GetKeyDown(KeyCode.Escape) && !sceneState.pause)
-        {
-            pauseMenu.SetActive(true);
-            //Pause game scene
-            Time.timeScale = 0f;
-            sceneState.pause = true;
-        }
+        // Esc opens the pause menu, or steps back through it when already open
+        if (Input.GetKeyDown(KeyCode.Escape)) TogglePause();
+    }
+
+    // Shared by Esc and the HUD pause button
+    public void TogglePause()
+    {
+        if (sceneState.dead) return;
+
+        if (menu.IsOpen) menu.Back();
+        else menu.Open();
     }
 }

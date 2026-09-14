@@ -32,8 +32,6 @@ public class Pickup : MonoBehaviour
         float dist = Vector2.Distance(transform.position, player.position);
 
         // Same magnet behaviour as ExpOrb, so Pickup Range upgrades pull every collectable in.
-        // ponytail: third copy of this movement block. Extract a shared Collectable base if a
-        // fourth collectable type appears - two copies was not worth a base class, four is.
         if (magnetised || dist <= characterStats.pickupRadius)
         {
             transform.position = Vector2.MoveTowards(
