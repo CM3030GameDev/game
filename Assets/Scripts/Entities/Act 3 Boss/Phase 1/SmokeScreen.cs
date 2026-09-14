@@ -23,6 +23,8 @@ public class SmokeScreen : MonoBehaviour
         //End smokescreen animation after 3 cycles
         if(animator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 3f)
         {
+            //Stop smoke sound effect
+            PhaseOneManager.Instance.StopAudio();
             //End boss attack animation
             bossAnimator.SetBool("attack", false);
             //Disable smokescreen animation

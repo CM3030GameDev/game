@@ -12,7 +12,6 @@ public class PhaseTwoManager : MonoBehaviour
     public TextMeshProUGUI tmp;
     public MissionUI missionUI;
     public MenuSceneTransition transition;
-    [SerializeField] private ActThreeMobCount actThreeMobCount;
     [SerializeField] private Transform bossPos;
 
     [Header("Object Pools")]
@@ -125,8 +124,6 @@ public class PhaseTwoManager : MonoBehaviour
     {
         //Display mission header for Act 3 Phase Two
         missionUI.SetHeader(header);
-        //Reset mob count
-        actThreeMobCount.ResetMobCount();
         //Spawn up to 10 maximum robot mobs at any point in time on the map
         MobManager.Instance.AddPopulationSpawnCoroutine("spawn", MobManager.EnemyTypes.ROBOTMOB, 10);
         //Spawn boss
@@ -136,11 +133,7 @@ public class PhaseTwoManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ////Stop spawning robot mobs after 30 robot mobs are destroyed
-        //if (actThreeMobCount.mobCount <= 0)
-        //{
-        //    MobManager.Instance.StopAllSpawnCoroutines();
-        //}
+
     }
 
     public void Stunned()

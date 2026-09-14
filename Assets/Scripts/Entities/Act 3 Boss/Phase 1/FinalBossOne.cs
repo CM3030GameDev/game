@@ -5,7 +5,6 @@ public class FinalBossOne : MonoBehaviour
     private Rigidbody2D rb;
     private SpriteRenderer sr;
     private Animator animator;
-    private BoxCollider2D box;
     //Default material
     private Material defaultMaterial;
     //Boss max health
@@ -28,8 +27,6 @@ public class FinalBossOne : MonoBehaviour
     public bool attacking;
     //Dash state
     public bool dashing;
-    //Check if flames has been activated already (Can only activate once)
-    private bool flamed;
     //Check if smokescreen has been used (Can only use once)
     private bool smoked;
     //Death state
@@ -60,13 +57,11 @@ public class FinalBossOne : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
-        box = GetComponent<BoxCollider2D>();
         defaultMaterial = sr.material;
         currentHP = bossHP;
         currentSpeed = characterStats.moveSpeed - 2;
         isAttacked = false;
         attacking = false;
-        flamed = false;
         smoked = false;
         death = false;
     }
@@ -120,8 +115,6 @@ public class FinalBossOne : MonoBehaviour
             DialogueManager.Instance.StartDialogue(end);
             //Stop spawning robot mobs
             MobManager.Instance.StopAllSpawnCoroutines();
-            //Disable boss collider
-            box.enabled = false;
             //Point quest arrow towards door position
             PhaseOneManager.Instance.ArrowPointer();
             //Enable door collider for player to transition to Act 3 phase 2 scene when within range of door
@@ -149,12 +142,6 @@ public class FinalBossOne : MonoBehaviour
             else
             {
                 sr.flipX = true;
-            }
-
-            //Activate flames around boss when health is below 70% of max health (Can be used once only)
-            if (!flamed && currentHP < bossHP * 0.70)
-            {
-                Flames();
             }
 
             if (!attacking)
@@ -244,13 +231,6 @@ public class FinalBossOne : MonoBehaviour
         currentSpeed = characterStats.moveSpeed;
     }
 
-    //Flame surrounds boss for a period of time
-    private void Flames()
-    {
-        flamed = true;
-        flames.SetActive(true);
-    }
-
     //Create fog by emitting smoke (Can only use once)
     private void SmokeScreen()
     {
@@ -259,8 +239,8 @@ public class FinalBossOne : MonoBehaviour
         animator.SetBool("attack", true);
         //Start smokescreen animation
         smokeScreens.SetActive(true);
-        //PLAY LOOPING SMOKE SOUND EFFECT (TO REFERENCE TO ANOTHER AUDIOSOURCE THAT HAS LOOP COMPONENT ENABLED)
-
+        //Play smoke sound effect
+        PhaseOneManager.Instance.PlayAudio();
         //Fog slowly appear
         PhaseOneManager.Instance.fogs.SetActive(true);
     }
@@ -298,7 +278,8 @@ public class FinalBossOne : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Character"))
+        //Only able to attack player when alive
+        if (collision.gameObject.CompareTag("Character") && !death)
         {
             Character character = collision.gameObject.GetComponent<Character>();
             character.CharacterAttacked(damage);

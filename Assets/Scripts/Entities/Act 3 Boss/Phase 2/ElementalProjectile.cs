@@ -61,6 +61,8 @@ public class ElementalProjectile : MonoBehaviour
         Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         //Shoot projectile in the direction of player
         rb.linearVelocity = directionNormalized * projectileSpeed;
+        //Play projectile sound effect
+        UIAudioManager.Instance.PlaySFXOneShot(3);
         yield return new WaitForSeconds(seconds);
         shooting = false;
     }

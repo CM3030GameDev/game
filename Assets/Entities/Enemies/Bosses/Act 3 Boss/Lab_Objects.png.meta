@@ -2069,6 +2069,50 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Door_Close
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 288
+        width: 108
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ea08a37d3f568c4fa6e4e97b8b04ee8
+      internalID: 1367691029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Open
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 324
+        width: 93
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5052b318f53c2884ca5c249050e0f470
+      internalID: -129172825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -2084,6 +2128,8 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       Capsule: -5510164916311255254
+      Door_Close: 1367691029
+      Door_Open: -129172825
       Green_Button_Side: 1036490059
       Green_Button_Top: -4920399618361857493
       Lab_Objects_0: -7277033138425545128
