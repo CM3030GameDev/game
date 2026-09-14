@@ -471,17 +471,18 @@ MonoBehaviour:
   dashing: 0
   death: 0
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
+  begin: {fileID: 11400000, guid: 1a13afe085a107a4087aaa53871df4f9, type: 2}
+  end: {fileID: 11400000, guid: 331cbac4014bac044867788f68b356e8, type: 2}
+  extinguishTask: 
+  whiteMaterial: {fileID: 2100000, guid: 1b935846cc20b054fb1fe56a9bac4cbd, type: 2}
   attacks: {fileID: 6305171749554830494}
   dash: {fileID: 6084834175835150013}
   flames: {fileID: 7655328446932687272}
   fireCannon: {fileID: 8529370947682804396}
   missileBarrage: {fileID: 2566487373357004636}
   smokeScreens: {fileID: 7043702306290430520}
-  whiteMaterial: {fileID: 2100000, guid: 1b935846cc20b054fb1fe56a9bac4cbd, type: 2}
   intervals: 5
   damage: 20
-  begin: {fileID: 11400000, guid: 1a13afe085a107a4087aaa53871df4f9, type: 2}
-  end: {fileID: 11400000, guid: 331cbac4014bac044867788f68b356e8, type: 2}
 --- !u!1 &7043702306290430520
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &24265126110197004
 Transform:
   m_ObjectHideFlags: 0

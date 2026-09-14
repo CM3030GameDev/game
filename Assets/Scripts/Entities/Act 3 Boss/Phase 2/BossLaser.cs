@@ -29,6 +29,8 @@ public class BossLaser : MonoBehaviour
             GameObject laser = Instantiate(laserPrefab, transform.position + (transform.right * 1.5f), Quaternion.AngleAxis(angle, Vector3.forward));
             Rigidbody2D rb = laser.GetComponent<Rigidbody2D>();
             rb.linearVelocity = direction.normalized * laserSpeed;
+            //Play laser sound effect
+
             finalBossTwo.attacking = false;
             finalBossTwo.randomNum = Random.Range(0f, 1f);
             finalBossTwo.attackTime = 0f;

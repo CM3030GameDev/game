@@ -16,8 +16,8 @@ public class PhaseOneManager : MonoBehaviour
     public bool hydrantHint;
 
     [Header("References")]
-    [SerializeField] private ActThreeMobCount actThreeMobCount;
     [SerializeField] private Transform bossPos;
+    [SerializeField] private AudioSource audioLoop;
 
     [Header("Object Pools")]
     //Gameobject pool for missile barrage attacks
@@ -101,10 +101,10 @@ public class PhaseOneManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Play background music
+        UIAudioManager.Instance.PlayBGM(0, true);
         //Display mission header for Act 3 Phase One
         missionUI.SetHeader(header);
-        //Reset mob count
-        actThreeMobCount.ResetMobCount();
         //Spawn up to 10 maximum robot mobs at any point in time on the map
         MobManager.Instance.AddPopulationSpawnCoroutine("spawn", MobManager.EnemyTypes.ROBOTMOB, 10);
         //Spawn boss
@@ -121,5 +121,15 @@ public class PhaseOneManager : MonoBehaviour
     public void ArrowPointer()
     {
         missionUI.SetArrowTarget(doorTransform);
+    }
+
+    public void PlayAudio()
+    {
+        audioLoop.Play();
+    }
+
+    public void StopAudio()
+    {
+        audioLoop.Stop();
     }
 }

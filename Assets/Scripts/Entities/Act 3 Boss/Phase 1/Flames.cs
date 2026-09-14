@@ -14,7 +14,8 @@ public class Flames : MonoBehaviour
     [SerializeField] private string extinguishTask;
     [SerializeField] private string extinguishedTask;
 
-    private void OnEnable()
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
     {
         currentTime = 0f;
         hydrantHint = false;
@@ -22,14 +23,6 @@ public class Flames : MonoBehaviour
 
         //Mission UI task appear to prompt player to extinguish boss flames
         PhaseOneManager.Instance.missionUI.SetTasks(extinguishTask);
-        //Give hint via dialogue prompt that water source is needed to extinguish boss flames
-        DialogueManager.Instance.StartDialogue(hint);
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-
     }
 
     // Update is called once per frame

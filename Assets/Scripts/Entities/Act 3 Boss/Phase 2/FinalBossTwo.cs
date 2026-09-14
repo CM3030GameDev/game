@@ -79,6 +79,8 @@ public class FinalBossTwo : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        //Play boss BGM
+        UIAudioManager.Instance.PlayBGM(0, true);
         //Play boss starting dialogue
         DialogueManager.Instance.StartDialogue(begin);
         //Set quest arrow target to be pointed towards Boss
@@ -115,11 +117,15 @@ public class FinalBossTwo : MonoBehaviour
         if (currentHP <= 0 && !death)
         {
             death = true;
+            //Stop boss BGM
+            UIAudioManager.Instance.StopBGM();
             //Pause everything in the scene except boss death animation
             Time.timeScale = 0f;
             animator.updateMode = AnimatorUpdateMode.UnscaledTime;
             //Boss death animation
             animator.SetTrigger("dead");
+            //Play death sound effect
+            UIAudioManager.Instance.PlaySFXOneShot(5, 0.5f);
             //Hide mission UI
             PhaseTwoManager.Instance.missionUI.Hide();
             //Stop spawning robot mobs
