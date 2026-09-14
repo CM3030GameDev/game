@@ -20,9 +20,6 @@ Hong Shuai
 
 <size=140%><b>Created by the Team</b></size>
 
-<b>Character Hitflash</b>  Hong Shuai
-<size=70%><color=#9A9A9A>Original, authored for this project  |  Characters</color></size>
-
 <b>Stats Sprites</b>  Harold
 <size=70%><color=#9A9A9A>Original, authored for this project  |  Stat icons, upgrade panel</color></size>
 
