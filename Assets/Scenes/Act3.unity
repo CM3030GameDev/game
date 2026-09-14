@@ -12337,10 +12337,25 @@ MonoBehaviour:
   noButton: {fileID: 886476530}
   options: {fileID: 176864905}
   confirmation: {fileID: 2086784484}
-  controlsPanel: {fileID: 0}
-  settingsPanel: {fileID: 0}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   sortOrder: 50
+  controls: 'Move | W A S D
+
+    Toggle Auto / Manual Aim | Left Click
+
+    Aim (Manual)
+    | Mouse
+
+    Air Strike | Right Click
+
+    Smokescreen | 1
+
+    Guard | 2
+
+    Pause
+    | Esc'
+  volumeStep: 0.1
+  panelSize: {x: 900, y: 850}
 --- !u!224 &269246818
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15100,8 +15115,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4845238069062731392, guid: ac10a3716d4f519458a97576461b0df8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -528298247683571893, guid: 09c49aac948b77f458c1a78ffb81745d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -15109,7 +15124,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.01
 --- !u!222 &490011487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -95478,53 +95493,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
---- !u!1 &853095829
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 853095831}
-  - component: {fileID: 853095830}
-  m_Layer: 0
-  m_Name: PlaceholderReset
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &853095830
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853095829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb8dd8ae69f7884e9aba0855c9f8ace, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlaceholderReset
-  characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
-  sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
-  gameOver: {fileID: 107649249}
---- !u!4 &853095831
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 853095829}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &853622299
 GameObject:
   m_ObjectHideFlags: 0
@@ -96368,10 +96336,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1332619158323253300, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 2090671976}
     - target: {fileID: 2317956446373592222, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: hud
       value: 
@@ -201713,6 +201677,5 @@ SceneRoots:
   - {fileID: 785661899}
   - {fileID: 69534917}
   - {fileID: 1522499269}
-  - {fileID: 853095831}
   - {fileID: 507209940}
   - {fileID: 2018681966}

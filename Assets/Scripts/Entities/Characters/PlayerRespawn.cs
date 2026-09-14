@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -14,6 +15,10 @@ public class PlayerRespawn : MonoBehaviour
     [Range(0.1f, 1f)][SerializeField] private float healthOnRespawn = 1f;
     [Tooltip("Grace period after reappearing, so a mob standing on the spawn cannot chain-kill.")]
     [SerializeField] private float respawnInvulnerability = 2f;
+
+    // Static so the respawn screen in the HUD prefab can listen without a cross prefab reference
+    public static event Action<float> Died;
+    public static event Action Respawned;
 
     private Vector3 startPosition;
     private Rigidbody2D rb;
@@ -40,6 +45,7 @@ public class PlayerRespawn : MonoBehaviour
     private IEnumerator Respawn()
     {
         respawning = true;
+        Died?.Invoke(respawnDelay);
 
         // Character.FixedUpdate already zeroes movement while health is 0, so the player just
         // lies there for the delay rather than sliding around.
@@ -61,5 +67,6 @@ public class PlayerRespawn : MonoBehaviour
         if (character != null) character.GrantInvulnerability(respawnInvulnerability);
 
         respawning = false;
+        Respawned?.Invoke();
     }
 }

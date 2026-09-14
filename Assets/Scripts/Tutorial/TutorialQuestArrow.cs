@@ -36,6 +36,6 @@ public class TutorialQuestArrow : MonoBehaviour
     private void SetStep(int index)
     {
         current = index;
-        if (missionUI != null) missionUI.SetArrowTarget(index < steps.Length ? steps[index].transform : null);
+        if (missionUI != null) missionUI.SetArrowTarget(index < steps.Length && steps[index] != null ? steps[index].transform : null);
     }
 }

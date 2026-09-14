@@ -110,7 +110,8 @@ public class Character : MonoBehaviour
 
     private void Regenerate()
     {
-        if (cs.healthRegen <= 0f || cs.health >= cs.maxHealth) return;
+        // Not while dead, or regen could revive the player before PlayerRespawn notices
+        if (cs.health <= 0 || cs.healthRegen <= 0f || cs.health >= cs.maxHealth) return;
 
         // Accumulate fractional regen so low rates (e.g. 1/sec) still add up over time
         regenAccumulator += cs.healthRegen * Time.deltaTime;
@@ -125,7 +126,7 @@ public class Character : MonoBehaviour
     // Starts the invulnerability window itself, so no caller has to remember to.
     public void CharacterAttacked(int amount, float invulnerability = 0.5f)
     {
-        if (IsInvulnerable) return;
+        if (IsInvulnerable || cs.health <= 0) return;
 
         // Play attacked animation of character
         animator.SetBool("attacked", true);

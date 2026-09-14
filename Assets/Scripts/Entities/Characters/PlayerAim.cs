@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public enum AimMode { Auto, Manual }
 
@@ -28,7 +29,9 @@ public class PlayerAim : MonoBehaviour
         if (Time.timeScale == 0f) return;
 
         // Left-click to toggle between auto-aim and manual-aim
-        if (Input.GetMouseButtonDown(0))
+        // Not when the click lands on UI, or pressing the HUD pause button would also swap aim mode
+        bool overUI = EventSystem.current != null && EventSystem.current.IsPointerOverGameObject();
+        if (Input.GetMouseButtonDown(0) && !overUI)
             Mode = (Mode == AimMode.Auto) ? AimMode.Manual : AimMode.Auto;
 
         if (Mode == AimMode.Manual)

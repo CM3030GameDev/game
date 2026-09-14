@@ -543485,10 +543485,10 @@ RectTransform:
   - {fileID: 4087067190576450303}
   m_Father: {fileID: 7388731521264249399}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &3150742735626959781
 Animator:
@@ -543567,10 +543567,25 @@ MonoBehaviour:
   noButton: {fileID: 5974370530397775673}
   options: {fileID: 1222174220107154359}
   confirmation: {fileID: 5055588590139978391}
-  controlsPanel: {fileID: 0}
-  settingsPanel: {fileID: 0}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   sortOrder: 50
+  controls: 'Move | W A S D
+
+    Toggle Auto / Manual Aim | Left Click
+
+    Aim (Manual)
+    | Mouse
+
+    Air Strike | Right Click
+
+    Smokescreen | 1
+
+    Guard | 2
+
+    Pause
+    | Esc'
+  volumeStep: 0.1
+  panelSize: {x: 900, y: 850}
 --- !u!1 &3623348477355842859
 GameObject:
   m_ObjectHideFlags: 0
@@ -544997,8 +545012,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4845238069062731392, guid: ac10a3716d4f519458a97576461b0df8, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: -528298247683571893, guid: 09c49aac948b77f458c1a78ffb81745d, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -545006,7 +545021,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
+  m_PixelsPerUnitMultiplier: 0.01
 --- !u!222 &6368889781583461965
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -546049,10 +546064,6 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 6142349047672255478}
-    - target: {fileID: 1383289334967286668, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
-      propertyPath: hurtSfx
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1494602146680389243, guid: 2c180c89e1e309547a2d928770f0d9b2, type: 3}
       propertyPath: baseExp
       value: 10
@@ -546535,7 +546546,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 2, y: -104.87}
-  m_SizeDelta: {x: 615, y: 169.74}
+  m_SizeDelta: {x: 615, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &9114797313336808322
 GameObject:

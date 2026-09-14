@@ -140,6 +140,10 @@ public class UIAudioManager : MonoBehaviour
 
     private void Start()
     {
+        // Start, not Awake, because mixer values set during Awake are ignored
+        ApplyVolume(true, SavedVolume(true));
+        ApplyVolume(false, SavedVolume(false));
+
         // Prevent errors if the Music Audio Source was not assigned
         // in the Unity Inspector.
         if (musicAudioSource == null)
@@ -175,6 +179,9 @@ public class UIAudioManager : MonoBehaviour
 
     public void PlayBGM(int index, bool isLooping = false)
     {
+        // A scene whose music list is shorter than the act expects plays nothing instead of throwing
+        if (index < 0 || index >= backgroundMusic.Count || backgroundMusic[index] == null) return;
+
         musicAudioSource.clip = backgroundMusic[index];
         musicAudioSource.loop = isLooping;
         musicAudioSource.Play();
@@ -195,6 +202,32 @@ public class UIAudioManager : MonoBehaviour
     }
 
     // Null-safe shortcut for gameplay code: a scene with no audio manager, or index -1, is silent.
+    // Same PlayerPrefs keys and mixer parameters as AudioSettings, so every menu shares one saved volume
+    private const string MusicParam = "MusicVolume";
+    private const string SfxParam = "SFXVolume";
+    private const string MusicKey = "MusicVolumeValue";
+    private const string SfxKey = "SFXVolumeValue";
+
+    public static float SavedVolume(bool music) => PlayerPrefs.GetFloat(music ? MusicKey : SfxKey, 1f);
+
+    public static void SetVolume(bool music, float value)
+    {
+        value = Mathf.Clamp01(value);
+        PlayerPrefs.SetFloat(music ? MusicKey : SfxKey, value);
+        PlayerPrefs.Save();
+        if (Instance != null) Instance.ApplyVolume(music, value);
+    }
+
+    // Uses the mixer the source outputs to, so a scene whose sources are not routed to a mixer ignores volume
+    private void ApplyVolume(bool music, float value)
+    {
+        AudioSource source = music ? musicAudioSource : uiAudioSource;
+        if (source == null || source.outputAudioMixerGroup == null) return;
+
+        float db = value <= 0.0001f ? -80f : Mathf.Log10(value) * 20f;
+        source.outputAudioMixerGroup.audioMixer.SetFloat(music ? MusicParam : SfxParam, db);
+    }
+
     public static void Sfx(int index, float volumeScale = 1f)
     {
         if (index < 0 || Instance == null) return;

@@ -30,15 +30,28 @@ public class SwordSkill : PlayerSkill
         if (shieldVisual != null) shieldVisual.SetActive(true);
 
         stats.moveSpeed += speedBonus;
+        boosted = true;
         try
         {
             yield return new WaitForSeconds(invulnDuration);
         }
         finally
         {
-            // finally, because moveSpeed lives on a ScriptableObject and would stay boosted.
-            stats.moveSpeed -= speedBonus;
-            if (shieldVisual != null) shieldVisual.SetActive(false);
+            RemoveBoost();
         }
     }
+
+    private bool boosted;
+
+    // moveSpeed lives on a ScriptableObject that carries between acts, so the bonus must always come off
+    private void RemoveBoost()
+    {
+        if (!boosted) return;
+        boosted = false;
+        stats.moveSpeed -= speedBonus;
+        if (shieldVisual != null) shieldVisual.SetActive(false);
+    }
+
+    // A scene change destroys the coroutine without running its finally, so undo the boost here too
+    private void OnDisable() => RemoveBoost();
 }

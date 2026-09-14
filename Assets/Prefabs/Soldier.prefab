@@ -181,7 +181,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 176793315
-  m_SortingLayer: 12
+  m_SortingLayer: 10
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4109989988012210610, guid: 36e082e2b549f6d468ed1966cf60cef2, type: 3}
@@ -370,7 +370,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 2015552387
-  m_SortingLayer: 7
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6830803385800528128, guid: 62569bdd647f21e498ffbed91402712e, type: 3}
@@ -576,7 +576,6 @@ GameObject:
   - component: {fileID: 2670374839425689976}
   - component: {fileID: 5836751505678602339}
   - component: {fileID: 4035137110877519996}
-  - component: {fileID: 1332619158323253300}
   - component: {fileID: 3060023109355740636}
   - component: {fileID: 4930700049808492635}
   - component: {fileID: -7835466623713447648}
@@ -653,7 +652,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 691850385
-  m_SortingLayer: 14
+  m_SortingLayer: 12
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
@@ -789,7 +788,7 @@ MonoBehaviour:
   gunSprite: {fileID: 6561390801326322390}
   gunRenderer: {fileID: 1878892047716282404}
   fireSfx: 16
-  fireSfxVolume: 0.15
+  fireSfxVolume: 0.3
 --- !u!114 &1494602146680389243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,7 +803,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Progression
   characterStats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   baseExp: 10
-  expGrowth: 10
+  expGrowth: 5
   maxLevel: 25
   levelUpSfx: 13
   levelUpSfxVolume: 0.9
@@ -924,20 +923,6 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
---- !u!114 &1332619158323253300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8857959753512833621}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbb85a73d29fa29458ab15ebe1a0b93b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TempExpSpawn
-  expOrbPrefab: {fileID: 2074261435746582316, guid: eded516243b737a4c844c3dc0f26ea85, type: 3}
-  cam: {fileID: 0}
 --- !u!114 &3060023109355740636
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1009,7 +994,7 @@ MonoBehaviour:
   stats: {fileID: 11400000, guid: 2899a793addc85f499171eaee21f3329, type: 2}
   sceneState: {fileID: 11400000, guid: 6e05b56bb76c5d643ab2c2789c72b5b9, type: 2}
   spawnPoint: {fileID: 0}
-  respawnDelay: 1
+  respawnDelay: 3
   healthOnRespawn: 0.5
   respawnInvulnerability: 2
 --- !u!1 &9060806514941553255

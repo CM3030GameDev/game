@@ -28,6 +28,9 @@ public class Credits : MonoBehaviour
         TMP_Text text = GetComponent<TMP_Text>();
         if (creditsFile != null) text.text = creditsFile.text;
 
+        // The scene's text had uneven margins (left -236, right -488), which pushed the centre off to one side
+        text.margin = Vector4.zero;
+
         // Anchored to the top at 80 percent width, so the text height decides where the scroll ends
         rect.anchorMin = new Vector2(0.1f, 1f);
         rect.anchorMax = new Vector2(0.9f, 1f);

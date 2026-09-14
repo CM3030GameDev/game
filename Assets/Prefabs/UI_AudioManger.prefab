@@ -260,7 +260,7 @@ MonoBehaviour:
   soundEffects:
   - {fileID: 8300000, guid: a398bc2d4014fe84cb174ede453c0288, type: 3}
   - {fileID: 8300000, guid: 9ff29e99df3fac04f97b05194413c09b, type: 3}
-  - {fileID: 8300000, guid: 89f856ff9e69b8e44bffefd0a44350f6, type: 3}
+  - {fileID: 8300000, guid: e505e614e9d36504e87c2166b0e1fc73, type: 3}
   - {fileID: 8300000, guid: 80f9a08cdb5cc0340978b8b5eeab4487, type: 3}
   - {fileID: 8300000, guid: 3437ebe229fadaf4caaae2e897071e66, type: 3}
   - {fileID: 8300000, guid: e8371a51574d13743a2544053134331e, type: 3}

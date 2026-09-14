@@ -242,6 +242,9 @@ public class Mob : MonoBehaviour
     // Stay, not Enter, so standing in a crowd keeps hurting instead of only the first touch.
     private void OnTriggerStay2D(Collider2D other)
     {
+        // A mob playing its death animation still has its collider, so it must not keep hurting
+        if (death) return;
+
         if (other.CompareTag("Character"))
             other.GetComponent<Character>()?.CharacterAttacked(contactDamage, contactInvulnerability);
         else if (other.CompareTag("Sword"))
